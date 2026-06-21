@@ -1,0 +1,192 @@
+folder: OWQsMDjbSKqjD4Td
+name: Tip of the Spear
+type: feat
+_id: 3adNYxcbua5q0S6i
+img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
+system:
+  activities:
+    BTosEY6CqgSSVN8O:
+      type: utility
+      _id: BTosEY6CqgSSVN8O
+      sort: 0
+      activation:
+        type: ''
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ally
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: 1d6
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Tip of the Spear
+      img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: []
+  description:
+    value: >-
+      <p>As a Vanguard, you lead and direct your allies, pushing them ever
+      onwards, supporting them when they might otherwise fail. Each Vanguard
+      Branch, and some Skills and Talents, will provide you with the opportunity
+      to use this Feature to grant beneficial effects to an ally; each instance
+      will specify the conditions under which you do so.</p><p>When you use this
+      Feature, choose an allied Creature you can see within 60 feet; roll 1d6
+      and apply the corresponding effect to them until the start of your next
+      Turn; these effects are cumulative.</p><table><tbody><tr><td
+      data-colwidth="31"><p><strong>Roll</strong></p></td><td><p><strong>Effect</strong></p></td></tr><tr><td
+      data-colwidth="31"><p>1</p></td><td><p>Additional Damage equal to your
+      Proficiency Bonus on one Damage Roll of their choice.</p></td></tr><tr><td
+      data-colwidth="31"><p>2</p></td><td><p>They gain 1d6 Temporary Hit Points;
+      these Hit Points are additive with any Temporary Hit Points they already
+      have.</p></td></tr><tr><td data-colwidth="31"><p>3</p></td><td><p>Speed
+      increased by 10 feet.</p></td></tr><tr><td
+      data-colwidth="31"><p>4</p></td><td><p>+2 Bonus to Attack
+      Rolls.</p></td></tr><tr><td
+      data-colwidth="31"><p>5</p></td><td><p>Critical Range increased by
+      1.</p></td></tr><tr><td data-colwidth="31"><p>6</p></td><td><p>Whenever
+      they gain a Skill Point, they gain 1 more.</p></td></tr></tbody></table>
+    chat: >-
+      <p>Choose an allied Creature you can see within 60 feet; roll 1d6 and
+      apply the corresponding effect to them until the start of your next Turn;
+      these effects are cumulative.</p><table><tbody><tr><td
+      data-colwidth="31"><p><strong>Roll</strong></p></td><td><p><strong>Effect</strong></p></td></tr><tr><td
+      data-colwidth="31"><p>1</p></td><td><p>Additional Damage equal to your
+      Proficiency Bonus on one Damage Roll of their choice.</p></td></tr><tr><td
+      data-colwidth="31"><p>2</p></td><td><p>They gain 1d6 Temporary Hit Points;
+      these Hit Points are additive with any Temporary Hit Points they already
+      have.</p></td></tr><tr><td data-colwidth="31"><p>3</p></td><td><p>Speed
+      increased by 10 feet.</p></td></tr><tr><td
+      data-colwidth="31"><p>4</p></td><td><p>+2 Bonus to Attack
+      Rolls.</p></td></tr><tr><td
+      data-colwidth="31"><p>5</p></td><td><p>Critical Range increased by
+      1.</p></td></tr><tr><td data-colwidth="31"><p>6</p></td><td><p>Whenever
+      they gain a Skill Point, they gain 1 more.</p></td></tr></tbody></table>
+  identifier: feature
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 300000
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774569700077
+  modifiedTime: 1775163724676
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+_key: '!items!3adNYxcbua5q0S6i'

@@ -1,0 +1,103 @@
+folder: 8aeUmouRmnyu4sq2
+name: Danger Sense
+type: feat
+img: modules/ak5e/icons/Skill-Christine2.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: []
+  description:
+    value: >-
+      <p>While you are conscious, you have Advantage on Dexterity Saving Throws
+      against effects you can see.</p><p><strong>Module:</strong> Invisible
+      Creatures no longer have Advantage on Attack Rolls against you, and you
+      can no longer be Suprised while Conscious.</p>
+    chat: ''
+  identifier: danger-sense
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Danger Sense
+    img: modules/ak5e/icons/Skill-Christine2.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.OKhxvBFfBEME93PU
+    _id: O33J1yrWDah4ugI3
+    type: base
+    system: {}
+    changes:
+      - key: flags.automated-conditions-5e.save.advantage
+        mode: 2
+        value: ability.dex && !rollingActor.statuses.incapacitated;
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: dae.eval(statuses.blinded)
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+    _key: '!items.effects!9VDlya6wDpCJQrSc.O33J1yrWDah4ugI3'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774580928184
+  modifiedTime: 1774580928211
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+_id: 9VDlya6wDpCJQrSc
+sort: 150000
+_key: '!items!9VDlya6wDpCJQrSc'

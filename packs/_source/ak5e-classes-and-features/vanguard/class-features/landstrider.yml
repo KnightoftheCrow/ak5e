@@ -1,0 +1,159 @@
+folder: OWQsMDjbSKqjD4Td
+name: Landstrider
+type: feat
+_id: WZw05t0Rl8sFlJC8
+img: modules/ak5e/icons/Skill-WildMane2.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: []
+  description:
+    value: >-
+      <p>Your training as a Vanguard grants you the following
+      benefits:</p><p><strong>Speed Increase.</strong> Your Walking Speed is
+      increased by 10 feet.</p><p><strong>Nimble.</strong> When you hit a
+      Creature with an Attack, you do not provoke Opportunity Attacks from that
+      Creature for the rest of the Turn.</p>
+    chat: ''
+  identifier: feature
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: true
+    level: 1
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: 'Landstrider: Speed Increase'
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.WZw05t0Rl8sFlJC8
+    _id: NK6ddWaFOXrDAQF8
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.walk
+        mode: 2
+        value: '+10'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: <p>Your Walking Speed is increased by 10 feet.</p>
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1774570783303
+      modifiedTime: 1774570862002
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!WZw05t0Rl8sFlJC8.NK6ddWaFOXrDAQF8'
+  - name: 'Landstrider: Nimble'
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.WZw05t0Rl8sFlJC8
+    _id: 9ob1I0KStHU09PUl
+    type: base
+    system: {}
+    changes:
+      - key: ''
+        value: ''
+        mode: 2
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: 1
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>When you hit a Creature with an Attack, you do not provoke Opportunity
+      Attacks from that Creature for the rest of the Turn.</p>
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - None
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1774570882039
+      modifiedTime: 1774571365504
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!WZw05t0Rl8sFlJC8.9ob1I0KStHU09PUl'
+sort: 100000
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774569265848
+  modifiedTime: 1774579300955
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+_key: '!items!WZw05t0Rl8sFlJC8'
