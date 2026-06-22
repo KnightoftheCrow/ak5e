@@ -7,8 +7,10 @@ system:
   activities: {}
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
   advancement: []
   description:
     value: >-
@@ -25,7 +27,8 @@ system:
       Points.</p></li><li><p>When you use your Tip of the Spear Feature, you can
       immediately use it one additional time (no Action required), targeting the
       same Creature.</p></li></ul><p>Once you have used this Feature, you cannot
-      do so again until you have completed a Long Rest.</p>
+      do so again until you have completed a Long Rest.</p><p><strong>Not
+      automated.</strong></p>
     chat: ''
   identifier: the-last-stand
   source:
@@ -59,6 +62,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579968265
-  modifiedTime: 1774991197389
+  modifiedTime: 1782088436589
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!vbapEVZEFcyGjAU7'

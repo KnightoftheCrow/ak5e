@@ -52,17 +52,6 @@ system:
         recommendation: null
       value:
         type: asi
-    - type: AbilityScoreImprovement
-      level: 19
-      _id: GJBO7XExbwTjZt8K
-      configuration:
-        cap: 2
-        fixed: {}
-        locked: []
-        points: 2
-        recommendation: null
-      value:
-        type: asi
     - type: Trait
       _id: 40i8efvd4Pvsexnz
       configuration:
@@ -477,6 +466,26 @@ system:
       level: 20
       title: Approaching Storm
       hint: ''
+    - type: AbilityScoreImprovement
+      level: 19
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+        recommendation: null
+        max: null
+      value:
+        type: asi
+      _id: PhIWhtdKtn1zEbtm
+      title: ''
+      hint: ''
   description:
     value: >-
       <p>In Kazimierz, a Kuranta’s spear sparks as it makes contact with the
@@ -624,6 +633,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774564926024
-  modifiedTime: 1774993700540
+  modifiedTime: 1782085861609
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!1F7UnChmuoIk5p6K'

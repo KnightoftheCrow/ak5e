@@ -9,7 +9,20 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement:
+    - type: Trait
+      _id: VfViYfoIA09t5vjL
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - skills:itm
+          - skills:per
+        mode: upgrade
+      level: 0
+      title: Skill Expertise
+      hint: ''
+      value: {}
   description:
     value: >-
       <p>When you speak, others listen. When you give commands, others obey,
@@ -21,7 +34,8 @@ system:
       may not do so again on that Creature until you have completed a Long
       Rest.</p><p><strong>Skill Expertise.</strong> You gain Proficiency in the
       Persuasion and Intimidation Skills. If you already have Proficiency in
-      either Skill, you instead gain Expertise in that Skill.</p>
+      either Skill, you instead gain Expertise in that
+      Skill.</p><p><strong>Partially automated:</strong> Skill Expertise.</p>
     chat: ''
   identifier: proclaimer
   source:
@@ -55,6 +69,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579961890
-  modifiedTime: 1774991204121
+  modifiedTime: 1782088376434
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!vaNqudvcM3GGEZ2v'

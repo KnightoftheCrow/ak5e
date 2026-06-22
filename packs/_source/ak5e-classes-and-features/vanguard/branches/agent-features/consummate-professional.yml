@@ -9,7 +9,19 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement:
+    - type: Trait
+      _id: 4wKbjCJzcKxc7voa
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - tool:toolkit:mechanism
+        mode: default
+      level: 0
+      title: ''
+      hint: ''
+      value: {}
   description:
     value: >-
       <p>A professional never blames his tools, and is never found without them.
@@ -17,7 +29,8 @@ system:
       You gain Proficiency in the Mechanism Kit.</p><p><strong>Make it
       Happen.</strong> You are always considered to have access to a Mechanism
       Kit, even if you do not physically possess one. This Mechanism Kit has
-      unlimited Charges.</p>
+      unlimited Charges.</p><p><strong>Partially automated: </strong>Tool
+      Proficiency.</p>
     chat: ''
   identifier: consummate-professional
   source:
@@ -51,6 +64,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579756043
-  modifiedTime: 1774991278007
+  modifiedTime: 1782086201317
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!azwULiL6rbiH4vg8'

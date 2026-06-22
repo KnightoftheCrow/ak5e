@@ -7,8 +7,10 @@ system:
   activities: {}
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '1'
   advancement: []
   description:
     value: >-
@@ -26,8 +28,9 @@ system:
       Damage, and their Speed is not reduced.</p><p>Your Standard is then
       planted at the chosen location. Until the end of your next Turn, both you
       and your Standard project your Aura of Influence, at a 10-foot and 25-foot
-      radius respectively. </p><p>Once you have used this Feature, you must
-      finish a Short Rest before you may do so again.</p>
+      radius respectively.</p><p>Once you have used this Feature, you must
+      finish a Short Rest before you may do so again.</p><p><strong>Not
+      automated.</strong></p>
     chat: ''
   identifier: power-projection
   source:
@@ -61,6 +64,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579957529
-  modifiedTime: 1774847808427
+  modifiedTime: 1782088305621
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!Hi5Yr5xtychJOTwZ'

@@ -13,7 +13,7 @@ system:
   description:
     value: >-
       <p>Whenever you roll Initative, you may add your Proficiency Bonus to the
-      result of the roll.</p>
+      result of the roll.</p><p><strong>Automated.</strong></p>
     chat: ''
   identifier: feature
   source:
@@ -30,7 +30,57 @@ system:
   type:
     value: ''
     subtype: ''
-effects: []
+effects:
+  - name: Quick off the Mark
+    img: modules/ak5e/icons/Skill-Ines1.png
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.yCSiHLh1RqLqr7eX
+    _id: xZWEkXdZUk7oZFDL
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.init.bonus
+        mode: 2
+        value: '@prof'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1782083461292
+      modifiedTime: 1782083796926
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!yCSiHLh1RqLqr7eX.xZWEkXdZUk7oZFDL'
 sort: 800000
 ownership:
   default: 0
@@ -47,6 +97,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579225874
-  modifiedTime: 1774842430236
+  modifiedTime: 1782083842635
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!yCSiHLh1RqLqr7eX'

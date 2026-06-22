@@ -14,7 +14,8 @@ system:
     value: >-
       <p>Like a force of nature, you roll over the unready.</p><p>When you roll
       to determine Damage dealt during the first Round of a combat, you may add
-      half of your Vanguard Level to the result rolled</p>
+      half of your Vanguard Level to the result
+      rolled.</p><p><strong>Automated.</strong></p>
     chat: ''
   identifier: approaching-storm
   source:
@@ -31,7 +32,57 @@ system:
   type:
     value: ''
     subtype: ''
-effects: []
+effects:
+  - name: Approaching Storm
+    img: modules/ak5e/icons/Skill-Saga3.png
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.8AYN51B8yn5xLOYw
+    _id: N6F9PWDH1fkHgyYi
+    type: base
+    system: {}
+    changes:
+      - key: system.bonuses.All-Damage
+        mode: 2
+        value: '@classes.vanguard.level/2'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: 1
+      turns: null
+      startRound: 0
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1782083917040
+      modifiedTime: 1782084210171
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!8AYN51B8yn5xLOYw.N6F9PWDH1fkHgyYi'
 sort: 700000
 ownership:
   default: 0
@@ -48,6 +99,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579210706
-  modifiedTime: 1774842519439
+  modifiedTime: 1782084233843
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!8AYN51B8yn5xLOYw'

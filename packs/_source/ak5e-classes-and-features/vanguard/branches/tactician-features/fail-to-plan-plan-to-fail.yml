@@ -7,8 +7,10 @@ system:
   activities: {}
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
   advancement: []
   description:
     value: >-
@@ -30,7 +32,7 @@ system:
       your first Turn, you can place your Strategic Zones without expending an
       Action, and you may place them at any range, even to locations you cannot
       see. Once you have used this Feature, you cannot do so again until you
-      complete a Long Rest.</p>
+      complete a Long Rest.</p><p><strong>Not automated.</strong></p>
     chat: ''
   identifier: fail-to-plan-plan-to-fail
   source:
@@ -64,6 +66,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774580032733
-  modifiedTime: 1774848352059
+  modifiedTime: 1782088676197
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!BxKLAfkHZZmN1qfU'

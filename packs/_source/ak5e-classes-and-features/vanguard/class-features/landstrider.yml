@@ -16,7 +16,9 @@ system:
       benefits:</p><p><strong>Speed Increase.</strong> Your Walking Speed is
       increased by 10 feet.</p><p><strong>Nimble.</strong> When you hit a
       Creature with an Attack, you do not provoke Opportunity Attacks from that
-      Creature for the rest of the Turn.</p>
+      Creature for the rest of the Turn.</p><p><strong>Partially
+      Automated:</strong> Speed Increase is automated, but there's no way to
+      automate Nimble.</p>
     chat: ''
   identifier: feature
   source:
@@ -36,7 +38,7 @@ system:
     subtype: ''
 effects:
   - name: 'Landstrider: Speed Increase'
-    img: systems/dnd5e/icons/svg/items/feature.svg
+    img: modules/ak5e/icons/Skill-WildMane2.png
     origin: Compendium.ak5e.ak5e-classes-and-features.Item.WZw05t0Rl8sFlJC8
     _id: NK6ddWaFOXrDAQF8
     type: base
@@ -82,62 +84,9 @@ effects:
       systemId: dnd5e
       systemVersion: 5.2.5
       createdTime: 1774570783303
-      modifiedTime: 1774570862002
+      modifiedTime: 1782083665515
       lastModifiedBy: P5lWUBQKuHlZqgTn
     _key: '!items.effects!WZw05t0Rl8sFlJC8.NK6ddWaFOXrDAQF8'
-  - name: 'Landstrider: Nimble'
-    img: systems/dnd5e/icons/svg/items/feature.svg
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.WZw05t0Rl8sFlJC8
-    _id: 9ob1I0KStHU09PUl
-    type: base
-    system: {}
-    changes:
-      - key: ''
-        value: ''
-        mode: 2
-        priority: 20
-    disabled: false
-    duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
-    description: >-
-      <p>When you hit a Creature with an Attack, you do not provoke Opportunity
-      Attacks from that Creature for the rest of the Turn.</p>
-    tint: '#ffffff'
-    transfer: true
-    statuses: []
-    sort: 0
-    flags:
-      dnd5e:
-        riders:
-          statuses: []
-      dae:
-        disableCondition: ''
-        stackable: noneName
-        showIcon: false
-        disableIncapacitated: false
-        durationExpression: ''
-        macroRepeat: none
-        specialDuration:
-          - None
-      core:
-        overlay: false
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1774570882039
-      modifiedTime: 1774571365504
-      lastModifiedBy: P5lWUBQKuHlZqgTn
-    _key: '!items.effects!WZw05t0Rl8sFlJC8.9ob1I0KStHU09PUl'
 sort: 100000
 ownership:
   default: 0
@@ -154,6 +103,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774569265848
-  modifiedTime: 1774579300955
+  modifiedTime: 1782081453423
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!WZw05t0Rl8sFlJC8'

@@ -9,7 +9,26 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement:
+    - type: ScaleValue
+      _id: Ynv4WxdFwSQFUzAq
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '10':
+            number: 1
+            faces: 8
+            modifiers: []
+          '14':
+            number: 2
+            faces: 8
+            modifiers: []
+      value: {}
+      title: Damage
+      hint: ''
   description:
     value: >-
       <p>On any Turn that you have used your Shadowstrike Feature, you may
@@ -52,6 +71,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579746348
-  modifiedTime: 1774991272311
+  modifiedTime: 1782086040143
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!Lhe2BckNeelcnf7T'

@@ -9,7 +9,20 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement:
+    - type: Trait
+      _id: qXIZzibqqKmdRS8t
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - weapon:hvm
+          - armor:med
+        mode: default
+      level: 0
+      title: Additional Proficiencies
+      hint: Heavy Melee Weapons and Medium Armour
+      value: {}
   description:
     value: >-
       <p>Your tactics favour getting stuck into the fight. You gain the
@@ -18,7 +31,8 @@ system:
       Weapons.</p><p><strong>Additional Armour Proficiencies.</strong> You gain
       Proficiency with Medium Armour.</p><p><strong>Hardened Scars.</strong>
       Your Hit Point Maximum increases by 2. Whenever you gain a Level
-      thereafter, your Hit Point maximum increases by an additional 2.</p>
+      thereafter, your Hit Point maximum increases by an additional
+      2.</p><p><strong>Automated.</strong></p>
     chat: ''
   identifier: heavy-duty
   source:
@@ -35,7 +49,57 @@ system:
   type:
     value: ''
     subtype: ''
-effects: []
+effects:
+  - name: 'Heavy Duty: Hardenes Scars'
+    img: modules/ak5e/icons/skill_icon_skchr_jessica2_1.png
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.FhU7301qgfKp3v8a
+    _id: Q05q6YuRMPrvI7Pt
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.hp.bonuses.level
+        mode: 2
+        value: '2'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1782087730739
+      modifiedTime: 1782087784938
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!FhU7301qgfKp3v8a.Q05q6YuRMPrvI7Pt'
 sort: 0
 ownership:
   default: 0
@@ -52,6 +116,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579831136
-  modifiedTime: 1774991235923
+  modifiedTime: 1782087808574
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!FhU7301qgfKp3v8a'

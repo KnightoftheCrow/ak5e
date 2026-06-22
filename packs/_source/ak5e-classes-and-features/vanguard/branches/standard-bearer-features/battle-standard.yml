@@ -9,7 +9,19 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement:
+    - type: ItemGrant
+      _id: BR0iJuFnfa2tPgwy
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-items.Item.EkzuuGt2OQDta5Em
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 0
+      title: Standard
+      hint: ''
   description:
     value: >-
       <p>A Standard Bearer needs a standard. When you choose this Branch, a
@@ -32,7 +44,8 @@ system:
       when a Creature enters that area, or begins their Turn there, you can use
       your Tip of the Spear Feature on that Creature (no Action required). Once
       you have done so, you cannot do so again on that Creature until the
-      beginning of your next Turn.</p>
+      beginning of your next Turn.</p><p><strong>Partially automated:</strong>
+      the item is given, but it doesn't do auras quite yet.</p>
     chat: ''
   identifier: battle-standard
   source:
@@ -66,6 +79,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579920870
-  modifiedTime: 1774991191427
+  modifiedTime: 1782088248312
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!xniXIBfLuVJzPJ24'

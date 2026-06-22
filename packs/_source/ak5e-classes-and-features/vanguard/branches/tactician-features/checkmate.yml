@@ -7,8 +7,10 @@ system:
   activities: {}
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
   advancement: []
   description:
     value: >-
@@ -19,7 +21,8 @@ system:
       considered to be a Critical Hit, with all the benefits that entails, and
       ignores any Resistance that Creature has to the Damage of that
       Attack.</p><p>Once you have used this Feature, you may not do so again
-      until you have completed a Long Rest.</p>
+      until you have completed a Long Rest.</p><p><strong>Not
+      automated.</strong></p>
     chat: ''
   identifier: checkmate
   source:
@@ -53,6 +56,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774580047546
-  modifiedTime: 1774844686987
+  modifiedTime: 1782088477955
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!fzFBSg1QQu07BbLp'

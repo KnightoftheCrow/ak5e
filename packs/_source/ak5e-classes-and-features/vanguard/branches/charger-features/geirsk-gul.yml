@@ -7,8 +7,10 @@ system:
   activities: {}
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
   advancement: []
   description:
     value: >-
@@ -29,7 +31,7 @@ system:
       Creature and the additional Creature/Object take Bludgeoning Damage equal
       to half of the Damage dealt by the triggering Momentous Strike.</p><p>Once
       you have used this Feature, you must complete a Long Rest before you can
-      do so again.</p>
+      do so again.</p><p><strong>Not automated.</strong></p>
     chat: ''
   identifier: geirskogul
   source:
@@ -63,6 +65,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579819463
-  modifiedTime: 1774846637738
+  modifiedTime: 1782087432879
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!hH6xmrrhu5JxDfIW'

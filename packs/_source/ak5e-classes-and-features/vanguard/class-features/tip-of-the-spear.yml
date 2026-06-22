@@ -24,7 +24,31 @@ system:
         units: inst
         concentration: false
         override: false
-      effects: []
+      effects:
+        - _id: YwUpMJumxsBdPokt
+          level:
+            min: null
+            max: null
+        - _id: kIoA9ADQNaqlHMAn
+          level:
+            min: null
+            max: null
+        - _id: wrDlA7paHGaVXanM
+          level:
+            min: null
+            max: null
+        - _id: n4aYlmk2wskY83R8
+          level:
+            min: null
+            max: null
+        - _id: NGlghVsJ9SDsNrgH
+          level:
+            min: null
+            max: null
+        - _id: Eq91b6KJhZk6Nu3a
+          level:
+            min: null
+            max: null
       flags: {}
       range:
         units: ft
@@ -39,10 +63,10 @@ system:
         affects:
           choice: false
           type: ally
-          count: ''
+          count: '1'
           special: ''
         override: false
-        prompt: true
+        prompt: false
       uses:
         spent: 0
         recovery: []
@@ -56,9 +80,9 @@ system:
         requireMagic: false
         identifier: ''
       roll:
-        prompt: false
+        prompt: true
         visible: false
-        name: ''
+        name: Tip of the Spear
         formula: 1d6
       useConditionText: ''
       useConditionReason: ''
@@ -92,7 +116,7 @@ system:
         otherActivityAsParentType: true
         identifier: ''
         displayActivityName: false
-        rollMode: default
+        rollMode: publicroll
         chooseEffects: false
         toggleEffect: false
         ignoreFullCover: false
@@ -138,7 +162,10 @@ system:
       Rolls.</p></td></tr><tr><td
       data-colwidth="31"><p>5</p></td><td><p>Critical Range increased by
       1.</p></td></tr><tr><td data-colwidth="31"><p>6</p></td><td><p>Whenever
-      they gain a Skill Point, they gain 1 more.</p></td></tr></tbody></table>
+      they gain a Skill Point, they gain 1
+      more.</p></td></tr></tbody></table><p><strong>Partially
+      Automated:</strong> midi-qol activity to roll dice, effect with 1 round
+      duration. Not sure what else needs to be done here.</p>
     chat: >-
       <p>Choose an allied Creature you can see within 60 feet; roll 1d6 and
       apply the corresponding effect to them until the start of your next Turn;
@@ -170,7 +197,323 @@ system:
   type:
     value: class
     subtype: ''
-effects: []
+effects:
+  - name: 'Tip of the Spear: Damage'
+    img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    transfer: false
+    _id: YwUpMJumxsBdPokt
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>Additional Damage equal to your Proficiency Bonus on one Damage Roll of
+      their choice.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1782082481820
+      modifiedTime: 1782083283583
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!3adNYxcbua5q0S6i.YwUpMJumxsBdPokt'
+  - name: 'Tip of the Spear: Heal'
+    img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    transfer: false
+    _id: kIoA9ADQNaqlHMAn
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: >-
+      <p>They gain [[/roll 1d6]] Temporary Hit Points; these Hit Points are
+      additive with any Temporary Hit Points they already have.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1782082482609
+      modifiedTime: 1782083313849
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!3adNYxcbua5q0S6i.kIoA9ADQNaqlHMAn'
+  - name: 'Tip of the Spear: Speed'
+    img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    transfer: false
+    _id: wrDlA7paHGaVXanM
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.movement.all
+        mode: 0
+        value: '+10'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: <p>Speed increased by 10 feet.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1782082483024
+      modifiedTime: 1782083166703
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!3adNYxcbua5q0S6i.wrDlA7paHGaVXanM'
+  - name: 'Tip of the Spear: Attack'
+    img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    transfer: false
+    _id: n4aYlmk2wskY83R8
+    type: base
+    system: {}
+    changes:
+      - key: system.bonuses.All-Attacks
+        mode: 2
+        value: '2'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: <p>+2 Bonus to Attack Rolls.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1782082483500
+      modifiedTime: 1782083197048
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!3adNYxcbua5q0S6i.n4aYlmk2wskY83R8'
+  - name: 'Tip of the Spear: Critical'
+    img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    transfer: false
+    _id: NGlghVsJ9SDsNrgH
+    type: base
+    system: {}
+    changes:
+      - key: flags.automated-conditions-5e.attack.criticalThreshold
+        mode: 2
+        value: '-1'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: <p>Critical Range increased by 1.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1782082483907
+      modifiedTime: 1782083276209
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!3adNYxcbua5q0S6i.NGlghVsJ9SDsNrgH'
+  - name: 'Tip of the Spear: Skill'
+    img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    transfer: false
+    _id: Eq91b6KJhZk6Nu3a
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: <p>Whenever they gain a Skill Point, they gain 1 more.</p>
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1782082627647
+      modifiedTime: 1782083350567
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!3adNYxcbua5q0S6i.Eq91b6KJhZk6Nu3a'
 sort: 300000
 ownership:
   default: 0
@@ -187,6 +530,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774569700077
-  modifiedTime: 1775163724676
+  modifiedTime: 1782083445915
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!3adNYxcbua5q0S6i'
