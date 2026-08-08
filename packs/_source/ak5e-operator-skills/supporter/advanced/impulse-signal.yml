@@ -1,0 +1,232 @@
+folder: xVeaYDqngTsmNvFl
+name: Impulse Signal
+type: feat
+img: modules/AK5e-Foundry-Module/icons/Skill-Firewatch2.webp
+system:
+  activities:
+    41ywV9cPTqDNtfKo:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '30'
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        concentration: false
+        override: false
+        value: '2'
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '100'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: sphere
+          stationary: false
+          count: ''
+          size: '20'
+        affects:
+          choice: false
+          type: ''
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: true
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+        rollAs: target
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: ''
+      img: ''
+      _id: 41ywV9cPTqDNtfKo
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
+      SP</p></td><td><p>Charging</p></td><td><p>Activation</p></td><td><p>Duration</p></td></tr></thead><tbody><tr><td><p>30</p></td><td><p>15</p></td><td><p>Automatic</p></td><td><p>Action</p></td><td><p>2
+      rounds</p></td></tr></tbody></table><p><strong>Effect: </strong>You create
+      a zone of amplification in a 20-foot-radius sphere centred on a location
+      you can see within 100 feet. When you create this zone, choose an Arts
+      Damage Type. When a Creature takes Damage of the chosen Type while within
+      that area, it takes additional Damage of that type equal to one roll of
+      your Aid Die. Once a Creature has taken this additional Damage, it cannot
+      take it again until the beginning of your next Turn. You can expend an
+      Action during your Turn to extend the duration of this Operator Skill by 1
+      Round, up to a maximum of 5 Rounds; when you do so, you may also move the
+      sphere to a different location you can see within 100
+      feet.</p><p><strong>Not Automated.</strong></p>
+    chat: ''
+  identifier: impulse-signal
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 7
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: opSkill
+effects:
+  - name: Impulse Signal (Skill Points)
+    img: modules/AK5e-Foundry-Module/icons/Skill-TheThunderbringer2.webp
+    origin: Compendium.AK5e.ak5e-operator-skills.Item.NjMtgX86yA1g8ed0
+    _id: MGt6P6pEfsqHa7Es
+    type: base
+    system: {}
+    changes:
+      - key: system.scale.skillPoints.recovery
+        mode: 4
+        value: '15'
+        priority: 20
+      - key: system.scale.skillPoints.maxsp
+        mode: 4
+        value: '30'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      automated-conditions-5e:
+        ac5eChangeRows: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.3.0
+      lastModifiedBy: null
+    _key: '!items.effects!NjMtgX86yA1g8ed0.MGt6P6pEfsqHa7Es'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.3.0
+  createdTime: 1785598440263
+  modifiedTime: 1785598440263
+  lastModifiedBy: 27ikDz77N89hVLvM
+ownership:
+  default: 0
+  27ikDz77N89hVLvM: 3
+_id: NjMtgX86yA1g8ed0
+sort: 179688
+_key: '!items!NjMtgX86yA1g8ed0'

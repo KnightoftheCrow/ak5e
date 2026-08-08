@@ -1,0 +1,119 @@
+folder: LU5ddHrrbI4uOI1W
+name: Extra Attack (Module)
+type: feat
+img: modules/AK5e-Foundry-Module/icons/Skill-BluePoison1.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module: </strong>You have a +1 to Attack and Damage Rolls for
+      non-Spell Attacks.</p><p><strong>Automated: </strong>The bonus to
+      corresponding Attack and Damage Rolls is automatically applied.</p>
+    chat: ''
+  identifier: extra-attack-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - extra-attack
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: skillPoints
+effects:
+  - name: +1 to non-Spell Attack and Damage Rolls
+    img: modules/AK5e-Foundry-Module/icons/Skill-BluePoison1.png
+    origin: Compendium.AK5e.ak5e-talents.Item.DsSDu4L8qOhdVIg1
+    _id: euy312yoliFYAG6t
+    type: base
+    system: {}
+    changes:
+      - key: system.bonuses.mwak.attack
+        mode: 2
+        value: '1'
+        priority: 20
+      - key: system.bonuses.mwak.damage
+        mode: 2
+        value: '1'
+        priority: 20
+      - key: system.bonuses.rwak.attack
+        mode: 2
+        value: '1'
+        priority: 20
+      - key: system.bonuses.rwak.damage
+        mode: 2
+        value: '1'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.3.0
+      lastModifiedBy: null
+    _key: '!items.effects!DsSDu4L8qOhdVIg1.euy312yoliFYAG6t'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.3.0
+  createdTime: 1785598389828
+  modifiedTime: 1785598389828
+  lastModifiedBy: 27ikDz77N89hVLvM
+ownership:
+  default: 0
+  27ikDz77N89hVLvM: 3
+_id: DsSDu4L8qOhdVIg1
+sort: 150000
+_key: '!items!DsSDu4L8qOhdVIg1'
