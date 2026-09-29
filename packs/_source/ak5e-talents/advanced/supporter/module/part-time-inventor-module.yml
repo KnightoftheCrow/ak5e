@@ -1,0 +1,106 @@
+folder: LU5ddHrrbI4uOI1W
+name: Part-Time Inventor (Module)
+type: feat
+img: modules/AK5e-Foundry-Module/icons/Skill-TacticalEquipmentToolbox.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module:</strong> Your maximum number of Inventions becomes
+      2.</p>
+    chat: ''
+  identifier: part-time-inventor-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - part-time-inventor
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Part-Time Inventor (Module)
+    img: modules/AK5e-Foundry-Module/icons/Skill-TacticalEquipmentToolbox.png
+    origin: Compendium.AK5e.ak5e-talents.Item.1Tp3kDQf97s26FpV
+    _id: JX2jU1CEK8woPShl
+    type: base
+    system: {}
+    changes:
+      - key: system.scale.part-time-inventor.invent
+        mode: 5
+        value: '2'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.3.0
+      lastModifiedBy: null
+    _key: '!items.effects!1Tp3kDQf97s26FpV.JX2jU1CEK8woPShl'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.3.0
+  createdTime: 1785598389828
+  modifiedTime: 1785598389828
+  lastModifiedBy: 27ikDz77N89hVLvM
+ownership:
+  default: 0
+  27ikDz77N89hVLvM: 3
+_id: 1Tp3kDQf97s26FpV
+sort: 100782
+_key: '!items!1Tp3kDQf97s26FpV'

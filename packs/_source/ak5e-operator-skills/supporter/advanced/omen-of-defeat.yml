@@ -1,0 +1,230 @@
+folder: xVeaYDqngTsmNvFl
+name: Omen of Defeat
+type: feat
+img: modules/AK5e-Foundry-Module/icons/Skill-Nymph2.webp
+system:
+  activities:
+    KogGg0goHm4NSqKX:
+      type: utility
+      sort: 0
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '30'
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        concentration: false
+        override: false
+        value: '5'
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '100'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+          count: ''
+          size: '10'
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: true
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+        rollAs: target
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: ''
+      img: ''
+      _id: KogGg0goHm4NSqKX
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
+      SP</p></td><td><p>Charging</p></td><td><p>Activation</p></td><td><p>Duration</p></td></tr></thead><tbody><tr><td><p>30</p></td><td><p>25</p></td><td><p>Automatic</p></td><td><p>Reaction</p></td><td><p>5
+      rounds</p></td></tr></tbody></table><p><strong>Effect:</strong> When a
+      Creature within 100 feet of you that you can see takes Damage while it has
+      less than 50% of its maximum Hit Points, you can apply an Omen of Defeat
+      to that Creature. When a Creature with an Omen of Defeat takes Damage,
+      they take additional Psychic Damage equal to your Proficiency Bonus. A
+      Creature affected by Omen of Defeat can make a Charisma Saving Throw
+      against your Spell Save DC at the end of each of their Turns, removing the
+      Omen of Defeat on a success. A Creature can only be affected by one Omen
+      of Defeat at a time.</p><p><strong>Not Automated.</strong></p>
+    chat: ''
+  identifier: omen-of-defeat
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 7
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: opSkill
+effects:
+  - name: Omen of Defeat (Skill Points)
+    img: modules/AK5e-Foundry-Module/icons/Skill-Nymph2.webp
+    origin: Compendium.AK5e.ak5e-operator-skills.Item.LtKxe1MXo70GYv4g
+    _id: 1xxC7VKvL8F7tML0
+    type: base
+    system: {}
+    changes:
+      - key: system.scale.skillPoints.recovery
+        mode: 4
+        value: '25'
+        priority: 20
+      - key: system.scale.skillPoints.maxsp
+        mode: 4
+        value: '30'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      automated-conditions-5e:
+        ac5eChangeRows: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.3.0
+      lastModifiedBy: null
+    _key: '!items.effects!LtKxe1MXo70GYv4g.1xxC7VKvL8F7tML0'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.3.0
+  createdTime: 1785598440263
+  modifiedTime: 1785604042751
+  lastModifiedBy: 27ikDz77N89hVLvM
+ownership:
+  default: 0
+  27ikDz77N89hVLvM: 3
+_id: LtKxe1MXo70GYv4g
+sort: 300000
+_key: '!items!LtKxe1MXo70GYv4g'

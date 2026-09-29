@@ -1,0 +1,228 @@
+folder: sklYDFVtnHmCnTNA
+name: Gravitic Warp
+type: feat
+img: modules/AK5e-Foundry-Module/icons/Skill-Mostima3.webp
+system:
+  activities:
+    pyTaehMfslGbJyBo:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '80'
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        concentration: false
+        override: false
+        value: '4'
+      effects: []
+      flags: {}
+      range:
+        units: spec
+        override: false
+        special: Point you can see.
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: sphere
+          stationary: false
+          size: '20'
+          count: ''
+        affects:
+          choice: false
+          type: space
+          special: ''
+          count: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: true
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+        rollAs: target
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: ''
+      img: ''
+      _id: pyTaehMfslGbJyBo
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
+      SP</p></td><td><p>Charging</p></td><td><p>Activation</p></td><td><p>Duration</p></td></tr></thead><tbody><tr><td><p>80</p></td><td><p>40</p></td><td><p>Automatic</p></td><td><p>Action</p></td><td><p>4
+      Rounds</p></td></tr></tbody></table><p><strong>Effect: </strong>You create
+      a 20-foot-radius sphere of spatial manipulation Arts centred on a point
+      you can see. For the duration, when a Creature would move while within the
+      area, they must make an Intelligence Saving Throw against your Martial DC.
+      On a failed Save, they take 6d6 Force Damage, and their Speed is reduced
+      to 0 until the beginning of their next Turn. On a successful Save, they
+      take half as much Damage, and their Speed is halved until the beginning of
+      their next Turn.</p><p><strong>Not Automated.</strong></p>
+    chat: ''
+  identifier: gravitic-warp
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 14
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: opSkill
+effects:
+  - name: Gravitic Warp (Skill Points)
+    img: modules/AK5e-Foundry-Module/icons/Skill-Mostima3.webp
+    origin: Compendium.AK5e.ak5e-operator-skills.Item.jvPybKBbVZKSDm3l
+    _id: aTZ4S7PUW8Dll4nS
+    type: base
+    system: {}
+    changes:
+      - key: system.scale.skillPoints.recovery
+        mode: 4
+        value: '40'
+        priority: 20
+      - key: system.scale.skillPoints.maxsp
+        mode: 4
+        value: '80'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      automated-conditions-5e:
+        ac5eChangeRows: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.3.0
+      lastModifiedBy: null
+    _key: '!items.effects!jvPybKBbVZKSDm3l.aTZ4S7PUW8Dll4nS'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.3.0
+  createdTime: 1785598440263
+  modifiedTime: 1785598440263
+  lastModifiedBy: 27ikDz77N89hVLvM
+ownership:
+  default: 0
+  27ikDz77N89hVLvM: 3
+_id: jvPybKBbVZKSDm3l
+sort: 300000
+_key: '!items!jvPybKBbVZKSDm3l'
