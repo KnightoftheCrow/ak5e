@@ -1,0 +1,70 @@
+folder: 8aeUmouRmnyu4sq2
+name: Hidden Technique
+type: feat
+_id: jydTTrSgiYRXgeLf
+img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '2'
+  advancement:
+    - type: ScaleValue
+      _id: PGIRntvbxTOYaKDq
+      configuration:
+        identifier: ''
+        type: string
+        distance:
+          units: ''
+        scale:
+          '9':
+            value: '2'
+      value: {}
+      title: Grit
+      hint: ''
+  description:
+    value: >-
+      <p>You gain 2 Grit Points, and learn 3 Basic Brawler Techniques of your
+      choice from the Brawler Branch of the Guard Class. You recover all
+      expended Grit whenever you finish a Short or Long
+      Rest.</p><p><strong>Module: </strong>You gain 1 additional Grit Point, and
+      learn 2 more Techniques.</p>
+    chat: ''
+  identifier: hidden-technique
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: ''
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774656566491
+  modifiedTime: 1791133561474
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+_key: '!items!jydTTrSgiYRXgeLf'

@@ -1,0 +1,227 @@
+folder: GCtf0IxJGGSoQmbP
+name: Crash and Bash
+type: feat
+_id: Fc2U3ZIpoSZxf0h1
+img: modules/ak5e/icons/skill_icon_skchr_poncirus_2.png
+system:
+  activities:
+    x2D1sW6inawKXJa7:
+      type: utility
+      _id: x2D1sW6inawKXJa7
+      sort: 0
+      activation:
+        type: ''
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: S1BuDfs1s83mJ9M7
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Mark for Elimination
+      img: ''
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement:
+    - type: Trait
+      _id: YuHSrrkCUYEJnASm
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - weapon:hvm
+        mode: default
+      level: 1
+      title: Additional Weapon Proficiencies
+      hint: ''
+      value: {}
+  description:
+    value: >-
+      <p>You are not a typical Vanguard, and prefer a much more direct approach
+      to the idea of “guiding allies”. You gain the following
+      benefits:</p><p><strong>Additional Weapon Proficiencies.</strong> You gain
+      Proficiency with Heavy Melee Weapons.</p><p><strong>Mark for
+      Elimination.</strong> When you deal Damage to a Creature, you mark that
+      Creature until the beginning of your next Turn. If a Marked Creature is
+      reduced to 0 Hit Points, you can immediately use your Tip of the Spear
+      Feature (no Action required).</p><p><strong>Partially automated:</strong>
+      Weapon Proficiencies, effect for Marked creature.</p>
+    chat: ''
+  identifier: crash-and-bash
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: ''
+    subtype: ''
+effects:
+  - name: Marked for Elimination
+    img: modules/ak5e/icons/skill_icon_skchr_poncirus_2.png
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.Fc2U3ZIpoSZxf0h1
+    transfer: false
+    _id: S1BuDfs1s83mJ9M7
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1790906478872
+      modifiedTime: 1790906509096
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!Fc2U3ZIpoSZxf0h1.S1BuDfs1s83mJ9M7'
+sort: 0
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774579784405
+  modifiedTime: 1790906596041
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+_key: '!items!Fc2U3ZIpoSZxf0h1'

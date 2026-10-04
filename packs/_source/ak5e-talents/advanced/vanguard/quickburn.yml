@@ -1,0 +1,106 @@
+folder: 8aeUmouRmnyu4sq2
+name: Quickburn
+type: feat
+_id: U9RKHEPHheITSIok
+img: modules/ak5e/icons/skill_icon_skchr_eyjafjalla_2.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: []
+  description:
+    value: >-
+      <p>While your current Hit Points and Maximum Hit Points are the same, you
+      may add your Proficiency Bonus to all Attack Rolls you make. If you are
+      already adding your Proficiency Modifier, double your Proficiency Bonus
+      for those Attacks instead.</p><p><strong>Module:</strong> While your
+      current Hit Points and Maximum Hit Points are the same, you have +5 Bonus
+      to Initiative Rolls, and your Speed is increased by 10ft.</p>
+    chat: ''
+  identifier: quickburn
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: ''
+    subtype: ''
+effects:
+  - name: Quickburn
+    img: modules/ak5e/icons/skill_icon_skchr_eyjafjalla_2.png
+    origin: Compendium.ak5e.ak5e-talents.Item.U9RKHEPHheITSIok
+    _id: zPzry6ReHUy46lcT
+    type: base
+    system: {}
+    changes:
+      - key: system.bonuses.All-Attacks
+        mode: 2
+        value: '@prof'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: system.attributes.hp.value!=system.attributes.hp.max
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1791133667395
+      modifiedTime: 1791133758809
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!U9RKHEPHheITSIok.zPzry6ReHUy46lcT'
+sort: 0
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774656640284
+  modifiedTime: 1774992055018
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+_key: '!items!U9RKHEPHheITSIok'
