@@ -7,8 +7,10 @@ system:
   activities: {}
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@prof'
   advancement: []
   description:
     value: >-
@@ -51,6 +53,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774656527100
-  modifiedTime: 1774991532896
+  modifiedTime: 1791133082473
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!LzRPQ4CbuElVYKDS'

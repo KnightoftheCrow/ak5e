@@ -4,7 +4,116 @@ type: feat
 _id: HPkO1mggfBS8Nxxp
 img: modules/ak5e/icons/skill_icon_skchr_beehunter_1.png
 system:
-  activities: {}
+  activities:
+    se38NTjPFC0sSEbU:
+      type: utility
+      _id: se38NTjPFC0sSEbU
+      sort: 0
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '10'
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        concentration: false
+        override: false
+        value: '3'
+      effects:
+        - _id: y331pEXpQHIdantR
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: ''
+      img: ''
   uses:
     spent: 0
     recovery: []
@@ -15,7 +124,8 @@ system:
       <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
       SP</p></td><td><p>Charging</p></td><td><p>Activation</p></td><td><p>Duration</p></td></tr></thead><tbody><tr><td><p>10</p></td><td><p>5</p></td><td><p>Defensive</p></td><td><p>Reaction</p></td><td><p>3
       Rounds</p></td></tr></tbody></table><p>Your Armour Class is increased by a
-      value equal to your Proficiency Bonus.</p>
+      value equal to your Proficiency
+      Bonus.</p><p><strong>Automated.</strong></p>
     chat: ''
   identifier: feature
   source:
@@ -32,7 +142,61 @@ system:
   type:
     value: ''
     subtype: ''
-effects: []
+effects:
+  - name: Evasive Stance
+    img: modules/ak5e/icons/skill_icon_skchr_beehunter_1.png
+    origin: Compendium.ak5e.ak5e-operator-skills.Item.HPkO1mggfBS8Nxxp
+    transfer: false
+    _id: y331pEXpQHIdantR
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '@prof'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1790901246618
+      modifiedTime: 1790901310080
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!HPkO1mggfBS8Nxxp.y331pEXpQHIdantR'
 sort: 200000
 ownership:
   default: 0
@@ -49,6 +213,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774575705908
-  modifiedTime: 1774991313743
+  modifiedTime: 1790901326344
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!HPkO1mggfBS8Nxxp'

@@ -4,7 +4,132 @@ type: feat
 _id: vAred5MHmIrgisse
 img: modules/ak5e/icons/skill_icon_skchr_cantabile_2.png
 system:
-  activities: {}
+  activities:
+    UCWnCuQSTY9rOKLk:
+      type: save
+      _id: UCWnCuQSTY9rOKLk
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '80'
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 8
+            denomination: 12
+            bonus: ''
+            types:
+              - slashing
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      friendlySave: default
+      name: ''
+      img: ''
   uses:
     spent: 0
     recovery: []
@@ -18,7 +143,8 @@ system:
       within 5-feet of that Creature; they then must make a Constitution Saving
       Throw against your Martial DC, taking 8d12 Slashing Damage on a failed
       Save, or half as much on a successful one. If this Damage reduces the
-      Creature to less than 50 Hit Points, they die.</p>
+      Creature to less than 50 Hit Points, they die.</p><p><strong>Partially
+      Automated: </strong>movement and death are manual.</p>
     chat: ''
   identifier: feature-16
   source:
@@ -52,6 +178,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774657022837
-  modifiedTime: 1774991413962
+  modifiedTime: 1790904332316
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!vAred5MHmIrgisse'

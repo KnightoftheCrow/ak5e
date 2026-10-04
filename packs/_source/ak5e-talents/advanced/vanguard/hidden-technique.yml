@@ -7,9 +7,24 @@ system:
   activities: {}
   uses:
     spent: 0
-    recovery: []
-    max: ''
-  advancement: []
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '2'
+  advancement:
+    - type: ScaleValue
+      _id: PGIRntvbxTOYaKDq
+      configuration:
+        identifier: ''
+        type: string
+        distance:
+          units: ''
+        scale:
+          '9':
+            value: '2'
+      value: {}
+      title: Grit
+      hint: ''
   description:
     value: >-
       <p>You gain 2 Grit Points, and learn 3 Basic Brawler Techniques of your
@@ -50,6 +65,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774656566491
-  modifiedTime: 1774991802940
+  modifiedTime: 1791133561474
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!jydTTrSgiYRXgeLf'

@@ -4,7 +4,134 @@ type: feat
 _id: gTaJbzpJt6OxU0oC
 img: modules/ak5e/icons/skill_icon_skchr_vigna_2.png
 system:
-  activities: {}
+  activities:
+    KYFEtzKNh50P5qX6:
+      type: save
+      _id: KYFEtzKNh50P5qX6
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '20'
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: line
+          size: '30'
+          width: '10'
+          count: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 6
+            bonus: ''
+            types:
+              - bludgeoning
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      friendlySave: default
+      name: ''
+      img: ''
   uses:
     spent: 0
     recovery: []
@@ -19,7 +146,8 @@ system:
       Creatures within the area must make a Strength Saving Throw against your
       Martial DC. On a failed Save, they take 3d6 Bludgeoning Damage and are
       knocked 20 feet in the same direction you moved. On a successful Save,
-      they take half as much Damage, and are not moved.</p>
+      they take half as much Damage, and are not moved.</p><p><strong>Partially
+      Automated:</strong> Movement and push are manual.</p>
     chat: ''
   identifier: feature
   source:
@@ -42,9 +170,7 @@ ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
@@ -53,6 +179,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774575682436
-  modifiedTime: 1774848461174
+  modifiedTime: 1790902368091
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!gTaJbzpJt6OxU0oC'

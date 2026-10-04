@@ -4,7 +4,116 @@ type: feat
 _id: M64ZUmdzXcGVS4Wy
 img: modules/ak5e/icons/skill_icon_skchr_coldshot_2.png
 system:
-  activities: {}
+  activities:
+    0xQzI3Y3thsGtSC7:
+      type: utility
+      _id: 0xQzI3Y3thsGtSC7
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '35'
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        concentration: false
+        override: false
+        value: '3'
+      effects:
+        - _id: 9kWG9sEu1P72DE6n
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: ''
+      img: ''
   uses:
     spent: 0
     recovery: []
@@ -18,7 +127,8 @@ system:
       duration, whenever you take the Attack Action, you may make an additional
       Melee Attack as part of that Action. In addition, the Critical Range of
       Melee Attacks you make while this Skill is Active is increased by 1.
-      However, your Armour Class is reduced by 5.</p>
+      However, your Armour Class is reduced by 5.</p><p><strong>Partially
+      automated: </strong>critical range and AC.</p>
     chat: ''
   identifier: feature-11
   source:
@@ -35,7 +145,65 @@ system:
   type:
     value: ''
     subtype: ''
-effects: []
+effects:
+  - name: Drunken Blade Dance
+    img: modules/ak5e/icons/skill_icon_skchr_coldshot_2.png
+    origin: Compendium.ak5e.ak5e-operator-skills.Item.M64ZUmdzXcGVS4Wy
+    transfer: false
+    _id: 9kWG9sEu1P72DE6n
+    type: base
+    system: {}
+    changes:
+      - key: flags.automated-conditions-5e.attack.criticalThreshold
+        mode: 2
+        value: threshold=-1;actionType.mwak;actionType.msak
+        priority: 20
+      - key: system.attributes.ac.bonus
+        mode: 2
+        value: '-5'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: 3
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1790902544267
+      modifiedTime: 1790903542248
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!M64ZUmdzXcGVS4Wy.9kWG9sEu1P72DE6n'
 sort: 0
 ownership:
   default: 0
@@ -52,6 +220,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774656992175
-  modifiedTime: 1774991356161
+  modifiedTime: 1790902717903
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!M64ZUmdzXcGVS4Wy'

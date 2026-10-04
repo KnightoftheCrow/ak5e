@@ -4,11 +4,120 @@ type: feat
 _id: 6jW8NThMYTYy36YR
 img: modules/ak5e/icons/skill_icon_skchr_hoolheyak_2.png
 system:
-  activities: {}
+  activities:
+    1bKLOHmP3WfR1Jqt:
+      type: utility
+      _id: 1bKLOHmP3WfR1Jqt
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: activityUses
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: cube
+          size: '15'
+          count: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Place Zone
+      img: ''
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '@prof'
   advancement: []
   description:
     value: >-
@@ -70,7 +179,8 @@ system:
       have been Attacked since the end of the end of the allied Creature’s last
       Turn. If they already have Advantage, that Attack instead deals 1d8
       additional Damage; this additional Damage can only be dealt once per
-      Turn.</p></td></tr></tbody></table><p><strong>Not automated.</strong></p>
+      Turn.</p></td></tr></tbody></table><p><strong>Partially
+      Automated:</strong> zone placement.</p>
     chat: ''
   identifier: strategic-genius
   source:
@@ -104,6 +214,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774580017316
-  modifiedTime: 1782088721417
+  modifiedTime: 1791132535946
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!6jW8NThMYTYy36YR'

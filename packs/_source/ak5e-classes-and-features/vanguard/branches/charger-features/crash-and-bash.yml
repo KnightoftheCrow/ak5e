@@ -25,7 +25,8 @@ system:
         concentration: false
         override: false
         value: '1'
-      effects: []
+      effects:
+        - _id: S1BuDfs1s83mJ9M7
       flags: {}
       range:
         units: self
@@ -137,7 +138,7 @@ system:
       Creature until the beginning of your next Turn. If a Marked Creature is
       reduced to 0 Hit Points, you can immediately use your Tip of the Spear
       Feature (no Action required).</p><p><strong>Partially automated:</strong>
-      Weapon Proficiencies, and midi-qol acitivity for Mark.</p>
+      Weapon Proficiencies, effect for Marked creature.</p>
     chat: ''
   identifier: crash-and-bash
   source:
@@ -154,7 +155,57 @@ system:
   type:
     value: ''
     subtype: ''
-effects: []
+effects:
+  - name: Marked for Elimination
+    img: modules/ak5e/icons/skill_icon_skchr_poncirus_2.png
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.Fc2U3ZIpoSZxf0h1
+    transfer: false
+    _id: S1BuDfs1s83mJ9M7
+    type: base
+    system: {}
+    changes: []
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1790906478872
+      modifiedTime: 1790906509096
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!Fc2U3ZIpoSZxf0h1.S1BuDfs1s83mJ9M7'
 sort: 0
 ownership:
   default: 0
@@ -171,6 +222,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579784405
-  modifiedTime: 1782087333866
+  modifiedTime: 1790906596041
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!Fc2U3ZIpoSZxf0h1'

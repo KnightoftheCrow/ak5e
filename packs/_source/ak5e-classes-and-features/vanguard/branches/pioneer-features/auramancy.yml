@@ -9,7 +9,22 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement:
+    - type: ScaleValue
+      _id: 6GRKOIuyqoMsMLfk
+      configuration:
+        identifier: ''
+        type: number
+        distance:
+          units: ''
+        scale:
+          '1':
+            value: 15
+          '13':
+            value: 30
+      value: {}
+      title: Range
+      hint: ''
   description:
     value: >-
       <p>You project an Aura in a 15-foot-radius around yourself that moves with
@@ -57,7 +72,7 @@ system:
   prerequisites:
     items: []
     repeatable: false
-    level: null
+    level: 1
   properties: []
   requirements: ''
   type:
@@ -80,6 +95,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579839046
-  modifiedTime: 1782087556063
+  modifiedTime: 1790908799183
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!tzagb5wHYy43srsO'

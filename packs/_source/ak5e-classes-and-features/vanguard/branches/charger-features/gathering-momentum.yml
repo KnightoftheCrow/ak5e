@@ -4,12 +4,248 @@ type: feat
 _id: IKf5nW9VCsqZ83tR
 img: modules/ak5e/icons/skill_icon_skchr_almond_2.png
 system:
-  activities: {}
+  activities:
+    OOGO6DngjQx4XWXw:
+      type: utility
+      _id: OOGO6DngjQx4XWXw
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: activityUses
+            value: '-1'
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Couch
+      img: ''
+    7Ux5ZOOuFHhvcdTe:
+      type: damage
+      _id: 7Ux5ZOOuFHhvcdTe
+      sort: 0
+      activation:
+        type: ''
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: activityUses
+            value: '6'
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@item.uses.value*@scale.gathering-momentum.dice'
+            number: null
+            denomination: null
+            bonus: ''
+            types: []
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      name: Momentous Strike
+      img: ''
   uses:
-    spent: 0
-    recovery: []
-    max: ''
-  advancement: []
+    spent: null
+    recovery:
+      - period: initiative
+        type: formula
+        formula: '1'
+    max: '6'
+  advancement:
+    - type: ScaleValue
+      _id: erX93APmlAhx9BG5
+      configuration:
+        identifier: dice
+        type: string
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: d6
+          '7':
+            value: d8
+          '14':
+            value: d10
+      value: {}
+      title: Strike Dice
+      hint: ''
   description:
     value: >-
       <p>As the battle wears on, you build up pace for a spine-shattering blow,
@@ -30,7 +266,8 @@ system:
       expend all your Momentum to make a single potent strike into which you put
       your all. This Attack deals 1d6 additional Weapon Damage for each Momentum
       expended. This is increased to 1d8 at 7th Level, and 1d10 at 14th
-      Level.</p><p><strong>Not automated.</strong></p>
+      Level.</p><p><strong>Partially Automated: </strong>Momentum starts at 1 on
+      initiative, but adding and removing is up to the player.</p>
     chat: ''
   identifier: gathering-momentum
   source:
@@ -64,6 +301,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774579776927
-  modifiedTime: 1782087365570
+  modifiedTime: 1790906435336
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!IKf5nW9VCsqZ83tR'

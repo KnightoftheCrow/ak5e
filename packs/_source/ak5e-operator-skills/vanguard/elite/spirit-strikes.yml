@@ -4,7 +4,115 @@ type: feat
 _id: RcGTB6QexL16FTBQ
 img: modules/ak5e/icons/skill_icon_skchr_saga_2.png
 system:
-  activities: {}
+  activities:
+    NpBP37c3E0RoVy2U:
+      type: utility
+      _id: NpBP37c3E0RoVy2U
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '80'
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        concentration: false
+        override: false
+        value: '5'
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: ''
+      img: ''
   uses:
     spent: 0
     recovery: []
@@ -19,7 +127,8 @@ system:
       subsequent Turns for the duration, you may make a Melee Attack; this
       Attack has 5 feet of additional Reach, and has its Damage converted to
       Force Damage. Additionally, if the Attack hits a Creature that has less
-      than half of its maximum Hit Points, that Attack deals Damage twice.</p>
+      than half of its maximum Hit Points, that Attack deals Damage
+      twice.</p><p><strong>Not automated.</strong></p>
     chat: ''
   identifier: feature-19
   source:
@@ -53,6 +162,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774657029607
-  modifiedTime: 1774849800310
+  modifiedTime: 1790904582468
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!RcGTB6QexL16FTBQ'

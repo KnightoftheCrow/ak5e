@@ -34,7 +34,57 @@ system:
   type:
     value: ''
     subtype: ''
-effects: []
+effects:
+  - name: Quickburn
+    img: modules/ak5e/icons/skill_icon_skchr_eyjafjalla_2.png
+    origin: Compendium.ak5e.ak5e-talents.Item.U9RKHEPHheITSIok
+    _id: zPzry6ReHUy46lcT
+    type: base
+    system: {}
+    changes:
+      - key: system.bonuses.All-Attacks
+        mode: 2
+        value: '@prof'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: system.attributes.hp.value!=system.attributes.hp.max
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1791133667395
+      modifiedTime: 1791133758809
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!U9RKHEPHheITSIok.zPzry6ReHUy46lcT'
 sort: 0
 ownership:
   default: 0

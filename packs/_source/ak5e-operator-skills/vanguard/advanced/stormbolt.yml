@@ -4,7 +4,132 @@ type: feat
 _id: jLtKbjSMOHfX6RWx
 img: modules/ak5e/icons/skill_icon_skchr_vulpisfoglia_1.png
 system:
-  activities: {}
+  activities:
+    BjzAoP98l7EoaRI4:
+      type: save
+      _id: BjzAoP98l7EoaRI4
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '40'
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 6
+            denomination: 10
+            bonus: ''
+            types:
+              - lightning
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      friendlySave: default
+      name: ''
+      img: ''
   uses:
     spent: 0
     recovery: []
@@ -17,7 +142,8 @@ system:
       a Creature you can see within 60 feet; that Creature must make a Dexterity
       Saving Throw against your Martial DC as electricity sparks from you to
       them in a powerful bolt. On a failed Save, they take 6d10 Lightning
-      Damage. On a successful Save, they take half as much Damage.</p>
+      Damage. On a successful Save, they take half as much
+      Damage.</p><p><strong>Automated.</strong></p>
     chat: ''
   identifier: feature-6
   source:
@@ -51,6 +177,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774656980834
-  modifiedTime: 1774991363739
+  modifiedTime: 1790903793002
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!jLtKbjSMOHfX6RWx'

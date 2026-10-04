@@ -4,7 +4,117 @@ type: feat
 _id: BEIJzl4PcZztTKFT
 img: modules/ak5e/icons/skill_icon_skchr_wanqin_2.png
 system:
-  activities: {}
+  activities:
+    sXa8X7Qkn1DKwf8H:
+      type: utility
+      _id: sXa8X7Qkn1DKwf8H
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '20'
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        concentration: false
+        override: false
+        value: '2'
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: enemy
+          count: '4'
+          special: flying or moved more than 60 feet during their last Turn
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: ''
+      img: ''
   uses:
     spent: 0
     recovery: []
@@ -17,7 +127,8 @@ system:
       Rounds</p></td></tr></tbody></table><p>Choose up to four different
       Creatures you can see that are either flying or moved more than 60 feet
       during their last Turn; for the duration, the Speed of those Creatures is
-      halved, and Ranged Attacks against them have Advantage.</p>
+      halved, and Ranged Attacks against them have Advantage.</p><p><strong>Not
+      automated.</strong></p>
     chat: ''
   identifier: feature-6
   source:
@@ -51,6 +162,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774575748327
-  modifiedTime: 1774848501983
+  modifiedTime: 1790901830735
   lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!BEIJzl4PcZztTKFT'
