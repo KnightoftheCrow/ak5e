@@ -160,76 +160,124 @@ system:
 effects:
   - name: Filled Lungs
     img: icons/magic/water/water-elemental-blue-teeth.webp
-    origin: Item.C4aZaK1NOSXateMA
+    origin: null
     transfer: false
     _id: KqTGYZw8NAHR4s06
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.OverTime
-        mode: 5
-        value: |-
-          turn=start,
-          saveMagic=true,
-          actionSave=dialog,
-          label=Filled Lungs,
-          saveDC=@attributes.spell.dc,
-          saveRemove=true,
-          saveAbility=con
-        priority: 20
-      - key: system.attributes.movement.all
-        mode: 0
-        value: /2
-        priority: 20
-      - key: flags.midi-qol.disadvantage.ability.save.str
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.disadvantage.ability.save.dex
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.disadvantage.ability.save.int
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.disadvantage.ability.save.wis
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.disadvantage.ability.save.cha
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: system.abilities.str.check.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: system.abilities.dex.check.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: system.abilities.int.check.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: system.abilities.wis.check.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: system.abilities.cha.check.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          value: |-
+            turn=start,
+            saveMagic=true,
+            actionSave=dialog,
+            label=Filled Lungs,
+            saveDC=@attributes.spell.dc,
+            saveRemove=true,
+            saveAbility=con
+          priority: 20
+          type: override
+          phase: initial
+          _id: sIXfxavw7tyn08zo
+          conditions: '{}'
+          replacement: ''
+        - key: system.attributes.movement.all
+          value: /2
+          priority: 20
+          type: custom
+          phase: initial
+          _id: f5xIfeaeGWzXBO6B
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.disadvantage.ability.save.str
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: fhlBqX1sPufqzBPz
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.disadvantage.ability.save.dex
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: bQBt4TZBWQDHB2xc
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.disadvantage.ability.save.int
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: MvTFDB8DvyUtsR5X
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.disadvantage.ability.save.wis
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: yVKb6AQL6jo9hcFE
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.disadvantage.ability.save.cha
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: fi5hxItU5Gt8JKpb
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.str.check.roll.mode
+          value: -1
+          priority: 20
+          type: add
+          phase: initial
+          _id: EXmysjkV1vUUnkKp
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.dex.check.roll.mode
+          value: -1
+          priority: 20
+          type: add
+          phase: initial
+          _id: v7yuKs5AwC0ph9ab
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.int.check.roll.mode
+          value: -1
+          priority: 20
+          type: add
+          phase: initial
+          _id: ofnoZkLT66U4dCGa
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.wis.check.roll.mode
+          value: -1
+          priority: 20
+          type: add
+          phase: initial
+          _id: FNQF7puEH2eYbj5w
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.cha.check.roll.mode
+          value: -1
+          priority: 20
+          type: add
+          phase: initial
+          _id: IHheI39WRYN9JIdd
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.C4aZaK1NOSXateMA
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -259,10 +307,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108697
+      modifiedTime: 1791733108697
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!SPHd0vvTHQCsBvEg.KqTGYZw8NAHR4s06'
 flags:
   dnd5e:
@@ -273,12 +326,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108697
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

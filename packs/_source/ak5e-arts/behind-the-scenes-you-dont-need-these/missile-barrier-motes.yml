@@ -138,24 +138,27 @@ system:
 effects:
   - name: Missile Barrier Deflect
     img: icons/magic/light/projectile-smoke-blue-white.webp
-    origin: Compendium.ak5e.ak5e-arts.Item.S9bBvBQSRuoCG2Rh
+    origin: null
     _id: xJhV3kHC3xJYO1H9
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dm.midi.all
-        mode: 2
-        value: '-[[(1d4+1)*(@scaling)]]'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dm.midi.all
+          value: '-[[(1d4+1)*(@scaling)]]'
+          priority: 20
+          type: add
+          phase: initial
+          _id: aPVN8Bc38IggpmMY
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-arts.Item.S9bBvBQSRuoCG2Rh
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -180,12 +183,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
+      systemVersion: 6.0.6
       createdTime: 1758296490048
-      modifiedTime: 1758296530534
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      modifiedTime: 1791733108672
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!S9bBvBQSRuoCG2Rh.xJhV3kHC3xJYO1H9'
 sort: 0
 ownership:
@@ -200,10 +206,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758294164151
-  modifiedTime: 1758296784831
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108672
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!S9bBvBQSRuoCG2Rh'

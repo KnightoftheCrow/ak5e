@@ -381,25 +381,29 @@ system:
 effects:
   - name: Acid Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     _id: y4NuB6gb9hSGx5qW
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.acid
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.acid
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: pgSMumCFlxyCvRXh
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -427,31 +431,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108449
+      modifiedTime: 1791733108449
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.y4NuB6gb9hSGx5qW'
   - name: Bludgeoning Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.bludgeoning
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.bludgeoning
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: tXyQthWswGhZBlSF
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -479,32 +492,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108449
+      modifiedTime: 1791733108449
     _id: b4JzApwtqlxdVs63
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.b4JzApwtqlxdVs63'
   - name: Cold Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.cold
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.cold
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: uuZyxMbvvoHXYT3r
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -532,32 +554,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108449
+      modifiedTime: 1791733108449
     _id: ynDDF6sIzGCFtujd
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.ynDDF6sIzGCFtujd'
   - name: Fire Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.fire
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.fire
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: IfynsEqB0uWmNv9o
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -585,32 +616,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108450
+      modifiedTime: 1791733108450
     _id: JtQQjHXZhSjRQBYV
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.JtQQjHXZhSjRQBYV'
   - name: Force Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.force
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.force
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: cZxFB5HkdCAyGLSY
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -638,32 +678,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108450
+      modifiedTime: 1791733108450
     _id: t66gtifu4A0SeAe0
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.t66gtifu4A0SeAe0'
   - name: Lightning Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.lightning
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.lightning
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 64EPOMjfCLjN9uh1
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -691,32 +740,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108450
+      modifiedTime: 1791733108450
     _id: BTmRuDcDCPxNh5qh
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.BTmRuDcDCPxNh5qh'
   - name: Necrotic Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.necrotic
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.necrotic
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 12IGH3ueXbwtjX49
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -744,32 +802,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108450
+      modifiedTime: 1791733108450
     _id: tn47CTFliBLzpX52
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.tn47CTFliBLzpX52'
   - name: Piercing Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.piercing
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.piercing
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: rXIFQwgM1cjz1cfu
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -797,32 +864,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108450
+      modifiedTime: 1791733108450
     _id: sDda9xzMet4g7pTx
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.sDda9xzMet4g7pTx'
   - name: Poison Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.poison
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.poison
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 2HvwwUYf24v2SdiC
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -850,32 +926,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108450
+      modifiedTime: 1791733108450
     _id: FAkjzt2FLo0OhyoV
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.FAkjzt2FLo0OhyoV'
   - name: Psychic Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.psychic
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.psychic
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 4kdAdMKdRWGLdjng
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -903,32 +988,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108450
+      modifiedTime: 1791733108450
     _id: sysYg5lTIUnpQooH
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.sysYg5lTIUnpQooH'
   - name: Radiant Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.radiant
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.radiant
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 2efxmkIreXQ0nbxq
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -956,32 +1050,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108451
+      modifiedTime: 1791733108451
     _id: bkSdOJQZbXtB3uJJ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.bkSdOJQZbXtB3uJJ'
   - name: Slashing Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.slashing
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.slashing
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: xYRRCLjYLX2RIeUm
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1009,32 +1112,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108451
+      modifiedTime: 1791733108451
     _id: 2CRUjwadBuRAvfdI
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.2CRUjwadBuRAvfdI'
   - name: Thunder Resistance
     img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-    origin: Item.JztzfEqqM7QiFoxM
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.thunder
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.thunder
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: Pp9ZMR4k1zDZqnQE
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JztzfEqqM7QiFoxM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1062,11 +1174,16 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108451
+      modifiedTime: 1791733108451
     _id: CjLpuVP8xK3CZP4V
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JztzfEqqM7QiFoxM.CjLpuVP8xK3CZP4V'
 flags:
   dnd5e:
@@ -1077,12 +1194,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108449
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

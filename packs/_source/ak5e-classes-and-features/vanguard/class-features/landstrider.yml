@@ -1,0 +1,114 @@
+folder: OWQsMDjbSKqjD4Td
+name: Landstrider
+type: feat
+_id: WZw05t0Rl8sFlJC8
+img: modules/ak5e/icons/Skill-WildMane2.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>Your training as a Vanguard grants you the following
+      benefits:</p><p><strong>Speed Increase.</strong> Your Walking Speed is
+      increased by 10 feet.</p><p><strong>Nimble.</strong> When you hit a
+      Creature with an Attack, you do not provoke Opportunity Attacks from that
+      Creature for the rest of the Turn.</p><p><strong>Partially
+      Automated:</strong> Speed Increase is automated.</p>
+    chat: ''
+  identifier: feature
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: true
+    level: 1
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: 'Landstrider: Speed Increase'
+    img: modules/ak5e/icons/Skill-WildMane2.png
+    origin: null
+    _id: NK6ddWaFOXrDAQF8
+    type: base
+    system:
+      changes:
+        - key: system.attributes.movement.walk
+          value: '+10'
+          priority: 20
+          type: add
+          phase: initial
+          _id: 5eGbkXbN5c5eRK2z
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.WZw05t0Rl8sFlJC8
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: <p>Your Walking Speed is increased by 10 feet.</p>
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791206079007
+      modifiedTime: 1791733086713
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!WZw05t0Rl8sFlJC8.NK6ddWaFOXrDAQF8'
+sort: 100000
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791206079007
+  modifiedTime: 1791733086713
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!WZw05t0Rl8sFlJC8'

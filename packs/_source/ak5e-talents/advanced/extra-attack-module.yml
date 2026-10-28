@@ -1,0 +1,145 @@
+folder: Pji4wTRYaJMHjby6
+name: Extra Attack (Module)
+type: feat
+img: modules/ak5e/icons/Skill-BluePoison1.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect: </strong>You have a +1 to Attack and Damage
+      Rolls for non-Spell Attacks.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: extra-attack-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - extra-attack
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +1 to non-Spell Attack and Damage Rolls
+    img: modules/ak5e/icons/Skill-BluePoison1.png
+    origin: null
+    _id: euy312yoliFYAG6t
+    type: base
+    system:
+      changes:
+        - key: system.bonuses.mwak.attack
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: mfCjW65MVh1aTMWj
+          conditions: '{}'
+          replacement: ''
+        - key: system.bonuses.mwak.damage
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: gEbWGKkKJIuOoYhi
+          conditions: '{}'
+          replacement: ''
+        - key: system.bonuses.rwak.attack
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: LCxFWBkDwdhRX5Wh
+          conditions: '{}'
+          replacement: ''
+        - key: system.bonuses.rwak.damage
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: IYWtmMziheUCk6A1
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.Vu8ktydHx2rf7H2V
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841846
+      modifiedTime: 1793197841846
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!Vu8ktydHx2rf7H2V.euy312yoliFYAG6t'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841846
+  modifiedTime: 1793197841935
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: Vu8ktydHx2rf7H2V
+sort: 0
+_key: '!items!Vu8ktydHx2rf7H2V'

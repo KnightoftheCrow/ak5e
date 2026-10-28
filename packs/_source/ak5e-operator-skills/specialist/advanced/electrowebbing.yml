@@ -161,28 +161,35 @@ system:
 effects:
   - name: Electrowebbing (Skill Points)
     img: systems/dnd5e/icons/svg/items/feature.svg
-    origin: Item.tRyXPtKyt2Y5Jo4L
+    origin: null
     type: base
     _id: AqeWRRXwp9If8OxF
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 1KspimA1PPw29DQn
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 9V9l6bpXKZorkXVn
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.tRyXPtKyt2Y5Jo4L
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -208,10 +215,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093973
+      modifiedTime: 1791733093973
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!SvlqPyLji0yjEJW0.AqeWRRXwp9If8OxF'
 flags:
   dnd5e:
@@ -221,12 +233,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356638174
-  modifiedTime: 1783356638192
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733093973
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

@@ -1,0 +1,117 @@
+folder: pK9UlZztTzku2Tvf
+name: Back-to-Back (Module)
+type: feat
+img: modules/ak5e/icons/Skill-TheDecadenza3.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module:</strong> If there is another allied Creature within
+      15ft of you with this Ability, you gain 2 DR against all Damage.</p>
+    chat: ''
+  identifier: back-to-back-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - Compendium.ak5e.ak5e-talents.Item.1ZayOXSy5qjfyEaj
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +2DR (All) if Nearby Back-to-Back
+    img: modules/ak5e/icons/Skill-TheDecadenza3.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.GL8CvQ7L8jwo6zwA
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=-2; checkNearby(effectOriginActor.tokenId, hasItem(tokenId,
+            'back-to-back'), 'same', 15)
+          phase: initial
+          _id: wDOH3aRZBHG77ThR
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: iLSLBjxcfFfSJ3oq
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.GL8CvQ7L8jwo6zwA
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841757
+      modifiedTime: 1793197841757
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!GL8CvQ7L8jwo6zwA.iLSLBjxcfFfSJ3oq'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841757
+  modifiedTime: 1793197841900
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: GL8CvQ7L8jwo6zwA
+sort: 0
+_key: '!items!GL8CvQ7L8jwo6zwA'

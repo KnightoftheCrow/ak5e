@@ -1,0 +1,279 @@
+folder: Pji4wTRYaJMHjby6
+name: Charging Up
+type: feat
+img: modules/ak5e/icons/Skill-Coldshot2.png
+system:
+  activities:
+    Uo3v8znZw1pNCF3P:
+      type: utility
+      name: Gain 1 Stack
+      _id: Uo3v8znZw1pNCF3P
+      img: ''
+      sort: 0
+      activation:
+        type: encounter
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    recovery:
+      - period: lr
+        type: loseAll
+    max: '@scale.charging-up.charge-up-stacks'
+    spent: 0
+  advancement:
+    Q2fzgxhQssc6Zpp2:
+      name: Maximum Stacks of Charging Up
+      type: ScaleValue
+      _id: Q2fzgxhQssc6Zpp2
+      configuration:
+        identifier: charge-up-stacks
+        type: number
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: 3
+      flags: {}
+      hint: ''
+      value: {}
+  description:
+    value: >-
+      <p>Whenever you roll Initiative, you gain a +1 Bonus to your Attack Rolls,
+      and +1 DR against all Damage, up to a maximum of +3. This bonus is lost
+      whenever you complete a Long Rest.</p><p><strong>Module:</strong> The
+      maximum bonus is now +5.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: charging-up
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +1 Damage and DR per Stack
+    img: modules/ak5e/icons/Skill-Coldshot2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.VF3pd5rNp16rg8jr
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@item.uses.value; name=Additional Damage from Charging Up;
+            !isHeal
+          phase: initial
+          _id: vhtc7yiaNBI5gudb
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=-(getItem(effectOriginActor.tokenId, ['charging-up'],
+            {getProperty: 'system.uses.value'})); !isHeal
+          phase: initial
+          _id: jFMll44lwP2wVILt
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: kiZVf1SsifBE46n2
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.VF3pd5rNp16rg8jr
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841824
+      modifiedTime: 1793197841824
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VF3pd5rNp16rg8jr.kiZVf1SsifBE46n2'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841824
+  modifiedTime: 1793197841928
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: VF3pd5rNp16rg8jr
+sort: 0
+_key: '!items!VF3pd5rNp16rg8jr'

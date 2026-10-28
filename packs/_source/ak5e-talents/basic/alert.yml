@@ -1,0 +1,121 @@
+folder: pK9UlZztTzku2Tvf
+name: Alert
+type: feat
+img: modules/ak5e/icons/Skill-PureCrystal.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>You gain a Bonus to your Initiative Rolls equal to your Proficiency
+      Bonus.</p><p><strong>Module:</strong> You have Advantage on Initiative
+      Rolls.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: alert
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: +Prof Bonus to Initiative
+    img: modules/ak5e/icons/Skill-PureCrystal.webp
+    origin: null
+    _id: xYBI5fA8J3BUhPrf
+    type: base
+    system:
+      changes:
+        - key: system.attributes.init.bonus
+          value: '@prof'
+          priority: 20
+          type: add
+          phase: initial
+          _id: h9Vz7DOeweix3EJ6
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.0IsZA6YrT62k7tan
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841752
+      modifiedTime: 1793197841752
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!Oc0GjfKagdwwheYX.xYBI5fA8J3BUhPrf'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841752
+  modifiedTime: 1793197841898
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Oc0GjfKagdwwheYX
+sort: 0
+_key: '!items!Oc0GjfKagdwwheYX'

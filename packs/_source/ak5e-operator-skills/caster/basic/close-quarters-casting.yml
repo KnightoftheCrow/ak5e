@@ -150,28 +150,35 @@ system:
 effects:
   - name: Close Quarters Casting (Skill Points)
     img: modules/ak5e/icons/Skill-Irene3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.tG00xmKgztcUdavW
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '5'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '10'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: raDfvRTOhBskkOkT
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: rUVOeWvFw1bh42mt
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.tG00xmKgztcUdavW
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -196,32 +203,40 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097107
+      modifiedTime: 1791733097107
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!tG00xmKgztcUdavW.flx7lohMTgQh5EDM'
   - name: +2 Critical Range for Melee Spell Attacks
     img: modules/ak5e/icons/Skill-Irene3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.tG00xmKgztcUdavW
+    origin: null
     transfer: false
     _id: hm9u1xpWJRQyQRK1
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.criticalThreshold
-        mode: 5
-        value: threshold=-2;actionType.msak
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          value: threshold=-2;actionType.msak
+          priority: 20
+          type: override
+          phase: initial
+          _id: m5DX7r4gDtngsj9j
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.tG00xmKgztcUdavW
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -248,10 +263,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097107
+      modifiedTime: 1791733097107
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!tG00xmKgztcUdavW.hm9u1xpWJRQyQRK1'
 sort: 0
 ownership:
@@ -265,11 +285,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.PHnJJRRfQGNpSuFE
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772826442350
-  modifiedTime: 1772826442350
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733097107
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: tG00xmKgztcUdavW
 _key: '!items!tG00xmKgztcUdavW'

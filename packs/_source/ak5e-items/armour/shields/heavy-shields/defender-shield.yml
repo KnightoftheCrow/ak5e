@@ -2,7 +2,7 @@ folder: LhfLrzy8qfSJ9JZQ
 name: Defender Shield
 type: equipment
 _id: bJUFFpHXtrz7hE7v
-img: icons/equipment/shield/heater-steel-boss-red.webp
+img: modules/ak5e/icons/Equipment/AK5e%20Heavy%20Shield.png
 system:
   activities: {}
   uses:
@@ -14,10 +14,7 @@ system:
       <p>A shield designed not just to protect its wielder, but anyone who may
       be sheltering in their mighty shadow. Has the Bastion Special
       Property.</p><p><strong>Damage Reduction: </strong>2
-      (Physical)</p><blockquote><p><strong>Bastion Property: </strong>When a
-      Creature has a piece of Equipment with this Special Property equipped,
-      they have Advantage on Strength and Dexterity Saving Throws against
-      hostile effects they can see (This is not automated).</p></blockquote>
+      (Physical)</p><p>@UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.xQQclrKoyzkyaaXd]{Bastion}</p>
     chat: ''
   identifier: defender-shield
   source:
@@ -48,6 +45,7 @@ system:
     dex: null
   proficient: null
   properties:
+    - bas
     - stealthDisadvantage
   strength: 12
   type:
@@ -63,10 +61,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.3
+  systemVersion: 5.3.3
   createdTime: 1757007876004
-  modifiedTime: 1766936851422
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1790613942379
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!bJUFFpHXtrz7hE7v'

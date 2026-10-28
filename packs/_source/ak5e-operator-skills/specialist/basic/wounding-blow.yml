@@ -154,28 +154,35 @@ system:
 effects:
   - name: Wounding Blow (Skill Points)
     img: modules/ak5e/icons/Skill-Thorns2.webp
-    origin: Item.WRQBNzdQuzWxDAvG
+    origin: null
     _id: NofukA6yJwZH3fsM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '0'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 0
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: VwNicI3IBlT5ilDN
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: n4wSUcBS7tJyamwX
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.WRQBNzdQuzWxDAvG
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -201,27 +208,31 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096818
+      modifiedTime: 1791733096818
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!rnNteu5opqiI7eaA.NofukA6yJwZH3fsM'
   - name: Wounding Blow
     img: modules/ak5e/icons/Skill-Thorns2.webp
-    origin: Item.WRQBNzdQuzWxDAvG
+    origin: null
     _id: 9c0PlQGY4hMTFlVK
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.WRQBNzdQuzWxDAvG
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -250,10 +261,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096818
+      modifiedTime: 1791733096818
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!rnNteu5opqiI7eaA.9c0PlQGY4hMTFlVK'
 flags:
   dnd5e:
@@ -263,12 +279,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356882501
-  modifiedTime: 1783356882519
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733096818
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

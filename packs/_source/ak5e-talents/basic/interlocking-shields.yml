@@ -1,0 +1,139 @@
+folder: pK9UlZztTzku2Tvf
+name: Interlocking Shields
+type: feat
+img: modules/ak5e/icons/Skill-Bubble1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Other Creatures that are benefitting from your Shelter Action gain DR
+      against Physical Damage equal to half your Proficiency Bonus (this effect
+      is not cumulative with other sources of this
+      Feature).</p><p><strong>Module Effect:</strong> The granted Damage
+      Reduction is now against all
+      Damage.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: interlocking-shields
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Physical DR from Shelter
+    img: modules/ak5e/icons/Skill-Bubble1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.lC9sQm9P3xnb4JEj
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=-ceil(@prof/2); name=Interlocking Shield DR;
+            description=Reduced Physical Damage from Interlocking Shields;
+            addTo=all,types(bludgeoning,piercing,slashing,thunder);
+            getItem(opponentActor.actorId, ['shelter']
+          phase: initial
+          _id: KnB7cYpBbLFMYHEO
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+      showRadius: false
+      applyToSelf: false
+      bestFormula: ''
+      canStack: false
+      collisionType: move
+      color: null
+      combatOnly: true
+      disableOnHidden: true
+      distanceFormula: '10'
+      disposition: 1
+      evaluatePreApply: false
+      overrideName: ''
+      script: ''
+      stashedChanges: []
+      stashedStatuses: []
+    type: auraeffects.aura
+    _id: bG4rYAnDRMDl0P8Q
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.lC9sQm9P3xnb4JEj
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+      auraeffects:
+        originalType: base
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841779
+      modifiedTime: 1793197841779
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!lC9sQm9P3xnb4JEj.bG4rYAnDRMDl0P8Q'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841779
+  modifiedTime: 1793197841910
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: lC9sQm9P3xnb4JEj
+sort: 0
+_key: '!items!lC9sQm9P3xnb4JEj'

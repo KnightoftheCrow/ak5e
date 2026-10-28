@@ -2,34 +2,344 @@ folder: nKLvHbVUcPjZlbd2
 name: Provide Aid
 type: feat
 _id: IwicTxe0zdEV9h6j
-img: modules/AK5e-Foundry-Module/icons/Skill-Suzuran1.webp
+img: modules/ak5e/icons/skill_icon_skchr_wanqin_2.png
 system:
-  activities: {}
+  activities:
+    AcCbcY3Juk6uTZ7Y:
+      type: utility
+      name: Grant Aid Die
+      _id: AcCbcY3Juk6uTZ7Y
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: minute
+        expiry: null
+        concentration: false
+        override: false
+        value: '10'
+      effects:
+        - _id: 1C0pMOZfx24QD8uJ
+          uuid: null
+          level:
+            min: null
+            max: 4
+        - _id: VeT0kUoiKInZ11uM
+          uuid: null
+          level:
+            min: 5
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    abfEYVRBV5P9MkeC:
+      type: utility
+      name: Lighten the Load
+      img: ''
+      sort: 100000
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: minute
+        expiry: null
+        concentration: false
+        override: false
+        value: '10'
+      effects:
+        - _id: 1C0pMOZfx24QD8uJ
+          uuid: null
+          level:
+            min: null
+            max: 4
+        - _id: VeT0kUoiKInZ11uM
+          uuid: null
+          level:
+            min: 5
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '60'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 11
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: 'false'
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: abfEYVRBV5P9MkeC
   uses:
     spent: 0
-    recovery: []
-    max: ''
-  advancement: {}
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@abilities.int.mod'
+  advancement:
+    gfNi5em7cwI49V5O:
+      name: Aid Die Size
+      type: ScaleValue
+      _id: gfNi5em7cwI49V5O
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            faces: 8
+          '10':
+            faces: 10
+          '14':
+            faces: 12
+      flags: {}
+      value: {}
+      hint: ''
   description:
     value: >-
       <p>Your calling is to help others achieve the peak of their capability.
       This help is represented by your Aid Die, which is a
-      d8.</p><p><strong>Providing Aid.</strong> As a Bonus Action, you can
-      Provide Aid to another Creature within 60 feet who can see or hear you.
-      This consumes one of your Aid Dice, and grants it to that Creature. A
+      d8.</p><ul><li><p><strong>Providing Aid.</strong> As a Bonus Action, you
+      can Provide Aid to another Creature within 60 feet who can see or hear
+      you. This consumes one of your Aid Dice, and grants it to that Creature. A
       Creature can only have one Aid Die at a time.</p><p>Once within the next
       ten minutes, when that Creature makes an Attack Roll, Skill Check, Saving
       Throw (except Death Saving Throws), Damage Roll, or Healing Roll, they may
       expend and roll that Aid Dice, adding the number rolled to the
-      total.</p><p><strong>Number of Uses.</strong> The amount of Aid Dice you
-      possess is equal to either your Intelligence, Wisdom, or Charisma Modifier
-      (choose when you gain this Feature). You regain all expended uses when you
-      finish a Long Rest.</p><p><strong>Aid Die Size.</strong> Your Aid Die is a
-      d8. This changes when you reach certain Supporter Levels, as shown in the
-      Aid Die column of the Supporter Features table.</p><p><strong>Not
-      Automated.</strong></p>
+      total.</p></li><li><p><strong>Number of Uses.</strong> The amount of Aid
+      Dice you possess is equal to either your Intelligence, Wisdom, or Charisma
+      Modifier (choose when you gain this Feature). You regain all expended uses
+      when you finish a Long Rest.</p></li><li><p><strong>Aid Die Size.</strong>
+      Your Aid Die is a d8. This increases to a d10 at 7th Level, and d12 at
+      14th Level.</p></li></ul><hr><p><strong>Automated: </strong>By default
+      this scales with Intelligence. Change the stat referenced (int) in the max
+      section of usage (under the details tab) to wis or cha respectively.</p>
     chat: ''
-  identifier: provide-aid
+  identifier: aid-die
   source:
     revision: 1
     rules: '2024'
@@ -44,23 +354,212 @@ system:
   type:
     value: class
     subtype: ''
-effects: []
-sort: 0
-ownership:
-  default: 0
-  27ikDz77N89hVLvM: 3
+effects:
+  - name: Provided Aid
+    img: modules/ak5e/icons/skill_icon_skchr_wanqin_2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IwicTxe0zdEV9h6j
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.all.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die; name=Expend
+            Aid Die; optinId=provided-aid-0; once; optin; !isDeathSave
+          phase: initial
+          _id: rvcRMc5GvCWwzxom
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die; name=Expend
+            Aid Die; optinId=provided-aid-1; once; optin; isHeal
+          phase: initial
+          _id: XX3f1iFxB71iE1E6
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 1C0pMOZfx24QD8uJ
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793198218426
+      modifiedTime: 1793200491701
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!IwicTxe0zdEV9h6j.1C0pMOZfx24QD8uJ'
+  - name: Provided Advanced Aid
+    img: modules/ak5e/icons/skill_icon_skchr_wanqin_2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IwicTxe0zdEV9h6j
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.all.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die; name=Expend
+            Aid Die; optinId=provided-aid-0; once; optin; !isDeathSave
+          phase: initial
+          _id: rvcRMc5GvCWwzxom
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die; name=Expend
+            Aid Die; optinId=provided-aid-1; once; optin; isHeal
+          phase: initial
+          _id: XX3f1iFxB71iE1E6
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          type: ac5e
+          value: threshold=-1; optinSelected['provided-aid-0']
+          phase: initial
+          _id: 7RdhSdYF9WI3iU2O
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.skill.modifier
+          type: ac5e
+          value: threshold=adv; optinSelected['provided-aid-0'] && hasCheck
+          phase: initial
+          _id: 4ajqxRDrc2erThMT
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die[temphp];
+            isHeal && optinSelected['provided-aid-1']
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: 5z00kMDwy0hWCyUQ
+        - key: flags.automated-conditions-5e.save.bonus
+          type: ac5e
+          value: >-
+            update=rollingActor.hpTemp,
+            1effectOriginActor.scale.aid-die.aid-die-size.die;
+            optinSelected['provided-aid-0']
+          phase: initial
+          _id: 7JSxio8wk8n4A4kx
+          conditions: '{}'
+          replacement: ''
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793200601779
+      modifiedTime: 1793201499049
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: VeT0kUoiKInZ11uM
+    _key: '!items.effects!IwicTxe0zdEV9h6j.VeT0kUoiKInZ11uM'
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
-  compendiumSource: null
+  compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.IwicTxe0zdEV9h6j
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1785597523649
-  modifiedTime: 1785597523649
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791206076917
+  modifiedTime: 1793203751755
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 0
 _key: '!items!IwicTxe0zdEV9h6j'

@@ -9,7 +9,7 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>Once per Turn, when you roll to determine Damage dealt by an Art you
@@ -35,28 +35,35 @@ system:
 effects:
   - name: Additional Damage on Arts
     img: modules/ak5e/icons/Skill-T3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.lLytVgEvbOe56Nfd
+    origin: null
     _id: qQXmCi4pFuS8Dlxk
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 5
-        value: bonus=@prof; isSpell
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 5
-        value: bonus=@attributes.spell.mod; !isCantrip
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@prof; isSpell
+          priority: 20
+          type: override
+          phase: initial
+          _id: e1C63Q7FuH8ACzP7
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@attributes.spell.mod; !isCantrip
+          priority: 20
+          type: override
+          phase: initial
+          _id: RCdnlLvnleLxeZQv
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.lLytVgEvbOe56Nfd
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -80,29 +87,29 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774093497240
-      modifiedTime: 1774093649087
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553305
+      modifiedTime: 1791733087934
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!lLytVgEvbOe56Nfd.qQXmCi4pFuS8Dlxk'
 sort: 300000
 ownership:
   default: 0
-  9KtVYqHDTWORuJDZ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1774093451775
-  modifiedTime: 1774098008002
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 5.3.3
+  createdTime: 1791203553304
+  modifiedTime: 1791733087933
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!lLytVgEvbOe56Nfd'

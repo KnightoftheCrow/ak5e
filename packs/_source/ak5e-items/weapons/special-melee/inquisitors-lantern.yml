@@ -113,8 +113,7 @@ system:
       you add your Proficiency Bonus to Wisdom Saving Throws they make; this
       effect is not cumulative.</p></li><li><p>Aberration (Seaborn) Creatures
       have Disadvantage on Attack Rolls against
-      you.</p></li></ul><p><strong>These effects are automated if you have the
-      Automated Conditions 5e module.</strong></p>
+      you.</p></li></ul><p><strong>Automated.</strong></p>
     chat: ''
   identifier: inquisitors-lantern
   source:
@@ -174,7 +173,7 @@ system:
 effects:
   - name: Aura of Bravery
     img: icons/sundries/lights/lantern-bullseye-signal-copper.webp
-    origin: Item.vHTVqtdMWlBumWqb
+    origin: null
     _id: p1teijmneKvIXbcO
     type: auraeffects.aura
     system:
@@ -195,20 +194,23 @@ effects:
       script: ''
       stashedChanges: []
       stashedStatuses: []
-    changes:
-      - key: system.abilities.wis.bonuses.save
-        mode: 2
-        value: '@prof'
-        priority: 20
+      changes:
+        - key: system.abilities.wis.bonuses.save
+          value: '@prof'
+          priority: 20
+          type: add
+          phase: initial
+          _id: Z1hWJjlL0WIcUH7l
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.vHTVqtdMWlBumWqb
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -234,33 +236,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733079121
+      modifiedTime: 1791733079121
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!HnCl11KcXVsf8ePQ.p1teijmneKvIXbcO'
   - name: Seaborn Disadvantage
     img: icons/sundries/lights/lantern-bullseye-signal-copper.webp
-    origin: Item.vHTVqtdMWlBumWqb
+    origin: null
     _id: s4rRLLILlvLncnS3
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.attack.disadvantage
-        mode: 2
-        value: >-
-          nonEffectActor.creatureType.includes('abberation') ||
-          nonEffectActor.creatureType.includes('seaborn')
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.disadvantage
+          value: >-
+            nonEffectActor.creatureType.includes('abberation') ||
+            nonEffectActor.creatureType.includes('seaborn')
+          priority: 20
+          type: add
+          phase: initial
+          _id: lHS5T4th5lAdB5Pr
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.vHTVqtdMWlBumWqb
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -284,10 +294,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733079121
+      modifiedTime: 1791733079121
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!HnCl11KcXVsf8ePQ.s4rRLLILlvLncnS3'
 flags:
   dnd5e:
@@ -297,12 +312,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 5.3.3
   createdTime: 1769266827867
-  modifiedTime: 1769266919866
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733079120
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

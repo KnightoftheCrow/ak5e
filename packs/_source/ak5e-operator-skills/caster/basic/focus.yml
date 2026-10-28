@@ -148,28 +148,35 @@ system:
 effects:
   - name: Focus (Skill Points)
     img: modules/ak5e/icons/Skill-Bena2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.Oaduiib94lWlaKsX
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '5'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: ShqdJNJWSQlRHIJc
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 3gbAqPj85OyJ0r44
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.Oaduiib94lWlaKsX
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -194,36 +201,48 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093337
+      modifiedTime: 1791733093337
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Oaduiib94lWlaKsX.flx7lohMTgQh5EDM'
   - name: +1 Spell Save DC and Spell Attack Rolls
     img: modules/ak5e/icons/Skill-Bena2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.Oaduiib94lWlaKsX
+    origin: null
     transfer: false
     _id: jXLPEKIJ93aNE4c1
     type: base
-    system: {}
-    changes:
-      - key: system.bonuses.spell.dc
-        mode: 2
-        value: '+1'
-        priority: 20
-      - key: system.bonuses.spell.attack
-        mode: 2
-        value: '+1'
-        priority: 20
+    system:
+      changes:
+        - key: system.bonuses.spell.dc
+          value: '+1'
+          priority: 20
+          type: add
+          phase: initial
+          _id: avsl47NoSoRlmcTm
+          conditions: '{}'
+          replacement: ''
+        - key: system.bonuses.spell.attack
+          value: '+1'
+          priority: 20
+          type: add
+          phase: initial
+          _id: uyC7vs15Fhc6bH7p
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.Oaduiib94lWlaKsX
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -250,10 +269,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093337
+      modifiedTime: 1791733093337
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Oaduiib94lWlaKsX.jXLPEKIJ93aNE4c1'
 sort: 0
 ownership:
@@ -267,11 +291,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.sa6E24mcYxedDSjx
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772826442350
-  modifiedTime: 1772826442350
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733093337
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: Oaduiib94lWlaKsX
 _key: '!items!Oaduiib94lWlaKsX'

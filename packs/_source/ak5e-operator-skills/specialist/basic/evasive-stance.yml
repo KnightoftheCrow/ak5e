@@ -24,12 +24,17 @@ system:
             scaling: {}
       description:
         chatFlavor: ''
+        value: ''
       duration:
         units: round
         concentration: false
         override: false
         value: '3'
-      effects: []
+        expiry: null
+      effects:
+        - _id: ieXuhCxcCHNxXSsm
+          level: {}
+          uuid: null
       flags: {}
       range:
         units: self
@@ -115,6 +120,27 @@ system:
       otherActivityId: none
       otherActivityAsParentType: true
       name: Evasive Stance
+      behaviors: []
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
@@ -122,21 +148,20 @@ system:
   advancement: {}
   description:
     value: >-
-      <ul><li><p><strong>Name</strong>: Evasive
-      Stance.</p></li><li><p><strong>SP Cost:</strong>
-      10.</p></li><li><p><strong>Start SP:</strong>
-      5.</p></li><li><p><strong>Charging:</strong>
-      Defensive.</p></li><li><p><strong>Activation Cost:</strong>
-      Reaction.</p></li><li><p><strong>Effect:</strong> Your Armour Class is
-      increased by a value equal to your Proficiency
-      Bonus.</p></li><li><p><strong>Duration:</strong> 3
-      rounds.</p></li></ul><p><strong>Not Automated. </strong>Use for tracking
-      purpose.</p>
+      <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
+      SP</p></td><td><p>Charging</p></td><td><p>Activation</p></td><td><p>Duration</p></td></tr></thead><tbody><tr><td><p>10</p></td><td><p>5</p></td><td><p>Defensive</p></td><td><p>Reaction</p></td><td><p>3
+      Rounds</p></td></tr></tbody></table><p><strong>Effect:</strong> Your
+      Armour Class is increased by a value equal to your Proficiency
+      Bonus.</p><p><strong>Automated.</strong></p>
     chat: ''
   identifier: evasive-stance
   source:
     revision: 1
-    rules: '2024'
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
   crewed: false
   enchant: {}
   prerequisites:
@@ -151,28 +176,43 @@ system:
 effects:
   - name: Evasive Stance (Skill Points)
     img: modules/ak5e/icons/Skill-Tsukinogi1.webp
-    origin: Item.tuhdW7MYsK6OcG8H
+    origin: null
     type: base
     _id: 9E9hPbZCdo3piB2i
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '5'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '10'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: dGI5FVBb4WX4vHYc
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 6mgyoxwyBpnwB3Ac
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.LeDC2kinl9hcy0Nx
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -180,8 +220,7 @@ effects:
     sort: 0
     flags:
       dnd5e:
-        riders:
-          statuses: []
+        riders: {}
       dae:
         disableCondition: ''
         stackable: noneName
@@ -195,31 +234,103 @@ effects:
       automated-conditions-5e:
         ac5eChangeRows: {}
     _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1792511577311
+      modifiedTime: 1792511577311
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!c3MIoCfJf4wDY8fJ.9E9hPbZCdo3piB2i'
+  - name: Evasive Stance
+    img: modules/ak5e/icons/Skill-Tsukinogi1.webp
+    origin: null
+    transfer: false
+    _id: ieXuhCxcCHNxXSsm
+    type: base
+    system:
+      changes:
+        - key: system.attributes.ac.bonus
+          value: '@prof'
+          priority: 20
+          type: add
+          phase: initial
+          _id: PUcSF8vdf0GhTihh
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.LeDC2kinl9hcy0Nx
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: true
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
-    _key: '!items.effects!ZfgpGCfTfg5vo1gp.9E9hPbZCdo3piB2i'
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1792511577311
+      modifiedTime: 1792511577311
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!c3MIoCfJf4wDY8fJ.ieXuhCxcCHNxXSsm'
 flags:
   dnd5e:
     riders:
       activity: []
 _stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792511577311
+  modifiedTime: 1792511577347
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
-  systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783356618888
-  modifiedTime: 1783356618908
-  lastModifiedBy: 27ikDz77N89hVLvM
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
-_id: ZfgpGCfTfg5vo1gp
-sort: 300000
-_key: '!items!ZfgpGCfTfg5vo1gp'
+  5XlrCO2NlPtd4MFQ: 3
+_id: c3MIoCfJf4wDY8fJ
+sort: 150000
+_key: '!items!c3MIoCfJf4wDY8fJ'

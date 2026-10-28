@@ -155,33 +155,45 @@ system:
 effects:
   - name: Investiture of Lightning
     img: icons/magic/lightning/claws-unarmed-strike-teal.webp
-    origin: Item.eTLw68bqpkFQAIPP
+    origin: null
     transfer: false
     _id: oSCn3iSfz08Ai027
     type: base
-    system: {}
-    changes:
-      - key: macro.createItem
-        mode: 0
-        value: Compendium.ak5e.ak5e-arts.Item.G3LIZYoNJ20kFUaC
-        priority: 20
-      - key: system.traits.di.value
-        mode: 2
-        value: lightning
-        priority: 20
-      - key: system.traits.dr.value
-        mode: 2
-        value: thunder
-        priority: 20
+    system:
+      changes:
+        - key: macro.createItem
+          value: Compendium.ak5e.ak5e-arts.Item.G3LIZYoNJ20kFUaC
+          priority: 20
+          type: custom
+          phase: initial
+          _id: HvNT0T4ByUt8kPA3
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.di.value
+          value: lightning
+          priority: 20
+          type: add
+          phase: initial
+          _id: Et1o5qbAZEnPBEKT
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          value: thunder
+          priority: 20
+          type: add
+          phase: initial
+          _id: eLnUY7BQWsJ04tdX
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.eTLw68bqpkFQAIPP
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -208,10 +220,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733109152
+      modifiedTime: 1791733109152
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!eTLw68bqpkFQAIPP.oSCn3iSfz08Ai027'
 flags:
   dnd5e:
@@ -222,12 +239,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733109152
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

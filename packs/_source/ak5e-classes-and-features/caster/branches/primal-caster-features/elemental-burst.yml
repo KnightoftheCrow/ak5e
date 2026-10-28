@@ -22,6 +22,7 @@ system:
           - type: itemUses
             value: '1'
             target: ''
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -87,6 +88,7 @@ system:
           type: sphere
           size: '20'
           count: ''
+          stationary: false
         affects:
           choice: false
           type: ''
@@ -157,15 +159,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       friendlySave: default
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     FEDBtl5owDuJQ6IG:
       type: save
       name: Use (Enduring Affliction)
@@ -182,6 +206,7 @@ system:
           - type: itemUses
             value: '1'
             target: ''
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -247,6 +272,7 @@ system:
           type: sphere
           size: '20'
           count: ''
+          stationary: false
         affects:
           choice: false
           type: ''
@@ -317,16 +343,38 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       friendlySave: default
       _id: FEDBtl5owDuJQ6IG
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery:
@@ -334,7 +382,8 @@ system:
         type: recoverAll
     max: '1'
   advancement:
-    - type: ScaleValue
+    orkaZfezTB16onrA:
+      type: ScaleValue
       _id: orkaZfezTB16onrA
       configuration:
         identifier: ''
@@ -349,6 +398,7 @@ system:
       value: {}
       title: DC
       hint: ''
+      flags: {}
   description:
     value: >-
       <p>You learn to inflict indirect harm without committing to a larger
@@ -380,20 +430,19 @@ system:
 effects:
   - name: Corroded
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     _id: lLuxw0WdrvqpAFYn
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -420,32 +469,33 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.EzuKtxvqSoNLB2tI
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774110537114
-      modifiedTime: 1774110537114
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553359
+      modifiedTime: 1791733084550
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.lLuxw0WdrvqpAFYn'
   - name: Frightened
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -472,33 +522,34 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.kHwBwjQZsVYZpotL
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774110538064
-      modifiedTime: 1774110538064
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553360
+      modifiedTime: 1791733084550
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: KY4iZ401VvsRnuFO
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.KY4iZ401VvsRnuFO'
   - name: Frozen
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -525,33 +576,34 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.xYp8XD6KeRUchrdr
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774110538952
-      modifiedTime: 1774110538952
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553360
+      modifiedTime: 1791733084550
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: xfKsrRp9W7k3Zovb
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.xfKsrRp9W7k3Zovb'
   - name: Burning
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -578,33 +630,34 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.AnC9rKO9Jsdq4ybS
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774110539815
-      modifiedTime: 1774110539815
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553360
+      modifiedTime: 1791733084550
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: l7OdziUZDygfR6XQ
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.l7OdziUZDygfR6XQ'
   - name: Blinded
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -631,33 +684,34 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.DXmzECd89KYNi63k
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774110541624
-      modifiedTime: 1774110541624
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553360
+      modifiedTime: 1791733084550
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: UnLvinXdB6sq20wJ
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.UnLvinXdB6sq20wJ'
   - name: Nervous Impairment
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -684,33 +738,34 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.kFLpxEMlrXlBGiTE
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774110542780
-      modifiedTime: 1774110542780
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553361
+      modifiedTime: 1791733084550
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: YJQuyguQzzFTk8DB
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.YJQuyguQzzFTk8DB'
   - name: Necrotised
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -737,33 +792,34 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.ibDJJLbmRuXtbjW3
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774110543693
-      modifiedTime: 1774110543693
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553361
+      modifiedTime: 1791733084551
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: Nz4iWFiBXqKCfpKn
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.Nz4iWFiBXqKCfpKn'
   - name: Bleeding
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -790,33 +846,34 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.KzR8DMz2UFnHy8EL
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774110544625
-      modifiedTime: 1774110544625
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553361
+      modifiedTime: 1791733084551
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: DUqm1Yo0cyXL3iGO
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.DUqm1Yo0cyXL3iGO'
   - name: Charmed
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -843,85 +900,138 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.fTiFM3GaQCPEeDGG
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774110545508
-      modifiedTime: 1774110545508
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553361
+      modifiedTime: 1791733084551
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: lz2pGOwLl7jqHPKj
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.lz2pGOwLl7jqHPKj'
   - name: Corroded (Upgraded)
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dm.amount.acid
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.bludgeoning
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.cold
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.fire
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.force
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.lightning
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.necrotic
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.piercing
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.poison
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.psychic
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.radiant
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.slashing
-        mode: 5
-        value: '0'
-        priority: 20
-      - key: system.traits.dm.amount.thunder
-        mode: 5
-        value: '0'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dm.amount.acid
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: go2808FvpkuE0SHn
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.bludgeoning
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: VmWOgWOJqXVXUwBp
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.cold
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: KT7JEmFsWAzL7abv
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.fire
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: svY2tEZPig13vpo0
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.force
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: MCeQHotCBF0a0Bsb
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.lightning
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: HXf7r4NkRfovVJn0
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.necrotic
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: RHAkT2HB1FXqsCnj
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.piercing
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: 3tMI9Xnf10S1wN2O
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.poison
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: JWJC1bO9ul2qv53b
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.psychic
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: ap8Hv1Gb6AhUsP3e
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.radiant
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: G31JT9Eb5vayk5Ss
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.slashing
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: kAZ1G8ae6jGf1y1t
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.thunder
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: 2D77Eiu9xDR1JT8f
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -948,33 +1058,34 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.EzuKtxvqSoNLB2tI
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774112319140
-      modifiedTime: 1774112319140
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553361
+      modifiedTime: 1791733084551
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: dL5pbSc7LWXGVF28
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.dL5pbSc7LWXGVF28'
   - name: Bleeding (Upgraded)
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: >-
       <p><span style="padding:0px
       1.5px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.0189px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact">The
@@ -1005,37 +1116,42 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.gsURRG7jQZoGDnM5
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774112320911
-      modifiedTime: 1774112320911
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553362
+      modifiedTime: 1791733084551
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: 6JObiiSq6rWYcQ0e
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.6JObiiSq6rWYcQ0e'
   - name: Burning (Upgraded)
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.healing
-        mode: 5
-        value: '0'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.healing
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: X9v0iR3irwVHqUon
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: >-
       <p>The Creature takes 1d8 additional Fire Damage, and cannot gain Hit
       Points.</p>
@@ -1064,37 +1180,42 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.HcO3mKs1URtltaBY
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774112321913
-      modifiedTime: 1774112321913
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553362
+      modifiedTime: 1791733084551
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: j9A23Wgd9qzQqRR8
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.j9A23Wgd9qzQqRR8'
   - name: Charmed (Upgraded)
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '0'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: 0
+          priority: 20
+          type: custom
+          phase: initial
+          _id: oeIR8iQ73428ryhR
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -1121,37 +1242,42 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.pWtfKGhkXEWkzKhr
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774112323615
-      modifiedTime: 1774112323615
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553362
+      modifiedTime: 1791733084551
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: 668waOmmwEJtQ0vV
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.668waOmmwEJtQ0vV'
   - name: Frightened (Upgraded)
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.disadvantage
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.disadvantage
+          value: true
+          priority: 20
+          type: override
+          phase: initial
+          _id: wLIOnLIIx2RQVcom
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -1178,37 +1304,42 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.xUNGgBNrdcus4eU7
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774112324552
-      modifiedTime: 1774112324552
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553362
+      modifiedTime: 1791733084552
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: erOMAYqECEeG6KDg
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.erOMAYqECEeG6KDg'
   - name: Frightened (Upgraded)
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.disadvantage
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.disadvantage
+          value: true
+          priority: 20
+          type: override
+          phase: initial
+          _id: GX5mEbvwLfuFanYb
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -1235,37 +1366,42 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.xUNGgBNrdcus4eU7
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774112325629
-      modifiedTime: 1774112325629
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553363
+      modifiedTime: 1791733084552
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: euW1QpqVu9C53zLo
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.euW1QpqVu9C53zLo'
   - name: Frozen (Upgraded)
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.fail.ability.save.dex
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.fail.ability.save.dex
+          value: true
+          priority: 20
+          type: override
+          phase: initial
+          _id: ZhZz3mWqoxt00YUm
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -1292,37 +1428,42 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.1zEvh0uFRjQXh1N6
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774112326963
-      modifiedTime: 1774112326963
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553363
+      modifiedTime: 1791733084552
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: Zrlk3Po9KtzUOS19
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.Zrlk3Po9KtzUOS19'
   - name: Necrotised (Upgraded)
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.actions.reactionsMax
-        mode: 5
-        value: '0'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.actions.reactionsMax
+          value: 0
+          priority: 20
+          type: override
+          phase: initial
+          _id: 4J6zLTE4inQgon1z
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -1349,33 +1490,34 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.cSTSEEyZewlQePCd
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774112328641
-      modifiedTime: 1774112328641
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553363
+      modifiedTime: 1791733084552
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: qhvGj6YIhQfDXRhW
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.qhvGj6YIhQfDXRhW'
   - name: Nervous Impairment (Upgraded)
     img: modules/ak5e/icons/Skill-Ifrit3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.0hwyuMD4qEdW4c8U
+    origin: null
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.0hwyuMD4qEdW4c8U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -1402,34 +1544,33 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.7yax3EuQzJAoRgLX.ActiveEffect.m7E3ZwsrI6Xny2Jj
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774112330259
-      modifiedTime: 1774112330259
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553364
+      modifiedTime: 1791733084552
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: sighd7m1Ps6DzNxN
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!0hwyuMD4qEdW4c8U.sighd7m1Ps6DzNxN'
 sort: 100000
 ownership:
   default: 0
-  9KtVYqHDTWORuJDZ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1774110421294
-  modifiedTime: 1774178288729
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 5.3.3
+  createdTime: 1791203553359
+  modifiedTime: 1791733084549
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!0hwyuMD4qEdW4c8U'

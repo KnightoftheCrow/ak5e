@@ -1,0 +1,2214 @@
+folder: Pji4wTRYaJMHjby6
+name: Hidden Technique
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+system:
+  activities:
+    WKyFSPV8FSAGzmEy:
+      type: utility
+      name: Body Check (1 Grit)
+      img: ''
+      sort: 0
+      activation:
+        type: ''
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      flags: {}
+      range:
+        units: touch
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      behaviors: []
+      _id: WKyFSPV8FSAGzmEy
+    B2GlMClUT1ghghxk:
+      type: utility
+      name: Cross Counter (1 Grit)
+      img: ''
+      sort: 100000
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects:
+        - _id: Cj4odvBK4ur6XBLN
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: reaction == "isAttacked"
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      behaviors: []
+      _id: B2GlMClUT1ghghxk
+    5bi8YmLqZZGX60xH:
+      type: utility
+      name: Feint (1 Grit)
+      img: ''
+      sort: 200000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        value: '1'
+        expiry: null
+      effects:
+        - _id: FbsxyLh6bVHUtI7S
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: touch
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      behaviors: []
+      _id: 5bi8YmLqZZGX60xH
+    p6xkQD5CEk474AEN:
+      type: utility
+      name: Follow Up (1 Grit)
+      img: ''
+      sort: 300000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      behaviors: []
+      _id: p6xkQD5CEk474AEN
+    Olit5NPyoGUNuAG6:
+      type: utility
+      name: Footwork (1 Grit)
+      img: ''
+      sort: 400000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      flags:
+        cat:
+          genericConfig:
+            chris-premades:
+              movementAnimation:
+                selectLocationsAnimation:
+                  source: chris-premades
+                  identifier: selectLocations
+                moveAnimation:
+                  source: chris-premades
+                  identifier: cunningActionDash
+                movementEffect: ''
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: movementAnimation
+                rules: all
+          animationGenericConfig:
+            chris-premades:
+              movementAnimation:
+                chris-premades:
+                  selectLocations:
+                    spendMovement: false
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      behaviors: []
+      _id: Olit5NPyoGUNuAG6
+    BQ1wNfcfyNU6NnbM:
+      type: utility
+      name: Guard Up (1 Grit)
+      img: ''
+      sort: 500000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects:
+        - _id: 1PZZnBFEew4oJZkF
+          level: {}
+          uuid: null
+        - _id: ZJmAC8MQcjfYxBlM
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      behaviors: []
+      _id: BQ1wNfcfyNU6NnbM
+    N7NxrbGoao4BZ4aN:
+      type: utility
+      name: Slip Off (2 Grit)
+      img: ''
+      sort: 600000
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '2'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects:
+        - _id: YE7PxxusGCzV4jQ1
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      behaviors: []
+      _id: N7NxrbGoao4BZ4aN
+    CiYAHVTODweLVht8:
+      type: utility
+      name: Tag In (2 Grit)
+      img: ''
+      sort: 700000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '2'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects:
+        - _id: H3rwgWWlajcnTZcH
+          level: {}
+          uuid: null
+        - _id: 2y4DCkAtEhD44sDr
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: touch
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: willing
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      behaviors: []
+      _id: CiYAHVTODweLVht8
+    qQvZIpx0npar4FqW:
+      type: enchant
+      name: Choose Brawler Techniques
+      img: ''
+      sort: -100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: p7iv6OZOfyRzN5dx
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - WKyFSPV8FSAGzmEy
+            effect: []
+            item: []
+        - _id: 53LddvHBABwzzpyL
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - B2GlMClUT1ghghxk
+            effect: []
+            item: []
+        - _id: yu2R5gyXL4PEqJHq
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - 5bi8YmLqZZGX60xH
+            effect: []
+            item: []
+        - _id: 1kLRvXUkJxt5qibg
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - p6xkQD5CEk474AEN
+            effect: []
+            item: []
+        - _id: yBBupzoHhHYZqbUr
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - Olit5NPyoGUNuAG6
+            effect: []
+            item: []
+        - _id: Gikk23lBubNaqZy1
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - BQ1wNfcfyNU6NnbM
+            effect: []
+            item: []
+        - _id: feSqOhFxSTMJKJwW
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - N7NxrbGoao4BZ4aN
+            effect: []
+            item: []
+        - _id: xgeSleCUonRVYjXG
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - CiYAHVTODweLVht8
+            effect: []
+            item: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      enchant:
+        self: false
+      restrictions:
+        allowMagical: true
+        categories: []
+        properties: []
+        type: feat
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: qQvZIpx0npar4FqW
+  uses:
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '@scale.hidden-technique.grit-points'
+    spent: 0
+  advancement:
+    mqqqslbGGp6889gh:
+      type: ScaleValue
+      _id: mqqqslbGGp6889gh
+      configuration:
+        identifier: ''
+        type: number
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: 2
+      flags: {}
+      hint: ''
+      name: Grit Points
+      value: {}
+  description:
+    value: >-
+      <p>You gain 2 Grit Points, and learn 3 Basic Brawler Techniques of your
+      choice from the Brawler Branch of the Guard Class. This Grit can be spent
+      to use your chosen Brawler Techniques. You recover all expended Grit
+      whenever you finish a Short or Long Rest.</p><p><strong>Module:</strong>
+      You gain 1 additional Grit Point, and learn 2 more
+      Techniques.</p><p><strong>Automated: </strong>When you gain this Feature,
+      use the Enchantment Activity on this Feature and "enchant" this Feature
+      twice to choose your Techniques. The chosen Techniques will be added to
+      this Feature as Activities. Do so again when you gain the Module.</p>
+    chat: ''
+  identifier: hidden-technique
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Body Check
+    img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.UFNEOm2AkeSau9jg
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+    type: enchantment
+    _id: p7iv6OZOfyRzN5dx
+    disabled: false
+    start:
+      time: 432
+      combat: OmUauzUJXHzAVPNs
+      combatant: sms6zQnqacUvO4t4
+      initiative: 19.13
+      round: 4
+      turn: 0
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.p7iv6OZOfyRzN5dx'
+  - name: Cross Counter
+    img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.UFNEOm2AkeSau9jg
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+    type: enchantment
+    disabled: false
+    start:
+      time: 432
+      combat: OmUauzUJXHzAVPNs
+      combatant: sms6zQnqacUvO4t4
+      initiative: 19.13
+      round: 4
+      turn: 0
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 53LddvHBABwzzpyL
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.53LddvHBABwzzpyL'
+  - name: Feint
+    img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.UFNEOm2AkeSau9jg
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+    type: enchantment
+    disabled: false
+    start:
+      time: 432
+      combat: OmUauzUJXHzAVPNs
+      combatant: sms6zQnqacUvO4t4
+      initiative: 19.13
+      round: 4
+      turn: 0
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: yu2R5gyXL4PEqJHq
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.yu2R5gyXL4PEqJHq'
+  - name: Follow Up
+    img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.UFNEOm2AkeSau9jg
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+    type: enchantment
+    disabled: false
+    start:
+      time: 432
+      combat: OmUauzUJXHzAVPNs
+      combatant: sms6zQnqacUvO4t4
+      initiative: 19.13
+      round: 4
+      turn: 0
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 1kLRvXUkJxt5qibg
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.1kLRvXUkJxt5qibg'
+  - name: Footwork
+    img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.UFNEOm2AkeSau9jg
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+    type: enchantment
+    disabled: false
+    start:
+      time: 432
+      combat: OmUauzUJXHzAVPNs
+      combatant: sms6zQnqacUvO4t4
+      initiative: 19.13
+      round: 4
+      turn: 0
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: yBBupzoHhHYZqbUr
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.yBBupzoHhHYZqbUr'
+  - name: Guard Up
+    img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.UFNEOm2AkeSau9jg
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+    type: enchantment
+    disabled: false
+    start:
+      time: 432
+      combat: OmUauzUJXHzAVPNs
+      combatant: sms6zQnqacUvO4t4
+      initiative: 19.13
+      round: 4
+      turn: 0
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: Gikk23lBubNaqZy1
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.Gikk23lBubNaqZy1'
+  - name: Slip Off
+    img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.UFNEOm2AkeSau9jg
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+    type: enchantment
+    disabled: false
+    start:
+      time: 432
+      combat: OmUauzUJXHzAVPNs
+      combatant: sms6zQnqacUvO4t4
+      initiative: 19.13
+      round: 4
+      turn: 0
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: feSqOhFxSTMJKJwW
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.feSqOhFxSTMJKJwW'
+  - name: Tag In
+    img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.UFNEOm2AkeSau9jg
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+    type: enchantment
+    disabled: false
+    start:
+      time: 432
+      combat: OmUauzUJXHzAVPNs
+      combatant: sms6zQnqacUvO4t4
+      initiative: 19.13
+      round: 4
+      turn: 0
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: xgeSleCUonRVYjXG
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.xgeSleCUonRVYjXG'
+  - name: Feinted
+    img: modules/ak5e/icons/Skill-WaaiFu1.png
+    origin: null
+    transfer: false
+    _id: FbsxyLh6bVHUtI7S
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.advantage
+          type: ac5e
+          value: >-
+            once; effectOriginActor.name === rollingActor.name &&
+            itemName.Unarmed Srike
+          phase: initial
+          priority: null
+          _id: U3uYgAl0hmMyCAEo
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.yuhkJjFfRLJ2ilhz
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: 1
+      units: rounds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.FbsxyLh6bVHUtI7S'
+  - name: Dodging
+    img: modules/ak5e/icons/Skill-WaaiFu1.png
+    origin: null
+    transfer: false
+    _id: ZJmAC8MQcjfYxBlM
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.grants.disadvantage.attack.all
+          type: override
+          value: true
+          phase: initial
+          priority: null
+          _id: RVavJyJF65qTo8Z0
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.grants.advantage.save.dex
+          type: override
+          value: true
+          phase: initial
+          priority: null
+          _id: U4WqTo0rm7ahszXD
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.yuhkJjFfRLJ2ilhz
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.ZJmAC8MQcjfYxBlM'
+  - name: Tagged In
+    img: modules/ak5e/icons/Skill-WaaiFu1.png
+    origin: null
+    transfer: false
+    _id: 2y4DCkAtEhD44sDr
+    type: base
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.yuhkJjFfRLJ2ilhz
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.2y4DCkAtEhD44sDr'
+  - name: +Prof to AC
+    img: modules/ak5e/icons/Skill-WaaiFu1.png
+    origin: null
+    transfer: false
+    _id: Cj4odvBK4ur6XBLN
+    type: base
+    system:
+      changes:
+        - key: system.attributes.ac.bonus
+          type: add
+          value: '@prof'
+          phase: initial
+          priority: null
+          _id: hSR5nuiGW9YXHivM
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.yuhkJjFfRLJ2ilhz
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration:
+          - 1Reaction
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.Cj4odvBK4ur6XBLN'
+  - name: Taking Half Damage
+    img: modules/ak5e/icons/Skill-WaaiFu1.png
+    origin: null
+    transfer: false
+    _id: YE7PxxusGCzV4jQ1
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.modifier
+          type: ac5e
+          value: modifier=/2; addTo=all; once
+          phase: initial
+          priority: null
+          _id: PlcbShRzODJfRU9N
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.yuhkJjFfRLJ2ilhz
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration:
+          - 1Reaction
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841855
+      modifiedTime: 1793197841855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!yuhkJjFfRLJ2ilhz.YE7PxxusGCzV4jQ1'
+flags:
+  dnd5e:
+    riders:
+      activity:
+        - WKyFSPV8FSAGzmEy
+        - B2GlMClUT1ghghxk
+        - 5bi8YmLqZZGX60xH
+        - p6xkQD5CEk474AEN
+        - Olit5NPyoGUNuAG6
+        - BQ1wNfcfyNU6NnbM
+        - N7NxrbGoao4BZ4aN
+        - CiYAHVTODweLVht8
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841855
+  modifiedTime: 1793197841939
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: yuhkJjFfRLJ2ilhz
+sort: 0
+_key: '!items!yuhkJjFfRLJ2ilhz'

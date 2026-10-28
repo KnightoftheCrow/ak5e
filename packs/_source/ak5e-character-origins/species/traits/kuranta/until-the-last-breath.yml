@@ -156,29 +156,32 @@ system:
 effects:
   - name: Until the Last Breath
     img: icons/skills/wounds/anatomy-organ-heart-red.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.RWATM7PYIAAUaCVz
+    origin: null
     transfer: false
     _id: rRZuQ7sturKrlzc5
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.OverTime
-        mode: 5
-        value: |-
-          turn=start,
-          damageRoll=1d6+@abilities.con.mod,
-          damageType=temphp,
-          label=Until the Last Breath
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          value: |-
+            turn=start,
+            damageRoll=1d6+@abilities.con.mod,
+            damageType=temphp,
+            label=Until the Last Breath
+          priority: 20
+          type: override
+          phase: initial
+          _id: MzEmFWVSncnQ69G1
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.RWATM7PYIAAUaCVz
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -205,10 +208,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733081982
+      modifiedTime: 1791733081982
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!RWATM7PYIAAUaCVz.rRZuQ7sturKrlzc5'
 sort: 0
 ownership:
@@ -222,10 +230,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680307075
-  modifiedTime: 1768680307075
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733081982
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!RWATM7PYIAAUaCVz'

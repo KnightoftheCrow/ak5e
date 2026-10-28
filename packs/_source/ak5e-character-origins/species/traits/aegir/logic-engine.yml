@@ -282,20 +282,21 @@ effects:
     img: icons/commodities/tech/tube-chamber-lightning.webp
     disabled: true
     _id: DDRllkiocOb9prCk
-    system: {}
-    changes:
-      - key: system.proficient
-        mode: 4
-        value: '1'
-        priority: 20
+    system:
+      changes:
+        - key: system.proficient
+          value: 1
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: k70RaRMJYzWjzA1a
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -320,10 +321,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733083468
+      modifiedTime: 1791733083468
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!sh0R8KyrWYdQarX4.DDRllkiocOb9prCk'
 sort: 0
 ownership:
@@ -337,10 +343,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680286308
-  modifiedTime: 1768680286308
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733083467
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!sh0R8KyrWYdQarX4'

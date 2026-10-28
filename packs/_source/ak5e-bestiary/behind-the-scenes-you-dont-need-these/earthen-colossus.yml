@@ -470,12 +470,9 @@ prototypeToken:
     src: icons/magic/earth/construct-stone.webp
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -519,7 +516,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -543,6 +540,7 @@ prototypeToken:
   randomImg: false
   appendNumber: false
   prependAdjective: false
+  depth: 2
 items:
   - name: Earth Power
     type: feat
@@ -600,10 +598,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _key: '!actors.items!oqgc55sHBP7zqsPh.0b9VBlFUcvmuA5J5'
   - name: Slam
     type: weapon
@@ -788,10 +788,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _key: '!actors.items!oqgc55sHBP7zqsPh.DCdYLwsk3RVTeot6'
   - name: Cumbersome
     type: feat
@@ -844,10 +846,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _key: '!actors.items!oqgc55sHBP7zqsPh.wAmbne9B0p8RoMEJ'
   - name: Siege Attacker
     type: feat
@@ -902,10 +906,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _key: '!actors.items!oqgc55sHBP7zqsPh.hfJ5lptCVTii7NJF'
 effects:
   - name: Dead
@@ -914,70 +920,118 @@ effects:
     statuses:
       - dead
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.fail.ability.save.dex
-        mode: 0
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.fail.ability.save.str
-        mode: 0
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.grants.advantage.attack.all
-        mode: 0
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.grants.critical.mwak
-        mode: 0
-        value: >-
-          computeDistance(workflow.rangeDetails?.attackingToken ??
-          workflow.token, workflow.targets.first()) <= 5
-        priority: 20
-      - key: flags.midi-qol.grants.critical.rwak
-        mode: 0
-        value: >-
-          computeDistance(workflow.rangeDetails?.attackingToken ??
-          workflow.token, workflow.targets.first()) <= 5
-        priority: 20
-      - key: flags.midi-qol.grants.critical.msak
-        mode: 0
-        value: >-
-          computeDistance(workflow.rangeDetails?.attackingToken ??
-          workflow.token, workflow.targets.first()) <= 5
-        priority: 20
-      - key: flags.midi-qol.grants.critical.rsak
-        mode: 0
-        value: >-
-          computeDistance(workflow.rangeDetails?.attackingToken ??
-          workflow.token, workflow.targets.first()) <= 5
-        priority: 20
-      - key: system.attributes.movement.burrow
-        mode: 3
-        value: '0'
-        priority: 20
-      - key: system.attributes.movement.climb
-        mode: 3
-        value: '0'
-        priority: 20
-      - key: system.attributes.movement.fly
-        mode: 3
-        value: '0'
-        priority: 20
-      - key: system.attributes.movement.swim
-        mode: 3
-        value: '0'
-        priority: 20
-      - key: system.attributes.movement.walk
-        mode: 3
-        value: '0'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.fail.ability.save.dex
+          value: 1
+          priority: 20
+          type: custom
+          phase: initial
+          _id: EjPoaEMaA8sD0vaR
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.fail.ability.save.str
+          value: 1
+          priority: 20
+          type: custom
+          phase: initial
+          _id: qsmd3yL31iVUaBzZ
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.grants.advantage.attack.all
+          value: 1
+          priority: 20
+          type: custom
+          phase: initial
+          _id: kRp7vxJY5298GzOM
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.grants.critical.mwak
+          value: >-
+            computeDistance(workflow.rangeDetails?.attackingToken ??
+            workflow.token, workflow.targets.first()) <= 5
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 5HNX6bY1TTQzIRQe
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.grants.critical.rwak
+          value: >-
+            computeDistance(workflow.rangeDetails?.attackingToken ??
+            workflow.token, workflow.targets.first()) <= 5
+          priority: 20
+          type: custom
+          phase: initial
+          _id: tk7jLkIkzJaSNGTd
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.grants.critical.msak
+          value: >-
+            computeDistance(workflow.rangeDetails?.attackingToken ??
+            workflow.token, workflow.targets.first()) <= 5
+          priority: 20
+          type: custom
+          phase: initial
+          _id: ldCkswdDmiz4znf1
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.grants.critical.rsak
+          value: >-
+            computeDistance(workflow.rangeDetails?.attackingToken ??
+            workflow.token, workflow.targets.first()) <= 5
+          priority: 20
+          type: custom
+          phase: initial
+          _id: iz7j72CKmnCw7D0O
+          conditions: '{}'
+          replacement: ''
+        - key: system.attributes.movement.burrow
+          value: 0
+          priority: 20
+          type: downgrade
+          phase: initial
+          _id: iB1VuDtfrhBrC6vb
+          conditions: '{}'
+          replacement: ''
+        - key: system.attributes.movement.climb
+          value: 0
+          priority: 20
+          type: downgrade
+          phase: initial
+          _id: kM8cs3I7CoKoUZPu
+          conditions: '{}'
+          replacement: ''
+        - key: system.attributes.movement.fly
+          value: 0
+          priority: 20
+          type: downgrade
+          phase: initial
+          _id: MUUsaCiWr1SuwBWf
+          conditions: '{}'
+          replacement: ''
+        - key: system.attributes.movement.swim
+          value: 0
+          priority: 20
+          type: downgrade
+          phase: initial
+          _id: qXlCHNNaK234PkaP
+          conditions: '{}'
+          replacement: ''
+        - key: system.attributes.movement.walk
+          value: 0
+          priority: 20
+          type: downgrade
+          phase: initial
+          _id: Ufrfesm8KXI6yf8K
+          conditions: '{}'
+          replacement: ''
     disabled: false
     duration:
-      startTime: 888
-      combat: null
-      startRound: 2
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -992,12 +1046,21 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768664687503
-      modifiedTime: 1768664687503
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      modifiedTime: 1791733080218
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    showIcon: 2
+    start:
+      combat: null
+      round: 2
+      time: 888
+      turn: 0
+      combatant: null
+      initiative: null
+    folder: null
     _key: '!actors.effects!oqgc55sHBP7zqsPh.dnd5edead0000000'
 folder: zhZ3oJrVXiDxSCHH
 ownership:
@@ -1008,12 +1071,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1768664417028
-  modifiedTime: 1785597591837
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791733080218
+  modifiedTime: 1791733080218
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: oqgc55sHBP7zqsPh
 sort: 1300000
 _key: '!actors!oqgc55sHBP7zqsPh'

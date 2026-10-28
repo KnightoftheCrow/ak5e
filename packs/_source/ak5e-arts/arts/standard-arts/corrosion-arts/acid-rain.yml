@@ -270,25 +270,29 @@ system:
 effects:
   - name: Acid Rain Burn
     img: icons/magic/acid/projectile-beams-salvo-green.webp
-    origin: Item.AqA4sMwkRGlyf1ox
+    origin: null
     transfer: false
     _id: R6mWvmoZ6j8RVygZ
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.ActivityOverTime
-        mode: 2
-        value: acid-rain-damage
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.ActivityOverTime
+          value: acid-rain-damage
+          priority: 20
+          type: add
+          phase: initial
+          _id: v7d7w3Hb8Jwey9Iu
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.AqA4sMwkRGlyf1ox
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -315,10 +319,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733107969
+      modifiedTime: 1791733107969
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!AqA4sMwkRGlyf1ox.R6mWvmoZ6j8RVygZ'
 flags:
   dnd5e:
@@ -329,13 +338,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
-sort: 0
+  modifiedTime: 1791733107969
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+sort: 500000
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

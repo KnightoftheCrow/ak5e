@@ -150,28 +150,35 @@ system:
 effects:
   - name: Lifestealer (Skill Points)
     img: modules/ak5e/icons/Skill-MrNothing1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.T4TYeZoMQlXYcded
+    origin: null
     type: base
     _id: duXoIU6m7vSy4u0L
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: eFS9h3rdQAMIDl1K
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: gTx0HCMvyCYuMy51
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.T4TYeZoMQlXYcded
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -197,10 +204,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093666
+      modifiedTime: 1791733093666
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!QEYUKFkMYZSHSxWE.duXoIU6m7vSy4u0L'
 flags:
   dnd5e:
@@ -210,12 +222,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356543521
-  modifiedTime: 1783356543543
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733093665
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

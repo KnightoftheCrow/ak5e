@@ -1,0 +1,136 @@
+folder: Pji4wTRYaJMHjby6
+name: Hammer and Anvil
+type: feat
+_id: x1a0CFidFoUpchcU
+img: modules/ak5e/icons/Skill-Vulcan2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Once per Turn, when you hit a Creature within 5 feet of an allied
+      Creature with a Ranged Attack, that Attack deals additional Damage equal
+      to your Proficiency Bonus.</p><p><strong>Module:</strong> The range at
+      which this Feature is effective is increased to 10
+      feet.</p><p><strong>Partially Automated: </strong>You will be prompted for
+      the additional Damage, but this does not check if there is an allied
+      Creature close enough.</p>
+    chat: ''
+  identifier: hammer-and-anvil
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: skillPoints
+effects:
+  - name: Bonus Damage vs Engaged Enemies
+    img: modules/ak5e/icons/Skill-Vulcan2.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.x1a0CFidFoUpchcU
+    _id: 5k6Wvdy3R6stmp2u
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            modifier=@prof; oncePerTurn; actionType.rwak &&
+            checkNearby(opponentId, 'different', 5, {count:1}) &&
+            !getItem(tokenId, 'hammer-and-anvil-module') || actionType.rsak &&
+            checkNearby(opponentId, 'different', 5, {count:1}) &&
+            !getItem(tokenId, 'hammer-and-anvil-module')
+          phase: initial
+          _id: kl0NmwdwuBbeE8pE
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.x1a0CFidFoUpchcU
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841851
+      modifiedTime: 1793197841851
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start:
+      combat: null
+      round: 1
+      time: 900
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!x1a0CFidFoUpchcU.5k6Wvdy3R6stmp2u'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841851
+  modifiedTime: 1793197841938
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!x1a0CFidFoUpchcU'

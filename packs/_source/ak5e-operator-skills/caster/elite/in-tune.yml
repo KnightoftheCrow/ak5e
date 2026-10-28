@@ -149,28 +149,35 @@ system:
 effects:
   - name: In Tune (Skill Points)
     img: modules/ak5e/icons/Skill-MedicAmiya1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.HP61sFvtrtnhePSG
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '50'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: p5jUnGWGymjaf72C
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 50
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: I5SY0kAkSMLCoXk7
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.HP61sFvtrtnhePSG
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -195,48 +202,72 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091944
+      modifiedTime: 1791733091944
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!HP61sFvtrtnhePSG.DXFUOiWQeWl6gGq8'
   - name: In Tune
     img: modules/ak5e/icons/Skill-MedicAmiya1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.HP61sFvtrtnhePSG
+    origin: null
     transfer: false
     _id: 88h9qWQxBNdTtCW7
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.save.advantage
-        mode: 0
-        value: 'true'
-        priority: 20
-      - key: flags.midi-qol.min.ability.check.all
-        mode: 5
-        value: '10'
-        priority: 20
-      - key: flags.midi-qol.min.ability.save.all
-        mode: 5
-        value: '10'
-        priority: 20
-      - key: flags.automated-conditions-5e.attack.modifier
-        mode: 5
-        value: modifier=min10
-        priority: 20
-      - key: flags.automated-conditions-5e.grants.attack.disadvantage
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.save.advantage
+          value: true
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 6FC1qHsb0kGfVNrU
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.min.ability.check.all
+          value: 10
+          priority: 20
+          type: override
+          phase: initial
+          _id: XfH4z888LhZkUIXH
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.min.ability.save.all
+          value: 10
+          priority: 20
+          type: override
+          phase: initial
+          _id: pBgnuqfqqHcFdh6u
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.attack.modifier
+          value: modifier=min10
+          priority: 20
+          type: override
+          phase: initial
+          _id: NJdg7HG3fktRzYdV
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.grants.attack.disadvantage
+          value: true
+          priority: 20
+          type: override
+          phase: initial
+          _id: h6JcQT307JNHekJH
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.HP61sFvtrtnhePSG
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -263,10 +294,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091944
+      modifiedTime: 1791733091944
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!HP61sFvtrtnhePSG.88h9qWQxBNdTtCW7'
 sort: 100000
 ownership:
@@ -281,11 +317,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.fSBmayS08q0k3xqB
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774023683571
-  modifiedTime: 1774023683571
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733091944
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: HP61sFvtrtnhePSG
 _key: '!items!HP61sFvtrtnhePSG'

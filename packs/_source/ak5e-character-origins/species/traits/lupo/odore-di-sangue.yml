@@ -41,52 +41,83 @@ system:
 effects:
   - name: Odore di Sangue
     img: icons/creatures/mammals/wolf-shadow-black.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.UesJRtzSK9QmpcvN
+    origin: null
     _id: oCv9TTRKDepjAvhD
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.odore.damage.mwak
-        mode: 0
-        value: 1d8
-        priority: 20
-      - key: flags.midi-qol.optional.odore.damage.msak
-        mode: 0
-        value: 1d8
-        priority: 20
-      - key: flags.midi-qol.optional.odore.damage.rwak
-        mode: 0
-        value: 1d8
-        priority: 20
-      - key: flags.midi-qol.optional.odore.damage.rsak
-        mode: 0
-        value: 1d8
-        priority: 20
-      - key: flags.midi-qol.optional.odore.count
-        mode: 0
-        value: each-turn
-        priority: 20
-      - key: flags.midi-qol.optional.odore.criticalDamage
-        mode: 0
-        value: 'true'
-        priority: 20
-      - key: flags.midi-qol.optional.odore.activation
-        mode: 0
-        value: target.attributes.hp.pct < 50 && workflow.advantage
-        priority: 20
-      - key: flags.midi-qol.optional.odore.label
-        mode: 0
-        value: Odore di Sangue - Bonus Damage
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.odore.damage.mwak
+          value: 1d8
+          priority: 20
+          type: custom
+          phase: initial
+          _id: YDS950SFVPT6mN1z
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.odore.damage.msak
+          value: 1d8
+          priority: 20
+          type: custom
+          phase: initial
+          _id: lddj4mgFbL2UAeLD
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.odore.damage.rwak
+          value: 1d8
+          priority: 20
+          type: custom
+          phase: initial
+          _id: OvgxY6hApE5hFxho
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.odore.damage.rsak
+          value: 1d8
+          priority: 20
+          type: custom
+          phase: initial
+          _id: NOBc7KAIMZeBIiMz
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.odore.count
+          value: each-turn
+          priority: 20
+          type: custom
+          phase: initial
+          _id: VvW4pf2k7mvxlIQx
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.odore.criticalDamage
+          value: true
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 9WmNU46JncMeaujR
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.odore.activation
+          value: target.attributes.hp.pct < 50 && workflow.advantage
+          priority: 20
+          type: custom
+          phase: initial
+          _id: UpQTHxxeVGTYrl9G
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.odore.label
+          value: Odore di Sangue - Bonus Damage
+          priority: 20
+          type: custom
+          phase: initial
+          _id: yGUL4GpoQwo9DUqj
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.UesJRtzSK9QmpcvN
     disabled: false
     duration:
-      startTime: 840
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 107
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -111,10 +142,21 @@ effects:
         Actor.j5qUpsgLWW6QtAFt.Item.165It27EOOLdhDv0.ActiveEffect.arib910mH1f5ykEQ
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733082223
+      modifiedTime: 1791733082223
+    start:
+      combat: null
+      round: 107
+      time: 840
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!UesJRtzSK9QmpcvN.oCv9TTRKDepjAvhD'
 sort: 0
 ownership:
@@ -128,10 +170,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680313150
-  modifiedTime: 1768680313150
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733082222
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!UesJRtzSK9QmpcvN'

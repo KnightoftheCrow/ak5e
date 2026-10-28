@@ -151,28 +151,35 @@ system:
 effects:
   - name: Invariance Principle (Skill Points)
     img: modules/ak5e/icons/Skill-Mountain1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.PFdu1FRLgCQg420v
+    origin: null
     type: base
     _id: SWpg9uJ0K1nDL9Zc
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '20'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: RYDExLuizdVKRblN
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: fRcFzT2m5fNiqa12
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.PFdu1FRLgCQg420v
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,10 +205,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095825
+      modifiedTime: 1791733095825
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!k0fg8YIv1jQa9Ir7.SWpg9uJ0K1nDL9Zc'
 flags:
   dnd5e:
@@ -211,12 +223,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356543012
-  modifiedTime: 1783356543031
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733095824
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

@@ -1,0 +1,125 @@
+folder: pK9UlZztTzku2Tvf
+name: Savage Attacker
+type: feat
+img: modules/ak5e/icons/Skill-Siege1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Once per Turn, when you deal Damage as a result of an Attack, you can
+      roll the Damage for that Attack twice and choose which of the results you
+      want.</p><p><strong>Module Effect:</strong> When you use this Feature,
+      that Attack deals additional Damage equal to your Proficiency
+      Bonus.</p><hr><p><strong>Automated: </strong>There is an Opt-In Effect to
+      roll Damage with Advantage. With the Module, you deal additional Damage
+      when you do this.</p>
+    chat: ''
+  identifier: savage-attacker
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Savage Attacker
+    img: modules/ak5e/icons/Skill-Siege1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.zqmrn4HUjvjk28cd
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.advantage
+          type: ac5e
+          value: >-
+            name=Savage Attacker; optinId=savage-attacker; description=Savage
+            Attacker Damage Reroll; addTo=all; oncePerTurn; optin; hasAttack
+          phase: initial
+          _id: ZtqfeHInR5zM1IWz
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: CJ0tEV7zybx3YPvM
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.zqmrn4HUjvjk28cd
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841797
+      modifiedTime: 1793197841797
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!zqmrn4HUjvjk28cd.CJ0tEV7zybx3YPvM'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841797
+  modifiedTime: 1793197841917
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: zqmrn4HUjvjk28cd
+sort: 0
+_key: '!items!zqmrn4HUjvjk28cd'

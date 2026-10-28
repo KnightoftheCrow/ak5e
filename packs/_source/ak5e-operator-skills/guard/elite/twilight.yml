@@ -1,0 +1,497 @@
+folder: BzUb004VHaNmhXWK
+name: Twilight
+type: feat
+img: modules/ak5e/icons/Skill-Surtr3.webp
+system:
+  activities:
+    ARseQAY3rDUNFar7:
+      type: heal
+      name: Activate
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '65'
+            target: skill-point
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: longRest
+        concentration: false
+        override: false
+        value: '4'
+      effects:
+        - _id: 8XPurh3wfxrIdi2O
+          uuid: null
+          level: {}
+        - _id: hcGRbyKpXrYNeev2
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      healing:
+        types:
+          - temphp
+        custom:
+          enabled: true
+          formula: (ceil((@attributes.hp.max)/2))
+        modifiers: []
+        scaling:
+          number: 1
+        number: null
+        denomination: null
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: ARseQAY3rDUNFar7
+    FgVKxiK7FdEZN4e4:
+      type: damage
+      name: Drain HP
+      _id: FgVKxiK7FdEZN4e4
+      img: ''
+      sort: 100000
+      activation:
+        type: turnEnd
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: 15 * pow(2, @scaling.increase)
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types: []
+            scaling:
+              mode: ''
+              number: 1
+      useConditionText: effects.some(e => e.name === "Twilight")
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
+      SP</p></td><td><p>Charging</p></td><td><p>Activation</p></td><td><p>Duration</p></td></tr></thead><tbody><tr><td><p>65</p></td><td><p>30</p></td><td><p>Automatic</p></td><td><p>Bonus
+      Action</p></td><td><p>Until Long
+      Rest</p></td></tr></tbody></table><p><strong>Effect:</strong> You gain
+      Temporary Hit Points equal to half of your maximum Hit Points.
+      Furthermore, your Attacks deal 2 additional dice of Damage, and have +1
+      Critical Range. However, at the end of each of your Turns, you lose 15 Hit
+      Points; this amount cannot be reduced. The amount of Hit Points you lose
+      doubles for every Round after the first (On the second round you lose 30
+      HP, on the third 60, etc). This Operator Skill ends when you are reduced
+      to 0 Hit Points. When you are reduced to 0 Hit Points while this Skill is
+      Active, you become Incapacitated until you are no longer Dying. Hit Points
+      you lose as a result of this Skill cannot kill you via the “Massive
+      Damage” rule.</p><hr><p><strong>Automated: </strong>The Temporary HP,
+      additional attack dice, and critical range are automated. There is an
+      Activity on this item that will drain your HP; set the scaling to the
+      number of turns this Skill has been active, starting at 1. </p>
+    chat: ''
+  identifier: twilight
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 14
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: opSkill
+effects:
+  - name: Twilight
+    img: modules/ak5e/icons/Skill-Surtr3.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.9TBgtO17KnW5P6KT
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.extraDice
+          type: ac5e
+          value: bonus=2; hasAttack
+          phase: initial
+          _id: Muo0G0qLQco7Hpj5
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          type: ac5e
+          value: threshold=-1; hasAttack
+          phase: initial
+          _id: hyMMNRqaUFnz4tfp
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: hcGRbyKpXrYNeev2
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792791798157
+      modifiedTime: 1792791865727
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!9TBgtO17KnW5P6KT.hcGRbyKpXrYNeev2'
+  - name: Twilight (Skill Points)
+    img: modules/ak5e/icons/Skill-Surtr3.webp
+    origin: Compendium.ak5e.ak5e-operator-skills.Item.9TBgtO17KnW5P6KT
+    type: base
+    _id: PpakfOp4LHC7uKgy
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: awg9el1zIQG8nbut
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: IBexwFm1Eh3RM5sj
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.9TBgtO17KnW5P6KT
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+      automated-conditions-5e:
+        ac5eChangeRows: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-operator-skills.Item.18YAjQzjpr9yk929.ActiveEffect.SR3YhJbxFtuIKx6i
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1792793867535
+      modifiedTime: 1792793876055
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!9TBgtO17KnW5P6KT.PpakfOp4LHC7uKgy'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.99yNFw18vMwW9pOA
+  duplicateSource: Item.z4kndxOWThLDBNL8
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791628189477
+  modifiedTime: 1792793462990
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 9TBgtO17KnW5P6KT
+sort: 1800000
+_key: '!items!9TBgtO17KnW5P6KT'

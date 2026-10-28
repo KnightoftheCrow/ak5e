@@ -1,7 +1,7 @@
 folder: k0FYoIdhU0iFUDY2
 name: Light Combat Gear
 type: equipment
-img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
+img: modules/ak5e/icons/Equipment/AK5e_Light_Combat_Gear.png
 system:
   activities: {}
   uses:
@@ -50,36 +50,51 @@ system:
 effects:
   - name: Light Combat Gear DR
     img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
-    origin: Item.wLKTNGFXQwM7a4j8
+    origin: null
     _id: N33l7R8UoTQpvXpr
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dm.amount.bludgeoning
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.slashing
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.piercing
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.thunder
-        mode: 2
-        value: '-2'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dm.amount.bludgeoning
+          value: -2
+          priority: 20
+          type: add
+          phase: initial
+          _id: IYPSmegDQxuQkEVm
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.slashing
+          value: -2
+          priority: 20
+          type: add
+          phase: initial
+          _id: fmpG0VmuDgNbibIy
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.piercing
+          value: -2
+          priority: 20
+          type: add
+          phase: initial
+          _id: 7tHj7e6xiXfOTO9T
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.thunder
+          value: -2
+          priority: 20
+          type: add
+          phase: initial
+          _id: MLXNLblcCQqksxPH
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.wLKTNGFXQwM7a4j8
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -103,22 +118,27 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733078905
+      modifiedTime: 1791733078905
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!2SCb6lJXMkjDFMif.N33l7R8UoTQpvXpr'
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1757006068823
-  modifiedTime: 1757006482653
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1793231267558
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: 2SCb6lJXMkjDFMif
 sort: 300000
 ownership:

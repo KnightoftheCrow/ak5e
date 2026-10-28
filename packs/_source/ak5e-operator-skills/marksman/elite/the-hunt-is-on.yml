@@ -146,28 +146,35 @@ system:
 effects:
   - name: The Hunt is On (Skill Points)
     img: modules/ak5e/icons/Skill-Diamante1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.wfKEXUanlyTLgLts
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '35'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '35'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 35
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: EWSmumfPplcDsms1
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 35
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: cgQCxFPJk0sVQxBS
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.wfKEXUanlyTLgLts
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -191,11 +198,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: GiT7LQTiCJxjm7mo
-      modifiedTime: 1768653821189
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1791733097705
+      createdTime: 1791733097705
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!wfKEXUanlyTLgLts.DXFUOiWQeWl6gGq8'
 flags:
   dnd5e:
@@ -205,12 +216,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768159106804
-  modifiedTime: 1768653817945
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1791733097704
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   GiT7LQTiCJxjm7mo: 3

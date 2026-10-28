@@ -150,28 +150,35 @@ system:
 effects:
   - name: Incendiary Shots (Skill Points)
     img: modules/ak5e/icons/64px-Skill-Fiammetta2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.1M4hhccnaaFHzWJQ
+    origin: null
     _id: JjuF7rmXk2pqcodR
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '20'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: cCBatkSc8HoMSzTj
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 6RlnxWQwCU1PxP4h
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.1M4hhccnaaFHzWJQ
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -196,34 +203,40 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768152942591
-      modifiedTime: 1768651501087
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      modifiedTime: 1791733089874
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!1M4hhccnaaFHzWJQ.JjuF7rmXk2pqcodR'
   - name: Incendiary Shots
     img: modules/ak5e/icons/64px-Skill-Fiammetta2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.1M4hhccnaaFHzWJQ
+    origin: null
     transfer: false
     _id: KnUB8OFmPeR2YlRC
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: bonus=1d8; hasAttack;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=1d8; hasAttack;
+          priority: 20
+          type: add
+          phase: initial
+          _id: 7n8jd7RKGeembNo8
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.1M4hhccnaaFHzWJQ
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 5
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 5
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -250,12 +263,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768153131298
-      modifiedTime: 1768153259264
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      modifiedTime: 1791733089874
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!1M4hhccnaaFHzWJQ.KnUB8OFmPeR2YlRC'
 sort: 0
 ownership:
@@ -267,10 +283,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767619041504
-  modifiedTime: 1768153729840
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1791733089874
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!1M4hhccnaaFHzWJQ'

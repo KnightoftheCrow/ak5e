@@ -174,31 +174,35 @@ system:
 effects:
   - name: Lacerated
     img: icons/skills/wounds/injury-stitched-flesh-red.webp
-    origin: Item.1Ql4660eNGFkhlDZ
+    origin: null
     transfer: false
     _id: 5ZZ6rHq6zrjZRxpx
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.OverTime
-        mode: 5
-        value: |-
-          turn=end,
-          saveAbility=con,
-          saveDC=@attributes.spell.dc,
-          damageRoll=2d6+(@scaling.increase)d6,
-          damageType=notype,
-          damageBeforeSave=true
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          value: |-
+            turn=end,
+            saveAbility=con,
+            saveDC=@attributes.spell.dc,
+            damageRoll=2d6+(@scaling.increase)d6,
+            damageType=notype,
+            damageBeforeSave=true
+          priority: 20
+          type: override
+          phase: initial
+          _id: 2kymZMAAaG3ijjH0
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.1Ql4660eNGFkhlDZ
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -226,10 +230,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733107555
+      modifiedTime: 1791733107555
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!1Ql4660eNGFkhlDZ.5ZZ6rHq6zrjZRxpx'
 flags:
   dnd5e:
@@ -240,12 +249,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733107555
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

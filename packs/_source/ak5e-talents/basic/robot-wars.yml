@@ -1,0 +1,128 @@
+folder: pK9UlZztTzku2Tvf
+name: Robot Wars
+type: feat
+_id: YOKOmeBuRQrwBhRp
+img: modules/ak5e/icons/Skill-BuggyCam.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Allied Constructs within 30 feet of you gain a +1 Bonus to their Attack
+      and Damage Rolls. A Creature can only benefit from one instance of this
+      Feature at a time.</p><p><strong>Module Effect:</strong> This Bonus is
+      increased to +2.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: robot-wars
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +1 to Attack and Damage Rolls for Nearby Constructs
+    img: modules/ak5e/icons/Skill-BuggyCam.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.YOKOmeBuRQrwBhRp
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.aura.attack.bonus
+          type: ac5e
+          value: >-
+            bonus=1; radius=30; allies; singleAura;
+            rollingActor.creatureType.includes('construct')
+          phase: initial
+          _id: Yx6uHIXGdNCXbQve
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.aura.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1; radius=30; allies; singleAura;
+            rollingActor.creatureType.includes('construct')
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: BpijztpAyMYYleID
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: WcgZzjauwnkwZosT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.YOKOmeBuRQrwBhRp
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841795
+      modifiedTime: 1793197841795
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!YOKOmeBuRQrwBhRp.WcgZzjauwnkwZosT'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841795
+  modifiedTime: 1793197841916
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!YOKOmeBuRQrwBhRp'

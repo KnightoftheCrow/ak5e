@@ -170,28 +170,35 @@ system:
 effects:
   - name: Radar Sweep (Skill Points)
     img: modules/ak5e/icons/Skill-Shirayuki2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.F3bfzoiDZxr0lEHY
+    origin: null
     _id: doiEAifaio7IQyZ8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '35'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: DJiaFbzmR4uW1Njc
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 35
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: FKFC33xsHN3GtJqj
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.F3bfzoiDZxr0lEHY
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -216,12 +223,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768153973667
-      modifiedTime: 1768651562417
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      modifiedTime: 1791733091733
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!F3bfzoiDZxr0lEHY.doiEAifaio7IQyZ8'
 sort: 0
 ownership:
@@ -235,10 +245,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767619116611
-  modifiedTime: 1768156027904
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1791733091733
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!F3bfzoiDZxr0lEHY'

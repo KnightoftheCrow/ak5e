@@ -1,0 +1,122 @@
+folder: pK9UlZztTzku2Tvf
+name: Beneath Me
+type: feat
+img: modules/ak5e/icons/Skill-Toddifons2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Once per Turn, when you make an Attack against a Creature that is a
+      smaller Size Category than you, you can give yourself Advantage on that
+      Attack Roll.</p><p><strong>Module Effect:</strong> If you give yourself
+      Advantage in this way, and the Attack hits, it deals additional Damage
+      equal to your Proficiency Bonus.</p><hr><p><strong>Automated: </strong>You
+      have an Opt-in to trigger for Attack Rolls if the target Creature's TOKEN
+      is smaller than yours.</p>
+    chat: ''
+  identifier: beneath-me
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Advantage against Smaller Creatures
+    img: modules/ak5e/icons/Skill-Toddifons2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.obQdb3Xj7vm6tvJG
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.advantage
+          type: ac5e
+          value: >-
+            name=Advantage from Beneath Me; optinId=beneath-me;
+            description=Advantage against Smaller Creatures; oncePerTurn; optin;
+            preselected; opponentActor.tokenSize < rollingActor.tokenSize
+          phase: initial
+          _id: Vn8uMMsMRJHVIJ08
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 9GslpnKMgkcl3uvH
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.obQdb3Xj7vm6tvJG
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841757
+      modifiedTime: 1793197841757
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!obQdb3Xj7vm6tvJG.9GslpnKMgkcl3uvH'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841757
+  modifiedTime: 1793197841900
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: obQdb3Xj7vm6tvJG
+sort: 0
+_key: '!items!obQdb3Xj7vm6tvJG'

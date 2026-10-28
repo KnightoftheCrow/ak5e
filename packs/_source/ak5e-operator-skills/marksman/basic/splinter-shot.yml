@@ -147,28 +147,35 @@ system:
 effects:
   - name: Splinter Shot (Skill Points)
     img: modules/ak5e/icons/Skill-Rosa3.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.MPRTMYuKfJceHc7C
+    origin: null
     _id: 1IQLWO2MAieorcPl
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '5'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 4G8FELJinZtoCeuf
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 8OGcfzRemZQU8VNp
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.MPRTMYuKfJceHc7C
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -193,12 +200,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768072802879
-      modifiedTime: 1768651410760
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      modifiedTime: 1791733092934
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!MPRTMYuKfJceHc7C.1IQLWO2MAieorcPl'
 sort: 103125
 ownership:
@@ -212,10 +222,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767618533636
-  modifiedTime: 1768140804383
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1791733092934
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!MPRTMYuKfJceHc7C'

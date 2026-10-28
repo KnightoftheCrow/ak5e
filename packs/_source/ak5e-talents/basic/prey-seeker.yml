@@ -1,0 +1,139 @@
+folder: pK9UlZztTzku2Tvf
+name: Prey Seeker
+type: feat
+_id: Gw6nu4XFsseta9C2
+img: modules/ak5e/icons/Skill-ProjektRed2.webp
+system:
+  activities: {}
+  uses:
+    recovery:
+      - period: turn
+        type: recoverAll
+    max: ''
+    spent: 0
+  advancement:
+    qxV9Bsan8SyS4X8Y:
+      name: Prey Seeker Damage
+      type: ScaleValue
+      _id: qxV9Bsan8SyS4X8Y
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 1
+            faces: 8
+      flags: {}
+      hint: ''
+      value: {}
+  description:
+    value: >-
+      <p>When you hit a Creature missing any Hit Points with an Attack, that
+      Attack deals 1d8 additional Damage. You can only deal this additional
+      Damage once per Turn.</p><p><strong>Module Effect:</strong> The additional
+      Damage is increased to 2d8.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: prey-seeker
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Additional Damage vs Creatures missing HP
+    img: modules/ak5e/icons/Skill-ProjektRed2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.Gw6nu4XFsseta9C2
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@scale.prey-seeker.prey-seeker-damage; name=Additional Damage
+            from Prey Seeker; oncePerTurn; hasAttack &&
+            opponentActor.attributes.hp.pct < 100
+          phase: initial
+          _id: eiXBeV0rJAwTpD7U
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: wME25HJHIXEkBHt1
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.Gw6nu4XFsseta9C2
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841793
+      modifiedTime: 1793197841793
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!Gw6nu4XFsseta9C2.wME25HJHIXEkBHt1'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841793
+  modifiedTime: 1793197841915
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!Gw6nu4XFsseta9C2'

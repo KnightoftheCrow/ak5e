@@ -1,0 +1,118 @@
+folder: Pji4wTRYaJMHjby6
+name: Mirror Move (Module)
+type: feat
+img: modules/ak5e/icons/Skill-AllerdalesGuard.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><span style="padding:0px
+      1.5px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.0189px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact"><strong>Module:</strong>
+      The Force Damage is increased to
+      4d8.</span></p><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: mirror-move-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - mirror-move
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Mirror Move (Module)
+    img: modules/ak5e/icons/Skill-AllerdalesGuard.webp
+    origin: null
+    type: base
+    _id: kppqrl7HNGNLxXnY
+    system:
+      changes:
+        - key: system.scale.mirror-move.damage
+          type: upgrade
+          value: 4d8
+          phase: initial
+          priority: null
+          _id: T36cfZtQDYbJdFMS
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.TF0mmvRG8uLJVF8x
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841870
+      modifiedTime: 1793197841870
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!lY5CNPYmx7wxwp3Z.kppqrl7HNGNLxXnY'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841870
+  modifiedTime: 1793197841945
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: lY5CNPYmx7wxwp3Z
+sort: 0
+_key: '!items!lY5CNPYmx7wxwp3Z'

@@ -1,7 +1,7 @@
 folder: xVeaYDqngTsmNvFl
 name: Tear Gas
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-Invincible1.webp
+img: modules/ak5e/icons/Skill-Invincible1.webp
 system:
   activities:
     OKUjyQyXCcxtZoAD:
@@ -156,29 +156,36 @@ system:
     subtype: opSkill
 effects:
   - name: Tear Gas (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/Skill-Invincible1.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.sEOw6IR8QcOvgxQr
+    img: modules/ak5e/icons/Skill-Invincible1.webp
+    origin: null
     _id: QdrpWmiH9InnTHKC
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '35'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: GJF90Yt9tVM0Ojsq
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 35
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: fmJe5pLsaT6FmHaX
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.sEOw6IR8QcOvgxQr
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -204,10 +211,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096912
+      modifiedTime: 1791733096912
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!sEOw6IR8QcOvgxQr.QdrpWmiH9InnTHKC'
 flags:
   dnd5e:
@@ -217,12 +229,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733096912
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

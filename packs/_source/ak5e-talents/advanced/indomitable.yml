@@ -1,0 +1,228 @@
+folder: Pji4wTRYaJMHjby6
+name: Indomitable
+type: feat
+img: modules/ak5e/icons/Skill-Kal%27tsit1.webp
+system:
+  activities:
+    bVArouNENAKLfilg:
+      type: utility
+      _id: bVArouNENAKLfilg
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: false
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      name: ''
+      behaviors: []
+  uses:
+    max: '@scale.indomitable.indomitable-uses'
+    recovery:
+      - period: lr
+        type: recoverAll
+    spent: 0
+  advancement:
+    lhVuX7eyLQQfn7el:
+      name: Indomitable Uses
+      type: ScaleValue
+      _id: lhVuX7eyLQQfn7el
+      configuration:
+        identifier: ''
+        type: number
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: 1
+      flags: {}
+      hint: ''
+      value: {}
+  description:
+    value: >-
+      <p>Once per Long Rest, when you fail a Saving Throw, you may reroll that
+      Saving Throw with a Bonus equal to your Character
+      Level.</p><p><strong>Module Effect: </strong>You may use this Ability
+      twice per Long Rest.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: indomitable
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    level: 9
+    repeatable: false
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects: []
+flags:
+  dnd5e: {}
+  midi-qol:
+    removeAttackDamageButtons: default
+    forceCEOff: true
+  midiProperties:
+    confirmTargets: default
+  cat:
+    genericConfig:
+      chris-premades:
+        rerollSaveWithBonus:
+          bonus: '@details.level'
+          ability:
+            - cha
+            - con
+            - dex
+            - int
+            - str
+            - wis
+          failedOnly: true
+          oncePerRoll: true
+          consume: always
+          rollActivity: bVArouNENAKLfilg
+          rollItem: true
+    macros:
+      save:
+        - source: chris-premades
+          identifier: rerollSaveWithBonus
+          rules: all
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841861
+  modifiedTime: 1793197841942
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: qT8MjvVhc5wqmNLR
+sort: 0
+_key: '!items!qT8MjvVhc5wqmNLR'

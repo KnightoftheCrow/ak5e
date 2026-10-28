@@ -1,0 +1,117 @@
+folder: Pji4wTRYaJMHjby6
+name: Self Defence (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Breeze2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> The amount of Temporary Hit Points you
+      gain from this Feature is doubled.</p><hr><p><strong>Not automated:
+      </strong>There is an Activity on this Feature you must trigger
+      manually.</p>
+    chat: ''
+  identifier: self-defence-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - self-defence
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Self Defence (Module)
+    img: modules/ak5e/icons/Skill-Breeze2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.LrqyiuCDwxfUeGkD
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.scale.self-defence.self-defence-temp-hp
+          type: override
+          value: (@prof)*2
+          phase: initial
+          _id: z5Wewa0R3dBFGaML
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: ywIkZzn1zdMkay7H
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.LrqyiuCDwxfUeGkD
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841882
+      modifiedTime: 1793197841882
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!LrqyiuCDwxfUeGkD.ywIkZzn1zdMkay7H'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841882
+  modifiedTime: 1793197841951
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: LrqyiuCDwxfUeGkD
+sort: 0
+_key: '!items!LrqyiuCDwxfUeGkD'

@@ -1,0 +1,134 @@
+folder: pK9UlZztTzku2Tvf
+name: Bird Hunter
+type: feat
+img: modules/ak5e/icons/Skill-GreyThroat1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Your Ranged Attacks against Creatures not touching the ground deal
+      additional Damage equal to your Proficiency Modifier.</p><p><strong>Module
+      Effect:</strong> If a Creature you can see moves using a Flying Speed
+      within the Normal Range of a weapon you are wielding, you can expend your
+      Reaction to make an Attack with that weapon against that Creature. You can
+      use this Feature a number of times equal to your Proficiency Bonus, and
+      regain all expended uses when you complete a Long
+      Rest.</p><hr><p><strong>Semi-Automated: </strong>There is an Opt-In for
+      Damage Rolls for Ranged Attacks when hitting Creatures with a Fly Speed
+      &gt; 0. The Module Effect cannot be automated and is just for tracking
+      uses.</p>
+    chat: ''
+  identifier: bird-hunter
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +Prof Damage against Flying Creatures
+    img: modules/ak5e/icons/Skill-GreyThroat1.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.hw3yZtZqGIJBAwab
+    _id: B1hAzrYD0YwWrntZ
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=@prof; name=Bonus Damage against Flying from Bird Hunter;
+            optinId=prof-damage-against-flying-creatures-0; description=+Prof
+            Damage; optin; preselected; actionType.rsak &&
+            opponentActor.attributes.movement.fly > 0 || actionType.rwak &&
+            opponentActor.attributes.movement.fly > 0
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: HjPQTZNG4KsctWfj
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.HiEAgOTHD7e9oAYP
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        applicationMode: default
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841758
+      modifiedTime: 1793197841758
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!hw3yZtZqGIJBAwab.B1hAzrYD0YwWrntZ'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841758
+  modifiedTime: 1793197841900
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: hw3yZtZqGIJBAwab
+sort: 0
+_key: '!items!hw3yZtZqGIJBAwab'

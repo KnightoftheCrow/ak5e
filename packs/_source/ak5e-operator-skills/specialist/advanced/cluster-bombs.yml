@@ -175,28 +175,35 @@ system:
 effects:
   - name: Cluster Bombs (Skill Points)
     img: modules/ak5e/icons/Skill-Fuze2.webp
-    origin: Item.9unkAZYgVQ68gADm
+    origin: null
     _id: 8flIua4KzfyyVmgo
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '35'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: jiv9xOMF9B65q4zD
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 35
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 85nyZ3YPL9gElYJE
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.9unkAZYgVQ68gADm
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -220,10 +227,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096557
+      modifiedTime: 1791733096557
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!qK2squmyGGTSMJqW.8flIua4KzfyyVmgo'
 flags:
   dnd5e:
@@ -233,12 +245,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356921198
-  modifiedTime: 1783356921218
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733096557
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

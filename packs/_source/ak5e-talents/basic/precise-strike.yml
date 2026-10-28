@@ -1,0 +1,148 @@
+folder: pK9UlZztTzku2Tvf
+name: Precise Strike
+type: feat
+_id: 20JwRjsI4tfUxkLA
+img: modules/ak5e/icons/Skill-Haze1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement:
+    qxV9Bsan8SyS4X8Y:
+      name: Precise Strike Damage
+      type: ScaleValue
+      _id: qxV9Bsan8SyS4X8Y
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 1
+            faces: 8
+      flags: {}
+      hint: ''
+      value: {}
+  description:
+    value: >-
+      <p>Your Ranged Attacks against Creatures outside of the Normal Range of
+      that Weapon deal 1d8 additional Piercing Damage.</p><p><strong>Module
+      Effect:</strong> The additional Piercing Damage is increased to
+      2d8.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: precise-strike
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: 1d8 Damage against Creatures outside of Normal Range
+    img: modules/ak5e/icons/Skill-Haze1.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.20JwRjsI4tfUxkLA
+    _id: vAyqNPa8eA6YZcK7
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=@scale.precise-strike.precise-strike-damage; name=Additional
+            Damage from Precise Strike; description=1d8 Damage (2d8 with
+            Module); hasAttack && actionType.rsak && checkDistance(tokenId,
+            opponentId) >= item.range.value || hasAttack && actionType.rwak &&
+            checkDistance(tokenId, opponentId) >= item.range.value
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: KemjiM4vnkYsy7NN
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.20JwRjsI4tfUxkLA
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841791
+      modifiedTime: 1793197841791
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!20JwRjsI4tfUxkLA.vAyqNPa8eA6YZcK7'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841791
+  modifiedTime: 1793197841914
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!20JwRjsI4tfUxkLA'

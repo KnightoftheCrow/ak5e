@@ -2,7 +2,7 @@ folder: r5YUnvOOo8oVml7x
 name: Rifle
 type: weapon
 _id: IRMIzg2gLDqpCi2W
-img: icons/weapons/guns/rifle-white.webp
+img: modules/ak5e/icons/Equipment/AK5e%20Bolt-Action%20Rifle.png
 system:
   activities:
     epxlcP9aUp57YVTe:
@@ -52,9 +52,11 @@ system:
   description:
     value: >-
       <p>[[/attack extended]], [[/damage
-      extended]]</p><p>@UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.HyZrjHTNPBLZWBVW]{Deadly},
-      @UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.BWAbxScg3oUitPmT]{Firearm},
-      Loading, Two-Handed</p>
+      extended]]</p><p>@UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.s7YIAtvJ7yyeFZgp]{Deadly},
+      @UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.pst11W6Aa1FYQu3h]{Firearm},
+      Loading,
+      @UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.QnevMs7ClOz11ti9]{Reliable},
+      Two-Handed</p>
     chat: ''
   identifier: rifle
   source:
@@ -91,7 +93,7 @@ system:
       scaling:
         number: 1
       number: 2
-      denomination: 12
+      denomination: 10
       bonus: ''
     versatile:
       types: []
@@ -114,20 +116,87 @@ system:
     value: heavyR
     baseItem: rifle
   mastery: ''
-effects: []
+effects:
+  - name: Deadly
+    img: icons/skills/melee/blade-tip-chipped-blood-red.webp
+    origin: null
+    type: base
+    _id: oQGvO0FbxnljOHsQ
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=@prof; name=Deadly Damage; oncePerTurn; itemLimited;
+            itemProperties.ded
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: n3Isr9o8gWsrswxA
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-items.Item.IRMIzg2gLDqpCi2W
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.fPUfPJOelKu6a97f.ActiveEffect.jM0vlGY22MA3LSBo
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792950126200
+      modifiedTime: 1792950126200
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!IRMIzg2gLDqpCi2W.oQGvO0FbxnljOHsQ'
 sort: 0
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3
-flags: {}
+flags:
+  dnd5e:
+    riders:
+      activity: []
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.3
+  systemVersion: 5.3.3
   createdTime: 1756318273976
-  modifiedTime: 1766937186602
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733079157
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!IRMIzg2gLDqpCi2W'

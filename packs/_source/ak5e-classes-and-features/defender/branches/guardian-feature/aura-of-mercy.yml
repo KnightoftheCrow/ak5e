@@ -14,7 +14,7 @@ system:
     value: >-
       <p>Whenever an allied Creature within 10 feet of you recovers Hit Points,
       they recover additional Hit Points equal to your Proficiency
-      Bonus.</p><p><strong>Not Automated.</strong></p>
+      Bonus.</p><hr><p><strong>Automated.</strong></p>
     chat: ''
   identifier: aura-of-mercy
   source:
@@ -32,23 +32,83 @@ system:
   type:
     value: class
     subtype: skillPoints
-effects: []
-sort: 0
+effects:
+  - name: Aura of Mercy
+    img: modules/ak5e/icons/Skill-Shu1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VWnFZHgs0Y1w4aT5
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.aura.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@prof; radius=10; addTo=base,types(healing); allies; isHeal ||
+            hasHealing
+          phase: initial
+          _id: khwAf9mnBV9AOf21
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 9Vbt2mUmX4ZBfe2F
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.VWnFZHgs0Y1w4aT5
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792417618022
+      modifiedTime: 1792417690519
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VWnFZHgs0Y1w4aT5.9Vbt2mUmX4ZBfe2F'
+sort: 450000
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358934901
-  modifiedTime: 1783358934901
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553241
+  modifiedTime: 1792417700224
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!VWnFZHgs0Y1w4aT5'

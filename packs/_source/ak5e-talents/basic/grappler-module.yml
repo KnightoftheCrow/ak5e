@@ -1,0 +1,116 @@
+folder: pK9UlZztTzku2Tvf
+name: Grappler (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Flint1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><span class="fontstyle0">Creatures Grappled by you have Disadvantage on
+      Saving Throws against you.</span></p><hr><p><strong>Semi-Automated:
+      </strong>This might apply to all Saving Throws, not just ones you
+      cause.</p>
+    chat: ''
+  identifier: grappler-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - grappler
+    repeatable: false
+    level: 8
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Save Disadvantage for Grappled
+    img: modules/ak5e/icons/Skill-Flint1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.npMoo8bg9WhgllZi
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.aura.save.disadvantage
+          type: ac5e
+          value: radius=10; enemies; rollingActor.statuses.grappled
+          phase: initial
+          _id: ir7ym2hPitC2K3wg
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: q9muuMfgVlDTAR4m
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.npMoo8bg9WhgllZi
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841773
+      modifiedTime: 1793197841773
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!npMoo8bg9WhgllZi.q9muuMfgVlDTAR4m'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841773
+  modifiedTime: 1793197841908
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: npMoo8bg9WhgllZi
+sort: 0
+_key: '!items!npMoo8bg9WhgllZi'

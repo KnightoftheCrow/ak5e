@@ -1,0 +1,115 @@
+folder: Pji4wTRYaJMHjby6
+name: Dominus (Module)
+type: feat
+img: modules/ak5e/icons/Skill-CorruptingHeart3.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module:</strong> Your Attacks against Frightened Creatures deal
+      an additional die of Damage.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: dominus-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - dominus
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +1 Dice of Damage against Frightened
+    img: modules/ak5e/icons/Skill-CorruptingHeart3.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.k0aZ7G7mz0qGJN9Z
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.extraDice
+          type: ac5e
+          value: bonus=1; hasAttack && opponentActor.statuses.frightened
+          phase: initial
+          _id: BlxftEKc8a0OIgEJ
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: N7Q9KViw0fsA4qWX
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.k0aZ7G7mz0qGJN9Z
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841836
+      modifiedTime: 1793197841836
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!k0aZ7G7mz0qGJN9Z.N7Q9KViw0fsA4qWX'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841836
+  modifiedTime: 1793197841933
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: k0aZ7G7mz0qGJN9Z
+sort: 0
+_key: '!items!k0aZ7G7mz0qGJN9Z'

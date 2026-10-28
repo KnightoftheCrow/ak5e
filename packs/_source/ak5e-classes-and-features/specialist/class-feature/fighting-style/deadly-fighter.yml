@@ -1,0 +1,116 @@
+folder: Bg4shjy2cai76KuT
+name: Deadly Fighter
+type: feat
+img: modules/ak5e/icons/Skill-BloodsWhisper.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>The first time each Turn you make an Attack Roll using a Weapon with
+      the Deadly Property, the Critical Range of that Attack is increased by
+      1.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: feature
+  source:
+    revision: 1
+    rules: '2024'
+    book: AK5e
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: fightingStyle
+effects:
+  - name: Deadly Fighter +1 Crit Range
+    img: modules/ak5e/icons/Skill-BloodsWhisper.webp
+    origin: null
+    type: base
+    _id: 7xhvGejFJ50Ms5BO
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          type: ac5e
+          value: threshold=1; oncePerTurn; itemProperties.ded
+          phase: initial
+          priority: 20
+          _id: KfYPsmIwMEuzV7Yl
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.EBy6LfHXtY5gyOdi
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791321839062
+      modifiedTime: 1791733088512
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!tsl4EH9ZzFK7KDFo.7xhvGejFJ50Ms5BO'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791321839062
+  modifiedTime: 1791733088512
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: tsl4EH9ZzFK7KDFo
+sort: 500000
+_key: '!items!tsl4EH9ZzFK7KDFo'

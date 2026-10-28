@@ -153,28 +153,35 @@ system:
 effects:
   - name: Silencer (Skill Points)
     img: modules/ak5e/icons/Skill-Kichisei1.webp
-    origin: Item.GHJjnSWrcaqNmCHx
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '35'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '65'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 35
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: NqUCyLCSILK6elGk
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 8dBJPva4eWT3pZVZ
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.GHJjnSWrcaqNmCHx
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,32 +205,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091520
+      modifiedTime: 1791733091520
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!BLp0dinJk22MjHbU.DXFUOiWQeWl6gGq8'
   - name: Silencer
     img: modules/ak5e/icons/Skill-Kichisei1.webp
-    origin: Item.GHJjnSWrcaqNmCHx
+    origin: null
     transfer: false
     _id: WiNS2QRxvNX6g6R5
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.criticalThreshold
-        mode: 2
-        value: threshold=-1
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          value: threshold=-1
+          priority: 20
+          type: add
+          phase: initial
+          _id: CWubf5nOJxjC1sWn
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.GHJjnSWrcaqNmCHx
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 2
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 2
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -250,10 +265,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091520
+      modifiedTime: 1791733091520
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!BLp0dinJk22MjHbU.WiNS2QRxvNX6g6R5'
 flags:
   dnd5e:
@@ -263,12 +283,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356949450
-  modifiedTime: 1783356949471
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733091520
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

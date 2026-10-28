@@ -1,0 +1,338 @@
+folder: xKDlgvkBZwvoAQ74
+name: Placebo Effect
+type: feat
+img: modules/ak5e/icons/Skill-Purestream1.webp
+system:
+  activities:
+    FxhDWKRIwJ9qe8Uv:
+      type: save
+      name: Save
+      _id: FxhDWKRIwJ9qe8Uv
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '20'
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: disp
+        concentration: false
+        override: false
+      effects:
+        - _id: v80sylvI5g1PSwjH
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '50'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: sphere
+          size: '10'
+          count: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: none
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - cha
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+        turnChoice: end
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
+      SP</p></td><td><p>Charging</p></td><td><p>Activation</p></td><td><p>Duration</p></td></tr></thead><tbody><tr><td><p>20</p></td><td><p>15</p></td><td><p>Automatic</p></td><td><p>Action</p></td><td><p>Instant</p></td></tr></tbody></table><p><strong>Effect:
+      </strong>Choose a Creature you can see within 50 feet that has a negative
+      Status Condition, and choose one such Status Condition on that Creature.
+      That Status Condition is then removed, and all hostile Creatures within 10
+      feet of that Creature must succeed on a Charisma Saving Throw against your
+      Spell Save DC or suffer that Status Condition; they may reattempt this
+      Saving Throw at the end of each of their Turns, ending the effect on a
+      success.</p><p><strong>Semi-Automated: </strong>When you use the activity,
+      ensure to exclude friendly Creatures. Additionally, you must apply the
+      relevant condition to Creatures that fail the Save (they are marked with a
+      Condition), and remove it from the initial Creature. Creatures make the
+      Save at the end of their Turns automatically.</p>
+    chat: ''
+  identifier: placebo-effect
+  source:
+    revision: 1
+    rules: '2014'
+    book: AK5e
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 2
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: opSkill
+effects:
+  - name: Placebo Effect (Skill Points)
+    img: icons/svg/combat.svg
+    origin: null
+    _id: flx7lohMTgQh5EDM
+    type: base
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: fPwnXVn8KFOhHHyr
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: utRIZahq3nkVtR1Q
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.2WrfHf6uNVXJk0NL
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1791733090228
+      createdTime: 1791147753079
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!2WrfHf6uNVXJk0NL.flx7lohMTgQh5EDM'
+  - name: Placebo Effect
+    img: modules/ak5e/icons/Skill-Purestream1.webp
+    origin: null
+    transfer: false
+    _id: v80sylvI5g1PSwjH
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          type: custom
+          value: >-
+            turn=end, label=Placebo Effect Condition, saveAbility=cha,
+            saveDC=@attributes.spell.dc, saveMagic=true
+          phase: initial
+          priority: null
+          _id: FzjkXEyz26UhVX8b
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.2WrfHf6uNVXJk0NL
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 2
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791147753079
+      modifiedTime: 1791733090228
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!2WrfHf6uNVXJk0NL.v80sylvI5g1PSwjH'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: Item.4AZPXSOkACx3hgDM
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791147753079
+  modifiedTime: 1791733090227
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 300000
+_id: 2WrfHf6uNVXJk0NL
+_key: '!items!2WrfHf6uNVXJk0NL'

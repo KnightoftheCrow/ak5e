@@ -260,28 +260,35 @@ system:
 effects:
   - name: Leyline (Skill Points)
     img: modules/ak5e/icons/Skill-Shining1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.nFvpXqALzLBodCha
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '65'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: oh43E4j67iDxhFDA
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: zuO9xaZUWhMm2TgE
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.nFvpXqALzLBodCha
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -306,40 +313,56 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096355
+      modifiedTime: 1791733096355
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!nFvpXqALzLBodCha.DXFUOiWQeWl6gGq8'
   - name: Leyline
     img: modules/ak5e/icons/Skill-Shining1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.nFvpXqALzLBodCha
+    origin: null
     transfer: false
     _id: 88h9qWQxBNdTtCW7
     type: base
-    system: {}
-    changes:
-      - key: system.bonuses.spell.dc
-        mode: 2
-        value: '+3'
-        priority: 20
-      - key: system.bonuses.spell.attack
-        mode: 2
-        value: '+3'
-        priority: 20
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '0'
-        priority: 20
+    system:
+      changes:
+        - key: system.bonuses.spell.dc
+          value: '+3'
+          priority: 20
+          type: add
+          phase: initial
+          _id: nMgb6Ivp04atDOQR
+          conditions: '{}'
+          replacement: ''
+        - key: system.bonuses.spell.attack
+          value: '+3'
+          priority: 20
+          type: add
+          phase: initial
+          _id: EjYLYemWDgGCO92V
+          conditions: '{}'
+          replacement: ''
+        - key: system.attributes.movement.all
+          value: 0
+          priority: 20
+          type: custom
+          phase: initial
+          _id: qaHPYmre9xldC1Ip
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.nFvpXqALzLBodCha
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -366,10 +389,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096355
+      modifiedTime: 1791733096355
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!nFvpXqALzLBodCha.88h9qWQxBNdTtCW7'
 sort: 100000
 ownership:
@@ -384,11 +412,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.HP61sFvtrtnhePSG
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774023683571
-  modifiedTime: 1774023683571
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733096355
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: nFvpXqALzLBodCha
 _key: '!items!nFvpXqALzLBodCha'

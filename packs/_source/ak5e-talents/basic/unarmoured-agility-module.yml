@@ -1,0 +1,119 @@
+folder: pK9UlZztTzku2Tvf
+name: Unarmoured Agility (Module)
+type: feat
+_id: us7XCfO8RNKqQliV
+img: modules/ak5e/icons/Skill-LuoXiaohei1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> While you are wearing no Armour, you
+      have a Bonus to your Dexterity Saving Throws equal to your Proficiency
+      Bonus.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: unarmoured-agility-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - unarmoured-agility
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +Prof to Dex Saves while Unarmoured
+    img: modules/ak5e/icons/Skill-LuoXiaohei1.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.us7XCfO8RNKqQliV
+    _id: K9JZgB8SIJMnNbvW
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.save.bonus
+          value: bonus=@prof; ability.dex && !effectActor.hasArmor
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: w8ztBfDf28UP2apA
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.us7XCfO8RNKqQliV
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841810
+      modifiedTime: 1793197841810
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!us7XCfO8RNKqQliV.K9JZgB8SIJMnNbvW'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841810
+  modifiedTime: 1793197841923
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!us7XCfO8RNKqQliV'

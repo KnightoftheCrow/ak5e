@@ -1,7 +1,7 @@
 folder: vfwGZsyVOPxfr1S3
 name: Caster (Intelligence)
 type: class
-img: modules/ak5e/icons/48px-Caster.webp
+img: modules/ak5e/icons/class%20%2B%20subclass/icon_profession_caster_large.png
 system:
   advancement:
     zU7ZNAvzBLkUQhuv:
@@ -334,35 +334,6 @@ system:
       title: Arts Points
       hint: ''
       flags: {}
-    4Jn3gHmr2edLpFNZ:
-      type: ItemGrant
-      _id: 4Jn3gHmr2edLpFNZ
-      configuration:
-        items:
-          - uuid: Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8
-            optional: false
-          - uuid: Compendium.dnd5e.spells.Item.Ek45cBpVXvJdv1Qy
-            optional: false
-        optional: false
-        spell:
-          ability: []
-          method: spell
-          uses:
-            max: ''
-            per: ''
-            requireSlot: false
-          prepared: 2
-      value: {}
-      level: 5
-      title: Anti-Arts Training
-      hint: >-
-        Your training as a Caster allows you to fend off hostile Arts as well as
-        manifest your own.
-
-
-        You learn the Counterspell and Dispel Magic Arts, and they are always
-        Prepared.
-      flags: {}
     B0aBdpO1nMEDcPrU:
       type: ItemChoice
       _id: B0aBdpO1nMEDcPrU
@@ -452,20 +423,6 @@ system:
       hint: >-
         Take a Basic Talent, or unlock the module effect of a Basic Talent you
         already have.
-      flags: {}
-    tLIpioeUbKnMHYHU:
-      type: ItemGrant
-      _id: tLIpioeUbKnMHYHU
-      configuration:
-        items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.YCc4Tfk06PabfAzp
-            optional: false
-        optional: false
-        spell: null
-      value: {}
-      level: 5
-      title: Growing Power
-      hint: ''
       flags: {}
     l8HJxDwQQIdYh7rM:
       type: ItemChoice
@@ -672,6 +629,26 @@ system:
       hint: ''
       classRestriction: primary
       flags: {}
+    tLIpioeUbKnMHYHU:
+      type: ItemGrant
+      _id: tLIpioeUbKnMHYHU
+      configuration:
+        items:
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.YCc4Tfk06PabfAzp
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.h3mSvz6XmxzeEpSq
+            optional: false
+            sort: 0
+        optional: false
+        spell: null
+        sorting: m
+      value: {}
+      level: 5
+      hint: ''
+      flags: {}
+      name: Growing Power + Anti-Arts Training
+      classRestriction: ''
   description:
     value: >-
       <p>A smirk comes across the girl’s face as the smoke clears. The corridor
@@ -818,15 +795,14 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783249225873
-  modifiedTime: 1785602248867
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553229
+  modifiedTime: 1793138936949
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
-  5XlrCO2NlPtd4MFQ: 3
 _id: BIl4puxqxYtSsZcD
 sort: 400000
 _key: '!items!BIl4puxqxYtSsZcD'

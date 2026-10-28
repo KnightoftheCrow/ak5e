@@ -1,0 +1,919 @@
+name: Medic (Intelligence)
+type: class
+img: modules/ak5e/icons/class%20%2B%20subclass/icon_profession_medic_large.png
+system:
+  advancement:
+    gF6lnGKj43Zkopoc:
+      type: HitPoints
+      _id: gF6lnGKj43Zkopoc
+      configuration: {}
+      flags: {}
+      value: {}
+      hint: ''
+    6w0BiRFre9p6ZqS0:
+      type: AbilityScoreImprovement
+      level: 4
+      _id: 6w0BiRFre9p6ZqS0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+        recommendation: null
+      flags: {}
+      hint: ''
+      value: {}
+    9lJode7VSU0oXrkW:
+      type: AbilityScoreImprovement
+      level: 8
+      _id: 9lJode7VSU0oXrkW
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+        recommendation: null
+      flags: {}
+      hint: ''
+      value: {}
+    MzLjOtEjmzWlWnLf:
+      type: AbilityScoreImprovement
+      level: 12
+      _id: MzLjOtEjmzWlWnLf
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+        recommendation: null
+      flags: {}
+      hint: ''
+      value: {}
+    WBgVW7ntEH98urax:
+      type: AbilityScoreImprovement
+      level: 16
+      _id: WBgVW7ntEH98urax
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+        recommendation: null
+      flags: {}
+      hint: ''
+      value: {}
+    CjnSN2LhEbRWjGDa:
+      type: AbilityScoreImprovement
+      level: 19
+      _id: CjnSN2LhEbRWjGDa
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+        recommendation: null
+      flags: {}
+      hint: ''
+      value: {}
+    Gq8jweFQeF43xnGx:
+      type: Trait
+      _id: Gq8jweFQeF43xnGx
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 2
+            pool:
+              - saves:con
+              - saves:int
+              - saves:wis
+        grants: []
+        mode: default
+      level: 1
+      title: ''
+      hint: ''
+      flags: {}
+      value: {}
+    F7jnUmeq4DTt7iDM:
+      type: Trait
+      _id: F7jnUmeq4DTt7iDM
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 2
+            pool:
+              - skills:arc
+              - skills:ins
+              - skills:rel
+              - skills:prc
+              - skills:per
+              - skills:tech
+        grants:
+          - skills:med
+        mode: default
+      level: 1
+      title: ''
+      hint: ''
+      flags: {}
+      value: {}
+    1EmOHDnx9WI8mLFO:
+      type: Trait
+      _id: 1EmOHDnx9WI8mLFO
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - armor:lts
+        mode: default
+      level: 1
+      title: ''
+      hint: ''
+      flags: {}
+      value: {}
+    veuGgff1UbMUHOMn:
+      type: Trait
+      _id: veuGgff1UbMUHOMn
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - weapon:ltm
+        mode: default
+      level: 1
+      title: ''
+      hint: ''
+      flags: {}
+      value: {}
+    BfMLIH3UL1XlboCV:
+      type: Trait
+      _id: BfMLIH3UL1XlboCV
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - tool:toolkit:*
+              - tool:vehicle:*
+        grants: []
+        mode: default
+      level: 1
+      title: ''
+      hint: ''
+      flags: {}
+      value: {}
+    bji6NUYPwMYKOvCr:
+      type: ItemGrant
+      _id: bji6NUYPwMYKOvCr
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-arts.Item.6GMX3sLNtYU5pEtM
+            optional: false
+          - uuid: Compendium.world.spells--features.Item.yPx65cbfqnVvWeiT
+            optional: false
+          - uuid: Compendium.world.spells--features.Item.oSmkecXkYKAwgI4n
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      flags: {}
+      hint: ''
+      title: Medic Features
+    8jBYqAPxpNeJeXOm:
+      type: ItemGrant
+      _id: 8jBYqAPxpNeJeXOm
+      configuration:
+        items:
+          - uuid: Compendium.world.spells--features.Item.OzeAcEDwk2VkPdgW
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      flags: {}
+      hint: ''
+      title: Skill Points
+    aZ8ZHr0bXRGaG2P0:
+      type: ItemChoice
+      _id: aZ8ZHr0bXRGaG2P0
+      configuration:
+        allowDrops: false
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-items.Item.uJv6rhzPijvjHznJ
+          - uuid: Compendium.ak5e.ak5e-items.Item.Ildgv7odyqeahxmy
+          - uuid: Compendium.ak5e.ak5e-items.Item.cx7nNrpfLvAHIfmq
+          - uuid: Compendium.ak5e.ak5e-items.Item.XfS9C2RHzrrMdlip
+          - uuid: Compendium.ak5e.ak5e-items.Item.ZuHZkt1h2YP8lgwu
+          - uuid: Compendium.ak5e.ak5e-items.Item.SCHjE2T5gXZRtIpX
+          - uuid: Compendium.ak5e.ak5e-items.Item.K2HT1b80PeacbKTS
+          - uuid: Compendium.ak5e.ak5e-items.Item.96vApcsV1yyaPTyD
+          - uuid: Compendium.ak5e.ak5e-items.Item.QvzlfvutcIIezpDs
+          - uuid: Compendium.ak5e.ak5e-items.Item.gFr3mcd57Og1c0pZ
+          - uuid: Compendium.ak5e.ak5e-items.Item.Hs0mF5dzKXUqdAdP
+          - uuid: Compendium.ak5e.ak5e-items.Item.5l64laM4rk4Ivi0m
+          - uuid: Compendium.ak5e.ak5e-items.Item.YAl6BnAF78PaYlDX
+          - uuid: Compendium.ak5e.ak5e-items.Item.dqXsCaK1P0JhtYC4
+          - uuid: Compendium.ak5e.ak5e-items.Item.sIWoR9fKRrec9UfW
+          - uuid: Compendium.ak5e.ak5e-items.Item.Nng70cKI1btONIpk
+          - uuid: Compendium.ak5e.ak5e-items.Item.8kQVIEXNMpMwu0XE
+          - uuid: Compendium.ak5e.ak5e-items.Item.tDJPOjB3go7yh1at
+          - uuid: Compendium.ak5e.ak5e-items.Item.YRaUmzhRyxMbjH3U
+          - uuid: Compendium.ak5e.ak5e-items.Item.LL42rU6BBic45HZv
+          - uuid: Compendium.ak5e.ak5e-items.Item.0ft9PxeRW8FoUjgb
+          - uuid: Compendium.ak5e.ak5e-items.Item.3ZwLZuzf3LV0enqU
+          - uuid: Compendium.ak5e.ak5e-items.Item.IIulvylBDhw2Zz4F
+          - uuid: Compendium.ak5e.ak5e-items.Item.JAmRuAi1wbg4Zwdm
+          - uuid: Compendium.ak5e.ak5e-items.Item.wqd3yeo5ea2DAqD9
+          - uuid: Compendium.ak5e.ak5e-items.Item.YWNh0sRApVhTseeC
+          - uuid: Compendium.ak5e.ak5e-items.Item.yUbrNv1GkAtDTujE
+          - uuid: Compendium.ak5e.ak5e-items.Item.2MfZHPX5xtOxH4Zr
+        restriction:
+          list: []
+        spell: null
+        type: null
+      value:
+        added: {}
+        replaced: {}
+      title: 1x Toolkit you are Proficient with
+      hint: >-
+        <p>Choose one kit you are proficient with, or skip this and manually add
+        1300 LMD to your sheet</p>
+      flags: {}
+    PTdZsu3qUMnfySJr:
+      type: ItemChoice
+      _id: PTdZsu3qUMnfySJr
+      configuration:
+        allowDrops: false
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-items.Item.8YnvqZkWkp8JrS0y
+          - uuid: Compendium.ak5e.ak5e-items.Item.KjYWdRFtdaAGe4yK
+        restriction:
+          list: []
+        spell: null
+        type: null
+      value:
+        added: {}
+        replaced: {}
+      title: A) Arts Wand OR B) Arts Staff
+      hint: ''
+      flags: {}
+    TObqt0Z70SJpMcRc:
+      type: ItemChoice
+      _id: TObqt0Z70SJpMcRc
+      configuration:
+        allowDrops: false
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-items.Item.yRwC4x79xE5iUW7K
+          - uuid: Compendium.ak5e.ak5e-items.Item.EXF9dlqFHPDHi3KF
+          - uuid: Compendium.ak5e.ak5e-items.Item.gQexKnwZdkamQcJ7
+          - uuid: Compendium.ak5e.ak5e-items.Item.Ve5i7MSi8dzq0UJG
+          - uuid: Compendium.ak5e.ak5e-items.Item.nkDWWkosdoJz2U6i
+          - uuid: Compendium.ak5e.ak5e-items.Item.FPznW6rW4nghDh1r
+          - uuid: Compendium.ak5e.ak5e-items.Item.ajnr0G1r5uS2J8BP
+          - uuid: Compendium.ak5e.ak5e-items.Item.DSudvLQbkLWPs6g8
+        restriction:
+          list: []
+        spell: null
+        type: null
+      value:
+        added: {}
+        replaced: {}
+      title: 1x Light Melee Weapon OR 1x Light Shield
+      hint: <p>Choose 1x Light Melee Weapon OR 1x Light Shield</p>
+      flags: {}
+    PM74DgTMHh4IN9H4:
+      type: AbilityScoreImprovement
+      level: 6
+      _id: PM74DgTMHh4IN9H4
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+        recommendation: null
+        max: null
+      value:
+        type: asi
+      flags: {}
+      hint: ''
+      title: ''
+    GUPaJlxltzCyHS8F:
+      type: AbilityScoreImprovement
+      level: 10
+      _id: GUPaJlxltzCyHS8F
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+        recommendation: null
+        max: null
+      value:
+        type: asi
+      title: ''
+      hint: ''
+      flags: {}
+    eVo5AZOZOyc6pOXN:
+      type: ItemGrant
+      _id: eVo5AZOZOyc6pOXN
+      configuration:
+        items: []
+        optional: false
+        spell: null
+      value: {}
+      level: 9
+      title: Advanced Talent
+      hint: ''
+      flags: {}
+    fEYkGqcscaJxaIXB:
+      type: ItemGrant
+      _id: fEYkGqcscaJxaIXB
+      configuration:
+        items: []
+        optional: false
+        spell: null
+      value: {}
+      level: 8
+      title: Basic Talent Module
+      hint: ''
+      flags: {}
+    RyxIQqHCkRji9uOc:
+      type: ItemGrant
+      _id: RyxIQqHCkRji9uOc
+      configuration:
+        items: []
+        optional: false
+        spell: null
+      value: {}
+      level: 14
+      title: Elite 2 -elite operator skill
+      hint: ''
+      flags: {}
+    WIerVXP5nXiO8Gn0:
+      type: ItemChoice
+      title: Basic Operator Skill
+      _id: WIerVXP5nXiO8Gn0
+      configuration:
+        allowDrops: true
+        choices:
+          '2':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.O6hgkjkMlsmgoZQW
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.YVrvqE6ap3Sytna5
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.XKSVrd7m0435AMyW
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.2mzpxIvgg7eZZXfT
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.4AZPXSOkACx3hgDM
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.AzQfiKLUtDLtpZ5d
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.LaRLQLd36zvDrLtz
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.O7x5XyCvjj9vxlL6
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.K2YkqZ6FGWUS5Ygz
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.aXWVSlB1SswlphRH
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.rTaey3slkdugx3IB
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.2WrfHf6uNVXJk0NL
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.UEoCkQbLiKIpxcMt
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.YD93qGBEjlksa9Fo
+        restriction:
+          list: []
+          subtype: opSkill
+          type: class
+        spell: null
+        type: feat
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
+    OVPcKjyhqQMRPF9c:
+      type: ItemChoice
+      _id: OVPcKjyhqQMRPF9c
+      configuration:
+        allowDrops: true
+        choices:
+          '3':
+            count: 1
+            replacement: false
+          '8':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-talents.Item.YmpveVhnusc2gJXc
+          - uuid: Compendium.ak5e.ak5e-talents.Item.1UfU6SJVJKBrLoVf
+          - uuid: Compendium.ak5e.ak5e-talents.Item.3KRF5AZnXF4k5N5t
+          - uuid: Compendium.ak5e.ak5e-talents.Item.vXxEwwhvu5PiqXuF
+          - uuid: Compendium.ak5e.ak5e-talents.Item.MdnDS78LfmBjej4A
+          - uuid: Compendium.ak5e.ak5e-talents.Item.yadeAKPh6j6nyYVJ
+          - uuid: Compendium.ak5e.ak5e-talents.Item.rQ1Njma9mH5zuyrS
+          - uuid: Compendium.ak5e.ak5e-talents.Item.zQRfUFrXqnpSLXoW
+          - uuid: Compendium.ak5e.ak5e-talents.Item.SVRUcl9mUstIG97P
+          - uuid: Compendium.ak5e.ak5e-talents.Item.JY9DYszBhpbTIJQE
+          - uuid: Compendium.ak5e.ak5e-talents.Item.0II4eR36yX32piKo
+          - uuid: Compendium.ak5e.ak5e-talents.Item.HfhkPMdgZa78CUSJ
+          - uuid: Compendium.ak5e.ak5e-talents.Item.pKhC0mIMQqGFLFSW
+          - uuid: Compendium.ak5e.ak5e-talents.Item.coiZF177mOf2i9tr
+          - uuid: Compendium.ak5e.ak5e-talents.Item.0bf3RSft3cq0JnWc
+          - uuid: Compendium.ak5e.ak5e-talents.Item.SRetU7gWVbvzixji
+          - uuid: Compendium.ak5e.ak5e-talents.Item.4pTtdqioclegX2pn
+          - uuid: Compendium.ak5e.ak5e-talents.Item.GDj1tIrzBS5yMd4v
+          - uuid: Compendium.ak5e.ak5e-talents.Item.iibXWrNZOEZ6kImt
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Bqg1oW16XvrHwoRS
+          - uuid: Compendium.ak5e.ak5e-talents.Item.0zHOV6yixpRkFhnz
+          - uuid: Compendium.ak5e.ak5e-talents.Item.WUd7pgt1iH98GMgm
+          - uuid: Compendium.ak5e.ak5e-talents.Item.zpRIbsv7tZIfJjd5
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Jf2PafC16WuvZU0s
+          - uuid: Compendium.ak5e.ak5e-talents.Item.qtQwuTTG9e3WDVjy
+          - uuid: Compendium.ak5e.ak5e-talents.Item.4qe4maLER3dOXvLi
+        restriction:
+          list: []
+          type: class
+          subtype: talent
+        spell: null
+        type: feat
+      value:
+        added: {}
+        replaced: {}
+      title: Basic Talent
+      hint: ''
+      flags: {}
+    o1cxGD2zjmo1HZUJ:
+      type: ItemGrant
+      _id: o1cxGD2zjmo1HZUJ
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.n9rblR7heEcC5Nue
+            optional: false
+        optional: false
+        spell: null
+      flags: {}
+      value: {}
+      level: 5
+      hint: ''
+      title: ''
+    qthNGz7olxWeWUd2:
+      type: ItemGrant
+      _id: qthNGz7olxWeWUd2
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.BzHpDzWC0v8RLnMp
+            optional: false
+        optional: false
+        spell: null
+      flags: {}
+      value: {}
+      level: 12
+      hint: ''
+      title: ''
+    3lUX7i6URakq7giV:
+      type: ItemGrant
+      _id: 3lUX7i6URakq7giV
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.yCvBoYNctvqhZ5fy
+            optional: false
+        optional: false
+        spell: null
+      flags: {}
+      value: {}
+      level: 18
+      hint: ''
+      title: ''
+    rArRX8DjsdTdujkv:
+      type: ItemGrant
+      _id: rArRX8DjsdTdujkv
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.M4jmGyhINnItJ2ZE
+            optional: false
+        optional: false
+        spell: null
+      flags: {}
+      value: {}
+      level: 20
+      hint: ''
+      title: ''
+    2bERBrjQtbpvvnN9:
+      type: ItemChoice
+      _id: 2bERBrjQtbpvvnN9
+      configuration:
+        allowDrops: true
+        choices:
+          '7':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.69QGdPVIULl4VqQw
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.9zV7377RvpjubJOj
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.2DekUg33Iv7T19A4
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.LwLhk0wsXBIs4rdi
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.PuafijRgUdqNw0in
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.64N7Nik3VmeHYqim
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.MKuXqjRWVajFwPJ4
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.u1NMdEIbWv3bXyoG
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.7chmE5z6lBVAfJsK
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.0A40OYZLkOy4uaq1
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.XSOqZ7C4IMqCTcAj
+        restriction:
+          list: []
+          type: class
+          subtype: opSkill
+        spell: null
+        type: feat
+      value:
+        added: {}
+        replaced: {}
+      title: Advanced Operator Skill
+      hint: ''
+      flags: {}
+    1NbsuNM3IsWDSyhZ:
+      type: ItemChoice
+      _id: 1NbsuNM3IsWDSyhZ
+      configuration:
+        allowDrops: true
+        choices:
+          '9':
+            count: 1
+            replacement: false
+          '13':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-talents.Item.uwIB96QtNIT9eYJq
+          - uuid: Compendium.ak5e.ak5e-talents.Item.d9zP8nRmpyZ7kXsw
+          - uuid: Compendium.ak5e.ak5e-talents.Item.e4guKBgrjyBkHKtk
+          - uuid: Compendium.ak5e.ak5e-talents.Item.44g3uJZLET5Za2WS
+          - uuid: Compendium.ak5e.ak5e-talents.Item.FtI5hcdP6Sele2Dq
+          - uuid: Compendium.ak5e.ak5e-talents.Item.VlPizma8HbP9qhUx
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Hihku4XMdBNSOV2D
+          - uuid: Compendium.ak5e.ak5e-talents.Item.UFNEOm2AkeSau9jg
+          - uuid: Compendium.ak5e.ak5e-talents.Item.4h1asNb2FV5xQ3qr
+          - uuid: Compendium.ak5e.ak5e-talents.Item.pAslp96CjYwk8MN8
+          - uuid: Compendium.ak5e.ak5e-talents.Item.8pCsuKcF3C5jUy0m
+          - uuid: Compendium.ak5e.ak5e-talents.Item.UcYKEjz7XEyLoDwH
+          - uuid: Compendium.ak5e.ak5e-talents.Item.8ApzArUWrEQ3cqkJ
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Tz9icdvEZObrkRyY
+          - uuid: Compendium.ak5e.ak5e-talents.Item.90wPLlmYUN2YoMjL
+          - uuid: Compendium.ak5e.ak5e-talents.Item.FxTFkEjEwevYUjD9
+          - uuid: Compendium.ak5e.ak5e-talents.Item.pDLhF0VW8GH2d1Er
+          - uuid: Compendium.ak5e.ak5e-talents.Item.rYQkt7Dri15FJVrW
+          - uuid: Compendium.ak5e.ak5e-talents.Item.eqWEvRqCowqcAN0C
+          - uuid: Compendium.ak5e.ak5e-talents.Item.XnG5nsrkodTXOcmO
+          - uuid: Compendium.ak5e.ak5e-talents.Item.VmVCDYXsAXrUrJtI
+          - uuid: Compendium.ak5e.ak5e-talents.Item.EZxtNQjFYDYHX9Dg
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Nq13fz18qz3Na1nS
+          - uuid: Compendium.ak5e.ak5e-talents.Item.djYcs3rXTOGHVPvD
+          - uuid: Compendium.ak5e.ak5e-talents.Item.dsV1ohtvwjd7Qb0k
+          - uuid: Compendium.ak5e.ak5e-talents.Item.nGa2bxDIbeK1RQ1N
+          - uuid: Compendium.ak5e.ak5e-talents.Item.DZKpxFz25g9Jky3w
+          - uuid: Compendium.ak5e.ak5e-talents.Item.fLQiY1DYMSHHUszY
+          - uuid: Compendium.ak5e.ak5e-talents.Item.uICU8MGQkh80sfav
+          - uuid: Compendium.ak5e.ak5e-talents.Item.59TszGHcrC3VRg9s
+          - uuid: Compendium.ak5e.ak5e-talents.Item.rtv7oq48AN8ldXos
+          - uuid: Compendium.ak5e.ak5e-talents.Item.3rVFzbffMK3AX5NZ
+          - uuid: Compendium.ak5e.ak5e-talents.Item.DUg30QLw4fF0NJlM
+          - uuid: Compendium.ak5e.ak5e-talents.Item.BOI7yeOgNVz945jw
+          - uuid: Compendium.ak5e.ak5e-talents.Item.4I5JBzmAfuodFppp
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Wy3H7vqC1jFNbd7e
+          - uuid: Compendium.ak5e.ak5e-talents.Item.zifRE32qRbasupRO
+        restriction:
+          list: []
+          type: class
+          subtype: talent
+        spell: null
+        type: feat
+      value:
+        added: {}
+        replaced: {}
+      title: Advanced Talent
+      hint: ''
+      flags: {}
+    NIwx1jDZ4y9o5Hjx:
+      type: ItemGrant
+      title: Protective Clothing
+      _id: NIwx1jDZ4y9o5Hjx
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-items.Item.OXGwqTbLRvlNxP0Q
+            optional: false
+        optional: false
+        spell: null
+      flags: {}
+      value: {}
+      level: 1
+      hint: ''
+  description:
+    value: >-
+      <div id="p234" data-index="233" class="page"><div
+      class="columnWrapper"><div class="block wide"><h2
+      id="medic">Medic</h2><p>In Londinium’s war-torn streets, gentle light
+      radiates from the hands of a hooded Sarkaz woman, closing the wounds of
+      the soldier lying in front of her. She does not know this man. He may even
+      be her enemy; it does not matter. Her sword remains sheathed, and she
+      prays she will never again have to draw it.</p><p>As the pioneers return
+      from the site of the accident, terror writ large across their faces, a
+      Liberi moves among these potential Infected with mechanical efficiency.
+      The crystals growing in her skull throb in sympathetic pain, but she
+      pushes the pain down. Some day she will die, but today she can save
+      lives.</p></div><h3 id="the-selfless-the-unsung">The Selfless, The
+      Unsung</h3><p>Medical Arts are some of the most difficult Arts to master;
+      a sloppy application can do more harm than good. It requires meticulous
+      study of both Arts and medicine, alongside a healthy helping of natural
+      talent. Many medical Casters are also medical professionals in the
+      traditional sense, though the two are not necessarily
+      synonymous.</p><p>All this to say, becoming a Medic requires a tremendous
+      amount of work and effort, all for the privilege to put yourself directly
+      in harm’s way. Organised conflict might recognise the sacred nature of
+      medics, but most conflict on Terra is not organised, resulting in the
+      exact opposite effect; you are a target. This feat of work all for
+      increased risk all but ensures those who pursue it possess a selfless
+      spirit, willing to risk their own hide to protect others. A Medic is not
+      the one who crushes the foe and leads the charge; they are not the ones
+      whose names will be signed in history. They are the ones that ensure those
+      who do those things make it home to record that history.</p><h3>Medic
+      Traits</h3><table><tbody><tr><td data-colwidth="142"><p
+      style="text-align:center"><strong>Primary
+      Ability</strong></p></td><td><p>Intelligence</p></td></tr><tr><td
+      data-colwidth="142"><p style="text-align:center"><strong>Hit Point
+      Die</strong></p></td><td><p>D6</p></td></tr><tr><td data-colwidth="142"><p
+      style="text-align:center"><strong>Saving Throw
+      Proficiencies</strong></p></td><td><p>Two from the following (Choose when
+      you select this Class): Constitution, Intelligence,
+      Wisdom</p></td></tr><tr><td data-colwidth="142"><p
+      style="text-align:center"><strong>Skill
+      Proficiencies</strong></p></td><td><p>Medicine + Two from: Lore, Arts,
+      Tech, Insight, Perception, Persuasion</p></td></tr><tr><td
+      data-colwidth="142"><p style="text-align:center"><strong>Weapon
+      Proficiencies</strong></p></td><td><p>Light Melee</p></td></tr><tr><td
+      data-colwidth="142"><p style="text-align:center"><strong>Tool
+      Proficiencies</strong></p></td><td><p>A Tool Kit/Vehicle Proficiency of
+      your Choice</p></td></tr><tr><td data-colwidth="142"><p
+      style="text-align:center"><strong>Armor
+      Training</strong></p></td><td><p>Light Armour, Light
+      Shields</p></td></tr><tr><td data-colwidth="142"><p
+      style="text-align:center"><strong>Starting
+      Equipment</strong></p></td><td><p>You start with the following Equipment,
+      in addition to any Equipment granted by your Background.</p><ul><li><p>(A)
+      1x Light Melee Weapon OR (B) 1x Light Shield</p></li><li><p>(A) 1x Arts
+      Wand OR (B) 1x Arts Staff</p></li><li><p>1x Protective
+      Clothing</p></li><li><p>1x Tool Kit that you are Proficient
+      with</p></li></ul><p>OR</p><ul><li><p>1300
+      LMD</p></li></ul></td></tr></tbody></table></div></div><p></p><h3
+      id="class-features-4">Medic Features</h3><div id="p234" data-index="233"
+      class="page"><div class="columnWrapper"><div
+      class="columnSplit"><table><thead><tr><th><p>Level</p></th><th><p>Proficiency
+      Bonus</p></th><th><p>Features</p></th><th><p>Maximum Art
+      Level</p></th><th><p>Arts Points (AP)</p></th><th><p>Life
+      Support</p></th></tr></thead><tbody><tr><td><p>1st</p></td><td><p>+2</p></td><td><p>Elite
+      0- Arts Casting, Life Support, Medical Expertise, Medic
+      Branch</p></td><td><p>1</p></td><td><p>3</p></td><td><p>20</p></td></tr><tr><td><p>2nd</p></td><td><p>+2</p></td><td><p>Basic
+      Operator
+      Skill</p></td><td><p>1</p></td><td><p>4</p></td><td><p>35</p></td></tr><tr><td><p>3rd</p></td><td><p>+2</p></td><td><p>Basic
+      Talent</p></td><td><p>2</p></td><td><p>6</p></td><td><p>35</p></td></tr><tr><td><p>4th</p></td><td><p>+2</p></td><td><p>Ability
+      Score Improvement, Branch
+      Feature</p></td><td><p>2</p></td><td><p>7</p></td><td><p>50</p></td></tr><tr><td><p>5th</p></td><td><p>+3</p></td><td><p>Self-Defence
+      Protocol</p></td><td><p>3</p></td><td><p>10</p></td><td><p>50</p></td></tr><tr><td><p>6th</p></td><td><p>+3</p></td><td><p>Ability
+      Score
+      Improvement</p></td><td><p>3</p></td><td><p>11</p></td><td><p>65</p></td></tr><tr><td><p>7th</p></td><td><p>+3</p></td><td><p>Elite
+      1- Branch Feature, Advanced Operator
+      Skill</p></td><td><p>4</p></td><td><p>12</p></td><td><p>65</p></td></tr><tr><td><p>8th</p></td><td><p>+3</p></td><td><p>Ability
+      Score Improvement, Basic Talent
+      Module</p></td><td><p>4</p></td><td><p>15</p></td><td><p>80</p></td></tr><tr><td><p>9th</p></td><td><p>+4</p></td><td><p>Advanced
+      Talent</p></td><td><p>5</p></td><td><p>16</p></td><td><p>80</p></td></tr><tr><td><p>10th</p></td><td><p>+4</p></td><td><p>Ability
+      Score
+      Improvement</p></td><td><p>5</p></td><td><p>17</p></td><td><p>95</p></td></tr><tr><td><p>11th</p></td><td><p>+4</p></td><td><p>Branch
+      Feature</p></td><td><p>6</p></td><td><p>20</p></td><td><p>95</p></td></tr><tr><td><p>12th</p></td><td><p>+4</p></td><td><p>Ability
+      Score Improvement,
+      Resuscitation</p></td><td><p>6</p></td><td><p>21</p></td><td><p>110</p></td></tr><tr><td><p>13th</p></td><td><p>+5</p></td><td><p>Advanced
+      Talent
+      Mastery</p></td><td><p>7</p></td><td><p>22</p></td><td><p>110</p></td></tr><tr><td><p>14th</p></td><td><p>+5</p></td><td><p>Elite
+      2- Elite Operator
+      Skill</p></td><td><p>7</p></td><td><p>25</p></td><td><p>125</p></td></tr><tr><td><p>15th</p></td><td><p>+5</p></td><td><p>Branch
+      Feature</p></td><td><p>8</p></td><td><p>26</p></td><td><p>125</p></td></tr><tr><td><p>16th</p></td><td><p>+5</p></td><td><p>Ability
+      Score
+      Improvement</p></td><td><p>8</p></td><td><p>27</p></td><td><p>140</p></td></tr><tr><td><p>17th</p></td><td><p>+6</p></td><td><p>9th
+      Level
+      Arts</p></td><td><p>9</p></td><td><p>30</p></td><td><p>140</p></td></tr><tr><td><p>18th</p></td><td><p>+6</p></td><td><p>To
+      Rob the
+      Ferryman</p></td><td><p>9</p></td><td><p>31</p></td><td><p>155</p></td></tr><tr><td><p>19th</p></td><td><p>+6</p></td><td><p>Ability
+      Score
+      Improvement</p></td><td><p>9</p></td><td><p>32</p></td><td><p>155</p></td></tr><tr><td><p>20th</p></td><td><p>+6</p></td><td><p>Chosen
+      of
+      Asclepius</p></td><td><p>9</p></td><td><p>35</p></td><td><p>170</p></td></tr></tbody></table></div><div
+      style="align-text:left" class="block"><div id="p234" data-index="233"
+      class="page"><div class="columnWrapper"><h4
+      id="1st-level-arts-casting-1">1st Level: Arts Casting</h4><p>You can cast
+      specialised Arts to preserve life.</p><p><em><strong>Arts
+      Pool:</strong></em> You learn all of the Arts in the Healing Arts Special
+      Arts Pool, and they are always Prepared.</p><p><em><strong>Arts
+      Points:</strong></em> The Medic Features table shows how many Arts Points
+      (AP) you have to cast Arts of Level 1 or higher. You regain all expended
+      Arts Points when you finish a Long Rest.</p><p><em><strong>Maximum Arts
+      Level:</strong></em> The Medic Features table shows the maximum Level you
+      can cast an Art at, based on your Medic Level. If an Art’s Level is above
+      your current Maximum Art Level, you cannot cast
+      it.</p><p><em><strong>Spellcasting Ability:</strong></em> When you gain
+      this Feature, choose either Intelligence or Wisdom; that is your
+      Spellcasting Ability.</p></div></div><h4 id="1st-level-life-support">1st
+      Level: Life Support</h4><p>You have a pool of Life Support that
+      replenishes when you finish a Long Rest. The maximum amount of Life
+      Support in your pool at each Level is shown in the Medic Table.</p><p>As
+      an Action, you can touch a Creature and expend any amount of your current
+      Life Support; the Creature recovers that many missing Hit
+      Points.</p><p>You can also expend Life Support in the following ways, or
+      in ways determined by your Medic Branch:</p><p><strong>Preserver:</strong>
+      When you roll dice to determine the Hit Points recovered by another
+      Creature, or the Temporary Hit Points gained by another Creature, you can
+      expend 5 Life Support to reroll any number of those dice; you must use the
+      new results.</p><p><strong>Urgency of Treatment:</strong> When you would
+      cast an Art from your Healing Arts Pool, you can expend Life Support in
+      multiples of 10 to reduce the Arts Point cost of that casting by 1 for
+      every 10 Life Support expended, to a minimum of 0.</p><h4
+      id="1st-level-medical-expertise">1st Level: Medical Expertise</h4><p>No
+      matter the origin of your medical knowledge, you are adept at saving
+      lives; you gain Expertise in the Medical Skill.</p></div><h4
+      id="1st-level-medic-branch">1st Level: Medic Branch</h4><p>Choose a Medic
+      Branch which most closely fits the style you envision for yourself. Choose
+      one from the following list; further details on these Branches can be
+      found at the end of the Class Description. The Branch you choose grants
+      you Features at Level 1, 4, 7, 11, and
+      15.</p><ul><li><p><strong>Physician:</strong> Physician Medics specialise
+      in healing singular targets, preserving the life of their target at any
+      cost.</p></li><li><p><strong>Therapist:</strong> A Therapist Medic knows
+      that a general treatment is not enough; treatment must be targeted and
+      personalised. They use their powers to modify the effects of their Arts to
+      better suit the situation, and the
+      patient.</p></li><li><p><strong>Triage:</strong> The battlefield is a
+      chaotic place, and often a great number of people need treating at the
+      same time. Triage Medics specialise in dealing out healing to multiple
+      patients simultaneously, aiming only to preserve as many lives as
+      possible.</p></li><li><p><strong>Ward:</strong> Prevention is better than
+      cure, or so the adage goes. Ward Medics take this to heart, dishing out
+      barriers that prevent their allies from coming to harm, and ward off
+      Status Conditions.</p></li><li><p><strong>Witchcraft:</strong> While all
+      Medics are potent Casters, Witchcraft Medics weave destruction into their
+      aid, blending offensive Arts and healing.</p></li></ul></div></div><div
+      id="p236" data-index="235" class="page"><div class="columnWrapper"><h4
+      id="2nd-level-basic-operator-skill-4">2nd Level: Basic Operator
+      Skill</h4><p>You learn a Basic Operator Skill from the Basic Medic Skills
+      table, or from any other Basic Skill table available to you.</p><h4
+      id="3rd-level-basic-talent-4">3rd Level: Basic Talent</h4><p>You gain a
+      Basic Talent of your choice from the Basic Medic Talents table. When you
+      reach 8th Level, you may either pick a different Basic Talent to gain, or
+      upgrade your Basic Talent, gaining its Module Effect.</p><h4
+      id="4th-level-ability-score-improvement-4">4th Level: Ability Score
+      Improvement</h4><p>When you reach 4th Level, and again at 6th, 8th, 10th,
+      12th, 16th, and 19th Level, you can increase one Ability Score of your
+      choice by 2, or you can increase two Ability Scores of your choice by 1.
+      As normal, you can’t increase an Ability Score above 20 using this
+      feature.</p><h4 id="5th-level-self-defence-protocol">5th Level:
+      Self-Defence Protocol</h4><p>It is an unfortunate truth that it is not
+      safe to be a medic everywhere. It is a fortunate truth that you are also
+      capable of casting conventional Arts.</p><p>When you gain this Feature,
+      choose one of the Standard Arts Pools available to the Caster Class that
+      you have not chosen previously; you learn all of the Arts from that Pool
+      of 5th Level or less, including Cantrips. These Arts cost 1 fewer Arts
+      Point to cast, to a minimum of 0. From 11th Level, these Arts instead cost
+      2 fewer Arts Points.</p><h4 id="7th-level-advanced-operator-skill-4">7th
+      Level: Advanced Operator Skill</h4><p>You learn an Advanced Operator Skill
+      from the Advanced Medic Skills table, or from any other Advanced Skill
+      table available to you.</p><h4 id="9th-level-advanced-talent-4">9th Level:
+      Advanced Talent</h4><p>You gain an Advanced Talent of your choice from the
+      Advanced Medic Talents table. When you reach 13th Level, you may either
+      pick a different Advanced Talent to gain, or upgrade your Advanced Talent,
+      gaining its Module Effect.</p><h4 id="12th-level-resuscitation">12th
+      Level: Resuscitation</h4><p>In your hands, the borders of life and death
+      begin to blur, and you can pull back those who have just slipped over the
+      edge.</p><p>Once per Long Rest, you can cast the Revivify Art without
+      expending any Arts Points.</p><h4
+      id="14th-level-elite-operator-skill-4">14th Level: Elite Operator
+      Skill</h4><p>You learn an Elite Operator Skill from the Elite Medic Skills
+      table, or from any other Elite Skill table available to you.</p><h4
+      id="18th-level-to-rob-the-ferryman">18th Level: To Rob the
+      Ferryman</h4><p>When you revive someone using the Revivify Art, they
+      recover Hit Points equal to three times your Medic Level.</p><h4
+      id="20th-level-chosen-of-asclepius">20th Level: Chosen of
+      Asclepius</h4><p>Whenever you would roll to determine the amount of Hit
+      Points you restore to a Creature, you can choose not to roll, and instead
+      use the highest number possible for each die. For example, instead of
+      restoring 2d6 Hit Points to a Creature, you restore 12.</p></div></div>
+    chat: ''
+  identifier: medic
+  source:
+    revision: 1
+    rules: '2024'
+  startingEquipment:
+    - type: OR
+      requiresProficiency: false
+      _id: Bf5y2m5S8DQCVEMV
+      group: ''
+      sort: 100000
+    - type: weapon
+      count: null
+      key: ltm
+      requiresProficiency: false
+      _id: zxlrBthkVwFlRtJY
+      group: Bf5y2m5S8DQCVEMV
+      sort: 200000
+    - type: armor
+      count: null
+      key: lightS
+      requiresProficiency: false
+      _id: qgZRetHK11SuClML
+      group: Bf5y2m5S8DQCVEMV
+      sort: 300000
+    - type: OR
+      requiresProficiency: false
+      _id: W9xfJQ0QiNADdCMk
+      group: ''
+      sort: 400000
+    - type: linked
+      count: null
+      key: Compendium.ak5e.ak5e-items.Item.8YnvqZkWkp8JrS0y
+      requiresProficiency: false
+      _id: JeS49sVStKgCJhTM
+      group: W9xfJQ0QiNADdCMk
+      sort: 500000
+    - type: linked
+      count: null
+      key: Compendium.ak5e.ak5e-items.Item.KjYWdRFtdaAGe4yK
+      requiresProficiency: false
+      _id: Huv1mbPoiWkeacUb
+      group: W9xfJQ0QiNADdCMk
+      sort: 600000
+    - type: linked
+      count: null
+      key: Compendium.ak5e.ak5e-items.Item.OXGwqTbLRvlNxP0Q
+      requiresProficiency: false
+      _id: AVJQREYtJF4c5dhC
+      group: ''
+      sort: 700000
+    - type: tool
+      count: null
+      key: toolkit
+      requiresProficiency: false
+      _id: dyDkUq3NUnZxhZHr
+      group: ''
+      sort: 800000
+  hd:
+    additional: ''
+    denomination: d6
+    spent: 0
+  levels: 1
+  primaryAbility:
+    value:
+      - int
+    all: true
+  properties: []
+  spellcasting:
+    progression: full
+    preparation:
+      formula: ''
+    ability: int
+  wealth: '1300'
+effects: []
+flags:
+  scene-packer:
+    hash: e7f3ffc27c501bddf3fb3f0731fc40498b0e5a01
+    sourceId: Compendium.world.classes--subclasses.Item.kqo7GsbQB0kPwQUx
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791203553264
+  modifiedTime: 1791400369685
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: KO2j7rzVcXTkNn5U
+_id: gSqHZTMIrrlB2eTH
+sort: 200000
+_key: '!items!gSqHZTMIrrlB2eTH'

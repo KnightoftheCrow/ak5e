@@ -50,40 +50,59 @@ system:
 effects:
   - name: Hyperfocus
     img: icons/magic/perception/eye-tendrils-web-purple.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.b4pwGXuFx1xZcSS1
+    origin: null
     _id: TuytzuMufirGTr3E
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.hyperfocus.save.fail.dex
-        mode: 0
-        value: reroll
-        priority: 20
-      - key: flags.midi-qol.optional.hyperfocus.save.fail.str
-        mode: 0
-        value: reroll
-        priority: 20
-      - key: flags.midi-qol.optional.hyperfocus.count
-        mode: 0
-        value: ItemUses.identifier.hyperfocus
-        priority: 20
-      - key: flags.midi-qol.optional.hyperfocus.label
-        mode: 0
-        value: Hyperfocus- Reroll Saving Throw
-        priority: 20
-      - key: flags.midi-qol.optional.hyperfocus.macroToCall
-        mode: 0
-        value: ItemMacro
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.hyperfocus.save.fail.dex
+          value: reroll
+          priority: 20
+          type: custom
+          phase: initial
+          _id: YxsqUCJPgYlXBaeV
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.hyperfocus.save.fail.str
+          value: reroll
+          priority: 20
+          type: custom
+          phase: initial
+          _id: Wc1Dg2ZiWJiVPWlq
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.hyperfocus.count
+          value: ItemUses.identifier.hyperfocus
+          priority: 20
+          type: custom
+          phase: initial
+          _id: x2TyYH2dvcBOLV0k
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.hyperfocus.label
+          value: Hyperfocus- Reroll Saving Throw
+          priority: 20
+          type: custom
+          phase: initial
+          _id: IfB2vr6VQ7MEJcol
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.hyperfocus.macroToCall
+          value: ItemMacro
+          priority: 20
+          type: custom
+          phase: initial
+          _id: TiHkwUuneKqBjzzs
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.b4pwGXuFx1xZcSS1
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -107,10 +126,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733082646
+      modifiedTime: 1791733082646
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!b4pwGXuFx1xZcSS1.TuytzuMufirGTr3E'
 flags:
   dnd5e:
@@ -173,12 +197,12 @@ _stats:
   compendiumSource: Compendium.ak5e.ak5e-character-origins.Item.TvM8NNYod0FNLzkR
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680545138
-  modifiedTime: 1768680545138
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733082646
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

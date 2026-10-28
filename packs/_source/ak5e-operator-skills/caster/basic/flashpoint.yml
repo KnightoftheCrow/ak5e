@@ -152,28 +152,35 @@ system:
 effects:
   - name: Flashpoint (Skill Points)
     img: modules/ak5e/icons/Skill-Meteorite2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.bMlpD8Am7dui7GM8
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '0'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '10'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 0
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: WHz9m0swqMn5k9aX
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: MoeRGfdtGPCurNlv
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.bMlpD8Am7dui7GM8
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,28 +205,32 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095076
+      modifiedTime: 1791733095076
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!bMlpD8Am7dui7GM8.flx7lohMTgQh5EDM'
   - name: Wider and Stronger AoE Arts
     img: modules/ak5e/icons/Skill-Meteorite2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.bMlpD8Am7dui7GM8
+    origin: null
     transfer: false
     _id: sHHy8T132nCD7vkF
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.bMlpD8Am7dui7GM8
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -246,10 +257,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095076
+      modifiedTime: 1791733095076
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!bMlpD8Am7dui7GM8.sHHy8T132nCD7vkF'
 sort: 0
 ownership:
@@ -263,11 +279,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.b8ctTaF23QILAOJt
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772826442350
-  modifiedTime: 1772826442350
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733095075
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: bMlpD8Am7dui7GM8
 _key: '!items!bMlpD8Am7dui7GM8'

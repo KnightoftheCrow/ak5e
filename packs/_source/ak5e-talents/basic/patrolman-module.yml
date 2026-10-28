@@ -1,0 +1,117 @@
+folder: pK9UlZztTzku2Tvf
+name: Patrolman (Module)
+type: feat
+_id: IphQahni9IieMugI
+img: modules/ak5e/icons/skill_icon_skchr_lutonada_2.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> This Damage Resistance is now against
+      All Damage.</p><hr><p><strong>Automated: </strong>This DR will not show on
+      your sheet, only as a reduction for Creatures rolling Damage against
+      you.</p>
+    chat: ''
+  identifier: patrolman-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - patrolman
+    repeatable: false
+    level: 8
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +Prof Arts DR when Surrounded
+    img: modules/ak5e/icons/skill_icon_skchr_lutonada_2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.IphQahni9IieMugI
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=-@prof;
+            addTo=all,types(acid,cold,fire,force,lightning,necrotic,poison,psychic,radiant);
+            checkNearby(effectActor.tokenId, 'different', 10, {count: 2})
+          phase: initial
+          _id: YpagOm1EMfn58RqI
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: JjpNnhD280XkAY3H
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.IphQahni9IieMugI
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841790
+      modifiedTime: 1793197841790
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!IphQahni9IieMugI.JjpNnhD280XkAY3H'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841790
+  modifiedTime: 1793197841914
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!IphQahni9IieMugI'

@@ -169,21 +169,21 @@ system:
 effects:
   - name: Water Pulse
     img: icons/magic/water/bubbles-air-water-light.webp
-    origin: Item.aWQwDt41B2XXT5Nf
+    origin: null
     transfer: false
     _id: tIPyPOx04xUXnuBK
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.aWQwDt41B2XXT5Nf
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -211,10 +211,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733109026
+      modifiedTime: 1791733109026
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!aWQwDt41B2XXT5Nf.tIPyPOx04xUXnuBK'
 flags:
   dnd5e:
@@ -225,12 +230,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733109026
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

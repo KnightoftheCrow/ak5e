@@ -148,28 +148,35 @@ system:
 effects:
   - name: Cull (Skill Points)
     img: modules/ak5e/icons/Skill-Blaze1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.sa6E24mcYxedDSjx
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '20'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: HZI1xgBwdzxBFXMj
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: r3XYB5oiNBcDZMEd
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.sa6E24mcYxedDSjx
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -194,32 +201,40 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096975
+      modifiedTime: 1791733096975
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!sa6E24mcYxedDSjx.flx7lohMTgQh5EDM'
   - name: Bonus Damage vs Creatures with HP < 50%
     img: modules/ak5e/icons/Skill-Blaze1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.sa6E24mcYxedDSjx
+    origin: null
     transfer: false
     _id: iG5IToTUht6xnoMQ
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.extraDice
-        mode: 5
-        value: bonus=1; ; opponentActor.attributes.hp.pct < 50
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.extraDice
+          value: bonus=1; ; opponentActor.attributes.hp.pct < 50
+          priority: 20
+          type: override
+          phase: initial
+          _id: WbOu8vNG1rqVgWM9
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.sa6E24mcYxedDSjx
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -246,10 +261,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096975
+      modifiedTime: 1791733096975
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!sa6E24mcYxedDSjx.iG5IToTUht6xnoMQ'
 sort: 0
 ownership:
@@ -263,11 +283,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.tG00xmKgztcUdavW
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772826442350
-  modifiedTime: 1772826442350
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733096975
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: sa6E24mcYxedDSjx
 _key: '!items!sa6E24mcYxedDSjx'

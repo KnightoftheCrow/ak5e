@@ -1,0 +1,132 @@
+folder: Pji4wTRYaJMHjby6
+name: Lieutenant (Module)
+type: feat
+img: modules/ak5e/icons/Skill-TacticalEquipment.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> You gain a third Instruction Dice, and
+      your Instruction Dice become d8s.</p><hr><p><strong>Automated:
+      </strong>When you gain this Feature, use the Enchantment Activity on this
+      Feature and "enchant" this Feature twice to choose your Instructions. The
+      chosen Instructions will be added to this Feature as Activities.</p>
+    chat: ''
+  identifier: lieutenant-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - lieutenant
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Lieutenant (Module)
+    img: modules/ak5e/icons/Skill-TacticalEquipment.png
+    origin: null
+    _id: uzkrBbfJYVC8dvIW
+    type: base
+    system:
+      changes:
+        - key: system.scale.lieutenant.dice.number
+          value: 3
+          priority: 20
+          type: override
+          phase: initial
+          _id: yYQD6kYuGxujjSx0
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.lieutenant.dice.faces
+          value: 8
+          priority: 20
+          type: override
+          phase: initial
+          _id: nAwpLn8O16eJurob
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.WnmpUyZsoIKsPXdU
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841868
+      modifiedTime: 1793197841868
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!WnmpUyZsoIKsPXdU.uzkrBbfJYVC8dvIW'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841868
+  modifiedTime: 1793197841945
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: WnmpUyZsoIKsPXdU
+sort: 0
+_key: '!items!WnmpUyZsoIKsPXdU'

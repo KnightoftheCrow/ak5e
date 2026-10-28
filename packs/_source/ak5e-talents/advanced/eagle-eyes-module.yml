@@ -1,0 +1,141 @@
+folder: Pji4wTRYaJMHjby6
+name: Eagle Eyes (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Pepe2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> Creatures do not have Advantage on
+      Attacks against you as a result of being unseen, and you can now see
+      Invisible Creatures within 30 feet of
+      you.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: eagle-eyes-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - eagle-eyes
+    repeatable: false
+    level: 13
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: See Invisible Creatures within 30ft
+    img: modules/ak5e/icons/Skill-Pepe2.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.eYEJH8yikv7CwVWN
+    _id: a02eAb9KR6jMgMaI
+    type: base
+    system:
+      changes:
+        - key: token.detectionModes.seeInvisibility.enabled
+          value: true
+          priority: 20
+          type: custom
+          phase: initial
+          _id: pwRTkC3AIVTrmBBI
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.grants.attack.noAdvantage
+          value: >-
+            !rollingActor.statuses.incapacitated &&
+            opponentActor.statuses.invisible
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: pylFnBVQS1O79bDr
+          conditions: '{}'
+          replacement: ''
+        - key: token.detectionModes.seeInvisibility.range
+          type: override
+          value: 30
+          phase: initial
+          _id: 1O9x30S6N8QnUV0g
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.eYEJH8yikv7CwVWN
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: dae.eval(statuses.blinded)
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1793197841837
+      createdTime: 1793197841837
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!eYEJH8yikv7CwVWN.a02eAb9KR6jMgMaI'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841837
+  modifiedTime: 1793197841933
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: eYEJH8yikv7CwVWN
+sort: 0
+_key: '!items!eYEJH8yikv7CwVWN'

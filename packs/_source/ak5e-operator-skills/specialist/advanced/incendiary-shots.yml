@@ -154,28 +154,35 @@ system:
 effects:
   - name: Incendiary Shots (Skill Points)
     img: modules/ak5e/icons/64px-Skill-Fiammetta2.webp
-    origin: Item.nArWg1jVhVUmaWtD
+    origin: null
     _id: JjuF7rmXk2pqcodR
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '20'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 8nRwTRRc8mnXHKYI
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: rz1Pz8uzLBhu0Usl
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.nArWg1jVhVUmaWtD
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -201,32 +208,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096256
+      modifiedTime: 1791733096256
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!mjQMYpKjre22uUVe.JjuF7rmXk2pqcodR'
   - name: Incendiary Shots
     img: modules/ak5e/icons/64px-Skill-Fiammetta2.webp
-    origin: Item.nArWg1jVhVUmaWtD
+    origin: null
     transfer: false
     _id: KnUB8OFmPeR2YlRC
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: bonus=1d8; hasAttack;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=1d8; hasAttack;
+          priority: 20
+          type: add
+          phase: initial
+          _id: alBXGGdbiomel7lz
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.nArWg1jVhVUmaWtD
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 5
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 5
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -253,10 +268,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096257
+      modifiedTime: 1791733096257
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!mjQMYpKjre22uUVe.KnUB8OFmPeR2YlRC'
 flags:
   dnd5e:
@@ -266,12 +286,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356923868
-  modifiedTime: 1783356923901
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733096256
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

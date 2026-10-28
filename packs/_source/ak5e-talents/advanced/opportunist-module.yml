@@ -1,0 +1,126 @@
+folder: Pji4wTRYaJMHjby6
+name: Opportunist (Module)
+type: feat
+img: modules/ak5e/icons/Skill-May2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module:</strong> You may also deal this additional Damage
+      against Creatures that have any detrimental Status
+      Condition.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: opportunist
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - Compendium.ak5e.ak5e-talents.Item.j07NEdLfMa6g8lY8
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: >-
+      Additional Attack Damage to Slowed Creatures or Creatures with Negative
+      Conditions
+    img: modules/ak5e/icons/Skill-May2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.hpXnfXQZw0Ryy7Ad
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@prof; name=+Prof Damage from Opportunist; description=Bonus
+            Damage from Opportunist; hasAttack && ['bleeding', 'blinded',
+            'burning', 'charmed', 'corroded', 'dazed', 'deafened', 'diseased',
+            'exhaustion', 'frightened', 'frozen', 'grappled', 'necrotised',
+            'nervousimpairment', 'paralyzed', 'petrified', 'poisoned', 'prone',
+            'restrained', 'silenced', 'stunned', 'sleeping', 'suffocation',
+            'surprised', 'unconscious'].some(status =>
+            opponentActor?.statuses?.[status])
+          phase: initial
+          _id: 8p4kGTgYvYxgSkSD
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: iFdgI8z9qfaGxFN4
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.hpXnfXQZw0Ryy7Ad
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841873
+      modifiedTime: 1793197841873
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!hpXnfXQZw0Ryy7Ad.iFdgI8z9qfaGxFN4'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841873
+  modifiedTime: 1793197841947
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: hpXnfXQZw0Ryy7Ad
+sort: 0
+_key: '!items!hpXnfXQZw0Ryy7Ad'

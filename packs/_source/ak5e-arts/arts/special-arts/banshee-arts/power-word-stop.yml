@@ -245,36 +245,48 @@ system:
 effects:
   - name: Stopped
     img: icons/magic/time/hourglass-brown-orange.webp
-    origin: Item.uWhtKEiaaHV6D09f
+    origin: null
     transfer: false
     _id: dDBC4N5Hgebc1ABN
     type: base
-    system: {}
-    changes:
-      - key: system.traits.di.all
-        mode: 0
-        value: '1'
-        priority: 20
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '0'
-        priority: 20
-      - key: flags.midi-qol.OverTime
-        mode: 5
-        value: |-
-          turn=end,
-          saveAbility=wis,
-          saveDC=@attributes.spell.dc
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.di.all
+          value: 1
+          priority: 20
+          type: custom
+          phase: initial
+          _id: gL6a937Nmb3SX7Og
+          conditions: '{}'
+          replacement: ''
+        - key: system.attributes.movement.all
+          value: 0
+          priority: 20
+          type: custom
+          phase: initial
+          _id: Hjr0Rq3YH5FULjnQ
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.OverTime
+          value: |-
+            turn=end,
+            saveAbility=wis,
+            saveDC=@attributes.spell.dc
+          priority: 20
+          type: override
+          phase: initial
+          _id: QlFlWKv7qMx3BYMQ
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.uWhtKEiaaHV6D09f
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -302,32 +314,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108855
+      modifiedTime: 1791733108855
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!X4a8gccUevej3Bub.dDBC4N5Hgebc1ABN'
   - name: Speed 0
     img: icons/magic/time/clock-analog-gray.webp
-    origin: Actor.j5qUpsgLWW6QtAFt.Item.53JLjZ6caguaurs4
+    origin: null
     transfer: false
     _id: nqKxS37aeVCr1Kf6
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '0'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: 0
+          priority: 20
+          type: custom
+          phase: initial
+          _id: f2uVGMGxAI04kAQA
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Actor.j5qUpsgLWW6QtAFt.Item.53JLjZ6caguaurs4
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -357,10 +378,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108855
+      modifiedTime: 1791733108855
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!X4a8gccUevej3Bub.nqKxS37aeVCr1Kf6'
 flags:
   dnd5e:
@@ -380,12 +406,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108854
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

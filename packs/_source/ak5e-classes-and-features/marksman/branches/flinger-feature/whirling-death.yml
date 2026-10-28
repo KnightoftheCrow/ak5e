@@ -22,6 +22,7 @@ system:
           - type: itemUses
             value: '1'
             target: ''
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -41,6 +42,7 @@ system:
           type: sphere
           size: '25'
           count: ''
+          stationary: false
         affects:
           choice: true
           type: creature
@@ -75,6 +77,8 @@ system:
             bonus: ''
             types:
               - slashing
+            scaling:
+              number: 1
       save:
         ability:
           - dex
@@ -121,23 +125,45 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: ''
       otherActivityAsParentType: true
       friendlySave: default
       name: Whirling Death
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery:
       - period: lr
         type: recoverAll
     max: '1'
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>Your control over your Bound Weapons is worthy of study; your might
@@ -178,19 +204,16 @@ effects: []
 sort: 150000
 ownership:
   default: 0
-  GiT7LQTiCJxjm7mo: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1767622307916
-  modifiedTime: 1767876281252
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  systemVersion: 5.3.3
+  createdTime: 1791203553259
+  modifiedTime: 1791203553259
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!xBfsHw7shprLPA16'

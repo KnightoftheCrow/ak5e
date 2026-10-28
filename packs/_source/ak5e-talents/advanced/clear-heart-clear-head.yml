@@ -1,0 +1,288 @@
+folder: Pji4wTRYaJMHjby6
+name: Clear Heart, Clear Head
+type: feat
+_id: PngrFh17eRV9JfRb
+img: modules/ak5e/icons/skill_icon_skchr_haruka_1.png
+system:
+  activities:
+    tizKMsxrS99yN6IJ:
+      type: utility
+      name: Activate
+      _id: tizKMsxrS99yN6IJ
+      img: ''
+      sort: 0
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: minute
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: LX2nZLZw8JpUH5BD
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+    spent: 0
+  advancement:
+    MpzGtIPCKS3QXahU:
+      name: Clear Heart Healing
+      type: ScaleValue
+      _id: MpzGtIPCKS3QXahU
+      configuration:
+        identifier: healing
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 1
+            faces: 8
+      flags: {}
+      hint: ''
+      value: {}
+  description:
+    value: >-
+      <p>When your Hit Points are reduced to lower than half of their maximum,
+      you may activate this Feature as a Reaction. For 1 minute, your AC is
+      increased by a value equal to your Proficiency Bonus, and you recover 1d8
+      missing Hit Points at the beginning of your Turn. This Hit Point
+      restoration cannot restore you to more than half of your maximum Hit
+      Points. Once you have used this Feature, you may not do so again until you
+      have completed a Long Rest.</p><p><strong>Module Effect: </strong>The Hit
+      Point recovery is increased to 2d8.</p><hr><p><strong>Semi-Automated:
+      </strong>The Hit Point gain does not stop at half HP.</p>
+    chat: ''
+  identifier: clear-heart-clear-head
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Clear Heart, Clear Head
+    img: modules/ak5e/icons/skill_icon_skchr_haruka_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.PngrFh17eRV9JfRb
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.ac.bonus
+          type: add
+          value: '@prof'
+          phase: initial
+          _id: Ke3BgBA2gPlfE0tB
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.midi-qol.OverTime
+          type: custom
+          value: >-
+            turn=start, label=Clear Heart, Clear Head, rollType=damage,
+            damageRoll=@scale.clear-heart-clear-head.healing, damageType=healing
+          phase: initial
+          _id: 9BowhQ2eSp9wD2fz
+          conditions: '[{"k":"attributes.hp.pct","o":"lt","v":50}]'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: LX2nZLZw8JpUH5BD
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841824
+      modifiedTime: 1793197841824
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!PngrFh17eRV9JfRb.LX2nZLZw8JpUH5BD'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841824
+  modifiedTime: 1793197841928
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!PngrFh17eRV9JfRb'

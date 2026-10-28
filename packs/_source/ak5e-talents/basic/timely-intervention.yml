@@ -1,0 +1,124 @@
+folder: pK9UlZztTzku2Tvf
+name: Timely Intervention
+type: feat
+_id: kwbXewnNY7yvGo0Z
+img: modules/ak5e/icons/Skill-MrNothing1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Whenever you roll to determine the Hit Points you restore to a Creature
+      while it is not your Turn, you may add your Spellcasting Ability Modifier
+      to the amount rolled.</p><p><strong>Module: </strong>This Feature now
+      applies to any Hit Points you restore when it is not your Turn, instead of
+      only applying to rolls.</p><hr><p><strong>Partially Automated:
+      </strong>This applies to all healing you do outside of your Turn, not just
+      rolls. In essence, the Module Effect is always being applied.</p>
+    chat: ''
+  identifier: timely-intervention
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Timely Intervention
+    img: modules/ak5e/icons/Skill-MrNothing1.webp
+    origin: null
+    type: base
+    _id: Q2RepkrokOzBQc1q
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=effectActor.attributes.spell.mod; addTo=base,types(healing);
+            !==rollingActor.combatTurn
+          phase: initial
+          priority: 20
+          _id: kmDSDdWjePT0KhgA
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.kwbXewnNY7yvGo0Z
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841807
+      modifiedTime: 1793197841807
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!kwbXewnNY7yvGo0Z.Q2RepkrokOzBQc1q'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841807
+  modifiedTime: 1793197841921
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!kwbXewnNY7yvGo0Z'

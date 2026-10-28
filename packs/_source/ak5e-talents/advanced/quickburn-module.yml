@@ -1,0 +1,126 @@
+folder: Pji4wTRYaJMHjby6
+name: Quickburn (Module)
+type: feat
+_id: murE35MfUu1OxIKT
+img: modules/ak5e/icons/skill_icon_skchr_eyjafjalla_2.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module:</strong> While your current Hit Points and Maximum Hit
+      Points are the same, you have +5 Bonus to Initiative Rolls, and your Speed
+      is increased by 10ft.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: quickburn-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - quickburn
+    repeatable: false
+    level: 13
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +5 to Initiative/+10ft Speed while HP is Full
+    img: modules/ak5e/icons/skill_icon_skchr_eyjafjalla_2.png
+    origin: Compendium.ak5e.ak5e-talents.Item.murE35MfUu1OxIKT
+    _id: AExtgO9n23chVUDS
+    type: base
+    system:
+      changes:
+        - key: system.attributes.init.bonus
+          value: 5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 6pfEam32H2yeNgFa
+          conditions: '{}'
+          replacement: ''
+        - key: system.attributes.movement.all
+          value: '+10'
+          priority: 20
+          type: custom
+          phase: initial
+          _id: rw2mkaDplcG0WFTo
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.murE35MfUu1OxIKT
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: system.attributes.hp.value!=system.attributes.hp.max
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841876
+      modifiedTime: 1793197841876
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!murE35MfUu1OxIKT.AExtgO9n23chVUDS'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841876
+  modifiedTime: 1793197841948
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!murE35MfUu1OxIKT'

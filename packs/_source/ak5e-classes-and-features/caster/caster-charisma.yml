@@ -1,7 +1,7 @@
 folder: vfwGZsyVOPxfr1S3
 name: Caster (Charisma)
 type: class
-img: modules/ak5e/icons/48px-Caster.webp
+img: modules/ak5e/icons/class%20%2B%20subclass/icon_profession_caster_large.png
 system:
   advancement:
     zU7ZNAvzBLkUQhuv:
@@ -353,7 +353,7 @@ system:
             optional: false
           - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.Qi4Mc2HB3snq2eE5
             optional: false
-          - uuid: Compendium.AK5e.ak5e-arts.Item.6GMX3sLNtYU5pEtM
+          - uuid: Compendium.ak5e.ak5e-arts.Item.6GMX3sLNtYU5pEtM
             optional: false
         optional: false
         spell: null
@@ -361,35 +361,6 @@ system:
       level: 1
       title: Arts Points
       hint: ''
-      flags: {}
-    4Jn3gHmr2edLpFNZ:
-      type: ItemGrant
-      _id: 4Jn3gHmr2edLpFNZ
-      configuration:
-        items:
-          - uuid: Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8
-            optional: false
-          - uuid: Compendium.dnd5e.spells.Item.Ek45cBpVXvJdv1Qy
-            optional: false
-        optional: false
-        spell:
-          ability: []
-          method: spell
-          uses:
-            max: ''
-            per: ''
-            requireSlot: false
-          prepared: 2
-      value: {}
-      level: 5
-      title: Anti-Arts Training
-      hint: >-
-        Your training as a Caster allows you to fend off hostile Arts as well as
-        manifest your own.
-
-
-        You learn the Counterspell and Dispel Magic Arts, and they are always
-        Prepared.
       flags: {}
     B0aBdpO1nMEDcPrU:
       type: ItemChoice
@@ -486,8 +457,12 @@ system:
       _id: tLIpioeUbKnMHYHU
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.YCc4Tfk06PabfAzp
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.YCc4Tfk06PabfAzp
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.h3mSvz6XmxzeEpSq
             optional: false
+            sort: 0
         optional: false
         spell: null
       value: {}
@@ -495,6 +470,8 @@ system:
       title: Growing Power
       hint: ''
       flags: {}
+      name: Growing Power + Anti-Arts Training
+      classRestriction: ''
     l8HJxDwQQIdYh7rM:
       type: ItemChoice
       title: Advanced Operator Skill
@@ -846,15 +823,14 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1774181519579
-  modifiedTime: 1785602038337
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553228
+  modifiedTime: 1793138919350
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
-  9KtVYqHDTWORuJDZ: 3
 _id: 8jQIeSGU1Ewsy9qO
 sort: 300000
 _key: '!items!8jQIeSGU1Ewsy9qO'

@@ -2,7 +2,7 @@ folder: uUuSO7eU1CKxrhGI
 name: Knife
 type: weapon
 _id: EXF9dlqFHPDHi3KF
-img: icons/weapons/daggers/knife-green.webp
+img: modules/ak5e/icons/Equipment/AK5e%20Knife.png
 system:
   activities:
     j53WZTbbvoT9o2ct:
@@ -51,8 +51,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>[[/attack extended]], [[/damage extended]]</p><p>Finesse, Light, Thrown
-      (40/80)</p>
+      <p>[[/attack extended]], [[/damage extended]]</p><p>Finesse, Light,
+      @UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.QnevMs7ClOz11ti9]{Reliable},
+      Thrown (40/80)</p>
     chat: ''
   identifier: knife
   source:
@@ -85,7 +86,8 @@ system:
       types:
         - piercing
       custom:
-        enabled: false
+        enabled: true
+        formula: 1d6r1
       scaling:
         number: 1
       number: 1
@@ -121,10 +123,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.1.2
+  systemVersion: 5.3.3
   createdTime: 1756313287684
-  modifiedTime: 1756408030719
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1790613723009
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!EXF9dlqFHPDHi3KF'

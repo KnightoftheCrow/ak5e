@@ -153,28 +153,35 @@ system:
 effects:
   - name: Wounding Blow (Skill Points)
     img: modules/ak5e/icons/Skill-Rockrock2.webp
-    origin: Item.f3R9oh8yqSLl3x0Y
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '40'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '80'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 77rEXNAUuafC1sn8
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 80
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: zuC2jjkfGCKXTpNG
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.f3R9oh8yqSLl3x0Y
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,10 +205,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095957
+      modifiedTime: 1791733095957
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!kzdBUkR9VQ3CflUP.DXFUOiWQeWl6gGq8'
 flags:
   dnd5e:
@@ -211,12 +223,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356674964
-  modifiedTime: 1783356674981
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733095957
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

@@ -55,24 +55,27 @@ system:
 effects:
   - name: Minimum Stealth Roll
     img: icons/magic/perception/silhouette-stealth-shadow.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.M677moCWjjTRd3iE
+    origin: null
     _id: vvwXId0AtTzO155V
     type: base
-    system: {}
-    changes:
-      - key: system.skills.ste.roll.min
-        mode: 5
-        value: '@prof'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.ste.roll.min
+          value: '@prof'
+          priority: 20
+          type: override
+          phase: initial
+          _id: HP8ujeKR3QyfGnSN
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.M677moCWjjTRd3iE
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -96,10 +99,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733081702
+      modifiedTime: 1791733081702
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!M677moCWjjTRd3iE.vvwXId0AtTzO155V'
 sort: 0
 ownership:
@@ -113,10 +121,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680304928
-  modifiedTime: 1768680304928
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733081702
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!M677moCWjjTRd3iE'

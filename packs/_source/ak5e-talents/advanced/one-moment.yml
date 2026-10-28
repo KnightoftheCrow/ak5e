@@ -1,0 +1,139 @@
+folder: Pji4wTRYaJMHjby6
+name: One Moment
+type: feat
+img: modules/ak5e/icons/Skill-TheFiresharpened1.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement:
+    fwAKpJwvUHtHYJZ6:
+      name: One Moment Damage
+      type: ScaleValue
+      _id: fwAKpJwvUHtHYJZ6
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 1
+            faces: 6
+      flags: {}
+      hint: ''
+      value: {}
+  description:
+    value: >-
+      <p>While your Skill is Active, when you deal Damage to a Creature during
+      your Turn, that Creature takes 1d6 Force
+      Damage.</p><p><strong>Module:</strong> The Force Damage taken is increased
+      to 1d10.</p><hr><p><strong>Semi-Automated: </strong>Dealing the force
+      damage is an opt-in while rolling Damage.</p>
+    chat: ''
+  identifier: one-moment
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Additional Damage while Skill Active
+    img: modules/ak5e/icons/Skill-TheFiresharpened1.png
+    system:
+      magical: false
+      origin:
+        item: Item.t7yYkIkXGLlJE0Wn
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@scale.one-moment.one-moment-damage[force]; name=One Moment
+            (Skill Active); optinId=additional-damage-while-skill-active;
+            description=Additional Force Damage from One Moment; criticalStatic;
+            optin
+          phase: initial
+          _id: m6hPVGG8kEVbkmmw
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: i4yf4vIsQTOWpDEV
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Item.t7yYkIkXGLlJE0Wn
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841871
+      modifiedTime: 1793197841871
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!jsmSNFfCUKo4H14h.i4yf4vIsQTOWpDEV'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841871
+  modifiedTime: 1793197841946
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: jsmSNFfCUKo4H14h
+sort: 0
+_key: '!items!jsmSNFfCUKo4H14h'

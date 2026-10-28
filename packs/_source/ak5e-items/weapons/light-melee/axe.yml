@@ -1,7 +1,7 @@
 folder: uUuSO7eU1CKxrhGI
 name: Axe
 type: weapon
-img: icons/weapons/axes/axe-battle-black.webp
+img: modules/ak5e/icons/Equipment/AK5e%20Axe.png
 system:
   activities:
     pPukcpWtv8HJ89zN:
@@ -51,7 +51,7 @@ system:
   description:
     value: >-
       <p>[[/attack extended]], [[/damage
-      extended]]</p><p>@UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.HyZrjHTNPBLZWBVW]{Deadly}</p>
+      extended]]</p><p>@UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.s7YIAtvJ7yyeFZgp]{Deadly}</p>
     chat: ''
   identifier: axe
   source:
@@ -87,8 +87,8 @@ system:
         enabled: false
       scaling:
         number: 1
-      number: 2
-      denomination: 4
+      number: 1
+      denomination: 6
       bonus: ''
     versatile:
       types: []
@@ -105,22 +105,88 @@ system:
   range:
     reach: null
     units: ''
+    value: null
+    long: null
   type:
     value: lightM
     baseItem: axe
   mastery: ''
-effects: []
+effects:
+  - name: Deadly
+    img: icons/skills/melee/blade-tip-chipped-blood-red.webp
+    origin: null
+    type: base
+    _id: ZnlTtLzBzUswvFdL
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=@prof; name=Deadly Damage; oncePerTurn; itemLimited;
+            itemProperties.ded
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: n3Isr9o8gWsrswxA
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-items.Item.FPznW6rW4nghDh1r
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.fPUfPJOelKu6a97f.ActiveEffect.jM0vlGY22MA3LSBo
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792950135124
+      modifiedTime: 1792950135124
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!FPznW6rW4nghDh1r.ZnlTtLzBzUswvFdL'
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.1.2
+  systemVersion: 5.3.3
   createdTime: 1756293320876
-  modifiedTime: 1756408015887
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733079101
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: FPznW6rW4nghDh1r
 sort: 100000
 ownership:

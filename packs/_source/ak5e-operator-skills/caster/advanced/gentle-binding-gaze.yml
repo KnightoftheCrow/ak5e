@@ -293,28 +293,35 @@ system:
 effects:
   - name: Gentle Binding Gaze (Skill Points)
     img: modules/ak5e/icons/Skill-Pepe2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.ohDBnHUl0lL020mV
+    origin: null
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 6a7SgVfwiuf6oSIE
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 0WsntRJ97wg8piVe
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.ohDBnHUl0lL020mV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -339,37 +346,45 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096424
+      modifiedTime: 1791733096424
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!ohDBnHUl0lL020mV.GQBslauEmqcGyBM3'
   - name: Bound in Arts
     img: modules/ak5e/icons/Skill-Pepe2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.ohDBnHUl0lL020mV
+    origin: null
     transfer: false
     _id: HPjNqxx1Fp9zEVY1
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.OverTime
-        mode: 5
-        value: |-
-          turn= end,
-          saveDC= @attributes.spelldc,
-          saveAbility=cha,
-          saveMagic=true,
-          label="Gentle Binding Gaze"
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          value: |-
+            turn= end,
+            saveDC= @attributes.spelldc,
+            saveAbility=cha,
+            saveMagic=true,
+            label="Gentle Binding Gaze"
+          priority: 20
+          type: override
+          phase: initial
+          _id: o2oxVOcrP1u7gEmS
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.ohDBnHUl0lL020mV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 3
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 3
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -398,28 +413,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096424
+      modifiedTime: 1791733096424
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!ohDBnHUl0lL020mV.HPjNqxx1Fp9zEVY1'
   - name: Gentle Binding Gaze
     img: modules/ak5e/icons/Skill-Pepe2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.ohDBnHUl0lL020mV
+    origin: null
     transfer: false
     _id: 7sl8fyyuPYzSyUMb
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.ohDBnHUl0lL020mV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 3
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 3
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -446,10 +465,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096424
+      modifiedTime: 1791733096424
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!ohDBnHUl0lL020mV.7sl8fyyuPYzSyUMb'
 sort: 1000000
 ownership:
@@ -464,11 +488,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.scf4QdUz0lv0ysI6
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772986852717
-  modifiedTime: 1773572162125
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733096424
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: ohDBnHUl0lL020mV
 _key: '!items!ohDBnHUl0lL020mV'

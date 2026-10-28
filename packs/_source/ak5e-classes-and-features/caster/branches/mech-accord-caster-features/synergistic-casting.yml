@@ -22,6 +22,7 @@ system:
           - type: itemUses
             value: '1'
             target: Compendium.ak5e.ak5e-arts.Item.6GMX3sLNtYU5pEtM
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -39,6 +40,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -101,14 +103,36 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     u6rAErccZWDnxEJs:
       type: utility
       name: Cantrip Duplication
@@ -126,9 +150,11 @@ system:
           - type: itemUses
             value: '1'
             target: ''
+            scaling: {}
           - type: itemUses
             value: '1'
             target: Compendium.ak5e.ak5e-arts.Item.6GMX3sLNtYU5pEtM
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -150,6 +176,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: ally
@@ -214,21 +241,43 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery:
       - period: turnStart
         type: recoverAll
     max: '1'
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>You have refined the connection you form with your drones, allowing you
@@ -263,25 +312,28 @@ system:
 effects:
   - name: Cannot Attack
     img: modules/ak5e/icons/Skill-Aciddrop2.png
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.rTqysGZ34Kr6QdEL
+    origin: null
     transfer: false
     _id: DzdrooTSexPbumlE
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.fail.attack.all
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.fail.attack.all
+          value: true
+          priority: 20
+          type: override
+          phase: initial
+          _id: 9UznpFAuw7bCN4Xr
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.rTqysGZ34Kr6QdEL
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -309,29 +361,29 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774103904496
-      modifiedTime: 1774103998586
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553307
+      modifiedTime: 1791733088413
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!rTqysGZ34Kr6QdEL.DzdrooTSexPbumlE'
 sort: 275000
 ownership:
   default: 0
-  9KtVYqHDTWORuJDZ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1774103747903
-  modifiedTime: 1774180374020
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 5.3.3
+  createdTime: 1791203553307
+  modifiedTime: 1791733088413
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!rTqysGZ34Kr6QdEL'

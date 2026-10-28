@@ -1,0 +1,128 @@
+folder: pK9UlZztTzku2Tvf
+name: Growing Strong
+type: feat
+_id: kMcJ9zi8Q9aRQLj4
+img: modules/ak5e/icons/Skill-Pedro2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>When you restore 5 or more Hit Points in a single instance to a
+      Creature with 50 or more maximum Hit Points, the amount of Hit Points you
+      restore is increased by your Spellcasting Ability
+      Modifier.</p><p><strong>Module Effect: </strong>When you restore 5 or more
+      Hit Points in a single instance to a Creature with 100 or more maximum Hit
+      Points, the amount of Hit Points you restore is additionally increased by
+      your Proficiency Bonus. If you are already adding your Proficiency Bonus,
+      your Proficiency Bonus is doubled for that instance
+      instead.</p><hr><p><strong>Partially Automated: </strong>There is an AC5e
+      Opt-In Prompt for all stages of this Talent.</p>
+    chat: ''
+  identifier: growing-strong
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +Spellcasting Ability Mod to Healing when target HP > 50
+    img: modules/ak5e/icons/Skill-Pedro2.webp
+    origin: null
+    type: base
+    _id: IjTpOD4t68rRwEv5
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=attributes.spell.mod; optinId=Growing Strong Bonus Healing;
+            description=Only select if you are restoring 5 or more Hit Points;
+            addTo=all,types(healing); optin; opponentActor.attributes.hp.max >
+            50; isHeal
+          phase: initial
+          priority: null
+          _id: aWtj0ZalP9K6PqnK
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.kMcJ9zi8Q9aRQLj4
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841773
+      modifiedTime: 1793197841773
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!kMcJ9zi8Q9aRQLj4.IjTpOD4t68rRwEv5'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841773
+  modifiedTime: 1793197841908
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!kMcJ9zi8Q9aRQLj4'

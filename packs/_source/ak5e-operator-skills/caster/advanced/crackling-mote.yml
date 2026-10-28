@@ -279,28 +279,35 @@ system:
 effects:
   - name: Crackling Mote (Skill Points)
     img: modules/ak5e/icons/Skill-Goldenglow3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.5T96PrigabSULpM0
+    origin: null
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '35'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: pXSqJsIMnKQs9beb
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 35
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: QOLIhLNbd1swrEI6
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.5T96PrigabSULpM0
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -325,10 +332,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733090646
+      modifiedTime: 1791733090646
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!5T96PrigabSULpM0.GQBslauEmqcGyBM3'
 sort: 300000
 ownership:
@@ -343,11 +355,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.wm32yJmlGPnUNNzZ
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772986852717
-  modifiedTime: 1772988254935
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733090646
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: 5T96PrigabSULpM0
 _key: '!items!5T96PrigabSULpM0'

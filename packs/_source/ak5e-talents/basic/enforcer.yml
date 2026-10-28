@@ -1,0 +1,129 @@
+folder: pK9UlZztTzku2Tvf
+name: Enforcer
+type: feat
+img: modules/ak5e/icons/Skill-Holungday3.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Creatures with less than 50% of their maximum Hit Points remaining have
+      Disadvantage on Saving Throws against your Arts.</p><p><strong>Module
+      Effect: </strong>If one of your Arts reduces a Creature to Hit Points
+      equal to or less than your Character Level, they
+      die.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: enforcer
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Save Disadvantage for Creatures below 50% HP
+    img: modules/ak5e/icons/Skill-Holungday3.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.C0Q9qDfTzsQfQIyO
+    _id: 7Mzw1MDVwCTnUprf
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.save.disadvantage
+          value: isSpell;rollingActor.attributes.hp.pct < 50
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: tvtchnuq6WUdC2ua
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.C0Q9qDfTzsQfQIyO
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration:
+          - isSave
+        enableCondition: ''
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841768
+      modifiedTime: 1793197841768
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!C0Q9qDfTzsQfQIyO.7Mzw1MDVwCTnUprf'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841768
+  modifiedTime: 1793197841906
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: C0Q9qDfTzsQfQIyO
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 0
+_key: '!items!C0Q9qDfTzsQfQIyO'

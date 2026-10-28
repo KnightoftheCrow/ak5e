@@ -39,24 +39,27 @@ system:
 effects:
   - name: Death Saving Throw Bonus
     img: icons/magic/unholy/hand-claw-glow-orange.webp
-    origin: Item.nJUXt9ipJiL6Wu6l
+    origin: null
     _id: l2XlrTqVBkZGhNqa
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.death.bonuses.save
-        mode: 2
-        value: '@prof'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.death.bonuses.save
+          value: '@prof'
+          priority: 20
+          type: add
+          phase: initial
+          _id: jVs3yHYGwCLQnxsY
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.nJUXt9ipJiL6Wu6l
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -80,10 +83,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733080930
+      modifiedTime: 1791733080930
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!5iNk6VNE8AWCZBS7.l2XlrTqVBkZGhNqa'
 flags:
   dnd5e:
@@ -93,12 +101,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680529883
-  modifiedTime: 1768680529917
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733080930
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

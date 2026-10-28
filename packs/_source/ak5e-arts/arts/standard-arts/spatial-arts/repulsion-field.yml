@@ -235,7 +235,7 @@ system:
 effects:
   - name: Repulsion Field
     img: icons/magic/lightning/barrier-shield-crackling-orb-pink.webp
-    origin: Item.DJl1FvWZP4jvyQv7
+    origin: null
     _id: A0qykoxs756IDEBh
     type: auraeffects.aura
     system:
@@ -256,24 +256,32 @@ effects:
       script: ''
       stashedChanges: []
       stashedStatuses: []
-    changes:
-      - key: flags.midi-qol.grants.disadvantage.attack.rwak
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.grants.disadvantage.attack.rsak
-        mode: 2
-        value: '1'
-        priority: 20
+      changes:
+        - key: flags.midi-qol.grants.disadvantage.attack.rwak
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: GtNcvGk9vxKZaMVR
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.grants.disadvantage.attack.rsak
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: 4AlIBVowdLOZqZEb
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.DJl1FvWZP4jvyQv7
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -303,14 +311,19 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108065
+      modifiedTime: 1791733108065
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!DJl1FvWZP4jvyQv7.A0qykoxs756IDEBh'
   - name: Difficult Terrain
     img: icons/magic/movement/chevrons-down-yellow.webp
-    origin: Item.DJl1FvWZP4jvyQv7
+    origin: null
     transfer: false
     _id: ssJaey7dhmI48wFM
     type: auraeffects.aura
@@ -332,20 +345,24 @@ effects:
       script: ''
       stashedChanges: []
       stashedStatuses: []
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '*0.5'
-        priority: 20
+      changes:
+        - key: system.attributes.movement.all
+          value: '*0.5'
+          priority: 20
+          type: custom
+          phase: initial
+          _id: lHH9a3FtYfU3kJRe
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.DJl1FvWZP4jvyQv7
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -374,10 +391,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108065
+      modifiedTime: 1791733108065
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!DJl1FvWZP4jvyQv7.ssJaey7dhmI48wFM'
 flags:
   dnd5e:
@@ -388,12 +410,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108065
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

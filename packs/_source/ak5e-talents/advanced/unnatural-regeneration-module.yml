@@ -1,0 +1,115 @@
+folder: Pji4wTRYaJMHjby6
+name: Unnatural Regeneration (Module)
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_skadi2_1.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect: </strong>The amount of Hit Points restored is
+      equal to twice your Proficiency Bonus
+      instead.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: unnatural-regeneration-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - unnatural-regeneration
+    repeatable: false
+    level: 13
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Unnatural Regeneration (Module)
+    img: modules/ak5e/icons/skill_icon_skchr_skadi2_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.q2jfbTsJL0SpaP7O
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.scale.unnatural-regeneration.regeneration-amount
+          type: override
+          value: (@prof)*2
+          phase: initial
+          _id: ms8sG0bzJGDDlVYf
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: tEMwKtvDGvTCGZ0n
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.q2jfbTsJL0SpaP7O
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841893
+      modifiedTime: 1793197841893
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!q2jfbTsJL0SpaP7O.tEMwKtvDGvTCGZ0n'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841893
+  modifiedTime: 1793197841957
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: q2jfbTsJL0SpaP7O
+sort: 0
+_key: '!items!q2jfbTsJL0SpaP7O'

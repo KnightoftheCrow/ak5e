@@ -1,7 +1,7 @@
 folder: WVQAhyn17ObuyPIB
 name: Hidden Might
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-Purgatory2.webp
+img: modules/ak5e/icons/Skill-Purgatory2.webp
 system:
   activities:
     ZdUPaJzBDolFTlX0:
@@ -20,8 +20,7 @@ system:
         targets:
           - type: itemUses
             value: '10'
-            target: >-
-              Compendium.AK5e-Foundry-Module.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
             scaling: {}
       description:
         chatFlavor: ''
@@ -155,29 +154,36 @@ system:
     subtype: ''
 effects:
   - name: Hidden Might (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/Skill-Purgatory2.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.Bk5AmKbFoHG02gw2
+    img: modules/ak5e/icons/Skill-Purgatory2.webp
+    origin: null
     _id: 1htoZLk7xhkowqiY
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '5'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '10'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: XZpFMS0wNTYbWlel
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 6ajt0fohyS1jbPtO
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.Bk5AmKbFoHG02gw2
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -201,10 +207,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091590
+      modifiedTime: 1791733091590
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Bk5AmKbFoHG02gw2.1htoZLk7xhkowqiY'
 flags:
   dnd5e:
@@ -214,12 +225,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733091590
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

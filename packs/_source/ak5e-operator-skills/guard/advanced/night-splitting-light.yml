@@ -1,0 +1,342 @@
+folder: Jj3a7BRvamPBWiZ5
+name: Night-Splitting Light
+type: feat
+img: modules/ak5e/icons/Skill-RadiantKnight3.webp
+system:
+  activities:
+    ot0CNxxYAYz0KMz4:
+      type: enchant
+      name: Activate
+      _id: ot0CNxxYAYz0KMz4
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '50'
+            target: skill-points
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: round
+        expiry: null
+        concentration: false
+        override: false
+        value: '3'
+      effects:
+        - _id: hVLpacsluLWZCNSm
+          uuid: null
+          level: {}
+          riders:
+            activity: []
+            effect: []
+            item: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      enchant:
+        self: false
+      restrictions:
+        allowMagical: true
+        categories: []
+        properties: []
+        type: weapon
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
+      SP</p></td><td><p>Charging</p></td><td><p>Activation</p></td><td><p>Duration</p></td></tr></thead><tbody><tr><td><p>50</p></td><td><p>20</p></td><td><p>Automatic</p></td><td><p>Bonus
+      Action</p></td><td><p>3
+      Rounds</p></td></tr></tbody></table><p><strong>Effect:</strong> One melee
+      weapon of your choice that you are wielding is empowered with radiant
+      light. For the duration, its Damage is converted to Radiant Damage, you
+      have an additional 5 feet of Reach on Attacks using that Weapon, and when
+      you take the Attack Action, you may make an additional Attack with that
+      weapon as part of that Action. This Operator Skill ends early if you are
+      no longer wielding that weapon.</p><hr><p><strong>Automated: </strong>When
+      you hit with an Attack, there is an Opt-In for the number of Attacks you
+      have forgone.</p>
+    chat: ''
+  identifier: night-splitting-light
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 7
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: opSkill
+effects:
+  - type: enchantment
+    name: Night-Splitting Light
+    img: modules/ak5e/icons/Skill-RadiantKnight3.webp
+    disabled: true
+    transfer: false
+    _id: hVLpacsluLWZCNSm
+    system:
+      changes:
+        - key: system.damage.types
+          type: override
+          value: radiant
+          phase: initial
+          _id: A2UmIfGUKj92TIRY
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: system.range.reach
+          type: add
+          value: 5
+          phase: initial
+          _id: 2YrQsQoUizruBBZ2
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: true
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792693317770
+      modifiedTime: 1792693398473
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!n238zTnJnJl50Ko6.hVLpacsluLWZCNSm'
+  - name: Night Splitting Light (Skill Points)
+    img: modules/ak5e/icons/Skill-RadiantKnight3.webp
+    origin: Compendium.ak5e.ak5e-operator-skills.Item.n238zTnJnJl50Ko6
+    type: base
+    _id: xpddnMm1ePncyzMw
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: awg9el1zIQG8nbut
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 50
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: IBexwFm1Eh3RM5sj
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.n238zTnJnJl50Ko6
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+      automated-conditions-5e:
+        ac5eChangeRows: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-operator-skills.Item.18YAjQzjpr9yk929.ActiveEffect.SR3YhJbxFtuIKx6i
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1792693420404
+      modifiedTime: 1792693443057
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!n238zTnJnJl50Ko6.xpddnMm1ePncyzMw'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.BMfjn99hz5R9mDnq
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791628189439
+  modifiedTime: 1792693317801
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: n238zTnJnJl50Ko6
+sort: 1500000
+_key: '!items!n238zTnJnJl50Ko6'

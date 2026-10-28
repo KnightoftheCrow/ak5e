@@ -1,0 +1,466 @@
+folder: HOqmlqKEDIa7Capv
+name: Community Care
+type: feat
+_id: PpPJKdHk1nbZ9D9g
+img: modules/ak5e/icons/Skill-CorruptingHeart1.webp
+system:
+  activities:
+    7UmUZrF5CTT58Wj4:
+      type: heal
+      name: Ward Regeneration
+      _id: 7UmUZrF5CTT58Wj4
+      img: ''
+      sort: 0
+      activation:
+        type: turnStart
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: Csjv0LYV2zWJQuQN
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      healing:
+        types:
+          - temphp
+        custom:
+          enabled: true
+          formula: floor(@details.level/2)
+        scaling:
+          number: 1
+        number: null
+        denomination: null
+        bonus: ''
+      useConditionText: attributes.hp.temp = 0
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+    TSGUzgprQnCFSfQo:
+      type: utility
+      name: Collective Ward
+      _id: TSGUzgprQnCFSfQo
+      img: ''
+      sort: -100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: NkaPWuUJllCS359E
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '30'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: effects.some(e => e.name === "Warded")
+      useConditionReason: That Creature does not have your Ward!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You are the first line of defence for your patients against the world’s
+      woes. You gain the following benefits:</p><p><strong>Collective
+      Ward</strong>. When a Creature within 30 feet of you with your Ward would
+      take Damage, you can remove any amount of your Ward from other Creatures
+      within 30 feet of you to reduce that Damage by the amount of Ward removed,
+      to a minimum of 0 (no Action required).</p><p><strong>Ward
+      Regeneration.</strong> If you begin your Turn and do not have your Ward,
+      you can gain Temporary Hit Points equal to half of your Medic Level,
+      rounded up; this is considered to be your
+      Ward.</p><hr><p><strong>Semi-Automated: </strong>When you use the
+      Collective Ward Activity, declare how much of your Ward you will be
+      removing (and from where), and set the scaling value to the total amount
+      of Ward removed. Ward Regeneration happens automatically if you have no
+      Temp HP.</p>
+    chat: ''
+  identifier: community-care
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 15
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Collective Ward DR
+    img: modules/ak5e/icons/Skill-CorruptingHeart1.webp
+    origin: null
+    transfer: false
+    _id: NkaPWuUJllCS359E
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: bonus=-@scaling; hasDamage
+          phase: initial
+          priority: null
+          _id: dnXfUUNLoZYd3kN7
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.PpPJKdHk1nbZ9D9g
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration:
+          - isDamaged
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791215410679
+      modifiedTime: 1791733086244
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!PpPJKdHk1nbZ9D9g.NkaPWuUJllCS359E'
+  - name: Warded
+    img: modules/ak5e/icons/Skill-Nightingale1.webp
+    origin: null
+    transfer: false
+    _id: Csjv0LYV2zWJQuQN
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.save.advantage
+          type: ac5e
+          value: >-
+            oncePerTurn; riderStatuses.bleeding || riderStatuses.blinded ||
+            riderStatuses.burning || riderStatuses.charmed ||
+            riderStatuses.corroded || riderStatuses.cursed ||
+            riderStatuses.dazed || riderStatuses.deafened ||
+            riderStatuses.exhaustion || riderStatuses.frightened ||
+            riderStatuses.frozen || riderStatuses.grappled ||
+            riderStatuses.incapacitated || riderStatuses.necrotised ||
+            riderStatuses.nervousimpairment || riderStatuses.paralyzed ||
+            riderStatuses.petrified || riderStatuses.poisoned ||
+            riderStatuses.prone || riderStatuses.restrained ||
+            riderStatuses.silenced || riderStatuses.stunned ||
+            riderStatuses.unconscious
+          phase: initial
+          priority: null
+          _id: dbSPttxVahakG35T
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.PpPJKdHk1nbZ9D9g
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: attributes.hp.temp > 0
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791215639748
+      modifiedTime: 1791733086244
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.2HfUEUtGKlMaLR8Y.ActiveEffect.3RvOCdQdyArq4vlc
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!PpPJKdHk1nbZ9D9g.Csjv0LYV2zWJQuQN'
+sort: 100000
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791210558452
+  modifiedTime: 1791733086244
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!PpPJKdHk1nbZ9D9g'

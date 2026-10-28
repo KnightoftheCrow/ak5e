@@ -456,12 +456,9 @@ prototypeToken:
     src: icons/commodities/treasure/crown-gold-satin-gems-red.webp
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -505,7 +502,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -527,6 +524,7 @@ prototypeToken:
   randomImg: false
   appendNumber: false
   prependAdjective: false
+  depth: 1
 items:
   - name: Throne of Blood Aura
     type: feat
@@ -564,8 +562,7 @@ items:
     effects:
       - name: Throne of Blood Aura
         img: icons/commodities/treasure/crown-gold-satin-gems-red.webp
-        origin: >-
-          Compendium.ak5e.ak5e-bestiary.Actor.LXSo7QujfzMS0LVi.Item.mjDj26oa2q9Mzfjy
+        origin: null
         _id: yOKURPgytuqXziU5
         type: auraeffects.aura
         system:
@@ -585,16 +582,16 @@ items:
           script: ''
           stashedChanges: []
           stashedStatuses: []
-        changes: []
+          changes: []
+          origin:
+            item: >-
+              Compendium.ak5e.ak5e-bestiary.Actor.LXSo7QujfzMS0LVi.Item.mjDj26oa2q9Mzfjy
         disabled: false
         duration:
-          startTime: null
-          combat: null
-          seconds: null
-          rounds: null
-          turns: null
-          startRound: null
-          startTurn: null
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
         description: ''
         tint: '#ffffff'
         transfer: true
@@ -620,12 +617,15 @@ items:
           compendiumSource: null
           duplicateSource: null
           exportSource: null
-          coreVersion: '13.347'
+          coreVersion: '14.368'
           systemId: dnd5e
-          systemVersion: 5.1.2
+          systemVersion: 6.0.6
           createdTime: 1758379089362
-          modifiedTime: 1758379125230
-          lastModifiedBy: 9KtVYqHDTWORuJDZ
+          modifiedTime: 1791733079974
+          lastModifiedBy: 5XlrCO2NlPtd4MFQ
+        start: null
+        showIcon: 1
+        folder: null
         _key: >-
           !actors.items.effects!LXSo7QujfzMS0LVi.mjDj26oa2q9Mzfjy.yOKURPgytuqXziU5
     folder: null
@@ -647,12 +647,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1758379076589
-      modifiedTime: 1758379660677
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      modifiedTime: 1791733079974
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _key: '!actors.items!LXSo7QujfzMS0LVi.mjDj26oa2q9Mzfjy'
   - name: Create Blood Amber
     type: feat
@@ -817,7 +817,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1758379788216
@@ -834,10 +834,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.1.2
-  createdTime: 1758378732317
-  modifiedTime: 1785597591837
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791733079973
+  modifiedTime: 1791733079973
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!actors!LXSo7QujfzMS0LVi'

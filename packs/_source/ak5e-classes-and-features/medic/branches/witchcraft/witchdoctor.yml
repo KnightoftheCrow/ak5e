@@ -1,0 +1,116 @@
+folder: JBS9vzDCvPQWvnsV
+name: Witchdoctor
+type: feat
+_id: m3f8YQIJFLHBK4J4
+img: modules/ak5e/icons/Skill-Qanipalaat1.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You further refine your technique for “supporting” your allies through
+      your Arts. You gain the following benefits:</p><p><strong>Operator Skill
+      Access</strong>. Whenever you gain a new Operator Skill, you may instead
+      choose a Skill from the appropriate Operator Skills table available to the
+      Caster Class.</p><p><strong>Improved Life Support</strong>. The range at
+      which you can restore Hit Points with your Life Support Feature is
+      increased to 60 feet.</p><hr><p><strong>Automated: </strong>The increase
+      in LS range is automated. The choice of Operator Skills does not need to
+      be automated.</p>
+    chat: ''
+  identifier: witchdoctor
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 4
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Increased Life Support Range
+    img: modules/ak5e/icons/Skill-Qanipalaat1.webp
+    origin: null
+    type: base
+    _id: TjMoTIz2hzUSypUs
+    system:
+      changes:
+        - key: system.scale.life-support.life-support-range
+          type: override
+          value: 60
+          phase: initial
+          priority: null
+          _id: qkIuUYI2S2bgUbGJ
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.m3f8YQIJFLHBK4J4
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791216396579
+      modifiedTime: 1791733088091
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!m3f8YQIJFLHBK4J4.TjMoTIz2hzUSypUs'
+sort: 50000
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791210558456
+  modifiedTime: 1791733088091
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!m3f8YQIJFLHBK4J4'

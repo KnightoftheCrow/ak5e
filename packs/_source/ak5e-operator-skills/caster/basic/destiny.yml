@@ -152,28 +152,35 @@ system:
 effects:
   - name: Destiny (Skill Points)
     img: modules/ak5e/icons/64px-Skill-April2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.b8ctTaF23QILAOJt
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: MdeU9IJ3bpJgSFAK
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: C3jMwq9pqJcFjfEn
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.b8ctTaF23QILAOJt
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,10 +205,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095008
+      modifiedTime: 1791733095008
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!b8ctTaF23QILAOJt.flx7lohMTgQh5EDM'
 sort: 0
 ownership:
@@ -215,11 +227,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.sa6E24mcYxedDSjx
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772826442350
-  modifiedTime: 1772984877624
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733095007
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: b8ctTaF23QILAOJt
 _key: '!items!b8ctTaF23QILAOJt'

@@ -159,28 +159,35 @@ system:
 effects:
   - name: Weapons Team Formation (Skill Points)
     img: systems/dnd5e/icons/svg/items/feature.svg
-    origin: Item.SppLgaK95nLKNQbZ
+    origin: null
     type: base
     _id: nDHP98uGEk3OWxnh
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: O2Lv1ZvGo4cR4KSu
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: Y6PtUg9FsD4VE1iT
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.SppLgaK95nLKNQbZ
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -206,10 +213,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093403
+      modifiedTime: 1791733093403
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!P7ItRD5KREBpqMiS.nDHP98uGEk3OWxnh'
 flags:
   dnd5e:
@@ -219,12 +231,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356645435
-  modifiedTime: 1783356645457
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733093402
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

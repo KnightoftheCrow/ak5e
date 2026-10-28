@@ -514,12 +514,9 @@ prototypeToken:
     src: icons/commodities/gems/gem-cluster-red.webp
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -563,7 +560,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -581,10 +578,13 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
-  flags: {}
+  flags:
+    dnd5e:
+      lockScale: true
   randomImg: false
   appendNumber: false
   prependAdjective: false
+  depth: 0.5
 items: []
 effects: []
 folder: zhZ3oJrVXiDxSCHH
@@ -597,10 +597,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1757771362210
-  modifiedTime: 1785597591837
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733080249
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!actors!xv4JbMXoqrnGr17b'

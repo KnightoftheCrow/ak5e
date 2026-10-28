@@ -154,28 +154,35 @@ system:
 effects:
   - name: Parabellum (Skill Points)
     img: systems/dnd5e/icons/svg/items/feature.svg
-    origin: Item.rnItxzwobcEV9Lqb
+    origin: null
     type: base
     _id: Lzi5qQq8urbmKxSJ
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: wlEwf4jVwMIHTu11
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: am8Irw5A1k4h6I7p
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.rnItxzwobcEV9Lqb
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -201,10 +208,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097203
+      modifiedTime: 1791733097203
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!tayiRAeoX6DPDsTI.Lzi5qQq8urbmKxSJ'
 flags:
   dnd5e:
@@ -214,12 +226,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356639943
-  modifiedTime: 1783356639960
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733097203
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

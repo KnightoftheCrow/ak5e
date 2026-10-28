@@ -1,0 +1,148 @@
+folder: Pji4wTRYaJMHjby6
+name: Alpha Strike
+type: feat
+img: modules/ak5e/icons/Skill-Lappland2.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement:
+    t4pWGqUpxCJgpmCE:
+      name: Alpha Strike Damage
+      type: ScaleValue
+      _id: t4pWGqUpxCJgpmCE
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 1
+            faces: 12
+      flags: {}
+      hint: ''
+      value: {}
+  description:
+    value: >-
+      <p>The first time you deal Damage to a Creature with an Attack, that
+      Attack deals 1d12 additional Weapon Damage. It is considered to be the
+      first time you hit a Creature if you have rolled Initiative since the last
+      time you hit them with an Attack.</p><p><strong>Module:</strong> The
+      additional Damage becomes 2d12.</p><hr><p><strong>Semi-Automated:
+      </strong>There is a Opt-In Component when rolling Damage; use it when
+      Alpha Strike is applicable.</p>
+    chat: ''
+  identifier: alpha-strike
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Alpha Strike
+    img: modules/ak5e/icons/Skill-Lappland2.png
+    origin: null
+    _id: VSDmSkJS3PKvLsNb
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=@scale.alpha-strike.alpha-strike-damage; name=Alpha Strike;
+            optinId=alpha-strike-0; description=Bonus Damage from Alpha Strike;
+            addTo=base; optin; hasAttack
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: sw5PnUmbuDCuWch6
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.nS9XHOC6P8BkMdhe
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        applicationMode: default
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841816
+      modifiedTime: 1793197841816
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!b2oWzhaMhHqhi17H.VSDmSkJS3PKvLsNb'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841816
+  modifiedTime: 1793197841925
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: b2oWzhaMhHqhi17H
+sort: 0
+_key: '!items!b2oWzhaMhHqhi17H'

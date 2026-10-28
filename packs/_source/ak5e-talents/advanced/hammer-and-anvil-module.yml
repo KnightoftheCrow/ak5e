@@ -1,0 +1,132 @@
+folder: Pji4wTRYaJMHjby6
+name: Hammer and Anvil (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Vulcan2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module:</strong> The range at which this Feature is effective
+      is increased to 10 feet.</p><p><strong>Partially Automated: </strong>You
+      will be prompted for the additional Damage, but this does not check if
+      there is an allied Creature close enough.</p>
+    chat: ''
+  identifier: hammer-and-anvil-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - hammer-and-anvil
+    repeatable: false
+    level: 13
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Bonus Damage vs Engaged Enemies (Module)
+    img: modules/ak5e/icons/Skill-Vulcan2.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.7sKthQOcQQXqKIkG
+    _id: rxZaxB37dLmBlQ04
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@prof; oncePerTurn; actionType.rwak && checkNearby(opponentId,
+            'different', 10, {count:1}) || actionType.rsak &&
+            checkNearby(opponentId, 'different', 10, {count:1})
+          phase: initial
+          _id: kl0NmwdwuBbeE8pE
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.7sKthQOcQQXqKIkG
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841851
+      modifiedTime: 1793197841851
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start:
+      combat: null
+      round: 1
+      time: 900
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!7sKthQOcQQXqKIkG.rxZaxB37dLmBlQ04'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841851
+  modifiedTime: 1793197841938
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 7sKthQOcQQXqKIkG
+sort: 0
+_key: '!items!7sKthQOcQQXqKIkG'

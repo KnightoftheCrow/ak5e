@@ -150,28 +150,35 @@ system:
 effects:
   - name: Sap (Skill Points)
     img: modules/ak5e/icons/Skill-Jackie1.webp
-    origin: Item.YAuYBnA2kHLrR3Ct
+    origin: null
     type: base
     _id: scMCjhFix7F4rAOA
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 2
-        value: '5'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 2
-        value: '10'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 6IwTXFWygsWZ6cZc
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 10
+          priority: 20
+          type: add
+          phase: initial
+          _id: TDiFRVqlPdhCYUyc
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.YAuYBnA2kHLrR3Ct
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -197,10 +204,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733090473
+      modifiedTime: 1791733090473
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!4F2W8LEGFpDHF5Zn.scMCjhFix7F4rAOA'
 flags:
   dnd5e:
@@ -210,12 +222,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356882092
-  modifiedTime: 1783356882114
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733090472
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

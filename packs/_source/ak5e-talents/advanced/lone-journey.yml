@@ -1,0 +1,130 @@
+folder: Pji4wTRYaJMHjby6
+name: Lone Journey
+type: feat
+_id: zwwtUHma3kiSNahw
+img: modules/ak5e/icons/Skill-Tecno1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>At the end of your Turn, if there are no other Creatures within 10 feet
+      of you, you have Damage Resistance against all Damage equal to your
+      Proficiency Bonus.</p><p><strong>Module Effect:</strong> Allied Creatures
+      are no longer considered to be Creatures within 10 feet of you for the
+      purpose of this Feature.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: lone-journey
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: '-Prof Damage taken if no Creatures within 10ft'
+    img: modules/ak5e/icons/Skill-Tecno1.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.zwwtUHma3kiSNahw
+    _id: 7HOEsnbQtUPg6lfA
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          value: >-
+            bonus=-@prof; !checkNearby(effectOriginActor.tokenId, 'all', 10,
+            {count:1}) && !getItem(effectOriginActor.tokenId,
+            'lone-journey-module')
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: qE3b7g4N8NCw1EbI
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.zwwtUHma3kiSNahw
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        applicationMode: default
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841868
+      modifiedTime: 1793197841868
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!zwwtUHma3kiSNahw.7HOEsnbQtUPg6lfA'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841868
+  modifiedTime: 1793197841945
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!zwwtUHma3kiSNahw'

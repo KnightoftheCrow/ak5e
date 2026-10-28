@@ -166,21 +166,21 @@ system:
 effects:
   - name: Activating...
     img: icons/magic/time/clock-stopwatch-white-blue.webp
-    origin: Item.zBNNk8dKcdoGrWyl
+    origin: null
     transfer: false
     _id: AtPXHf9DltPDSMyI
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.zBNNk8dKcdoGrWyl
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: 60
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 60
+      units: seconds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -207,10 +207,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733107880
+      modifiedTime: 1791733107880
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!7vRU2jRxD3MWmYw7.AtPXHf9DltPDSMyI'
 flags:
   dnd5e:
@@ -221,12 +226,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1768059292740
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733107879
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: 7vRU2jRxD3MWmYw7
 sort: 100000
 ownership:

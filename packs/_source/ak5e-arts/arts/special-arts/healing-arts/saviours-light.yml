@@ -1,0 +1,480 @@
+folder: ZN4KzJhlR7XtRgqz
+name: Saviour's Light
+type: spell
+_id: fqMcjrj4L7ZZI0Vh
+img: icons/magic/light/orb-hands-humanoid-yellow.webp
+system:
+  activities:
+    FesoeUdNldSeR6KY:
+      type: utility
+      name: Cast
+      _id: FesoeUdNldSeR6KY
+      img: null
+      sort: 0
+      activation:
+        type: action
+        override: false
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: XFN8QNTcPjHlsTp9
+          uuid: null
+          level: {}
+      flags:
+        cat:
+          genericConfig: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        prompt: false
+        visible: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    TCXxMw50x6Ei3eib:
+      type: heal
+      name: Grant Temp HP
+      _id: TCXxMw50x6Ei3eib
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: true
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: true
+      effects:
+        - _id: WnDa4VUiWIBupQ7Q
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: true
+        special: ''
+        value: '30'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ally
+          count: ''
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      healing:
+        types:
+          - temphp
+        custom:
+          enabled: false
+        modifiers: []
+        scaling:
+          number: 1
+          mode: ''
+        number: 2
+        denomination: 8
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Saviour's Light")
+      useConditionReason: This Art is not active!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Your Originium Arts manifest as seemingly divine light washing out from
+      you, softly illuminating all areas within a 30-foot-radius sphere of Dim
+      Light centered on you for the duration.</p><p>This light represents
+      enhanced awareness granted by your Arts; you know the current and maximum
+      Hit Points of all Creatures within this sphere. When you cast this Art,
+      and at the beginning of your Turn (no Action required), you can grant any
+      number of Creatures you can see within the sphere 2d8 Temporary Hit
+      Points. While Creatures have these Temporary Hit Points, and you maintain
+      Concentration on this Art, they have Advantage on all Saving
+      Throws.</p><hr><p><strong>Semi-Automated: </strong>The knowing of Hit
+      Points for Creatures in the area cannot be automated. You have an activity
+      to grant the temporary Hit Points; this provides an effect that gives them
+      Saving Throw Advantage, but this effect will not be removed if you lose
+      concentration on the Art.</p>
+    chat: ''
+  identifier: saviours-light
+  source:
+    revision: 1
+    rules: '2014'
+  activation:
+    type: action
+    condition: ''
+  duration:
+    units: minute
+    expiry: null
+    value: '1'
+  level: 8
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 2
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  range:
+    units: self
+    special: ''
+  school: abj
+  target:
+    template:
+      contiguous: false
+      stationary: false
+      units: ft
+      type: sphere
+      size: '30'
+      count: ''
+    affects:
+      choice: false
+      type: ally
+      count: ''
+      special: '-self'
+effects:
+  - name: Saviour's Light
+    img: icons/magic/light/orb-hands-humanoid-yellow.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-arts.Item.fqMcjrj4L7ZZI0Vh
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: token.light.dim
+          type: override
+          value: 30
+          phase: initial
+          _id: ObmZGV5hCfeFmcsr
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: XFN8QNTcPjHlsTp9
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792418158355
+      modifiedTime: 1792418198083
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!fqMcjrj4L7ZZI0Vh.XFN8QNTcPjHlsTp9'
+  - name: Saving Throw Advantage
+    img: icons/magic/light/orb-hands-humanoid-yellow.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-arts.Item.fqMcjrj4L7ZZI0Vh
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.save.advantage
+          type: ac5e
+          value: ''
+          phase: initial
+          _id: fBYFSop7sSA1Mm4a
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: true
+      rider:
+        statuses: []
+    transfer: false
+    _id: WnDa4VUiWIBupQ7Q
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: 1
+      units: minutes
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: '@attributes.hp.temp > 0'
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792418271770
+      modifiedTime: 1792418378194
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!fqMcjrj4L7ZZI0Vh.WnDa4VUiWIBupQ7Q'
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792417991638
+  modifiedTime: 1792418502195
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!fqMcjrj4L7ZZI0Vh'

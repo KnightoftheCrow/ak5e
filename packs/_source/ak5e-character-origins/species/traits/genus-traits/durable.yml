@@ -38,24 +38,27 @@ system:
 effects:
   - name: Durable
     img: icons/skills/wounds/anatomy-organ-heart-red.webp
-    origin: Item.LH8i2GuJ2NCY7ml4
+    origin: null
     _id: Y7448URnPurMwOYY
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.hp.bonuses.level
-        mode: 2
-        value: '1'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.hp.bonuses.level
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: P0cWSYa1nYP1mHOH
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.LH8i2GuJ2NCY7ml4
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -79,10 +82,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733082198
+      modifiedTime: 1791733082198
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!UO0RZSeaAkW9AAvQ.Y7448URnPurMwOYY'
 flags:
   dnd5e:
@@ -92,12 +100,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680525061
-  modifiedTime: 1768680525094
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733082197
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

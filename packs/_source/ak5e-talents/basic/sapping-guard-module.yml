@@ -1,0 +1,141 @@
+folder: pK9UlZztTzku2Tvf
+name: Sapping Guard (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Asbestos1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement:
+    ZPZZzA37vKEJSJqc:
+      name: Change Recovery
+      type: ModifyItem
+      _id: ZPZZzA37vKEJSJqc
+      configuration:
+        changes:
+          - _id: P2SYnsfUXR1KBY9c
+            uuid: null
+            identifiers:
+              - sapping-guard
+      flags: {}
+      level: 8
+      hint: ''
+      value:
+        modified: []
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> You can now use this Feature a number
+      of times equal to your Proficiency Bonus, and regain all expended uses
+      when you complete a Long Rest.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: sapping-guard-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - sapping-guard
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Sapping Guard (Module)
+    img: modules/ak5e/icons/Skill-Asbestos1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.DsDPmsWgSfzp2rMj
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.uses.recovery
+          type: override
+          value:
+            period: lr
+            type: recoverAll
+          phase: initial
+          _id: DIeOw97QeWrhj4xx
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: system.uses.max
+          type: override
+          value: '@prof'
+          phase: initial
+          _id: niCT80c5DNHiK43c
+          conditions: '{}'
+          replacement: ''
+          priority: null
+    type: enchantment
+    _id: P2SYnsfUXR1KBY9c
+    disabled: false
+    start:
+      time: 420
+      combat: OmUauzUJXHzAVPNs
+      combatant: sms6zQnqacUvO4t4
+      initiative: 19.13
+      round: 2
+      turn: 0
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841797
+      modifiedTime: 1793197841797
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!UKN3ubvHZ6vi9w2O.P2SYnsfUXR1KBY9c'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841797
+  modifiedTime: 1793197841917
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: UKN3ubvHZ6vi9w2O
+sort: 0
+_key: '!items!UKN3ubvHZ6vi9w2O'

@@ -1,0 +1,122 @@
+folder: pK9UlZztTzku2Tvf
+name: Precise Strike (Module)
+type: feat
+_id: iijjRt8AzD0JBDzK
+img: modules/ak5e/icons/Skill-Haze1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> The additional Piercing Damage is
+      increased to 2d8.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: precise-strike-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - precise-strike
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Precise Strike (Module)
+    img: modules/ak5e/icons/Skill-Haze1.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.iijjRt8AzD0JBDzK
+    _id: X17wggZgrCGygdJw
+    type: base
+    system:
+      changes:
+        - key: system.scale.precise-strike.precise-strike-damage.number
+          type: upgrade
+          value: 2
+          phase: initial
+          _id: vbzNuu0hwu4hjuz2
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.iijjRt8AzD0JBDzK
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841791
+      modifiedTime: 1793197841791
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!iijjRt8AzD0JBDzK.X17wggZgrCGygdJw'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841791
+  modifiedTime: 1793197841914
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!iijjRt8AzD0JBDzK'

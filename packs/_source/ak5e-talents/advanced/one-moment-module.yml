@@ -1,0 +1,120 @@
+folder: Pji4wTRYaJMHjby6
+name: One Moment (Module)
+type: feat
+img: modules/ak5e/icons/Skill-TheFiresharpened1.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module:</strong> The Force Damage taken is increased to
+      1d10.</p><hr><p><strong>Semi-Automated: </strong>Dealing the force damage
+      is an opt-in while rolling Damage.</p>
+    chat: ''
+  identifier: one-moment-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - one-moment
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: One Moment (Module)
+    img: modules/ak5e/icons/Skill-TheFiresharpened1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.y4IxvDgBCf6PtvI6
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.scale.one-moment.one-moment-damage.faces
+          type: upgrade
+          value: 10
+          phase: initial
+          _id: BsKGn51WGRwvSqtS
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: LYTEwfqZNHbsKo0n
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.y4IxvDgBCf6PtvI6
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841872
+      modifiedTime: 1793197841872
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!y4IxvDgBCf6PtvI6.LYTEwfqZNHbsKo0n'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841872
+  modifiedTime: 1793197841946
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: y4IxvDgBCf6PtvI6
+sort: 0
+_key: '!items!y4IxvDgBCf6PtvI6'

@@ -152,28 +152,35 @@ system:
 effects:
   - name: Mark Prey (Skill Points)
     img: modules/ak5e/icons/Skill-Gavial1.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.XGWbACi5cic6PXa8
+    origin: null
     _id: 07cem1rULU91DvMR
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: WGKc97M1NiBgXfka
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: rcMzsw2Z3wz3XVvy
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.XGWbACi5cic6PXa8
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,34 +205,40 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768072623238
-      modifiedTime: 1768651335613
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      modifiedTime: 1791733094373
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!XGWbACi5cic6PXa8.07cem1rULU91DvMR'
   - name: Mark Prey
     img: modules/ak5e/icons/Skill-Gavial1.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.XGWbACi5cic6PXa8
+    origin: null
     transfer: false
     _id: 8XpZyhhDafiJq3fZ
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.damage.bonus
-        mode: 2
-        value: bonus=1d4; hasAttack;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          value: bonus=1d4; hasAttack;
+          priority: 20
+          type: add
+          phase: initial
+          _id: vyt89xmV3SMoLjP0
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.XGWbACi5cic6PXa8
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 3
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 3
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -252,12 +265,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768073279081
-      modifiedTime: 1768073763480
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      modifiedTime: 1791733094373
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!XGWbACi5cic6PXa8.8XpZyhhDafiJq3fZ'
 sort: 200000
 ownership:
@@ -271,10 +287,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767618331739
-  modifiedTime: 1768638561551
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1791733094373
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!XGWbACi5cic6PXa8'

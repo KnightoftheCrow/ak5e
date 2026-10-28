@@ -151,28 +151,35 @@ system:
 effects:
   - name: Fortcracker (Skill Points)
     img: modules/ak5e/icons/64px-Skill-Toddifons2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.wZ4atsCZsGJmuUCA
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '65'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: GPGleeU4pdMcYObc
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: FVobYyASZZ5iDDqm
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.wZ4atsCZsGJmuUCA
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -196,11 +203,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: GiT7LQTiCJxjm7mo
-      modifiedTime: 1768653437059
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1791733097674
+      createdTime: 1791733097674
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!wZ4atsCZsGJmuUCA.DXFUOiWQeWl6gGq8'
 flags:
   dnd5e:
@@ -210,12 +221,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768158074725
-  modifiedTime: 1768653879534
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1791733097674
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   GiT7LQTiCJxjm7mo: 3

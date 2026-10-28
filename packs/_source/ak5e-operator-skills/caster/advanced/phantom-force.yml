@@ -389,28 +389,35 @@ system:
 effects:
   - name: Phantom Force (Skill Points)
     img: modules/ak5e/icons/Skill-Ling2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.kgFvnxHRHbdZ5VSU
+    origin: null
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: jdFPlOfCd8q8VDH4
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: VaA4PzLvmGaaQcaH
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.kgFvnxHRHbdZ5VSU
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -435,32 +442,40 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095890
+      modifiedTime: 1791733095890
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!kgFvnxHRHbdZ5VSU.GQBslauEmqcGyBM3'
   - name: Trapped in the Nightmare
     img: modules/ak5e/icons/Skill-Ling2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.kgFvnxHRHbdZ5VSU
+    origin: null
     transfer: false
     _id: L8uG234UTHjfwaKI
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.disadvantage.attack.all
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.disadvantage.attack.all
+          value: true
+          priority: 20
+          type: override
+          phase: initial
+          _id: JJUSjK8cgeBZ0hCB
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.kgFvnxHRHbdZ5VSU
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -489,28 +504,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095891
+      modifiedTime: 1791733095891
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!kgFvnxHRHbdZ5VSU.L8uG234UTHjfwaKI'
   - name: Lingering Nightmare
     img: modules/ak5e/icons/Skill-Ling2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.kgFvnxHRHbdZ5VSU
+    origin: null
     transfer: false
     _id: pEMiZI8IGJ4BekCG
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.kgFvnxHRHbdZ5VSU
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -539,10 +558,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095891
+      modifiedTime: 1791733095891
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!kgFvnxHRHbdZ5VSU.pEMiZI8IGJ4BekCG'
 sort: 800000
 ownership:
@@ -557,11 +581,11 @@ _stats:
   compendiumSource: Compendium.ak5e.ak5e-operator-skills.Item.LI9k302x9A4TZuh8
   duplicateSource: Item.ohDBnHUl0lL020mV
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772986852717
-  modifiedTime: 1773572162125
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733095890
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: kgFvnxHRHbdZ5VSU
 _key: '!items!kgFvnxHRHbdZ5VSU'

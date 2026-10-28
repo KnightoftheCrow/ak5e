@@ -1,0 +1,287 @@
+folder: Pji4wTRYaJMHjby6
+name: Black Queen's Protection
+type: feat
+_id: Bco0VsLwrKE4V9F2
+img: modules/ak5e/icons/Skill-Cuora2.webp
+system:
+  activities:
+    3naVAzLlTAOL7fHM:
+      type: utility
+      name: Apply Protection
+      _id: 3naVAzLlTAOL7fHM
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects:
+        - _id: bXE2kUix4qbssekN
+          level: {}
+          uuid: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      behaviors: []
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>When you restore 10 or more Hit Points to a Creature in a single Turn,
+      that Creature gains Damage Reduction against Physical Damage equal to your
+      Proficiency Bonus. This Damage Reduction is lost after they take Physical
+      Damage, or at the end of their next Turn.</p><p><strong>Module Effect:
+      </strong>The Damage Reduction is no longer lost after they take Physical
+      Damage.</p><hr><p><strong>Semi-Automated: </strong>You must manually
+      trigger the activity on this item, but the damage reduction is automatic.
+      However, the effect will be removed when the Creature takes ANY damage,
+      not just Physical Damage.</p>
+    chat: ''
+  identifier: black-queens-protection
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: '-Prof to next Physical Damage taken'
+    img: modules/ak5e/icons/Skill-Cuora2.webp
+    origin: null
+    type: base
+    _id: bXE2kUix4qbssekN
+    system:
+      changes:
+        - key: system.traits.dm.amount.bludgeoning
+          type: add
+          value: '-(@prof)'
+          phase: final
+          priority: null
+          _id: 31e2QYYij9bZVU1W
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.slashing
+          type: add
+          value: '-(@prof)'
+          phase: final
+          priority: null
+          _id: 0Ew2MZF00xXcU2UY
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.piercing
+          type: add
+          value: '-(@prof)'
+          phase: final
+          priority: null
+          _id: 3N3eSA5F8eEaORr7
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.thunder
+          type: add
+          value: '-(@prof)'
+          phase: final
+          priority: null
+          _id: HVTOnnRibW9jteOl
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.d9zP8nRmpyZ7kXsw
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: targetEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration:
+          - isDamaged
+        phaseStamped: true
+        enableCondition: ''
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841822
+      modifiedTime: 1793197841822
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!Bco0VsLwrKE4V9F2.bXE2kUix4qbssekN'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841822
+  modifiedTime: 1793197841927
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!Bco0VsLwrKE4V9F2'

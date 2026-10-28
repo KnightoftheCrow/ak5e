@@ -2,7 +2,7 @@ folder: r5YUnvOOo8oVml7x
 name: Heavy Crossbow
 type: weapon
 _id: 866oxgC2YP2qYU9g
-img: icons/weapons/crossbows/crossbow-purple.webp
+img: modules/ak5e/icons/Equipment/AK5e%20Great%20Crossbow.png
 system:
   activities:
     340fhVlYwUt8jCSt:
@@ -52,7 +52,7 @@ system:
   description:
     value: >-
       <p>[[/attack extended]], [[/damage
-      extended]]</p><p>@UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.HyZrjHTNPBLZWBVW]{Deadly},
+      extended]]</p><p>@UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.s7YIAtvJ7yyeFZgp]{Deadly},
       Loading, Two-Handed</p>
     chat: ''
   identifier: heavy-crossbow
@@ -112,7 +112,71 @@ system:
     value: heavyR
     baseItem: heavycrossbow
   mastery: ''
-effects: []
+effects:
+  - name: Deadly
+    img: icons/skills/melee/blade-tip-chipped-blood-red.webp
+    origin: null
+    type: base
+    _id: BIw0Fnho9uU3RcDu
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=@prof; name=Deadly Damage; oncePerTurn; itemLimited;
+            itemProperties.ded
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: n3Isr9o8gWsrswxA
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-items.Item.866oxgC2YP2qYU9g
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.fPUfPJOelKu6a97f.ActiveEffect.jM0vlGY22MA3LSBo
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792950119058
+      modifiedTime: 1792950119058
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!866oxgC2YP2qYU9g.BIw0Fnho9uU3RcDu'
 sort: 0
 ownership:
   default: 0
@@ -122,10 +186,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.3
+  systemVersion: 5.3.3
   createdTime: 1756317816747
-  modifiedTime: 1766937012284
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733078996
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!866oxgC2YP2qYU9g'

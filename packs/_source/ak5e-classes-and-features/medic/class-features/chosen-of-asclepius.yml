@@ -1,0 +1,115 @@
+name: Chosen of Asclepius
+type: feat
+img: modules/ak5e/icons/Skill-Breeze2.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>Whenever you would roll to determine the amount of Hit Points you
+      restore to a Creature, you can choose not to roll, and instead use the
+      highest number possible for each die. For example, instead of restoring
+      2d6 Hit Points to a Creature, you restore
+      12.</p><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: chosen-of-asclepius
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 20
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Maximised Healing
+    img: modules/ak5e/icons/Skill-Breeze2.webp
+    origin: null
+    type: base
+    _id: 3KeOKOofDMvBJDVd
+    system:
+      changes:
+        - key: flags.midi-qol.max.damage.heal
+          type: override
+          value: true
+          phase: initial
+          priority: null
+          _id: pCXABr8YLN79Kyw2
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.M4jmGyhINnItJ2ZE
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791210546451
+      modifiedTime: 1791733086018
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!M4jmGyhINnItJ2ZE.3KeOKOofDMvBJDVd'
+sort: 225000
+flags:
+  scene-packer:
+    hash: af56cb4c74e38006591e0ad833ed6e6bafc3f624
+    sourceId: Compendium.world.spells--features.Item.FmRglPCQKFdPDeS3
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Compendium.world.spells--features.Item.FmRglPCQKFdPDeS3
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791210546451
+  modifiedTime: 1791733086018
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: M4jmGyhINnItJ2ZE
+folder: 2NjErlfHCNMkOexd
+_key: '!items!M4jmGyhINnItJ2ZE'

@@ -1,0 +1,116 @@
+folder: pK9UlZztTzku2Tvf
+name: Giant Killer
+type: feat
+img: modules/ak5e/icons/64px-Skill-Typhon3.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Your Attacks against Creatures who are Huge or Larger deal an
+      additional die of Damage.</p><p><strong>Module Effect:</strong> Your
+      Attacks against Creatures who are Huge or Larger are made at
+      Advantage.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: giant-killer
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +1 Die of Damage vs Huge+ Creatures
+    img: modules/ak5e/icons/64px-Skill-Typhon3.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.FdVpns6K7WKXFFzr
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.extraDice
+          type: ac5e
+          value: bonus=1; opponentActor.traits.sizeNumeric > 3 && hasAttack
+          phase: initial
+          _id: FzCnKhvt41R7iJ1f
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 0IFi1ryx6lkzAlAf
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.FdVpns6K7WKXFFzr
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841772
+      modifiedTime: 1793197841772
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!FdVpns6K7WKXFFzr.0IFi1ryx6lkzAlAf'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841772
+  modifiedTime: 1793197841907
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: FdVpns6K7WKXFFzr
+sort: 0
+_key: '!items!FdVpns6K7WKXFFzr'

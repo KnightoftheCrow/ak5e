@@ -1,0 +1,121 @@
+folder: Pji4wTRYaJMHjby6
+name: Revenger (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Ceobe3.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> If you have taken Damage since your
+      last Turn, your first Attack Roll during your Turn is made with
+      Advantage.</p><hr><p><strong>Semi-Automated: </strong>Both the basic and
+      module effects are Opt-In effects. Trigger them when its appropriate.</p>
+    chat: ''
+  identifier: revenger-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - revenger
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Attack Advantage if Damaged since last Turn
+    img: modules/ak5e/icons/Skill-Ceobe3.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.eplJw2jGfACgjCuV
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.advantage
+          type: ac5e
+          value: >-
+            name=Advantage from Revenger;
+            optinId=attack-advantage-if-damaged-since-last-turn-0;
+            description=Advantage due to being Damaged; oncePerTurn; optin;
+            hasAttack
+          phase: initial
+          _id: THCe9qOHyjGEpHKG
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: efQMgjgWvXBktKtV
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.eplJw2jGfACgjCuV
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841879
+      modifiedTime: 1793197841879
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!eplJw2jGfACgjCuV.efQMgjgWvXBktKtV'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841879
+  modifiedTime: 1793197841950
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: eplJw2jGfACgjCuV
+sort: 0
+_key: '!items!eplJw2jGfACgjCuV'

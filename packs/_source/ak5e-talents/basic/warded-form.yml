@@ -1,0 +1,118 @@
+folder: pK9UlZztTzku2Tvf
+name: Warded Form
+type: feat
+_id: 6lnOTxGLHJuIWZsT
+img: modules/ak5e/icons/Skill-Czerny1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>While you are not wearing any Armour, your Armour Class is increased by
+      your Spellcasting Ability Modifier.</p><p><strong>Module Effect:
+      </strong>While you are not wearing any Armour, your base Armour Class
+      becomes 13.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: warded-form
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Warded Form
+    img: modules/ak5e/icons/Skill-Czerny1.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.6lnOTxGLHJuIWZsT
+    type: base
+    _id: lJsDqVBO21RdI3u9
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.modifyAC
+          value: bonus=attributes.spell.mod; !effectActor.hasArmor
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: PaYHXGQdrY56AoSf
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.6lnOTxGLHJuIWZsT
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841812
+      modifiedTime: 1793197841812
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!6lnOTxGLHJuIWZsT.lJsDqVBO21RdI3u9'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841812
+  modifiedTime: 1793197841923
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!6lnOTxGLHJuIWZsT'

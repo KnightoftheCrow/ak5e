@@ -172,24 +172,27 @@ system:
 effects:
   - name: Max Proficiency Point increase
     img: icons/environment/wilderness/mine-interior-dungeon-door.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.o6upX7UyDUMg90J1
+    origin: null
     _id: FJYjRGXQKrLcouV3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.find-the-path.max-prof-points.value
-        mode: 2
-        value: '1'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.find-the-path.max-prof-points.value
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: J5ljz2ZBWUiSMgku
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.o6upX7UyDUMg90J1
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -213,10 +216,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733083234
+      modifiedTime: 1791733083234
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!o6upX7UyDUMg90J1.FJYjRGXQKrLcouV3'
 sort: 500000
 ownership:
@@ -230,10 +238,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881347037
-  modifiedTime: 1769881347037
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733083234
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!o6upX7UyDUMg90J1'

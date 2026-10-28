@@ -165,25 +165,29 @@ system:
 effects:
   - name: Acid Douse Additional Damage
     img: icons/magic/acid/dissolve-arm-flesh.webp
-    origin: Item.QGzHDISS9wew6Zyi
+    origin: null
     transfer: false
     _id: MtMHHArc4TGFtAvP
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dm.amount.acid
-        mode: 2
-        value: +[[1d8]]
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dm.amount.acid
+          value: +[[1d8]]
+          priority: 20
+          type: add
+          phase: initial
+          _id: IYGPhz93RgiWakie
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.QGzHDISS9wew6Zyi
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -212,10 +216,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108289
+      modifiedTime: 1791733108289
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!H8oecLMN87nAixzC.MtMHHArc4TGFtAvP'
 flags:
   dnd5e:
@@ -230,13 +239,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
-sort: 0
+  modifiedTime: 1791733108289
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+sort: 800000
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

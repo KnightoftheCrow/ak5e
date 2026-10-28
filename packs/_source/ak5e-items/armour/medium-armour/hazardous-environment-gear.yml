@@ -1,7 +1,7 @@
 folder: kPyCLBr67aaO8hty
 name: Hazardous Environment Gear
 type: equipment
-img: icons/equipment/chest/breastplate-helmet-metal.webp
+img: modules/ak5e/icons/Equipment/AK5e_Hazardous_Environment_Gear.png
 system:
   activities: {}
   uses:
@@ -53,56 +53,91 @@ system:
 effects:
   - name: Hazardous Environment Gear DR
     img: icons/equipment/chest/breastplate-helmet-metal.webp
-    origin: Item.jX6QD446UxdxSK4T
+    origin: null
     _id: 79irsiSTvMg3ozyY
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dm.amount.acid
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.cold
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.fire
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.force
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.lightning
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.necrotic
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.da.poison
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.psychic
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.radiant
-        mode: 2
-        value: '-5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dm.amount.acid
+          value: -5
+          priority: 20
+          type: add
+          phase: initial
+          _id: Y0U38ueR5Wp0dtlf
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.cold
+          value: -5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 3TnvoQbatU9rTWYk
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.fire
+          value: -5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 1qxXWBegWqMm1UuM
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.force
+          value: -5
+          priority: 20
+          type: add
+          phase: initial
+          _id: oLkHU0EibihQbEBc
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.lightning
+          value: -5
+          priority: 20
+          type: add
+          phase: initial
+          _id: uinzU0egcdGNW3e1
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.necrotic
+          value: -5
+          priority: 20
+          type: add
+          phase: initial
+          _id: L3wI5wzE2xuk1GZz
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.da.poison
+          value: -5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 9njIMXN7TlqfkUo0
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.psychic
+          value: -5
+          priority: 20
+          type: add
+          phase: initial
+          _id: A0XV63Vm08dqSh2s
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.radiant
+          value: -5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 2gWd2hOoQNs9wxfB
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.jX6QD446UxdxSK4T
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -126,22 +161,27 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733079352
+      modifiedTime: 1791733079352
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!rJSxxqHViUccUU7U.79irsiSTvMg3ozyY'
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1757006081019
-  modifiedTime: 1757006508520
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1793231295077
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: rJSxxqHViUccUU7U
 sort: 300000
 ownership:

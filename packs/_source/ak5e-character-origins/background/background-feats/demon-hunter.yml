@@ -137,24 +137,27 @@ system:
 effects:
   - name: Advantage on Saving Throws vs Abberations
     img: icons/weapons/axes/axe-battle-eyes-red.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.2BTzYLwOvUYBFOdo
+    origin: null
     _id: pNQu2YJSAuOpS5EV
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.save.advantage
-        mode: 2
-        value: opponentActor.creatureType.includes('abberation')
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.save.advantage
+          value: opponentActor.creatureType.includes('abberation')
+          priority: 20
+          type: add
+          phase: initial
+          _id: 8Q4Fm5rNEybKJPVw
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.2BTzYLwOvUYBFOdo
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -178,10 +181,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733080807
+      modifiedTime: 1791733080807
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!2BTzYLwOvUYBFOdo.pNQu2YJSAuOpS5EV'
 sort: 1100000
 ownership:
@@ -195,10 +203,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881347037
-  modifiedTime: 1769881347037
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733080806
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!2BTzYLwOvUYBFOdo'

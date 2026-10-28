@@ -267,28 +267,35 @@ system:
 effects:
   - name: Scorched Earth (Skill Points)
     img: modules/ak5e/icons/64px-Skill-Fiammetta2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.RspIe7238jDPJt2w
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '65'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 5ORmgoU7snCWc2oX
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: P1lDd1Y8HbIqBJRv
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.RspIe7238jDPJt2w
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -313,28 +320,32 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093869
+      modifiedTime: 1791733093869
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!RspIe7238jDPJt2w.DXFUOiWQeWl6gGq8'
   - name: Scorching the Earth
     img: modules/ak5e/icons/64px-Skill-Fiammetta2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.RspIe7238jDPJt2w
+    origin: null
     transfer: false
     _id: 88h9qWQxBNdTtCW7
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.RspIe7238jDPJt2w
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -361,80 +372,136 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093869
+      modifiedTime: 1791733093869
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!RspIe7238jDPJt2w.88h9qWQxBNdTtCW7'
   - name: Resistance Ignore
     img: modules/ak5e/icons/64px-Skill-Fiammetta2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.RspIe7238jDPJt2w
+    origin: null
     transfer: false
     _id: v7QEDAs0m6p3hfCE
     type: base
-    system: {}
-    changes:
-      - key: system.traits.idr.value
-        mode: 2
-        value: acid
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: bludgeoning
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: cold
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: fire
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: force
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: lightning
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: necrotic
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: piercing
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: poison
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: psychic
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: radiant
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: slashing
-        priority: 20
-      - key: system.traits.idr.value
-        mode: 2
-        value: thunder
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.idr.value
+          value: acid
+          priority: 20
+          type: add
+          phase: initial
+          _id: Y9jWIZH9abkqZZnQ
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: bludgeoning
+          priority: 20
+          type: add
+          phase: initial
+          _id: 92zqUUP29ywbcHn4
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: cold
+          priority: 20
+          type: add
+          phase: initial
+          _id: GrlXdyGLMYeqIeh8
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: fire
+          priority: 20
+          type: add
+          phase: initial
+          _id: pLRntDbmCEGcwaI8
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: force
+          priority: 20
+          type: add
+          phase: initial
+          _id: ZJocwdtGUbyk0PC6
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: lightning
+          priority: 20
+          type: add
+          phase: initial
+          _id: xOGPJE33i3puHNhR
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: necrotic
+          priority: 20
+          type: add
+          phase: initial
+          _id: tRk1aNp6RIDWejQ2
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: piercing
+          priority: 20
+          type: add
+          phase: initial
+          _id: KLEh9g5tWoOwprq2
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: poison
+          priority: 20
+          type: add
+          phase: initial
+          _id: w5cottO82JMEx7bg
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: psychic
+          priority: 20
+          type: add
+          phase: initial
+          _id: yeZ9JPQ9ucYVfkB6
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: radiant
+          priority: 20
+          type: add
+          phase: initial
+          _id: PRaXvoHtBEuG9gWa
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: slashing
+          priority: 20
+          type: add
+          phase: initial
+          _id: crQwydStRd2207Dg
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.idr.value
+          value: thunder
+          priority: 20
+          type: add
+          phase: initial
+          _id: NDyCRqXoMnY3azK0
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.RspIe7238jDPJt2w
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -462,10 +529,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093870
+      modifiedTime: 1791733093870
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!RspIe7238jDPJt2w.v7QEDAs0m6p3hfCE'
 sort: 100000
 ownership:
@@ -480,11 +552,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.oVQuPKSaGjjTaAA3
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774023683571
-  modifiedTime: 1774023683571
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733093869
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: RspIe7238jDPJt2w
 _key: '!items!RspIe7238jDPJt2w'

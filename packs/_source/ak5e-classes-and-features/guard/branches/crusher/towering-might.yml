@@ -1,0 +1,120 @@
+folder: zd7kgy3RQcqcKJ9x
+name: Towering Might
+type: feat
+img: modules/ak5e/icons/Skill-Ines3.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You are fortitude incarnate, a moving mountain. It is a fool’s errand
+      to attempt to contain your mass. You gain the following
+      benefits:</p><ul><li><p><strong>Extreme Fortitude.</strong> Whenever you
+      roll a Hit Die, roll two dice and discard the lowest
+      result.</p></li><li><p><strong>Maximum Bulk.</strong> Your Hit Point
+      maximum increases by 3. Whenever you gain a Level thereafter, your Hit
+      Point maximum increases by an additional
+      3.</p></li></ul><hr><p><strong>Semi-Automated: </strong>The HP increase is
+      automated; Hit Die Advantage is not.</p>
+    chat: ''
+  identifier: towering-might
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: HP Increase
+    img: modules/ak5e/icons/Skill-Ines3.png
+    origin: null
+    type: base
+    _id: eRGbAPpnT0uVPcQN
+    system:
+      changes:
+        - key: system.attributes.hp.bonuses.level
+          type: add
+          value: 3
+          phase: initial
+          priority: null
+          _id: Tnk3Tyt35fZ6ZQO4
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.z0wooWjbKMnakMim
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791633647069
+      modifiedTime: 1791733088872
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!z0wooWjbKMnakMim.eRGbAPpnT0uVPcQN'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.OhkttTuh7CWDRYcd
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791633463136
+  modifiedTime: 1791733088871
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: z0wooWjbKMnakMim
+sort: 150000
+_key: '!items!z0wooWjbKMnakMim'

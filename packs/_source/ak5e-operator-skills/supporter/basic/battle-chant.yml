@@ -1,7 +1,7 @@
 folder: WVQAhyn17ObuyPIB
 name: Battle Chant
 type: feat
-img: modules/AK5e-Foundry-Module/icons/64px-Skill-A3.webp
+img: modules/ak5e/icons/64px-Skill-A3.webp
 system:
   activities:
     ad8IKEhEcM1DeKK5:
@@ -19,8 +19,7 @@ system:
         targets:
           - type: itemUses
             value: '15'
-            target: >-
-              Compendium.AK5e-Foundry-Module.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
             scaling: {}
       description:
         chatFlavor: ''
@@ -150,29 +149,36 @@ system:
     subtype: opSkill
 effects:
   - name: Battle Chant  (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/64px-Skill-A3.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.HgOYjZA1IbFHeCha
+    img: modules/ak5e/icons/64px-Skill-A3.webp
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: OsW5WlvBAA2XsWMZ
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 0g3GA6q1V5wDRZKs
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.HgOYjZA1IbFHeCha
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -196,10 +202,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733092013
+      modifiedTime: 1791733092013
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!HgOYjZA1IbFHeCha.flx7lohMTgQh5EDM'
 flags:
   dnd5e:
@@ -209,12 +220,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733092013
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

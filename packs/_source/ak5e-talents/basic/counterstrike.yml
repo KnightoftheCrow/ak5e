@@ -1,0 +1,136 @@
+folder: pK9UlZztTzku2Tvf
+name: Counterstrike
+type: feat
+img: modules/ak5e/icons/Skill-Brigid2.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Attacks you make when it is not your Turn deal additional Damage equal
+      to the Ability Modifier you used for that
+      Attack.</p><p><strong>Module:</strong> Attacks you make when it is not
+      your Turn are made at Advantage.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: counterstrike
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Bonus Damage to Attacks made when it is not your Turn
+    img: modules/ak5e/icons/Skill-Brigid2.png
+    origin: Compendium.ak5e.ak5e-talents.Item.2Opf0AHCTGNT2sPu
+    type: base
+    _id: hcgWuXoTbrFpg1gK
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=effectActor.abilities.str.mod; actionType.mwak &&
+            !itemProperties.fin && !isTurn
+          phase: initial
+          _id: NfbZwQRS0GLj25Fp
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=effectActor.abilities.dex.mod; actionType.mwak &&
+            itemProperties.fin && !isTurn || actionType.rwak && !isTurn
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: ZOAj8KzGkAdWKg7T
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: bonus=spellcastingMod; !isTurn && isSpell && hasAttack
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: cdneb37thjNfUMdl
+      origin:
+        item: Item.2k22aoTrEffaninp
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841762
+      modifiedTime: 1793197841762
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!2Opf0AHCTGNT2sPu.hcgWuXoTbrFpg1gK'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841762
+  modifiedTime: 1793197841902
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 2Opf0AHCTGNT2sPu
+sort: 0
+_key: '!items!2Opf0AHCTGNT2sPu'

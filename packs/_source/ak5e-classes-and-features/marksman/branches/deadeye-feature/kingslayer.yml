@@ -27,6 +27,7 @@ system:
         override: false
       effects:
         - _id: pWUqVplDYj2UW5Ft
+          level: {}
       flags: {}
       range:
         units: any
@@ -37,6 +38,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: creature
@@ -112,11 +114,30 @@ system:
       otherActivityId: none
       otherActivityAsParentType: true
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>To you, the emphasis in “High Value Target” is the word “Target.” You
@@ -151,33 +172,40 @@ system:
 effects:
   - name: Kingslayer
     img: modules/ak5e/icons/Skill-Varkaris1.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.bnjx284W0wwCkHjz
+    origin: null
     _id: rGHgFB0yl7OLVgz4
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.criticalThreshold
-        mode: 0
-        value: >-
-          threshold=-1; opponentActor.effects.some(effect => effect.name ===
-          'Target')
-        priority: 20
-      - key: flags.automated-conditions-5e.attack.criticalThreshold
-        mode: 0
-        value: >-
-          threshold=-1; opponentActor.effects.some(effect => effect.name ===
-          'Target'); ['elite', 'leader'].some(type =>
-          opponentActor.creatureType.includes(type));
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          value: >-
+            threshold=-1; opponentActor.effects.some(effect => effect.name ===
+            'Target')
+          priority: 20
+          type: custom
+          phase: initial
+          _id: gtwjP8NiZTdql6hM
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          value: >-
+            threshold=-1; opponentActor.effects.some(effect => effect.name ===
+            'Target'); ['elite', 'leader'].some(type =>
+            opponentActor.creatureType.includes(type));
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 7ExoEOLmJOwxDoWT
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.bnjx284W0wwCkHjz
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -201,34 +229,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1781190959386
-      modifiedTime: 1781191202592
+      systemVersion: 6.0.6
+      createdTime: 1791203553343
+      modifiedTime: 1791733087127
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!bnjx284W0wwCkHjz.rGHgFB0yl7OLVgz4'
   - name: Target
     img: modules/ak5e/icons/Skill-Lemuen1.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.bnjx284W0wwCkHjz
+    origin: null
     transfer: false
     _id: pWUqVplDYj2UW5Ft
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.attack.bonus
-        mode: 5
-        value: bonus=1; hasAttack && effectOriginTokenId === tokenId;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.bonus
+          value: bonus=1; hasAttack && effectOriginTokenId === tokenId;
+          priority: 20
+          type: override
+          phase: initial
+          _id: bekpGPj0p5X9hf1c
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.bnjx284W0wwCkHjz
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -254,33 +288,32 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.oxFGvfgwpg4tNLdL.ActiveEffect.IZw8x6vWejhydaf6
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1781191219873
-      modifiedTime: 1781191285572
+      systemVersion: 6.0.6
+      createdTime: 1791203553343
+      modifiedTime: 1791733087127
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!bnjx284W0wwCkHjz.pWUqVplDYj2UW5Ft'
 sort: 112500
 ownership:
   default: 0
-  GiT7LQTiCJxjm7mo: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1767621274994
-  modifiedTime: 1781191382153
+  systemVersion: 5.3.3
+  createdTime: 1791203553342
+  modifiedTime: 1791733087127
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!bnjx284W0wwCkHjz'

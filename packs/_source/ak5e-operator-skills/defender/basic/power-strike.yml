@@ -153,28 +153,35 @@ system:
 effects:
   - name: Power Strike (Skill Points)
     img: modules/ak5e/icons/Skill-Saileach3.webp
-    origin: Item.MOge42jvY5DqJbZI
+    origin: null
     _id: e9FbYLL0sGXnn0sy
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '5'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: hijZ3BkBBh3JMBZB
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 1wVEPhsLBOh7MRoC
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.MOge42jvY5DqJbZI
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,31 +205,39 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093000
+      modifiedTime: 1791733093000
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!N0NGOOjSiAhGifpl.e9FbYLL0sGXnn0sy'
   - name: Power Strike
     img: modules/ak5e/icons/Skill-Saileach3.webp
-    origin: Item.MOge42jvY5DqJbZI
+    origin: null
     _id: gCcAYW7mUUkIt70w
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: bonus=@prof; hasAttack;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@prof; hasAttack;
+          priority: 20
+          type: add
+          phase: initial
+          _id: mqHE4ulVre9kaLcr
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.MOge42jvY5DqJbZI
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 2
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 2
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -250,10 +265,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093000
+      modifiedTime: 1791733093000
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!N0NGOOjSiAhGifpl.gCcAYW7mUUkIt70w'
 flags:
   dnd5e:
@@ -263,12 +283,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356804757
-  modifiedTime: 1783356804780
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733092999
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

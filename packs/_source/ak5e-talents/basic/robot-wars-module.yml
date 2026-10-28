@@ -1,0 +1,127 @@
+folder: pK9UlZztTzku2Tvf
+name: Robot Wars (Module)
+type: feat
+img: modules/ak5e/icons/Skill-BuggyCam.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> This Bonus is increased to
+      +2.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: robot-wars-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - robot-wars
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +1 to Attack and Damage Rolls for Nearby Constructs
+    img: modules/ak5e/icons/Skill-BuggyCam.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.XAbztz51yG0FXYfD
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      changes:
+        - key: flags.automated-conditions-5e.aura.attack.bonus
+          type: ac5e
+          value: >-
+            bonus=1; radius=30; allies; singleAura;
+            rollingActor.creatureType.includes('construct')
+          phase: initial
+          _id: Yx6uHIXGdNCXbQve
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.aura.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1; radius=30; allies; singleAura;
+            rollingActor.creatureType.includes('construct')
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: BpijztpAyMYYleID
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: ZphqziorVcJhj99X
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841796
+      modifiedTime: 1793197841796
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!XAbztz51yG0FXYfD.ZphqziorVcJhj99X'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841796
+  modifiedTime: 1793197841916
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: XAbztz51yG0FXYfD
+sort: 0
+_key: '!items!XAbztz51yG0FXYfD'

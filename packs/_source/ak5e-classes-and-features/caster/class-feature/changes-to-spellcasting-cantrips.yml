@@ -9,7 +9,7 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>Whenever a Creature rolls Damage for a damaging Cantrip (a Cantrip that
@@ -36,24 +36,27 @@ system:
 effects:
   - name: +Spellcasting Mod to Cantrip Damage
     img: modules/ak5e/icons/Skill-T1.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.Qi4Mc2HB3snq2eE5
+    origin: null
     _id: ABspXtMpNUDi4KsJ
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 5
-        value: bonus=@attributes.spell.mod; isCantrip && hasDamage
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@attributes.spell.mod; isCantrip && hasDamage
+          priority: 20
+          type: override
+          phase: initial
+          _id: 5Rb5sFmqdueTaKSm
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.Qi4Mc2HB3snq2eE5
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -77,29 +80,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774181067611
-      modifiedTime: 1774181165589
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791206115734
+      modifiedTime: 1791733086286
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Qi4Mc2HB3snq2eE5.ABspXtMpNUDi4KsJ'
-sort: 0
-ownership:
-  default: 0
-  9KtVYqHDTWORuJDZ: 3
 flags:
   dnd5e:
     riders:
       activity: []
 _stats:
-  compendiumSource: null
+  compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.Qi4Mc2HB3snq2eE5
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1774180882901
-  modifiedTime: 1774181063106
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 5.3.3
+  createdTime: 1791206115734
+  modifiedTime: 1791733086285
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 0
 _key: '!items!Qi4Mc2HB3snq2eE5'

@@ -1,0 +1,118 @@
+folder: Pji4wTRYaJMHjby6
+name: Crownslayer (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Crownslayer3.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> If you are not in combat, and roll to
+      determine Damage dealt by you, treat any result of 1 or 2 on the dice as a
+      3.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: crownslayer-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - crownslayer
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Min Damage 3 while Out of Combat
+    img: modules/ak5e/icons/Skill-Crownslayer3.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.A7hnR2dwDJ5we1xT
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: >-
+            modifier=min3; name=Minimum Damage 3 from Crownslayer; addTo=all;
+            !rollingActor.combatTurn >= 1 && !opponentActor.combatTurn >= 1
+          phase: initial
+          _id: SGj6Dl0Upkpib44b
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: RcBdKBPGTX87bEJ2
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.A7hnR2dwDJ5we1xT
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841828
+      modifiedTime: 1793197841828
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!A7hnR2dwDJ5we1xT.RcBdKBPGTX87bEJ2'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841828
+  modifiedTime: 1793197841930
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: A7hnR2dwDJ5we1xT
+sort: 0
+_key: '!items!A7hnR2dwDJ5we1xT'

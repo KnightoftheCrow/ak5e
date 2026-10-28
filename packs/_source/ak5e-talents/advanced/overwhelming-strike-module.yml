@@ -1,0 +1,167 @@
+folder: Pji4wTRYaJMHjby6
+name: Overwhelming Strike (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Morgan1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> The additional Damage becomes equal to
+      the Ability Score used for that
+      Attack.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: overwhelming-strike-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - overwhelming-strike
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +Ability Score Damage when Nat20 on Attack Roll
+    img: modules/ak5e/icons/Skill-Morgan1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.Bp4OKJmbwCtu8z0v
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=ability.str; name=Bonus Damage from Overwhelming Strike (STR);
+            optinId=overwhelming-strike-0; description=+STR Bonus Damage; optin;
+            attackRollD20 === 20
+          phase: initial
+          _id: tdvVt9gl4mzIqhKZ
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=ability.dex; name=Bonus Damage from Overwhelming Strike (DEX);
+            optinId=overwhelming-strike-0; description=+DEX Bonus Damage; optin;
+            attackRollD20 === 20
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: mq5wrac6loKGg4Vg
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=ability.int; name=Bonus Damage from Overwhelming Strike (INT);
+            optinId=overwhelming-strike-0; description=+INT Bonus Damage; optin;
+            attackRollD20 === 20 && isSpell
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: K3v5miMwwQWiuUXq
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=ability.wis; name=Bonus Damage from Overwhelming Strike (WIS);
+            optinId=overwhelming-strike-0; description=+WIS Bonus Damage; optin;
+            attackRollD20 === 20 && isSpell
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: p01EZ3ovpTgChyCn
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=ability.cha; name=Bonus Damage from Overwhelming Strike (CHA);
+            optinId=overwhelming-strike-0; description=+CHA Bonus Damage; optin;
+            attackRollD20 === 20 && isSpell
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: PzhbF2AybYWv53ZX
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: piQ8YekwQCDPoPk0
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.Bp4OKJmbwCtu8z0v
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841874
+      modifiedTime: 1793197841874
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!Bp4OKJmbwCtu8z0v.piQ8YekwQCDPoPk0'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841874
+  modifiedTime: 1793197841947
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: Bp4OKJmbwCtu8z0v
+sort: 0
+_key: '!items!Bp4OKJmbwCtu8z0v'

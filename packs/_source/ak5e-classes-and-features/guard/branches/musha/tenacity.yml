@@ -1,0 +1,212 @@
+folder: 32dUF9J6SWSSOudP
+name: Tenacity
+type: feat
+img: modules/ak5e/icons/Skill-Hellagur3.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement:
+    JRQnSdpdUTFlxCLT:
+      name: Stand Alone Healing
+      type: ScaleValue
+      _id: JRQnSdpdUTFlxCLT
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 2
+            faces: 6
+          '7':
+            faces: 8
+          '14':
+            faces: 10
+      flags: {}
+      value: {}
+      hint: ''
+  description:
+    value: >-
+      <p>The closer to death you are, the harder you fight. You gain the
+      following benefits:</p><ul><li><p><strong>Nothing to Lose.</strong> If you
+      have equal to or less than 50% of your maximum Hit Points remaining, you
+      can make a Melee Weapon Attack as a Bonus Action. If you have equal to or
+      less than 10% of your maximum Hit Points remaining, you can instead make
+      two Melee Weapon Attacks as part of this Bonus
+      Action.</p></li><li><p><strong>Soloblade.</strong> When you hit a Creature
+      with a Melee Attack, you can recover 2d6 Hit Points. This amount increases
+      to 2d8 at 7th Level, and 2d10 at 14th Level.</p></li><li><p><strong>Stand
+      Alone.</strong> When another Creature would restore Hit Points to you, you
+      instead gain Temporary Hit Points equal to the Hit Points you would have
+      recovered.</p></li></ul><hr><p><strong>Automated: </strong>Soloblade and
+      Stand Alone are automated; there is an Opt-In when you hit with a Melee
+      Attack for Soloblade. Nothing To Lose does not need automation.</p>
+    chat: ''
+  identifier: tenacity
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Incoming Healing becomes Temporary HP
+    img: modules/ak5e/icons/Skill-Hellagur3.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.Pgm7tT1T16tjUzAV
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.typeOverride
+          type: ac5e
+          value: >-
+            override=temphp; addTo=all,types(healing); rollingActor.name !==
+            effectActor.name && isHeal
+          phase: initial
+          _id: KBobego0lIR1Bi5g
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: dU0hDBDeDly4Mwpv
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.Pgm7tT1T16tjUzAV
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792221162025
+      modifiedTime: 1792222016212
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!Pgm7tT1T16tjUzAV.dU0hDBDeDly4Mwpv'
+  - name: Stand Alone
+    img: modules/ak5e/icons/Skill-Hellagur3.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.Pgm7tT1T16tjUzAV
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            update=rollingActor.hp, +@scale.tenacity.stand-alone-healing;
+            name=Stand Alone Healing; optinId=stand-alone-0; description=Restore
+            HP with your Stand Alone Feature; optin; actionType.mwak ||
+            actionType.msak
+          phase: initial
+          _id: ObYIFVwL3Mhn7Q3T
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: vi5UNUbQEHkPOvru
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.Pgm7tT1T16tjUzAV
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792221418677
+      modifiedTime: 1792221591090
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!Pgm7tT1T16tjUzAV.vi5UNUbQEHkPOvru'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.6LnWHAYld6zqKNX9
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792220708835
+  modifiedTime: 1792222076724
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: Pgm7tT1T16tjUzAV
+sort: 0
+_key: '!items!Pgm7tT1T16tjUzAV'

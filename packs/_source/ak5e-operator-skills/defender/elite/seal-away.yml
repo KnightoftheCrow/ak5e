@@ -152,28 +152,35 @@ system:
 effects:
   - name: Seal Away (Skill Points)
     img: modules/ak5e/icons/Skill-Estelle1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.8Nzztqb2mdr1BFhY
+    origin: null
     type: base
     _id: l4rQC3Zfg7aYLXKt
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '65'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: KI2L72lw6HpfhlPa
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: VOrjJoloyPy9iY41
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.8Nzztqb2mdr1BFhY
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -199,10 +206,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097518
+      modifiedTime: 1791733097518
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!vl8qLTnITuFhhYgX.l4rQC3Zfg7aYLXKt'
 flags:
   dnd5e:
@@ -212,12 +224,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356583735
-  modifiedTime: 1783356583752
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733097518
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

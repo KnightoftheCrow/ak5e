@@ -1,0 +1,127 @@
+folder: pK9UlZztTzku2Tvf
+name: Braggadocious (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Matterhorn1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement:
+    Oiz18BuueqlgCTG8:
+      name: ''
+      type: ModifyItem
+      _id: Oiz18BuueqlgCTG8
+      configuration:
+        changes:
+          - _id: 0FlJjufWo4zEI39z
+            uuid: null
+            identifiers:
+              - braggadocious
+      flags: {}
+      level: 0
+      hint: ''
+      value:
+        modified: []
+  description:
+    value: >-
+      <p><span class="fontstyle0">You gain 40 Temporary Hit Points rather than
+      25.</span></p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: braggadocious-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - braggadocious
+    repeatable: false
+    level: 8
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Braggadocious (Module)
+    img: modules/ak5e/icons/Skill-Matterhorn1.webp
+    type: enchantment
+    transfer: false
+    _id: 0FlJjufWo4zEI39z
+    system:
+      changes:
+        - key: activities[heal].healing.bonus
+          type: add
+          value: 15
+          phase: initial
+          _id: rUvUOFKAtAFItm2l
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841761
+      modifiedTime: 1793197841761
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!7A6p5PYjNOXuWCKv.0FlJjufWo4zEI39z'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841761
+  modifiedTime: 1793197841901
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 7A6p5PYjNOXuWCKv
+sort: 0
+_key: '!items!7A6p5PYjNOXuWCKv'

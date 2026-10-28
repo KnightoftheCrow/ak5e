@@ -1,7 +1,7 @@
 folder: 0FE7flvsguisj29c
 name: Reactive
 type: feat
-img: modules/ak5e/icons/Skill-Underflow1.webp
+img: modules/ak5e/icons/Skill-Lin2.webp
 system:
   activities: {}
   uses:
@@ -14,7 +14,7 @@ system:
       <p>To better respond to threats, you must always be prepared. You may make
       two Reactions instead of only one, and regain use of both at the beginning
       of your Turn. You may still only use one Reaction in response to a given
-      trigger.</p><p><strong>Not automated.</strong></p>
+      trigger.</p><hr><p><strong>Automated.</strong></p>
     chat: ''
   identifier: reactive
   source:
@@ -31,24 +31,85 @@ system:
   type:
     value: class
     subtype: ''
-effects: []
+effects:
+  - name: +1 Reaction
+    img: modules/ak5e/icons/Skill-Lin2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.DLFlfySeVkVX9HZp
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.midi-qol.actions.reactionsMax
+          type: add
+          value: 1
+          phase: initial
+          _id: SjUdx1SB2Jh1fOQW
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: pIjuokmxwLGTuPB7
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.DLFlfySeVkVX9HZp
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792331490015
+      modifiedTime: 1792331506539
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!DLFlfySeVkVX9HZp.pIjuokmxwLGTuPB7'
 flags:
   dnd5e:
     riders:
       activity: []
 _stats:
-  compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.L68gJ9Ic9UEgv403
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792330817435
+  modifiedTime: 1792331521374
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
-  systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358936963
-  modifiedTime: 1783358936963
-  lastModifiedBy: 27ikDz77N89hVLvM
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
-_id: qMCuxJU1T7jI8FQU
-sort: 187500
-_key: '!items!qMCuxJU1T7jI8FQU'
+  5XlrCO2NlPtd4MFQ: 3
+_id: DLFlfySeVkVX9HZp
+sort: 218750
+_key: '!items!DLFlfySeVkVX9HZp'

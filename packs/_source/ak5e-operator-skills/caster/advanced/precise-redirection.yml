@@ -277,28 +277,35 @@ system:
 effects:
   - name: Precise Redirection (Skill Points)
     img: modules/ak5e/icons/Skill-Mint2.webp
-    origin: Item.4tELCpuPQwfyQ33U
+    origin: null
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: fKDHRT1GrmArTJr7
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: ZY9j6gMmt3jJrVNF
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.4tELCpuPQwfyQ33U
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -322,10 +329,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093767
+      modifiedTime: 1791733093767
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!R11oJOVk3jh7VZuC.GQBslauEmqcGyBM3'
 flags:
   dnd5e:
@@ -335,12 +347,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1773572160136
-  modifiedTime: 1773572192733
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733093767
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

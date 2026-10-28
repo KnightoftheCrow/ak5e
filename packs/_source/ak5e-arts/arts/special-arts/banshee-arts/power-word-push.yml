@@ -152,21 +152,21 @@ system:
 effects:
   - name: Pushed
     img: icons/skills/movement/arrow-upward-yellow.webp
-    origin: Item.ekwWi7h5Gyz1FipB
+    origin: null
     transfer: false
     _id: hDhqJDGcc2lxHhos
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.ekwWi7h5Gyz1FipB
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -194,32 +194,41 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733109177
+      modifiedTime: 1791733109177
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!ekwWi7h5Gyz1FipB.hDhqJDGcc2lxHhos'
   - name: Slowed
     img: icons/skills/movement/arrow-down-pink.webp
-    origin: Item.ekwWi7h5Gyz1FipB
+    origin: null
     transfer: false
     _id: FAd6QeosdmPFj4ga
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '-10'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: -10
+          priority: 20
+          type: custom
+          phase: initial
+          _id: BAxZ69toFJtINS7d
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.ekwWi7h5Gyz1FipB
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -247,10 +256,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733109177
+      modifiedTime: 1791733109177
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!ekwWi7h5Gyz1FipB.FAd6QeosdmPFj4ga'
 flags:
   dnd5e:
@@ -261,12 +275,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733109176
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

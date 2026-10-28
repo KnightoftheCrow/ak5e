@@ -1,0 +1,117 @@
+folder: Jnt98AobyVi6gAwE
+name: Great Weapon Fighting
+type: feat
+img: modules/ak5e/icons/Skill-Poncirus2.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You gain a +2 bonus to Damage rolls you make with Melee Weapons that
+      you are wielding with two hands. The weapon must have the Two-Handed or
+      Versatile Quality for you to gain this
+      benefit.</p><hr><p><strong>Automated: </strong>You will be prompted to add
+      the Damage when you are using a weapon with the right property. Untick the
+      box if you are using a Versatile Weapon with one hand.</p>
+    chat: ''
+  identifier: great-weapon-fighting
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: fightingStyle
+effects:
+  - name: Great Weapon Fighting
+    img: modules/ak5e/icons/Skill-Poncirus2.webp
+    origin: null
+    type: base
+    _id: 1NL9ekZGUkMeq2kU
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=2; optinId=great-weapon-fighting; description=Bonus Damage
+            from Great Weapon Fighting; addTo=base; optin; preselected;
+            itemProperties.two || itemProperties.ver
+          phase: initial
+          priority: null
+          _id: f8in45VTtoUYTgXJ
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.ZNHHZk4CaGzhZhAT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791301086818
+      modifiedTime: 1791733085083
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!5QB1fW1vRTWudZOi.1NL9ekZGUkMeq2kU'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791301086818
+  modifiedTime: 1791733085082
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 5QB1fW1vRTWudZOi
+sort: 900000
+_key: '!items!5QB1fW1vRTWudZOi'

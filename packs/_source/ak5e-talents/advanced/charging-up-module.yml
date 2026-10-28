@@ -1,0 +1,115 @@
+folder: Pji4wTRYaJMHjby6
+name: Charging Up (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Coldshot2.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module:</strong> The maximum bonus is now
+      +5.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: charging-up-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - charging-up
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Charging Up (Module)
+    img: modules/ak5e/icons/Skill-Coldshot2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.pg9FrbIBMSF1GstW
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.scale.charging-up.charge-up-stacks
+          type: upgrade
+          value: 5
+          phase: initial
+          _id: TF6Md1y44IGQi0Lx
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: hDiXbPJUyK8hWZFg
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.pg9FrbIBMSF1GstW
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841824
+      modifiedTime: 1793197841824
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!pg9FrbIBMSF1GstW.hDiXbPJUyK8hWZFg'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841824
+  modifiedTime: 1793197841928
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: pg9FrbIBMSF1GstW
+sort: 0
+_key: '!items!pg9FrbIBMSF1GstW'

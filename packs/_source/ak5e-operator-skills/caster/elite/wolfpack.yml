@@ -494,28 +494,35 @@ system:
 effects:
   - name: Wolfpack (Skill Points)
     img: modules/ak5e/icons/Skill-TheDecadenza3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.B8X9t99nMcQdMKEl
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '50'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: O2VZVMkVz9KQY1u7
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 50
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: gkyPxeA01VO8Khal
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.B8X9t99nMcQdMKEl
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -540,28 +547,32 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091412
+      modifiedTime: 1791733091412
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!B8X9t99nMcQdMKEl.DXFUOiWQeWl6gGq8'
   - name: Commanding Wolfpack
     img: modules/ak5e/icons/Skill-TheDecadenza3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.B8X9t99nMcQdMKEl
+    origin: null
     transfer: false
     _id: QDVHm4epYLuvKdGh
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.B8X9t99nMcQdMKEl
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -588,32 +599,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091412
+      modifiedTime: 1791733091412
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!B8X9t99nMcQdMKEl.QDVHm4epYLuvKdGh'
   - name: Wolfmark Curse
     img: modules/ak5e/icons/Skill-TheDecadenza3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.B8X9t99nMcQdMKEl
+    origin: null
     transfer: false
     _id: 7X2kzTRg8iGuonyu
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.damage.bonus
-        mode: 5
-        value: bonus=1d8[psychic]; effectOriginTokenId === tokenId && isSpell
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          value: bonus=1d8[psychic]; effectOriginTokenId === tokenId && isSpell
+          priority: 20
+          type: override
+          phase: initial
+          _id: LMNewtrlwWx21LsV
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.B8X9t99nMcQdMKEl
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -640,32 +659,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091413
+      modifiedTime: 1791733091413
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!B8X9t99nMcQdMKEl.7X2kzTRg8iGuonyu'
   - name: Disadvantage on Saving Throws against Arts
     img: modules/ak5e/icons/Skill-TheDecadenza3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.B8X9t99nMcQdMKEl
+    origin: null
     transfer: false
     _id: 727cMMWqMjcACNCE
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.save.disadvantage
-        mode: 5
-        value: effectOriginTokenId === tokenId && isSpell
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.save.disadvantage
+          value: effectOriginTokenId === tokenId && isSpell
+          priority: 20
+          type: override
+          phase: initial
+          _id: oTnyXxRmR5FhCPpi
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.B8X9t99nMcQdMKEl
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -693,10 +720,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091413
+      modifiedTime: 1791733091413
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!B8X9t99nMcQdMKEl.727cMMWqMjcACNCE'
 sort: 100000
 ownership:
@@ -711,11 +743,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.I45GCYdetCraxFxT
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774023683571
-  modifiedTime: 1774023683571
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733091412
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: B8X9t99nMcQdMKEl
 _key: '!items!B8X9t99nMcQdMKEl'

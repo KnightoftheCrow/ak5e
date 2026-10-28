@@ -158,28 +158,35 @@ system:
 effects:
   - name: When Space Obeys (Skill Points)
     img: modules/ak5e/icons/Skill-Logos3.webp
-    origin: Item.PFPEzaK0jqsuru2Q
+    origin: null
     type: base
     _id: l9uVFIh2Hgk4rXrk
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '65'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 8uXoId7Lwtbbby5u
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: LsMlhByGci9QS32U
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.PFPEzaK0jqsuru2Q
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -205,10 +212,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733090402
+      modifiedTime: 1791733090402
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!3lLkJHIxBayzqDDD.l9uVFIh2Hgk4rXrk'
 flags:
   dnd5e:
@@ -218,12 +230,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356679855
-  modifiedTime: 1783356679874
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733090402
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

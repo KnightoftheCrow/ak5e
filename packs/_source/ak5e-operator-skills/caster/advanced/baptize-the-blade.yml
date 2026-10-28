@@ -266,28 +266,35 @@ system:
 effects:
   - name: Baptize the Blade (Skill Points)
     img: modules/ak5e/icons/Skill-Nian1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.lBcGYsaG4lAQjAVj
+    origin: null
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '35'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: q6GzpHvC6q2x7du2
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 35
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: LBz2G7DbhI9p1aAk
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.lBcGYsaG4lAQjAVj
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -312,30 +319,36 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096024
+      modifiedTime: 1791733096024
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!lBcGYsaG4lAQjAVj.GQBslauEmqcGyBM3'
   - type: enchantment
     name: Blade Baptized
     img: modules/ak5e/icons/Skill-Nian1.webp
     disabled: true
     _id: IBvRNiSIoFUl5nDX
-    system: {}
-    changes:
-      - key: system.damage.parts
-        mode: 2
-        value: '[["@prof",force]]'
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.parts
+          value: '[["@prof",force]]'
+          priority: 20
+          type: add
+          phase: initial
+          _id: ugHewvS9VejBlD4i
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -360,34 +373,42 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096024
+      modifiedTime: 1791733096024
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!lBcGYsaG4lAQjAVj.IBvRNiSIoFUl5nDX'
   - name: Additional Damage to Creatures < 50% HP
     img: modules/ak5e/icons/Skill-Nian1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.lBcGYsaG4lAQjAVj
+    origin: null
     _id: TqJis291Z8GX9noj
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 5
-        value: >-
-          bonus=prof[force]; optin; opponentActor.attributes.hp.pct < 50;
-          name=Baptise the Blade; description= Is this an Attack with your
-          Weapon enchanted for Baptise the Blade?
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=prof[force]; optin; opponentActor.attributes.hp.pct < 50;
+            name=Baptise the Blade; description= Is this an Attack with your
+            Weapon enchanted for Baptise the Blade?
+          priority: 20
+          type: override
+          phase: initial
+          _id: brCtqkSInbmWfjYK
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.lBcGYsaG4lAQjAVj
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -411,10 +432,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096024
+      modifiedTime: 1791733096024
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!lBcGYsaG4lAQjAVj.TqJis291Z8GX9noj'
 sort: 200000
 ownership:
@@ -431,11 +457,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.wm32yJmlGPnUNNzZ
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772986852717
-  modifiedTime: 1772988241964
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733096024
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: lBcGYsaG4lAQjAVj
 _key: '!items!lBcGYsaG4lAQjAVj'

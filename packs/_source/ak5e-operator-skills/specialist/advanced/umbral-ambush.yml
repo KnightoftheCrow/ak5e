@@ -156,28 +156,35 @@ system:
 effects:
   - name: Radar Sweep (Skill Points)
     img: modules/ak5e/icons/Skill-Lunacub2.webp
-    origin: Item.iHbkOdoLgadPTo2u
+    origin: null
     _id: sqi5JLFWs8QDA2SK
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: oVlWHnTgi2AHfcDp
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: TtH1NTvgJXjMVdcY
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.iHbkOdoLgadPTo2u
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -201,28 +208,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091555
+      modifiedTime: 1791733091555
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!BalkoWGirI28pOIT.sqi5JLFWs8QDA2SK'
   - name: Umbral Ambush
     img: modules/ak5e/icons/Skill-Lunacub2.webp
-    origin: Item.iHbkOdoLgadPTo2u
+    origin: null
     transfer: false
     _id: E8D5nDoLt1yk679H
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.iHbkOdoLgadPTo2u
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 2
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 2
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -250,10 +261,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091556
+      modifiedTime: 1791733091556
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!BalkoWGirI28pOIT.E8D5nDoLt1yk679H'
 flags:
   dnd5e:
@@ -263,12 +279,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356925066
-  modifiedTime: 1783356925084
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733091555
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

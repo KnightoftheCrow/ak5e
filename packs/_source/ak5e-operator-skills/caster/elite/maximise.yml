@@ -150,28 +150,35 @@ system:
 effects:
   - name: Maximize (Skill Points)
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.oVQuPKSaGjjTaAA3
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '80'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: qr8Kb92l9hsFHsOi
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 80
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: Ox1topSMY0WXSHtX
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.oVQuPKSaGjjTaAA3
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -196,36 +203,48 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096389
+      modifiedTime: 1791733096389
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!oVQuPKSaGjjTaAA3.DXFUOiWQeWl6gGq8'
   - name: Maximized
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.oVQuPKSaGjjTaAA3
+    origin: null
     transfer: false
     _id: 88h9qWQxBNdTtCW7
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.grants.max.damage.msak
-        mode: 2
-        value: 'true'
-        priority: 20
-      - key: flags.midi-qol.grants.max.damage.save
-        mode: 2
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.grants.max.damage.msak
+          value: true
+          priority: 20
+          type: add
+          phase: initial
+          _id: 8MiRl1oW482yQK7T
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.grants.max.damage.save
+          value: true
+          priority: 20
+          type: add
+          phase: initial
+          _id: rNBiUxWuR6lkOQRb
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.oVQuPKSaGjjTaAA3
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -253,10 +272,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733096389
+      modifiedTime: 1791733096389
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!oVQuPKSaGjjTaAA3.88h9qWQxBNdTtCW7'
 sort: 100000
 ownership:
@@ -271,11 +295,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.HP61sFvtrtnhePSG
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774023683571
-  modifiedTime: 1774023683571
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733096389
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: oVQuPKSaGjjTaAA3
 _key: '!items!oVQuPKSaGjjTaAA3'

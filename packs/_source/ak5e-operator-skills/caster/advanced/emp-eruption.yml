@@ -305,28 +305,35 @@ system:
 effects:
   - name: EMP Eruption (Skill Points)
     img: modules/ak5e/icons/Skill-Liskarm2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.scf4QdUz0lv0ysI6
+    origin: null
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: XU1b5io607CkWDos
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: LbRgFUoEhEz439TD
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.scf4QdUz0lv0ysI6
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -351,29 +358,32 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-      modifiedTime: 1774020452617
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1791733097008
+      createdTime: 1791733097008
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!scf4QdUz0lv0ysI6.GQBslauEmqcGyBM3'
   - name: EMP Eruption (Failed Save)
     img: modules/ak5e/icons/Skill-Liskarm2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.scf4QdUz0lv0ysI6
+    origin: null
     transfer: false
     _id: gqVyCkYdDg9ROori
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.scf4QdUz0lv0ysI6
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -402,29 +412,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-      modifiedTime: 1774020440022
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1791733097008
+      createdTime: 1791733097008
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!scf4QdUz0lv0ysI6.gqVyCkYdDg9ROori'
   - name: EMP Eruption (Successful Save)
     img: modules/ak5e/icons/Skill-Liskarm2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.scf4QdUz0lv0ysI6
+    origin: null
     transfer: false
     _id: 8KqK4FwYFmhxTO60
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.scf4QdUz0lv0ysI6
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -453,11 +466,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-      modifiedTime: 1774020446388
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1791733097008
+      createdTime: 1791733097008
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!scf4QdUz0lv0ysI6.8KqK4FwYFmhxTO60'
 sort: 700000
 ownership:
@@ -472,11 +489,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.wm32yJmlGPnUNNzZ
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772986852717
-  modifiedTime: 1774020430856
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733097008
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: scf4QdUz0lv0ysI6
 _key: '!items!scf4QdUz0lv0ysI6'

@@ -77,24 +77,27 @@ system:
 effects:
   - name: Blindsight
     img: icons/weapons/axes/axe-pick-white.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.7lhV6LQR0bAZY4tt
+    origin: null
     _id: nOFEMa9vudn6Qblg
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.senses.blindsight
-        mode: 2
-        value: '10'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.senses.blindsight
+          value: 10
+          priority: 20
+          type: add
+          phase: initial
+          _id: 75QuiNu8ofzhVMm9
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.7lhV6LQR0bAZY4tt
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -118,10 +121,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733081122
+      modifiedTime: 1791733081122
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!7lhV6LQR0bAZY4tt.nOFEMa9vudn6Qblg'
 sort: 1000000
 ownership:
@@ -135,10 +143,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881347037
-  modifiedTime: 1769881347037
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733081122
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!7lhV6LQR0bAZY4tt'

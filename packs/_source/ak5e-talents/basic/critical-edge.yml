@@ -1,0 +1,119 @@
+folder: pK9UlZztTzku2Tvf
+name: Critical Edge
+type: feat
+img: modules/ak5e/icons/Skill-C1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Your Critical Range is increased by 1.</p><p><strong>Module:</strong>
+      You can roll one additional Damage die when determining the extra Damage
+      for a Critical Hit.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: critical-edge
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Critical Edge
+    img: modules/ak5e/icons/Skill-C1.webp
+    origin: null
+    _id: s3aDMHJ3W5hWibXs
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          value: threshold=-1
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: XckL6J2gSMcBoxBM
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.Av71b67oSogg5KU5
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841763
+      modifiedTime: 1793197841763
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!9rU2X7bVahGYwJVH.s3aDMHJ3W5hWibXs'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841763
+  modifiedTime: 1793197841902
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 9rU2X7bVahGYwJVH
+sort: 0
+_key: '!items!9rU2X7bVahGYwJVH'

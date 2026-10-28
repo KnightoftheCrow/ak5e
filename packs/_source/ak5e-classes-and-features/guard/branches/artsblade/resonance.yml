@@ -1,0 +1,178 @@
+folder: a7PDY6tFLb6ouxfs
+name: Resonance
+type: feat
+img: modules/ak5e/icons/Skill-Crownslayer3.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement:
+    OclaRX3moVGPwnZV:
+      type: Trait
+      _id: OclaRX3moVGPwnZV
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - skills:arc
+        mode: upgrade
+      flags: {}
+      level: 0
+      hint: ''
+      title: ''
+    YY77vnELTbDSwIRe:
+      type: ItemChoice
+      title: Blade Art
+      _id: YY77vnELTbDSwIRe
+      configuration:
+        allowDrops: false
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-arts.Item.sdCFz2w0ymlNAHC5
+          - uuid: Compendium.ak5e.ak5e-arts.Item.ZGItcTKSpvBVmJdx
+          - uuid: Compendium.ak5e.ak5e-arts.Item.DB6tcZ2TseWKitXB
+          - uuid: Compendium.ak5e.ak5e-arts.Item.H2HfP1WJkPrzNE8g
+          - uuid: Compendium.ak5e.ak5e-arts.Item.SybZQavVNx7JBwQX
+          - uuid: Compendium.ak5e.ak5e-arts.Item.SPT85LByU7o0TrKr
+          - uuid: Compendium.ak5e.ak5e-arts.Item.5YOmBhPkbnn8vSls
+          - uuid: Compendium.ak5e.ak5e-arts.Item.jfbVnEYvcTUDuFPw
+          - uuid: Compendium.ak5e.ak5e-arts.Item.yi1vEEvpjE1sVVue
+          - uuid: Compendium.ak5e.ak5e-arts.Item.9pRKYXvD10247Lmv
+          - uuid: Compendium.ak5e.ak5e-arts.Item.68YnGh31GJd3R4I3
+        restriction:
+          list: []
+        spell: null
+        type: null
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: >-
+        <p>Choose the Blade Art that matches with your selected Spellsword Arts
+        Pool.</p>
+  description:
+    value: >-
+      <p>You gain the following
+      benefits:</p><ul><li><p><strong>Arts-Touched.</strong> You gain
+      Proficiency in the Arts Skill, or Expertise if you already have
+      Proficiency in it.</p></li><li><p><strong>Blade Arts.</strong> You learn
+      the Blade Arts Cantrip, shown below. It is considered to be a Spellsword
+      Art for you. Additionally, Melee Weapons being wielded by you are
+      considered to have the Casting Unit
+      Property.</p></li><li><p><strong>Resonance.</strong> Your Blade Art
+      Cantrip gains an additional effect depending on the Damage Type dealt.
+      Once a Creature has made a Saving Throw against your Blade Art, they do
+      not need to make that Saving Throw again until the beginning of your next
+      Turn.</p></li></ul><table class="NormalTable"><tbody><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><strong>Damage
+      Type(Arts Pool)</strong></p></td><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><strong>Effect</strong></p></td></tr><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Acid (Corrosion)</span></p></td><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">A Creature that takes Acid Damage from this Cantrip
+      takes Acid Damage at the end of their next Turn equal to the Acid Damage
+      they took from this Cantrip.</span></p></td></tr><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Bludgeoning (Earth)</span></p></td><td><p>Your Reach is
+      doubled until the end of the Turn, including for this
+      Cantrip.</p></td></tr><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Cold (Frost)</span></p></td><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">A Creature that takes Damage from this Cantrip must
+      pass a Constitution Saving Throw against your Martial DC or have its Speed
+      halved until the end of its next Turn.</span></p></td></tr><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Fire (Flame)</span></p></td><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">A Creature that takes Damage from this Cantrip must
+      pass a Dexterity Saving Throw against your Martial DC or suffer the
+      Burning Condition.</span></p></td></tr><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Force (Crude)</span></p></td><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Your Melee Attacks have a +1 bonus to their Attack and
+      Damage Rolls, including for this Cantrip, until the end of your next
+      Turn.</span></p></td></tr><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Lightning (Electric)</span></p></td><td><p>When you hit
+      a Creature with this Cantrip, choose a different Creature you can see
+      within 15 feet of the original Creature; that Creature takes Lightning
+      Damage equal to half of the Lightning Damage taken by the original
+      Creature.</p></td></tr><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Piercing (Fluid)</span></p></td><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">A Creature that takes Damage from this Cantrip must
+      succeed a Constitution Saving Throw against your Martial DC, or they
+      cannot take Reactions until the end of their next
+      Turn.</span></p></td></tr><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Psychic (Psychic)</span></p></td><td><p>A Creature that
+      takes Damage from this Cantrip loses 1d6 Hit Points.</p></td></tr><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Radiant (Light)</span></p></td><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">When you cast this Cantrip, you can cause Creatures of
+      your choice within 10 feet of you to take Radiant Damage equal to your
+      Proficiency Bonus.</span></p></td></tr><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Slashing (Wind)</span></p></td><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">A Creature that takes Damage from this Cantrip must
+      pass a Constitution Saving Throw against your Martial DC or begin
+      Bleeding.</span></p></td></tr><tr><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">Thunder (Spatial)</span></p></td><td
+      style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none"><p><span
+      class="fontstyle1">A Creature that takes Damage from this Cantrip must
+      pass a Strength Saving Throw against your Martial DC or be knocked
+      directly away from you 20
+      feet.</span></p></td></tr></tbody></table><hr><p><strong>Automated:
+      </strong>You will be prompted to choose the appropriate Blade Art at Level
+      1 and 10 matching your Spellsword Arts Pool. Many of the functions of
+      Blade Art are automated.<br
+      style="font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:-webkit-auto;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-size-adjust:auto;-webkit-text-stroke-width:0px"></p>
+    chat: ''
+  identifier: feature
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.IibQlp88beFHhhAB
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791400791551
+  modifiedTime: 1791481833374
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 1WfdaK63UAW5380v
+sort: 250000
+_key: '!items!1WfdaK63UAW5380v'

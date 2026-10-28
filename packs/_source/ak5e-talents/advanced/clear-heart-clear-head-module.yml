@@ -1,0 +1,115 @@
+folder: Pji4wTRYaJMHjby6
+name: Clear Heart, Clear Head (Module)
+type: feat
+_id: EMt4T86wyr3zHHmj
+img: modules/ak5e/icons/skill_icon_skchr_haruka_1.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect: </strong>The Hit Point recovery is increased to
+      2d8.</p><hr><p><strong>Semi-Automated: </strong>The Hit Point gain does
+      not stop at half HP.</p>
+    chat: ''
+  identifier: clear-heart-clear-head-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - clear-heart-clear-head
+    repeatable: false
+    level: 13
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Clear Heart, Clear Head (Module)
+    img: modules/ak5e/icons/skill_icon_skchr_haruka_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.EMt4T86wyr3zHHmj
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.scale.clear-heart-clear-head.healing.number
+          type: override
+          value: 2
+          phase: initial
+          _id: ImaI0v0yG6JXwVLQ
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 9p0LvmZcC7srAmNV
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.EMt4T86wyr3zHHmj
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841825
+      modifiedTime: 1793197841825
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!EMt4T86wyr3zHHmj.9p0LvmZcC7srAmNV'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841825
+  modifiedTime: 1793197841928
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!EMt4T86wyr3zHHmj'

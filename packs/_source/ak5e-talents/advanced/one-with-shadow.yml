@@ -1,0 +1,130 @@
+folder: Pji4wTRYaJMHjby6
+name: One With Shadow
+type: feat
+_id: xtITbuQeNuAFZRvq
+img: modules/ak5e/icons/Skill-HeavyInsulatedConcrete.png
+system:
+  activities: {}
+  uses:
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@prof'
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>When a Creature makes an Attack against you, and doesn’t have Advantage
+      on the Attack Roll, you can use your Reaction to give that Attack Roll
+      Disadvantage. You can use this Feature a number of times equal to your
+      Proficiency Bonus, and regain all expended uses when you complete a Long
+      Rest.</p><p><strong>Module Effect:</strong> You can now use this Feature
+      even when the Attack has Advantage.</p><hr><p><strong>Semi-Automated:
+      </strong>Creatures that Attack you will have an Opt-In when they roll the
+      attack that gives that Attack Disadvantage and costs one use of this
+      Feature. The DM should ask you if you want to use this Feature at this
+      juncture.</p>
+    chat: ''
+  identifier: one-with-shadow
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: One With Shadow
+    img: modules/ak5e/icons/Skill-HeavyInsulatedConcrete.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.xtITbuQeNuAFZRvq
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.disadvantage
+          type: ac5e
+          value: >-
+            usesCount=item.one-with-shadow, 1; name=Disadvantage from One with
+            Shadow; optinId=one-with-shadow-0; oncePerRound; optin;
+            !hasAdvantage && !getItem(effectOriginActor.tokenId,
+            'one-with-shadow-module')
+          phase: initial
+          _id: 2cmAUGpPCHsQyKq7
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: kXtXve5rpoxvGGAp
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.xtITbuQeNuAFZRvq
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841872
+      modifiedTime: 1793197841872
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!xtITbuQeNuAFZRvq.kXtXve5rpoxvGGAp'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841872
+  modifiedTime: 1793197841946
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!xtITbuQeNuAFZRvq'

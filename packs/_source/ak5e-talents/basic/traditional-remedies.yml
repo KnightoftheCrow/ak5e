@@ -1,0 +1,269 @@
+folder: pK9UlZztTzku2Tvf
+name: Traditional Remedies
+type: feat
+_id: nNnbgPTmOLh41KsT
+img: modules/ak5e/icons/Skill-Perfumer1.webp
+system:
+  activities:
+    2vEjrLrzW0meprKz:
+      type: utility
+      name: Increase Max HP
+      _id: 2vEjrLrzW0meprKz
+      img: ''
+      sort: 0
+      activation:
+        type: longRest
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects:
+        - _id: PKsK6j7PcmvglGdH
+          level:
+            min: null
+            max: null
+          uuid: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '@prof'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: 2d6
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      behaviors: []
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement:
+    9zBOtvHEnUvaIzlU:
+      type: ScaleValue
+      _id: 9zBOtvHEnUvaIzlU
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 2
+            faces: 6
+            modifiers: []
+      flags: {}
+      hint: ''
+      name: Max HP
+      value: {}
+  description:
+    value: >-
+      <p>Over the course of a Long Rest, you can choose a number of Creatures up
+      to your Proficiency Bonus who are also taking a Long Rest. If those
+      Creatures complete that Long Rest, their maximum Hit Points are increased
+      by 2d6, and they regain Hit Points to meet their new maximum Hit Points.
+      This increase in Maximum Hit Points remains until those Creatures next
+      complete a Long Rest. A Creature can only have its Maximum Hit Points
+      increased in this way once per Long Rest.</p><p><strong>Module Effect:
+      </strong>The increase in maximum Hit Points becomes
+      4d6.</p><hr><p><strong>Not Automated: </strong>The increase max HP is
+      currently bugged with midi-qol. The roll on this activity is entirely
+      arbitrary; you must increase the max HP of affected Creatures
+      manually.</p>
+    chat: ''
+  identifier: traditional-remedies
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Max HP Increase
+    img: modules/ak5e/icons/Skill-Perfumer1.webp
+    origin: null
+    type: base
+    _id: PKsK6j7PcmvglGdH
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.nNnbgPTmOLh41KsT
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration:
+          - longRest
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841809
+      modifiedTime: 1793197841809
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!nNnbgPTmOLh41KsT.PKsK6j7PcmvglGdH'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841809
+  modifiedTime: 1793197841922
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!nNnbgPTmOLh41KsT'

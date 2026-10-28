@@ -157,28 +157,35 @@ system:
 effects:
   - name: Continental Style (Skill Points)
     img: modules/ak5e/icons/Skill-Sora2.webp
-    origin: Item.QwDY2ADkoxoKchl8
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: ukicZ9Fij45px3Eg
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: vgN644ZvIJ04ljRk
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.QwDY2ADkoxoKchl8
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -202,32 +209,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091161
+      modifiedTime: 1791733091161
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!AG0xGZhRulfdCkwY.DXFUOiWQeWl6gGq8'
   - name: Continental Style
     img: modules/ak5e/icons/Skill-Sora2.webp
-    origin: Item.QwDY2ADkoxoKchl8
+    origin: null
     transfer: false
     _id: KnmeoxYng1BpAYHL
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.ignoreNearbyFoes
-        mode: 2
-        value: true; actionType.rwak
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.ignoreNearbyFoes
+          value: true; actionType.rwak
+          priority: 20
+          type: add
+          phase: initial
+          _id: iKaHgdfq0yOZycb6
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.QwDY2ADkoxoKchl8
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 5
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 5
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -254,10 +269,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091161
+      modifiedTime: 1791733091161
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!AG0xGZhRulfdCkwY.KnmeoxYng1BpAYHL'
 flags:
   dnd5e:
@@ -267,12 +287,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356946317
-  modifiedTime: 1783356946338
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733091161
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

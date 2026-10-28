@@ -1,7 +1,7 @@
 folder: xVeaYDqngTsmNvFl
 name: Omen of Defeat
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-Nymph2.webp
+img: modules/ak5e/icons/Skill-Nymph2.webp
 system:
   activities:
     KogGg0goHm4NSqKX:
@@ -155,29 +155,36 @@ system:
     subtype: opSkill
 effects:
   - name: Omen of Defeat (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/Skill-Nymph2.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.LtKxe1MXo70GYv4g
+    img: modules/ak5e/icons/Skill-Nymph2.webp
+    origin: null
     _id: 1xxC7VKvL8F7tML0
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '25'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 25
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: nGAuRWZ6smZ1x2ic
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: m6zDq5PkTqqlbRzj
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.LtKxe1MXo70GYv4g
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -203,10 +210,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733092799
+      modifiedTime: 1791733092799
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!LtKxe1MXo70GYv4g.1xxC7VKvL8F7tML0'
 flags:
   dnd5e:
@@ -216,12 +228,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785604042751
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733092799
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

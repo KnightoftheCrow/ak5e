@@ -156,28 +156,35 @@ system:
 effects:
   - name: Rebound (Skill Points)
     img: modules/ak5e/icons/Skill-Narantuya1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.ka8zg9hrx0FW3dJD
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '0'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '10'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 0
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: xuRmPWdwP75PfCA3
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: oF9xtkBGYJVhp9FK
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.ka8zg9hrx0FW3dJD
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -202,10 +209,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095858
+      modifiedTime: 1791733095858
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!ka8zg9hrx0FW3dJD.flx7lohMTgQh5EDM'
 sort: 0
 ownership:
@@ -219,11 +231,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.bMlpD8Am7dui7GM8
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772826442350
-  modifiedTime: 1772826442350
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733095857
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: ka8zg9hrx0FW3dJD
 _key: '!items!ka8zg9hrx0FW3dJD'

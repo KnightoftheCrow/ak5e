@@ -1,0 +1,402 @@
+folder: a7PDY6tFLb6ouxfs
+name: Sword and Sorcery
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_irene_3.png
+system:
+  activities:
+    MXevOHc0HhiQchgD:
+      type: utility
+      name: Expend Spellsword Point
+      _id: MXevOHc0HhiQchgD
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: Compendium.ak5e.ak5e-arts.Item.6GMX3sLNtYU5pEtM
+            scaling:
+              mode: amount
+              formula: '-1'
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    jRJIDNGJYdObWb1o:
+      type: utility
+      name: Augmented Assault
+      _id: jRJIDNGJYdObWb1o
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.ak5e.ak5e-classes-and-features.Item.9VhSw5e5lgPNh0St
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '@scale.feature.spellsword-points'
+  advancement:
+    OTJfBEkdxwtlAZGT:
+      type: ScaleValue
+      title: Spellsword Points
+      _id: OTJfBEkdxwtlAZGT
+      configuration:
+        identifier: ''
+        type: number
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: 1
+          '7':
+            value: 2
+          '14':
+            value: 3
+      flags: {}
+      value: {}
+      hint: ''
+    rTu4uaVFQesKKPJx:
+      type: ItemChoice
+      title: Choose Arts Pool
+      _id: rTu4uaVFQesKKPJx
+      configuration:
+        allowDrops: false
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-arts.Item.CGP5PNK5SdmgN90k
+          - uuid: Compendium.ak5e.ak5e-arts.Item.ZhDuS4JWh2Ae5uQ4
+          - uuid: Compendium.ak5e.ak5e-arts.Item.w7tRPnZhirZPLvpK
+          - uuid: Compendium.ak5e.ak5e-arts.Item.pZL77zAcUd9dkJOs
+          - uuid: Compendium.ak5e.ak5e-arts.Item.ua6nXeLgXDFYrZUB
+          - uuid: Compendium.ak5e.ak5e-arts.Item.r19Z3Oi7qOLL0l6H
+          - uuid: Compendium.ak5e.ak5e-arts.Item.R6hRu2NVPTY7ZhFm
+          - uuid: Compendium.ak5e.ak5e-arts.Item.BNzg1rAOBecHLqS6
+          - uuid: Compendium.ak5e.ak5e-arts.Item.UlsUWCYL76r5umtx
+          - uuid: Compendium.ak5e.ak5e-arts.Item.KWPBJAKHPFPlIs0M
+          - uuid: Compendium.ak5e.ak5e-arts.Item.piUEmebrAZ5L6CXX
+        restriction:
+          list: []
+        spell: null
+        type: null
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
+  description:
+    value: >-
+      <p>You weave Art and Armament together with an artist’s
+      skill.</p><p><strong>Spellsword Arts:</strong> Choose one of the Standard
+      Arts Pools; you learn all levelled Arts from that Arts Pool of 5th Level
+      or less. However, you cannot cast these Arts in the usual way; they can
+      only be cast by using your Branch Features, and are referred to as
+      Spellsword Arts.</p><ul><li><p><strong>Arts Points/Spellsword
+      Points:</strong> You do not expend Arts Points to cast Spellsword Arts. To
+      cast levelled Arts, you expend Spellsword Points; the Artsblade table
+      shows how many Spellsword Points you have to cast your Arts. You regain
+      all expended Spellsword Points when you finish a Short or Long
+      Rest.</p></li><li><p><strong>Maximum Arts Level:</strong> The Artsblade
+      table shows the maximum level you can cast a Spellsword Art at, based on
+      your Guard Level. When you cast a Spellsword Art, you must cast it at the
+      maximum level you can cast that Art at.</p></li><li><p><strong>Casting
+      Spellsword Arts:</strong> When you make a Melee Weapon Attack during your
+      Turn, you can expend 1 Spellsword Point to cast a levelled Spellsword Art
+      with a Casting Time of Action or Bonus Action as part of that Attack. An
+      Art cast in this way is infused into that Attack instead of being cast
+      normally; how that Art resolves depends on the Art in question. You can
+      only cast a Spellsword Art once per Turn.</p></li></ul><p><strong>Press
+      the Attack: Augmented Assault (2 Aggression)</strong> You may use this
+      Press the Attack option during your Turn (no Action required) if you have
+      not cast a Spellsword Art this Turn. You may cast two Spellsword Arts this
+      Turn, but both must be Blade
+      Art.</p><table><tbody><tr><td><p><strong>Level</strong></p></td><td><p><strong>Maximum
+      Art Level</strong></p></td><td><p><strong>Spellsword
+      Points</strong></p></td></tr><tr><td><p>1</p></td><td><p>1</p></td><td><p>1</p></td></tr><tr><td><p>2</p></td><td><p>1</p></td><td><p>1</p></td></tr><tr><td><p>3</p></td><td><p>1</p></td><td><p>1</p></td></tr><tr><td><p>4</p></td><td><p>1</p></td><td><p>1</p></td></tr><tr><td><p>5</p></td><td><p>2</p></td><td><p>1</p></td></tr><tr><td><p>6</p></td><td><p>2</p></td><td><p>1</p></td></tr><tr><td><p>7</p></td><td><p>2</p></td><td><p>2</p></td></tr><tr><td><p>8</p></td><td><p>2</p></td><td><p>2</p></td></tr><tr><td><p>9</p></td><td><p>3</p></td><td><p>2</p></td></tr><tr><td><p>10</p></td><td><p>3</p></td><td><p>2</p></td></tr><tr><td><p>11</p></td><td><p>3</p></td><td><p>2</p></td></tr><tr><td><p>12</p></td><td><p>3</p></td><td><p>2</p></td></tr><tr><td><p>13</p></td><td><p>4</p></td><td><p>2</p></td></tr><tr><td><p>14</p></td><td><p>4</p></td><td><p>3</p></td></tr><tr><td><p>15</p></td><td><p>4</p></td><td><p>3</p></td></tr><tr><td><p>16</p></td><td><p>4</p></td><td><p>3</p></td></tr><tr><td><p>17</p></td><td><p>5</p></td><td><p>3</p></td></tr><tr><td><p>18</p></td><td><p>5</p></td><td><p>3</p></td></tr><tr><td><p>19</p></td><td><p>5</p></td><td><p>3</p></td></tr><tr><td><p>20</p></td><td><p>5</p></td><td><p>3</p></td></tr></tbody></table><hr><p><strong>Semi-Automated:
+      </strong>Many aspects of this Feature are impossible to automate and will
+      require a player to edit the Arts they learn on their sheets to have them
+      resolve as intended. Use the Expend Spellsword Points Activity to give
+      yourself any number of Arts Points based on the Scaling you set; this is
+      the most convenient way of having Arts cast using Spellsword Points.
+      Augmented Assault does not need to be automated, but does expend
+      Aggression.</p>
+    chat: ''
+  identifier: sword-and-sorcery
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.RyAZ3jSdIhO6K7Ev
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791400791572
+  modifiedTime: 1791481589291
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: z3MHaNnUFi0w4cu3
+sort: 200000
+_key: '!items!z3MHaNnUFi0w4cu3'

@@ -1,0 +1,132 @@
+folder: pK9UlZztTzku2Tvf
+name: Preserving Sanctuary (Module)
+type: feat
+img: modules/ak5e/icons/Skill-TheParadigmatic2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement:
+    nUYQweHiVqrQzqD4:
+      name: ''
+      type: ModifyItem
+      _id: nUYQweHiVqrQzqD4
+      configuration:
+        changes:
+          - _id: mgZzBzxuydz6Zkag
+            uuid: null
+            identifiers:
+              - preserving-sanctuary
+      flags: {}
+      level: 0
+      hint: ''
+      value:
+        modified: []
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> You now regain all expended uses when
+      you complete a Short or Long Rest.</p><hr><p><strong>Semi-Automated:
+      </strong>You must manually trigger the activity on this Feature before
+      Damage is rolled but after this hit connects.</p>
+    chat: ''
+  identifier: preserving-sanctuary-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - preserving-sanctuary
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Preserving Sanctuary (Module)
+    img: modules/ak5e/icons/Skill-TheParadigmatic2.webp
+    type: enchantment
+    transfer: false
+    _id: mgZzBzxuydz6Zkag
+    system:
+      changes:
+        - key: system.uses.recovery
+          type: override
+          value:
+            period: sr
+            type: recoverAll
+          phase: initial
+          _id: LQHSPWWdpfguBnx1
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841792
+      modifiedTime: 1793197841792
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!8KdggSd5pZMZdHYf.mgZzBzxuydz6Zkag'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841792
+  modifiedTime: 1793197841915
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 8KdggSd5pZMZdHYf
+sort: 0
+_key: '!items!8KdggSd5pZMZdHYf'

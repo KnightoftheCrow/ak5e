@@ -1,0 +1,123 @@
+folder: pK9UlZztTzku2Tvf
+name: Fortitude
+type: feat
+img: modules/ak5e/icons/Skill-Blemishine1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>When another Creature rolls to cause you to regain Hit Points, they
+      roll 1 additional dice; you recover additional Hit Points equal to the
+      result of this dice.</p><p><strong>Module: </strong>Creatures rolling to
+      restore Hit Points to you roll 2 additional dice
+      instead.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: fortitude
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Recieve +1 Die of Healing
+    img: modules/ak5e/icons/Skill-Blemishine1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.zAot72IEUVXJCmJ1
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.extraDice
+          type: ac5e
+          value: >-
+            bonus=1; addTo=all,types(healing); isHeal && !rollingActor.name ===
+            effectActor.name
+          phase: initial
+          _id: wZiDZhktlbeiIoPy
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: TartRRW7U9lOJv9H
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.zAot72IEUVXJCmJ1
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841768
+      modifiedTime: 1793197841768
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!zAot72IEUVXJCmJ1.TartRRW7U9lOJv9H'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841768
+  modifiedTime: 1793197841906
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: zAot72IEUVXJCmJ1
+sort: 0
+_key: '!items!zAot72IEUVXJCmJ1'

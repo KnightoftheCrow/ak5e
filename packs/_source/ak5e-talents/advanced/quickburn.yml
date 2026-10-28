@@ -1,0 +1,123 @@
+folder: Pji4wTRYaJMHjby6
+name: Quickburn
+type: feat
+_id: ksKZeMDgC3VUEqvO
+img: modules/ak5e/icons/skill_icon_skchr_eyjafjalla_2.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>While your current Hit Points and Maximum Hit Points are the same, you
+      may add your Proficiency Bonus to all Attack Rolls you make. If you are
+      already adding your Proficiency Modifier, double your Proficiency Bonus
+      for those Attacks instead.</p><p><strong>Module:</strong> While your
+      current Hit Points and Maximum Hit Points are the same, you have +5 Bonus
+      to Initiative Rolls, and your Speed is increased by
+      10ft.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: quickburn
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 8
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +Prof to Attacks while HP is full
+    img: modules/ak5e/icons/skill_icon_skchr_eyjafjalla_2.png
+    origin: Compendium.ak5e.ak5e-talents.Item.ksKZeMDgC3VUEqvO
+    _id: zPzry6ReHUy46lcT
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.bonus
+          value: >-
+            bonus=@prof; rollingActor.attributes.hp.max ===
+            rollingActor.attributes.hp.value
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: xYzqw4sLBcByo810
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.ksKZeMDgC3VUEqvO
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841876
+      modifiedTime: 1793197841876
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!ksKZeMDgC3VUEqvO.zPzry6ReHUy46lcT'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841876
+  modifiedTime: 1793197841948
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!ksKZeMDgC3VUEqvO'

@@ -1,7 +1,7 @@
 folder: xVeaYDqngTsmNvFl
 name: Electrowebbing
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-Snowsant2.webp
+img: modules/ak5e/icons/Skill-Snowsant2.webp
 system:
   activities:
     gHCuHTrKMBYyShTV:
@@ -21,8 +21,7 @@ system:
         targets:
           - type: itemUses
             value: '40'
-            target: >-
-              Compendium.AK5e-Foundry-Module.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
             scaling: {}
       description:
         chatFlavor: ''
@@ -162,28 +161,35 @@ system:
 effects:
   - name: Electrowebbing (Skill Points)
     img: systems/dnd5e/icons/svg/items/feature.svg
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.6S8L9vko5t64NqGN
+    origin: null
     type: base
     _id: AqeWRRXwp9If8OxF
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: a6qFioxiiX28PeJ5
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: qiAPl3osPXIJO1nK
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.6S8L9vko5t64NqGN
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -209,10 +215,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733090823
+      modifiedTime: 1791733090823
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!6S8L9vko5t64NqGN.AqeWRRXwp9If8OxF'
 flags:
   dnd5e:
@@ -222,12 +233,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733090823
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

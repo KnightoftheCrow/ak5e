@@ -1,0 +1,219 @@
+folder: Pji4wTRYaJMHjby6
+name: Night Watchman
+type: feat
+_id: P2bJ37ipSvuCVx5i
+img: modules/ak5e/icons/skill_icon_skchr_titi_1.png
+system:
+  activities:
+    mA1qqWySUWdZjtXa:
+      type: summon
+      name: Activate
+      _id: mA1qqWySUWdZjtXa
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: hour
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '10'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: space
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        disposition: true
+        proficiency: true
+        saves: false
+        ability: ''
+      profiles:
+        - count: '1'
+          name: ''
+          _id: mUioFRRFDJJ3mVLL
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.MULUNyh3imoeuM1G
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        prompt: true
+        mode: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      friendlySummon: false
+      tempHP: ''
+  uses:
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>As an Action, you can place a Shadow Sentry for 1 hour at a point
+      within 10 feet of you. A Shadow Sentry is an invisible, intangible Arts
+      Construct that cannot move or take any Actions. When a Creature moves
+      within 10 feet of the Sentry, you are alerted to that movement, even if
+      the Creature is Invisible or you are asleep. Once you have used this
+      Feature, you may not do so again until you have completed a Long
+      Rest.</p><p><strong>Module Effect: </strong>When you have been alerted to
+      a Creature by your Shadow Sentry, you know the location of that Creature
+      for the next minute.</p><hr><p><strong>Automated: </strong>The Activity on
+      this Feature places an Invisible Shadow Sentry with 10ft of Truesight.</p>
+    chat: ''
+  identifier: night-watchman
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841871
+  modifiedTime: 1793197841946
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!P2bJ37ipSvuCVx5i'

@@ -264,28 +264,35 @@ system:
 effects:
   - name: Shell Shock (Skill Points)
     img: modules/ak5e/icons/Skill-Ifrit2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.w90YhwRE5hoenjuH
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '5'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: cZ8G5ejvaBtdQVlv
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: JM7Am4gNJDXdNsMb
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.w90YhwRE5hoenjuH
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -310,32 +317,40 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097550
+      modifiedTime: 1791733097550
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!w90YhwRE5hoenjuH.flx7lohMTgQh5EDM'
   - name: Speed Reduced to 0
     img: modules/ak5e/icons/Skill-Ifrit2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.w90YhwRE5hoenjuH
+    origin: null
     transfer: false
     _id: UpOzBHRdXArsJhvE
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '0'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: 0
+          priority: 20
+          type: custom
+          phase: initial
+          _id: CVMfrjUHY1fUniQG
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.w90YhwRE5hoenjuH
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -362,10 +377,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097550
+      modifiedTime: 1791733097550
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!w90YhwRE5hoenjuH.UpOzBHRdXArsJhvE'
 sort: 0
 ownership:
@@ -379,11 +399,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.9W8D4dNqRS5wyc1G
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772826442350
-  modifiedTime: 1772826442350
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733097550
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: w90YhwRE5hoenjuH
 _key: '!items!w90YhwRE5hoenjuH'

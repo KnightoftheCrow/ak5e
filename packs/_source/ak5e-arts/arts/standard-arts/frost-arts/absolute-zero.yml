@@ -280,21 +280,21 @@ system:
 effects:
   - name: Absolute Zero Freeze
     img: icons/magic/water/water-iceberg-bubbles.webp
-    origin: Item.Y0ts6q26mL5S4gg1
+    origin: null
     transfer: false
     _id: fzMtgYIMbhbDtonL
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.Y0ts6q26mL5S4gg1
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -323,10 +323,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108919
+      modifiedTime: 1791733108919
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!Y0ts6q26mL5S4gg1.fzMtgYIMbhbDtonL'
 flags:
   dnd5e:
@@ -337,12 +342,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108918
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

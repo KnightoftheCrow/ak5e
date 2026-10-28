@@ -1,40 +1,12 @@
 name: Weapon Properties
 pages:
-  - sort: 100000
-    name: Bound
-    type: text
-    _id: c2nP2lJxMySGlTQ5
-    system: {}
-    title:
-      show: true
-      level: 1
-    image: {}
-    text:
-      format: 1
-      content: <p>Weapons with this Property have been bound by a Flinger.</p>
-    video:
-      controls: true
-      volume: 0.5
-    src: null
-    category: null
-    ownership:
-      default: -1
-      9KtVYqHDTWORuJDZ: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.347'
-      systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.c2nP2lJxMySGlTQ5'
-  - sort: 200000
-    name: Brace
-    type: text
-    _id: 8iuAmALKFvC7Pkcv
-    system: {}
+  - sort: 2000000
+    name: Reliable
+    type: rule
+    _id: QnevMs7ClOz11ti9
+    system:
+      tooltip: ''
+      type: rule
     title:
       show: true
       level: 1
@@ -42,9 +14,9 @@ pages:
     text:
       format: 1
       content: >-
-        <p>To make an attack using a weapon with the Brace Property, you must
-        also pay 10ft of Movement.</p><p>If the weapon also has the Loading
-        Property, this cost is increased to 30ft.</p>
+        <p>When you roll to determine the Damage dealt by an Attack using a
+        weapon with this Property, you may reroll any result of 1 on those dice,
+        but you must use the new result.</p>
     video:
       controls: true
       volume: 0.5
@@ -52,22 +24,63 @@ pages:
     category: null
     ownership:
       default: -1
-      9KtVYqHDTWORuJDZ: 3
+      5XlrCO2NlPtd4MFQ: 3
     flags: {}
     _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790535166707
+      modifiedTime: 1790536196442
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.QnevMs7ClOz11ti9'
+  - sort: 1300000
+    name: Brace
+    type: rule
+    _id: zSFndJ7g4bRUU79L
+    system:
+      tooltip: ''
+      type: rule
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>To make an Attack using a weapon you are wielding with the Brace
+        Property, you must also pay 10ft of Movement.</p><p>If the weapon also
+        has the Loading Property, this cost is increased to 30ft.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    category: null
+    ownership:
+      default: -1
+      5XlrCO2NlPtd4MFQ: 3
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.8iuAmALKFvC7Pkcv'
-  - sort: 300000
+      systemVersion: 5.3.3
+      createdTime: 1790535937917
+      modifiedTime: 1790535958412
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.zSFndJ7g4bRUU79L'
+  - sort: 1400000
     name: Casting Unit
-    type: text
-    _id: 84PPRps21icwe3Rp
-    system: {}
+    type: rule
+    _id: bA9IiDY536gAskOQ
+    system:
+      tooltip: ''
+      type: rule
     title:
       show: true
       level: 1
@@ -85,23 +98,26 @@ pages:
     category: null
     ownership:
       default: -1
-      9KtVYqHDTWORuJDZ: 3
+      5XlrCO2NlPtd4MFQ: 3
     flags: {}
     _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790535968064
+      modifiedTime: 1790535983716
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
-      systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-      modifiedTime: 1766937263686
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.84PPRps21icwe3Rp'
-  - sort: 400000
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.bA9IiDY536gAskOQ'
+  - sort: 1500000
     name: Conductive (X)
-    type: text
-    _id: 0lkehls3FxkitRkd
-    system: {}
+    type: rule
+    _id: IvJsL0VZSyFhhilS
+    system:
+      tooltip: ''
+      type: rule
     title:
       show: true
       level: 1
@@ -109,10 +125,12 @@ pages:
     text:
       format: 1
       content: >-
-        <p>While you have a weapon with the Conductive (X) Property Equipped,
-        you gain +X to your Spell Attack Rolls and Spell Save DC. If you have
-        multiple weapons with this property Equipped, only the largest value of
-        X is applied.</p>
+        <p>While you are wielding a weapon with this Property, you gain +X to
+        your Spell Attack Rolls and Spell Save DC. If you are wielding multiple
+        weapons with this Property, only the largest value of X is applied.
+        </p><p>If a weapon with this property has the Two-Handed Property, you
+        must be wielding that weapon in two hands to gain the benefit of this
+        Property.</p>
     video:
       controls: true
       volume: 0.5
@@ -120,22 +138,26 @@ pages:
     category: null
     ownership:
       default: -1
-      9KtVYqHDTWORuJDZ: 3
+      5XlrCO2NlPtd4MFQ: 3
     flags: {}
     _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790536007460
+      modifiedTime: 1790536096670
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
-      systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.0lkehls3FxkitRkd'
-  - sort: 500000
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.IvJsL0VZSyFhhilS'
+  - sort: 1600000
     name: Couch
-    type: text
-    _id: tzZGoUrJmoUnViPC
-    system: {}
+    type: rule
+    _id: uigINMFAGTvoITxY
+    system:
+      tooltip: ''
+      type: rule
     title:
       show: true
       level: 1
@@ -153,89 +175,26 @@ pages:
     category: null
     ownership:
       default: -1
-      9KtVYqHDTWORuJDZ: 3
+      5XlrCO2NlPtd4MFQ: 3
     flags: {}
     _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790536107685
+      modifiedTime: 1790536112706
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
-      systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.tzZGoUrJmoUnViPC'
-  - sort: 600000
-    name: Deadly
-    type: text
-    _id: HyZrjHTNPBLZWBVW
-    system: {}
-    title:
-      show: true
-      level: 1
-    image: {}
-    text:
-      format: 1
-      content: >-
-        <p>Once per Turn, when you hit with an Attack using a weapon with the
-        Deadly Property, you may cause that Attack to deal additional Damage
-        equal to your Proficiency Bonus.</p>
-    video:
-      controls: true
-      volume: 0.5
-    src: null
-    category: null
-    ownership:
-      default: -1
-      9KtVYqHDTWORuJDZ: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.347'
-      systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.HyZrjHTNPBLZWBVW'
-  - sort: 700000
-    name: Firearm
-    type: text
-    _id: BWAbxScg3oUitPmT
-    system: {}
-    title:
-      show: true
-      level: 1
-    image: {}
-    text:
-      format: 1
-      content: >-
-        <p>This weapon is a Terran firearm, which operate on Originium Arts. You
-        do not need to be able to cast any Arts to use weapons with this
-        Property, but any effect that prevents the casting of Arts also prevents
-        use of this weapon.</p>
-    video:
-      controls: true
-      volume: 0.5
-    src: null
-    category: null
-    ownership:
-      default: -1
-      9KtVYqHDTWORuJDZ: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.347'
-      systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.BWAbxScg3oUitPmT'
-  - sort: 525000
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.uigINMFAGTvoITxY'
+  - sort: 1700000
     name: Crush (X)
-    type: text
-    _id: UMNN0ltqsGgesRxQ
-    system: {}
+    type: rule
+    _id: EO8z6tCx7PFSr1OB
+    system:
+      tooltip: ''
+      type: rule
     title:
       show: true
       level: 1
@@ -254,23 +213,137 @@ pages:
     category: null
     ownership:
       default: -1
-      9KtVYqHDTWORuJDZ: 3
+      5XlrCO2NlPtd4MFQ: 3
     flags: {}
     _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790536122229
+      modifiedTime: 1790536129272
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.EO8z6tCx7PFSr1OB'
+  - sort: 1800000
+    name: Deadly
+    type: rule
+    _id: s7YIAtvJ7yyeFZgp
+    system:
+      tooltip: ''
+      type: rule
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>The first time each Turn you hit with an Attack using a weapon with
+        the Deadly Property, you may cause that Attack to deal additional Damage
+        equal to your Proficiency Bonus.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    category: null
+    ownership:
+      default: -1
+      5XlrCO2NlPtd4MFQ: 3
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-      modifiedTime: 1766937311101
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.UMNN0ltqsGgesRxQ'
-  - sort: 900000
+      systemVersion: 5.3.3
+      createdTime: 1790536136353
+      modifiedTime: 1790536142539
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.s7YIAtvJ7yyeFZgp'
+  - sort: 1750000
+    name: CQC
+    type: rule
+    _id: NYAYjHJOB5kg9VAs
+    system:
+      tooltip: ''
+      type: rule
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>You do not suffer Disadvantage on Ranged Attack Rolls using a Weapon
+        with this Property against a Creature within 5 feet of you.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    category: null
+    ownership:
+      default: -1
+      5XlrCO2NlPtd4MFQ: 3
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790536149304
+      modifiedTime: 1790536157776
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.NYAYjHJOB5kg9VAs'
+  - sort: 1900000
+    name: Firearm
+    type: rule
+    _id: pst11W6Aa1FYQu3h
+    system:
+      tooltip: ''
+      type: rule
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>This weapon is a Terran firearm, which operate on Originium Arts. You
+        do not need to be able to cast any Arts to use weapons with this
+        Property, but any effect that prevents the casting of Arts also prevents
+        use of this weapon.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    category: null
+    ownership:
+      default: -1
+      5XlrCO2NlPtd4MFQ: 3
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790536165315
+      modifiedTime: 1790536171290
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.pst11W6Aa1FYQu3h'
+  - sort: 2100000
     name: Rapid Fire
-    type: text
-    _id: wzjeoHaqrGZINnCn
-    system: {}
+    type: rule
+    _id: NvXIDkmhp3hM277E
+    system:
+      tooltip: ''
+      type: rule
     title:
       show: true
       level: 1
@@ -281,7 +354,15 @@ pages:
         <p>If you have attacked with a weapon with this Property this Turn, you
         may make an additional Attack with that weapon as a Bonus Action.
         However, you do not add your Ability Modifier to the Damage Roll for
-        that Attack.</p>
+        Attacks you make using this Property.</p><blockquote><p><strong>Rapid
+        Fire and Two-Weapon Fighting</strong></p><p>If you would perform
+        Two-Weapon Fighting using two weapons with the Rapid Fire Property, the
+        Bonus Action Attack you make as part of Two-Weapon Fighting is made at
+        Advantage. That Attack is considered to be an Attack using the Rapid
+        Fire Property in addition to a Two-Weapon Fighting Attack. If you have
+        multiple Fighting Styles that would allow you to add your Ability
+        Modifier to that Attack, you may apply one to that
+        Attack.</p></blockquote>
     video:
       controls: true
       volume: 0.5
@@ -289,22 +370,26 @@ pages:
     category: null
     ownership:
       default: -1
-      9KtVYqHDTWORuJDZ: 3
+      5XlrCO2NlPtd4MFQ: 3
     flags: {}
     _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790536202445
+      modifiedTime: 1790536220341
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
-      systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.wzjeoHaqrGZINnCn'
-  - sort: 1000000
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.NvXIDkmhp3hM277E'
+  - sort: 2200000
     name: Returning
-    type: text
-    _id: kOnm3XZjIkIKSMqs
-    system: {}
+    type: rule
+    _id: e8fkeP4ar5j4didJ
+    system:
+      tooltip: ''
+      type: rule
     title:
       show: true
       level: 1
@@ -323,22 +408,26 @@ pages:
     category: null
     ownership:
       default: -1
-      9KtVYqHDTWORuJDZ: 3
+      5XlrCO2NlPtd4MFQ: 3
     flags: {}
     _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790536248655
+      modifiedTime: 1790536255726
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
-      systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.kOnm3XZjIkIKSMqs'
-  - sort: 1100000
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.e8fkeP4ar5j4didJ'
+  - sort: 2300000
     name: Splash (X)
-    type: text
-    _id: 9YzvYtxjOAEichgE
-    system: {}
+    type: rule
+    _id: Ln2Qi7lbQKQbeoVc
+    system:
+      tooltip: ''
+      type: rule
     title:
       show: true
       level: 1
@@ -348,11 +437,12 @@ pages:
       content: >-
         <p>You do not make Attack Rolls when attacking using a weapon with this
         Property. Instead, choose a point within the weapon’s range; all
-        Creatures within X feet of that Point must succeed on a Dexterity Saving
-        Throw against your Martial DC, suffering the weapon’s normal Damage plus
-        your Ability Score Modifier on a failed Save, or half that amount on a
-        successful Save. If you are not Proficient with the weapon, Creatures
-        have Advantage on this Saving Throw.</p>
+        Creatures within X feet of that Point must make a Dexterity Saving Throw
+        against your Martial DC, suffering the weapon’s normal Damage plus the
+        Ability Score Modifier you used to determine your Martial DC on a failed
+        Save, or half that amount on a successful Save. If you are not
+        Proficient with the weapon, Creatures automatically pass this Saving
+        Throw (even Normal Creatures).</p>
     video:
       controls: true
       volume: 0.5
@@ -360,23 +450,26 @@ pages:
     category: null
     ownership:
       default: -1
-      9KtVYqHDTWORuJDZ: 3
+      5XlrCO2NlPtd4MFQ: 3
     flags: {}
     _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790536268902
+      modifiedTime: 1790536272340
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
-      systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-      modifiedTime: 1766937282370
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.9YzvYtxjOAEichgE'
-  - sort: 1200000
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.Ln2Qi7lbQKQbeoVc'
+  - sort: 2400000
     name: Spread
-    type: text
-    _id: QWQPievjz3LPggSC
-    system: {}
+    type: rule
+    _id: 8The18cCD7J16B7s
+    system:
+      tooltip: ''
+      type: rule
     title:
       show: true
       level: 1
@@ -395,23 +488,26 @@ pages:
     category: null
     ownership:
       default: -1
-      9KtVYqHDTWORuJDZ: 3
+      5XlrCO2NlPtd4MFQ: 3
     flags: {}
     _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790536289785
+      modifiedTime: 1790536293726
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
-      systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-      modifiedTime: 1766937294803
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.QWQPievjz3LPggSC'
-  - sort: 512500
-    name: CQC
-    type: text
-    _id: m68ktSSw7QLMS9Rj
-    system: {}
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.8The18cCD7J16B7s'
+  - sort: 1200000
+    name: Bastion
+    type: rule
+    _id: xQQclrKoyzkyaaXd
+    system:
+      tooltip: ''
+      type: rule
     title:
       show: true
       level: 1
@@ -419,8 +515,8 @@ pages:
     text:
       format: 1
       content: >-
-        <p>You do not suffer Disadvantage on Ranged Attack Rolls using a Weapon
-        with this Property against a Creature within 5 feet of you.</p>
+        <p>While wielding a shield with this Property, you have Advantage on
+        Strength and Dexterity Saving Throws against effects you can see.</p>
     video:
       controls: true
       volume: 0.5
@@ -428,19 +524,19 @@ pages:
     category: null
     ownership:
       default: -1
-      9KtVYqHDTWORuJDZ: 3
+      5XlrCO2NlPtd4MFQ: 3
     flags: {}
     _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1790537582916
+      modifiedTime: 1790538757374
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
-      systemId: dnd5e
-      systemVersion: 5.2.3
-      createdTime: 1766937048993
-      modifiedTime: 1766937317031
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-    _key: '!journal.pages!5gdt0smPFXq1A7fN.m68ktSSw7QLMS9Rj'
+    _key: '!journal.pages!5gdt0smPFXq1A7fN.xQQclrKoyzkyaaXd'
 folder: null
 categories: []
 ownership:

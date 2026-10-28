@@ -1,0 +1,384 @@
+folder: Pji4wTRYaJMHjby6
+name: Help Yourself
+type: feat
+_id: BvUPXE3rLkKFqD2m
+img: modules/ak5e/icons/Skill-ProtectiveGearGiver.png
+system:
+  activities:
+    K40lyklHyeNa8TOc:
+      type: utility
+      name: Rob DR
+      _id: K40lyklHyeNa8TOc
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: yOSMtq9bBWBU3Hgw
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: GfjgppWHUDDdWtYG
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: target.system.traits.dm.amount.bludgeoning < 0
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>When you hit a Creature that has Physical Damage Reduction with an
+      Attack, you steal 1 of their Damage Reduction, reducing their Damage
+      Reduction by 1 and increasing yours by 1. At the end of your Turn, if you
+      have not hit a Creature with an Attack, you lose any Damage Reduction you
+      gained from this Feature, and it is returned to the Creatures you stole it
+      from.</p><p><strong>Module Effect:</strong> The amount of Damage Reduction
+      you steal when you hit a Creature with an Attack is increased to
+      2.</p><hr><p><strong>Semi-Automated: </strong>Use the Activity on this
+      Feature (or the Module if you have it) to Steal the DR and gain it for
+      yourself. The removal of the DR upon not hitting with an Attack is not
+      automated.</p>
+    chat: ''
+  identifier: help-yourself
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: DR Stolen!
+    img: modules/ak5e/icons/Skill-ProtectiveGearGiver.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.BvUPXE3rLkKFqD2m
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.traits.dm.amount.bludgeoning
+          type: add
+          value: 1
+          phase: initial
+          _id: xTNa6kBJ1RgDowt8
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: system.traits.dm.amount.slashing
+          type: add
+          value: 1
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: TW4Htt2M2FJINI2e
+        - key: system.traits.dm.amount.piercing
+          type: add
+          value: 1
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: HyASoz6t5uvaofqZ
+        - key: system.traits.dm.amount.thunder
+          type: add
+          value: 1
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: AyHNsRnK4goCV1I6
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: yOSMtq9bBWBU3Hgw
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.BvUPXE3rLkKFqD2m
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 2
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: count
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841852
+      modifiedTime: 1793197841852
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!BvUPXE3rLkKFqD2m.yOSMtq9bBWBU3Hgw'
+  - name: DR Pilfered!
+    img: modules/ak5e/icons/Skill-ProtectiveGearGiver.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.BvUPXE3rLkKFqD2m
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.traits.dm.amount.bludgeoning
+          type: add
+          value: -1
+          phase: initial
+          priority: 20
+          _id: xTNa6kBJ1RgDowt8
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.slashing
+          type: add
+          value: -1
+          phase: initial
+          priority: 20
+          _id: TW4Htt2M2FJINI2e
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.piercing
+          type: add
+          value: -1
+          phase: initial
+          priority: 20
+          _id: HyASoz6t5uvaofqZ
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.thunder
+          type: add
+          value: -1
+          phase: initial
+          priority: 20
+          _id: AyHNsRnK4goCV1I6
+          conditions: '{}'
+          replacement: ''
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.BvUPXE3rLkKFqD2m
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 2
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: count
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841852
+      modifiedTime: 1793197841852
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: GfjgppWHUDDdWtYG
+    _key: '!items.effects!BvUPXE3rLkKFqD2m.GfjgppWHUDDdWtYG'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841852
+  modifiedTime: 1793197841939
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!BvUPXE3rLkKFqD2m'

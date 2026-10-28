@@ -1,0 +1,120 @@
+folder: Pji4wTRYaJMHjby6
+name: Hidden Technique (Module)
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module: </strong>You gain 1 additional Grit Point, and learn 2
+      more Techniques.</p><p><strong>Automated: </strong>When you gain this
+      Feature, use the Enchantment Activity on this Feature and "enchant" this
+      Feature twice to choose your Techniques. The chosen Techniques will be
+      added to this Feature as Activities. Do so again when you gain the
+      Module.</p>
+    chat: ''
+  identifier: hidden-technique-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - hidden-technique
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Hidden Technique (Module)
+    img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+    origin: Compendium.ak5e.ak5e-talents.Item.AfhNKzB0CwcsotPR
+    type: base
+    _id: eAdkkSxCcBICnQXk
+    system:
+      changes:
+        - key: system.scale.hidden-technique.grit-points
+          type: upgrade
+          value: 3
+          phase: initial
+          priority: null
+          _id: UgAz5aSAbAjGVcnB
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.f6VprwItp0vbTNFi
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841858
+      modifiedTime: 1793197841858
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!AfhNKzB0CwcsotPR.eAdkkSxCcBICnQXk'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841858
+  modifiedTime: 1793197841940
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: AfhNKzB0CwcsotPR
+sort: 0
+_key: '!items!AfhNKzB0CwcsotPR'

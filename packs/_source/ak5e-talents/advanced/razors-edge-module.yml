@@ -1,0 +1,121 @@
+folder: Pji4wTRYaJMHjby6
+name: Razor's Edge (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Chongyue3.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> While you are Dying, your Attacks deal
+      additional Weapon Damage equal to your Proficiency
+      Bonus.</p><hr><p><strong>Semi-Automated: </strong>The basic effect of this
+      talent cannot be automated. The Module Effect will provide an Opt-In
+      component when rolling Attack Damage if your HP is &lt;25%.</p>
+    chat: ''
+  identifier: razors-edge-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - razors-edge
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Razor's Edge
+    img: modules/ak5e/icons/Skill-Chongyue3.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.MUJHE3azFWZg6Xd2
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@prof; name=Bonus Damage from Razor's Edge;
+            optinId=razors-edge-0; optin; rollingActor.attributes.hp.pct < 25;
+            hasAttack
+          phase: initial
+          _id: s6s32lPA62ZZkX6C
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: bThC2O3Cg0rGI83F
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841877
+      modifiedTime: 1793197841877
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!MUJHE3azFWZg6Xd2.bThC2O3Cg0rGI83F'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841877
+  modifiedTime: 1793197841949
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: MUJHE3azFWZg6Xd2
+sort: 0
+_key: '!items!MUJHE3azFWZg6Xd2'

@@ -9,17 +9,33 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement:
+    8ULZ99U6ZsI5VA6D:
+      name: Reduced AP Costs
+      type: ScaleValue
+      _id: 8ULZ99U6ZsI5VA6D
+      configuration:
+        identifier: ''
+        type: number
+        distance:
+          units: ''
+        scale:
+          '5':
+            value: 1
+          '11':
+            value: 2
+      flags: {}
+      value: {}
+      hint: ''
   description:
     value: >-
       <p>As you strength increases, you can manifest Arts that once strained you
       with increasing ease.</p><p>When you cast an Art at a lower level than
       your Maximum Art Level, that Art costs 1 fewer Arts Point, to a minimum of
       0. Beginning at 11th Level, those Arts instead cost 2 fewer Arts
-      Points.</p><p><strong>Not Automated: </strong>Currently, this is not
-      possible to automate. Instead, edit the Arts Points item on your Character
-      Sheet at the appropriate level to reduce the costs of casting Arts below
-      your maximum level by 1, or 2 beyond level 11.</p>
+      Points.</p><hr><p><strong>Semi-Automated: </strong>You have an Opt-In when
+      you roll Damage or an Attack for a non-Cantrip Spell to regain Arts
+      Points.</p>
     chat: ''
   identifier: growing-power
   source:
@@ -30,29 +46,117 @@ system:
   prerequisites:
     items: []
     repeatable: false
-    level: null
+    level: 5
   properties: []
   requirements: ''
   type:
-    value: ''
+    value: class
     subtype: ''
-effects: []
-sort: 100000
-ownership:
-  default: 0
-  9KtVYqHDTWORuJDZ: 3
+effects:
+  - name: Reduced AP for Certain Arts
+    img: modules/ak5e/icons/Skill-Conviction2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.YCc4Tfk06PabfAzp
+        behavior: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            usesCount=Item.arts-points,
+            -(@scale.growing-power.reduced-ap-costs); name=AP Cost Reduction
+            (Refund); optinId=growing-power-0; optin; isSpell && !isCantrip &&
+            effectActor.details.level >= 5 && !hasAttack
+          phase: initial
+          _id: urUFNHeCMiRtv6T8
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.use.info
+          type: ac5e
+          value: >-
+            usesCount=Item.arts-points,
+            -(@scale.growing-power.reduced-ap-costs); name=AP Cost Reduction
+            (Refund); optinId=halfway-house-0; optin; isSpell && !isCantrip &&
+            effectActor.details.level >= 5
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: BHnDH5Ksl5WCbYPe
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: >-
+            usesCount=Item.arts-points,
+            -(@scale.growing-power.reduced-ap-costs); name=AP Cost Reduction
+            (Refund); optinId=halfway-house-0; optin; isSpell && !isCantrip &&
+            effectActor.details.level >= 5
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: JNoPqPpyyzP1puV3
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 6qWc7c8gUFDq46qW
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.YCc4Tfk06PabfAzp
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793134668140
+      modifiedTime: 1793134764754
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.dFrrynYz6rXE2KCm.ActiveEffect.UXojMSUw5twpyEfp
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!YCc4Tfk06PabfAzp.6qWc7c8gUFDq46qW'
 flags:
   dnd5e:
     riders:
       activity: []
 _stats:
-  compendiumSource: null
+  compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.YCc4Tfk06PabfAzp
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1774026593449
-  modifiedTime: 1774028327652
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 6.0.6
+  createdTime: 1791206115735
+  modifiedTime: 1793134821856
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 0
 _key: '!items!YCc4Tfk06PabfAzp'

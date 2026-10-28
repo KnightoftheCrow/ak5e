@@ -1,0 +1,117 @@
+folder: pK9UlZztTzku2Tvf
+name: Grappler
+type: feat
+img: modules/ak5e/icons/Skill-Flint1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><span class="fontstyle0">Once per Turn, when you hit a Creature with an
+      Unarmed Strike, you may attempt to Grapple them (No Action Required).
+      Furthermore, your Melee Attacks have Advantage against Creatures Grappled
+      by you.</span></p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: grappler
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Advantage against Grappled
+    img: modules/ak5e/icons/Skill-Flint1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.G5BYPlTR59N2DYt0
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.advantage
+          type: ac5e
+          value: >-
+            actionType.mwak && opponentActor.statuses.grappled ||
+            actionType.msak && opponentActor.statuses.grappled
+          phase: initial
+          _id: VFrLS2Zw7MUG75rj
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: Vbq76z8uYLBhWknR
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.G5BYPlTR59N2DYt0
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841773
+      modifiedTime: 1793197841773
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!G5BYPlTR59N2DYt0.Vbq76z8uYLBhWknR'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841773
+  modifiedTime: 1793197841908
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: G5BYPlTR59N2DYt0
+sort: 0
+_key: '!items!G5BYPlTR59N2DYt0'

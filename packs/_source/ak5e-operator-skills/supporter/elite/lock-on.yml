@@ -1,7 +1,7 @@
 folder: sklYDFVtnHmCnTNA
 name: Lock-On
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-Spuria1.webp
+img: modules/ak5e/icons/Skill-Spuria1.webp
 system:
   activities:
     hBBVhflELm9f8Dqf:
@@ -19,8 +19,7 @@ system:
         targets:
           - type: itemUses
             value: '65'
-            target: >-
-              Compendium.AK5e-Foundry-Module.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
             scaling: {}
       description:
         chatFlavor: ''
@@ -162,29 +161,36 @@ system:
     subtype: ''
 effects:
   - name: Lock-On (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/Skill-Spuria1.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.Gkvjt8VsSfqIoENV
+    img: modules/ak5e/icons/Skill-Spuria1.webp
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '65'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: CcdOrvfsqj9b9QDo
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: NpR2ozK2FgpQTtXu
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.Gkvjt8VsSfqIoENV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -208,28 +214,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091802
+      modifiedTime: 1791733091802
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Gkvjt8VsSfqIoENV.DXFUOiWQeWl6gGq8'
   - name: Locked Onto
-    img: modules/AK5e-Foundry-Module/icons/Skill-Spuria1.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.Gkvjt8VsSfqIoENV
+    img: modules/ak5e/icons/Skill-Spuria1.webp
+    origin: null
     transfer: false
     _id: 88h9qWQxBNdTtCW7
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.Gkvjt8VsSfqIoENV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -256,32 +266,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091802
+      modifiedTime: 1791733091802
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Gkvjt8VsSfqIoENV.88h9qWQxBNdTtCW7'
   - name: Locked On
-    img: modules/AK5e-Foundry-Module/icons/Skill-Spuria1.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.Gkvjt8VsSfqIoENV
+    img: modules/ak5e/icons/Skill-Spuria1.webp
+    origin: null
     transfer: false
     _id: 68Avs0YfhsCQxk7O
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.sharpShooter
-        mode: 5
-        value: singleTarget && actionType.rsak
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.sharpShooter
+          value: singleTarget && actionType.rsak
+          priority: 20
+          type: override
+          phase: initial
+          _id: FT4osiOwFeA1Ihtn
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.Gkvjt8VsSfqIoENV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -308,10 +326,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091802
+      modifiedTime: 1791733091802
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Gkvjt8VsSfqIoENV.68Avs0YfhsCQxk7O'
 flags:
   dnd5e:
@@ -321,12 +344,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733091802
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

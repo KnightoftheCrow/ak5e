@@ -1,7 +1,7 @@
 folder: WVQAhyn17ObuyPIB
 name: Within Reach
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-Conviction2.png
+img: modules/ak5e/icons/Skill-Conviction2.png
 system:
   activities:
     ad8IKEhEcM1DeKK5:
@@ -19,8 +19,7 @@ system:
         targets:
           - type: itemUses
             value: '15'
-            target: >-
-              Compendium.AK5e-Foundry-Module.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
             scaling: {}
       description:
         chatFlavor: ''
@@ -156,29 +155,36 @@ system:
     subtype: opSkill
 effects:
   - name: Within Reach (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/Skill-Conviction2.png
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.2M2rLvnVASgS8eHx
+    img: modules/ak5e/icons/Skill-Conviction2.png
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: zO19A9oYAjb4DI7f
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: OVLtCGtjL5ZIjr5s
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.2M2rLvnVASgS8eHx
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -202,28 +208,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733090192
+      modifiedTime: 1791733090192
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!2M2rLvnVASgS8eHx.flx7lohMTgQh5EDM'
   - name: Longer Range on Arts
-    img: modules/AK5e-Foundry-Module/icons/Skill-Conviction2.png
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.2M2rLvnVASgS8eHx
+    img: modules/ak5e/icons/Skill-Conviction2.png
+    origin: null
     transfer: false
     _id: cwG56B72kJMik8Iv
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.2M2rLvnVASgS8eHx
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -250,10 +260,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733090192
+      modifiedTime: 1791733090192
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!2M2rLvnVASgS8eHx.cwG56B72kJMik8Iv'
 flags:
   dnd5e:
@@ -263,12 +278,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733090191
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

@@ -150,28 +150,35 @@ system:
 effects:
   - name: Amplification Field (Skill Points)
     img: modules/ak5e/icons/Skill-Greyy1.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.wm32yJmlGPnUNNzZ
+    origin: null
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: XDOQb89gkWZEkzvw
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: U1H6KyPYwyXL48rw
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.wm32yJmlGPnUNNzZ
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -196,14 +203,19 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097736
+      modifiedTime: 1791733097736
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!wm32yJmlGPnUNNzZ.GQBslauEmqcGyBM3'
   - name: Amplification Field
     img: modules/ak5e/icons/Skill-Greyy1.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.wm32yJmlGPnUNNzZ
+    origin: null
     _id: 6oB98osVpcFIXw6Q
     type: auraeffects.aura
     system:
@@ -224,20 +236,23 @@ effects:
       script: ''
       stashedChanges: []
       stashedStatuses: []
-    changes:
-      - key: flags.automated-conditions-5e.grants.damage.bonus
-        mode: 5
-        value: bonus=2d6[force]; effectOriginTokenId === tokenId && hasAttack;
-        priority: 20
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          value: bonus=2d6[force]; effectOriginTokenId === tokenId && hasAttack;
+          priority: 20
+          type: override
+          phase: initial
+          _id: nB9Lub4tNZI5p9kx
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.wm32yJmlGPnUNNzZ
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -267,10 +282,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097736
+      modifiedTime: 1791733097736
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!wm32yJmlGPnUNNzZ.6oB98osVpcFIXw6Q'
 sort: 100000
 ownership:
@@ -285,10 +305,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772986852717
-  modifiedTime: 1772988221552
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733097736
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!wm32yJmlGPnUNNzZ'

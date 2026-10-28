@@ -152,24 +152,27 @@ system:
 effects:
   - name: Lore Expertise
     img: icons/creatures/unholy/demons-horned-glowing-pink.webp
-    origin: Item.ejgax1OwuL7CjBS2
+    origin: null
     _id: cxAg1QDKx0Grlet1
     type: base
-    system: {}
-    changes:
-      - key: system.skills.rel.value
-        mode: 5
-        value: '2'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.rel.value
+          value: 2
+          priority: 20
+          type: override
+          phase: initial
+          _id: N3EFwfl6O4tWcECc
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.ejgax1OwuL7CjBS2
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -193,10 +196,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733081096
+      modifiedTime: 1791733081096
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!7iK1fAyE2ce18NHL.cxAg1QDKx0Grlet1'
 flags:
   dnd5e:
@@ -206,12 +214,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680428466
-  modifiedTime: 1768680428502
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733081096
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

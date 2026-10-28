@@ -147,28 +147,35 @@ system:
 effects:
   - name: Saturation Fire (Skill Points)
     img: modules/ak5e/icons/64px-Skill-TheLiberated3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.THc5UHbKjzdpOUX5
+    origin: null
     _id: jFsfp7Zc1UVOIfUd
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: HrY6JlCIMeaNbgKR
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: cwqfYgSQ3olSst1y
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.THc5UHbKjzdpOUX5
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -193,12 +200,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768153960910
-      modifiedTime: 1768651532359
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      modifiedTime: 1791733094005
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!THc5UHbKjzdpOUX5.jFsfp7Zc1UVOIfUd'
 sort: 0
 ownership:
@@ -212,10 +222,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767619080608
-  modifiedTime: 1768155824753
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1791733094005
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!THc5UHbKjzdpOUX5'

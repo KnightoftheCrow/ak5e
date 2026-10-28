@@ -152,28 +152,35 @@ system:
 effects:
   - name: Maximize (Skill Points)
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.Ava0Fa6gV9VhtIoZ
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '80'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 3nh0jPeWaLR7NdJL
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 80
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: STKJDkk38ggZQ8xo
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.Ava0Fa6gV9VhtIoZ
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,32 +205,40 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091306
+      modifiedTime: 1791733091306
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Ava0Fa6gV9VhtIoZ.DXFUOiWQeWl6gGq8'
   - name: Concentration Limit +1
     img: modules/ak5e/icons/Skill-M%C5%82ynar3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.Ava0Fa6gV9VhtIoZ
+    origin: null
     transfer: false
     _id: 88h9qWQxBNdTtCW7
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.concentration.limit
-        mode: 2
-        value: '+1'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.concentration.limit
+          value: '+1'
+          priority: 20
+          type: add
+          phase: initial
+          _id: 9fWpAcTFyLVQBn74
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.Ava0Fa6gV9VhtIoZ
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -251,10 +266,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091306
+      modifiedTime: 1791733091306
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Ava0Fa6gV9VhtIoZ.88h9qWQxBNdTtCW7'
 sort: 100000
 ownership:
@@ -269,11 +289,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.oVQuPKSaGjjTaAA3
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774023683571
-  modifiedTime: 1774023683571
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733091306
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: Ava0Fa6gV9VhtIoZ
 _key: '!items!Ava0Fa6gV9VhtIoZ'

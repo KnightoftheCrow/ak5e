@@ -1,0 +1,275 @@
+folder: OTs3nhXEHHPpIufQ
+name: Entomb
+type: spell
+img: icons/magic/earth/strike-body-stone-crumble.webp
+system:
+  activities:
+    19QrMnZ6oh7WtK8z:
+      type: save
+      name: Cast
+      _id: 19QrMnZ6oh7WtK8z
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 5qQjhpbL27A44ufF
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+        turnChoice: start
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>Pulling up rock and mud, you attempt to encase a Creature you can see
+      within range in earth. That Creature must succeed on a Strength Saving
+      Throw or become Incapacitated for the duration as they are imprisoned.
+      While Incapacitated in this way, that Creature has Total Cover against any
+      Creature or effect outside of the stone prison. A Creature Incapacitated
+      in this way may reattempt the Saving Throw again at the beginning of each
+      of their Turns; on a success, the effect ends. On a failed Saving Throw,
+      they take 3d8 Bludgeoning Damage.</p><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: entomb
+  source:
+    revision: 1
+    rules: '2014'
+  activation:
+    type: action
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 7
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 2
+  properties:
+    - vocal
+    - somatic
+  range:
+    units: ft
+    value: '30'
+    special: ''
+  school: con
+  target:
+    template:
+      contiguous: false
+      stationary: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      count: '1'
+      type: creature
+      special: ''
+effects:
+  - name: Entombed
+    img: icons/magic/earth/strike-body-stone-crumble.webp
+    origin: null
+    transfer: false
+    _id: 5qQjhpbL27A44ufF
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          type: add
+          value: >-
+            turn=start, label=Entombed, saveAbility=str,
+            saveDC=@attributes.spell.dc, damageRoll=3d8, damageType=bludgeoning,
+            allowIncapacitated=true
+          phase: initial
+          priority: null
+          _id: UAB2H47pK9LZurDB
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.7Krha5JKUDkRU8Mc
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - incapacitated
+      - coverTotal
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1790604529930
+      modifiedTime: 1791733108265
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!H6zUkry81yxYXg9q.5qQjhpbL27A44ufF'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1790604529930
+  modifiedTime: 1791733108265
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: H6zUkry81yxYXg9q
+sort: 200000
+_key: '!items!H6zUkry81yxYXg9q'

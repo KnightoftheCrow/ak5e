@@ -1,0 +1,121 @@
+folder: Pji4wTRYaJMHjby6
+name: Shatterer
+type: feat
+_id: EHL9O9TWDiiNhbPE
+img: modules/ak5e/icons/Skill-Gnosis2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>When you deal Damage (except Cold Damage) to a Creature that has the
+      Frozen Condition, that Creature loses the Frozen Condition and takes 3d8
+      Cold Damage.</p><p><strong>Module Effect:</strong> When you remove the
+      Frozen Condition from a Creature in this way, they gain the Dazed
+      Condition until the end of their next
+      Turn.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: shatterer
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: 3d8 Cold Damage to Frozen Creatures and Remove Frozen
+    img: modules/ak5e/icons/Skill-Gnosis2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.EHL9O9TWDiiNhbPE
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=3d8[cold]; update=opponentActor.statuses.frozen, 0;
+            opponentActor.statuses.frozen && !getItem(tokenId,
+            'shatterer-module')
+          phase: initial
+          _id: 7q1gZsX3eIuS5NN7
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: SUcQhZQ9IAFyxVOm
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.EHL9O9TWDiiNhbPE
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841882
+      modifiedTime: 1793197841882
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!EHL9O9TWDiiNhbPE.SUcQhZQ9IAFyxVOm'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841882
+  modifiedTime: 1793197841951
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!EHL9O9TWDiiNhbPE'

@@ -1,0 +1,122 @@
+folder: pK9UlZztTzku2Tvf
+name: Traditional Remedies (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Perfumer1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect: </strong>The increase in maximum Hit Points
+      becomes 4d6.</p><p><strong>Not Automated: </strong>The increase max HP is
+      currently bugged with midi-qol. The roll on this activity is entirely
+      arbitrary; you must increase the max HP of affected Creatures
+      manually.</p>
+    chat: ''
+  identifier: traditional-remedies-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - traditional-remedies
+    repeatable: false
+    level: 8
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Traditional Remedies (Module)
+    img: modules/ak5e/icons/Skill-Perfumer1.webp
+    origin: null
+    type: base
+    _id: KyokIUqf7vX9aK7t
+    system:
+      changes:
+        - key: system.scale.traditional-remedies.max-hp.number
+          type: override
+          value: 4
+          phase: initial
+          priority: null
+          _id: tOOcbfl7CmBmL9v1
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.hEoyrc7crViw3rO6
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841810
+      modifiedTime: 1793197841810
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!hEoyrc7crViw3rO6.KyokIUqf7vX9aK7t'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841810
+  modifiedTime: 1793197841922
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: hEoyrc7crViw3rO6
+sort: 0
+_key: '!items!hEoyrc7crViw3rO6'

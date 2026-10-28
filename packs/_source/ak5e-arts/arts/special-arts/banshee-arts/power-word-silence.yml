@@ -240,28 +240,32 @@ system:
 effects:
   - name: Power Word Silence
     img: icons/magic/symbols/runes-star-magenta.webp
-    origin: Item.6tr8BFjB83q3ramY
+    origin: null
     transfer: false
     _id: AmZklknREdDausjh
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.OverTime
-        mode: 5
-        value: |-
-          turn=end,
-          saveAbility=wis,
-          saveDC=@attributes.spell.dc
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          value: |-
+            turn=end,
+            saveAbility=wis,
+            saveDC=@attributes.spell.dc
+          priority: 20
+          type: override
+          phase: initial
+          _id: 35UDS6CXoE2VunpI
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.6tr8BFjB83q3ramY
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -291,28 +295,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108882
+      modifiedTime: 1791733108882
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!XVVNl8g0KbX9g7Nv.AmZklknREdDausjh'
   - name: Dazed
     img: icons/magic/symbols/runes-star-magenta.webp
-    origin: Item.6tr8BFjB83q3ramY
+    origin: null
     transfer: false
     _id: MSKl4TtS03GVE9E5
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.6tr8BFjB83q3ramY
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -343,10 +352,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108882
+      modifiedTime: 1791733108882
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!XVVNl8g0KbX9g7Nv.MSKl4TtS03GVE9E5'
 flags:
   dnd5e:
@@ -366,12 +380,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108882
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

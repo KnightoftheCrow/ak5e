@@ -121,19 +121,14 @@ system:
   advancement: {}
   description:
     value: >-
-      <ul><li><p><strong>Name</strong>: Adrenaline
-      Rush.</p></li><li><p><strong>SP Cost:</strong>
-      15.</p></li><li><p><strong>Start SP:</strong>
-      10.</p></li><li><p><strong>Charging:</strong>
-      Defensive.</p></li><li><p><strong>Activation Cost:</strong>
-      Reaction.</p></li><li><p><strong>Effect:</strong> If your current Hit
-      Points are greater than 0, all effects on you that are preventing Actions
-      or reducing your Speed have no effect on you until the end of your next
-      Turn. After activating this Skill, you may then move up to your
-      Speed.</p></li><li><p><strong>Duration:</strong>
-      Instant.</p></li></ul><p><strong>Not Automated.</strong></p>
+      <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
+      SP</p></td><td><p>Charging</p></td><td><p>Activation</p></td><td><p>Duration</p></td></tr></thead><tbody><tr><td><p>15</p></td><td><p>10</p></td><td><p>Defensive</p></td><td><p>Reaction</p></td><td><p>Instant</p></td></tr></tbody></table><p><strong>Effect:</strong>
+      If your current Hit Points are greater than 0, all effects on you that are
+      preventing Actions or reducing your Speed have no effect on you until the
+      end of your next Turn. After activating this Skill, you may then move up
+      to your Speed.</p><hr><p><strong>Cannot be Automated.</strong></p>
     chat: ''
-  identifier: feature
+  identifier: adrenaline-rush
   source:
     revision: 1
     rules: '2024'
@@ -147,32 +142,39 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: ''
+    subtype: opSkill
 effects:
   - name: Adrenaline Rush (Skill Points)
     img: modules/ak5e/icons/Skill-Leto2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.7sxX38W1XAF3w3gA
+    origin: null
     type: base
     _id: EAikBU5lJbM9MuHN
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: FZlanieSXSyqQJRl
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 9E7yRM8Qqm1EyQi6
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.7sxX38W1XAF3w3gA
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,10 +200,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093906
+      modifiedTime: 1791733093906
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!SEpaAzGX3IBTWj1D.EAikBU5lJbM9MuHN'
 flags:
   dnd5e:
@@ -211,12 +218,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
+  systemVersion: 6.0.6
   createdTime: 1783356539676
-  modifiedTime: 1783356539695
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1792511249036
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

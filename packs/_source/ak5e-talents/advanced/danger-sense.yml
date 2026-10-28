@@ -1,0 +1,122 @@
+folder: Pji4wTRYaJMHjby6
+name: Danger Sense
+type: feat
+img: modules/ak5e/icons/Skill-Christine2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>While you are conscious, you have Advantage on Dexterity Saving Throws
+      against effects you can see.</p><p><strong>Module Effect:</strong>
+      Invisible Creatures no longer have Advantage on Attack Rolls against you,
+      and you can no longer be Suprised while
+      Conscious.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: danger-sense
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Advantage on Dex Saves against Visible Effects
+    img: modules/ak5e/icons/Skill-Christine2.webp
+    origin: Item.Qeo1Y3cilnrp5V8F
+    _id: O33J1yrWDah4ugI3
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.save.advantage
+          value: ability.dex && !rollingActor.statuses.incapacitated
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: WMGB0jyRA8baF168
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.Qeo1Y3cilnrp5V8F
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: dae.eval(statuses.blinded)
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841830
+      modifiedTime: 1793197841830
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!az66YYUNjhp6GQGJ.O33J1yrWDah4ugI3'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841830
+  modifiedTime: 1793197841930
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: az66YYUNjhp6GQGJ
+sort: 0
+_key: '!items!az66YYUNjhp6GQGJ'

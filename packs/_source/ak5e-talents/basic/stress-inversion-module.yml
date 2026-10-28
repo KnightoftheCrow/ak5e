@@ -1,0 +1,171 @@
+folder: pK9UlZztTzku2Tvf
+name: Stress Inversion (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Cement2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> The granted Damage Reduction is now
+      against all Damage.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: stress-inversion-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - stress-inversion
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Stress Inversion
+    img: modules/ak5e/icons/Skill-Cement2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.TuBQvHbkb4jTDUeJ
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      changes:
+        - key: system.traits.dm.amount.acid
+          type: add
+          value: '-(ceil(@prof/2))'
+          phase: initial
+          _id: axmzuT6CRqmjZ69H
+          conditions: '[{"k":"attributes.hp.pct","o":"lt","v":50}]'
+          replacement: ''
+          priority: null
+        - key: system.traits.dm.amount.cold
+          type: add
+          value: '-(ceil(@prof/2))'
+          phase: initial
+          conditions: '[{"k":"attributes.hp.pct","o":"lt","v":50}]'
+          replacement: ''
+          priority: null
+          _id: 43crcIzpXlvuGrCg
+        - key: system.traits.dm.amount.fire
+          type: add
+          value: '-(ceil(@prof/2))'
+          phase: initial
+          conditions: '[{"k":"attributes.hp.pct","o":"lt","v":50}]'
+          replacement: ''
+          priority: null
+          _id: Q9usBWqQpkQRnibq
+        - key: system.traits.dm.amount.force
+          type: add
+          value: '-(ceil(@prof/2))'
+          phase: initial
+          conditions: '[{"k":"attributes.hp.pct","o":"lt","v":50}]'
+          replacement: ''
+          priority: null
+          _id: S4VKptVIlZBD3uKi
+        - key: system.traits.dm.amount.lightning
+          type: add
+          value: '-(ceil(@prof/2))'
+          phase: initial
+          conditions: '[{"k":"attributes.hp.pct","o":"lt","v":50}]'
+          replacement: ''
+          priority: null
+          _id: ZSqn5ZJxT0ZHUzxI
+        - key: system.traits.dm.amount.necrotic
+          type: add
+          value: '-(ceil(@prof/2))'
+          phase: initial
+          conditions: '[{"k":"attributes.hp.pct","o":"lt","v":50}]'
+          replacement: ''
+          priority: null
+          _id: RUTEaiaDxTB5swOh
+        - key: system.traits.dm.amount.psychic
+          type: add
+          value: '-(ceil(@prof/2))'
+          phase: initial
+          conditions: '[{"k":"attributes.hp.pct","o":"lt","v":50}]'
+          replacement: ''
+          priority: null
+          _id: lkYFhmp3ZQcVHGMe
+        - key: system.traits.dm.amount.radiant
+          type: add
+          value: '-(ceil(@prof/2))'
+          phase: initial
+          conditions: '[{"k":"attributes.hp.pct","o":"lt","v":50}]'
+          replacement: ''
+          priority: null
+          _id: am9nWe83dXS1ESfh
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: Z58tUgQ6RAifeTpi
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.TuBQvHbkb4jTDUeJ
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841806
+      modifiedTime: 1793197841806
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!TuBQvHbkb4jTDUeJ.Z58tUgQ6RAifeTpi'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841806
+  modifiedTime: 1793197841920
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: TuBQvHbkb4jTDUeJ
+sort: 0
+_key: '!items!TuBQvHbkb4jTDUeJ'

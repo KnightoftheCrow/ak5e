@@ -1,7 +1,7 @@
 folder: WVQAhyn17ObuyPIB
 name: Earth Meld
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-Odda2.png
+img: modules/ak5e/icons/Skill-Odda2.png
 system:
   activities:
     dtPK0aIpSlVEmwXK:
@@ -152,29 +152,36 @@ system:
     subtype: opSkill
 effects:
   - name: Earth Meld (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/Skill-Odda2.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.tBiHBiFMmhduIftV
+    img: modules/ak5e/icons/Skill-Odda2.webp
+    origin: null
     _id: 8HY8mWYy8NeFvMIE
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '0'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 0
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: K9RzEMViYvU9O33y
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: hnU8SaJaCZWAaS2i
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.tBiHBiFMmhduIftV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -200,10 +207,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097076
+      modifiedTime: 1791733097076
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!tBiHBiFMmhduIftV.8HY8mWYy8NeFvMIE'
 flags:
   dnd5e:
@@ -213,12 +225,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733097075
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

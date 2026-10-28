@@ -1,0 +1,132 @@
+folder: Pji4wTRYaJMHjby6
+name: Reliable Talent
+type: feat
+_id: axdnc9YFR85ZafM7
+img: modules/ak5e/icons/Skill-TheParadigmatic1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>When you make a Check using a Skill you are Proficient in, treat any
+      result on the d20 of 8 or less as an 8.</p><p><strong>Module
+      Effect:</strong> You cannot have Disadvantage on any Check using a Skill
+      or Tool you are Proficiency
+      with.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: reliable-talent
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Minimum Roll of 8 for Proficient Checks
+    img: modules/ak5e/icons/Skill-TheParadigmatic1.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.axdnc9YFR85ZafM7
+    _id: 8cPvvUnkgO7YJizx
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.skill.modifier
+          value: modifier=min8; hasFullProficiency
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: vWniO4gjnARyuICr
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.tool.modifier
+          value: modifier=min8; hasFullProficiency
+          priority: 20
+          type: ac5e
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          _id: SOtX1zjJ8l25GZbq
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.axdnc9YFR85ZafM7
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841878
+      modifiedTime: 1793197841878
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!axdnc9YFR85ZafM7.8cPvvUnkgO7YJizx'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841878
+  modifiedTime: 1793197841949
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!axdnc9YFR85ZafM7'

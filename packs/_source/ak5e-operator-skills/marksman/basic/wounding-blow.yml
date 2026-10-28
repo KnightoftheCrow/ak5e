@@ -150,28 +150,35 @@ system:
 effects:
   - name: Wounding Blow (Skill Points)
     img: modules/ak5e/icons/Skill-Thorns2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.ep2MJVEskzKTkT4y
+    origin: null
     _id: NofukA6yJwZH3fsM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '0'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 0
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: P5i4DkfT61KK9LRf
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 9K4Nqx5R88EWOihz
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.ep2MJVEskzKTkT4y
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -196,29 +203,31 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768072889493
-      modifiedTime: 1768651438056
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      modifiedTime: 1791733095404
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!ep2MJVEskzKTkT4y.NofukA6yJwZH3fsM'
   - name: Wounding Blow
     img: modules/ak5e/icons/Skill-Thorns2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.ep2MJVEskzKTkT4y
+    origin: null
     _id: 9c0PlQGY4hMTFlVK
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.ep2MJVEskzKTkT4y
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -247,12 +256,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768140910627
-      modifiedTime: 1768141329747
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      modifiedTime: 1791733095404
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!ep2MJVEskzKTkT4y.9c0PlQGY4hMTFlVK'
 sort: 100391
 ownership:
@@ -266,10 +278,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767618614942
-  modifiedTime: 1768141472095
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1791733095404
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!ep2MJVEskzKTkT4y'

@@ -146,25 +146,29 @@ system:
 effects:
   - name: Galvanic Gauntlet
     img: icons/magic/lightning/fist-unarmed-strike-blue.webp
-    origin: Item.wJCmAq8fwS5PQT5Z
+    origin: null
     transfer: false
     _id: j24X6mNTckSJk6xR
     type: base
-    system: {}
-    changes:
-      - key: macro.createItem
-        mode: 0
-        value: Compendium.ak5e.ak5e-arts.Item.635CoenctOLcTWdQ
-        priority: 20
+    system:
+      changes:
+        - key: macro.createItem
+          value: Compendium.ak5e.ak5e-arts.Item.635CoenctOLcTWdQ
+          priority: 20
+          type: custom
+          phase: initial
+          _id: JFrFKxPXeVBCgSme
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.wJCmAq8fwS5PQT5Z
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -191,10 +195,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733109691
+      modifiedTime: 1791733109691
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!wJCmAq8fwS5PQT5Z.j24X6mNTckSJk6xR'
 flags:
   dnd5e:
@@ -205,12 +214,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733109691
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

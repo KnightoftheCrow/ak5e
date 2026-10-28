@@ -1,125 +1,9 @@
 folder: YzlYIaWRhocmCatN
 name: Necrotoxin
 type: consumable
-img: icons/consumables/potions/bottle-conical-fumes-green.webp
+img: modules/ak5e/icons/Equipment/AK5e%20Poison%20Flask.png
 system:
   activities:
-    zanh5V5dunXuWOZn:
-      type: save
-      _id: zanh5V5dunXuWOZn
-      sort: 250000
-      activation:
-        type: special
-        override: false
-        condition: ''
-      consumption:
-        scaling:
-          allowed: false
-        spellSlot: true
-        targets:
-          - type: activityUses
-            value: '1'
-            scaling: {}
-      description:
-        chatFlavor: ''
-      duration:
-        units: inst
-        concentration: false
-        override: false
-      effects:
-        - _id: 6N9gywa6ZlorcVaR
-          onSave: false
-      range:
-        units: any
-        override: false
-        special: ''
-      target:
-        template:
-          contiguous: false
-          units: ft
-          type: ''
-        affects:
-          choice: false
-          count: ''
-          type: creature
-          special: ''
-        override: false
-        prompt: true
-      uses:
-        spent: 0
-        recovery:
-          - period: turnStart
-            type: recoverAll
-        max: '1'
-      damage:
-        onSave: none
-        critical:
-          allow: false
-        parts:
-          - custom:
-              enabled: false
-              formula: ''
-            number: 1
-            denomination: 8
-            bonus: ''
-            types:
-              - poison
-            scaling:
-              number: 1
-      save:
-        ability:
-          - con
-        dc:
-          calculation: ''
-          formula: '15'
-      useConditionText: ''
-      useConditionReason: ''
-      effectConditionText: ''
-      macroData:
-        name: ''
-        command: ''
-      ignoreTraits:
-        idi: false
-        idr: false
-        idv: false
-        ida: false
-        idm: false
-      midiProperties:
-        ignoreTraits: []
-        triggeredActivityId: none
-        triggeredActivityConditionText: ''
-        triggeredActivityTargets: targets
-        triggeredActivityRollAs: self
-        autoConsume: false
-        forceConsumeDialog: default
-        forceRollDialog: default
-        forceDamageDialog: default
-        confirmTargets: default
-        autoTargetType: any
-        autoTargetAction: default
-        automationOnly: false
-        otherActivityCompatible: true
-        otherActivityAsParentType: true
-        identifier: ''
-        displayActivityName: false
-        rollMode: default
-        chooseEffects: false
-        toggleEffect: false
-        ignoreFullCover: false
-        removeChatButtons: default
-        magicEffect: false
-        magicDamage: false
-        noConcentrationCheck: false
-        autoCEEffects: default
-      isOverTimeFlag: false
-      overTimeProperties:
-        saveRemoves: true
-        preRemoveConditionText: ''
-        postRemoveConditionText: ''
-      otherActivityId: ''
-      otherActivityAsParentType: true
-      friendlySave: default
-      name: Necrotoxin Save
     QEWjzFJlPgxilFr5:
       type: save
       _id: QEWjzFJlPgxilFr5
@@ -223,13 +107,16 @@ system:
       otherActivityAsParentType: true
       friendlySave: default
       name: Ingested Necrotoxin Save
-    yMUVCiib0RuT3njA:
-      type: utility
+    dA8fZAAHLfM0soVY:
+      type: enchant
+      name: Apply Poison
+      img: ''
       sort: 200000
       activation:
         type: action
         override: false
         condition: ''
+      behaviors: []
       consumption:
         scaling:
           allowed: false
@@ -240,38 +127,66 @@ system:
             target: ''
             scaling: {}
       description:
+        value: ''
         chatFlavor: ''
       duration:
-        units: inst
+        units: minute
+        expiry: null
         concentration: false
         override: false
-      effects: []
+        value: '10'
+      effects:
+        - _id: ZmCtcNDKYAUadWZT
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - 5EzF4xe5LpysfopK
+            effect: []
+            item: []
+      flags: {}
       range:
-        units: self
+        units: touch
         override: false
         special: ''
       target:
         template:
           contiguous: false
+          stationary: false
           units: ft
           type: ''
         affects:
           choice: false
-          type: self
+          count: ''
+          type: ''
+          special: ''
         override: false
         prompt: true
       uses:
         spent: 0
         recovery: []
         max: ''
-      roll:
-        prompt: false
-        visible: false
-        formula: ''
-        name: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      enchant:
+        self: false
+      restrictions:
+        allowMagical: false
+        categories: []
+        properties: []
+        type: ''
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
+      otherActivityId: none
       macroData:
         name: ''
         command: ''
@@ -287,6 +202,8 @@ system:
         triggeredActivityConditionText: ''
         triggeredActivityTargets: targets
         triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
         autoConsume: false
         forceConsumeDialog: default
         forceRollDialog: default
@@ -307,15 +224,189 @@ system:
         magicEffect: false
         magicDamage: false
         noConcentrationCheck: false
+        skipConcentrationCheck: false
         autoCEEffects: default
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
+        rollAs: target
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: dA8fZAAHLfM0soVY
+    5EzF4xe5LpysfopK:
+      type: save
+      name: Necrotoxin Save
+      _id: 5EzF4xe5LpysfopK
+      img: ''
+      sort: 400000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: targetStart
+        concentration: false
+        override: false
+      effects:
+        - _id: 6N9gywa6ZlorcVaR
+          uuid: null
+          level: {}
+          onSave: false
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: none
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 8
+            bonus: ''
+            modifiers: []
+            types:
+              - poison
+            scaling:
+              number: 1
+      save:
+        ability:
+          - con
+        dc:
+          calculation: ''
+          formula: '15'
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
       otherActivityId: none
-      name: Apply Toxin
-      _id: yMUVCiib0RuT3njA
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
   uses:
     spent: 0
     recovery: []
@@ -324,16 +415,16 @@ system:
   description:
     value: >-
       <p>As an Action, you can apply this to a Weapon you are carrying, or
-      poison food/drink within 5ft of you.</p><p><strong>(Partially Automated:
-      Use the Necrotoxin Save Activity on this Item when a Creature needs to
-      make the save) </strong>When applied to a Weapon, the effect lasts for ten
-      minutes. The first time each Turn you hit a Creature with that Weapon,
-      that Creature must pass a DC15 Constitution Saving Throw or take 1d8
-      Poison Damage and be Necrotised until the end of their next
-      Turn.</p><p><strong>(Automated) </strong>If a Creature consumes food/drink
-      that has been poisoned using this, they must make a DC15 Constitution
-      Saving Throw. On a failed save, they are Necrotised until they complete a
-      Long Rest. On a successful save, they are Necrotised for 10 minutes.</p>
+      poison food/drink within 5ft of you.</p><p>When applied to a Weapon, the
+      effect lasts for ten minutes. The first time each Turn you hit a Creature
+      with that Weapon, that Creature must pass a DC15 Constitution Saving Throw
+      or take 1d8 Poison Damage and be Necrotised until the end of their next
+      Turn.</p><p>If a Creature consumes food/drink that has been poisoned using
+      this, they must make a DC15 Constitution Saving Throw. On a failed save,
+      they are Necrotised until they complete a Long Rest. On a successful save,
+      they are Necrotised for 10 minutes.</p><hr><p><strong>Automated:
+      </strong>Applying the Toxin adds a new activity to the relevant
+      weapon.</p>
     chat: ''
   identifier: necrotoxin
   source:
@@ -373,21 +464,20 @@ system:
 effects:
   - name: Necrotoxin
     img: icons/consumables/potions/bottle-conical-fumes-green.webp
-    origin: Item.MdCAX38wny4XZHmT
+    origin: null
     transfer: false
     _id: 6N9gywa6ZlorcVaR
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.MdCAX38wny4XZHmT
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: targetEnd
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -408,36 +498,39 @@ effects:
         dontApply: false
         durationExpression: ''
         macroRepeat: none
-        specialDuration:
-          - turnEnd
+        specialDuration: []
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733079389
+      modifiedTime: 1792250629931
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!vZv9Q1KdmDrdBL9D.6N9gywa6ZlorcVaR'
   - name: Ingested Necrotoxin (Failed Save)
     img: icons/consumables/potions/bottle-conical-fumes-green.webp
-    origin: Item.MdCAX38wny4XZHmT
+    origin: null
     transfer: false
     _id: Wl03AWjGatJB0lSP
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.MdCAX38wny4XZHmT
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -466,28 +559,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733079389
+      modifiedTime: 1791733079389
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!vZv9Q1KdmDrdBL9D.Wl03AWjGatJB0lSP'
-  - name: Necrotoxin (Succeeded Save)
+  - name: Ingested Necrotoxin (Succeeded Save)
     img: icons/consumables/potions/bottle-conical-fumes-green.webp
-    origin: Item.MdCAX38wny4XZHmT
+    origin: null
     transfer: false
     _id: XW9Z3T8FYjg9L2lV
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Item.MdCAX38wny4XZHmT
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: 600
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 600
+      units: seconds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -509,33 +606,90 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        applicationMode: default
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-      modifiedTime: 1756921515969
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1792250692871
+      createdTime: 1791733079389
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!vZv9Q1KdmDrdBL9D.XW9Z3T8FYjg9L2lV'
+  - type: enchantment
+    name: Necrotoxin
+    img: modules/ak5e/icons/Equipment/AK5e%20Poison%20Flask.png
+    disabled: true
+    transfer: false
+    _id: ZmCtcNDKYAUadWZT
+    system:
+      changes: []
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: true
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792250654244
+      modifiedTime: 1792250659782
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!vZv9Q1KdmDrdBL9D.ZmCtcNDKYAUadWZT'
 flags:
   dnd5e:
     riders:
-      activity: []
-      effect: []
+      activity:
+        - 5EzF4xe5LpysfopK
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.1.2
+  systemVersion: 6.0.6
   createdTime: 1756917525499
-  modifiedTime: 1756917525529
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1792250745931
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: vZv9Q1KdmDrdBL9D
 sort: 375000
 ownership:

@@ -1,7 +1,7 @@
 folder: YzlYIaWRhocmCatN
 name: Non-Valuable Alcohol
 type: consumable
-img: icons/consumables/drinks/alcohol-beer-mug-yellow.webp
+img: icons/consumables/drinks/alcohol-beer-stein-wooden-brown.webp
 system:
   activities:
     sPZ3EffCGFjXEA8O:
@@ -149,37 +149,52 @@ system:
 effects:
   - name: Alcohol Warmth
     img: icons/consumables/drinks/alcohol-beer-mug-yellow.webp
-    origin: Compendium.ak5e.ak5e-items.Item.aoWObPYKCfH44Ew2
+    origin: null
     transfer: false
     _id: PRWKowLb6ralcdf6
     type: base
-    system: {}
-    changes:
-      - key: system.abilities.dex.bonuses.check
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: system.abilities.dex.bonuses.save
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: system.abilities.wis.bonuses.check
-        mode: 2
-        value: '+1'
-        priority: 20
-      - key: system.abilities.wis.bonuses.save
-        mode: 2
-        value: '+1'
-        priority: 20
+    system:
+      changes:
+        - key: system.abilities.dex.bonuses.check
+          value: -1
+          priority: 20
+          type: add
+          phase: initial
+          _id: JzXFXXBZSAJSTA5S
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.dex.bonuses.save
+          value: -1
+          priority: 20
+          type: add
+          phase: initial
+          _id: TY98upElPg7vlGHf
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.wis.bonuses.check
+          value: '+1'
+          priority: 20
+          type: add
+          phase: initial
+          _id: cqZwe8dzF3mhsnC4
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.wis.bonuses.save
+          value: '+1'
+          priority: 20
+          type: add
+          phase: initial
+          _id: BhnG3JB9wwWp8nT3
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-items.Item.aoWObPYKCfH44Ew2
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -205,10 +220,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733079335
+      modifiedTime: 1791733079335
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!o9ItelFHz1EoGDlE.PRWKowLb6ralcdf6'
 flags:
   dnd5e:
@@ -219,12 +239,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1756556731969
-  modifiedTime: 1756573097200
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733079334
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: o9ItelFHz1EoGDlE
 sort: 700000
 ownership:

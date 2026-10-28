@@ -1,7 +1,7 @@
 folder: xVeaYDqngTsmNvFl
 name: Ring of Purgatory
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-Purgatory2.webp
+img: modules/ak5e/icons/Skill-Purgatory2.webp
 system:
   activities:
     2lkiq7KFW7FjD94I:
@@ -147,8 +147,7 @@ system:
         targets:
           - type: itemUses
             value: '30'
-            target: >-
-              Compendium.AK5e-Foundry-Module.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
             scaling: {}
       description:
         chatFlavor: ''
@@ -292,29 +291,36 @@ system:
     subtype: opSkill
 effects:
   - name: Ring of Purgatory (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/Skill-Purgatory2.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.cUCvtfgEuLskOdol
+    img: modules/ak5e/icons/Skill-Purgatory2.webp
+    origin: null
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 0T1StKOdRQaDYHRw
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: slsDWPu9Tu8am5kP
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.cUCvtfgEuLskOdol
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -338,14 +344,19 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095303
+      modifiedTime: 1791733095303
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!cUCvtfgEuLskOdol.GQBslauEmqcGyBM3'
   - name: Ring of Purgatory
-    img: modules/AK5e-Foundry-Module/icons/Skill-Purgatory2.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.cUCvtfgEuLskOdol
+    img: modules/ak5e/icons/Skill-Purgatory2.webp
+    origin: null
     _id: Q1rueMwx02MI4gkZ
     type: auraeffects.aura
     system:
@@ -366,16 +377,15 @@ effects:
       script: ''
       stashedChanges: []
       stashedStatuses: []
-    changes: []
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.cUCvtfgEuLskOdol
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -405,10 +415,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095303
+      modifiedTime: 1791733095303
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!cUCvtfgEuLskOdol.Q1rueMwx02MI4gkZ'
 flags:
   dnd5e:
@@ -418,12 +433,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733095303
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

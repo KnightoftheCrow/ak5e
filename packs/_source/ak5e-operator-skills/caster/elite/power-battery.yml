@@ -153,28 +153,35 @@ system:
 effects:
   - name: Power Battery (Skill Points)
     img: modules/ak5e/icons/Skill-Passenger2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.hZK1dslYbZ0W9JU6
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '80'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 7Tg0WojqfBGnLlIE
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 80
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: BEAfDCN1QbNGrBBb
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.hZK1dslYbZ0W9JU6
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -199,10 +206,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095662
+      modifiedTime: 1791733095662
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!hZK1dslYbZ0W9JU6.DXFUOiWQeWl6gGq8'
 sort: 100000
 ownership:
@@ -217,11 +229,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.oVQuPKSaGjjTaAA3
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774023683571
-  modifiedTime: 1774023683571
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733095662
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: hZK1dslYbZ0W9JU6
 _key: '!items!hZK1dslYbZ0W9JU6'

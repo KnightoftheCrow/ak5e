@@ -36,6 +36,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: creature
@@ -67,6 +68,8 @@ system:
             bonus: ''
             types:
               - none
+            scaling:
+              number: 1
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -112,18 +115,42 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
   advancement:
-    - type: ScaleValue
+    l5OR7XArJqRL0afs:
+      type: ScaleValue
       _id: l5OR7XArJqRL0afs
       configuration:
         identifier: ''
@@ -146,6 +173,7 @@ system:
       value: {}
       title: Damage
       hint: ''
+      flags: {}
   description:
     value: >-
       <p>You excel at crushing enemies who are already reeling from your
@@ -175,19 +203,16 @@ effects: []
 sort: 50000
 ownership:
   default: 0
-  9KtVYqHDTWORuJDZ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1774110222245
-  modifiedTime: 1774180540671
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 5.3.3
+  createdTime: 1791203553234
+  modifiedTime: 1791203553234
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!tCg67bhiInVb70Wv'

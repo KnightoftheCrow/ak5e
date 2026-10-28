@@ -1,0 +1,114 @@
+folder: Bg4shjy2cai76KuT
+name: Close and Personal
+type: feat
+img: modules/ak5e/icons/Skill-Andreana1.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You do not have Disadvantage on Ranged Attack Rolls when there is a
+      hostile Creature within 5 feet of
+      you.</p><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: feature
+  source:
+    revision: 1
+    rules: '2024'
+    book: AK5e
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties:
+    - trait
+  requirements: Marksman Fighting Style
+  type:
+    value: class
+    subtype: fightingStyle
+effects:
+  - name: Close and Personal
+    img: modules/ak5e/icons/Skill-Andreana1.png
+    origin: null
+    _id: 0seOj4G3UUMMK9ng
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.ignoreNearbyFoes
+          value: true; actionType.rwak
+          priority: 20
+          type: add
+          phase: initial
+          _id: ky8KuuTSytYzAxJN
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.EDkvryXGAngFLann
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791301114335
+      modifiedTime: 1791733085559
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!EDkvryXGAngFLann.0seOj4G3UUMMK9ng'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.EDkvryXGAngFLann
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791301114335
+  modifiedTime: 1791733085559
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_id: EDkvryXGAngFLann
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 300000
+_key: '!items!EDkvryXGAngFLann'

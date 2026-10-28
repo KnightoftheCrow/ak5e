@@ -37,24 +37,27 @@ system:
 effects:
   - name: Advantage on blending into Crowds
     img: icons/environment/settlement/house-manor.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.MjYcbeghMw18ffj8
+    origin: null
     _id: oAGd1IHB0EwIZAFL
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.advantage.skill.ste
-        mode: 2
-        value: confirm('Are you blending into a crowd?')
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.advantage.skill.ste
+          value: confirm('Are you blending into a crowd?')
+          priority: 20
+          type: add
+          phase: initial
+          _id: gjUPJ7ztpUotbvdX
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.MjYcbeghMw18ffj8
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -78,10 +81,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733081768
+      modifiedTime: 1791733081768
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!MjYcbeghMw18ffj8.oAGd1IHB0EwIZAFL'
 sort: 0
 ownership:
@@ -95,10 +103,10 @@ _stats:
   compendiumSource: Item.MjYcbeghMw18ffj8
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881328247
-  modifiedTime: 1769881328247
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733081768
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!MjYcbeghMw18ffj8'

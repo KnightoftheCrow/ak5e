@@ -1,0 +1,125 @@
+folder: pK9UlZztTzku2Tvf
+name: Back-to-Back
+type: feat
+img: modules/ak5e/icons/Skill-TheDecadenza3.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>If there is another allied Creature within 15ft of you with this
+      Ability, you may add +1 to all Attack and Damage Rolls you
+      make.</p><p><strong>Module:</strong> If there is another allied Creature
+      within 15ft of you with this Ability, you gain 2 DR against all
+      Damage.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: back-to-back
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +1 to Attack/Damage Rolls if Nearby Back-to-Back
+    img: modules/ak5e/icons/Skill-TheDecadenza3.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.EEUtFBUR3GIin6Ai
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.aura.attack.bonus
+          type: ac5e
+          value: bonus=1; radius=15; getItem(tokenId, 'back-to-back')
+          phase: initial
+          _id: 3rYcOdoRL07ZoFZU
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.aura.damage.bonus
+          type: ac5e
+          value: bonus=1; radius=15; getItem(tokenId, 'back-to-back')
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: 39NjlDwWEO7IRv79
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: t2XKNiCAwdjVc1qg
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.EEUtFBUR3GIin6Ai
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841756
+      modifiedTime: 1793197841756
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!EEUtFBUR3GIin6Ai.t2XKNiCAwdjVc1qg'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841756
+  modifiedTime: 1793197841899
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: EEUtFBUR3GIin6Ai
+sort: 0
+_key: '!items!EEUtFBUR3GIin6Ai'

@@ -1,0 +1,121 @@
+folder: pK9UlZztTzku2Tvf
+name: Unconventional Tactics (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Nian1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect: </strong>Your Melee Spell Attacks have +1
+      Critical Range.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: unconventional-tactics-upgraded
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - unconventional-tactics
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: skillPoints
+effects:
+  - name: +1 Critical Range for Spell Attacks
+    img: modules/ak5e/icons/Skill-Nian1.webp
+    origin: null
+    _id: wLbDotrlxwn92HLB
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          value: threshold=-1; actionType.msak
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: wrwTGSndDtkY6MPI
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.mpeNFGDlovBrVGkT
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841811
+      modifiedTime: 1793197841811
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!mpeNFGDlovBrVGkT.wLbDotrlxwn92HLB'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841811
+  modifiedTime: 1793197841923
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: mpeNFGDlovBrVGkT
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 0
+_key: '!items!mpeNFGDlovBrVGkT'

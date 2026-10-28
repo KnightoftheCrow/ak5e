@@ -151,28 +151,35 @@ system:
 effects:
   - name: Within Reach (Skill Points)
     img: modules/ak5e/icons/Skill-Conviction2.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.tGXr5JYI1s4TuUWz
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: ohkSwiykeQ9Lt67p
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 5swxBuuozjYSgSIe
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.tGXr5JYI1s4TuUWz
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -197,28 +204,32 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097139
+      modifiedTime: 1791733097139
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!tGXr5JYI1s4TuUWz.flx7lohMTgQh5EDM'
   - name: Longer Range on Arts
     img: modules/ak5e/icons/Skill-Conviction2.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.tGXr5JYI1s4TuUWz
+    origin: null
     transfer: false
     _id: cwG56B72kJMik8Iv
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.tGXr5JYI1s4TuUWz
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -245,10 +256,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097139
+      modifiedTime: 1791733097139
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!tGXr5JYI1s4TuUWz.cwG56B72kJMik8Iv'
 sort: 0
 ownership:
@@ -262,11 +278,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.bMlpD8Am7dui7GM8
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772826442350
-  modifiedTime: 1772826442350
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733097139
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: tGXr5JYI1s4TuUWz
 _key: '!items!tGXr5JYI1s4TuUWz'

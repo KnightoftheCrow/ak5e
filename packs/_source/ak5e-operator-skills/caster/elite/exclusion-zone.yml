@@ -169,28 +169,35 @@ system:
 effects:
   - name: Desolate Echo (Skill Points)
     img: modules/ak5e/icons/Skill-Lin2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.fSBmayS08q0k3xqB
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '65'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 20OV6pegSVfMeZSG
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: yai8AuJh6Sara7bi
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.fSBmayS08q0k3xqB
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -215,10 +222,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095436
+      modifiedTime: 1791733095436
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fSBmayS08q0k3xqB.DXFUOiWQeWl6gGq8'
 sort: 100000
 ownership:
@@ -233,11 +245,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.g9z5A33XTn2xMwZL
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774023683571
-  modifiedTime: 1774023683571
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733095436
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: fSBmayS08q0k3xqB
 _key: '!items!fSBmayS08q0k3xqB'

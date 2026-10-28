@@ -175,21 +175,21 @@ system:
 effects:
   - name: Ennervating Bloodmist
     img: icons/skills/wounds/blood-cells-red.webp
-    origin: Item.GTPAiH8WFLAjAU58
+    origin: null
     transfer: false
     _id: j1tJEy8dt4h8r3R5
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.GTPAiH8WFLAjAU58
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: <p>This Creature can only make one Attack during their next Turn.</p>
     tint: '#ffffff'
     statuses: []
@@ -217,10 +217,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108208
+      modifiedTime: 1791733108208
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!GTPAiH8WFLAjAU58.j1tJEy8dt4h8r3R5'
 flags:
   dnd5e:
@@ -231,12 +236,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108208
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

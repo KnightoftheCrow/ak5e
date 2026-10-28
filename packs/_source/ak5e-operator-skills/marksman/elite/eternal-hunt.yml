@@ -153,28 +153,35 @@ system:
 effects:
   - name: Eternal Hunt (Skill Points)
     img: modules/ak5e/icons/64px-Skill-Typhon3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.lbrLzUNn1GgbrIi3
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '65'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: CcMetqonGCojhLPv
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 4Uj81xbAHETWhxph
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.lbrLzUNn1GgbrIi3
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,35 +205,42 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: GiT7LQTiCJxjm7mo
-      modifiedTime: 1768652694284
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1791733096156
+      createdTime: 1791733096156
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!lbrLzUNn1GgbrIi3.DXFUOiWQeWl6gGq8'
   - name: Eternal Hunt
     img: modules/ak5e/icons/64px-Skill-Typhon3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.lbrLzUNn1GgbrIi3
+    origin: null
     transfer: false
     _id: GRxWtDVT4Mm5H5EP
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.damage.bonus
-        mode: 2
-        value: |-
-          bonus=effectOriginActor.level; hasAttack && 
-          (effectOriginTokenId === tokenId)
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          value: |-
+            bonus=effectOriginActor.level; hasAttack && 
+            (effectOriginTokenId === tokenId)
+          priority: 20
+          type: add
+          phase: initial
+          _id: 3inPJPENR5UlB2eb
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.lbrLzUNn1GgbrIi3
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 2
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 2
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -253,12 +267,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768651614607
-      modifiedTime: 1768652687712
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      modifiedTime: 1791733096156
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!lbrLzUNn1GgbrIi3.GRxWtDVT4Mm5H5EP'
 flags:
   dnd5e:
@@ -268,12 +285,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768157894418
-  modifiedTime: 1768651678169
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1791733096156
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   GiT7LQTiCJxjm7mo: 3

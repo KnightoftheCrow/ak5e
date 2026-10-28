@@ -1,0 +1,122 @@
+folder: Pji4wTRYaJMHjby6
+name: Kingslayer (Module)
+type: feat
+img: modules/ak5e/icons/Skill-TheBreacher3.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module:</strong> Your Attacks against Elite or Leader Creatures
+      deal an additional 1d8 Force Damage.</p><hr><p><strong>Automated:
+      </strong>This Feature looks for the Elite Creature or Leader Creature item
+      found in the Bestiary on the Creature rolling Damage. If it is not there,
+      this Feature will not work.</p>
+    chat: ''
+  identifier: kingslayer
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - Compendium.ak5e.ak5e-talents.Item.mlANfWU9dVkEcDSi
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Additional Force Damage to Elites/Leaders
+    img: modules/ak5e/icons/Skill-TheBreacher3.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.zLa2fhfbUaVvKwWx
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1d8[force]; name=1d8 Force Damage from Kingslayer;
+            description=Bonus Damage to Elites/Leaders; hasAttack &&
+            hasItem(opponentActor.tokenId, 'elite-creature') || hasAttack &&
+            hasItem(opponentActor.tokenId, 'leader-creature')
+          phase: initial
+          _id: bUlPwPOz2ftjtxAN
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: obznPwzbaTBS5gbU
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.zLa2fhfbUaVvKwWx
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841864
+      modifiedTime: 1793197841864
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!zLa2fhfbUaVvKwWx.obznPwzbaTBS5gbU'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841864
+  modifiedTime: 1793197841943
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: zLa2fhfbUaVvKwWx
+sort: 0
+_key: '!items!zLa2fhfbUaVvKwWx'

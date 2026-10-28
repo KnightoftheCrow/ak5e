@@ -239,27 +239,31 @@ system:
 effects:
   - name: Sanguine Surge Damage
     img: icons/skills/wounds/blood-cells-vessel-red.webp
-    origin: Item.Jbp0NNe47cCiOmD9
+    origin: null
     transfer: false
     _id: TYh7FwN7zcoCjLNs
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.OverTime
-        mode: 5
-        value: |-
-          turn=end,
-          damageRoll=2d8
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          value: |-
+            turn=end,
+            damageRoll=2d8
+          priority: 20
+          type: override
+          phase: initial
+          _id: yrmVBuqc4FundeUm
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.Jbp0NNe47cCiOmD9
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -287,28 +291,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108392
+      modifiedTime: 1791733108392
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Jbp0NNe47cCiOmD9.TYh7FwN7zcoCjLNs'
   - name: Sanguine Surge
     img: icons/skills/wounds/blood-cells-vessel-red.webp
-    origin: Item.Jbp0NNe47cCiOmD9
+    origin: null
     transfer: false
     _id: QkfiMOBEQOtJl7ov
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.Jbp0NNe47cCiOmD9
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: >-
       <p>This Creature can take the Dash Action as a Bonus Action, and if they
       take the Attack Action, they can make an additional Attack as part of that
@@ -339,10 +348,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108393
+      modifiedTime: 1791733108393
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Jbp0NNe47cCiOmD9.QkfiMOBEQOtJl7ov'
 flags:
   dnd5e:
@@ -353,12 +367,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108392
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

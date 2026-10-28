@@ -153,28 +153,35 @@ system:
 effects:
   - name: Touch the Heavens (Skill Points)
     img: modules/ak5e/icons/Skill-Lin1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.W9Yq50EDKKwN8jf3
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '50'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: BKdfdyD7zyKhkZAc
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 50
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: QfZhtpGVqkKQ03nr
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.W9Yq50EDKKwN8jf3
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -199,36 +206,48 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733094273
+      modifiedTime: 1791733094273
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!W9Yq50EDKKwN8jf3.DXFUOiWQeWl6gGq8'
   - name: Radius/Range for Arts Up
     img: modules/ak5e/icons/Skill-Lin1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.W9Yq50EDKKwN8jf3
+    origin: null
     transfer: false
     _id: 88h9qWQxBNdTtCW7
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.range.rsak
-        mode: 2
-        value: '*10'
-        priority: 20
-      - key: flags.midi-qol.range.save
-        mode: 2
-        value: '*10'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.range.rsak
+          value: '*10'
+          priority: 20
+          type: add
+          phase: initial
+          _id: 6oVpyjuQ14guW9GU
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.range.save
+          value: '*10'
+          priority: 20
+          type: add
+          phase: initial
+          _id: ZWan7ITOOZ0Ut0Kx
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.W9Yq50EDKKwN8jf3
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -256,10 +275,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733094273
+      modifiedTime: 1791733094273
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!W9Yq50EDKKwN8jf3.88h9qWQxBNdTtCW7'
 sort: 100000
 ownership:
@@ -274,11 +298,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.nFvpXqALzLBodCha
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774023683571
-  modifiedTime: 1774023683571
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733094272
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: W9Yq50EDKKwN8jf3
 _key: '!items!W9Yq50EDKKwN8jf3'

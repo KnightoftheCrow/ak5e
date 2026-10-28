@@ -267,28 +267,35 @@ system:
 effects:
   - name: Meandering Stars (Skill Points)
     img: modules/ak5e/icons/Skill-Hoolheyak2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.Zw552DHeEw6xhm2Z
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: paHB12JV1f7JfXFj
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 7ySajwSlGMQ3iwpO
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.Zw552DHeEw6xhm2Z
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -313,10 +320,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733094841
+      modifiedTime: 1791733094841
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Zw552DHeEw6xhm2Z.flx7lohMTgQh5EDM'
 sort: 500000
 ownership:
@@ -330,11 +342,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.2GR73NXw0cPatZ9s
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772986852717
-  modifiedTime: 1773572162125
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733094841
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: Zw552DHeEw6xhm2Z
 _key: '!items!Zw552DHeEw6xhm2Z'

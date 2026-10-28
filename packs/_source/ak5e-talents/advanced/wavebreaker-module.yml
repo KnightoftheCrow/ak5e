@@ -1,0 +1,117 @@
+folder: Pji4wTRYaJMHjby6
+name: Wavebreaker (Module)
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_dorothy_3.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> If there are three or more hostile
+      Creatures within 15 feet of you, those Creatures have Disadvantage on
+      Attack Rolls against you.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: wavebreaker-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - wavebreaker
+    repeatable: false
+    level: 13
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Surrounding Creatures have Disadvantage
+    img: modules/ak5e/icons/skill_icon_skchr_dorothy_3.png
+    system:
+      magical: false
+      origin:
+        item: Item.Oxg7r94M5c6ABDW6
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.aura.attack.disadvantage
+          type: ac5e
+          value: >-
+            radius=15; enemies; checkNearby(opponentActor.tokenId, 'different',
+            15, {count: 3})
+          phase: initial
+          _id: UP3rQf5Prring3LY
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: Q05dhNto4BmvXNll
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Item.Oxg7r94M5c6ABDW6
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841895
+      modifiedTime: 1793197841895
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!nsyjxRA9QqHn2DQ0.Q05dhNto4BmvXNll'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841895
+  modifiedTime: 1793197841957
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: nsyjxRA9QqHn2DQ0
+sort: 0
+_key: '!items!nsyjxRA9QqHn2DQ0'

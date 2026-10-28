@@ -1,0 +1,319 @@
+folder: Pji4wTRYaJMHjby6
+name: White Queen's Protection
+type: feat
+_id: vzGaiIdI2Xy14yDS
+img: modules/ak5e/icons/Skill-Vetochki1.webp
+system:
+  activities:
+    HGoTLRTzS74iForv:
+      type: utility
+      name: Apply Protection
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects:
+        - _id: x6AV0hTuqfJvFr3t
+          level: {}
+          uuid: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        max: ''
+        spent: 0
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: HGoTLRTzS74iForv
+      behaviors: []
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>When you restore 10 or more Hit Points to a Creature in a single Turn,
+      that Creature gains Resistance against Arts Damage. This Resistance is
+      lost after they take Arts Damage, or at the end of their next
+      Turn.</p><p><strong>Module Effect: </strong>The Damage Reduction is no
+      longer lost after they take Arts Damage.</p><hr><p><strong>Semi-Automated:
+      </strong>You must manually trigger the activity on this item, but the
+      resistance is automatic. However, the effect will be removed when the
+      Creature takes ANY damage, not just Arts Damage. Use the module version if
+      you have it.</p>
+    chat: ''
+  identifier: white-queens-protection
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Arts Resistance against next Arts Damage
+    img: modules/ak5e/icons/Skill-Vetochki1.webp
+    origin: null
+    type: base
+    _id: x6AV0hTuqfJvFr3t
+    system:
+      changes:
+        - key: system.traits.dr.value
+          type: add
+          value: acid
+          phase: final
+          priority: null
+          _id: 9VZdobbCtkXEOxD8
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          type: add
+          value: cold
+          phase: final
+          priority: null
+          _id: KaxhXQqQXbBq7xaJ
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          type: add
+          value: fire
+          phase: final
+          priority: null
+          _id: fVZvXE9DQTKnHpie
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          type: add
+          value: force
+          phase: final
+          priority: null
+          _id: Q3ID6iAUNdCZEkyx
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          type: add
+          value: lightning
+          phase: final
+          priority: null
+          _id: Hubw3w1VvgjII7fu
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          type: add
+          value: necrotic
+          phase: final
+          priority: null
+          _id: pxARJM5DOq5aPfKI
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          type: add
+          value: poison
+          phase: final
+          priority: null
+          _id: qJla8LLUCQbJFmKN
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          type: add
+          value: psychic
+          phase: final
+          priority: null
+          _id: ahNe3fepdC9iWSXY
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dr.value
+          type: add
+          value: radiant
+          phase: final
+          priority: null
+          _id: 46UOJOfcxIaBr6W9
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.rYQkt7Dri15FJVrW
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: targetEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration:
+          - isDamaged
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841897
+      modifiedTime: 1793197841897
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!vzGaiIdI2Xy14yDS.x6AV0hTuqfJvFr3t'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841897
+  modifiedTime: 1793197841958
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!vzGaiIdI2Xy14yDS'

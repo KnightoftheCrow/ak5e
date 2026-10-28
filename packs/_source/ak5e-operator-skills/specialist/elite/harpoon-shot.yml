@@ -153,28 +153,35 @@ system:
 effects:
   - name: Harpoon Shot (Skill Points)
     img: modules/ak5e/icons/64px-Skill-A3.webp
-    origin: Item.TaJkDQEbdeYdRUsF
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '65'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: xSwzsWyAbrdPgZWD
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: mm7GVrMxdc0Bh31m
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.TaJkDQEbdeYdRUsF
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,10 +205,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095629
+      modifiedTime: 1791733095629
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!hUVUp1RmchlTMY8I.DXFUOiWQeWl6gGq8'
 flags:
   dnd5e:
@@ -211,12 +223,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356677452
-  modifiedTime: 1783356677473
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733095629
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

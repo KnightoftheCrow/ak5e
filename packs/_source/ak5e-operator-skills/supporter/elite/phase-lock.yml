@@ -1,7 +1,7 @@
 folder: sklYDFVtnHmCnTNA
 name: Phase Lock
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-Mostima2.webp
+img: modules/ak5e/icons/Skill-Mostima2.webp
 system:
   activities:
     dS5B6AEmITVE9wR2:
@@ -150,29 +150,36 @@ system:
     subtype: opSkill
 effects:
   - name: Phase Lock (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/Skill-Mostima2.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.8ZQj2sGAjG3I0Z0W
+    img: modules/ak5e/icons/Skill-Mostima2.webp
+    origin: null
     _id: xj0l6P6SUHJbt97c
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '65'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 7MfZGH6ZVDMekFq6
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 65
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: rhXeXYmDEAnNznyW
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.8ZQj2sGAjG3I0Z0W
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,10 +205,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733090947
+      modifiedTime: 1791733090947
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!8ZQj2sGAjG3I0Z0W.xj0l6P6SUHJbt97c'
 flags:
   dnd5e:
@@ -211,12 +223,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733090947
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

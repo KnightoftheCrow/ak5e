@@ -16,8 +16,7 @@ function addTabs() {
 Hooks.once("init", () => { 
   
 	// Add ak5e item properties and push to validProperties so they're available on item sheets
-	const ak5eItemProps = {
-    	bnd: "ak5e.weaponProperties.weaponPropBound",
+	const ak5eWeaponProps = {
     	brc: "ak5e.weaponProperties.weaponPropBrace",
     	cst: "ak5e.weaponProperties.weaponPropCasting",
     	cnd: "ak5e.weaponProperties.weaponPropConductive",
@@ -26,13 +25,23 @@ Hooks.once("init", () => {
     	frm: "ak5e.weaponProperties.weaponPropFirearm",
     	crs: "ak5e.weaponProperties.weaponPropCrush",
     	rpd: "ak5e.weaponProperties.weaponPropRapidFire",
+		rel: "ak5e.weaponProperties.weaponPropReliable",
 		spl: "ak5e.weaponProperties.weaponPropSplash",
 		spd: "ak5e.weaponProperties.weaponPropSpread",
     };
   
-	for (const [k, v] of Object.entries(ak5eItemProps)) {
+	for (const [k, v] of Object.entries(ak5eWeaponProps)) {
     	CONFIG.DND5E.itemProperties[k] = { label: v };
     	CONFIG.DND5E.validProperties.weapon.add(k);
+    };
+	
+	const ak5eItemProps = {
+		bas: "ak5e.itemProperties.itemPropBastion",
+	};
+	
+	for (const [k, v] of Object.entries(ak5eItemProps)) {
+    	CONFIG.DND5E.itemProperties[k] = { label: v };
+		CONFIG.DND5E.validProperties.equipment.add(k);
     };
   
 	// Removes the default Firearm Property so there's no overlap for possible automation

@@ -1,0 +1,118 @@
+folder: Pji4wTRYaJMHjby6
+name: Alpha Strike (Module)
+type: feat
+_id: nVKgjZtuhdkTSbRx
+img: modules/ak5e/icons/Skill-Lappland2.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module:</strong> The additional Damage becomes
+      2d12.</p><hr><p><strong>Semi-Automated: </strong>There is a Opt-In
+      Component when rolling Damage; use it when Alpha Strike is applicable.</p>
+    chat: ''
+  identifier: alpha-strike-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - alpha-strike
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Alpha Strike (Module)
+    img: modules/ak5e/icons/Skill-Lappland2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.nVKgjZtuhdkTSbRx
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.scale.alpha-strike.alpha-strike-damage.number
+          type: override
+          value: 2
+          phase: initial
+          _id: CDDTl1GUP9LYrwQd
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 7xeI6OHZM3yWIfFD
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.nVKgjZtuhdkTSbRx
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841816
+      modifiedTime: 1793197841816
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!nVKgjZtuhdkTSbRx.7xeI6OHZM3yWIfFD'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841816
+  modifiedTime: 1793197841925
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!nVKgjZtuhdkTSbRx'

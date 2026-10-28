@@ -1,0 +1,118 @@
+folder: Pji4wTRYaJMHjby6
+name: Part-Time Inventor (Module) (WIP)
+type: feat
+img: modules/ak5e/icons/Skill-TacticalEquipmentToolbox.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> Your maximum number of Inventions
+      becomes 2.</p><hr><p><strong>Not Automated; </strong>This Feature is still
+      under construction.</p>
+    chat: ''
+  identifier: part-time-inventor-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - part-time-inventor
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Part-Time Inventor (Module)
+    img: modules/ak5e/icons/Skill-TacticalEquipmentToolbox.png
+    origin: null
+    _id: JX2jU1CEK8woPShl
+    type: base
+    system:
+      changes:
+        - key: system.scale.part-time-inventor.invent
+          value: 2
+          priority: 20
+          type: override
+          phase: initial
+          _id: RsNphsYm5TN4q4Mi
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.0LP7L7E759fW1ZFm
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841875
+      modifiedTime: 1793197841875
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!ggrnU4X0gWREkCIu.JX2jU1CEK8woPShl'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841875
+  modifiedTime: 1793197841948
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: ggrnU4X0gWREkCIu
+sort: 0
+_key: '!items!ggrnU4X0gWREkCIu'

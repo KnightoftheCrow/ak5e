@@ -1,0 +1,120 @@
+folder: Pji4wTRYaJMHjby6
+name: Curtain Call
+type: feat
+img: modules/ak5e/icons/Skill-Executor1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>After you deal Damage to a Creature when it is not your Turn, the
+      Critical Range of your Attacks against that Creature is increased by 1
+      until the end of your next Turn.</p><p><strong>Module Effect:</strong>
+      Your Critical Range against those Creatures is increased by 2
+      instead.</p><hr><p><strong>Semi-Automated: </strong>You have an Opt-In
+      Available when you make an Attack Roll. Use it when Appropriate.</p>
+    chat: ''
+  identifier: curtain-call
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +1 Crit Range against Creatures Damaged outside of Turn
+    img: modules/ak5e/icons/Skill-Executor1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.IdoZPy1GE7eCcwlr
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          type: ac5e
+          value: >-
+            threshold=-1; name=Curtain Call Crit Range Increase;
+            optinId=curtain-call; optin; hasAttack
+          phase: initial
+          _id: MSxSeiV3YRUugRR3
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: NpU93ELOTUvbyZk7
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.IdoZPy1GE7eCcwlr
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841829
+      modifiedTime: 1793197841829
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!IdoZPy1GE7eCcwlr.NpU93ELOTUvbyZk7'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841829
+  modifiedTime: 1793197841930
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: IdoZPy1GE7eCcwlr
+sort: 0
+_key: '!items!IdoZPy1GE7eCcwlr'

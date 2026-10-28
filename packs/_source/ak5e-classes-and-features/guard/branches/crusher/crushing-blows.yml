@@ -1,0 +1,352 @@
+folder: zd7kgy3RQcqcKJ9x
+name: Crushing Blows
+type: feat
+img: modules/ak5e/icons/Skill-Hoederer2.webp
+system:
+  activities:
+    FZTyTS6NxN5M4oFY:
+      type: damage
+      name: Death's Passing
+      _id: FZTyTS6NxN5M4oFY
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@prof*2'
+            number: null
+            denomination: null
+            bonus: ''
+            types:
+              - thunder
+            scaling:
+              number: 1
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>Crushers place their all into each attack; weight, strength, and soul.
+      You gain the following benefits:</p><ul><li><p><strong>Death’s
+      Passing.</strong> When you make a Melee Attack with a Heavy Melee Weapon
+      as part of the Attack Action and miss, the Creature you attacked takes
+      Thunder Damage equal to twice your Proficiency
+      Bonus.</p></li><li><p><strong>Heavy Metal.</strong> The Damage of Heavy
+      Melee Weapons being wielded by you is increased by 1
+      die.</p></li><li><p><strong>Singular Strike.</strong> When you take the
+      Attack Action, you can only make one Attack as part of that Action, even
+      if you would normally be able to make more. If the Attack you make is a
+      Melee Attack, for each additional Attack you would otherwise have been
+      able to make, that Attack’s Damage is increased by the
+      following:</p><ul><li><p>The weapon’s Damage</p></li><li><p>Your Strength
+      Modifier</p></li><li><p>Bonus Damage from the weapon being a +1/+2/+3
+      weapon.</p></li></ul></li></ul><blockquote><p><strong>Example: Singular
+      Strike</strong></p><p>You take the Attack Action using a Greatsword (2d6)
+      and a Strength Modifier of 5. Because of your Heavy Metal Feature, the
+      Damage of the Greatsword becomes 3d6.</p><p>If you would be capable of
+      making one Attacks, the Damage of this Attack is 3d6+5.</p><p>If you would
+      be capable of making two Attacks, the Damage of this Attack is
+      6d6+10.</p><p>If you would be capable of making three Attacks, the Damage
+      of this Attack is 9d6+15.</p><p>If you would be capable of making four
+      Attacks, the Damage of this Attack is
+      12d6+20.</p></blockquote><hr><p><strong>Semi-Automated: </strong>Death's
+      Passing must be manually triggered. When you hit with an Attack, choose
+      the correct option for Singular Strike based on how many Attacks you could
+      have made.</p>
+    chat: ''
+  identifier: crushing-blows
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: +1 Die of Damage for Heavy Melee
+    img: modules/ak5e/icons/Skill-Hoederer2.webp
+    origin: null
+    type: base
+    _id: KLJNQmtku7FVICam
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.extraDice
+          type: ac5e
+          value: bonus=1; addTo=base; item.type.label === 'Heavy Melee'
+          phase: initial
+          priority: null
+          _id: Zzrr0bGNXhb11HBV
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.OOIg4ZWMZpMd8RwQ
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791633877835
+      modifiedTime: 1791733086118
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!OOIg4ZWMZpMd8RwQ.KLJNQmtku7FVICam'
+  - name: Singular Strike
+    img: modules/ak5e/icons/Skill-Hoederer2.webp
+    origin: null
+    type: base
+    _id: lD9FLQuIz1wBga0i
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: >-
+            modifier=*2; name=Singular Strike (2 Attacks);
+            optinId=singular-strike-1; description=Bonus Damage for converting 2
+            Attacks.; addTo=all; optin; actionType.mwak
+          phase: initial
+          priority: null
+          _id: KdeO8zf9StQ6aw6A
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: >-
+            modifier=*3; name=Singular Strike (3 Attacks);
+            optinId=singular-strike-2; description=Bonus Damage for converting 3
+            Attacks.; addTo=all; optin; actionType.mwak
+          phase: initial
+          priority: null
+          _id: XohjDgTTCaLm3RuL
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: >-
+            modifier=*4; name=Singular Strike (4 Attacks);
+            optinId=singular-strike-3; description=Bonus Damage for converting 4
+            Attacks.; addTo=all; optin; actionType.mwak
+          phase: initial
+          priority: null
+          _id: o6TSIAO89YJ3j784
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.OOIg4ZWMZpMd8RwQ
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791634173984
+      modifiedTime: 1791733086118
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!OOIg4ZWMZpMd8RwQ.lD9FLQuIz1wBga0i'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.vYR8YSX2eRLDtMcD
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791633463134
+  modifiedTime: 1791733086118
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: OOIg4ZWMZpMd8RwQ
+sort: 200000
+_key: '!items!OOIg4ZWMZpMd8RwQ'

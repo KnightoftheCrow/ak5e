@@ -1,0 +1,123 @@
+folder: pK9UlZztTzku2Tvf
+name: Booster Shot (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Matterhorn1.webp
+system:
+  activities: {}
+  uses:
+    recovery:
+      - period: initiative
+        type: recoverAll
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect: </strong>You may choose two Creatures instead of
+      one.</p><hr><p><strong>Automated: </strong>When you roll initiative, you
+      will be prompted to heal One Creature. If you have the Module, the number
+      of targets is increased to 2.</p>
+    chat: ''
+  identifier: booster-shot-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - booster-shot
+    repeatable: false
+    level: 8
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Booster Shot (Module)
+    img: modules/ak5e/icons/Skill-Matterhorn1.webp
+    origin: null
+    type: base
+    _id: A0BMmzDUe0WfshWA
+    system:
+      changes:
+        - key: system.scale.booster-shot.targets
+          type: override
+          value: 2
+          phase: initial
+          priority: null
+          _id: jNu5egwBCyoTOuM8
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.BRzgBf9jnXZCdLWT
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841760
+      modifiedTime: 1793197841760
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!BRzgBf9jnXZCdLWT.A0BMmzDUe0WfshWA'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841760
+  modifiedTime: 1793197841901
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: BRzgBf9jnXZCdLWT
+sort: 0
+_key: '!items!BRzgBf9jnXZCdLWT'

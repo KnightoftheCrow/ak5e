@@ -35,6 +35,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: creature
@@ -67,6 +68,8 @@ system:
             bonus: ''
             types:
               - thunder
+            scaling:
+              number: 1
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -107,18 +110,41 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Aftershock
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>The arrival of your Bound Weapon is almost asdangerous as their
@@ -150,15 +176,14 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1767823844049
-  modifiedTime: 1767985949117
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  systemVersion: 5.3.3
+  createdTime: 1791203553257
+  modifiedTime: 1791203553257
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
-  GiT7LQTiCJxjm7mo: 3
 _id: rBmcICYoHRezTg9j
 sort: 140625
 _key: '!items!rBmcICYoHRezTg9j'

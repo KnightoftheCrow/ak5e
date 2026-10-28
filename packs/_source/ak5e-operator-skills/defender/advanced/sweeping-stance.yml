@@ -155,28 +155,35 @@ system:
 effects:
   - name: Sweeping Stance (Skill Points)
     img: modules/ak5e/icons/Skill-WindChimes2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.R3iMInQKCYTIkC5D
+    origin: null
     type: base
     _id: oVJwJcZSRmqInCGq
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 2
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 2
-        value: '35'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: add
+          phase: initial
+          _id: 1iyxu1pxc1jXRJVE
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 35
+          priority: 20
+          type: add
+          phase: initial
+          _id: d89LWXF3QVj7rXxI
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.R3iMInQKCYTIkC5D
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -202,10 +209,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093533
+      modifiedTime: 1791733093533
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!PntiDz1MKXWcv2UT.oVJwJcZSRmqInCGq'
 flags:
   dnd5e:
@@ -215,12 +227,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356563618
-  modifiedTime: 1783356563635
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733093533
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

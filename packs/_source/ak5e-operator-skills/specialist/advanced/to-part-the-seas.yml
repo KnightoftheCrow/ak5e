@@ -153,28 +153,35 @@ system:
 effects:
   - name: To Part The Seas (Skill Points)
     img: systems/dnd5e/icons/svg/items/feature.svg
-    origin: Item.LhixnIP0Xs1lqtPA
+    origin: null
     type: base
     _id: Yks4jfbRoXDhFxcr
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: t3oF545fgxiMNaEA
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: H4DcSXQHzEpQW8x3
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.LhixnIP0Xs1lqtPA
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -200,10 +207,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097834
+      modifiedTime: 1791733097834
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!xwHmYWeUtqCFkDtH.Yks4jfbRoXDhFxcr'
 flags:
   dnd5e:
@@ -213,12 +225,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356644500
-  modifiedTime: 1783356644518
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733097833
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

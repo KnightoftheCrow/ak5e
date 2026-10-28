@@ -1,0 +1,463 @@
+folder: RxaNtXjbuEVddvc9
+name: Art of War
+type: feat
+img: modules/ak5e/icons/Skill-Bibeak2.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement:
+    8fo6woAQriBjUdOA:
+      name: ''
+      type: Trait
+      _id: 8fo6woAQriBjUdOA
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - weapon:ltm
+          - weapon:hvm
+          - weapon:ltr
+          - weapon:hvr
+        mode: default
+      flags: {}
+      level: 0
+      hint: ''
+  description:
+    value: >-
+      <p>In your hands, all but the heaviest weapons flow like wind, and cut
+      like water. You gain the following
+      benefits:</p><ul><li><p><strong>Additional Fighting Styles.</strong> You
+      gain a Fighting Style available to the Guard or Marksman Class. Whenever
+      you complete a Long Rest, you may exchange this Fighting Style for a
+      different one.</p></li><li><p><strong>Additional Weapon
+      Proficiencies.</strong> You are Proficient in all Light Ranged and Heavy
+      Ranged Weapons.</p></li><li><p><strong>Martial Mastery.</strong> Your
+      Proficiency with all kinds of weapons provides you with a versatility in
+      their use unavailable to the layman. Weapons that you are wielding, and
+      are Proficient with, gain additional benefits according to the Martial
+      Mastery Table.</p></li></ul><h3>Martial
+      Mastery</h3><table><thead><tr><td><p><strong>Mastery
+      Property</strong></p></td><td><p><strong>Affected
+      Weapons</strong></p></td><td><p><strong>Additional
+      Effect</strong></p></td></tr></thead><tbody><tr><td><p>Can
+      Opener</p></td><td><p>Crossbow, Hammer, Heavy Crossbow, Heavy Hammer,
+      Rifle</p></td><td><p>Once per Turn, when you hit a Creature that has
+      Physical DR, that Attack deals an additional 1d8
+      Damage.</p></td></tr><tr><td><p>Cornering</p></td><td><p>Bow, Greatbow,
+      Machine Gun, Nailgun</p></td><td><p>When you hit a Creature, that
+      Creature’s Speed is reduced by 10 feet until the end of their next Turn;
+      this effect is not
+      cumulative.</p></td></tr><tr><td><p>Drive</p></td><td><p>Spear, Polearm,
+      Whip</p></td><td><p>When you hit a Creature, you can force that Creature
+      to move to up to 15 feet in a direction of your choice. A Creature can
+      only be moved in this way once per
+      Turn.</p></td></tr><tr><td><p>Executioner</p></td><td><p>Knife,
+      Shotgun</p></td><td><p>Once per Turn, when you hit a Creature that has the
+      Incapacitated or Prone Condition, that Attack deals an additional 2d8
+      Damage.</p></td></tr><tr><td><p>Flourish</p></td><td><p>Sword, Greatsword,
+      Heavy Throwing Disc, Throwing Disc</p></td><td><p>Once per Turn, when you
+      make an Attack with this Weapon and miss, you may roll 1d8 and add the
+      total to your result, potentially turning that miss into
+      hit.</p></td></tr><tr><td><p>Lethality</p><p></p><p></p></td><td><p>Axe,
+      Greataxe, Hand Crossbow, Handgun</p></td><td><p>Once per Turn, when you
+      hit a Creature that does not have any Physical DR, that attack deals an
+      additional 1d8
+      Damage.</p></td></tr></tbody></table><hr><p><strong>Semi-Automated:
+      </strong>All Mastery Properties except Drive have Opt-In options
+      available; these do not check for the correct weapon being used, so use
+      them as appropriate. All Proficiencies are gained automatically; you must
+      manually handle the changing of Fighting Styles.</p>
+    chat: >-
+      <p>In your hands, all but the heaviest weapons flow like wind, and cut
+      like water. You gain the following
+      benefits:</p><ul><li><p><strong>Additional Fighting Styles.</strong> You
+      gain a Fighting Style available to the Guard or Marksman Class. Whenever
+      you complete a Long Rest, you may exchange this Fighting Style for a
+      different one.</p></li><li><p><strong>Additional Weapon
+      Proficiencies.</strong> You are Proficient in all Light Ranged and Heavy
+      Ranged Weapons.</p></li><li><p><strong>Martial Mastery.</strong> Your
+      Proficiency with all kinds of weapons provides you with a versatility in
+      their use unavailable to the layman. Weapons that you are wielding, and
+      are Proficient with, gain additional benefits according to the Martial
+      Mastery Table.</p></li></ul><hr><p><strong>Semi-Automated: </strong>All
+      Mastery Properties except Drive have Opt-In options available; these do
+      not check for the correct weapon being used, so use them as appropriate.
+      All Proficiencies are gained automatically; you must manually handle the
+      changing of Fighting Styles.</p>
+  identifier: art-of-war
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Can Opener
+    img: modules/ak5e/icons/Skill-Bibeak2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VA5CyKeRGFp4sibs
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1d8; name=Bonus Damage from Can Opener; optinId=can-opener-0;
+            description=Bonus Damage against targets with Physical DR;
+            oncePerTurn; optin; hasAttack
+          phase: initial
+          _id: oqSNago1U19TTnf0
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: IszBhzCnUgyN46mL
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.VA5CyKeRGFp4sibs
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792238326115
+      modifiedTime: 1792238941686
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VA5CyKeRGFp4sibs.IszBhzCnUgyN46mL'
+  - name: Cornering
+    img: modules/ak5e/icons/Skill-Bibeak2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VA5CyKeRGFp4sibs
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            update=opponentActor.attributes.movement.walk, -10; name=Cornering;
+            optinId=-10ft-speed-0; description=-10ft Speed from Cornering;
+            optin; hasAttack
+          phase: initial
+          _id: 5PQBMIi7sbPiaebG
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: cWZ0p2iELVFrpQQT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792238709346
+      modifiedTime: 1792239171218
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VA5CyKeRGFp4sibs.cWZ0p2iELVFrpQQT'
+  - name: Executioner
+    img: modules/ak5e/icons/Skill-Bibeak2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VA5CyKeRGFp4sibs
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=2d8; name=Executioner; optinId=executioner-0;
+            description=Additional Damage against Prone or Incapacitated
+            Creatures; oncePerTurn; optin; opponentActor.statuses.incapacitated
+            || opponentActor.statuses.prone
+          phase: initial
+          _id: m4My6Vrt1owcjqjz
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: oF54b0DpxKmwPreu
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.VA5CyKeRGFp4sibs
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792238745778
+      modifiedTime: 1792238947152
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VA5CyKeRGFp4sibs.oF54b0DpxKmwPreu'
+  - name: Lethality
+    img: modules/ak5e/icons/Skill-Bibeak2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VA5CyKeRGFp4sibs
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1d8; name=Bonus Damage from Lethality; optinId=can-opener-0;
+            description=Bonus Damage against targets without Physical DR;
+            oncePerTurn; optin; hasAttack
+          phase: initial
+          _id: oqSNago1U19TTnf0
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.VA5CyKeRGFp4sibs
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792238906783
+      modifiedTime: 1792238954154
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: edhNqv9H49Nq2B4s
+    _key: '!items.effects!VA5CyKeRGFp4sibs.edhNqv9H49Nq2B4s'
+  - name: Flourish
+    img: modules/ak5e/icons/Skill-Bibeak2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VA5CyKeRGFp4sibs
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: >-
+            bonus=1d8; name=Flourish; optinId=flourish-0; description=+1d8 to
+            hit from Flourish; oncePerTurn; optin; hasAttack
+          phase: initial
+          _id: kvwAvwbasCqyZO6G
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: nYT7OVe1BBH5sEmU
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.VA5CyKeRGFp4sibs
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792239235429
+      modifiedTime: 1792239282400
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VA5CyKeRGFp4sibs.nYT7OVe1BBH5sEmU'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.F9Mj9AwmkGnpkPK3
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792237918800
+  modifiedTime: 1792239433269
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: VA5CyKeRGFp4sibs
+sort: 0
+_key: '!items!VA5CyKeRGFp4sibs'

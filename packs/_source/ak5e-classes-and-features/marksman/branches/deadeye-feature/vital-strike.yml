@@ -10,7 +10,8 @@ system:
     recovery: []
     max: ''
   advancement:
-    - type: ScaleValue
+    nq3RBxCeFO5Otw6v:
+      type: ScaleValue
       _id: nq3RBxCeFO5Otw6v
       configuration:
         identifier: ''
@@ -33,6 +34,7 @@ system:
       value: {}
       title: Damage
       hint: ''
+      flags: {}
   description:
     value: >-
       <p>As an Action, while you are in Deadshot State, you make a Ranged Attack
@@ -62,26 +64,29 @@ system:
 effects:
   - name: Vital Strike
     img: modules/ak5e/icons/Skill-Morgan2.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.yBYmY2sbmNQS71ul
+    origin: null
     _id: D8YtBtludqkodTlu
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 0
-        value: >-
-          bonus=@scale.vital-strike.damage[piercing]; rwak; optin; name=Vital
-          Strike; rollingActor.items.some(item => item.name === 'Deadshot')
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=@scale.vital-strike.damage[piercing]; rwak; optin; name=Vital
+            Strike; rollingActor.items.some(item => item.name === 'Deadshot')
+          priority: 20
+          type: custom
+          phase: initial
+          _id: suVIMWxSOZnWr9s5
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.yBYmY2sbmNQS71ul
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -105,29 +110,29 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1781191948907
-      modifiedTime: 1781192232935
+      systemVersion: 6.0.6
+      createdTime: 1791203553317
+      modifiedTime: 1791733088732
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!yBYmY2sbmNQS71ul.D8YtBtludqkodTlu'
 sort: 106250
 ownership:
   default: 0
-  GiT7LQTiCJxjm7mo: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1767621308346
-  modifiedTime: 1781192242286
+  systemVersion: 5.3.3
+  createdTime: 1791203553317
+  modifiedTime: 1791733088732
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!yBYmY2sbmNQS71ul'

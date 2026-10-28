@@ -144,28 +144,35 @@ system:
 effects:
   - name: Artseeker (Skill Points)
     img: modules/ak5e/icons/Skill-Dusk2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.AIIVaJaXS7tNwLQi
+    origin: null
     _id: sMFqYDGDR01l629E
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '10'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: wkKuoWlabwIg6P71
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: dO7P3BgF609xv9oz
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.AIIVaJaXS7tNwLQi
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -190,36 +197,48 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091198
+      modifiedTime: 1791733091198
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!AIIVaJaXS7tNwLQi.sMFqYDGDR01l629E'
   - name: Artseeker
     img: modules/ak5e/icons/Skill-Dusk2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.AIIVaJaXS7tNwLQi
+    origin: null
     transfer: false
     _id: inqIljzaXYZuGAwA
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.sharpShooter
-        mode: 5
-        value: actionType.rsak
-        priority: 20
-      - key: flags.midi-qol.advantage.attack.rsak
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.sharpShooter
+          value: actionType.rsak
+          priority: 20
+          type: override
+          phase: initial
+          _id: ENIXyZna3ZHPUqni
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.advantage.attack.rsak
+          value: true
+          priority: 20
+          type: override
+          phase: initial
+          _id: VGoSefOUdbWK5IRc
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.AIIVaJaXS7tNwLQi
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -246,10 +265,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091198
+      modifiedTime: 1791733091198
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!AIIVaJaXS7tNwLQi.inqIljzaXYZuGAwA'
 sort: 0
 ownership:
@@ -263,10 +287,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772826442350
-  modifiedTime: 1772826442350
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733091197
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!AIIVaJaXS7tNwLQi'

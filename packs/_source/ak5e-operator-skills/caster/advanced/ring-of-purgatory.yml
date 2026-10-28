@@ -282,28 +282,35 @@ system:
 effects:
   - name: Ring of Purgatory (Skill Points)
     img: modules/ak5e/icons/Skill-Purgatory2.webp
-    origin: Item.3PomY3C6LyKV5lBb
+    origin: null
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: gwyTS2JEvRm0dArt
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: HrVWy2QHddNqqa5b
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.3PomY3C6LyKV5lBb
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -327,14 +334,19 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097768
+      modifiedTime: 1791733097768
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!wwtX6dgrZrBqgoIk.GQBslauEmqcGyBM3'
   - name: Ring of Purgatory
     img: modules/ak5e/icons/Skill-Purgatory2.webp
-    origin: Item.3PomY3C6LyKV5lBb
+    origin: null
     _id: Q1rueMwx02MI4gkZ
     type: auraeffects.aura
     system:
@@ -355,16 +367,15 @@ effects:
       script: ''
       stashedChanges: []
       stashedStatuses: []
-    changes: []
+      changes: []
+      origin:
+        item: Item.3PomY3C6LyKV5lBb
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -394,10 +405,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097769
+      modifiedTime: 1791733097769
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!wwtX6dgrZrBqgoIk.Q1rueMwx02MI4gkZ'
 flags:
   dnd5e:
@@ -407,12 +423,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1773572162076
-  modifiedTime: 1773572205253
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733097768
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

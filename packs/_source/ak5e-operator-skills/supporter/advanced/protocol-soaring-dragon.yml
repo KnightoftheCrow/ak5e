@@ -1,7 +1,7 @@
 folder: xVeaYDqngTsmNvFl
 name: 'Protocol: Soaring Dragon'
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-DroneFactoryUpper.webp
+img: modules/ak5e/icons/Skill-DroneFactoryUpper.webp
 system:
   activities:
     3o9W8hhhVnAaXrpO:
@@ -158,29 +158,36 @@ system:
     subtype: opSkill
 effects:
   - name: Earth Meld (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/Skill-DemolitionDevice.png
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.VqkInmC7TKGim1dV
+    img: modules/ak5e/icons/Skill-DemolitionDevice.png
+    origin: null
     _id: qVRW1HvZ5yPyW14E
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '50'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 61n94bi9UwzKWGwC
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 50
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: ZdOnBIgVENO3chBJ
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.VqkInmC7TKGim1dV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -206,10 +213,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733094204
+      modifiedTime: 1791733094204
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!VqkInmC7TKGim1dV.qVRW1HvZ5yPyW14E'
 flags:
   dnd5e:
@@ -219,12 +231,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733094204
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

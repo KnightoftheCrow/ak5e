@@ -38,24 +38,27 @@ system:
 effects:
   - name: Reroll 1's for Healing
     img: icons/magic/life/heart-hand-gold-green.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.1I5cvc4eLrqtSWwC
+    origin: null
     _id: Y9lAJ9Y4GcyZEqQo
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.rollModifiers.damage.heal.all
-        mode: 0
-        value: r1
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.rollModifiers.damage.heal.all
+          value: r1
+          priority: 20
+          type: custom
+          phase: initial
+          _id: KOoYf2rfACJIhBaQ
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.1I5cvc4eLrqtSWwC
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -79,10 +82,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733080730
+      modifiedTime: 1791733080730
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!1I5cvc4eLrqtSWwC.Y9lAJ9Y4GcyZEqQo'
 sort: 1800000
 ownership:
@@ -96,10 +104,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881347037
-  modifiedTime: 1769881347037
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733080730
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!1I5cvc4eLrqtSWwC'

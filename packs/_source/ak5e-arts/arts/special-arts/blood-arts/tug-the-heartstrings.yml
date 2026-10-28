@@ -351,32 +351,40 @@ system:
 effects:
   - name: Tug the Heartstrings
     img: icons/skills/wounds/anatomy-organ-heart-red.webp
-    origin: Item.8RIAnXxrr1Go49VT
+    origin: null
     transfer: false
     _id: Ts4oGa6BxKPkQAKO
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.OverTime
-        mode: 2
-        value: |-
-          turn=end,
-          saveAbility=con,
-          saveDC=@attributes.spell.dc
-        priority: 20
-      - key: flags.midi-qol.disadvantage.attack.all
-        mode: 2
-        value: '1'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          value: |-
+            turn=end,
+            saveAbility=con,
+            saveDC=@attributes.spell.dc
+          priority: 20
+          type: add
+          phase: initial
+          _id: 1Wgd5yVZ96sCtOdU
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.disadvantage.attack.all
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: 3SUQIjbWD1CIVjKC
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.8RIAnXxrr1Go49VT
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -403,28 +411,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733107905
+      modifiedTime: 1791733107905
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!8RIAnXxrr1Go49VT.Ts4oGa6BxKPkQAKO'
   - name: Daze
     img: icons/skills/wounds/anatomy-organ-heart-red.webp
-    origin: Item.8RIAnXxrr1Go49VT
+    origin: null
     transfer: false
     _id: vM2zLW0fVt5E87xu
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.8RIAnXxrr1Go49VT
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -453,10 +466,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733107906
+      modifiedTime: 1791733107906
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!8RIAnXxrr1Go49VT.vM2zLW0fVt5E87xu'
 flags:
   dnd5e:
@@ -467,12 +485,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733107905
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

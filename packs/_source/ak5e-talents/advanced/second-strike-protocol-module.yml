@@ -1,0 +1,136 @@
+folder: Pji4wTRYaJMHjby6
+name: Second Strike Protocol (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Aciddrop2.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement:
+    8qdRAirpznFBoiCk:
+      name: ''
+      type: ModifyItem
+      _id: 8qdRAirpznFBoiCk
+      configuration:
+        changes:
+          - _id: AdcThPB6CNDU2yd1
+            uuid: null
+            identifiers:
+              - second-strike-protocol
+      flags: {}
+      level: 0
+      hint: ''
+      value:
+        modified: []
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> The Force Damage is increased to
+      2d6.</p><hr><p><strong>Automated: </strong>Use the Activity on this
+      Feature.</p>
+    chat: ''
+  identifier: second-strike-protocol-module
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - second-strike-protocol
+    repeatable: false
+    level: 13
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Damage Increased
+    img: modules/ak5e/icons/Skill-Aciddrop2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.JhX4mCLS6KQpo0EP
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.damage.bonus
+          type: add
+          value: 1d6
+          phase: initial
+          _id: ZRAkrzCwNoKZ7wZg
+          conditions: '{}'
+          replacement: ''
+          priority: null
+    type: enchantment
+    _id: AdcThPB6CNDU2yd1
+    disabled: false
+    start:
+      time: 432
+      combat: OmUauzUJXHzAVPNs
+      combatant: sms6zQnqacUvO4t4
+      initiative: 19.13
+      round: 4
+      turn: 0
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841881
+      modifiedTime: 1793197841881
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!8Shveq9l6MCUPkDp.AdcThPB6CNDU2yd1'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841881
+  modifiedTime: 1793197841950
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 8Shveq9l6MCUPkDp
+sort: 0
+_key: '!items!8Shveq9l6MCUPkDp'

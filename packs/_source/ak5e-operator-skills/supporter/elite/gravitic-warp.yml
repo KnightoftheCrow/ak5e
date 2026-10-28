@@ -1,7 +1,7 @@
 folder: sklYDFVtnHmCnTNA
 name: Gravitic Warp
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-Mostima3.webp
+img: modules/ak5e/icons/Skill-Mostima3.webp
 system:
   activities:
     pyTaehMfslGbJyBo:
@@ -153,29 +153,36 @@ system:
     subtype: opSkill
 effects:
   - name: Gravitic Warp (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/Skill-Mostima3.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.jvPybKBbVZKSDm3l
+    img: modules/ak5e/icons/Skill-Mostima3.webp
+    origin: null
     _id: aTZ4S7PUW8Dll4nS
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '40'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '80'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: LadvKh2vpPneapPv
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 80
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: S3pJpbEoGAxClvGt
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.jvPybKBbVZKSDm3l
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -201,10 +208,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095794
+      modifiedTime: 1791733095794
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!jvPybKBbVZKSDm3l.aTZ4S7PUW8Dll4nS'
 flags:
   dnd5e:
@@ -214,12 +226,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733095793
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

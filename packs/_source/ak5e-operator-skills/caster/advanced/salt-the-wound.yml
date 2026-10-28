@@ -170,28 +170,35 @@ system:
 effects:
   - name: Salt the Wound (Skill Points)
     img: modules/ak5e/icons/Skill-Humus1.webp
-    origin: Item.Yb72jEmG2iyBw7m6
+    origin: null
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: EqmjTiUOruSbbY03
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: gRlwEHU3zuV07w87
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.Yb72jEmG2iyBw7m6
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -215,10 +222,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093435
+      modifiedTime: 1791733093435
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!PCKN6NC1iNrr6oeF.GQBslauEmqcGyBM3'
 flags:
   dnd5e:
@@ -228,12 +240,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1773572163904
-  modifiedTime: 1773572215493
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733093435
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

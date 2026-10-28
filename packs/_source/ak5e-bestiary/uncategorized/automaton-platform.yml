@@ -1,7 +1,7 @@
 folder: mPT4QUdDnfm4I1wb
 name: Automaton (Platform)
 type: npc
-img: systems/dnd5e/icons/svg/actors/npc.svg
+img: modules/ak5e/icons/Skill-BlockReinforcementDevice.png
 system:
   currency:
     credits: 0
@@ -466,15 +466,12 @@ prototypeToken:
   width: 0.5
   height: 0.5
   texture:
-    src: systems/dnd5e/icons/svg/actors/npc.svg
+    src: modules/ak5e/icons/Skill-BlockReinforcementDevice.png
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -518,7 +515,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -536,10 +533,13 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
-  flags: {}
+  flags:
+    dnd5e:
+      lockScale: true
   randomImg: false
   appendNumber: false
   prependAdjective: false
+  depth: 0.5
 items:
   - name: Ram
     type: weapon
@@ -860,11 +860,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.3
       lastModifiedBy: 9KtVYqHDTWORuJDZ
       modifiedTime: 1766946940129
+      createdTime: null
     _key: '!actors.items!i51vGb3EFQkIvL8A.DX9bYA7H4nhJUym1'
   - name: High Horsepower
     type: feat
@@ -904,33 +905,44 @@ items:
     effects:
       - name: High Horsepower
         img: icons/skills/movement/ball-spinning-blue.webp
-        origin: >-
-          Compendium.ak5e.ak5e-bestiary.Actor.i51vGb3EFQkIvL8A.Item.KQQJUhxw8WusWCpd
+        origin: null
         _id: blqFJfxKeBf6kdwQ
         type: base
-        system: {}
-        changes:
-          - key: flags.midi-qol.optional.Horsepower.damage.mwak
-            mode: 0
-            value: ItemMacro
-            priority: 20
-          - key: flags.midi-qol.optional.Horsepower.count
-            mode: 5
-            value: reaction
-            priority: 20
-          - key: flags.midi-qol.optional.Horsepower.label
-            mode: 5
-            value: Push
-            priority: 20
+        system:
+          changes:
+            - key: flags.midi-qol.optional.Horsepower.damage.mwak
+              value: ItemMacro
+              priority: 20
+              type: custom
+              phase: initial
+              _id: T0cULofqoVBNZlX4
+              conditions: '{}'
+              replacement: ''
+            - key: flags.midi-qol.optional.Horsepower.count
+              value: reaction
+              priority: 20
+              type: override
+              phase: initial
+              _id: ZB9hN1AxYVINtkQC
+              conditions: '{}'
+              replacement: ''
+            - key: flags.midi-qol.optional.Horsepower.label
+              value: Push
+              priority: 20
+              type: override
+              phase: initial
+              _id: tlL5Dk5qDSKunEtZ
+              conditions: '{}'
+              replacement: ''
+          origin:
+            item: >-
+              Compendium.ak5e.ak5e-bestiary.Actor.i51vGb3EFQkIvL8A.Item.KQQJUhxw8WusWCpd
         disabled: false
         duration:
-          startTime: null
-          combat: null
-          seconds: null
-          rounds: null
-          turns: null
-          startRound: null
-          startTurn: null
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
         description: ''
         tint: '#ffffff'
         transfer: true
@@ -955,12 +967,15 @@ items:
             Compendium.ak5e.ak5e-bestiary.Actor.i51vGb3EFQkIvL8A.Item.AdhU60SjJCaPLBj5.ActiveEffect.5R3jPyD05jQwtOKM
           duplicateSource: null
           exportSource: null
-          coreVersion: '13.348'
+          coreVersion: '14.368'
           systemId: dnd5e
-          systemVersion: 5.2.3
+          systemVersion: 6.0.6
           createdTime: 1766946567497
-          modifiedTime: 1766946597050
-          lastModifiedBy: 9KtVYqHDTWORuJDZ
+          modifiedTime: 1791733080145
+          lastModifiedBy: 5XlrCO2NlPtd4MFQ
+        start: null
+        showIcon: 1
+        folder: null
         _key: >-
           !actors.items.effects!i51vGb3EFQkIvL8A.KQQJUhxw8WusWCpd.blqFJfxKeBf6kdwQ
     folder: null
@@ -1036,11 +1051,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.3
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-      modifiedTime: 1766946607477
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1791733080145
+      createdTime: 1791733080145
     _key: '!actors.items!i51vGb3EFQkIvL8A.KQQJUhxw8WusWCpd'
   - name: Can't Climb
     type: feat
@@ -1093,10 +1109,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.3
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _key: '!actors.items!i51vGb3EFQkIvL8A.eBMiNkW4kTMtdDFM'
   - name: Coming Through
     type: feat
@@ -1138,33 +1156,44 @@ items:
     effects:
       - name: Coming Through
         img: icons/skills/movement/figure-running-gray.webp
-        origin: >-
-          Compendium.ak5e.ak5e-bestiary.Actor.i51vGb3EFQkIvL8A.Item.AdhU60SjJCaPLBj5
+        origin: null
         _id: 5R3jPyD05jQwtOKM
         type: base
-        system: {}
-        changes:
-          - key: flags.midi-qol.optional.comingThrough.damage.mwak
-            mode: 0
-            value: ItemMacro
-            priority: 20
-          - key: flags.midi-qol.optional.comingThrough.count
-            mode: 5
-            value: reaction
-            priority: 20
-          - key: flags.midi-qol.optional.comingThrough.label
-            mode: 5
-            value: Push
-            priority: 20
+        system:
+          changes:
+            - key: flags.midi-qol.optional.comingThrough.damage.mwak
+              value: ItemMacro
+              priority: 20
+              type: custom
+              phase: initial
+              _id: icgcqqq6hIhWz88d
+              conditions: '{}'
+              replacement: ''
+            - key: flags.midi-qol.optional.comingThrough.count
+              value: reaction
+              priority: 20
+              type: override
+              phase: initial
+              _id: eqpixl9S3fU74VxN
+              conditions: '{}'
+              replacement: ''
+            - key: flags.midi-qol.optional.comingThrough.label
+              value: Push
+              priority: 20
+              type: override
+              phase: initial
+              _id: wP5gAbvUE6yNAtEb
+              conditions: '{}'
+              replacement: ''
+          origin:
+            item: >-
+              Compendium.ak5e.ak5e-bestiary.Actor.i51vGb3EFQkIvL8A.Item.AdhU60SjJCaPLBj5
         disabled: false
         duration:
-          startTime: null
-          combat: null
-          seconds: null
-          rounds: null
-          turns: null
-          startRound: null
-          startTurn: null
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
         description: ''
         tint: '#ffffff'
         transfer: true
@@ -1188,12 +1217,15 @@ items:
           compendiumSource: null
           duplicateSource: null
           exportSource: null
-          coreVersion: '13.348'
+          coreVersion: '14.368'
           systemId: dnd5e
-          systemVersion: 5.2.3
+          systemVersion: 6.0.6
           createdTime: 1766945875945
-          modifiedTime: 1766946433289
-          lastModifiedBy: 9KtVYqHDTWORuJDZ
+          modifiedTime: 1791733080146
+          lastModifiedBy: 5XlrCO2NlPtd4MFQ
+        start: null
+        showIcon: 1
+        folder: null
         _key: >-
           !actors.items.effects!i51vGb3EFQkIvL8A.AdhU60SjJCaPLBj5.5R3jPyD05jQwtOKM
     folder: null
@@ -1235,11 +1267,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.3
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-      modifiedTime: 1766947032773
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1791733080146
+      createdTime: 1791733080146
     _key: '!actors.items!i51vGb3EFQkIvL8A.AdhU60SjJCaPLBj5'
   - name: Durable Construction
     type: feat
@@ -1273,37 +1306,52 @@ items:
     effects:
       - name: Durable Construction DR
         img: icons/skills/movement/arrow-upward-white.webp
-        origin: >-
-          Compendium.ak5e.ak5e-bestiary.Actor.i51vGb3EFQkIvL8A.Item.8uNWdCpFRHYJFbkm
+        origin: null
         _id: PwAut6vqQqvLcG2m
         type: base
-        system: {}
-        changes:
-          - key: system.traits.dm.amount.bludgeoning
-            mode: 2
-            value: '-3'
-            priority: 20
-          - key: system.traits.dm.amount.slashing
-            mode: 2
-            value: '-3'
-            priority: 20
-          - key: system.traits.dm.amount.piercing
-            mode: 2
-            value: '-3'
-            priority: 20
-          - key: system.traits.dm.amount.thunder
-            mode: 2
-            value: '-3'
-            priority: 20
+        system:
+          changes:
+            - key: system.traits.dm.amount.bludgeoning
+              value: -3
+              priority: 20
+              type: add
+              phase: initial
+              _id: 0Bd2eZJ26C97jYQe
+              conditions: '{}'
+              replacement: ''
+            - key: system.traits.dm.amount.slashing
+              value: -3
+              priority: 20
+              type: add
+              phase: initial
+              _id: zkQXVJ8boDjmzAn0
+              conditions: '{}'
+              replacement: ''
+            - key: system.traits.dm.amount.piercing
+              value: -3
+              priority: 20
+              type: add
+              phase: initial
+              _id: MVl5QPRlixYQrK2o
+              conditions: '{}'
+              replacement: ''
+            - key: system.traits.dm.amount.thunder
+              value: -3
+              priority: 20
+              type: add
+              phase: initial
+              _id: baGKYVFXVrq0ESeb
+              conditions: '{}'
+              replacement: ''
+          origin:
+            item: >-
+              Compendium.ak5e.ak5e-bestiary.Actor.i51vGb3EFQkIvL8A.Item.8uNWdCpFRHYJFbkm
         disabled: false
         duration:
-          startTime: null
-          combat: null
-          seconds: null
-          rounds: null
-          turns: null
-          startRound: null
-          startTurn: null
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
         description: ''
         tint: '#ffffff'
         transfer: true
@@ -1328,12 +1376,15 @@ items:
             Compendium.ak5e.ak5e-items.Item.Cec4UmE7i2g5ZJdm.ActiveEffect.79irsiSTvMg3ozyY
           duplicateSource: null
           exportSource: null
-          coreVersion: '13.348'
+          coreVersion: '14.368'
           systemId: dnd5e
-          systemVersion: 5.2.3
+          systemVersion: 6.0.6
           createdTime: 1766944587203
-          modifiedTime: 1766944606267
-          lastModifiedBy: 9KtVYqHDTWORuJDZ
+          modifiedTime: 1791733080146
+          lastModifiedBy: 5XlrCO2NlPtd4MFQ
+        start: null
+        showIcon: 1
+        folder: null
         _key: >-
           !actors.items.effects!i51vGb3EFQkIvL8A.8uNWdCpFRHYJFbkm.PwAut6vqQqvLcG2m
     folder: null
@@ -1353,12 +1404,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.3
       createdTime: 1766944556896
-      modifiedTime: 1766944576789
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      modifiedTime: 1791733080146
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _key: '!actors.items!i51vGb3EFQkIvL8A.8uNWdCpFRHYJFbkm'
 effects: []
 ownership:
@@ -1369,12 +1420,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.3
-  createdTime: 1766941504085
-  modifiedTime: 1766941524752
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 6.0.6
+  createdTime: 1791733080144
+  modifiedTime: 1791733080144
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: i51vGb3EFQkIvL8A
 sort: 0
 _key: '!actors!i51vGb3EFQkIvL8A'

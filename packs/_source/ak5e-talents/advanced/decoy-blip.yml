@@ -1,0 +1,120 @@
+folder: Pji4wTRYaJMHjby6
+name: Decoy Blip
+type: feat
+_id: 0RaSXAR7OCE7W28R
+img: modules/ak5e/icons/skill_icon_skchr_radian_1.png
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>Hostile Creatures within 30 feet of you automatically miss with any
+      Attack Roll with a natural result of 3 or less.</p><p><strong>Module
+      Effect:</strong> The threshold for automatically missing is increased to 5
+      or less.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: decoy-blip
+  source:
+    revision: 1
+    rules: '2024'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Hostile Attacks within 30ft Fumble on < 3
+    img: modules/ak5e/icons/skill_icon_skchr_radian_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.0RaSXAR7OCE7W28R
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.aura.attack.fumbleThreshold
+          type: ac5e
+          value: radius=30; threshold=2; enemies; singleAura
+          phase: initial
+          _id: pGE0THWUyAZy3G4i
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: MUYylrOFynWk2NKB
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-talents.Item.0RaSXAR7OCE7W28R
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841831
+      modifiedTime: 1793197841831
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!0RaSXAR7OCE7W28R.MUYylrOFynWk2NKB'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841831
+  modifiedTime: 1793197841931
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!0RaSXAR7OCE7W28R'

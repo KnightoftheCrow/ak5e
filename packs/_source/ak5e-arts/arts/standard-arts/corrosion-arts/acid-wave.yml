@@ -267,25 +267,29 @@ system:
 effects:
   - name: Acid Wave Burn
     img: icons/magic/acid/dissolve-pool-bubbles.webp
-    origin: Item.cWnXAPBU4wBegyee
+    origin: null
     transfer: false
     _id: gbSPiMgQriMOwhcG
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.ActivityOverTime
-        mode: 2
-        value: acid-wave-secondary-damage
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.ActivityOverTime
+          value: acid-wave-secondary-damage
+          priority: 20
+          type: add
+          phase: initial
+          _id: glFW1iFKrvex1HXd
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.cWnXAPBU4wBegyee
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -315,10 +319,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733107581
+      modifiedTime: 1791733107581
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!1bfhvFudQc5ZfIR4.gbSPiMgQriMOwhcG'
 flags:
   dnd5e:
@@ -336,13 +345,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
-sort: 0
+  modifiedTime: 1791733107581
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+sort: 100000
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

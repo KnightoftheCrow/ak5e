@@ -155,28 +155,35 @@ system:
 effects:
   - name: Venom Fang (Skill Points)
     img: systems/dnd5e/icons/svg/items/feature.svg
-    origin: Item.KPB8V2vrNkBQ43jc
+    origin: null
     type: base
     _id: jSkKpz9w4MySMhgK
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '35'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: AUKOoxsLYTDFIi1b
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 35
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: SYgrN62HWM4YxRMO
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.KPB8V2vrNkBQ43jc
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -202,10 +209,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733093201
+      modifiedTime: 1791733093201
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!OAQ2wIxtKYiGN6sH.jSkKpz9w4MySMhgK'
 flags:
   dnd5e:
@@ -215,12 +227,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356644983
-  modifiedTime: 1783356645002
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733093201
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

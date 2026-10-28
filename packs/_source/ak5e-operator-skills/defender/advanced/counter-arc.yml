@@ -154,28 +154,35 @@ system:
 effects:
   - name: Counter Arc (Skill Points)
     img: modules/ak5e/icons/Skill-Eunectes3.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.VOdZcyVY2UkrEKvf
+    origin: null
     type: base
     _id: jIwXzxxVHoN2ff1q
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 2
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 2
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: add
+          phase: initial
+          _id: SSd4t0pKtSejPw3u
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: add
+          phase: initial
+          _id: x4bJPjH9ZE51HF8M
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.VOdZcyVY2UkrEKvf
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -201,10 +208,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733095596
+      modifiedTime: 1791733095596
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!hPGXHkZjoBbyiUqv.jIwXzxxVHoN2ff1q'
 flags:
   dnd5e:
@@ -214,12 +226,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356556815
-  modifiedTime: 1783356556834
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733095595
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

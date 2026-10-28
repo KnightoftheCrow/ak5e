@@ -161,21 +161,21 @@ system:
 effects:
   - name: Primed
     img: icons/magic/light/hand-sparks-smoke-green.webp
-    origin: Item.k3oIzcsSnbLFhBFS
+    origin: null
     transfer: false
     _id: MkDKTCMSKnbSTBzp
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.k3oIzcsSnbLFhBFS
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -203,10 +203,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733109260
+      modifiedTime: 1791733109260
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!k3oIzcsSnbLFhBFS.MkDKTCMSKnbSTBzp'
 flags:
   dnd5e:
@@ -217,12 +222,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733109259
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

@@ -2,7 +2,7 @@ folder: zhZ3oJrVXiDxSCHH
 name: Arts Master Drone
 type: npc
 _id: Bbz5oIFq2XUWeQpD
-img: modules/ak5e/icons/Mech-Accord_Caster.webp
+img: modules/ak5e/icons/class%20%2B%20subclass/Mech-Accord_Caster.webp
 system:
   currency:
     credits: 0
@@ -453,6 +453,62 @@ system:
       custom: ''
       communication: {}
     important: false
+  rolls:
+    ability:
+      check:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+      save:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+      skill:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+      tool:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+    attack:
+      bonus: ''
+      msak:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+      mwak:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+      rsak:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+      rwak:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+      min: null
+      max: null
+      mode: 0
+    damage:
+      msak:
+        bonus: ''
+      mwak:
+        bonus: ''
+      rsak:
+        bonus: ''
+      rwak:
+        bonus: ''
 prototypeToken:
   name: Arts Master Drone
   displayName: 0
@@ -463,12 +519,9 @@ prototypeToken:
     src: modules/ak5e/icons/Mech-Accord_Caster.webp
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -512,7 +565,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -530,10 +583,13 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
-  flags: {}
+  flags:
+    dnd5e:
+      lockScale: true
   randomImg: false
   appendNumber: false
   prependAdjective: false
+  depth: 0.5
 items:
   - name: Originium Spark
     type: weapon
@@ -741,7 +797,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774102112564
@@ -901,7 +957,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774102262144
@@ -956,7 +1012,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774102334077
@@ -973,10 +1029,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1774101915066
-  modifiedTime: 1785597591837
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791733079848
+  modifiedTime: 1792423945943
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!actors!Bbz5oIFq2XUWeQpD'

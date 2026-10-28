@@ -157,28 +157,35 @@ system:
 effects:
   - name: Area Overwatch (Skill Points)
     img: modules/ak5e/icons/64px-Skill-Ray2.webp
-    origin: Item.xXwOTmBRQ9AblNAc
+    origin: null
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: YY6pODnZyirHdOrW
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: m4UveGQKojxKFtnL
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.xXwOTmBRQ9AblNAc
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -202,10 +209,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733097865
+      modifiedTime: 1791733097865
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!z6cRijNHYpsv83hm.GQBslauEmqcGyBM3'
 flags:
   dnd5e:
@@ -215,12 +227,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356637238
-  modifiedTime: 1783356637265
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733097865
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

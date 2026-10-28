@@ -2,19 +2,40 @@ folder: tmEo8WuR6VcFXLnu
 name: Legendary Might
 type: feat
 _id: 9XYwmI0qNhAikDJQ
-img: modules/ak5e/icons/Skill-Matterhorn2.webp
+img: modules/ak5e/icons/skill_icon_skchr_headb2_2.png
 system:
   activities: {}
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: {}
+  advancement:
+    3sXNpKi0mcLrJnwf:
+      name: ''
+      type: AbilityScoreImprovement
+      _id: 3sXNpKi0mcLrJnwf
+      configuration:
+        cap: 2
+        fixed:
+          str: 6
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked:
+          - str
+        points: 0
+        recommendation: null
+        max: 26
+      flags: {}
+      level: 0
+      hint: ''
   description:
     value: >-
       <p>Your strength is the stuff of legend, and your blows carve themselves
       into history. Your Strength Score is increased by 6, to a maximum of
-      26.</p><p><strong>Not Automated.</strong></p>
+      26.</p><p><strong>Automated.</strong></p>
     chat: ''
   identifier: legendary-might
   source:
@@ -31,24 +52,21 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
+    subtype: ''
 effects: []
-sort: 0
+sort: 300000
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358934901
-  modifiedTime: 1783358934901
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553239
+  modifiedTime: 1792344760195
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!9XYwmI0qNhAikDJQ'

@@ -1,0 +1,146 @@
+folder: pK9UlZztTzku2Tvf
+name: All Out Attack
+type: feat
+_id: JafnCcuTlJl5exwW
+img: modules/ak5e/icons/Skill-Rosa2.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement:
+    7MRo2hCcJcgLWeKf:
+      name: All Out Attack Damage
+      type: ScaleValue
+      _id: 7MRo2hCcJcgLWeKf
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 1
+            faces: 10
+      flags: {}
+      hint: ''
+      value: {}
+  description:
+    value: >-
+      <p>If you did not make an Attack or deal Damage during your last Turn,
+      your next Attack deals 1d10 additional Damage.</p><p><strong>Module
+      Effect:</strong> The additional Damage is increased to
+      2d10.</p><hr><p><strong>Semi-Automated: </strong>There is a once per Turn
+      Opt in.</p>
+    chat: ''
+  identifier: all-out-attack
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: All Out Attack
+    img: modules/ak5e/icons/Skill-Rosa2.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.JafnCcuTlJl5exwW
+    _id: P834Mz7SWu3zIXvE
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=@scale.all-out-attack.all-out-attack-damage; name=All Out
+            Attack Bonus Damage; optinId=all-out-attack-0; oncePerTurn; optin;
+            hasAttack
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: MkEIf6MOoCFDNLlG
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.JafnCcuTlJl5exwW
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        enableCondition: ''
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        applicationMode: default
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841753
+      modifiedTime: 1793197841753
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!JafnCcuTlJl5exwW.P834Mz7SWu3zIXvE'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841753
+  modifiedTime: 1793197841898
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 0
+_key: '!items!JafnCcuTlJl5exwW'

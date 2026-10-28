@@ -151,28 +151,35 @@ system:
 effects:
   - name: Continental Style (Skill Points)
     img: modules/ak5e/icons/Skill-Sora2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.5sWZleYraTedgntR
+    origin: null
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: IbTFKQqIg6KyHVx2
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: AqXc86u7ts4wry4x
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.5sWZleYraTedgntR
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -196,33 +203,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: GiT7LQTiCJxjm7mo
-      modifiedTime: 1768651882215
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1791733090682
+      createdTime: 1791733090682
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!5sWZleYraTedgntR.DXFUOiWQeWl6gGq8'
   - name: Continental Style
     img: modules/ak5e/icons/Skill-Sora2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.5sWZleYraTedgntR
+    origin: null
     transfer: false
     _id: KnmeoxYng1BpAYHL
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.ignoreNearbyFoes
-        mode: 2
-        value: true; actionType.rwak
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.ignoreNearbyFoes
+          value: true; actionType.rwak
+          priority: 20
+          type: add
+          phase: initial
+          _id: A9WK8V7ftefWIVcv
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.5sWZleYraTedgntR
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 5
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 5
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -249,12 +263,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
+      systemVersion: 6.0.6
       createdTime: 1768651030985
-      modifiedTime: 1768651154119
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      modifiedTime: 1791733090682
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!5sWZleYraTedgntR.KnmeoxYng1BpAYHL'
 flags:
   dnd5e:
@@ -264,12 +281,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768157723209
-  modifiedTime: 1768651141224
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1791733090682
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   GiT7LQTiCJxjm7mo: 3

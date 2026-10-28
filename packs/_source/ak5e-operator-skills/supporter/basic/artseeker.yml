@@ -1,7 +1,7 @@
 folder: WVQAhyn17ObuyPIB
 name: Artseeker
 type: feat
-img: modules/AK5e-Foundry-Module/icons/Skill-Dusk2.webp
+img: modules/ak5e/icons/Skill-Dusk2.webp
 system:
   activities:
     Z0kExaiH9fxZe1gq:
@@ -19,8 +19,7 @@ system:
         targets:
           - type: itemUses
             value: '10'
-            target: >-
-              Compendium.AK5e-Foundry-Module.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
             scaling: {}
       description:
         chatFlavor: ''
@@ -148,29 +147,36 @@ system:
     subtype: opSkill
 effects:
   - name: Artseeker (Skill Points)
-    img: modules/AK5e-Foundry-Module/icons/Skill-Dusk2.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.UN1StzHV77VTy17t
+    img: modules/ak5e/icons/Skill-Dusk2.webp
+    origin: null
     _id: sMFqYDGDR01l629E
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '10'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: yZXI3jasIHSlcL8W
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 6vqBcK43zLX5a6tz
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.UN1StzHV77VTy17t
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -194,36 +200,48 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733094072
+      modifiedTime: 1791733094072
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!UN1StzHV77VTy17t.sMFqYDGDR01l629E'
   - name: Artseeker
-    img: modules/AK5e-Foundry-Module/icons/Skill-Dusk2.webp
-    origin: Compendium.AK5e.ak5e-operator-skills.Item.UN1StzHV77VTy17t
+    img: modules/ak5e/icons/Skill-Dusk2.webp
+    origin: null
     transfer: false
     _id: inqIljzaXYZuGAwA
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.sharpShooter
-        mode: 5
-        value: actionType.rsak
-        priority: 20
-      - key: flags.midi-qol.advantage.attack.rsak
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.sharpShooter
+          value: actionType.rsak
+          priority: 20
+          type: override
+          phase: initial
+          _id: nBlY2I4jgPvcljb0
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.advantage.attack.rsak
+          value: true
+          priority: 20
+          type: override
+          phase: initial
+          _id: JpJR3skyM6QV1gxn
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.UN1StzHV77VTy17t
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -250,10 +268,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733094072
+      modifiedTime: 1791733094072
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!UN1StzHV77VTy17t.inqIljzaXYZuGAwA'
 flags:
   dnd5e:
@@ -263,12 +286,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263
-  modifiedTime: 1785598440263
-  lastModifiedBy: 27ikDz77N89hVLvM
+  modifiedTime: 1791733094072
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   27ikDz77N89hVLvM: 3

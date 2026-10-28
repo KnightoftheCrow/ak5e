@@ -1,0 +1,125 @@
+folder: pK9UlZztTzku2Tvf
+name: Unshakeable
+type: feat
+img: modules/ak5e/icons/Skill-Nightingale1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>You have Advantage on Constitution Saving Throws to maintain
+      Concentration on Arts.</p><p><strong>Module Effect: </strong>When a
+      Creature provokes an Opportunity Attack from you, you may cast an Art as a
+      Reaction, instead of making a Melee Attack. The Art must have a Casting
+      Time of an Action, and target only that
+      Creature.</p><hr><p><strong>Automated: </strong>The Module Effect does not
+      need Automation.</p>
+    chat: ''
+  identifier: unshakeable
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: skillPoints
+effects:
+  - name: Advantage on Concentration Checks
+    img: modules/ak5e/icons/Skill-Nightingale1.webp
+    origin: null
+    _id: fJZwk3mL1Nn4nb7q
+    type: base
+    system:
+      changes:
+        - key: system.attributes.concentration.roll.mode
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: 5SbItZVoF7RLQfWy
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.LwWCkAvR3z3wSf0A
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841812
+      modifiedTime: 1793197841812
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!LwWCkAvR3z3wSf0A.fJZwk3mL1Nn4nb7q'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841812
+  modifiedTime: 1793197841923
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: LwWCkAvR3z3wSf0A
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 0
+_key: '!items!LwWCkAvR3z3wSf0A'

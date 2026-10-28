@@ -1,0 +1,177 @@
+folder: Pji4wTRYaJMHjby6
+name: Tactical Mind
+type: feat
+img: modules/ak5e/icons/Skill-TheresaBlackCrownedSage.png
+system:
+  activities: {}
+  uses:
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p>When you roll a d20, you may reroll that die and add 1d10 to the result
+      of the roll as a Reaction. Once you have used this Feature, you must
+      finish a Long Rest before you can use it again.</p><p><strong>Module
+      Effect:</strong> You now regain use of this Feature when you complete a
+      Short Rest.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: tactical-mind
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - _id: waeG7ZDIB5myAbe6
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: null
+    transfer: true
+    flags:
+      dae:
+        stackable: none
+        macroRepeat: none
+        specialDuration: []
+        transfer: false
+        durationExpression: ''
+        selfTarget: false
+        selfTargetAlways: false
+        disableIncapacitated: false
+        showIcon: false
+        disableCondition: ''
+      ActiveAuras:
+        isAura: false
+        radius: ''
+        aura: None
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        hostile: false
+        onlyOnce: false
+        displayTemp: false
+        nameOverride: ''
+        customCheck: ''
+        wallsBlock: system
+      core:
+        overlay: false
+      dnd5e-helpers:
+        rest-effect: Ignore
+      dnd5e:
+        riders: {}
+    tint: '#ffffff'
+    name: Tactical Mind
+    description: ''
+    statuses: []
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841889
+      modifiedTime: 1793197841889
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    img: modules/ak5e/icons/Skill-TheresaBlackCrownedSage.png
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.optional.tactical-mind.attack.all
+          value: reroll-withBonus 1d10
+          priority: 20
+          type: override
+          phase: initial
+          _id: DNtmhvgIT3B2n66K
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.tactical-mind.label
+          value: Tactical Mind
+          priority: 20
+          type: override
+          phase: initial
+          _id: cBlZa5Rwa22k8Cpj
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.tactical-mind.save.all
+          value: reroll-withBonus 1d10
+          priority: 20
+          type: override
+          phase: initial
+          _id: ebU7lS9bNUZYzvo4
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.tactical-mind.check.all
+          value: reroll-withBonus 1d10
+          priority: 20
+          type: override
+          phase: initial
+          _id: hVqWMs8lJlTLj3xb
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.tactical-mind.count
+          value: ItemUses.Tactical Mind
+          priority: 20
+          type: override
+          phase: initial
+          _id: TwQbGJ7ZVahN9avr
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.xmTdqyav4pJqtGEU
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    sort: 0
+    start:
+      combat: null
+      round: 260
+      time: 47180419488
+      turn: 1
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!B8yOs2JNyklrPInO.waeG7ZDIB5myAbe6'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841889
+  modifiedTime: 1793197841955
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: B8yOs2JNyklrPInO
+sort: 0
+_key: '!items!B8yOs2JNyklrPInO'

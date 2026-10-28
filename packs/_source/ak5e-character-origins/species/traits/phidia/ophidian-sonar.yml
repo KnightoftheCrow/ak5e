@@ -160,24 +160,27 @@ system:
 effects:
   - name: Tremorsense
     img: icons/creatures/reptiles/serpent-horned-green.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.xTCaK297EL7zunXZ
+    origin: null
     _id: bZfKoGJPF64bnhHb
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.senses.tremorsense
-        mode: 2
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.senses.tremorsense
+          value: 30
+          priority: 20
+          type: add
+          phase: initial
+          _id: 8nHcFEdbYNjRKXec
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.xTCaK297EL7zunXZ
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -201,28 +204,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733083675
+      modifiedTime: 1791733083675
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!xTCaK297EL7zunXZ.bZfKoGJPF64bnhHb'
   - name: Sonar Pulse
     img: icons/creatures/reptiles/serpent-horned-green.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.xTCaK297EL7zunXZ
+    origin: null
     transfer: false
     _id: uWGYVsQenigthhSa
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.xTCaK297EL7zunXZ
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -251,10 +258,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733083675
+      modifiedTime: 1791733083675
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!xTCaK297EL7zunXZ.uWGYVsQenigthhSa'
 sort: 0
 ownership:
@@ -268,10 +280,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680318167
-  modifiedTime: 1768680318167
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733083675
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!xTCaK297EL7zunXZ'

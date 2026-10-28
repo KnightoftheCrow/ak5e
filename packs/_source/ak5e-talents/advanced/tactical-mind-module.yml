@@ -1,0 +1,129 @@
+folder: Pji4wTRYaJMHjby6
+name: Tactical Mind (Module)
+type: feat
+img: modules/ak5e/icons/Skill-TheresaBlackCrownedSage.png
+system:
+  activities: {}
+  uses:
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '1'
+    spent: 0
+  advancement:
+    D3uJqVKmwpQx77Hs:
+      name: ''
+      type: ModifyItem
+      _id: D3uJqVKmwpQx77Hs
+      configuration:
+        changes:
+          - _id: 0GVHzIrzAlhJRqud
+            uuid: null
+            identifiers:
+              - tactical-mind
+      flags: {}
+      value:
+        modified: []
+      level: 0
+      hint: ''
+  description:
+    value: >-
+      <p><strong>Module Effect:</strong> You now regain use of this Feature when
+      you complete a Short Rest.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: tactical-mind
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Short Rest Recharge
+    img: modules/ak5e/icons/Skill-TheresaBlackCrownedSage.png
+    type: enchantment
+    transfer: false
+    _id: 0GVHzIrzAlhJRqud
+    system:
+      changes:
+        - key: system.uses.recovery
+          type: override
+          value:
+            period: sr
+            type: recoverAll
+          phase: initial
+          _id: rXvAV5eKb1ZZ8bf9
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: true
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793197841889
+      modifiedTime: 1793197841889
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!scezDXtFUO0OLg1B.0GVHzIrzAlhJRqud'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841889
+  modifiedTime: 1793197841955
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: scezDXtFUO0OLg1B
+sort: 0
+_key: '!items!scezDXtFUO0OLg1B'

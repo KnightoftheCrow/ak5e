@@ -1,0 +1,126 @@
+folder: pK9UlZztTzku2Tvf
+name: Armoured Caster (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Bison1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <p><strong>Module Effect: </strong>While you are wearing Medium Armour,
+      you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or
+      higher.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: armoured-caster-upgraded
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - armoured-caster
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: +1 to AC if wearing Medium Armour and Dex >16
+    img: modules/ak5e/icons/Skill-Bison1.webp
+    origin: null
+    _id: LZyzIxLaS28gExpy
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.modifyAC
+          value: >-
+            bonus=1; effectActor.hasArmorMedium && effectActor.abilities.dex.mod
+            >= 3
+          priority: 20
+          type: custom
+          phase: initial
+          _id: PKB4NqLWQdBLgRF7
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-talents.Item.ebbEwfe9NrBIWgwH
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: >-
+          !attributes.ac.equippedArmor ||
+          attributes.ac.equippedArmor.system.type.value !== 'light' 
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793197841756
+      modifiedTime: 1793197841756
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!ebbEwfe9NrBIWgwH.LZyzIxLaS28gExpy'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793197841756
+  modifiedTime: 1793197841899
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: ebbEwfe9NrBIWgwH
+sort: 0
+_key: '!items!ebbEwfe9NrBIWgwH'

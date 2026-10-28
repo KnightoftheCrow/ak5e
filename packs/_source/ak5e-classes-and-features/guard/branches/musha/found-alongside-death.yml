@@ -1,0 +1,151 @@
+folder: 32dUF9J6SWSSOudP
+name: Found Alongside Death
+type: feat
+img: modules/ak5e/icons/Skill-Nian2.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>As death approaches, your reflexes sharpen; the reaper will have to
+      work hard to claim you. You gain the following
+      benefits:</p><ul><li><p><strong>Greater Blood Price.</strong> When you use
+      your Blood Price Feature, you may choose to lose twice as many Hit Points
+      instead.</p></li><li><p><strong>Living on the Edge.</strong> If you have
+      equal to or less than 50% of your maximum Hit Points remaining, your AC is
+      increased by a value equal to half of your Proficiency Bonus, rounding up;
+      you additionally recieve a Bonus on Saving Throws against effects you can
+      see equal to this value. If you have equal to or less than 10% of your
+      maximum Hit Points remaining, your AC is instead increased by a value
+      equal to your Proficiency Bonus; you additionally recieve a Bonus on
+      Saving Throws against effects you can see equal to this
+      value.</p></li></ul><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: found-alongside-death
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 13
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Found Alongside Death
+    img: modules/ak5e/icons/Skill-Nian2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.sm4tUZ4yP3qkhbrg
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.ac.bonus
+          type: override
+          value: ceil(@prof/2)
+          phase: initial
+          _id: b3zE3EkYTPcZQRXy
+          conditions: >-
+            [{"k":"attributes.hp.pct","o":"lte","v":50},{"k":"","o":"gt","v":10}]
+          replacement: ''
+          priority: null
+        - key: system.attributes.ac.bonus
+          type: override
+          value: '@prof'
+          phase: initial
+          conditions: '[{"k":"","o":"lte","v":10}]'
+          replacement: ''
+          priority: null
+          _id: 9W6Gqa0ebydFaXA4
+        - key: flags.automated-conditions-5e.save.bonus
+          type: ac5e
+          value: >-
+            bonus=ceil(@prof/2); effectActor.attributes.hp.pct <= 50 &&
+            effectActor.attributes.hp.pct > 10
+          phase: initial
+          _id: stX7iZvEqp6tBDkh
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.save.bonus
+          type: ac5e
+          value: bonus=@prof; effectActor.attributes.hp.pct <= 10
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: Vgu99seevYHcHuJz
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: P4mEt952e1B3xhI5
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.sm4tUZ4yP3qkhbrg
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792227131652
+      modifiedTime: 1792227665428
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!sm4tUZ4yP3qkhbrg.P4mEt952e1B3xhI5'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.QPaMmo2BEhegaWn4
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792220708831
+  modifiedTime: 1792227679911
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: sm4tUZ4yP3qkhbrg
+sort: 400000
+_key: '!items!sm4tUZ4yP3qkhbrg'

@@ -165,28 +165,35 @@ system:
 effects:
   - name: Levitate (Skill Points)
     img: modules/ak5e/icons/Skill-Angelina1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.9W8D4dNqRS5wyc1G
+    origin: null
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '5'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 30axyW0eG2qSyFE5
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 7wTyc4qyyErNEpdg
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.9W8D4dNqRS5wyc1G
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -211,28 +218,32 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091088
+      modifiedTime: 1791733091088
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!9W8D4dNqRS5wyc1G.flx7lohMTgQh5EDM'
   - name: Levitated
     img: modules/ak5e/icons/Skill-Angelina1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.9W8D4dNqRS5wyc1G
+    origin: null
     transfer: false
     _id: futQOSy7ohxuemMl
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.9W8D4dNqRS5wyc1G
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -261,32 +272,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091088
+      modifiedTime: 1791733091088
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!9W8D4dNqRS5wyc1G.futQOSy7ohxuemMl'
   - name: Slowed
     img: modules/ak5e/icons/Skill-Angelina1.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.9W8D4dNqRS5wyc1G
+    origin: null
     transfer: false
     _id: qTmjidCXxOoo86ib
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: /2
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: /2
+          priority: 20
+          type: custom
+          phase: initial
+          _id: E6zze1F17ugdIFDC
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.9W8D4dNqRS5wyc1G
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -314,10 +333,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733091089
+      modifiedTime: 1791733091089
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!9W8D4dNqRS5wyc1G.qTmjidCXxOoo86ib'
 sort: 0
 ownership:
@@ -329,11 +353,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.Oaduiib94lWlaKsX
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772826442350
-  modifiedTime: 1772826442350
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733091088
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: 9W8D4dNqRS5wyc1G
 _key: '!items!9W8D4dNqRS5wyc1G'

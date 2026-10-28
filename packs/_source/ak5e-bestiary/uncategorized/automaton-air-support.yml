@@ -1,7 +1,7 @@
 folder: mPT4QUdDnfm4I1wb
 name: Automaton (Air Support)
 type: npc
-img: systems/dnd5e/icons/svg/actors/npc.svg
+img: modules/ak5e/icons/Skill-Kite.png
 system:
   currency:
     credits: 0
@@ -466,15 +466,12 @@ prototypeToken:
   width: 0.5
   height: 0.5
   texture:
-    src: systems/dnd5e/icons/svg/actors/npc.svg
+    src: modules/ak5e/icons/Skill-Kite.png
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -518,7 +515,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -536,10 +533,13 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: fly
-  flags: {}
+  flags:
+    dnd5e:
+      lockScale: true
   randomImg: false
   appendNumber: false
   prependAdjective: false
+  depth: 0.5
 items:
   - folder: tpq7GwavNIJcGZhv
     name: Mounted Crossbow
@@ -737,10 +737,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.3
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: 274o33SVnwAC7xxs
     sort: 100000
     ownership:
@@ -756,12 +758,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.3
   createdTime: 1766941502383
-  modifiedTime: 1766941518384
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733080031
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: SgRIhur4TbcBfRBx
 sort: 0
 _key: '!actors!SgRIhur4TbcBfRBx'
