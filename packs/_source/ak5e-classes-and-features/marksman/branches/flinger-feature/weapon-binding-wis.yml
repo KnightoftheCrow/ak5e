@@ -187,28 +187,25 @@ effects:
     img: modules/ak5e/icons/Skill-Honeyberry2.webp
     disabled: true
     _id: C1e9yrcomaxzHkoo
-    system: {}
-    changes:
-      - key: system.description.value
-        mode: 2
-        value: Bound Weapon
-        priority: 20
-      - key: activities[attack].attack.ability
-        mode: 5
-        value: wis
-        priority: 20
-      - key: name
-        mode: 5
-        value: Bound {}
-        priority: 20
+    system:
+      changes:
+        - key: system.description.value
+          value: Bound Weapon
+          priority: 20
+          type: add
+        - key: activities[attack].attack.ability
+          value: wis
+          priority: 20
+          type: override
+        - key: name
+          value: Bound {}
+          priority: 20
+          type: override
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -233,36 +230,37 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: GiT7LQTiCJxjm7mo
       modifiedTime: 1768004443926
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!1LSbDgZOpfgPUZ6s.C1e9yrcomaxzHkoo'
   - name: Weapon Binding
     img: modules/ak5e/icons/Skill-Honeyberry2.webp
     origin: Compendium.ak5e.ak5e-classes-and-features.Item.1LSbDgZOpfgPUZ6s
     _id: 5570pjXcd76VgWBZ
     type: base
-    system: {}
-    changes:
-      - key: system.traits.weaponProf.value
-        mode: 0
-        value: hvm
-        priority: 20
-      - key: system.traits.weaponProf.value
-        mode: 0
-        value: spm
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.weaponProf.value
+          value: hvm
+          priority: 20
+          type: custom
+        - key: system.traits.weaponProf.value
+          value: spm
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -286,11 +284,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: GiT7LQTiCJxjm7mo
       modifiedTime: 1767876268912
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!1LSbDgZOpfgPUZ6s.5570pjXcd76VgWBZ'
 flags:
   dnd5e:
@@ -300,7 +302,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767824270255

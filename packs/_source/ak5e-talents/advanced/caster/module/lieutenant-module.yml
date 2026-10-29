@@ -41,25 +41,22 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.3PLZA5m2OG9K1Bez
     _id: uzkrBbfJYVC8dvIW
     type: base
-    system: {}
-    changes:
-      - key: system.scale.lieutenant.dice.number
-        mode: 5
-        value: '3'
-        priority: 20
-      - key: system.scale.lieutenant.dice.faces
-        mode: 5
-        value: '8'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.lieutenant.dice.number
+          value: 3
+          priority: 20
+          type: override
+        - key: system.scale.lieutenant.dice.faces
+          value: 8
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -83,10 +80,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!3PLZA5m2OG9K1Bez.uzkrBbfJYVC8dvIW'
 flags:
   dnd5e:
@@ -96,7 +98,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1772222746366

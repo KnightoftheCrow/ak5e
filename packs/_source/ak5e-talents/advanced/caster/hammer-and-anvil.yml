@@ -45,23 +45,20 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.TuEkFeCnXuPzh1AT
     _id: 5k6Wvdy3R6stmp2u
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: >-
-          bonus=rollingActor.prof; optin; oncePerTurn; actionType.rwak ||
-          actionType.rsak
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=rollingActor.prof; optin; oncePerTurn; actionType.rwak ||
+            actionType.rsak
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: 900
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 1
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -86,10 +83,21 @@ effects:
         Actor.zvMPACiY7cfwzP3s.Item.oRiaTHKlRYJBJdTP.ActiveEffect.b3nmaTA4BJVwjlN6
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start:
+      combat: null
+      round: 1
+      time: 900
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!TuEkFeCnXuPzh1AT.5k6Wvdy3R6stmp2u'
 sort: 0
 ownership:
@@ -103,7 +111,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1772222746366

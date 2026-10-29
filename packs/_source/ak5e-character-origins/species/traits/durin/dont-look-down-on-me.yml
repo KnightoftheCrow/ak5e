@@ -47,37 +47,34 @@ effects:
     origin: Compendium.ak5e.ak5e-character-origins.Item.hW51ZQdcGLM0ML9k
     _id: kqEfZyCObp6rhzHM
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.DLDOM.damage.all
-        mode: 2
-        value: '@prof'
-        priority: 20
-      - key: flags.midi-qol.optional.DLDOM.label
-        mode: 5
-        value: Don't Look Down on Me additional Damage
-        priority: 20
-      - key: flags.midi-qol.optional.DLDOM.count
-        mode: 5
-        value: turn
-        priority: 20
-      - key: flags.midi-qol.optional.DLDOM.countAlt
-        mode: 0
-        value: ItemUses.Don't look down on me!
-        priority: 20
-      - key: flags.midi-qol.optional.DLDOM.activation
-        mode: 0
-        value: '!["tiny","sm"].includes(target.traits.size)'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.DLDOM.damage.all
+          value: '@prof'
+          priority: 20
+          type: add
+        - key: flags.midi-qol.optional.DLDOM.label
+          value: Don't Look Down on Me additional Damage
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.DLDOM.count
+          value: turn
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.DLDOM.countAlt
+          value: ItemUses.Don't look down on me!
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.DLDOM.activation
+          value: '!["tiny","sm"].includes(target.traits.size)'
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: 780
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 97
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -101,10 +98,21 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start:
+      combat: null
+      round: 97
+      time: 780
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!hW51ZQdcGLM0ML9k.kqEfZyCObp6rhzHM'
 sort: 200000
 ownership:
@@ -118,7 +126,7 @@ _stats:
   compendiumSource: Item.gd79KjzfNa4y4Qba
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680300464

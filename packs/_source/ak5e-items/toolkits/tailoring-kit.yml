@@ -348,20 +348,17 @@ effects:
     img: icons/containers/bags/case-leather-tan.webp
     disabled: true
     _id: iVemknebgaTcclom
-    system: {}
-    changes:
-      - key: system.armor.magicalBonus
-        mode: 2
-        value: '1'
-        priority: 20
+    system:
+      changes:
+        - key: system.armor.magicalBonus
+          value: 1
+          priority: 20
+          type: add
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -386,32 +383,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756581748064
       modifiedTime: 1756581886811
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!yUbrNv1GkAtDTujE.iVemknebgaTcclom'
   - type: enchantment
     name: Tailored for Flexibility
     img: icons/containers/bags/case-leather-tan.webp
     disabled: true
     _id: A2NQ16jDk4LRzH2j
-    system: {}
-    changes:
-      - key: ''
-        value: ''
-        mode: 2
-        priority: 20
+    system:
+      changes:
+        - key: ''
+          value: ''
+          priority: 20
+          type: add
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -436,12 +433,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756581890782
       modifiedTime: 1756581908850
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!yUbrNv1GkAtDTujE.A2NQ16jDk4LRzH2j'
 flags:
   dnd5e:
@@ -451,7 +451,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1756485627962

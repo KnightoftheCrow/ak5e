@@ -293,21 +293,18 @@ effects:
     transfer: false
     _id: UiC3GMs3JJZwYvmZ
     type: base
-    system: {}
-    changes:
-      - key: system.skills.dec.bonuses.check
-        mode: 2
-        value: '+10'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.dec.bonuses.check
+          value: '+10'
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: >-
       <p>This Creature's disguise is providing them a +10 Deception Bonus to
       blend as the person or faction they are disguised as.</p>
@@ -335,12 +332,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756487624605
       modifiedTime: 1756571733228
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!0ft9PxeRW8FoUjgb.UiC3GMs3JJZwYvmZ'
   - name: Intimidating Makeover
     img: icons/containers/bags/case-leather-tan.webp
@@ -348,21 +348,18 @@ effects:
     transfer: false
     _id: ygTK1EQVMrNNkXzh
     type: base
-    system: {}
-    changes:
-      - key: system.skills.itm.roll.mode
-        mode: 2
-        value: '1'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.itm.roll.mode
+          value: 1
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -389,12 +386,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756487769270
       modifiedTime: 1756571160451
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!0ft9PxeRW8FoUjgb.ygTK1EQVMrNNkXzh'
   - name: Deceptive Makeover
     img: icons/containers/bags/case-leather-tan.webp
@@ -402,21 +402,18 @@ effects:
     transfer: false
     _id: mK0h9Is8JyTtjRAZ
     type: base
-    system: {}
-    changes:
-      - key: system.skills.dec.roll.mode
-        mode: 2
-        value: '1'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.dec.roll.mode
+          value: 1
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -443,12 +440,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756487946991
       modifiedTime: 1756571166802
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!0ft9PxeRW8FoUjgb.mK0h9Is8JyTtjRAZ'
   - name: Charming Makeover
     img: icons/containers/bags/case-leather-tan.webp
@@ -456,21 +456,18 @@ effects:
     transfer: false
     _id: gj8aYfDqDssft5HJ
     type: base
-    system: {}
-    changes:
-      - key: system.skills.per.roll.mode
-        mode: 2
-        value: '1'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.per.roll.mode
+          value: 1
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -497,12 +494,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756487984542
       modifiedTime: 1756571173330
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!0ft9PxeRW8FoUjgb.gj8aYfDqDssft5HJ'
   - name: Cover Up Applied (Cover Up)
     img: icons/containers/bags/case-leather-tan.webp
@@ -510,17 +510,14 @@ effects:
     transfer: false
     _id: IWQhn14mgYEyFfL3
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: <p>This Creature has had a Cover Up applied by a Makeover Kit.</p>
     tint: '#ffffff'
     statuses: []
@@ -547,12 +544,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756571020989
       modifiedTime: 1756571752329
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!0ft9PxeRW8FoUjgb.IWQhn14mgYEyFfL3'
 flags:
   dnd5e:
@@ -563,7 +563,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1756485620647

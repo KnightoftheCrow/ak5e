@@ -154,21 +154,18 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.ed6qQk0urxaosAPg
     _id: B1hAzrYD0YwWrntZ
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 5
-        value: bonus=@prof; actionType.rwak;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@prof; actionType.rwak;
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -196,12 +193,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1767867688492
       modifiedTime: 1767876495361
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!ed6qQk0urxaosAPg.B1hAzrYD0YwWrntZ'
 sort: 1400000
 ownership:
@@ -215,7 +215,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1767734689429

@@ -158,23 +158,20 @@ effects:
     origin: Compendium.ak5e.ak5e-character-origins.Item.bfPdkxEX9seNA43F
     _id: Dl0ExJPYT3FtCw4U
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: >-
-          bonus=rollingActor.prof; actionType.mwak || actionType.msak &&
-          !opponentActor.canMove
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=rollingActor.prof; actionType.mwak || actionType.msak &&
+            !opponentActor.canMove
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: 894
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 4
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,10 +195,21 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start:
+      combat: null
+      round: 4
+      time: 894
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!bfPdkxEX9seNA43F.Dl0ExJPYT3FtCw4U'
 sort: 2400000
 ownership:
@@ -215,7 +223,7 @@ _stats:
   compendiumSource: Item.CHV28QZWnE2BZHSF
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881347037

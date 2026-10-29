@@ -43,21 +43,18 @@ effects:
     origin: Compendium.ak5e.ak5e-character-origins.Item.IreMFbiQu1nmrNaX
     _id: 1mkuGmL9RD5uiRvd
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.advantage.skill.ins
-        mode: 2
-        value: confirm('Are you checking for hostile intent?')
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.advantage.skill.ins
+          value: confirm('Are you checking for hostile intent?')
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -81,10 +78,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!IreMFbiQu1nmrNaX.1mkuGmL9RD5uiRvd'
 sort: 0
 ownership:
@@ -98,7 +100,7 @@ _stats:
   compendiumSource: Item.IreMFbiQu1nmrNaX
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881328247

@@ -37,36 +37,12 @@ system:
     subtype: talent
 effects:
   - _id: waeG7ZDIB5myAbe6
-    changes:
-      - key: flags.midi-qol.optional.tactical-mind.attack.all
-        mode: 5
-        value: reroll-withBonus 1d10
-        priority: 20
-      - key: flags.midi-qol.optional.tactical-mind.label
-        mode: 5
-        value: Tactical Mind
-        priority: 20
-      - key: flags.midi-qol.optional.tactical-mind.save.all
-        mode: 5
-        value: reroll-withBonus 1d10
-        priority: 20
-      - key: flags.midi-qol.optional.tactical-mind.check.all
-        mode: 5
-        value: reroll-withBonus 1d10
-        priority: 20
-      - key: flags.midi-qol.optional.tactical-mind.count
-        mode: 5
-        value: ItemUses.Tactical Mind
-        priority: 20
     disabled: false
     duration:
-      startTime: 47180419488
-      seconds: null
-      combat: null
-      rounds: null
-      turns: null
-      startRound: 260
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     origin: Item.xmTdqyav4pJqtGEU
     transfer: true
     flags:
@@ -111,14 +87,46 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     img: modules/ak5e/icons/Skill-TheresaBlackCrownedSage.png
     type: base
-    system: {}
+    system:
+      changes:
+        - key: flags.midi-qol.optional.tactical-mind.attack.all
+          value: reroll-withBonus 1d10
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.tactical-mind.label
+          value: Tactical Mind
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.tactical-mind.save.all
+          value: reroll-withBonus 1d10
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.tactical-mind.check.all
+          value: reroll-withBonus 1d10
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.tactical-mind.count
+          value: ItemUses.Tactical Mind
+          priority: 20
+          type: override
     sort: 0
+    start:
+      combat: null
+      round: 260
+      time: 47180419488
+      turn: 1
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!XosGA1zMMTiPsqlC.waeG7ZDIB5myAbe6'
 flags:
   dnd5e:
@@ -128,7 +136,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783358871565

@@ -162,25 +162,22 @@ effects:
     origin: Compendium.AK5e.ak5e-operator-skills.Item.mmdORxVfGwd5bFn5
     _id: DXFUOiWQeWl6gGq8
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '30'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '50'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 30
+          priority: 20
+          type: upgrade
+        - key: system.scale.skillPoints.maxsp
+          value: 50
+          priority: 20
+          type: upgrade
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -204,10 +201,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!mmdORxVfGwd5bFn5.DXFUOiWQeWl6gGq8'
   - name: Radius/Range for Arts Up
     img: modules/AK5e-Foundry-Module/icons/Skill-Lin1.webp
@@ -215,25 +217,22 @@ effects:
     transfer: false
     _id: 88h9qWQxBNdTtCW7
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.range.rsak
-        mode: 2
-        value: '*10'
-        priority: 20
-      - key: flags.midi-qol.range.save
-        mode: 2
-        value: '*10'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.range.rsak
+          value: '*10'
+          priority: 20
+          type: add
+        - key: flags.midi-qol.range.save
+          value: '*10'
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -261,10 +260,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!mmdORxVfGwd5bFn5.88h9qWQxBNdTtCW7'
 flags:
   dnd5e:
@@ -274,7 +278,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263

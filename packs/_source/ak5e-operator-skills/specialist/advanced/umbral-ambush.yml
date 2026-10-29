@@ -159,25 +159,22 @@ effects:
     origin: Item.iHbkOdoLgadPTo2u
     _id: sqi5JLFWs8QDA2SK
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -201,10 +198,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!BalkoWGirI28pOIT.sqi5JLFWs8QDA2SK'
   - name: Umbral Ambush
     img: modules/ak5e/icons/Skill-Lunacub2.webp
@@ -212,17 +214,14 @@ effects:
     transfer: false
     _id: E8D5nDoLt1yk679H
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 2
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 2
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -250,10 +249,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!BalkoWGirI28pOIT.E8D5nDoLt1yk679H'
 flags:
   dnd5e:
@@ -263,7 +267,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783356925066

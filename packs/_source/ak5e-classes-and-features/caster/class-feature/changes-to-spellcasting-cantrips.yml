@@ -39,21 +39,18 @@ effects:
     origin: Compendium.ak5e.ak5e-classes-and-features.Item.Qi4Mc2HB3snq2eE5
     _id: ABspXtMpNUDi4KsJ
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 5
-        value: bonus=@attributes.spell.mod; isCantrip && hasDamage
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@attributes.spell.mod; isCantrip && hasDamage
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -77,12 +74,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774181067611
       modifiedTime: 1774181165589
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Qi4Mc2HB3snq2eE5.ABspXtMpNUDi4KsJ'
 sort: 0
 ownership:
@@ -96,7 +96,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774180882901

@@ -205,20 +205,17 @@ effects:
     img: icons/containers/bags/case-leather-tan.webp
     disabled: true
     _id: 9iHlDO7bffkouyQF
-    system: {}
-    changes:
-      - key: activities[attack].attack.bonus
-        mode: 5
-        value: '+1'
-        priority: 50
+    system:
+      changes:
+        - key: activities[attack].attack.bonus
+          value: '+1'
+          priority: 50
+          type: override
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -243,31 +240,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: 9KtVYqHDTWORuJDZ
       modifiedTime: 1756570960331
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!LL42rU6BBic45HZv.9iHlDO7bffkouyQF'
   - type: enchantment
     name: Sharpened (Maintenance Kit)
     img: icons/containers/bags/case-leather-tan.webp
     disabled: true
     _id: VgEEOOKD5rQ8QCBK
-    system: {}
-    changes:
-      - key: system.damage.bonus
-        mode: 2
-        value: '2'
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.bonus
+          value: 2
+          priority: 20
+          type: add
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -292,35 +290,36 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: 9KtVYqHDTWORuJDZ
       modifiedTime: 1756570968108
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!LL42rU6BBic45HZv.VgEEOOKD5rQ8QCBK'
   - type: enchantment
     name: Recalibrated (Maintenance Kit)
     img: icons/containers/bags/case-leather-tan.webp
     disabled: true
     _id: oEAiVeWIbOx6B87j
-    system: {}
-    changes:
-      - key: system.range.value
-        mode: 1
-        value: '1.5'
-        priority: 10
-      - key: system.range.long
-        mode: 1
-        value: '1.5'
-        priority: 10
+    system:
+      changes:
+        - key: system.range.value
+          value: 1.5
+          priority: 10
+          type: multiply
+        - key: system.range.long
+          value: 1.5
+          priority: 10
+          type: multiply
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -345,11 +344,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: 9KtVYqHDTWORuJDZ
       modifiedTime: 1756570976326
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!LL42rU6BBic45HZv.oEAiVeWIbOx6B87j'
 flags:
   dnd5e:
@@ -360,7 +363,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1756485616945

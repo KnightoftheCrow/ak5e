@@ -188,20 +188,17 @@ effects:
     img: modules/ak5e/icons/Skill-TheIgnitingSpark2.webp
     disabled: true
     _id: IYePBu8SIg0fxeLN
-    system: {}
-    changes:
-      - key: system.target.template.size
-        mode: 2
-        value: 10*(@scaling)
-        priority: 20
+    system:
+      changes:
+        - key: system.target.template.size
+          value: 10*(@scaling)
+          priority: 20
+          type: add
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -227,32 +224,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774123804605
       modifiedTime: 1774126847680
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fJNwJVtynlVl2IX1.IYePBu8SIg0fxeLN'
   - type: enchantment
     name: Overwhelming Detonation (Line)
     img: modules/ak5e/icons/Skill-TheIgnitingSpark2.webp
     disabled: true
     _id: 2ZKPZ781HserDYDZ
-    system: {}
-    changes:
-      - key: system.target.template.size
-        mode: 2
-        value: 20*(@scaling)
-        priority: 20
+    system:
+      changes:
+        - key: system.target.template.size
+          value: 20*(@scaling)
+          priority: 20
+          type: add
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -278,32 +275,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774123902837
       modifiedTime: 1774126835085
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fJNwJVtynlVl2IX1.2ZKPZ781HserDYDZ'
   - type: enchantment
     name: Overwhelming Detonation (Sphere)
     img: modules/ak5e/icons/Skill-TheIgnitingSpark2.webp
     disabled: true
     _id: LpVXUQy0YiknGFAG
-    system: {}
-    changes:
-      - key: system.target.template.size
-        mode: 2
-        value: 5*(@scaling)
-        priority: 20
+    system:
+      changes:
+        - key: system.target.template.size
+          value: 5*(@scaling)
+          priority: 20
+          type: add
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -329,12 +326,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774123959114
       modifiedTime: 1774178344219
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fJNwJVtynlVl2IX1.LpVXUQy0YiknGFAG'
 sort: 250000
 ownership:
@@ -348,7 +348,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774123678844

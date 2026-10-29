@@ -149,21 +149,18 @@ effects:
     origin: Compendium.ak5e.ak5e-classes-and-features.Item.anCtVfX14E7NFPWr
     _id: npuCVH1oDjRkGy74
     type: base
-    system: {}
-    changes:
-      - key: system.bonuses.spell.dc
-        mode: 2
-        value: '+2'
-        priority: 20
+    system:
+      changes:
+        - key: system.bonuses.spell.dc
+          value: '+2'
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -187,12 +184,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774120778141
       modifiedTime: 1774120809191
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!anCtVfX14E7NFPWr.npuCVH1oDjRkGy74'
 sort: 100000
 ownership:
@@ -206,7 +206,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774120730155

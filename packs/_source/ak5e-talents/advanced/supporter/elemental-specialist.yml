@@ -192,25 +192,22 @@ effects:
     transfer: false
     _id: bIszxMotzttFGTKo
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: acid
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=r1; damageTypes.acid
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: acid
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: modifier=r1; damageTypes.acid
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -237,35 +234,37 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Qy0ZC3dGELccxk2C.bIszxMotzttFGTKo'
   - name: Elemental Specialist (Cold)
     img: modules/AK5e-Foundry-Module/icons/Skill-Gnosis3.webp
     origin: Compendium.AK5e.ak5e-talents.Item.Qy0ZC3dGELccxk2C
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: cold
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=r1; damageTypes.cold
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: cold
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: modifier=r1; damageTypes.cold
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -292,36 +291,38 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: CwyWKY2gMyGVFNK2
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Qy0ZC3dGELccxk2C.CwyWKY2gMyGVFNK2'
   - name: Elemental Specialist (Fire)
     img: modules/AK5e-Foundry-Module/icons/Skill-Gnosis3.webp
     origin: Compendium.AK5e.ak5e-talents.Item.Qy0ZC3dGELccxk2C
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: fire
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=r1; damageTypes.fire
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: fire
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: modifier=r1; damageTypes.fire
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -348,36 +349,38 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: wTajghr3jhO2J3Tn
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Qy0ZC3dGELccxk2C.wTajghr3jhO2J3Tn'
   - name: Elemental Specialist (Force)
     img: modules/AK5e-Foundry-Module/icons/Skill-Gnosis3.webp
     origin: Compendium.AK5e.ak5e-talents.Item.Qy0ZC3dGELccxk2C
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: force
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=r1; damageTypes.force
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: force
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: modifier=r1; damageTypes.force
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -404,36 +407,38 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: Qvhfc5QCFR1yWhr6
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Qy0ZC3dGELccxk2C.Qvhfc5QCFR1yWhr6'
   - name: Elemental Specialist (Lightning)
     img: modules/AK5e-Foundry-Module/icons/Skill-Gnosis3.webp
     origin: Compendium.AK5e.ak5e-talents.Item.Qy0ZC3dGELccxk2C
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: lightning
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=r1; damageTypes.lightning
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: lightning
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: modifier=r1; damageTypes.lightning
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -460,36 +465,38 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: x01gRqJWf2e0la3z
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Qy0ZC3dGELccxk2C.x01gRqJWf2e0la3z'
   - name: Elemental Specialist (Necrotic)
     img: modules/AK5e-Foundry-Module/icons/Skill-Gnosis3.webp
     origin: Compendium.AK5e.ak5e-talents.Item.Qy0ZC3dGELccxk2C
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: necrotic
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=r1; damageTypes.necrotic
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: necrotic
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: modifier=r1; damageTypes.necrotic
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -516,36 +523,38 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: lkoNim9jucNOJcF1
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Qy0ZC3dGELccxk2C.lkoNim9jucNOJcF1'
   - name: Elemental Specialist (Poison)
     img: modules/AK5e-Foundry-Module/icons/Skill-Gnosis3.webp
     origin: Compendium.AK5e.ak5e-talents.Item.Qy0ZC3dGELccxk2C
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: poison
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=r1; damageTypes.poison
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: poison
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: modifier=r1; damageTypes.poison
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -572,36 +581,38 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: hUvbT5lbQs9X35Yg
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Qy0ZC3dGELccxk2C.hUvbT5lbQs9X35Yg'
   - name: Elemental Specialist (Psychic)
     img: modules/AK5e-Foundry-Module/icons/Skill-Gnosis3.webp
     origin: Compendium.AK5e.ak5e-talents.Item.Qy0ZC3dGELccxk2C
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: psychic
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=r1; damageTypes.psychic
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: psychic
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: modifier=r1; damageTypes.psychic
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -628,36 +639,38 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: WdqJoWVC1n3E70wZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Qy0ZC3dGELccxk2C.WdqJoWVC1n3E70wZ'
   - name: Elemental Specialist (Radiant)
     img: modules/AK5e-Foundry-Module/icons/Skill-Gnosis3.webp
     origin: Compendium.AK5e.ak5e-talents.Item.Qy0ZC3dGELccxk2C
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: radiant
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=r1; damageTypes.radiant
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: radiant
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: modifier=r1; damageTypes.radiant
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -684,11 +697,16 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: UALo37OUURiV1X2g
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Qy0ZC3dGELccxk2C.UALo37OUURiV1X2g'
 flags:
   dnd5e:
@@ -698,7 +716,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598389828

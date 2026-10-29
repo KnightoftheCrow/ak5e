@@ -378,17 +378,14 @@ effects:
     transfer: false
     _id: 6N9gywa6ZlorcVaR
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
     disabled: true
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -417,10 +414,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!vocQBrbTyouTqoXX.6N9gywa6ZlorcVaR'
   - name: Ingested Neurotoxin (Failed Save)
     img: icons/consumables/potions/bottle-conical-fumes-green.webp
@@ -428,17 +430,14 @@ effects:
     transfer: false
     _id: Wl03AWjGatJB0lSP
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -467,10 +466,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!vocQBrbTyouTqoXX.Wl03AWjGatJB0lSP'
   - name: Neurotoxin (Succeeded Save)
     img: icons/consumables/potions/bottle-conical-fumes-green.webp
@@ -478,17 +482,14 @@ effects:
     transfer: false
     _id: XW9Z3T8FYjg9L2lV
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: 600
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 600
+      units: seconds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -516,10 +517,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!vocQBrbTyouTqoXX.XW9Z3T8FYjg9L2lV'
 flags:
   dnd5e:
@@ -530,7 +536,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1756921482247

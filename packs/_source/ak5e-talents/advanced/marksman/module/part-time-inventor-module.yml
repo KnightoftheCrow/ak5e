@@ -41,21 +41,18 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.1wKWIN8qqEbSgBVb
     _id: JX2jU1CEK8woPShl
     type: base
-    system: {}
-    changes:
-      - key: system.scale.part-time-inventor.invent
-        mode: 5
-        value: '2'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.part-time-inventor.invent
+          value: 2
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -79,11 +76,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: GiT7LQTiCJxjm7mo
       modifiedTime: 1768145781857
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!1wKWIN8qqEbSgBVb.JX2jU1CEK8woPShl'
 flags:
   dnd5e:
@@ -93,7 +94,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1768145722621

@@ -49,29 +49,28 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.B0qaKnC4GaKEkr4i
     _id: nzONfpSWQhbkN3vk
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.kip.save.fail.all
-        mode: 0
-        value: '@attributes.spell.mod'
-        priority: 20
-      - key: flags.midi-qol.optional.kip.count
-        mode: 0
-        value: ItemUses.identifier.knowledge-is-power
-        priority: 20
-      - key: flags.midi-qol.optional.kip.label
-        mode: 0
-        value: Knowledge is Power - Add Spellcasting Modifier to Saving Throw result
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.kip.save.fail.all
+          value: '@attributes.spell.mod'
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.kip.count
+          value: ItemUses.identifier.knowledge-is-power
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.kip.label
+          value: >-
+            Knowledge is Power - Add Spellcasting Modifier to Saving Throw
+            result
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -95,10 +94,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!B0qaKnC4GaKEkr4i.nzONfpSWQhbkN3vk'
 sort: 0
 ownership:
@@ -112,7 +116,7 @@ _stats:
   compendiumSource: Item.B0qaKnC4GaKEkr4i
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1772222746366

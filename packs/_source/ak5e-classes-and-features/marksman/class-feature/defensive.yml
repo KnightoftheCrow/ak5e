@@ -155,21 +155,18 @@ effects:
     transfer: false
     _id: 9ANJvywCuBBpNs8y
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.modifyAC
-        mode: 2
-        value: bonus=1d4; usesCount=1;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.modifyAC
+          value: bonus=1d4; usesCount=1;
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -196,11 +193,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: GiT7LQTiCJxjm7mo
       modifiedTime: 1767896894736
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!NRfOeklLVrJEf3Tv.9ANJvywCuBBpNs8y'
 flags:
   dnd5e:
@@ -210,7 +211,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767614282591

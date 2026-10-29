@@ -186,25 +186,22 @@ effects:
     origin: Item.S3fMQRdThN28lImm
     type: base
     _id: VMbHdTTzQV5Q2RBj
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: acid
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=r1; damageTypes.acid
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: acid
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: modifier=r1; damageTypes.acid
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -234,35 +231,37 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!kYCAit31digRO6g5.VMbHdTTzQV5Q2RBj'
   - name: Elemental Resistance (Cold)
     img: modules/ak5e/icons/Skill-Bubble1.webp
     origin: Item.S3fMQRdThN28lImm
     type: base
     _id: AMOjosB156xsVFXB
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: cold
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: damageTypes.cold
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: cold
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: damageTypes.cold
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -288,35 +287,37 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!kYCAit31digRO6g5.AMOjosB156xsVFXB'
   - name: Elemental Resistance (Fire)
     img: modules/ak5e/icons/Skill-Bubble1.webp
     origin: Item.S3fMQRdThN28lImm
     type: base
     _id: gmRNioPgVuf4oGWc
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: fire
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: damageTypes.fire
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: fire
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: damageTypes.fire
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -342,35 +343,37 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!kYCAit31digRO6g5.gmRNioPgVuf4oGWc'
   - name: Elemental Resistance (Force)
     img: modules/ak5e/icons/Skill-Bubble1.webp
     origin: Item.S3fMQRdThN28lImm
     type: base
     _id: XBJBefESYYjFbfBg
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: force
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: damageTypes.force
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: force
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: damageTypes.force
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -396,35 +399,37 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!kYCAit31digRO6g5.XBJBefESYYjFbfBg'
   - name: Elemental Resistance (Lightning)
     img: modules/ak5e/icons/Skill-Bubble1.webp
     origin: Item.S3fMQRdThN28lImm
     type: base
     _id: jPQfqdHTRtv9w7UP
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: lightning
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: damageTypes.lightning
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: lightning
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: damageTypes.lightning
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -450,35 +455,37 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!kYCAit31digRO6g5.jPQfqdHTRtv9w7UP'
   - name: Elemental Resistance (Necrotic)
     img: modules/ak5e/icons/Skill-Bubble1.webp
     origin: Item.S3fMQRdThN28lImm
     type: base
     _id: axCFztpAKHNljmOV
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: lightning
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: damageTypes.necrotic
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: lightning
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: damageTypes.necrotic
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -504,35 +511,37 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!kYCAit31digRO6g5.axCFztpAKHNljmOV'
   - name: Elemental Resistance (Poison)
     img: modules/ak5e/icons/Skill-Bubble1.webp
     origin: Item.S3fMQRdThN28lImm
     type: base
     _id: 2JuOBMZqepmpkTva
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: poison
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 2
-        value: damageTypes.poison
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: poison
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: damageTypes.poison
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -558,35 +567,37 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!kYCAit31digRO6g5.2JuOBMZqepmpkTva'
   - name: Elemental Resistance (Psychic)
     img: modules/ak5e/icons/Skill-Bubble1.webp
     origin: Item.S3fMQRdThN28lImm
     type: base
     _id: VTPVROVusoC7zBtb
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: psychic
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: damageTypes.psychic
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: psychic
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: damageTypes.psychic
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -612,35 +623,37 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!kYCAit31digRO6g5.VTPVROVusoC7zBtb'
   - name: Elemental Resistance (Radiant)
     img: modules/ak5e/icons/Skill-Bubble1.webp
     origin: Item.S3fMQRdThN28lImm
     type: base
     _id: xuAwDyR1SeAnm5dz
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: radiant
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: damageTypes.radiant
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: radiant
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: damageTypes.radiant
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -666,10 +679,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!kYCAit31digRO6g5.xuAwDyR1SeAnm5dz'
 flags:
   dnd5e:
@@ -679,7 +697,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783357952370

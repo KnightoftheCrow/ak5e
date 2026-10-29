@@ -154,30 +154,27 @@ effects:
     origin: Compendium.ak5e.ak5e-classes-and-features.Item.bnjx284W0wwCkHjz
     _id: rGHgFB0yl7OLVgz4
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.criticalThreshold
-        mode: 0
-        value: >-
-          threshold=-1; opponentActor.effects.some(effect => effect.name ===
-          'Target')
-        priority: 20
-      - key: flags.automated-conditions-5e.attack.criticalThreshold
-        mode: 0
-        value: >-
-          threshold=-1; opponentActor.effects.some(effect => effect.name ===
-          'Target'); ['elite', 'leader'].some(type =>
-          opponentActor.creatureType.includes(type));
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          value: >-
+            threshold=-1; opponentActor.effects.some(effect => effect.name ===
+            'Target')
+          priority: 20
+          type: custom
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          value: >-
+            threshold=-1; opponentActor.effects.some(effect => effect.name ===
+            'Target'); ['elite', 'leader'].some(type =>
+            opponentActor.creatureType.includes(type));
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -201,12 +198,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.5
       createdTime: 1781190959386
       modifiedTime: 1781191202592
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!bnjx284W0wwCkHjz.rGHgFB0yl7OLVgz4'
   - name: Target
     img: modules/ak5e/icons/Skill-Lemuen1.webp
@@ -214,21 +214,18 @@ effects:
     transfer: false
     _id: pWUqVplDYj2UW5Ft
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.attack.bonus
-        mode: 5
-        value: bonus=1; hasAttack && effectOriginTokenId === tokenId;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.bonus
+          value: bonus=1; hasAttack && effectOriginTokenId === tokenId;
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -258,12 +255,15 @@ effects:
         Compendium.ak5e.ak5e-classes-and-features.Item.oxFGvfgwpg4tNLdL.ActiveEffect.IZw8x6vWejhydaf6
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.5
       createdTime: 1781191219873
       modifiedTime: 1781191285572
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!bnjx284W0wwCkHjz.pWUqVplDYj2UW5Ft'
 sort: 112500
 ownership:
@@ -277,7 +277,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1767621274994

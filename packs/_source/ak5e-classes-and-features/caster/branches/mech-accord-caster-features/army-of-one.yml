@@ -156,21 +156,18 @@ effects:
     transfer: false
     _id: ldhh5AhpnBBAFQOm
     type: base
-    system: {}
-    changes:
-      - key: system.bonuses.All-Damage
-        mode: 2
-        value: '@scaling'
-        priority: 20
+    system:
+      changes:
+        - key: system.bonuses.All-Damage
+          value: '@scaling'
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -197,12 +194,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774104187616
       modifiedTime: 1774104213790
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!mqwJyGfkt52v84Wr.ldhh5AhpnBBAFQOm'
 sort: 287500
 ownership:
@@ -216,7 +216,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774104104619

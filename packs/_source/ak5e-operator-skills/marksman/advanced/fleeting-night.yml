@@ -153,21 +153,18 @@ effects:
     origin: Compendium.ak5e.ak5e-operator-skills.Item.cJxHlsMvWQcx8nLC
     _id: kjWFUEdzYi8azZXL
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.attack.fumbleThreshold
-        mode: 2
-        value: set=8;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.fumbleThreshold
+          value: set=8;
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 3
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 3
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -195,37 +192,37 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768152099711
       modifiedTime: 1768152355872
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!cJxHlsMvWQcx8nLC.kjWFUEdzYi8azZXL'
   - name: Fleeting Night (Skill Points)
     img: modules/ak5e/icons/Skill-GuardAmiya1.png
     origin: Compendium.ak5e.ak5e-operator-skills.Item.cJxHlsMvWQcx8nLC
     _id: c920DegdobXXch37
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '0'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 0
+          priority: 20
+          type: upgrade
+        - key: system.scale.skillPoints.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -250,12 +247,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768152105021
       modifiedTime: 1768651481599
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!cJxHlsMvWQcx8nLC.c920DegdobXXch37'
 sort: 0
 ownership:
@@ -269,7 +269,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767618993202

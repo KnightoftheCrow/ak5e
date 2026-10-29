@@ -41,21 +41,18 @@ effects:
     origin: Compendium.ak5e.ak5e-classes-and-features.Item.KoShQQkHWdDKzY42
     _id: 0seOj4G3UUMMK9ng
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.ignoreNearbyFoes
-        mode: 2
-        value: true; actionType.rwak
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.ignoreNearbyFoes
+          value: true; actionType.rwak
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -79,11 +76,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: GiT7LQTiCJxjm7mo
       modifiedTime: 1767876079422
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!KoShQQkHWdDKzY42.0seOj4G3UUMMK9ng'
 flags:
   dnd5e:
@@ -93,7 +94,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767614279025

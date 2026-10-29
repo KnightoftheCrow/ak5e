@@ -44,33 +44,30 @@ effects:
     origin: Compendium.ak5e.ak5e-character-origins.Item.5eiEiDLgHBFt6dmZ
     _id: A554LnjXNIVu1aB8
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.zanne.attack.all
-        mode: 0
-        value: replace 2d20kh
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.count
-        mode: 0
-        value: each-turn
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.force
-        mode: 0
-        value: 'true'
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.activation
-        mode: 0
-        value: findNearbyCount(-1, targetUuid, 5) >= 1
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.zanne.attack.all
+          value: replace 2d20kh
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.zanne.count
+          value: each-turn
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.zanne.force
+          value: true
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.zanne.activation
+          value: findNearbyCount(-1, targetUuid, 5) >= 1
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: 858
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 110
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -95,42 +92,50 @@ effects:
         Actor.j5qUpsgLWW6QtAFt.Item.WaCm1rpdVNHQDkUe.ActiveEffect.U3BSULyi6f3PQgjc
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start:
+      combat: null
+      round: 110
+      time: 858
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!5eiEiDLgHBFt6dmZ.A554LnjXNIVu1aB8'
   - name: Zanne del Lupo (Level 7+)
     img: icons/creatures/mammals/wolf-howl-moon-black.webp
     origin: Compendium.ak5e.ak5e-character-origins.Item.5eiEiDLgHBFt6dmZ
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.zanne.attack.all
-        mode: 0
-        value: replace 2d20kh
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.count
-        mode: 0
-        value: every
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.force
-        mode: 0
-        value: 'true'
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.activation
-        mode: 0
-        value: findNearbyCount(-1, targetUuid, 5) >= 1 && details.level > 6
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.zanne.attack.all
+          value: replace 2d20kh
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.zanne.count
+          value: every
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.zanne.force
+          value: true
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.zanne.activation
+          value: findNearbyCount(-1, targetUuid, 5) >= 1 && details.level > 6
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: 858
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 110
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -155,11 +160,22 @@ effects:
         Actor.j5qUpsgLWW6QtAFt.Item.WaCm1rpdVNHQDkUe.ActiveEffect.U3BSULyi6f3PQgjc
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: pEULtbsUAAVUNUpE
+    start:
+      combat: null
+      round: 110
+      time: 858
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!5eiEiDLgHBFt6dmZ.pEULtbsUAAVUNUpE'
 sort: 0
 ownership:
@@ -173,7 +189,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680313150

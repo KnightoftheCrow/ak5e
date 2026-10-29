@@ -725,25 +725,22 @@ effects:
     transfer: false
     _id: igKcNTAwYsCXZI8D
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '+10'
-        priority: 20
-      - key: system.abilities.dex.bonuses.save
-        mode: 2
-        value: 1d4
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: '+10'
+          priority: 20
+          type: custom
+        - key: system.abilities.dex.bonuses.save
+          value: 1d4
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -772,12 +769,15 @@ effects:
         Compendium.ak5e.ak5e-classes-and-features.Item.If5mTdvFFxffxJGW.ActiveEffect.FEnhLDKXI3UKIZU8
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774099699217
       modifiedTime: 1774099774135
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!krc0JZKzL4QpMotT.igKcNTAwYsCXZI8D'
   - name: +4 DR
     img: modules/ak5e/icons/Skill-Goldenglow2.webp
@@ -785,69 +785,66 @@ effects:
     transfer: false
     _id: UJ6Pz6jRxqZFgwsu
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dm.amount.acid
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.bludgeoning
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.cold
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.fire
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.force
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.lightning
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.necrotic
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.piercing
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.poison
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.psychic
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.radiant
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.slashing
-        mode: 2
-        value: '-4'
-        priority: 20
-      - key: system.traits.dm.amount.thunder
-        mode: 2
-        value: '-4'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dm.amount.acid
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.bludgeoning
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.cold
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.fire
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.force
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.lightning
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.necrotic
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.piercing
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.poison
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.psychic
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.radiant
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.slashing
+          value: -4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.thunder
+          value: -4
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -876,12 +873,15 @@ effects:
         Compendium.ak5e.ak5e-classes-and-features.Item.If5mTdvFFxffxJGW.ActiveEffect.kk13jUbxbo3jMcmR
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774099700120
       modifiedTime: 1774099803934
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!krc0JZKzL4QpMotT.UJ6Pz6jRxqZFgwsu'
   - name: '-10ft Speed/-1d4 to Dex Saves'
     img: modules/ak5e/icons/Skill-Goldenglow2.webp
@@ -889,25 +889,22 @@ effects:
     transfer: false
     _id: YQwc1BQ09ZDzVFWp
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '-10'
-        priority: 20
-      - key: system.abilities.dex.bonuses.save
-        mode: 2
-        value: '-1d4'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: -10
+          priority: 20
+          type: custom
+        - key: system.abilities.dex.bonuses.save
+          value: '-1d4'
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -936,12 +933,15 @@ effects:
         Compendium.ak5e.ak5e-classes-and-features.Item.If5mTdvFFxffxJGW.ActiveEffect.3NQXq6ammdf67oKy
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774099700938
       modifiedTime: 1774099830397
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!krc0JZKzL4QpMotT.YQwc1BQ09ZDzVFWp'
   - name: '-1d4 to Attack and Damage Rolls'
     img: modules/ak5e/icons/Skill-Goldenglow2.webp
@@ -949,25 +949,22 @@ effects:
     transfer: false
     _id: 27ijoHsht4UydROZ
     type: base
-    system: {}
-    changes:
-      - key: system.bonuses.All-Attacks
-        mode: 2
-        value: '-1d4'
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 5
-        value: bonus=-1d4
-        priority: 20
+    system:
+      changes:
+        - key: system.bonuses.All-Attacks
+          value: '-1d4'
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=-1d4
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -996,12 +993,15 @@ effects:
         Compendium.ak5e.ak5e-classes-and-features.Item.If5mTdvFFxffxJGW.ActiveEffect.5ssarri1C6JUXCay
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774099701961
       modifiedTime: 1774099847476
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!krc0JZKzL4QpMotT.27ijoHsht4UydROZ'
   - name: +1d4 to Attack and Damage Rolls
     img: modules/ak5e/icons/Skill-Goldenglow2.webp
@@ -1009,25 +1009,22 @@ effects:
     transfer: false
     _id: Im7Fz4YFR0txuifL
     type: base
-    system: {}
-    changes:
-      - key: system.bonuses.All-Attacks
-        mode: 2
-        value: +1d4
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 5
-        value: bonus=+1d4
-        priority: 20
+    system:
+      changes:
+        - key: system.bonuses.All-Attacks
+          value: +1d4
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=+1d4
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1056,81 +1053,81 @@ effects:
         Compendium.ak5e.ak5e-classes-and-features.Item.If5mTdvFFxffxJGW.ActiveEffect.YhA83KSbKhW3SRBE
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774099703145
       modifiedTime: 1774099856733
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!krc0JZKzL4QpMotT.Im7Fz4YFR0txuifL'
   - name: '-4 DR'
     img: modules/ak5e/icons/Skill-Goldenglow2.webp
     origin: Compendium.ak5e.ak5e-classes-and-features.Item.krc0JZKzL4QpMotT
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dm.amount.acid
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.bludgeoning
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.cold
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.fire
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.force
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.lightning
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.necrotic
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.piercing
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.poison
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.psychic
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.radiant
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.slashing
-        mode: 2
-        value: '4'
-        priority: 20
-      - key: system.traits.dm.amount.thunder
-        mode: 2
-        value: '4'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dm.amount.acid
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.bludgeoning
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.cold
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.fire
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.force
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.lightning
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.necrotic
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.piercing
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.poison
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.psychic
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.radiant
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.slashing
+          value: 4
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.thunder
+          value: 4
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1159,13 +1156,16 @@ effects:
         Compendium.ak5e.ak5e-classes-and-features.Item.If5mTdvFFxffxJGW.ActiveEffect.kk13jUbxbo3jMcmR
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774099704059
       modifiedTime: 1774099882533
       lastModifiedBy: 9KtVYqHDTWORuJDZ
     _id: nTQp2qnx1ZJCvjgo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!krc0JZKzL4QpMotT.nTQp2qnx1ZJCvjgo'
 sort: 87500
 ownership:
@@ -1179,7 +1179,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774099559836

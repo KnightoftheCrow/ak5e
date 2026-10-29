@@ -149,21 +149,18 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.h0aTbxfF0b8oJ8hg
     _id: ZxBY8lo97JECtfP2
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.extraDice
-        mode: 2
-        value: bonus=1; usesCount=1; opponentActor.attributes.hp.pct > 50
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.extraDice
+          value: bonus=1; usesCount=1; opponentActor.attributes.hp.pct > 50
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: 624
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 71
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -192,10 +189,21 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start:
+      combat: null
+      round: 71
+      time: 624
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!h0aTbxfF0b8oJ8hg.ZxBY8lo97JECtfP2'
 flags:
   ak5e:
@@ -247,7 +255,7 @@ _stats:
   compendiumSource: Compendium.ak5e.ak5e-talents.Item.z2MFO3uUJFTurMl2
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1770924144147

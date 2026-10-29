@@ -153,25 +153,22 @@ effects:
     origin: Compendium.ak5e.ak5e-operator-skills.Item.ep2MJVEskzKTkT4y
     _id: NofukA6yJwZH3fsM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '0'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 0
+          priority: 20
+          type: upgrade
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -196,29 +193,29 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768072889493
       modifiedTime: 1768651438056
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!ep2MJVEskzKTkT4y.NofukA6yJwZH3fsM'
   - name: Wounding Blow
     img: modules/ak5e/icons/Skill-Thorns2.webp
     origin: Compendium.ak5e.ak5e-operator-skills.Item.ep2MJVEskzKTkT4y
     _id: 9c0PlQGY4hMTFlVK
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -247,12 +244,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768140910627
       modifiedTime: 1768141329747
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!ep2MJVEskzKTkT4y.9c0PlQGY4hMTFlVK'
 sort: 100391
 ownership:
@@ -266,7 +266,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767618614942

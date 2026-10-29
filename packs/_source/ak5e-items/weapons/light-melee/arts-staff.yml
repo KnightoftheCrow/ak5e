@@ -120,29 +120,26 @@ effects:
     origin: Compendium.ak5e.ak5e-items.Item.8YnvqZkWkp8JrS0y
     _id: IEIkt0pd1wdPmGiS
     type: base
-    system: {}
-    changes:
-      - key: system.bonuses.msak.attack
-        mode: 2
-        value: '+1'
-        priority: null
-      - key: system.bonuses.rsak.attack
-        mode: 2
-        value: '+1'
-        priority: null
-      - key: system.bonuses.spell.dc
-        mode: 2
-        value: '+1'
-        priority: null
+    system:
+      changes:
+        - key: system.bonuses.msak.attack
+          value: '+1'
+          priority: null
+          type: add
+        - key: system.bonuses.rsak.attack
+          value: '+1'
+          priority: null
+          type: add
+        - key: system.bonuses.spell.dc
+          value: '+1'
+          priority: null
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -156,26 +153,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756312403497
       modifiedTime: 1756312508710
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!8YnvqZkWkp8JrS0y.IEIkt0pd1wdPmGiS'
-sort: 0
+sort: 100000
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3
-flags: {}
+flags:
+  dnd5e:
+    riders:
+      activity: []
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.1.2
+  systemVersion: 5.2.5
   createdTime: 1756311910769
-  modifiedTime: 1756407997487
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1782088159003
+  lastModifiedBy: P5lWUBQKuHlZqgTn
 _key: '!items!8YnvqZkWkp8JrS0y'

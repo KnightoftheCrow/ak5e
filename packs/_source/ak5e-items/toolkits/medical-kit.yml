@@ -283,21 +283,18 @@ effects:
     transfer: false
     _id: AR6GDjtEEkYjJmxx
     type: base
-    system: {}
-    changes:
-      - key: system.skills.med.bonuses.check
-        mode: 2
-        value: '+5'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.med.bonuses.check
+          value: '+5'
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -325,12 +322,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756489655769
       modifiedTime: 1756571479433
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JAmRuAi1wbg4Zwdm.AR6GDjtEEkYjJmxx'
   - name: Medicine Advantage (Patient Assessment)
     img: icons/containers/bags/case-leather-tan.webp
@@ -338,21 +338,18 @@ effects:
     transfer: false
     _id: afo7kdCd5F0Ti8tl
     type: base
-    system: {}
-    changes:
-      - key: system.skills.med.roll.mode
-        mode: 2
-        value: '1'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.med.roll.mode
+          value: 1
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -379,12 +376,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756491078665
       modifiedTime: 1756571529647
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JAmRuAi1wbg4Zwdm.afo7kdCd5F0Ti8tl'
 flags:
   dnd5e:
@@ -394,7 +394,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1756485623408

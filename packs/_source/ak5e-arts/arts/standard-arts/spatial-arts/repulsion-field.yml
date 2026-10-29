@@ -256,24 +256,21 @@ effects:
       script: ''
       stashedChanges: []
       stashedStatuses: []
-    changes:
-      - key: flags.midi-qol.grants.disadvantage.attack.rwak
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.grants.disadvantage.attack.rsak
-        mode: 2
-        value: '1'
-        priority: 20
+      changes:
+        - key: flags.midi-qol.grants.disadvantage.attack.rwak
+          value: 1
+          priority: 20
+          type: add
+        - key: flags.midi-qol.grants.disadvantage.attack.rsak
+          value: 1
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -303,10 +300,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!DJl1FvWZP4jvyQv7.A0qykoxs756IDEBh'
   - name: Difficult Terrain
     img: icons/magic/movement/chevrons-down-yellow.webp
@@ -332,20 +334,17 @@ effects:
       script: ''
       stashedChanges: []
       stashedStatuses: []
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '*0.5'
-        priority: 20
+      changes:
+        - key: system.attributes.movement.all
+          value: '*0.5'
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -374,10 +373,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!DJl1FvWZP4jvyQv7.ssJaey7dhmI48wFM'
 flags:
   dnd5e:
@@ -388,7 +392,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515

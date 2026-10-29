@@ -145,21 +145,18 @@ effects:
     transfer: false
     _id: NwTRzcT9bOu9FRm0
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.extraDice
-        mode: 2
-        value: bonus=1; usesCount=1; opponentActor.attributes.hp.pct > 50
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.extraDice
+          value: bonus=1; usesCount=1; opponentActor.attributes.hp.pct > 50
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -186,11 +183,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: GiT7LQTiCJxjm7mo
       modifiedTime: 1767914223116
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!qB3Tpa2eEM97xS37.NwTRzcT9bOu9FRm0'
 flags:
   dnd5e:
@@ -200,7 +201,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1767905802168

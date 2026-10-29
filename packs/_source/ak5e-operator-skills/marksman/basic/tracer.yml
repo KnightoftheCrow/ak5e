@@ -155,25 +155,22 @@ effects:
     origin: Compendium.ak5e.ak5e-operator-skills.Item.9H9l8JePvyeOfv6p
     _id: CBy4dKBdvzNO0rO0
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '20'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+        - key: system.scale.skillPoints.maxsp
+          value: 20
+          priority: 20
+          type: upgrade
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -198,35 +195,35 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768072840379
       modifiedTime: 1768651420024
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!9H9l8JePvyeOfv6p.CBy4dKBdvzNO0rO0'
   - name: Tracer
     img: modules/ak5e/icons/Skill-Indigo1.webp
     origin: Compendium.ak5e.ak5e-operator-skills.Item.9H9l8JePvyeOfv6p
     _id: WSJvMuDxQzMrVRUL
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.attack.advantage
-        mode: 0
-        value: |-
-          actionType.rwak && 
-          checkNearby(effectOriginTokenId, 'different', 15);
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.advantage
+          value: |-
+            actionType.rwak && 
+            checkNearby(effectOriginTokenId, 'different', 15);
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 3
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 3
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -254,12 +251,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768137147981
       modifiedTime: 1768140629149
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!9H9l8JePvyeOfv6p.WSJvMuDxQzMrVRUL'
 sort: 101563
 ownership:
@@ -273,7 +273,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767618563722

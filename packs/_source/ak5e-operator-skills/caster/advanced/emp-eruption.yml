@@ -308,25 +308,22 @@ effects:
     origin: Compendium.ak5e.ak5e-operator-skills.Item.scf4QdUz0lv0ysI6
     _id: GQBslauEmqcGyBM3
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -351,11 +348,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: 9KtVYqHDTWORuJDZ
       modifiedTime: 1774020452617
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!scf4QdUz0lv0ysI6.GQBslauEmqcGyBM3'
   - name: EMP Eruption (Failed Save)
     img: modules/ak5e/icons/Skill-Liskarm2.webp
@@ -363,17 +364,14 @@ effects:
     transfer: false
     _id: gqVyCkYdDg9ROori
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -402,11 +400,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: 9KtVYqHDTWORuJDZ
       modifiedTime: 1774020440022
+      createdTime: null
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!scf4QdUz0lv0ysI6.gqVyCkYdDg9ROori'
   - name: EMP Eruption (Successful Save)
     img: modules/ak5e/icons/Skill-Liskarm2.webp
@@ -414,17 +416,14 @@ effects:
     transfer: false
     _id: 8KqK4FwYFmhxTO60
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -453,11 +452,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: 9KtVYqHDTWORuJDZ
       modifiedTime: 1774020446388
+      createdTime: null
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!scf4QdUz0lv0ysI6.8KqK4FwYFmhxTO60'
 sort: 700000
 ownership:
@@ -472,7 +475,7 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.wm32yJmlGPnUNNzZ
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1772986852717

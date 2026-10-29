@@ -110,73 +110,70 @@ effects:
     transfer: false
     _id: K0rdEhAkxPNGK25C
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.death.bonuses.save
-        mode: 2
-        value: '2'
-        priority: 20
-      - key: system.traits.dm.amount.acid
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.bludgeoning
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.cold
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.fire
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.force
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.lightning
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.necrotic
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.piercing
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.poison
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.psychic
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.radiant
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.slashing
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.thunder
-        mode: 2
-        value: '-2'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.death.bonuses.save
+          value: 2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.acid
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.bludgeoning
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.cold
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.fire
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.force
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.lightning
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.necrotic
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.piercing
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.poison
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.psychic
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.radiant
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.slashing
+          value: -2
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.thunder
+          value: -2
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -202,12 +199,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756495212654
       modifiedTime: 1756548972417
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!4sgaRh5G7wZIXqto.K0rdEhAkxPNGK25C'
 sort: 100000
 ownership:
@@ -222,7 +222,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1756495110529

@@ -182,21 +182,18 @@ effects:
     origin: Item.IoH0ChdMh2smXXAV
     _id: QTGU5LpBeiLzbNRN
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: bonus=@prof; opponentActor.creatureType.includes('aberration');
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@prof; opponentActor.creatureType.includes('aberration');
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -220,33 +217,35 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Kh191if1NoYtMJfq.QTGU5LpBeiLzbNRN'
   - name: Hunter (Beast)
     img: modules/ak5e/icons/Skill-Invincible1.png
     origin: Item.IoH0ChdMh2smXXAV
     _id: 1WoeKxEkbaLgg7U0
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: |-
-          bonus=@prof;
-          opponentActor.creatureType.includes('beast');
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: |-
+            bonus=@prof;
+            opponentActor.creatureType.includes('beast');
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -270,31 +269,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Kh191if1NoYtMJfq.1WoeKxEkbaLgg7U0'
   - name: Hunter (Celestial)
     img: modules/ak5e/icons/Skill-Invincible1.png
     origin: Item.IoH0ChdMh2smXXAV
     _id: OgtNBaHJ21jpQZtM
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: bonus=@prof; opponentActor.creatureType.includes('celestial');
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@prof; opponentActor.creatureType.includes('celestial');
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -318,31 +319,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Kh191if1NoYtMJfq.OgtNBaHJ21jpQZtM'
   - name: Hunter (Construct)
     img: modules/ak5e/icons/Skill-Invincible1.png
     origin: Item.IoH0ChdMh2smXXAV
     _id: Yb4W4UbwcZwcjfZs
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: bonus=@prof; opponentActor.creatureType.includes('construct');
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@prof; opponentActor.creatureType.includes('construct');
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -366,31 +369,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Kh191if1NoYtMJfq.Yb4W4UbwcZwcjfZs'
   - name: Hunter (Fiend)
     img: modules/ak5e/icons/Skill-Invincible1.png
     origin: Item.IoH0ChdMh2smXXAV
     _id: 253NL4e3gRrZSdIx
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: bonus=@prof; opponentActor.creatureType.includes('fiend');
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@prof; opponentActor.creatureType.includes('fiend');
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -414,31 +419,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Kh191if1NoYtMJfq.253NL4e3gRrZSdIx'
   - name: Hunter (Monstrosity)
     img: modules/ak5e/icons/Skill-Invincible1.png
     origin: Item.IoH0ChdMh2smXXAV
     _id: rPBW7DjAZfy1vFgo
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 5
-        value: bonus=@prof; opponentActor.creatureType.includes('monstrosity');
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@prof; opponentActor.creatureType.includes('monstrosity');
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -462,31 +469,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Kh191if1NoYtMJfq.rPBW7DjAZfy1vFgo'
   - name: Hunter (Plant)
     img: modules/ak5e/icons/Skill-Invincible1.png
     origin: Item.IoH0ChdMh2smXXAV
     _id: LUh0k63gRxGAh9Ko
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 5
-        value: bonus=@prof; opponentActor.creatureType.includes('plant');
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@prof; opponentActor.creatureType.includes('plant');
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -510,31 +519,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Kh191if1NoYtMJfq.LUh0k63gRxGAh9Ko'
   - name: Hunter (Undead)
     img: modules/ak5e/icons/Skill-Invincible1.png
     origin: Item.IoH0ChdMh2smXXAV
     _id: pzIVln86CprK56cY
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 5
-        value: bonus=@prof; opponentActor.creatureType.includes('undead');
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@prof; opponentActor.creatureType.includes('undead');
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -558,10 +569,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Kh191if1NoYtMJfq.pzIVln86CprK56cY'
 flags:
   dnd5e:
@@ -571,7 +587,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783358058579

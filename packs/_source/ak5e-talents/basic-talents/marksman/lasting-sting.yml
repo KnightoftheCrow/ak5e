@@ -150,21 +150,18 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.EUHCD2cxipRq5Gox
     _id: 57fzLppQiRGJjDuP
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: bonus=2d10; usesCount=1; damageTypes.poison;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=2d10; usesCount=1; damageTypes.poison;
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -192,12 +189,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1767897643403
       modifiedTime: 1767898412533
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EUHCD2cxipRq5Gox.57fzLppQiRGJjDuP'
 sort: 500000
 ownership:
@@ -211,7 +211,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1767735487829

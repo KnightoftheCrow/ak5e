@@ -40,21 +40,18 @@ effects:
     origin: Compendium.ak5e.ak5e-classes-and-features.Item.m64RHyIKaX12J7To
     _id: 85VUdS455fHkCUk2
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.criticalThreshold
-        mode: 2
-        value: threshold=-1; hasAttack && (distance <= 15);
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          value: threshold=-1; hasAttack && (distance <= 15);
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -78,12 +75,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768654937589
       modifiedTime: 1768655164254
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!m64RHyIKaX12J7To.85VUdS455fHkCUk2'
 sort: 150000
 ownership:
@@ -97,7 +97,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767626115486

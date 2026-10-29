@@ -151,25 +151,22 @@ effects:
     transfer: false
     _id: ylrKnizVi65ixrJg
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '+10'
-        priority: 20
-      - key: system.bonuses.mwak.damage
-        mode: 2
-        value: 1d6[lightning]
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: '+10'
+          priority: 20
+          type: custom
+        - key: system.bonuses.mwak.damage
+          value: 1d6[lightning]
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -196,10 +193,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EBkJPyToqGK2Prtw.ylrKnizVi65ixrJg'
 flags:
   dnd5e:
@@ -210,7 +212,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515

@@ -80,26 +80,23 @@ effects:
     origin: Compendium.ak5e.ak5e-character-origins.Item.enKSl72KyMn6RWwj
     _id: lPwEIsErrlQoor2v
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: >-
-          bonus=rollingActor.prof; opponentActor.statuses.frightened &&
-          !actionType.save ||
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=rollingActor.prof; opponentActor.statuses.frightened &&
+            !actionType.save ||
 
-          !opponentActor.items.some(i=>i.type === 'weapon' && i.equipped) &&
-          !actionType.save
-        priority: 20
+            !opponentActor.items.some(i=>i.type === 'weapon' && i.equipped) &&
+            !actionType.save
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: 894
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 4
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -123,10 +120,21 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start:
+      combat: null
+      round: 4
+      time: 894
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!enKSl72KyMn6RWwj.lPwEIsErrlQoor2v'
 sort: 800000
 ownership:
@@ -140,7 +148,7 @@ _stats:
   compendiumSource: Item.tV84Xa6UAhcva7fF
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881347037

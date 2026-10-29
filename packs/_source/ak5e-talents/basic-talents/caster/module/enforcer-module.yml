@@ -42,35 +42,32 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.OTYGPezfMEUfJbrE
     _id: Xu2p3EpPj4X3ZUA6
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.Enforcer.damage.all
-        mode: 0
-        value: '999'
-        priority: 20
-      - key: flags.midi-qol.optional.Enforcer.count
-        mode: 5
-        value: every
-        priority: 20
-      - key: flags.midi-qol.optional.Enforcer.label
-        mode: 5
-        value: Enforcer Execution
-        priority: 20
-      - key: flags.midi-qol.optional.Enforcer.force
-        mode: 5
-        value: >-
-          target.attributes.hp.value <= @details.level && item.itemType ==
-          'spell'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.Enforcer.damage.all
+          value: 999
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.Enforcer.count
+          value: every
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.Enforcer.label
+          value: Enforcer Execution
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.Enforcer.force
+          value: >-
+            target.attributes.hp.value <= @details.level && item.itemType ==
+            'spell'
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: 678
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 80
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -94,10 +91,21 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start:
+      combat: null
+      round: 80
+      time: 678
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!OTYGPezfMEUfJbrE.Xu2p3EpPj4X3ZUA6'
 flags:
   dnd5e:
@@ -107,7 +115,7 @@ _stats:
   compendiumSource: Compendium.ak5e.ak5e-talents.Item.bgy7gNB8LAuSen9y
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1770924144147

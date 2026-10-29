@@ -38,21 +38,18 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.xXoFEUm40eZWIHYx
     _id: K9JZgB8SIJMnNbvW
     type: base
-    system: {}
-    changes:
-      - key: system.abilities.dex.bonuses.save
-        mode: 2
-        value: '@prof'
-        priority: 20
+    system:
+      changes:
+        - key: system.abilities.dex.bonuses.save
+          value: '@prof'
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -76,12 +73,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1767911120436
       modifiedTime: 1767911161126
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!xXoFEUm40eZWIHYx.K9JZgB8SIJMnNbvW'
 sort: 100002
 ownership:
@@ -95,7 +95,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1767736746692

@@ -164,72 +164,69 @@ effects:
     transfer: false
     _id: KqTGYZw8NAHR4s06
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.OverTime
-        mode: 5
-        value: |-
-          turn=start,
-          saveMagic=true,
-          actionSave=dialog,
-          label=Filled Lungs,
-          saveDC=@attributes.spell.dc,
-          saveRemove=true,
-          saveAbility=con
-        priority: 20
-      - key: system.attributes.movement.all
-        mode: 0
-        value: /2
-        priority: 20
-      - key: flags.midi-qol.disadvantage.ability.save.str
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.disadvantage.ability.save.dex
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.disadvantage.ability.save.int
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.disadvantage.ability.save.wis
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.disadvantage.ability.save.cha
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: system.abilities.str.check.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: system.abilities.dex.check.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: system.abilities.int.check.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: system.abilities.wis.check.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: system.abilities.cha.check.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          value: |-
+            turn=start,
+            saveMagic=true,
+            actionSave=dialog,
+            label=Filled Lungs,
+            saveDC=@attributes.spell.dc,
+            saveRemove=true,
+            saveAbility=con
+          priority: 20
+          type: override
+        - key: system.attributes.movement.all
+          value: /2
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.disadvantage.ability.save.str
+          value: 1
+          priority: 20
+          type: add
+        - key: flags.midi-qol.disadvantage.ability.save.dex
+          value: 1
+          priority: 20
+          type: add
+        - key: flags.midi-qol.disadvantage.ability.save.int
+          value: 1
+          priority: 20
+          type: add
+        - key: flags.midi-qol.disadvantage.ability.save.wis
+          value: 1
+          priority: 20
+          type: add
+        - key: flags.midi-qol.disadvantage.ability.save.cha
+          value: 1
+          priority: 20
+          type: add
+        - key: system.abilities.str.check.roll.mode
+          value: -1
+          priority: 20
+          type: add
+        - key: system.abilities.dex.check.roll.mode
+          value: -1
+          priority: 20
+          type: add
+        - key: system.abilities.int.check.roll.mode
+          value: -1
+          priority: 20
+          type: add
+        - key: system.abilities.wis.check.roll.mode
+          value: -1
+          priority: 20
+          type: add
+        - key: system.abilities.cha.check.roll.mode
+          value: -1
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -259,10 +256,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!SPHd0vvTHQCsBvEg.KqTGYZw8NAHR4s06'
 flags:
   dnd5e:
@@ -273,7 +275,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515

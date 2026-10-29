@@ -1,0 +1,638 @@
+name: Vanguard
+type: class
+_id: 1F7UnChmuoIk5p6K
+img: modules/ak5e/icons/class_vanguard.png
+system:
+  advancement:
+    - type: HitPoints
+      _id: jL2EzHSAflUSUoNn
+      configuration: {}
+      value: {}
+    - type: AbilityScoreImprovement
+      level: 4
+      _id: EkDNmLf7RFpXR8Im
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+        recommendation: null
+      value:
+        type: asi
+    - type: AbilityScoreImprovement
+      level: 8
+      _id: GdSLEFCu1JqIw3I0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+        recommendation: null
+      value:
+        type: asi
+    - type: AbilityScoreImprovement
+      level: 12
+      _id: jyNeWK3OsMigsGs9
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+        recommendation: null
+      value:
+        type: asi
+    - type: AbilityScoreImprovement
+      level: 16
+      _id: bAOB70IYMeW1U11D
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+        recommendation: null
+      value:
+        type: asi
+    - type: Trait
+      _id: 40i8efvd4Pvsexnz
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 1
+            pool:
+              - saves:str
+              - saves:cha
+        grants:
+          - saves:dex
+        mode: default
+      level: 1
+      title: ''
+      hint: ''
+      value: {}
+    - type: Trait
+      _id: sCgUp3aKpKJm4zGj
+      configuration:
+        allowReplacements: false
+        choices:
+          - count: 3
+            pool:
+              - skills:acr
+              - skills:ath
+              - skills:prc
+              - skills:per
+              - skills:ste
+              - skills:nat
+        grants: []
+        mode: default
+      level: 1
+      title: ''
+      hint: ''
+      value: {}
+    - type: Trait
+      _id: FzY94cghg2HJtT3h
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - armor:lgt
+          - armor:lts
+        mode: default
+      level: 1
+      title: ''
+      hint: ''
+      value: {}
+    - type: Trait
+      _id: B0uZ624tOWMJCPVv
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - tool:toolkit:messenger
+        mode: default
+      level: 1
+      title: ''
+      hint: ''
+      value: {}
+    - type: Trait
+      _id: j6ea0auiuqoh7XpM
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - weapon:ltm
+        mode: default
+      level: 1
+      title: ''
+      hint: ''
+      value: {}
+    - type: ItemGrant
+      _id: Nk39hs0nHbhuubJP
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Skill Points
+      hint: ''
+    - type: Subclass
+      _id: HHfjEbVvKeDgKgFo
+      configuration: {}
+      value:
+        document: null
+        uuid: null
+      level: 1
+      title: Vanguard Branch
+      hint: >-
+        You choose a Vanguard Branch which most closely fits the style you
+        envision for yourself. Choose one from the following list; further
+        details on these Branches can be found at the end of the Class
+        Description. The Branch you choose grants you Features at Level 1, 4,
+        10, 13 and 17.
+            Agent: Striking and fading, the Agent excels at appearing where the enemy does not expect to lethal effect.
+            Charger: The straightforward solution is often the best; Chargers engage the enemy head on, relying on the force of their strike to overwhelm the enemy before they can fight back.
+            Pioneer: Clad in heavier armour than most Vanguards, Pioneers enter the fray and stay there, empowering their allies around them as they do so.
+            Standard Bearer: Standard Bearers inspire their allies to fight ever harder; the sight of their standard fluttering in the wind can keep even the most battered force fighting.
+            Tactician: Evaluate the situation, plan a strategy, direct the pieces on the gameboard; this is the core of a Tactician.
+    - type: ItemGrant
+      _id: pQyRh29exnqcIyJt
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.WZw05t0Rl8sFlJC8
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Landstrider
+      hint: ''
+    - type: ItemChoice
+      _id: Lnc5Dyp82p6fl4ZY
+      configuration:
+        allowDrops: true
+        choices:
+          '2':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.gTaJbzpJt6OxU0oC
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.HPkO1mggfBS8Nxxp
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.b2tqwUUZzUu6yl0V
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.JSd4j1ayhQXstjNw
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.uMzWqHuXQeSaOlnj
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.IOR56TrVpsJc1ZcH
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.RNnwLvd2rRC4dhyz
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.BEIJzl4PcZztTKFT
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.2AHoMj8GcSk1V4fa
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.X9leESjC5jZOkRwj
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.ZL54k5YvhjILPjAD
+        restriction:
+          list: []
+          type: class
+          subtype: opSkill
+        spell: null
+        type: feat
+      value:
+        added: {}
+        replaced: {}
+      title: Basic Operator Skill
+      hint: ''
+    - type: ItemChoice
+      _id: OVPcKjyhqQMRPF9c
+      configuration:
+        allowDrops: true
+        choices:
+          '3':
+            count: 1
+            replacement: false
+          '8':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-talents.Item.rT3B9zpU7rFywqL9
+          - uuid: Compendium.ak5e.ak5e-talents.Item.UjQX1XOMuwl37GVY
+          - uuid: Compendium.ak5e.ak5e-talents.Item.7HQKvkJrzc7ujtZ2
+          - uuid: Compendium.ak5e.ak5e-talents.Item.8t97IwsrIyBJjHcP
+          - uuid: Compendium.ak5e.ak5e-talents.Item.WUU3WOfPesBFdXoJ
+          - uuid: Compendium.ak5e.ak5e-talents.Item.6ju2mbD9yT4orfUA
+          - uuid: Compendium.ak5e.ak5e-talents.Item.OF5ppRBXixADL8Mv
+          - uuid: Compendium.ak5e.ak5e-talents.Item.8DuhIn0O3sdLhWXD
+          - uuid: Compendium.ak5e.ak5e-talents.Item.LJuZQfcn7gxfUd0T
+          - uuid: Compendium.ak5e.ak5e-talents.Item.DjZrvv9o9Qfkr7Xt
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Jh1RDjRrOkEelLtc
+          - uuid: Compendium.ak5e.ak5e-talents.Item.AyyG7hniOH5BztHY
+          - uuid: Compendium.ak5e.ak5e-talents.Item.DabuHieyxisAe7J5
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Zz6IqybONccB4RIY
+          - uuid: Compendium.ak5e.ak5e-talents.Item.PSkTmcMYvoorR6yY
+          - uuid: Compendium.ak5e.ak5e-talents.Item.STmzBpZN78s08zas
+          - uuid: Compendium.ak5e.ak5e-talents.Item.qlx8TWDfruLocbCG
+          - uuid: Compendium.ak5e.ak5e-talents.Item.sq1iglUKvaZFiXZF
+          - uuid: Compendium.ak5e.ak5e-talents.Item.VHTZHWagtpxQ5Hj3
+          - uuid: Compendium.ak5e.ak5e-talents.Item.dge8QmAMMK3UZaWC
+          - uuid: Compendium.ak5e.ak5e-talents.Item.fyvz6oh66khcqUvK
+          - uuid: Compendium.ak5e.ak5e-talents.Item.dY3kZHELAs4Rqap9
+          - uuid: Compendium.ak5e.ak5e-talents.Item.pNWMyCV5HwaL6uRk
+          - uuid: Compendium.ak5e.ak5e-talents.Item.00u4Kld3EI2Hbn9q
+          - uuid: Compendium.ak5e.ak5e-talents.Item.i3EtQlrNLfMl9rF7
+          - uuid: Compendium.ak5e.ak5e-talents.Item.NEzxpEdbDDQ2i6gR
+          - uuid: Compendium.ak5e.ak5e-talents.Item.0CkhiGMv1HYErMVq
+          - uuid: Compendium.ak5e.ak5e-talents.Item.TqaA0lDcQIaV5t8C
+          - uuid: Compendium.ak5e.ak5e-talents.Item.QWq8iJeYV3aXx5CA
+          - uuid: Compendium.ak5e.ak5e-talents.Item.YfDuhfsa8913CVvB
+          - uuid: Compendium.ak5e.ak5e-talents.Item.xWPOwVXOPjK8VMAV
+          - uuid: Compendium.ak5e.ak5e-talents.Item.3PMCxmRfFE2rvvAF
+          - uuid: Compendium.ak5e.ak5e-talents.Item.MsLrFCyWoTLESSUR
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Cj8mZrcEefoSSMbX
+        restriction:
+          list: []
+          type: class
+          subtype: talent
+        spell: null
+        type: feat
+      value:
+        added: {}
+        replaced: {}
+      title: Basic Talent
+      hint: ''
+    - type: ItemChoice
+      _id: 2bERBrjQtbpvvnN9
+      configuration:
+        allowDrops: true
+        choices:
+          '7':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.7LFJfPnVXITMIBTV
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.KZa3cRHyZgBdO26x
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.M64ZUmdzXcGVS4Wy
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.B50b6Lcm9qRyKXll
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.CWbL8pmaGaqRZe4h
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.pnOAhF4MIxYTswEI
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.uqraXWLOGu4WcXWh
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.OGCPrBBetNrCnAnM
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.LXQq5AjrjHUcqqBl
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.j2WAYezdaIuQgPzT
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.jLtKbjSMOHfX6RWx
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.9drFnigOJIPdQ74i
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.btO5RXvzaWf65UKI
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.tFZvBnBk4AP6PJdR
+        restriction:
+          list: []
+          type: class
+          subtype: opSkill
+        spell: null
+        type: feat
+      value:
+        added: {}
+        replaced: {}
+      title: Advanced Operator Skill
+      hint: ''
+    - type: ItemChoice
+      _id: 1NbsuNM3IsWDSyhZ
+      configuration:
+        allowDrops: true
+        choices:
+          '9':
+            count: 1
+            replacement: false
+          '13':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-talents.Item.nl9I9SBZCf73dHGf
+          - uuid: Compendium.ak5e.ak5e-talents.Item.SWhSfAWrzX9nhdRf
+          - uuid: Compendium.ak5e.ak5e-talents.Item.qyNkfoJu7MYa7x2k
+          - uuid: Compendium.ak5e.ak5e-talents.Item.tgI47jHWRci8vfEH
+          - uuid: Compendium.ak5e.ak5e-talents.Item.9VDlya6wDpCJQrSc
+          - uuid: Compendium.ak5e.ak5e-talents.Item.LzRPQ4CbuElVYKDS
+          - uuid: Compendium.ak5e.ak5e-talents.Item.jfIFWdZ9mLVx1zVn
+          - uuid: Compendium.ak5e.ak5e-talents.Item.jydTTrSgiYRXgeLf
+          - uuid: Compendium.ak5e.ak5e-talents.Item.sEJQFcTojc0mHJnu
+          - uuid: Compendium.ak5e.ak5e-talents.Item.aWcOpYMNLjgj4EyG
+          - uuid: Compendium.ak5e.ak5e-talents.Item.BwRbSTh5amfT94VH
+          - uuid: Compendium.ak5e.ak5e-talents.Item.mTRZVH32UtLvE3LJ
+          - uuid: Compendium.ak5e.ak5e-talents.Item.THjZ7oEslFY82Hzy
+          - uuid: Compendium.ak5e.ak5e-talents.Item.6COXnyHOh2YzOv8e
+          - uuid: Compendium.ak5e.ak5e-talents.Item.U9RKHEPHheITSIok
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Lgc15H8lONAEVPGM
+          - uuid: Compendium.ak5e.ak5e-talents.Item.msquyY98KzMbdkpu
+          - uuid: Compendium.ak5e.ak5e-talents.Item.rfkv9l7xonxm4h9w
+          - uuid: Compendium.ak5e.ak5e-talents.Item.zY7xiCJerf9VN3OY
+          - uuid: Compendium.ak5e.ak5e-talents.Item.nd5SAj4t7dLsBB6H
+          - uuid: Compendium.ak5e.ak5e-talents.Item.4l8i3i4aH5Ypcw2m
+          - uuid: Compendium.ak5e.ak5e-talents.Item.bpS3JCxUcihD9tKF
+          - uuid: Compendium.ak5e.ak5e-talents.Item.3b6foVz3Qjn2PgAo
+          - uuid: Compendium.ak5e.ak5e-talents.Item.AI72NFCfNrFsS6Bx
+          - uuid: Compendium.ak5e.ak5e-talents.Item.LvcxQflxtYKdGyQ5
+          - uuid: Compendium.ak5e.ak5e-talents.Item.YsYmsS6BijOzY5pI
+          - uuid: Compendium.ak5e.ak5e-talents.Item.29sQ2q6tRRLB5Gy6
+          - uuid: Compendium.ak5e.ak5e-talents.Item.u05AqFiUmVYCr8Ia
+          - uuid: Compendium.ak5e.ak5e-talents.Item.1wYXlvJjspBUlw2o
+          - uuid: Compendium.ak5e.ak5e-talents.Item.HiGjByPWKsnF5Awc
+          - uuid: Compendium.ak5e.ak5e-talents.Item.UJ8CId6NYKjRjvyw
+          - uuid: Compendium.ak5e.ak5e-talents.Item.b3nqNL3EKolRkWVF
+          - uuid: Compendium.ak5e.ak5e-talents.Item.3TmuVrnjp59pPjxq
+          - uuid: Compendium.ak5e.ak5e-talents.Item.pZ8g4ojAtKEMDANs
+          - uuid: Compendium.ak5e.ak5e-talents.Item.KYwn1S0ZRSh0rfWT
+          - uuid: Compendium.ak5e.ak5e-talents.Item.VVmkncpmf1YFosZO
+          - uuid: Compendium.ak5e.ak5e-talents.Item.82Z1GX5PksncJoBR
+          - uuid: Compendium.ak5e.ak5e-talents.Item.NCeCWpmO4XMPVm8Z
+          - uuid: Compendium.ak5e.ak5e-talents.Item.tqNELuu6pro1bEqc
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Oxg7r94M5c6ABDW6
+        restriction:
+          list: []
+          type: class
+          subtype: talent
+        spell: null
+        type: feat
+      value:
+        added: {}
+        replaced: {}
+      title: Advanced Talent
+      hint: ''
+    - type: ItemChoice
+      _id: kQLiTTjirMfIXHd3
+      configuration:
+        allowDrops: true
+        choices:
+          '14':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.h4dPBqhcNmCz1Qtx
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.3sLo4jw1ppDv3XhF
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.JBLTRW2RHzNcyzUQ
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.cZlJfbdMBdzr7QB2
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.vAred5MHmIrgisse
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.36lbDpEqg4oGQiS3
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.g0bdgAqNqsq4w6xe
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.RcGTB6QexL16FTBQ
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.7paX4ruGXPEkWgZR
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.RTquuniOhQO4A5Ei
+        restriction:
+          list: []
+          type: class
+          subtype: opSkill
+        spell: null
+        type: feat
+      value:
+        added: {}
+        replaced: {}
+      title: Elite Operator Skill
+      hint: ''
+    - type: ItemGrant
+      _id: 61oTpTTWIkR7Jd4X
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 1
+      title: Tip of the Spear
+      hint: ''
+    - type: ItemGrant
+      _id: AzV2y9F4ceRk1txA
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.yCSiHLh1RqLqr7eX
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 3
+      title: Quick off the Mark
+      hint: ''
+    - type: ItemGrant
+      _id: SWi7rP6Ld8j2a8DQ
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.15T5CrQv4v4Gl3hO
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 5
+      title: Extra Attack
+      hint: ''
+    - type: ItemGrant
+      _id: XhGMlxdUC2aXalg2
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.80okNGTzTMDvl8GD
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 11
+      title: Uncanny Dodge
+      hint: ''
+    - type: ItemGrant
+      title: Directed Engagement
+      _id: 6YWCXEH9ySTejPkC
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.wPA7AA6DMQgmamXW
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 15
+      hint: ''
+    - type: ItemGrant
+      title: Lightspeed
+      _id: XlzcUwyI3rKrdG8Z
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.vgFDYeBayeXkGgyV
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 18
+      hint: ''
+    - type: ItemGrant
+      _id: MZLrEKrP8XeOY4ts
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.8AYN51B8yn5xLOYw
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      level: 20
+      title: Approaching Storm
+      hint: ''
+    - type: AbilityScoreImprovement
+      level: 19
+      configuration:
+        cap: 2
+        fixed:
+          str: 0
+          dex: 0
+          con: 0
+          int: 0
+          wis: 0
+          cha: 0
+        locked: []
+        points: 2
+        recommendation: null
+        max: null
+      value:
+        type: asi
+      _id: PhIWhtdKtn1zEbtm
+      title: ''
+      hint: ''
+  description:
+    value: >-
+      <p>In Kazimierz, a Kuranta’s spear sparks as it makes contact with the
+      Aegir’s greatsword. Her opponent’s strength is truly inhuman, but she does
+      not need to outmatch her- only outmanoeuvre her.</p><p>In Ursus, two
+      paramilitary forces clash in the ruined streets of a nomadic city. The
+      outcome of their battle could very well determine the survival of hundreds
+      of thousands; amongst the chaos, a cadre of messengers, led by a man with
+      a single red streak in his hair, guides the soon to be winners to victory.
+      He raises his standard once more.</p><p>In Kazdel, a Caprinae slinks into
+      the shadows, blending into her umbral backdrop like a chameleon. In a few
+      moments, the outcome of her handiwork will be discovered, and the message
+      will be delivered. She will remain to observe the whole process; despite
+      the dozens of people pouring into the murder scene, not a one will spot
+      her.</p><h3>Leaders of the Pack</h3><p>Vanguards lead the way; that is the
+      essence of what it means to be a Vanguard. Some choose the direct
+      approach, physically leading their allies down a path with their own
+      martial prowess; others, the indirect approach, clearing the way through
+      stealth and subterfuge. Others still lead their allies in a literal sense,
+      doling out orders, strategies, and tactics to win the day.</p><p>What ties
+      all Vanguards together, despite their disparate diaspora, is that they are
+      all team players. While they may function independently, they do so at the
+      behest of their allies. A Vanguard with no allies swiftly finds an
+      ignominious end.</p><h3>Vanguard Traits</h3><p></p><table><tbody><tr><td
+      data-colwidth="142"><p style="text-align:center"><strong>Primary
+      Ability</strong></p></td><td><p>Dexterity</p></td></tr><tr><td
+      data-colwidth="142"><p style="text-align:center"><strong>Hit Point
+      Die</strong></p></td><td><p>D8 per Vanguard level</p></td></tr><tr><td
+      data-colwidth="142"><p style="text-align:center"><strong>Saving Throw
+      Proficiencies</strong></p></td><td><p>Dexterity + one of your choice from
+      the following: Strength, Charisma</p></td></tr><tr><td
+      data-colwidth="142"><p style="text-align:center"><strong>Skill
+      Proficiencies</strong></p></td><td><p>Choose 3 from: Acrobatics,
+      Athletics, Perception, Persuasion, Stealth,
+      Wilderness</p></td></tr><tr><td data-colwidth="142"><p
+      style="text-align:center"><strong>Weapon
+      Proficiencies</strong></p></td><td><p>Light Melee</p></td></tr><tr><td
+      data-colwidth="142"><p style="text-align:center"><strong>Tool
+      Proficiencies</strong></p></td><td><p>Messenger Kit</p></td></tr><tr><td
+      data-colwidth="142"><p style="text-align:center"><strong>Armor
+      Training</strong></p></td><td><p>Light Armour, Light
+      Shields</p></td></tr><tr><td data-colwidth="142"><p
+      style="text-align:center"><strong>Starting
+      Equipment</strong></p></td><td><p>You start with the following Equipment,
+      in addition to any Equipment granted by your Background.</p><ul><li><p>1x
+      Light Melee Weapon</p></li><li><p>(A) 1x Light Melee Weapon OR (B) 1x
+      Light Shield</p></li><li><p>(A) Reinforced Outfit OR (B) Light Combat
+      Gear</p></li><li><p>1x Tool Kit that you are Proficient
+      with</p></li></ul><p>OR</p><ul><li><p>1300
+      LMD</p></li></ul></td></tr></tbody></table>
+    chat: ''
+  identifier: vanguard
+  source:
+    revision: 1
+    rules: '2024'
+  startingEquipment:
+    - type: AND
+      requiresProficiency: false
+      _id: dYYxbp2hPd9pT264
+      group: ''
+      sort: 800000
+    - type: weapon
+      count: null
+      key: ltm
+      requiresProficiency: false
+      _id: ZN2DTXmZO3VM3Nlj
+      group: dYYxbp2hPd9pT264
+      sort: 796875
+    - type: OR
+      requiresProficiency: false
+      _id: bN31p60n0iF8zJ1b
+      group: dYYxbp2hPd9pT264
+      sort: 900000
+    - type: weapon
+      count: null
+      key: ltm
+      requiresProficiency: false
+      _id: EnzM45m7pFlPxcxf
+      group: bN31p60n0iF8zJ1b
+      sort: 1000000
+    - type: armor
+      count: null
+      key: lightS
+      requiresProficiency: false
+      _id: S3NoEzI4gtDYQHM8
+      group: bN31p60n0iF8zJ1b
+      sort: 1100000
+    - type: OR
+      requiresProficiency: false
+      _id: XzSJWo5EbJGiUlxG
+      group: dYYxbp2hPd9pT264
+      sort: 1200000
+    - type: linked
+      count: null
+      key: Compendium.ak5e.ak5e-items.Item.DMq5RL7e35ZveMxb
+      requiresProficiency: false
+      _id: G2aLe9bbM1WLGGhM
+      group: XzSJWo5EbJGiUlxG
+      sort: 1300000
+    - type: linked
+      count: null
+      key: Compendium.ak5e.ak5e-items.Item.2SCb6lJXMkjDFMif
+      requiresProficiency: false
+      _id: h3JMM3ezWZz9Bq20
+      group: XzSJWo5EbJGiUlxG
+      sort: 1400000
+    - type: tool
+      count: null
+      key: toolkit
+      requiresProficiency: false
+      _id: rYG5dn9qVTi1xDFv
+      group: dYYxbp2hPd9pT264
+      sort: 1500000
+  hd:
+    additional: ''
+    denomination: d8
+    spent: 0
+  levels: 1
+  primaryAbility:
+    value:
+      - dex
+    all: true
+  properties: []
+  spellcasting:
+    progression: none
+    preparation:
+      formula: ''
+    ability: dex
+  wealth: '1300'
+effects: []
+folder: 461Wr9mPWyH29Eu1
+sort: 100000
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774564926024
+  modifiedTime: 1791130703425
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+_key: '!items!1F7UnChmuoIk5p6K'

@@ -42,27 +42,24 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.Lxb0yt12a19ocMPz
     _id: O33J1yrWDah4ugI3
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.attack.noAdvantage
-        mode: 2
-        value: >-
-          !opponentActor.statuses.incapacitated &&
-          rollingActor.statuses.invisible;
-        priority: 20
-      - key: system.traits.ci.value
-        mode: 2
-        value: surprised
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.noAdvantage
+          value: >-
+            !opponentActor.statuses.incapacitated &&
+            rollingActor.statuses.invisible;
+          priority: 20
+          type: add
+        - key: system.traits.ci.value
+          value: surprised
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -86,11 +83,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: GiT7LQTiCJxjm7mo
       modifiedTime: 1767989790887
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Lxb0yt12a19ocMPz.O33J1yrWDah4ugI3'
 flags:
   dnd5e:
@@ -100,7 +101,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1767986908328

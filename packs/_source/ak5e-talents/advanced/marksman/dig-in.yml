@@ -148,17 +148,14 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.qcmSYeDAL35mcvws
     _id: wAmBXH45NpQNHGEW
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 1
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 1
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -187,12 +184,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1767987683400
       modifiedTime: 1767988859185
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!qcmSYeDAL35mcvws.wAmBXH45NpQNHGEW'
 sort: 1700000
 ownership:
@@ -206,7 +206,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1767738483570

@@ -45,21 +45,18 @@ effects:
     origin: Compendium.ak5e.ak5e-character-origins.Item.9hNjLdjg8uedTdBD
     _id: 5bEs2wgd3Shlmkk1
     type: base
-    system: {}
-    changes:
-      - key: flags.chris-premades.CR.prone
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.chris-premades.CR.prone
+          value: true
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -83,10 +80,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!9hNjLdjg8uedTdBD.5bEs2wgd3Shlmkk1'
 sort: 0
 ownership:
@@ -100,7 +102,7 @@ _stats:
   compendiumSource: Item.9hNjLdjg8uedTdBD
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881328247

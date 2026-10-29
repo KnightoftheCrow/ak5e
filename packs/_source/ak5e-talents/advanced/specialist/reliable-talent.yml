@@ -39,38 +39,35 @@ effects:
     origin: Item.JS9FGQrPwamI2ZIq
     _id: 8cPvvUnkgO7YJizx
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.skill.modifier
-        mode: 2
-        value: >-
-          modifier=min8; (effectActor.skills.acr.proficient && skill.acr) ||
-          (effectActor.skills.ani.proficient && skill.ani) ||
-          (effectActor.skills.acr.proficient && skill.acr) ||
-          (effectActor.skills.ath.proficient && skill.ath) ||
-          (effectActor.skills.dec.proficient && skill.dec) ||
-          (effectActor.skills.ins.proficient && skill.ins) ||
-          (effectActor.skills.inv.proficient && skill.inv) ||
-          (effectActor.skills.itm.proficient && skill.itm) ||
-          (effectActor.skills.med.proficient && skill.med) ||
-          (effectActor.skills.nat.proficient && skill.nat) ||
-          (effectActor.skills.per.proficient && skill.per) ||
-          (effectActor.skills.prc.proficient && skill.prc) ||
-          (effectActor.skills.prf.proficient && skill.prf) ||
-          (effectActor.skills.rel.proficient && skill.rel) ||
-          (effectActor.skills.slt.proficient && skill.slt) ||
-          (effectActor.skills.ste.proficient && skill.ste) ||
-          (effectActor.skills.tech.proficient && skill.tech)
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.skill.modifier
+          value: >-
+            modifier=min8; (effectActor.skills.acr.proficient && skill.acr) ||
+            (effectActor.skills.ani.proficient && skill.ani) ||
+            (effectActor.skills.acr.proficient && skill.acr) ||
+            (effectActor.skills.ath.proficient && skill.ath) ||
+            (effectActor.skills.dec.proficient && skill.dec) ||
+            (effectActor.skills.ins.proficient && skill.ins) ||
+            (effectActor.skills.inv.proficient && skill.inv) ||
+            (effectActor.skills.itm.proficient && skill.itm) ||
+            (effectActor.skills.med.proficient && skill.med) ||
+            (effectActor.skills.nat.proficient && skill.nat) ||
+            (effectActor.skills.per.proficient && skill.per) ||
+            (effectActor.skills.prc.proficient && skill.prc) ||
+            (effectActor.skills.prf.proficient && skill.prf) ||
+            (effectActor.skills.rel.proficient && skill.rel) ||
+            (effectActor.skills.slt.proficient && skill.slt) ||
+            (effectActor.skills.ste.proficient && skill.ste) ||
+            (effectActor.skills.tech.proficient && skill.tech)
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -94,10 +91,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!7xXfLpJKsO5FTaCO.8cPvvUnkgO7YJizx'
 flags:
   dnd5e:
@@ -107,7 +109,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783357780534

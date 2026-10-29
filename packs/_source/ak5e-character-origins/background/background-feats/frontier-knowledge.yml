@@ -154,25 +154,22 @@ effects:
     transfer: false
     _id: FhXHWU6FBmEonbmw
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.advantage.skill.ani
-        mode: 2
-        value: confirm{'Frontier Knowledge- Advantage?')
-        priority: 20
-      - key: flags.midi-qol.advantage.skill.nat
-        mode: 2
-        value: confirm{'Frontier Knowledge- Advantage?')
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.advantage.skill.ani
+          value: confirm{'Frontier Knowledge- Advantage?')
+          priority: 20
+          type: add
+        - key: flags.midi-qol.advantage.skill.nat
+          value: confirm{'Frontier Knowledge- Advantage?')
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -200,10 +197,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!RlD4M7lHFxMRJ9f4.FhXHWU6FBmEonbmw'
   - name: Bonus Damage vs Beast/Plant
     img: icons/environment/wilderness/tree-spruce.webp
@@ -211,33 +213,30 @@ effects:
     transfer: false
     _id: oHLhd7MnMZwtpooD
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.frontierKnowledge.damage.all
-        mode: 0
-        value: '@prof'
-        priority: 20
-      - key: flags.midi-qol.optional.frontierKnowledge.label
-        mode: 0
-        value: Frontier Knowledge- Bonus Damage vs Plants/Beasts
-        priority: 20
-      - key: flags.midi-qol.optional.frontierKnowledge.count
-        mode: 0
-        value: turn
-        priority: 20
-      - key: flags.midi-qol.optional.frontierKnowledge.activation
-        mode: 0
-        value: raceOrType.includes('beast','plant')
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.frontierKnowledge.damage.all
+          value: '@prof'
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.frontierKnowledge.label
+          value: Frontier Knowledge- Bonus Damage vs Plants/Beasts
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.frontierKnowledge.count
+          value: turn
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.frontierKnowledge.activation
+          value: raceOrType.includes('beast','plant')
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -265,10 +264,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!RlD4M7lHFxMRJ9f4.oHLhd7MnMZwtpooD'
 sort: 2800000
 ownership:
@@ -282,7 +286,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881347037

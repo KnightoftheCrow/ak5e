@@ -153,21 +153,18 @@ effects:
     transfer: false
     _id: IZw8x6vWejhydaf6
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.attack.bonus
-        mode: 5
-        value: bonus=1; hasAttack && effectOriginTokenId === tokenId;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.bonus
+          value: bonus=1; hasAttack && effectOriginTokenId === tokenId;
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 10
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 10
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -194,12 +191,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1767681622318
       modifiedTime: 1767875875709
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!oxFGvfgwpg4tNLdL.IZw8x6vWejhydaf6'
 folder: r2sKTPYSmSAEfVCU
 flags:
@@ -210,7 +210,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767615342066

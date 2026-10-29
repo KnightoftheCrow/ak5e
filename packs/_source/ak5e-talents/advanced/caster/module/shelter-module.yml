@@ -419,21 +419,18 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     _id: zcaqm4wO0F1xD1T0
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.damage.modifier
-        mode: 5
-        value: modifier=/2
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.modifier
+          value: modifier=/2
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -462,31 +459,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.zcaqm4wO0F1xD1T0'
   - name: Acid Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     _id: UeQ5NfpsGrl11Yg7
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: acid
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: acid
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -514,30 +513,32 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.UeQ5NfpsGrl11Yg7'
   - name: Bludgeoning Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: bludgeoning
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: bludgeoning
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -565,31 +566,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: 3CJIvQdXNthb8xHl
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.3CJIvQdXNthb8xHl'
   - name: Cold Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: cold
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: cold
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -617,31 +620,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: XVrT1L1YZWX2cIpm
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.XVrT1L1YZWX2cIpm'
   - name: Fire Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: fire
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: fire
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -669,31 +674,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: sYmrUDGU0rzrCN3a
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.sYmrUDGU0rzrCN3a'
   - name: Force Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: force
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: force
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -721,31 +728,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: G2mXhfjyV5HcIXiL
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.G2mXhfjyV5HcIXiL'
   - name: Lightning Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: lightning
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: lightning
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -773,31 +782,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: sKmOnwm6M7Mz5dfT
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.sKmOnwm6M7Mz5dfT'
   - name: Necrotic Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: necrotic
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: necrotic
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -825,31 +836,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: bt0rgz3JeWK6T85N
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.bt0rgz3JeWK6T85N'
   - name: Piercing Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: piercing
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: piercing
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -877,31 +890,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: 0sT8ZOWa8rurkWqT
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.0sT8ZOWa8rurkWqT'
   - name: Poison Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: poison
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: poison
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -929,31 +944,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: EqBgyBU1xRwx1Hf1
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.EqBgyBU1xRwx1Hf1'
   - name: Psychic Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: psychic
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: psychic
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -981,31 +998,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: NuvANWH7FojGyCjs
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.NuvANWH7FojGyCjs'
   - name: Radiant Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: radiant
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: radiant
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -1033,31 +1052,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: EZZoTwGjJ70rG8YD
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.EZZoTwGjJ70rG8YD'
   - name: Slashing Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: slashing
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: slashing
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -1085,31 +1106,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: C2c61sh2x6Um3a3L
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.C2c61sh2x6Um3a3L'
   - name: Thunder Resistance
     img: modules/ak5e/icons/Skill-Dur-nar1.webp
     origin: Compendium.ak5e.ak5e-talents.Item.EtYH35hfOp5VW73y
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: thunder
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: thunder
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -1137,11 +1160,16 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: JOzlwgkxoqJFKHcR
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EtYH35hfOp5VW73y.JOzlwgkxoqJFKHcR'
 sort: 782
 ownership:
@@ -1155,7 +1183,7 @@ _stats:
   compendiumSource: Item.MhrpW5QBup6B4Bq1
   duplicateSource: Item.MhrpW5QBup6B4Bq1
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1772222746366

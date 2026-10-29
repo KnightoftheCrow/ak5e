@@ -1,0 +1,150 @@
+folder: 8aeUmouRmnyu4sq2
+name: Tactical Mind
+type: feat
+img: modules/ak5e/icons/Skill-TheresaBlackCrownedSage.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  advancement: []
+  description:
+    value: >-
+      <p>When you roll a d20, you may reroll that die and add 1d10 to the result
+      of the roll as a Reaction. Once you have used this Feature, you must
+      finish a Long Rest before you can use it
+      again.</p><p><strong>Module:</strong> You now regain use of this Feature
+      when you complete a Short Rest.</p><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: tactical-mind
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - _id: waeG7ZDIB5myAbe6
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Compendium.ak5e.ak5e-talents.Item.r19GGpWRcO5KigI5
+    transfer: true
+    flags:
+      dae:
+        stackable: none
+        macroRepeat: none
+        specialDuration: []
+        transfer: false
+        durationExpression: ''
+        selfTarget: false
+        selfTargetAlways: false
+        disableIncapacitated: false
+        showIcon: false
+        disableCondition: ''
+      ActiveAuras:
+        isAura: false
+        radius: ''
+        aura: None
+        alignment: ''
+        type: ''
+        ignoreSelf: false
+        height: false
+        hidden: false
+        hostile: false
+        onlyOnce: false
+        displayTemp: false
+        nameOverride: ''
+        customCheck: ''
+        wallsBlock: system
+      core:
+        overlay: false
+      dnd5e-helpers:
+        rest-effect: Ignore
+      dnd5e:
+        riders:
+          statuses: []
+    tint: '#ffffff'
+    name: Tactical Mind
+    description: ''
+    statuses: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    img: modules/ak5e/icons/Skill-TheresaBlackCrownedSage.png
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.optional.tactical-mind.attack.all
+          value: reroll-withBonus 1d10
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.tactical-mind.label
+          value: Tactical Mind
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.tactical-mind.save.all
+          value: reroll-withBonus 1d10
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.tactical-mind.check.all
+          value: reroll-withBonus 1d10
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.tactical-mind.count
+          value: ItemUses.Tactical Mind
+          priority: 20
+          type: override
+    sort: 0
+    start:
+      combat: null
+      round: 260
+      time: 47180419488
+      turn: 1
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!rfkv9l7xonxm4h9w.waeG7ZDIB5myAbe6'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774580947861
+  modifiedTime: 1774580947894
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+_id: rfkv9l7xonxm4h9w
+sort: 300000
+_key: '!items!rfkv9l7xonxm4h9w'

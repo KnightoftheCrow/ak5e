@@ -267,21 +267,18 @@ effects:
     transfer: false
     _id: DzdrooTSexPbumlE
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.fail.attack.all
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.fail.attack.all
+          value: true
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -309,12 +306,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774103904496
       modifiedTime: 1774103998586
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!rTqysGZ34Kr6QdEL.DzdrooTSexPbumlE'
 sort: 275000
 ownership:
@@ -328,7 +328,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774103747903

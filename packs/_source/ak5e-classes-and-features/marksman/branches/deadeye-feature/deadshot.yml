@@ -149,29 +149,26 @@ effects:
     transfer: false
     _id: KTZKfV25YX8LQe6w
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.bonus
-        mode: 0
-        value: bonus=@prof; rwak
-        priority: 20
-      - key: flags.automated-conditions-5e.aura.range.noLongDisadvantage
-        mode: 0
-        value: 'true'
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=min3; rwak
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.bonus
+          value: bonus=@prof; rwak
+          priority: 20
+          type: custom
+        - key: flags.automated-conditions-5e.aura.range.noLongDisadvantage
+          value: true
+          priority: 20
+          type: custom
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: modifier=min3; rwak
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -199,12 +196,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.5
       createdTime: 1781190684697
       modifiedTime: 1781190880022
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!CDG10QNnyWf5iB0x.KTZKfV25YX8LQe6w'
 sort: 200000
 ownership:
@@ -218,7 +218,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1767621242308

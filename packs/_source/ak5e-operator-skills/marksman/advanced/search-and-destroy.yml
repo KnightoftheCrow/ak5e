@@ -154,25 +154,22 @@ effects:
     origin: Compendium.ak5e.ak5e-operator-skills.Item.xEJtugdXspeK633F
     _id: M64F0fhNJQuKkQx6
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+        - key: system.scale.skillPoints.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -197,12 +194,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768153965421
       modifiedTime: 1768651544236
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!xEJtugdXspeK633F.M64F0fhNJQuKkQx6'
   - name: Search and Destroy
     img: modules/ak5e/icons/64px-Skill-Dagda2.webp
@@ -210,31 +210,28 @@ effects:
     transfer: false
     _id: KTQ39bEsc5OU6Sya
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '+20'
-        priority: 20
-      - key: system.skills.prc.bonuses.passive
-        mode: 2
-        value: '5'
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: >-
-          bonus=1d8; hasAttack && opponentActor.attributes.hp.value <
-          opponentActor.attributes.hp.max;
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: '+20'
+          priority: 20
+          type: custom
+        - key: system.skills.prc.bonuses.passive
+          value: 5
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=1d8; hasAttack && opponentActor.attributes.hp.value <
+            opponentActor.attributes.hp.max;
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -261,12 +258,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768154939038
       modifiedTime: 1768155062828
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!xEJtugdXspeK633F.KTQ39bEsc5OU6Sya'
 sort: 0
 ownership:
@@ -280,7 +280,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767619096192

@@ -44,49 +44,46 @@ effects:
     origin: Compendium.ak5e.ak5e-character-origins.Item.UesJRtzSK9QmpcvN
     _id: oCv9TTRKDepjAvhD
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.odore.damage.mwak
-        mode: 0
-        value: 1d8
-        priority: 20
-      - key: flags.midi-qol.optional.odore.damage.msak
-        mode: 0
-        value: 1d8
-        priority: 20
-      - key: flags.midi-qol.optional.odore.damage.rwak
-        mode: 0
-        value: 1d8
-        priority: 20
-      - key: flags.midi-qol.optional.odore.damage.rsak
-        mode: 0
-        value: 1d8
-        priority: 20
-      - key: flags.midi-qol.optional.odore.count
-        mode: 0
-        value: each-turn
-        priority: 20
-      - key: flags.midi-qol.optional.odore.criticalDamage
-        mode: 0
-        value: 'true'
-        priority: 20
-      - key: flags.midi-qol.optional.odore.activation
-        mode: 0
-        value: target.attributes.hp.pct < 50 && workflow.advantage
-        priority: 20
-      - key: flags.midi-qol.optional.odore.label
-        mode: 0
-        value: Odore di Sangue - Bonus Damage
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.odore.damage.mwak
+          value: 1d8
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.odore.damage.msak
+          value: 1d8
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.odore.damage.rwak
+          value: 1d8
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.odore.damage.rsak
+          value: 1d8
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.odore.count
+          value: each-turn
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.odore.criticalDamage
+          value: true
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.odore.activation
+          value: target.attributes.hp.pct < 50 && workflow.advantage
+          priority: 20
+          type: custom
+        - key: flags.midi-qol.optional.odore.label
+          value: Odore di Sangue - Bonus Damage
+          priority: 20
+          type: custom
     disabled: false
     duration:
-      startTime: 840
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 107
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -111,10 +108,21 @@ effects:
         Actor.j5qUpsgLWW6QtAFt.Item.165It27EOOLdhDv0.ActiveEffect.arib910mH1f5ykEQ
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start:
+      combat: null
+      round: 107
+      time: 840
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!UesJRtzSK9QmpcvN.oCv9TTRKDepjAvhD'
 sort: 0
 ownership:
@@ -128,7 +136,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680313150

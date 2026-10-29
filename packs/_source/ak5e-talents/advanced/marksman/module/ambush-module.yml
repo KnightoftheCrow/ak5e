@@ -41,21 +41,18 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.MNZ7KjBbXyRfHWns
     _id: rsQ9fLr0ReGTdVci
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.extraDice
-        mode: 2
-        value: bonus=1; combat.round === 1;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.extraDice
+          value: bonus=1; combat.round === 1;
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -79,11 +76,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: GiT7LQTiCJxjm7mo
       modifiedTime: 1767986283239
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!MNZ7KjBbXyRfHWns.rsQ9fLr0ReGTdVci'
 flags:
   dnd5e:
@@ -93,7 +94,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1767986099072

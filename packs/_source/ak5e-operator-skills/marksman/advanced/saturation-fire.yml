@@ -150,25 +150,22 @@ effects:
     origin: Compendium.ak5e.ak5e-operator-skills.Item.THc5UHbKjzdpOUX5
     _id: jFsfp7Zc1UVOIfUd
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '40'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+        - key: system.scale.skillPoints.maxsp
+          value: 40
+          priority: 20
+          type: upgrade
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -193,12 +190,15 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768153960910
       modifiedTime: 1768651532359
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!THc5UHbKjzdpOUX5.jFsfp7Zc1UVOIfUd'
 sort: 0
 ownership:
@@ -212,7 +212,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767619080608

@@ -152,21 +152,18 @@ effects:
     origin: Item.S80xVk98OzC49fdM
     _id: iiSxjqAGvXjyAQ3V
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: bonus=@abilities.dex.mod; usesCount=1; hasAttack && actionType.rwak
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=@abilities.dex.mod; usesCount=1; hasAttack && actionType.rwak
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -194,11 +191,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: GiT7LQTiCJxjm7mo
       modifiedTime: 1767896930415
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!rM5R8SXndxdLqu4c.iiSxjqAGvXjyAQ3V'
 flags:
   dnd5e:
@@ -208,7 +209,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767614285142

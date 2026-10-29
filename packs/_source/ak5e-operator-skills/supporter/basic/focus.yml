@@ -157,25 +157,22 @@ effects:
     origin: Compendium.AK5e.ak5e-operator-skills.Item.mCAtL81tri31Uqoh
     _id: flx7lohMTgQh5EDM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '5'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 5
+          priority: 20
+          type: upgrade
+        - key: system.scale.skillPoints.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -199,10 +196,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!mCAtL81tri31Uqoh.flx7lohMTgQh5EDM'
   - name: +1 Spell Save DC and Spell Attack Rolls
     img: modules/AK5e-Foundry-Module/icons/Skill-Bena2.webp
@@ -210,25 +212,22 @@ effects:
     transfer: false
     _id: jXLPEKIJ93aNE4c1
     type: base
-    system: {}
-    changes:
-      - key: system.bonuses.spell.dc
-        mode: 2
-        value: '+1'
-        priority: 20
-      - key: system.bonuses.spell.attack
-        mode: 2
-        value: '+1'
-        priority: 20
+    system:
+      changes:
+        - key: system.bonuses.spell.dc
+          value: '+1'
+          priority: 20
+          type: add
+        - key: system.bonuses.spell.attack
+          value: '+1'
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -255,10 +254,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!mCAtL81tri31Uqoh.jXLPEKIJ93aNE4c1'
 flags:
   dnd5e:
@@ -268,7 +272,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1785598440263

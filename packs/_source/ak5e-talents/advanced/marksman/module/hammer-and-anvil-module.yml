@@ -41,23 +41,20 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.IuPBrdz8iyjMI1I8
     _id: cmMkaXDktYkHf3B8
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: >-
-          bonus=@prof; hasAttack && actionType.rwak && checkNearby(opponentId,
-          'ally', 10);
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=@prof; hasAttack && actionType.rwak && checkNearby(opponentId,
+            'ally', 10);
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -81,11 +78,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: GiT7LQTiCJxjm7mo
       modifiedTime: 1767994813459
+      createdTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!IuPBrdz8iyjMI1I8.cmMkaXDktYkHf3B8'
 flags:
   dnd5e:
@@ -95,7 +96,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1767994398086

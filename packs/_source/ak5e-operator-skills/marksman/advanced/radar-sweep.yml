@@ -154,25 +154,22 @@ effects:
     origin: Compendium.ak5e.ak5e-operator-skills.Item.um4w4uDBUA420vAg
     _id: JHm0s1S3DjNum3qv
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '20'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '20'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skillPoints.recovery
+          value: 20
+          priority: 20
+          type: upgrade
+        - key: system.scale.skillPoints.maxsp
+          value: 20
+          priority: 20
+          type: upgrade
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -197,37 +194,37 @@ effects:
         Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA.ActiveEffect.1htoZLk7xhkowqiY
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768153437967
       modifiedTime: 1768651515768
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!um4w4uDBUA420vAg.JHm0s1S3DjNum3qv'
   - name: Radar Sweep
     img: modules/ak5e/icons/64px-Skill-Ambriel2.webp
     origin: Compendium.ak5e.ak5e-operator-skills.Item.um4w4uDBUA420vAg
     _id: bKQJ1fN2HDFqb7VI
     type: base
-    system: {}
-    changes:
-      - key: system.skills.prc.bonuses.passive
-        mode: 2
-        value: '10'
-        priority: 20
-      - key: flags.automated-conditions-5e.skill.advantage
-        mode: 2
-        value: skill.prc;
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.prc.bonuses.passive
+          value: 10
+          priority: 20
+          type: add
+        - key: flags.automated-conditions-5e.skill.advantage
+          value: skill.prc;
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 10
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 10
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -255,12 +252,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1768153519923
       modifiedTime: 1768153692440
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!um4w4uDBUA420vAg.bKQJ1fN2HDFqb7VI'
 sort: 0
 ownership:
@@ -272,7 +272,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1767619055022

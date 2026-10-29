@@ -3,36 +3,12 @@ type: feat
 img: modules/ak5e/icons/Skill-CivilightEterna1.webp
 effects:
   - _id: e31tfoYwJoFTyCf6
-    changes:
-      - key: flags.midi-qol.optional.lucky.attack.all
-        mode: 5
-        value: reroll-kh
-        priority: 20
-      - key: flags.midi-qol.optional.lucky.label
-        mode: 5
-        value: Lucky
-        priority: 20
-      - key: flags.midi-qol.optional.lucky.save.all
-        mode: 5
-        value: reroll-kh
-        priority: 20
-      - key: flags.midi-qol.optional.lucky.check.all
-        mode: 5
-        value: reroll-kh
-        priority: 20
-      - key: flags.midi-qol.optional.lucky.count
-        mode: 5
-        value: ItemUses.Lucky
-        priority: 20
     disabled: false
     duration:
-      startTime: 47180419488
-      seconds: null
-      combat: null
-      rounds: null
-      turns: null
-      startRound: 260
-      startTurn: 1
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     origin: Item.IDWw0B2Ir4Tmt8Qm
     transfer: true
     flags:
@@ -77,14 +53,46 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.3.0
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     img: modules/ak5e/icons/Skill-CivilightEterna1.webp
     type: base
-    system: {}
+    system:
+      changes:
+        - key: flags.midi-qol.optional.lucky.attack.all
+          value: reroll-kh
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.lucky.label
+          value: Lucky
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.lucky.save.all
+          value: reroll-kh
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.lucky.check.all
+          value: reroll-kh
+          priority: 20
+          type: override
+        - key: flags.midi-qol.optional.lucky.count
+          value: ItemUses.Lucky
+          priority: 20
+          type: override
     sort: 0
+    start:
+      combat: null
+      round: 260
+      time: 47180419488
+      turn: 1
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!W6rnYqYAQvj3SaKt.e31tfoYwJoFTyCf6'
 flags:
   core: {}
@@ -382,7 +390,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.3.0
   createdTime: 1783357514818

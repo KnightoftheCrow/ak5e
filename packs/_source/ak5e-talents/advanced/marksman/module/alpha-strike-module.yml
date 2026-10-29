@@ -143,21 +143,18 @@ effects:
     origin: Compendium.ak5e.ak5e-talents.Item.imHOfHdGlX4eXLIq
     _id: QcOD3rFthDjUCkjk
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: bonus=2d12; UsesCount=1;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: bonus=2d12; UsesCount=1;
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -186,12 +183,15 @@ effects:
         Compendium.ak5e.ak5e-talents.Item.o0GnFDZnQv6sXcbC.ActiveEffect.VSDmSkJS3PKvLsNb
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1767985152721
       modifiedTime: 1767986203418
       lastModifiedBy: GiT7LQTiCJxjm7mo
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!imHOfHdGlX4eXLIq.QcOD3rFthDjUCkjk'
 sort: 0
 ownership:
@@ -205,7 +205,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1767738173949

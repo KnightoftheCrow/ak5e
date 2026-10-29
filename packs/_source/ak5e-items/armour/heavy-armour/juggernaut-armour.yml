@@ -54,69 +54,66 @@ effects:
     origin: Item.hYtZZ7O3pi90xx7t
     _id: lNkXhZS1fGI6Q8TS
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dm.amount.bludgeoning
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.slashing
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.piercing
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.thunder
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.acid
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.cold
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.fire
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.force
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.lightning
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.necrotic
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.poison
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.psychic
-        mode: 2
-        value: '-5'
-        priority: 20
-      - key: system.traits.dm.amount.radiant
-        mode: 2
-        value: '-5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dm.amount.bludgeoning
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.slashing
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.piercing
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.thunder
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.acid
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.cold
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.fire
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.force
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.lightning
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.necrotic
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.poison
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.psychic
+          value: -5
+          priority: 20
+          type: add
+        - key: system.traits.dm.amount.radiant
+          value: -5
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -140,17 +137,22 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!tnskKCY7wCAlcdmm.lNkXhZS1fGI6Q8TS'
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.3
   createdTime: 1757006097143

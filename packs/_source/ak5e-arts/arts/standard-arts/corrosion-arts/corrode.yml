@@ -272,21 +272,18 @@ effects:
     transfer: false
     _id: PR8SjMhYa48plFG6
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.ActivityOverTime
-        mode: 2
-        value: corrode-effect-save
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.ActivityOverTime
+          value: corrode-effect-save
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -316,10 +313,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!P3K3ekWBKzYu6uY0.PR8SjMhYa48plFG6'
 flags:
   dnd5e:
@@ -338,7 +340,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515

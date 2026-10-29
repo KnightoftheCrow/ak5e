@@ -45,21 +45,18 @@ effects:
     origin: Compendium.ak5e.ak5e-character-origins.Item.SwEdZQO7hbBwru9u
     _id: Knt3G4LUsf8PihbH
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.init.bonus
-        mode: 2
-        value: '@abilities.dex.mod'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.init.bonus
+          value: '@abilities.dex.mod'
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -83,10 +80,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!SwEdZQO7hbBwru9u.Knt3G4LUsf8PihbH'
 sort: 0
 ownership:
@@ -100,7 +102,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680297411

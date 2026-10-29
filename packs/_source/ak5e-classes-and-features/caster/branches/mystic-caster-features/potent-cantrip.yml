@@ -38,21 +38,18 @@ effects:
     origin: Compendium.ak5e.ak5e-classes-and-features.Item.SgHOUK1RnAk1Pcip
     _id: M9fgXKiURSWTxOZx
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.potentCantrip
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.potentCantrip
+          value: true
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -76,12 +73,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774109101486
       modifiedTime: 1774109110453
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!SgHOUK1RnAk1Pcip.M9fgXKiURSWTxOZx'
 sort: 100000
 ownership:
@@ -95,7 +95,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774109003050

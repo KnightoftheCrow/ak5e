@@ -158,23 +158,20 @@ effects:
     origin: Compendium.ak5e.ak5e-classes-and-features.Item.OzrZAwSCp5h2uNEG
     _id: 1O0q5A1fVG62RH6E
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 5
-        value: >-
-          modifier=r<3; isSpell && rollingActor.items.some(item => item.name ===
-          'Signature')
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.modifier
+          value: >-
+            modifier=r<3; isSpell && rollingActor.items.some(item => item.name
+            === 'Signature')
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -202,48 +199,48 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774100489347
       modifiedTime: 1774179518578
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!OzrZAwSCp5h2uNEG.1O0q5A1fVG62RH6E'
   - type: enchantment
     name: Signature Art
     img: modules/ak5e/icons/Skill-Beeswax1.png
     disabled: true
     _id: kFbKw2C5Gk2ea7Xn
-    system: {}
-    changes:
-      - key: activities[damage].midiProperties.ignoreTraits
-        mode: 5
-        value: idm
-        priority: 20
-      - key: activities[damage].midiProperties.ignoreTraits
-        mode: 5
-        value: idr
-        priority: 20
-      - key: name
-        mode: 5
-        value: '{} (Signature Art)'
-        priority: 20
-      - key: activities[attack].midiProperties.ignoreTraits
-        mode: 5
-        value: idm
-        priority: 20
-      - key: activities[attack].midiProperties.ignoreTraits
-        mode: 5
-        value: idr
-        priority: 20
+    system:
+      changes:
+        - key: activities[damage].midiProperties.ignoreTraits
+          value: idm
+          priority: 20
+          type: override
+        - key: activities[damage].midiProperties.ignoreTraits
+          value: idr
+          priority: 20
+          type: override
+        - key: name
+          value: '{} (Signature Art)'
+          priority: 20
+          type: override
+        - key: activities[attack].midiProperties.ignoreTraits
+          value: idm
+          priority: 20
+          type: override
+        - key: activities[attack].midiProperties.ignoreTraits
+          value: idr
+          priority: 20
+          type: override
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -268,12 +265,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774100687593
       modifiedTime: 1782474991277
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!OzrZAwSCp5h2uNEG.kFbKw2C5Gk2ea7Xn'
 sort: 500000
 ownership:
@@ -289,7 +289,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.5
   createdTime: 1774095578067

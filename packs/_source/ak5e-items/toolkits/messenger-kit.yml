@@ -270,21 +270,18 @@ effects:
     transfer: false
     _id: WC6Hp9Rz8N2h5wfQ
     type: base
-    system: {}
-    changes:
-      - key: system.skills.tech.bonuses.check
-        mode: 2
-        value: '+5'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.tech.bonuses.check
+          value: '+5'
+          priority: 20
+          type: add
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: >-
       <p>A +5 Bonus to Technology Checks to repair communications equipment.
       Toggle this off when it is not applicable.</p>
@@ -312,12 +309,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.1.2
       createdTime: 1756571877709
       modifiedTime: 1756571944704
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!wqd3yeo5ea2DAqD9.WC6Hp9Rz8N2h5wfQ'
 flags:
   dnd5e:
@@ -328,7 +328,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1756485624474

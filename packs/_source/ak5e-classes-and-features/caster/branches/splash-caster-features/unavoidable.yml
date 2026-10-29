@@ -158,21 +158,18 @@ effects:
     transfer: false
     _id: CSlm0BXBmhWS34bC
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.save.disadvantage
-        mode: 5
-        value: isSpell
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.save.disadvantage
+          value: isSpell
+          priority: 20
+          type: override
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -200,12 +197,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 5.2.4
       createdTime: 1774128011332
       modifiedTime: 1774128081661
       lastModifiedBy: 9KtVYqHDTWORuJDZ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!pQ5ygWo0vQUdPyTS.CSlm0BXBmhWS34bC'
 sort: 300000
 ownership:
@@ -219,7 +219,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1774127901728
