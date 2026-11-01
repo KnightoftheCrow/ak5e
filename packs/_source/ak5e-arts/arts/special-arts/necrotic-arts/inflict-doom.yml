@@ -1,0 +1,76 @@
+folder: MCrcjuaE6DbkzhGN
+name: Inflict Doom
+type: spell
+_id: ctruOjsiRI9uFBfX
+img: icons/magic/death/undead-skeleton-worn-blue.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>With a touch, you wrack the nervous system of a Creature, causing it to
+      experience much greater pain from a given stimulus. When you cast this
+      Art, choose one Saving Throw and one Damage Type. The Creature you touch
+      must make a Constitution Saving Throw. On a failed Save, they are Doomed
+      for the duration; while Doomed, they have Disadvantage on all Saving
+      Throws of the chosen type, and they are Vulnerable to the Damage Type you
+      chose.</p><p><strong>Not Automated.</strong></p>
+    chat: ''
+  identifier: inflict-doom
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+  duration:
+    units: minute
+    expiry: null
+    value: '1'
+  level: 8
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 2
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  range:
+    units: touch
+    special: ''
+  school: nec
+  target:
+    template:
+      contiguous: false
+      stationary: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: creature
+      count: ''
+      special: ''
+effects: []
+sort: 600000
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793308753400
+  modifiedTime: 1793469295246
+  lastModifiedBy: RpHe2CXmeL3aouDm
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!ctruOjsiRI9uFBfX'

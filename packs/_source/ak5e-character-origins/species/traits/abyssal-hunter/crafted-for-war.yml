@@ -1,0 +1,193 @@
+folder: D71V6iCBNBHwNXst
+name: Crafted for War
+type: feat
+_id: uG1333QuFpIniBIH
+img: icons/magic/water/bubbles-air-water-light.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <h3>Crafted for War</h3><p>The Abyssal Hunters are biological
+      supersoldiers adapted from the Aegir Species; the traits of the Aegir are
+      still prominent, inflated to dramatic proportions through hybridisation
+      with Seaborn DNA. For the better in most cases, for the worse in
+      some.</p><p><strong>Blessing of the Sea.</strong> You cannot contract
+      Oripathy through mundane means.</p><p><strong>Duck and Dive.</strong>
+      While you are swimming, you have Advantage on Dexterity Saving
+      Throws.</p><p><strong>Incapable of Arts.</strong> Your seaborn blood
+      rejects Originium in all its forms, leaving you unable to cast Arts in any
+      way.</p><p><strong>Seaborn Darkvision.</strong> You have 60 feet of
+      Darkvision.</p><p><strong>Seaborn Ventilation.</strong> You can breathe
+      underwater.</p><p><strong>Semi-Automated: </strong>You will be prompted on
+      whether you are swimming when you make a Dexterity Saving Throw; this will
+      provide Advantage if you choose "yes".</p>
+    chat: ''
+  identifier: crafted-for-war
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Dexterity Save Advantage
+    img: icons/magic/water/bubbles-air-water-light.webp
+    origin: Compendium.ak5e.ak5e-character-origins.Item.uG1333QuFpIniBIH
+    _id: Bp0VqY8MQBExvS1Z
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.advantage.ability.save.dex
+          value: confirm('(Oceanborne) Are you currently swimming ?')
+          priority: 20
+          type: override
+          phase: initial
+          _id: LQfUXY3gHfcgX1Wk
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.uG1333QuFpIniBIH
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-character-origins.Item.ry89CLEPmkWmyH73.ActiveEffect.XpnNOU4w3xBxsFWS
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: RpHe2CXmeL3aouDm
+      createdTime: 1793290490722
+      modifiedTime: 1793290880127
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!uG1333QuFpIniBIH.Bp0VqY8MQBExvS1Z'
+  - name: Darkvision
+    img: icons/magic/water/bubbles-air-water-light.webp
+    origin: Compendium.ak5e.ak5e-character-origins.Item.uG1333QuFpIniBIH
+    _id: VsycurhxiohTCJHb
+    type: base
+    system:
+      changes:
+        - key: system.attributes.senses.darkvision
+          value: 60
+          priority: 20
+          type: add
+          phase: initial
+          _id: 69ZLmdvFR4eYXsuC
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.uG1333QuFpIniBIH
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-character-origins.Item.ry89CLEPmkWmyH73.ActiveEffect.KsFbnfUYoASQu4iZ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: RpHe2CXmeL3aouDm
+      createdTime: 1793291122034
+      modifiedTime: 1793291137494
+    start:
+      combat: null
+      round: 97
+      time: 780
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!uG1333QuFpIniBIH.VsycurhxiohTCJHb'
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793290387699
+  modifiedTime: 1793459088633
+  lastModifiedBy: RpHe2CXmeL3aouDm
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!uG1333QuFpIniBIH'

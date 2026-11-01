@@ -1,0 +1,79 @@
+folder: MCrcjuaE6DbkzhGN
+name: Mass exhaust
+type: spell
+_id: 8tMjAR3RxY4Tv5w6
+img: icons/magic/control/debuff-energy-hold-green.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You create a 20-foot-radius sphere centered on a point you can within
+      range that interferes with the respiration of Creatures, draining them of
+      strength and will. When a Creature enters the Zone during their Turn, or
+      begins their Turn in the Zone, they must succeed on a Constitution Saving
+      Throw or suffer 1d4-1 (minimum of 1) Levels of Exhaustion. A Creature that
+      has gained Exhaustion in this way can remove 1 Level of that Exhaustion as
+      an Action.</p><p><strong>Not Automated.</strong></p>
+    chat: ''
+  identifier: mass-exhaust
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+  duration:
+    units: minute
+    expiry: null
+    value: '1'
+  level: 7
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 2
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  range:
+    units: ft
+    special: ''
+    value: '100'
+  school: nec
+  target:
+    template:
+      contiguous: false
+      stationary: false
+      units: ft
+      type: sphere
+      size: '20'
+      count: ''
+    affects:
+      choice: false
+      type: space
+      count: ''
+      special: ''
+effects: []
+sort: 200000
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793312381510
+  modifiedTime: 1793469682192
+  lastModifiedBy: RpHe2CXmeL3aouDm
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!8tMjAR3RxY4Tv5w6'

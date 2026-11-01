@@ -1,0 +1,80 @@
+folder: ZQG37MQTsPYe6865
+name: Yggdrasil
+type: spell
+_id: 0lw8NbZFUpC4Xaee
+img: icons/magic/nature/tree-roots-glow-yellow.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You invoke the might of Muel the Feranmut itself, conjuring up an
+      golden image of a mighty tree 100 feet in height and a canopy with a
+      radius of 60 feet centered on a point within range. As a Bonus Action, you
+      can choose up to five Creatures that are underneath the canopy of the
+      Tree. If the Creature is hostile to you, it must make a Charisma Saving
+      Throw; on a failed Save, it takes 3d8 Force Damage, or half as much on a
+      successful Save. If the Creature is not hostile to you, it either regains
+      3d8 Hit Points or gains 3d8 Temporary Hit Points; your
+      choice.</p><p><strong>Not Automated.</strong></p>
+    chat: ''
+  identifier: yggdrasil
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+  duration:
+    units: minute
+    expiry: null
+    value: '1'
+  level: 9
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  method: ''
+  prepared: 0
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  range:
+    units: ft
+    special: ''
+    value: '100'
+  school: con
+  target:
+    template:
+      contiguous: false
+      stationary: false
+      units: ft
+      type: cylinder
+      size: '60'
+      height: '100'
+      count: ''
+    affects:
+      choice: false
+      type: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793450723454
+  modifiedTime: 1793456270554
+  lastModifiedBy: RpHe2CXmeL3aouDm
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!0lw8NbZFUpC4Xaee'

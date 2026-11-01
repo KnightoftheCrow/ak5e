@@ -1,0 +1,286 @@
+folder: MCrcjuaE6DbkzhGN
+name: Necrostorm
+type: spell
+_id: uW5AY9T01v3rtYcW
+img: icons/magic/death/skull-poison-green.webp
+system:
+  activities:
+    Yh4jxe5jAldz8yK6:
+      type: save
+      name: Cast
+      _id: Yh4jxe5jAldz8yK6
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 6
+            denomination: 8
+            bonus: ''
+            modifiers: []
+            types:
+              - necrotic
+            scaling:
+              mode: ''
+              number: 1
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: true
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You unleash a storm of poisoned wind in a 20-foot-radius, 60-foot-tall
+      cylinder centred on a point it can see within range. All Creatures within
+      the area must make a Constitution Saving Throw; on a failed Save, they
+      take 6d8 Necrotic Damage and are Poisoned until the end of their next
+      Turn. On a successful Save, they take half as much Damage, and are not
+      Poisoned.</p><p><strong>Partially Automated. </strong>Use the spell to
+      create the area and do the damage. The poison effect is not automated.</p>
+    chat: ''
+  identifier: necrostorm
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: action
+    condition: ''
+  duration:
+    units: inst
+    expiry: null
+  level: 5
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 2
+  properties:
+    - vocal
+    - somatic
+  range:
+    units: ft
+    special: ''
+    value: '120'
+  school: con
+  target:
+    template:
+      contiguous: false
+      stationary: false
+      units: ft
+      type: cylinder
+      size: '20'
+      count: ''
+      height: '60'
+    affects:
+      choice: false
+      type: space
+      count: ''
+      special: ''
+effects:
+  - name: Necrostorm
+    img: icons/magic/death/skull-poison-green.webp
+    system:
+      magical: true
+      origin:
+        item: Compendium.ak5e.ak5e-arts.Item.uW5AY9T01v3rtYcW
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 9VvLIiN3rBdaKYhy
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: targetEnd
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-arts.Item.uW5AY9T01v3rtYcW
+    tint: '#ffffff'
+    transfer: true
+    statuses:
+      - poisoned
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration:
+          - None
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793304826176
+      modifiedTime: 1793449385490
+      lastModifiedBy: RpHe2CXmeL3aouDm
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!uW5AY9T01v3rtYcW.9VvLIiN3rBdaKYhy'
+sort: 900000
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793304354212
+  modifiedTime: 1793469763825
+  lastModifiedBy: RpHe2CXmeL3aouDm
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!uW5AY9T01v3rtYcW'

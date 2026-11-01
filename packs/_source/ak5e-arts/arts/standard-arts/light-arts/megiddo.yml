@@ -187,7 +187,7 @@ effects:
     duration:
       value: null
       units: seconds
-      expiry: null
+      expiry: targetEnd
       expired: false
     description: ''
     tint: '#ffffff'
@@ -209,8 +209,7 @@ effects:
         dontApply: false
         durationExpression: ''
         macroRepeat: none
-        specialDuration:
-          - turnEnd
+        specialDuration: []
       core:
         overlay: false
     _stats:
@@ -219,10 +218,17 @@ effects:
       exportSource: null
       coreVersion: '14.369'
       systemId: dnd5e
+<<<<<<< Updated upstream
       systemVersion: 5.1.2
       lastModifiedBy: null
       createdTime: null
       modifiedTime: null
+=======
+      systemVersion: 6.0.6
+      lastModifiedBy: RpHe2CXmeL3aouDm
+      createdTime: 1791733109050
+      modifiedTime: 1793302794700
+>>>>>>> Stashed changes
     showIcon: 2
     start: null
     folder: null

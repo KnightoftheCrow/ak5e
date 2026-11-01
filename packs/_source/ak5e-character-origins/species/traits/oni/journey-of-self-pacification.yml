@@ -1,0 +1,122 @@
+folder: szoxo8J5vBjVMBub
+name: Journey of Self-Pacification
+type: feat
+_id: QgYsYhCHVUJFWwtG
+img: icons/magic/control/silhouette-aura-energy.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <h3>Journey of Self-Pacification</h3><p>So far removed from the Royal
+      Courts of the Sarkaz cousins, the Oni have had to confront their nature
+      unsupported; chaining their rage away with discipline and meditation. This
+      practice of self-strengthening has been essential for their survival and
+      integration within society, and has given them a mental fortitude
+      unmatched by most. You gain the following
+      benefits:</p><p><strong>Condition Resistance.</strong> You have Advantage
+      on Saving Throws to avoid or end the Frightened or Charmed
+      Condition.</p><p><strong>Damage Resistance.</strong> You are Resistant to
+      Psychic Damage.</p><p><strong>Mediator.</strong> You have Advantage on
+      Charisma-based Checks to convince Creatures to disarm or choose a
+      non-violent option.</p><p><strong>Partially Automated.</strong> Resistance
+      to psychic damage Automated. Mediatir and condition resistance not
+      automated.</p>
+    chat: ''
+  identifier: journey-of-self-pacification
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Journey of Self-Pacification
+    img: icons/magic/control/silhouette-aura-energy.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.QgYsYhCHVUJFWwtG
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.traits.dr.value
+          type: override
+          value: psychic
+          phase: initial
+          _id: HkoqSGuSXi9YLyYz
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: ExpIMupkarg6zR1W
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-character-origins.Item.QgYsYhCHVUJFWwtG
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793293812553
+      modifiedTime: 1793293998112
+      lastModifiedBy: RpHe2CXmeL3aouDm
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!QgYsYhCHVUJFWwtG.ExpIMupkarg6zR1W'
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793292737633
+  modifiedTime: 1793294232270
+  lastModifiedBy: RpHe2CXmeL3aouDm
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!QgYsYhCHVUJFWwtG'

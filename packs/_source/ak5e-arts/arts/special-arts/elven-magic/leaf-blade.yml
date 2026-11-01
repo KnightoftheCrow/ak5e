@@ -1,0 +1,75 @@
+folder: ZQG37MQTsPYe6865
+name: Leaf Blade
+type: spell
+_id: ZkZZdtRjE9ZnIy8o
+img: icons/magic/nature/hand-weapon-wood-bark-brown.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You touch one or two leaves, branches, grasses, or similar plant life.
+      You strengthen and mold them creating the same number of Knives. While
+      these Knives are wielded by you, you can use your Spellcasting Ability
+      instead of your Strength or Dexterity for Attack and Damage Rolls.
+      Additionally, Damage dealt by these Knives is considered to be Arts
+      Damage. At the end of the Duration, the material you used in the Knives
+      withers and rots away to nothing.</p><p><strong>Not
+      Automated.</strong></p>
+    chat: ''
+  identifier: leaf-blade
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    condition: ''
+  duration:
+    units: minute
+    expiry: null
+    value: '10'
+  level: 1
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 2
+  properties:
+    - somatic
+  range:
+    units: self
+    special: ''
+  school: trs
+  target:
+    template:
+      contiguous: false
+      stationary: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: object
+      count: ''
+      special: Only plants, leaves, grass or branch
+effects: []
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793450699545
+  modifiedTime: 1793454439967
+  lastModifiedBy: RpHe2CXmeL3aouDm
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!ZkZZdtRjE9ZnIy8o'
