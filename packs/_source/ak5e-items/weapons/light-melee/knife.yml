@@ -87,12 +87,14 @@ system:
         - piercing
       custom:
         enabled: true
-        formula: 1d6r1
+        formula: 1d6
       scaling:
         number: 1
       number: 1
       denomination: 6
       bonus: ''
+      modifiers:
+        - r1
     versatile:
       types: []
       custom:
@@ -102,6 +104,7 @@ system:
   properties:
     - fin
     - lgt
+    - rel
     - thr
   proficient: null
   range:
@@ -123,10 +126,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1756313287684
-  modifiedTime: 1790613723009
+  modifiedTime: 1794931323980
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!EXF9dlqFHPDHi3KF'

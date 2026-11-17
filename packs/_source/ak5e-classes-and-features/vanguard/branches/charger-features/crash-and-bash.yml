@@ -10,7 +10,7 @@ system:
       _id: x2D1sW6inawKXJa7
       sort: 0
       activation:
-        type: ''
+        type: special
         override: false
         condition: ''
       consumption:
@@ -21,13 +21,16 @@ system:
       description:
         chatFlavor: ''
       duration:
-        units: round
+        units: inst
         concentration: false
         override: false
         value: '1'
       effects:
         - _id: S1BuDfs1s83mJ9M7
-          level: {}
+          uuid: null
+          level:
+            min: null
+            max: null
       flags: {}
       range:
         units: self
@@ -132,6 +135,142 @@ system:
         animationType: ''
         animationSpeed: 5
         animationIntensity: 5
+    oD5i5uPA3P2ctk35:
+      type: utility
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        value: '1'
+        expiry: null
+      effects:
+        - _id: GV9k8U6kcmWkRf6p
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 4
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Mark for Elimination (Unbalancing Charge)
+      img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      behaviors: []
+      _id: oD5i5uPA3P2ctk35
   uses:
     spent: 0
     recovery: []
@@ -155,13 +294,14 @@ system:
     value: >-
       <p>You are not a typical Vanguard, and prefer a much more direct approach
       to the idea of “guiding allies”. You gain the following
-      benefits:</p><p><strong>Additional Weapon Proficiencies.</strong> You gain
-      Proficiency with Heavy Melee Weapons.</p><p><strong>Mark for
-      Elimination.</strong> When you deal Damage to a Creature, you mark that
-      Creature until the beginning of your next Turn. If a Marked Creature is
-      reduced to 0 Hit Points, you can immediately use your Tip of the Spear
-      Feature (no Action required).</p><p><strong>Partially automated:</strong>
-      Weapon Proficiencies, effect for Marked creature.</p>
+      benefits:</p><ul><li><p><strong>Additional Weapon Proficiencies.</strong>
+      You gain Proficiency with Heavy Melee Weapons.</p></li><li><p><strong>Mark
+      for Elimination.</strong> When you deal Damage to a Creature, you mark
+      that Creature until the beginning of your next Turn. If a Marked Creature
+      is reduced to 0 Hit Points, you can immediately use your Tip of the Spear
+      Feature (no Action
+      required).</p></li></ul><hr><p><strong>Semi-Automated:</strong> Weapon
+      Proficiencies, effect for Marked creature.</p>
     chat: ''
   identifier: crash-and-bash
   source:
@@ -172,11 +312,11 @@ system:
   prerequisites:
     items: []
     repeatable: false
-    level: null
+    level: 1
   properties: []
   requirements: ''
   type:
-    value: ''
+    value: class
     subtype: ''
 effects:
   - name: Marked for Elimination
@@ -191,9 +331,9 @@ effects:
         item: Compendium.ak5e.ak5e-classes-and-features.Item.Fc2U3ZIpoSZxf0h1
     disabled: false
     duration:
-      value: 1
-      units: rounds
-      expiry: turnStart
+      value: null
+      units: seconds
+      expiry: sourceStart
       expired: false
     description: ''
     tint: '#ffffff'
@@ -215,39 +355,108 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        applicationMode: default
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       createdTime: 1791206078994
-      modifiedTime: 1791733085640
+      modifiedTime: 1794506350443
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
     start: null
     showIcon: 1
     folder: null
     _key: '!items.effects!Fc2U3ZIpoSZxf0h1.S1BuDfs1s83mJ9M7'
+  - name: Marked for Elimination (Unbalancing Charge)
+    img: modules/ak5e/icons/skill_icon_skchr_poncirus_2.png
+    origin: null
+    transfer: false
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.advantage
+          type: ac5e
+          value: ''
+          phase: initial
+          _id: 3WqhRHNCm0xj2SrR
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.Fc2U3ZIpoSZxf0h1
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        applicationMode: default
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794506454108
+      modifiedTime: 1794506490364
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
+    _id: GV9k8U6kcmWkRf6p
+    _key: '!items.effects!Fc2U3ZIpoSZxf0h1.GV9k8U6kcmWkRf6p'
 sort: 50000
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
   5XlrCO2NlPtd4MFQ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206078994
-  modifiedTime: 1791733085640
+  modifiedTime: 1794506508312
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!Fc2U3ZIpoSZxf0h1'

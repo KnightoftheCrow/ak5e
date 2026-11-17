@@ -1,0 +1,156 @@
+folder: wVtdcvt55pMCMRkD
+name: “Raptor” Armour
+type: consumable
+_id: 0CJaL3YSfTwaoxsH
+img: modules/ak5e/icons/skill_icon_sktok_machst.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    autoDestroy: false
+    max: ''
+  description:
+    value: >-
+      <p><strong>Effect:</strong> This Automaton has a Damage Reduction of 4
+      against Physical Damage. If it already has Physical Damage Reduction, that
+      amount is increased by 4.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: raptor-armour
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: credits
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  damage:
+    base:
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+    replace: false
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+effects:
+  - name: +4 Physical DR
+    img: modules/ak5e/icons/skill_icon_sktok_machst.png
+    origin: Compendium.ak5e.ak5e-items.Item.0CJaL3YSfTwaoxsH
+    _id: 6q9UaA4XLTBFJ6IY
+    type: base
+    system:
+      changes:
+        - key: system.traits.dm.amount.bludgeoning
+          value: -4
+          priority: 20
+          type: add
+          phase: initial
+          _id: gho4jOeq2WTiBF5f
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.slashing
+          value: -4
+          priority: 20
+          type: add
+          phase: initial
+          _id: 6UEBQREd3SBLciez
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.piercing
+          value: -4
+          priority: 20
+          type: add
+          phase: initial
+          _id: FzdiBBMbB4fL9LQI
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.thunder
+          value: -4
+          priority: 20
+          type: add
+          phase: initial
+          _id: k5DHVcosMiJIGs9c
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-items.Item.0CJaL3YSfTwaoxsH
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.0mz0nMJ4vg2A4a2y.ActiveEffect.lNkXhZS1fGI6Q8TS
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793467104296
+      modifiedTime: 1793467190394
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!0CJaL3YSfTwaoxsH.6q9UaA4XLTBFJ6IY'
+sort: 1700000
+ownership:
+  default: 0
+  27ikDz77N89hVLvM: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1785597790680
+  modifiedTime: 1793467202528
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!0CJaL3YSfTwaoxsH'

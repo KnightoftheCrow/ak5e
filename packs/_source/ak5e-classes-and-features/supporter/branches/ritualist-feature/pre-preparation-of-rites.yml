@@ -9,7 +9,42 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: {}
+  advancement:
+    5I88NtyKrkvJkHIe:
+      name: Esoteric Arts
+      type: ItemChoice
+      _id: 5I88NtyKrkvJkHIe
+      configuration:
+        allowDrops: false
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - sort: 0
+            uuid: Compendium.dnd5e.spells.Item.4v2H3hHb3Ph9XLNd
+          - sort: 0
+            uuid: Compendium.dnd5e.spells.Item.JGT5bNqu9REL7Fuz
+          - sort: 0
+            uuid: Compendium.dnd5e.spells.Item.ccduLIvutyNqvkgv
+        restriction:
+          list: []
+          school: []
+          level: ''
+        sorting: a
+        spell:
+          ability: []
+          method: ritual
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+        type: spell
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
   description:
     value: >-
       <p>Ritual is something that requires preparation, and you are keenly aware
@@ -26,8 +61,10 @@ system:
       that Art.</p></li><li><p>You do not manifest that Art’s effects, and
       instead store that cast. If you do, you may cast that Art as an Action
       once; this casting does not cost Arts Points. You can only have one Art
-      stored this way at a time.</p></li></ul><p><strong>Not
-      Automated.</strong></p>
+      stored this way at a time.</p></li></ul><hr><p><strong>Semi-Automated:
+      </strong>You will be prompted to pick an Esoteric Art. Ritual Expert
+      cannot be automated; before you cast an Art via the first option of Ritual
+      Expert, untick Concentration for that Spell. </p>
     chat: ''
   identifier: pre-preparation-of-rites
   source:
@@ -43,7 +80,7 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
+    subtype: ''
 effects: []
 flags:
   dnd5e:
@@ -53,14 +90,14 @@ _stats:
   compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.pXK0JNWGnUmKewHL
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206076909
-  modifiedTime: 1791206076909
+  modifiedTime: 1793284452126
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   5XlrCO2NlPtd4MFQ: 3
-sort: 0
+sort: 450000
 _key: '!items!pXK0JNWGnUmKewHL'

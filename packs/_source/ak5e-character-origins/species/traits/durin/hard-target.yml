@@ -16,7 +16,7 @@ system:
       glance, appear to be a crushing disadvantage in combat. However, in
       practice, the difference in height has an uncanny habit of throwing off
       their opponents, who struggle to keep up.</p><p>Your base Armour Class is
-      equal to 12 + your Dexterity Modifier. You can use this base Armour Class
+      equal to 13 + your Dexterity Modifier. You can use this base Armour Class
       even while wearing Armour if your Armour Class would be lower than
       this.</p><p><strong>Automated: </strong>Use the "Custom Formula" AC
       Calculation when you want to use this AC.</p>
@@ -58,7 +58,7 @@ effects:
           conditions: '{}'
           replacement: ''
         - key: system.attributes.ac.formula
-          value: 12+@abilities.dex.mod
+          value: 13+@abilities.dex.mod
           priority: 20
           type: override
           phase: initial
@@ -96,12 +96,12 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
       createdTime: 1791733083096
-      modifiedTime: 1791733083096
+      modifiedTime: 1794948229102
     start:
       combat: null
       round: 107
@@ -124,10 +124,10 @@ _stats:
   compendiumSource: Item.psinvB345MAPTjlV
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1768680300464
-  modifiedTime: 1791733083096
+  modifiedTime: 1794948220833
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!ktV90mFsVAFFuAJL'

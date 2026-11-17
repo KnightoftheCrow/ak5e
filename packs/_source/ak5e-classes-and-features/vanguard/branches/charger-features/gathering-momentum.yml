@@ -18,7 +18,7 @@ system:
           allowed: false
         spellSlot: true
         targets:
-          - type: activityUses
+          - type: itemUses
             value: '-1'
             scaling: {}
       description:
@@ -27,7 +27,17 @@ system:
         units: inst
         concentration: false
         override: false
-      effects: []
+      effects:
+        - _id: JboadwEvioaQEKLm
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 1ZUinAkxLwJSaGXf
+          uuid: null
+          level:
+            min: null
+            max: null
       flags: {}
       range:
         units: self
@@ -41,7 +51,8 @@ system:
           stationary: false
         affects:
           choice: false
-          type: ''
+          type: self
+          special: ''
         override: false
         prompt: true
       uses:
@@ -132,26 +143,32 @@ system:
         animationType: ''
         animationSpeed: 5
         animationIntensity: 5
-    7Ux5ZOOuFHhvcdTe:
-      type: damage
-      _id: 7Ux5ZOOuFHhvcdTe
-      sort: 0
+    kSZDD3Z5bVlVVZiC:
+      type: utility
+      name: Gain 1 Momentum
+      _id: kSZDD3Z5bVlVVZiC
+      img: ''
+      sort: 100000
       activation:
-        type: ''
+        type: special
         override: false
         condition: ''
+      behaviors: []
       consumption:
         scaling:
           allowed: false
         spellSlot: true
         targets:
-          - type: activityUses
-            value: '6'
+          - type: itemUses
+            value: '-1'
+            target: ''
             scaling: {}
       description:
+        value: ''
         chatFlavor: ''
       duration:
         units: inst
+        expiry: null
         concentration: false
         override: false
       effects: []
@@ -163,12 +180,12 @@ system:
       target:
         template:
           contiguous: false
+          stationary: false
           units: ft
           type: ''
-          stationary: false
         affects:
           choice: false
-          type: ''
+          type: self
         override: false
         prompt: true
       uses:
@@ -183,22 +200,15 @@ system:
         requireIdentification: false
         requireMagic: false
         identifier: ''
-      damage:
-        critical:
-          allow: false
-        parts:
-          - custom:
-              enabled: true
-              formula: '@item.uses.value*@scale.gathering-momentum.dice'
-            number: null
-            denomination: null
-            bonus: ''
-            types: []
-            scaling:
-              number: 1
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
+      otherActivityId: none
       macroData:
         name: ''
         command: ''
@@ -232,6 +242,7 @@ system:
         chooseEffects: false
         toggleEffect: false
         ignoreFullCover: false
+        targetMustBeSeen: false
         removeChatButtons: default
         magicEffect: false
         magicDamage: false
@@ -244,9 +255,6 @@ system:
         rollAs: target
         preRemoveConditionText: ''
         postRemoveConditionText: ''
-      name: Momentous Strike
-      img: ''
-      otherActivityId: null
       regionBehavior:
         enabled: false
         dispositionFilter: -1
@@ -255,6 +263,10 @@ system:
         wallRestriction: none
         regionVisibility: 2
         attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
         rules: []
       regionLight:
         enabled: false
@@ -266,12 +278,154 @@ system:
         animationType: ''
         animationSpeed: 5
         animationIntensity: 5
+      otherActivityAsParentType: true
+    szEoD41oQyCPt92a:
+      type: utility
+      name: Momentous Strike
+      _id: szEoD41oQyCPt92a
+      img: ''
+      sort: 200000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: turnEnd
+        concentration: false
+        override: false
+      effects:
+        - _id: 8gnw6eHymyp1p6lt
+          uuid: null
+          level: {}
+        - _id: Z1oF1og68uZaYAYn
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
   uses:
     spent: null
     recovery:
       - period: initiative
         type: formula
         formula: '1'
+      - period: sr
+        type: loseAll
     max: '6'
   advancement:
     erX93APmlAhx9BG5:
@@ -279,42 +433,47 @@ system:
       _id: erX93APmlAhx9BG5
       configuration:
         identifier: dice
-        type: string
+        type: dice
         distance:
           units: ''
         scale:
           '0':
-            value: d6
+            faces: 6
           '7':
-            value: d8
+            faces: 8
           '14':
-            value: d10
+            faces: 10
       value: {}
       title: Strike Dice
       hint: ''
       flags: {}
+      name: Momentous Strike Dice
   description:
     value: >-
       <p>As the battle wears on, you build up pace for a spine-shattering blow,
-      represented by your Momentum. Your maximum Momentum is 6; You lose all
-      accumulated Momentum when you are no longer involved in a Combat. You can
-      gain Momentum in the following ways:</p><ul><li><p>+1 Momentum after you
-      roll Initiative.</p></li><li><p>+1 Momentum when you hit a hostile
-      Creature with a Melee Attack; you must have not Damaged them since the
-      beginning of your last Turn AND have moved at least 15 feet in a straight
-      line immediately before making the Attack.</p></li><li><p>+1 Momentum when
-      you take the Couch Action detailed
-      below.</p></li></ul><p><strong>Couch.</strong> As an Action, you take a
-      stance ready to rush towards your enemy. Your Speed is reduced to 0 until
-      the beginning of your next Turn. During your next Turn, your Speed is
-      increased by 10 feet, and your first Melee Attack Roll during that Turn
+      represented by your Momentum. </p><ul><li><p><strong>Momentum.</strong>
+      Your maximum Momentum is 6; You lose all accumulated Momentum when you are
+      no longer involved in a Combat. You can gain Momentum in the following
+      ways:</p><ul><li><p>+1 Momentum after you roll
+      Initiative.</p></li><li><p>+1 Momentum when you hit a hostile Creature
+      with a Melee Attack; you must have not Damaged them since the beginning of
+      your last Turn AND have moved at least 15 feet in a straight line
+      immediately before making the Attack.</p></li><li><p>+1 Momentum when you
+      take the Couch Action detailed
+      below.</p></li></ul></li><li><p><strong>Couch.</strong> As an Action, you
+      take a stance ready to rush towards your enemy. Your Speed is reduced to 0
+      until the beginning of your next Turn. During your next Turn, your Speed
+      is increased by 10 feet, and your first Melee Attack Roll during that Turn
       has a +1 Bonus for each Momentum you had when you used this
-      Action.</p><p><strong>Momentous Strike.</strong> As an Action, you can
-      expend all your Momentum to make a single potent strike into which you put
-      your all. This Attack deals 1d6 additional Weapon Damage for each Momentum
-      expended. This is increased to 1d8 at 7th Level, and 1d10 at 14th
-      Level.</p><p><strong>Partially Automated: </strong>Momentum starts at 1 on
-      initiative, but adding and removing is up to the player.</p>
+      Action.</p></li><li><p><strong>Momentous Strike.</strong> As an Action,
+      you can expend all your Momentum to make a single potent Melee Weapon
+      Attack into which you put your all. This Attack deals 1d6 additional
+      Weapon Damage for each Momentum expended. This is increased to 1d8 at 7th
+      Level, and 1d10 at 14th Level.</p></li></ul><hr><p><strong>Semi-Automated:
+      </strong>You gain 1 Momentum on Initiative. You must manually declare
+      Momentous Strike using the Activity on this Feature; this will provide an
+      Opt-In Effect for the extra damage if you hit with your next Melee Weapon
+      Attack during that Turn.</p>
     chat: ''
   identifier: gathering-momentum
   source:
@@ -325,30 +484,240 @@ system:
   prerequisites:
     items: []
     repeatable: false
-    level: null
+    level: 1
   properties: []
   requirements: ''
   type:
-    value: ''
+    value: class
     subtype: ''
-effects: []
+effects:
+  - name: Couching
+    img: modules/ak5e/icons/skill_icon_skchr_almond_2.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IKf5nW9VCsqZ83tR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.movement.all
+          type: custom
+          value: 0
+          phase: initial
+          _id: huPyqNDtcmC6HIHh
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: JboadwEvioaQEKLm
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794431617692
+      modifiedTime: 1794431659637
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!IKf5nW9VCsqZ83tR.JboadwEvioaQEKLm'
+  - name: Couched Charge
+    img: modules/ak5e/icons/skill_icon_skchr_almond_2.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IKf5nW9VCsqZ83tR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.movement.all
+          type: custom
+          value: '+10'
+          phase: initial
+          _id: qmEVPP3T56EMMOBz
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: >-
+            bonus=@item.uses.value; oncePerRound; actionType.msak ||
+            actionType.mwak
+          phase: initial
+          _id: VBAZVPTnFAVGDHW4
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: 1ZUinAkxLwJSaGXf
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceEnd
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: effects.some(e => e.name === "Couch")
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794431673341
+      modifiedTime: 1794431851230
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!IKf5nW9VCsqZ83tR.1ZUinAkxLwJSaGXf'
+  - name: Momentous Strike
+    img: modules/ak5e/icons/skill_icon_skchr_almond_2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IKf5nW9VCsqZ83tR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=(originItem.uses.value)d@scale.gathering-momentum.dice.faces;
+            usesCount=origin, originItem.uses.value; name=Gathering Momentum;
+            optinId=momentous-strike-0; description=Expending Momentum for
+            Damage; once; optin; preselected; actionType.mwak
+          phase: initial
+          _id: bhEfAkJVyIfH1aYN
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: Z1oF1og68uZaYAYn
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.IKf5nW9VCsqZ83tR
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794431894154
+      modifiedTime: 1794506925437
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!IKf5nW9VCsqZ83tR.Z1oF1og68uZaYAYn'
 sort: 0
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
   5XlrCO2NlPtd4MFQ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206078995
-  modifiedTime: 1791218495551
+  modifiedTime: 1794507047996
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!IKf5nW9VCsqZ83tR'

@@ -15,13 +15,15 @@ system:
         condition: ''
       consumption:
         scaling:
-          allowed: false
+          allowed: true
+          max: '@scale.weapon-binding.number'
         spellSlot: true
         targets:
           - type: itemUses
             value: '1'
             target: ''
-            scaling: {}
+            scaling:
+              mode: ''
       description:
         chatFlavor: ''
       duration:
@@ -50,10 +52,8 @@ system:
         prompt: true
       uses:
         spent: 0
-        recovery:
-          - period: lr
-            type: recoverAll
-        max: '1'
+        recovery: []
+        max: ''
       visibility:
         level:
           min: null
@@ -68,14 +68,16 @@ system:
           allow: false
         parts:
           - custom:
-              enabled: false
-              formula: ''
+              enabled: true
+              formula: (@scaling*4)d8
             number: 4
             denomination: 8
             bonus: ''
+            modifiers: []
             types:
               - bludgeoning
             scaling:
+              mode: ''
               number: 1
       save:
         ability:
@@ -83,6 +85,7 @@ system:
         dc:
           calculation: spellcasting
           formula: ''
+        bonus: ''
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -172,10 +175,11 @@ system:
       they take half as much Damage. All of your Bound Weapons are then placed
       in empty spaces as close to that Creature as possible.</p><p>Once you have
       used this Feature, you may not do so again until you have completed a Long
-      Rest.</p><p><strong>Partially Automated:</strong> Use this feat for each
-      Bound Weapon.</p>
+      Rest.</p><hr><p><strong>Semi-Automated: </strong>Set the scaling value to
+      your number of Bound Weapons. Afterwards, manually move your Bound Weapons
+      close to the target.</p>
     chat: ''
-  identifier: kinetic-strike-wip
+  identifier: kinetic-strike
   source:
     revision: 1
     rules: '2024'
@@ -190,9 +194,9 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
+    subtype: ''
 effects: []
-sort: 125000
+sort: 112110
 ownership:
   default: 0
 flags:
@@ -201,10 +205,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791203553258
-  modifiedTime: 1791203553258
+  modifiedTime: 1794844204914
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!M3CI4ZgRTtIasnAa'

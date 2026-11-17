@@ -110,32 +110,7 @@ system:
         choices:
           - count: 1
             pool:
-              - tool:art:art
-              - tool:art:brewing
-              - tool:art:cooking
-              - tool:art:engineering
-              - tool:art:maintenance
-              - tool:art:makeover
-              - tool:art:mechanism
-              - tool:art:medical
-              - tool:art:messenger
-              - tool:art:pharmacology
-              - tool:art:tailoring
-              - tool:art:woodwork
-              - tool:music:instrumentbagpipes
-              - tool:music:instrumentbass
-              - tool:music:instrumentcello
-              - tool:music:instrumentdrums
-              - tool:music:instrumentflute
-              - tool:music:instrumentguitar
-              - tool:music:instrumentharp
-              - tool:music:instrumentkeyboard
-              - tool:music:instrumentmicrophone
-              - tool:music:instrumentother
-              - tool:music:instrumenttrombone
-              - tool:music:instrumenttuba
-              - tool:music:instrumentturntable
-              - tool:music:instrumentviolin
+              - tool:toolkit:*
               - tool:vehicle:*
         grants: []
         mode: default
@@ -144,6 +119,7 @@ system:
       hint: ''
       flags: {}
       value: {}
+      classRestriction: ''
     V4ud2C0hEPlNc8oV:
       type: Trait
       _id: V4ud2C0hEPlNc8oV
@@ -179,31 +155,6 @@ system:
       hint: ''
       title: ''
       value: {}
-    0jhi6nzBEx2Q24pB:
-      type: ScaleValue
-      _id: 0jhi6nzBEx2Q24pB
-      configuration:
-        identifier: ''
-        type: dice
-        distance:
-          units: ''
-        scale:
-          '1':
-            number: null
-            faces: 8
-            modifiers: []
-          '7':
-            number: null
-            faces: 10
-            modifiers: []
-          '14':
-            number: null
-            faces: 12
-            modifiers: []
-      flags: {}
-      value: {}
-      hint: ''
-      title: Aid Dice
     e12fjsdAVQV79Z4U:
       type: ItemChoice
       _id: e12fjsdAVQV79Z4U
@@ -377,30 +328,58 @@ system:
             count: 1
             replacement: false
         pool:
-          - uuid: Compendium.ak5e.ak5e-talents.Item.wzDSMXr2ZHUXaQGu
-          - uuid: Compendium.ak5e.ak5e-talents.Item.rW7NltgmfyIVOPiL
-          - uuid: Compendium.ak5e.ak5e-talents.Item.unRayzfEoQQ35A0H
-          - uuid: Compendium.ak5e.ak5e-talents.Item.2epbGi7CRZ4saY8J
-          - uuid: Compendium.ak5e.ak5e-talents.Item.U2RoD0jkXY6O0poQ
-          - uuid: Compendium.ak5e.ak5e-talents.Item.JLAvyILcJ52aO6lI
-          - uuid: Compendium.ak5e.ak5e-talents.Item.fNFdsVPlEHvX2OFQ
-          - uuid: Compendium.ak5e.ak5e-talents.Item.IVsSeBBHcWixQ11P
-          - uuid: Compendium.ak5e.ak5e-talents.Item.wiTSQG0BEGvVGoig
-          - uuid: Compendium.ak5e.ak5e-talents.Item.VdAOOxe9ao1EiCNn
-          - uuid: Compendium.ak5e.ak5e-talents.Item.Bi0tgZLelp07CsZl
-          - uuid: Compendium.ak5e.ak5e-talents.Item.D5F7QR12Elj1DY15
-          - uuid: Compendium.ak5e.ak5e-talents.Item.zRlShkLQxqomCbzI
-          - uuid: Compendium.ak5e.ak5e-talents.Item.PNf1biajNM0ZoHDz
-          - uuid: Compendium.ak5e.ak5e-talents.Item.i9MjxwvMrNi6krms
-          - uuid: Compendium.ak5e.ak5e-talents.Item.XxWPxKx5QdkSywVH
-          - uuid: Compendium.ak5e.ak5e-talents.Item.b4hD1s3rf8aboilk
-          - uuid: Compendium.ak5e.ak5e-talents.Item.K3E0wayQRzj9XnCj
-          - uuid: Compendium.ak5e.ak5e-talents.Item.qaydeAr3I8fuSxwt
-          - uuid: Compendium.ak5e.ak5e-talents.Item.ikWVs5RBS6HxoQHa
-          - uuid: Compendium.ak5e.ak5e-talents.Item.GCjf6ofNPeHRQuPS
-          - uuid: Compendium.ak5e.ak5e-talents.Item.VutFulWfSmR5aRcw
-          - uuid: Compendium.ak5e.ak5e-talents.Item.MKlldBjw6NZTxmSY
-          - uuid: Compendium.ak5e.ak5e-talents.Item.pQyqjkRmnGRrl1Su
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.V5PaVWtHwHZetJqz
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.nFqgQHGvwBglqfCO
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.Oc0GjfKagdwwheYX
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.zROR1sdx5gulfdgi
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.EEUtFBUR3GIin6Ai
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.GL8CvQ7L8jwo6zwA
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.CYqboAgqorqVGI31
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.YDCUyrO3WTbZTxbR
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.joZGCbiBfavOzlaO
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.3czXEYfBJduvOVjE
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.SQxaj9s1c5f985dg
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.PQWuOEBbU2MvvQcN
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.i4oBJAu1Zlw5YAb9
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.8KdggSd5pZMZdHYf
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.YOKOmeBuRQrwBhRp
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.XAbztz51yG0FXYfD
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.u6IhxhGVWLGkkzX5
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.DdSrLZT6CqjFYJG0
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.O57r6LECrUYdL2Py
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.zdKMDrOeIWWGSdnR
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.Ywrh1FNKVkLmCn3D
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.TvJDwoylsLrrZnUr
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.uAFh5Rck60b2QmRB
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.us7XCfO8RNKqQliV
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.6lnOTxGLHJuIWZsT
+          - uuid: Compendium.ak5e.ak5e-talents.Item.Q1Grk7H7uq2OYBR7
+            sort: 0
         restriction:
           list: []
           type: class
@@ -415,6 +394,7 @@ system:
         <p>Take a Basic Talent, or unlock the module effect of a Basic Talent
         you already have.</p>
       flags: {}
+      classRestriction: ''
     RvqklDSH24xjZnjB:
       type: AbilityScoreImprovement
       _id: RvqklDSH24xjZnjB
@@ -485,7 +465,7 @@ system:
       type: ItemChoice
       _id: SKvlIKSPvwRRlA81
       configuration:
-        allowDrops: false
+        allowDrops: true
         choices:
           '9':
             count: 1
@@ -494,37 +474,68 @@ system:
             count: 1
             replacement: false
         pool:
-          - uuid: Compendium.ak5e.ak5e-talents.Item.g6kOUaQ8B4cunOil
-          - uuid: Compendium.ak5e.ak5e-talents.Item.YCEkw9Vjfhb6LsiD
-          - uuid: Compendium.ak5e.ak5e-talents.Item.NmJ0twuqILdxXwHA
-          - uuid: Compendium.ak5e.ak5e-talents.Item.S7ShxLHwgshJfyDO
-          - uuid: Compendium.ak5e.ak5e-talents.Item.Qy0ZC3dGELccxk2C
-          - uuid: Compendium.ak5e.ak5e-talents.Item.HlthH6tro8QQUc7r
-          - uuid: Compendium.ak5e.ak5e-talents.Item.8uZXullO7UIwvcKU
-          - uuid: Compendium.ak5e.ak5e-talents.Item.2W2J8Esv6j0XrmTi
-          - uuid: Compendium.ak5e.ak5e-talents.Item.MXCDVGcxXz0Jroi6
-          - uuid: Compendium.ak5e.ak5e-talents.Item.Js7f64uR1qNc4Z8H
-          - uuid: Compendium.ak5e.ak5e-talents.Item.kAci0dO4PtAduqUB
-          - uuid: Compendium.ak5e.ak5e-talents.Item.zoyMUcTmCUlHOeCa
-          - uuid: Compendium.ak5e.ak5e-talents.Item.nexNlF4Dcdn72vDV
-          - uuid: Compendium.ak5e.ak5e-talents.Item.ZNEcTiKDpCw140Vl
-          - uuid: Compendium.ak5e.ak5e-talents.Item.K1tQGPGaD7B5B3sK
-          - uuid: Compendium.ak5e.ak5e-talents.Item.QQbhNNVGj3ZdnArX
-          - uuid: Compendium.ak5e.ak5e-talents.Item.tD6JAxvblS2RcMXW
-          - uuid: Compendium.ak5e.ak5e-talents.Item.KwNiHd8pmdlhS6yy
-          - uuid: Compendium.ak5e.ak5e-talents.Item.aJHjQONf3nI59OvW
-          - uuid: Compendium.ak5e.ak5e-talents.Item.7MyeiuwApW206Jlc
-          - uuid: Compendium.ak5e.ak5e-talents.Item.0sUQ5GrGqKAmKCOQ
-          - uuid: Compendium.ak5e.ak5e-talents.Item.LfNks0OxgPoBS0Gz
-          - uuid: Compendium.ak5e.ak5e-talents.Item.DsSDu4L8qOhdVIg1
-          - uuid: Compendium.ak5e.ak5e-talents.Item.2pyVxFnC62ssiULx
-          - uuid: Compendium.ak5e.ak5e-talents.Item.ViOjXJkhK3SDqBzZ
-          - uuid: Compendium.ak5e.ak5e-talents.Item.EIWkNBbZTPxAFggY
-          - uuid: Compendium.ak5e.ak5e-talents.Item.tZxcAj2fHwDIr0bB
-          - uuid: Compendium.ak5e.ak5e-talents.Item.9V2YGqTkcMJW1FsS
-          - uuid: Compendium.ak5e.ak5e-talents.Item.UAdYZ2MmViqEEwWK
-          - uuid: Compendium.ak5e.ak5e-talents.Item.1Tp3kDQf97s26FpV
-          - uuid: Compendium.ak5e.ak5e-talents.Item.sFGEUzeDb9AEDqG3
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.t9gaulSl8qazov6x
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.FdqJCNH6w0E2XkKo
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.udA5vahwNnSkzvT2
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.QpFjPu1ZGl5pxrCE
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.3sXdaZYoZjwdSe0h
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.jQCmgohQZctFdmQq
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.0RaSXAR7OCE7W28R
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.sp6T7sVKrVUUx4w6
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.NzV7nhc4NqlzqsjU
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.9GyQQX77OrVvCwCo
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.pgkrc9qPdf8emerG
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.JHjTG41XWZaELyKp
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.NlfjTYZwUmPzeeYu
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.Vu8ktydHx2rf7H2V
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.x1a0CFidFoUpchcU
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.7sKthQOcQQXqKIkG
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.dIPAEUzpNNYDMO5J
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.PunRq55qvUUO34Zr
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.lVIBHj76FhjdKEqw
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.KaecNSyQPJh6jHo3
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.MG3oXxojclqJDzji
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.WnmpUyZsoIKsPXdU
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.r0uuNOy9nAxCgK2w
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.lY5CNPYmx7wxwp3Z
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.oKJOAaJD8l9A5rPQ
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.1UQ1U8Vzvgvb5ybC
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.EXh0qpLgjjHtGidf
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.ggrnU4X0gWREkCIu
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.axdnc9YFR85ZafM7
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.EHL9O9TWDiiNhbPE
+          - uuid: Compendium.ak5e.ak5e-talents.Item.pgL6Yppx38j4P5ba
+            sort: 0
         restriction:
           list: []
           type: class
@@ -539,6 +550,7 @@ system:
         <p>Take an Advanced Talent, or unlock the module effect of a Advanced
         Talent you already have.</p>
       flags: {}
+      classRestriction: ''
     jeXvRZE6PjdBSaZG:
       type: ItemChoice
       _id: jeXvRZE6PjdBSaZG
@@ -707,6 +719,23 @@ system:
       hint: ''
       title: ''
       value: {}
+    l85GjS2AlB9HqpfD:
+      name: 'Changes to Core Rules: Cantrips'
+      type: ItemGrant
+      _id: l85GjS2AlB9HqpfD
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.Qi4Mc2HB3snq2eE5
+            optional: false
+            sort: 0
+        optional: false
+        sorting: m
+        spell: null
+      flags: {}
+      value: {}
+      level: 1
+      hint: ''
+      classRestriction: ''
   description:
     value: >-
       <h3>Core Supporter Traits</h3><table><tbody><tr><td data-colwidth="142"><p
@@ -810,11 +839,11 @@ _stats:
   compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.ajvdS4meUwZS2C7G
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206076887
-  modifiedTime: 1791400682626
+  modifiedTime: 1794951894602
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: ajvdS4meUwZS2C7G
 ownership:

@@ -171,8 +171,8 @@ system:
     baseItem: heavydefendershield
 effects:
   - name: Bastion
-    img: icons/equipment/shield/Scutum-steel-worn.webp
-    origin: null
+    img: icons/environment/settlement/city-wall.webp
+    origin: Compendium.ak5e.ak5e-items.Item.iGFDmAEKvPmXAmkp
     type: base
     _id: D3xLgInEJ5Xshn9v
     system:
@@ -217,16 +217,103 @@ effects:
       core:
         overlay: false
     _stats:
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       createdTime: 1790537308813
-      modifiedTime: 1791733079317
+      modifiedTime: 1793467563039
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
     _key: '!items.effects!iGFDmAEKvPmXAmkp.D3xLgInEJ5Xshn9v'
+  - name: +4 Physical DR
+    img: modules/ak5e/icons/Equipment/AK5e_Heavy_Defender_Shield.png
+    origin: Compendium.ak5e.ak5e-items.Item.iGFDmAEKvPmXAmkp
+    _id: XyS9g6OXgbbe8u4v
+    type: base
+    system:
+      changes:
+        - key: system.traits.dm.amount.bludgeoning
+          value: -4
+          priority: 20
+          type: add
+          phase: initial
+          _id: fAqLBeSNiTFhdQF0
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.slashing
+          value: -4
+          priority: 20
+          type: add
+          phase: initial
+          _id: 0zKxFW6jq21q5pqA
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.piercing
+          value: -4
+          priority: 20
+          type: add
+          phase: initial
+          _id: SeWuj2v8oInUcD1V
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.thunder
+          value: -4
+          priority: 20
+          type: add
+          phase: initial
+          _id: 14oE0gbpf5rt45fJ
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-items.Item.iGFDmAEKvPmXAmkp
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.DSudvLQbkLWPs6g8.ActiveEffect.yIfImcmDkKgSAzI6
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793467487816
+      modifiedTime: 1793467511345
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!iGFDmAEKvPmXAmkp.XyS9g6OXgbbe8u4v'
 flags:
   dnd5e:
     riders:

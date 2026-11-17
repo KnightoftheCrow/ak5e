@@ -4,12 +4,563 @@ type: feat
 _id: NgklZsD48HSWwvC9
 img: modules/ak5e/icons/Skill-Stainless2.webp
 system:
-  activities: {}
+  activities:
+    N0no9ycEzwlvbsd1:
+      type: summon
+      name: Deploy Portable Cover
+      _id: N0no9ycEzwlvbsd1
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '5'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        disposition: true
+        proficiency: false
+        saves: false
+        ability: ''
+      profiles:
+        - count: '1'
+          name: ''
+          _id: pDPBXElzH1BccLCp
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.W5zXlVh5aGlcrrZT
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        prompt: true
+        mode: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      friendlySummon: false
+      tempHP: ''
+    Uu8RU6nwyFvgJ1Ms:
+      type: summon
+      name: Create Automaton
+      _id: Uu8RU6nwyFvgJ1Ms
+      img: ''
+      sort: 100000
+      activation:
+        type: longRest
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: gG4JDtxavtuuzAse
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: 12
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: '@skills.tech.total'
+        attackDamage: ((@abilities.int.mod)-2)
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: true
+        disposition: true
+        proficiency: true
+        saves: false
+        ability: int
+      profiles:
+        - count: '1'
+          name: ''
+          _id: Dh6ebpWOACuKyc3t
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.SgRIhur4TbcBfRBx
+          level:
+            min: null
+            max: null
+          types: []
+        - count: '1'
+          name: ''
+          _id: AJiIQfTkROTlmGc6
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.i51vGb3EFQkIvL8A
+          level:
+            min: null
+            max: null
+          types: []
+        - count: '1'
+          name: ''
+          _id: NmX2rdbydRQaWtzA
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.AYr7uc7PfTmtDHVa
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        prompt: true
+        mode: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      friendlySummon: false
+      tempHP: ''
+    Z5XWkC2Or1pvabiE:
+      type: summon
+      name: Create Automaton
+      img: ''
+      sort: 200000
+      activation:
+        type: longRest
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: gG4JDtxavtuuzAse
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 5IA0c4Hr9SGs7drb
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 13
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: '@skills.tech.total'
+        attackDamage: ((@abilities.int.mod)-2)
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: true
+        disposition: true
+        proficiency: true
+        saves: true
+        ability: int
+      profiles:
+        - count: '1'
+          name: ''
+          _id: Dh6ebpWOACuKyc3t
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.SgRIhur4TbcBfRBx
+          level:
+            min: null
+            max: null
+          types: []
+        - count: '1'
+          name: ''
+          _id: AJiIQfTkROTlmGc6
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.i51vGb3EFQkIvL8A
+          level:
+            min: null
+            max: null
+          types: []
+        - count: '1'
+          name: ''
+          _id: NmX2rdbydRQaWtzA
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.AYr7uc7PfTmtDHVa
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        prompt: true
+        mode: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      friendlySummon: false
+      tempHP: ''
+      _id: Z5XWkC2Or1pvabiE
   uses:
     spent: 0
-    recovery: []
-    max: ''
-  advancement: {}
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@prof'
+  advancement:
+    kpG6m3cbU5folaia:
+      name: Technology Upgrade
+      type: Trait
+      _id: kpG6m3cbU5folaia
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - skills:tech
+        mode: upgrade
+      flags: {}
+      level: 0
+      hint: ''
+    7isuYEiJJh9DQgy0:
+      name: ''
+      type: Trait
+      _id: 7isuYEiJJh9DQgy0
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - tool:vehicle:drone
+        mode: default
+      flags: {}
+      level: 0
+      hint: ''
   description:
     value: >-
       <p>You support your allies through the creation of specialised tools and
@@ -27,23 +578,23 @@ system:
       Automaton gains benefits, as befitting a custom job:</p><ul><li><p>It has
       additional Maximum Hit Points equal to your Technology
       Modifier.</p></li><li><p>Its Proficiency Bonus is equal to
-      yours.</p></li><li><p>When it makes an Attack Roll, its bonus to hit is
-      equal to your Intelligence Modifier + your Proficiency
-      Bonus.</p></li></ul><p><strong>Your Automaton in Combat.</strong> In
-      Combat, the Automaton acts during your Turn. It can use Reactions on its
-      own, but it will not move or take Actions unless you use your Bonus Action
-      to verbally command it to either move to a location of your choice, or
-      take one Action in its Stat Block. To command your Automaton in this way,
-      you must be within 100 feet of it.</p><p><strong>Restoring or Replacing
-      your Automaton.</strong> As a Construct, the Automaton cannot regain Hit
-      Points in most ways (See Page 9).</p><p>If your Automaton is reduced to 0
-      Hit Points, it is destroyed. You can rebuild a destroyed Automaton as a
-      Long Rest Activity if you retain the destroyed Automaton’s components. If
-      they are not retrieved, replacing the components costs 500 LMD. The
-      maximum number of Automatons you can have at once is one; if you create
-      more than your maximum, you cannot upkeep or control the first anymore,
-      and it will crumble to uselessness.</p><p><strong>Not
-      Automated.</strong></p>
+      yours.</p></li><li><p>When it makes an Attack, it can use your
+      Intelligence Modifier for the Attack and Damage Roll (replacing the flat
+      +2 for Damage Rolls).</p></li></ul><p><strong>Your Automaton in
+      Combat.</strong> In Combat, the Automaton acts during your Turn. It can
+      use Reactions on its own, but it will not move or take Actions unless you
+      use your Bonus Action to verbally command it to either move to a location
+      of your choice, or take one Action in its Stat Block. To command your
+      Automaton in this way, you must be within 100 feet of
+      it.</p><p><strong>Restoring or Replacing your Automaton.</strong> As a
+      Construct, the Automaton cannot regain Hit Points in most ways (See Page
+      9).</p><p>If your Automaton is reduced to 0 Hit Points, it is destroyed.
+      You can rebuild a destroyed Automaton as a Long Rest Activity if you
+      retain the destroyed Automaton’s components. If they are not retrieved,
+      replacing the components costs 500 LMD. The maximum number of Automatons
+      you can have at once is one; if you create more than your maximum, you
+      cannot upkeep or control the first anymore, and it will crumble to
+      uselessness.</p><p><strong>Not Automated.</strong></p>
     chat: ''
   identifier: master-of-machines
   source:
@@ -59,24 +610,164 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
-effects: []
+    subtype: ''
+effects:
+  - name: Adjusted CR
+    img: modules/ak5e/icons/Skill-Stainless2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.NgklZsD48HSWwvC9
+        behavior: null
+        message: null
+      changes:
+        - key: system.details.cr
+          type: override
+          value: '@details.level'
+          phase: initial
+          _id: OuTdyIYICSo11oiA
+          conditions: '{}'
+          replacement: origin
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: gG4JDtxavtuuzAse
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793468114895
+      modifiedTime: 1793468122499
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.0CAuxbBN8ZHMh4sv.ActiveEffect.pnVtUB3YuqGy0F05
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!NgklZsD48HSWwvC9.gG4JDtxavtuuzAse'
+  - name: Advanced Personality Matrix
+    img: modules/ak5e/icons/Skill-Stainless2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.NgklZsD48HSWwvC9
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.abilities.int.value
+          type: override
+          value: 10
+          phase: initial
+          _id: qONgZ7VmCz6bSGWl
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: system.abilities.wis.value
+          type: override
+          value: 10
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: mz7fx6SYqrrFJYXI
+        - key: system.abilities.cha.value
+          type: override
+          value: 10
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: zwPOFrjA2WV1E9wt
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 5IA0c4Hr9SGs7drb
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.NgklZsD48HSWwvC9
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793484089794
+      modifiedTime: 1793484124830
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!NgklZsD48HSWwvC9.5IA0c4Hr9SGs7drb'
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.NgklZsD48HSWwvC9
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206076897
-  modifiedTime: 1791206076897
+  modifiedTime: 1793484318366
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   5XlrCO2NlPtd4MFQ: 3
-sort: 0
+sort: 50000
 _key: '!items!NgklZsD48HSWwvC9'

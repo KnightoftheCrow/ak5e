@@ -169,7 +169,7 @@ effects:
     type: base
     system:
       changes:
-        - key: system.scale.skillPoints.recovery
+        - key: system.scale.skill-points.recovery
           value: 20
           priority: 20
           type: upgrade
@@ -177,7 +177,7 @@ effects:
           _id: GyOauIDb4uKPG4U8
           conditions: '{}'
           replacement: ''
-        - key: system.scale.skillPoints.maxsp
+        - key: system.scale.skill-points.maxsp
           value: 30
           priority: 20
           type: upgrade
@@ -240,7 +240,7 @@ effects:
     duration:
       value: null
       units: seconds
-      expiry: null
+      expiry: targetEnd
       expired: false
     description: ''
     tint: '#ffffff'
@@ -262,19 +262,18 @@ effects:
         dontApply: false
         durationExpression: ''
         macroRepeat: none
-        specialDuration:
-          - turnEnd
+        specialDuration: []
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
-      modifiedTime: 1791733096786
+      modifiedTime: 1793630690272
       createdTime: 1791733096786
     showIcon: 2
     start: null

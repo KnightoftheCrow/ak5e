@@ -1,0 +1,1021 @@
+folder: fnNi4KXioyJ542O7
+name: Principle of Double Effect
+type: feat
+_id: 3MAet4t8rT9h299a
+img: modules/ak5e/icons/Skill-TheLodestar1.webp
+system:
+  activities:
+    oEcF9ZN4WT0jmzyF:
+      type: utility
+      name: Apply Alchemical Infusion
+      _id: oEcF9ZN4WT0jmzyF
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: minute
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: cQrRE3C33FTBqMLD
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: Oxuz2E75l4LQUk3l
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: Xp5OfFCpmf0wxOMJ
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: JNrRTUsaPJPEP9c0
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: hT29x7Wkr2e7w2bp
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: vvqvzwD45ZzmTYnq
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: ed4vWX5Yx3kxvql3
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 8yfMKI2V1aC38A7q
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '10'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: willing
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: 10
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: '!["construct","undead"].includes(typeOrRace)'
+      useConditionReason: Can't be used on Undead or Constructs.
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    YzMuBlLq0EGxOiPT:
+      type: utility
+      name: Apply Alchemical Infusion
+      img: ''
+      sort: 100000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: minute
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: cQrRE3C33FTBqMLD
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: Oxuz2E75l4LQUk3l
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: Xp5OfFCpmf0wxOMJ
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: JNrRTUsaPJPEP9c0
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: hT29x7Wkr2e7w2bp
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: vvqvzwD45ZzmTYnq
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: ed4vWX5Yx3kxvql3
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 8yfMKI2V1aC38A7q
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '30'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: willing
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 11
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: '!["construct","undead"].includes(typeOrRace)'
+      useConditionReason: Can't be used on Undead or Constructs.
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: YzMuBlLq0EGxOiPT
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: (@prof)*2
+  advancement:
+    ESm9D1jbYHuqkokw:
+      name: ''
+      type: Trait
+      _id: ESm9D1jbYHuqkokw
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - tool:toolkit:pharmacology
+        mode: default
+      flags: {}
+      level: 0
+      hint: ''
+  description:
+    value: >-
+      <p>You are but a simple chemist, dispensing medication to those in need.
+      If it happens to have some side effects, are you really to blame? You gain
+      the following benefits:</p><ul><li><p><strong>Additional Tool
+      Proficiencies.</strong> You are Proficient with the Pharmacology
+      Kit.</p></li><li><p><strong>Alchemical Infusions.</strong> As a Bonus
+      Action, you can apply one of your chemical Infusions to a willing Creature
+      you can see within 10 feet of you that is not a Construct or Undead for 1
+      minute. Infusions available for you to apply are in the Infusions table
+      below. A Creature can only have one Infusion applied to them at a time;
+      applying a second Infusion removes the effect of any other Infusions on
+      that Creature. You may use this Feature a number of times equal to twice
+      your Proficiency Bonus, and recover all expended uses when you complete a
+      Long Rest.</p><p>To gain a benefit from an Infusion, that Creature must
+      Leverage it. Each Infusion describes the scenarios under which it can be
+      Leveraged. When a Creature chooses to Leverage an Infusion that has been
+      applied to it by you, it must immediately make a Constitution Saving Throw
+      against your Infuser DC. On a successful Save, they gain the benefit of
+      that Infusion; on a failed Save, they gain the benefit of that Infusion,
+      but they are additionally Dazed until the beginning of their next Turn,
+      and cannot Leverage any Infusions while they have this Condition. An
+      Infusion is not consumed when it is Leveraged.</p><p>At 7th Level, your
+      Infusions increase in effectiveness; when a Creature leverages one of your
+      Infusions, they roll an additional dice for its effect (I.E 2d6 instead of
+      1d6). If that Infusion does not roll dice for its effect (Such as
+      Respiration Stimulant), that effect is instead
+      doubled.</p></li></ul><table><thead><tr><td><p><strong>Infusion</strong></p></td><td><p><strong>Leverage
+      Condition</strong></p></td><td><p><strong>Effect</strong></p></td></tr></thead><tbody><tr><td><p>Adrenaline
+      Trigger</p></td><td><p>As a Reaction when the Creature fails a Strength
+      Skill Check, Saving Throw, or misses a Melee Attack.</p></td><td><p>The
+      Creature rolls 1d6 and adds the result to their total result, possibly
+      changing a failure into a Success.</p></td></tr><tr><td><p>Flight Reflex
+      Stimulant</p></td><td><p>As a Reaction when the Creature fails any Saving
+      Throw (except against leveraging an Infusion).</p></td><td><p>The Creature
+      rolls 1d6 and adds the result to the result of that Saving Throw, possibly
+      changing a failure into a Success.</p></td></tr><tr><td><p>Focus
+      Heightener</p></td><td><p>As a Reaction when the Creature fails a
+      Dexterity Skill Check, Saving Throw, or misses a Ranged
+      Attack.</p></td><td><p>The Creature rolls 1d6 and adds the result to their
+      total result, possibly changing a failure into a
+      Success.</p></td></tr><tr><td><p>Hesitation Suppressor</p></td><td><p>As a
+      Reaction when the Creature forces a hostile Creature to make a Saving
+      Throw.</p></td><td><p>The Creature rolls 1d4; the DC of that Saving Throw
+      is increased by the amount rolled.</p></td></tr><tr><td><p>Muscle
+      Strengthener</p></td><td><p>As a Reaction when the Creature hits a
+      Creature with a Melee Attack.</p></td><td><p>The Creature rolls 1d6; The
+      Damage of that Melee Attack is increased by the amount
+      rolled.</p></td></tr><tr><td><p>Procoagulant</p></td><td><p>As a Bonus
+      Action</p></td><td><p>The Creature rolls one of their Hit Dice (this does
+      not expend that Hit Dice) and adds their Constitution Modifier; they gain
+      that many Temporary Hit Points. Additionally, if they have the Bleeding
+      Condition, it is removed.</p></td></tr><tr><td><p>Respiration
+      Stimulant</p></td><td><p>As a Bonus Action</p></td><td><p>The Creature’s
+      Speed is increased by 10 feet until the end of the
+      Turn.</p></td></tr><tr><td><p>Sensation Nulling</p></td><td><p>As a
+      Reaction when the Creature takes Damage</p></td><td><p>The Creature rolls
+      1d4; they gain Damage Reduction against all Damage equal to the result
+      until the end of that
+      Turn.</p></td></tr></tbody></table><hr><p><strong>Semi-Automated:
+      </strong>Use the Activity on this Feature to apply an Infusion. The
+      Infusions are items added to that Character's Sheet; each infusion has
+      instructions on how to use it. All require them to set the Scaling Value
+      to your Infuser DC.</p>
+    chat: >-
+      <p>To gain a benefit from an Infusion, that Creature must Leverage it.
+      Each Infusion describes the scenarios under which it can be Leveraged.
+      When a Creature chooses to Leverage an Infusion that has been applied to
+      it by you, it must immediately make a Constitution Saving Throw against
+      your Infuser DC. On a successful Save, they gain the benefit of that
+      Infusion; on a failed Save, they gain the benefit of that Infusion, but
+      they are additionally Dazed until the beginning of their next Turn, and
+      cannot Leverage any Infusions while they have this Condition. An Infusion
+      is not consumed when it is Leveraged.</p>
+  identifier: principle-of-double-effect
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Adrenaline Trigger
+    img: icons/consumables/potions/bottle-bulb-corked-purple.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3MAet4t8rT9h299a
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: macro.createItem
+          type: custom
+          value: Compendium.ak5e.ak5e-items.Item.H7oQi31JPJYtsHsF
+          phase: initial
+          _id: iwQWIvoAYlbwBwrg
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: cQrRE3C33FTBqMLD
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793637372388
+      modifiedTime: 1793637431674
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!3MAet4t8rT9h299a.cQrRE3C33FTBqMLD'
+  - name: Flight Reflex Stimulant
+    img: icons/consumables/potions/bottle-bulb-corked-purple.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3MAet4t8rT9h299a
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: macro.createItem
+          type: custom
+          value: Compendium.ak5e.ak5e-items.Item.flj3O9sI7gHErFI1
+          phase: initial
+          _id: iwQWIvoAYlbwBwrg
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793637439978
+      modifiedTime: 1793637454370
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: Oxuz2E75l4LQUk3l
+    _key: '!items.effects!3MAet4t8rT9h299a.Oxuz2E75l4LQUk3l'
+  - name: Focus Heightener
+    img: icons/consumables/potions/bottle-bulb-corked-purple.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3MAet4t8rT9h299a
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: macro.createItem
+          type: custom
+          value: Compendium.ak5e.ak5e-items.Item.1aDd1zQtwwEv092I
+          phase: initial
+          _id: iwQWIvoAYlbwBwrg
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793637458258
+      modifiedTime: 1793637469721
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: Xp5OfFCpmf0wxOMJ
+    _key: '!items.effects!3MAet4t8rT9h299a.Xp5OfFCpmf0wxOMJ'
+  - name: Hesitation Suppressor
+    img: icons/consumables/potions/bottle-bulb-corked-purple.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3MAet4t8rT9h299a
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: macro.createItem
+          type: custom
+          value: Compendium.ak5e.ak5e-items.Item.0DBQkCq2DHGfGMxw
+          phase: initial
+          _id: iwQWIvoAYlbwBwrg
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793637473046
+      modifiedTime: 1793637488847
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: JNrRTUsaPJPEP9c0
+    _key: '!items.effects!3MAet4t8rT9h299a.JNrRTUsaPJPEP9c0'
+  - name: Muscle Strengthener
+    img: icons/consumables/potions/bottle-bulb-corked-purple.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3MAet4t8rT9h299a
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: macro.createItem
+          type: custom
+          value: Compendium.ak5e.ak5e-items.Item.APYkB74fJaTRKwXQ
+          phase: initial
+          _id: iwQWIvoAYlbwBwrg
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793637492874
+      modifiedTime: 1793637506229
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: hT29x7Wkr2e7w2bp
+    _key: '!items.effects!3MAet4t8rT9h299a.hT29x7Wkr2e7w2bp'
+  - name: Procoagulant
+    img: icons/consumables/potions/bottle-bulb-corked-purple.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3MAet4t8rT9h299a
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: macro.createItem
+          type: custom
+          value: Compendium.ak5e.ak5e-items.Item.x1AZWgD0gjVWl5g1
+          phase: initial
+          _id: iwQWIvoAYlbwBwrg
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793637511823
+      modifiedTime: 1793637523294
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: vvqvzwD45ZzmTYnq
+    _key: '!items.effects!3MAet4t8rT9h299a.vvqvzwD45ZzmTYnq'
+  - name: Respiration Stimulant
+    img: icons/consumables/potions/bottle-bulb-corked-purple.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3MAet4t8rT9h299a
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: macro.createItem
+          type: custom
+          value: Compendium.ak5e.ak5e-items.Item.SVIkQmH5tybmtUvB
+          phase: initial
+          _id: iwQWIvoAYlbwBwrg
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793637529126
+      modifiedTime: 1793637562304
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: ed4vWX5Yx3kxvql3
+    _key: '!items.effects!3MAet4t8rT9h299a.ed4vWX5Yx3kxvql3'
+  - name: Sensation Nulling
+    img: icons/consumables/potions/bottle-bulb-corked-purple.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3MAet4t8rT9h299a
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: macro.createItem
+          type: custom
+          value: Compendium.ak5e.ak5e-items.Item.Gas1XztXHpM4aTAe
+          phase: initial
+          _id: iwQWIvoAYlbwBwrg
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793637566650
+      modifiedTime: 1793637581248
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 8yfMKI2V1aC38A7q
+    _key: '!items.effects!3MAet4t8rT9h299a.8yfMKI2V1aC38A7q'
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791203553274
+  modifiedTime: 1793639923088
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!3MAet4t8rT9h299a'

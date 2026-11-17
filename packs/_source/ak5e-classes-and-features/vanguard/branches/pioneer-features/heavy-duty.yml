@@ -28,13 +28,13 @@ system:
   description:
     value: >-
       <p>Your tactics favour getting stuck into the fight. You gain the
-      following benefits:</p><p><strong>Additional Weapon
+      following benefits:</p><ul><li><p><strong>Additional Weapon
       Proficiencies.</strong> You gain Proficiency with Heavy Melee
-      Weapons.</p><p><strong>Additional Armour Proficiencies.</strong> You gain
-      Proficiency with Medium Armour.</p><p><strong>Hardened Scars.</strong>
-      Your Hit Point Maximum increases by 2. Whenever you gain a Level
-      thereafter, your Hit Point maximum increases by an additional
-      2.</p><p><strong>Automated.</strong></p>
+      Weapons.</p></li><li><p><strong>Additional Armour Proficiencies.</strong>
+      You gain Proficiency with Medium Armour.</p></li><li><p><strong>Hardened
+      Scars.</strong> Your Hit Point Maximum increases by 2. Whenever you gain a
+      Level thereafter, your Hit Point maximum increases by an additional
+      2.</p></li></ul><p><strong>Automated.</strong></p>
     chat: ''
   identifier: heavy-duty
   source:
@@ -52,9 +52,9 @@ system:
     value: ''
     subtype: ''
 effects:
-  - name: 'Heavy Duty: Hardenes Scars'
+  - name: +2 HP Per Level
     img: modules/ak5e/icons/skill_icon_skchr_jessica2_1.png
-    origin: null
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.FhU7301qgfKp3v8a
     _id: Q05q6YuRMPrvI7Pt
     type: base
     system:
@@ -92,17 +92,18 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       createdTime: 1791206078998
-      modifiedTime: 1791733085681
+      modifiedTime: 1794507744338
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
     start: null
     showIcon: 1
@@ -121,10 +122,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206078998
-  modifiedTime: 1791733085681
+  modifiedTime: 1794507733218
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!FhU7301qgfKp3v8a'

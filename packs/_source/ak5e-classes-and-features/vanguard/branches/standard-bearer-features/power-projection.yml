@@ -4,156 +4,7 @@ type: feat
 _id: Hi5Yr5xtychJOTwZ
 img: modules/ak5e/icons/skill_icon_skchr_lemuen_1.png
 system:
-  activities:
-    XMAqIFNNv7yW7m4q:
-      type: save
-      _id: XMAqIFNNv7yW7m4q
-      sort: 0
-      activation:
-        type: action
-        override: false
-        condition: ''
-      consumption:
-        scaling:
-          allowed: false
-        spellSlot: true
-        targets: []
-      description:
-        chatFlavor: ''
-      duration:
-        units: inst
-        concentration: false
-        override: false
-      effects:
-        - _id: XEzhoG0RVBQBfoee
-          level: {}
-          onSave: false
-      flags: {}
-      range:
-        units: ft
-        override: false
-        special: ''
-        value: '60'
-      target:
-        template:
-          contiguous: false
-          units: ft
-          type: radius
-          size: '15'
-          count: ''
-          stationary: false
-        affects:
-          choice: false
-          type: enemy
-          count: ''
-          special: ''
-        override: false
-        prompt: true
-      uses:
-        spent: 0
-        recovery: []
-        max: ''
-      visibility:
-        level:
-          min: null
-          max: null
-        requireAttunement: false
-        requireIdentification: false
-        requireMagic: false
-        identifier: ''
-      damage:
-        onSave: half
-        critical:
-          allow: false
-        parts:
-          - custom:
-              enabled: false
-              formula: ''
-            number: 6
-            denomination: 6
-            bonus: ''
-            types:
-              - thunder
-            scaling:
-              number: 1
-      save:
-        ability:
-          - dex
-        dc:
-          calculation: spellcasting
-          formula: ''
-      useConditionText: ''
-      useConditionReason: ''
-      effectConditionText: ''
-      macroData:
-        name: ''
-        command: ''
-      ignoreTraits:
-        idi: false
-        idr: false
-        idv: false
-        ida: false
-        idm: false
-      midiProperties:
-        ignoreTraits: []
-        triggeredActivityId: none
-        triggeredActivityConditionText: ''
-        triggeredActivityTargets: targets
-        triggeredActivityRollAs: self
-        triggeredActivityConsume: true
-        triggeredActivityConfigure: true
-        autoConsume: false
-        forceConsumeDialog: default
-        forceRollDialog: default
-        forceDamageDialog: default
-        confirmTargets: default
-        autoTargetType: any
-        autoTargetAction: default
-        automationOnly: false
-        otherActivityCompatible: true
-        otherActivityAsParentType: true
-        identifier: ''
-        displayActivityName: false
-        rollMode: default
-        chooseEffects: false
-        toggleEffect: false
-        ignoreFullCover: false
-        removeChatButtons: default
-        magicEffect: false
-        magicDamage: false
-        noConcentrationCheck: false
-        skipConcentrationCheck: false
-        autoCEEffects: default
-      isOverTimeFlag: false
-      overTimeProperties:
-        saveRemoves: true
-        rollAs: target
-        preRemoveConditionText: ''
-        postRemoveConditionText: ''
-      otherActivityId: ''
-      otherActivityAsParentType: true
-      friendlySave: default
-      name: ''
-      img: ''
-      regionBehavior:
-        enabled: false
-        dispositionFilter: -1
-        excludeSource: true
-        oncePerTurn: true
-        wallRestriction: none
-        regionVisibility: 2
-        attachToken: default
-        rules: []
-      regionLight:
-        enabled: false
-        dim: 0
-        bright: 0
-        color: null
-        alpha: 0.5
-        luminosity: 0.5
-        animationType: ''
-        animationSpeed: 5
-        animationIntensity: 5
+  activities: {}
   uses:
     spent: 0
     recovery:
@@ -168,18 +19,20 @@ system:
       see within 60 feet. For each Creature within 15 feet of the chosen point,
       you can apply one on the following effects based on whether they are
       friendly or hostile to you (neutral Creatures are considered be
-      friendly):</p><p><strong>Friendly.</strong> The Creature can gain
+      friendly):</p><ul><li><p><strong>Friendly.</strong> The Creature can gain
       Temporary Hit Points equal to 1d12 + your Charisma
-      Modifier.</p><p><strong>Hostile.</strong> The Creature must make a
-      Dexterity Saving Throw against your Standard Bearer DC. On a failed Save,
-      they take 6d6 Thunder Damage, and their Speed is reduced by 15ft until the
-      end of their next Turn. On a successful Save, they take half as much
-      Damage, and their Speed is not reduced.</p><p>Your Standard is then
+      Modifier.</p></li><li><p><strong>Hostile.</strong> The Creature must make
+      a Dexterity Saving Throw against your Standard Bearer DC. On a failed
+      Save, they take 6d6 Thunder Damage, and their Speed is reduced by 15ft
+      until the end of their next Turn. On a successful Save, they take half as
+      much Damage, and their Speed is not reduced.</p><p>Your Standard is then
       planted at the chosen location. Until the end of your next Turn, both you
       and your Standard project your Aura of Influence, at a 10-foot and 25-foot
-      radius respectively.</p><p>Once you have used this Feature, you must
-      finish a Short Rest before you may do so again.</p><p><strong>Partially
-      Automated:</strong> activity for the save.</p>
+      radius respectively.</p></li></ul><p>Once you have used this Feature, you
+      must finish a Short Rest before you may do so
+      again.</p><hr><p><strong>Semi-Automated: </strong>There are new Activites
+      on your Standard. Use the Power Projection Activity to declare the
+      location, then the Hostile and Allied version to apply the effects.</p>
     chat: ''
   identifier: power-projection
   source:
@@ -190,11 +43,11 @@ system:
   prerequisites:
     items: []
     repeatable: false
-    level: null
+    level: 10
   properties: []
   requirements: ''
   type:
-    value: ''
+    value: class
     subtype: ''
 effects:
   - name: Power Projection
@@ -263,17 +116,15 @@ ownership:
   P5lWUBQKuHlZqgTn: 3
   5XlrCO2NlPtd4MFQ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206079001
-  modifiedTime: 1791733085760
+  modifiedTime: 1794685348930
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!Hi5Yr5xtychJOTwZ'

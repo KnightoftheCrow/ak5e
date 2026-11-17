@@ -4,11 +4,150 @@ type: feat
 _id: 8xHS97yH5nne8Tpm
 img: modules/ak5e/icons/Skill-Dorothy1.webp
 system:
-  activities: {}
+  activities:
+    8oZQo84Xhki0QlMZ:
+      type: utility
+      name: Devil's Own Luck
+      _id: 8oZQo84Xhki0QlMZ
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: activityUses
+            value: '1'
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery:
+          - period: sr
+            type: recoverAll
+        max: '1'
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: 2*(@prof)
   advancement:
     DnYnOArOaVtFL3FC:
       type: ItemGrant
@@ -46,30 +185,47 @@ system:
       value: {}
       level: 0
       hint: ''
+    ZC59DzwLkER27X7O:
+      name: ''
+      type: Trait
+      _id: ZC59DzwLkER27X7O
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - skills:slt
+        mode: upgrade
+      flags: {}
+      level: 0
+      hint: ''
   description:
     value: >-
       <p>The environment is the greatest weapon of a Trapmaster; if it is not
       dangerous yet, it will be. You gain the following
-      benefits:</p><p><strong>Place Trap.</strong> Over the course of ten
-      seconds (or two rounds), you can plant a Trap in an unoccupied space on
-      the ground within 5 feet of you; unless stated, a Trap can only be
+      benefits:</p><ul><li><p><strong>Place Trap.</strong> Over the course of
+      ten seconds (or two rounds), you can plant a Trap in an unoccupied space
+      on the ground within 5 feet of you; unless stated, a Trap can only be
       triggered once. The Traps available for you to place are found
       below.</p><p>There is no limit to the amount of Traps you can have planted
       at once. You can use this Feature a number of times equal to your twice
       your Proficiency Bonus, and regain all expended uses when you complete a
-      Long Rest.</p><p><strong>Devil’s Own Luck.</strong> The environment is
-      full of danger if you know where to look. As a Bonus Action, you can
-      suggest an visible object in the environment to function as a Trap of your
-      choice (except Timed Explosive), and the trigger condition for that
-      “trap”. This trigger condition should be an action you actively perform,
-      not when the Creature enters a defined space like ordinary traps. If the
-      GM agrees with your suggestion, that object functions in the way you
-      suggested; once it has been triggered, this “trap” is expended as other
-      Traps are. Once you have successfully suggested a Trap in this way, you
-      may not do so again until you complete a Short or Long
-      Rest.</p><p><strong>Skill Expertise.</strong> You gain Proficiency in the
-      Sleight of Hand Skill. If you already have Proficiency, you instead gain
-      Expertise.</p><p><strong>Not Automated.</strong></p>
+      Long Rest.</p></li><li><p><strong>Devil’s Own Luck.</strong> The
+      environment is full of danger if you know where to look. As a Bonus
+      Action, you can suggest an visible object in the environment to function
+      as a Trap of your choice (except Timed Explosive), and the trigger
+      condition for that “trap”. This trigger condition should be an action you
+      actively perform, not when the Creature enters a defined space like
+      ordinary traps. If the GM agrees with your suggestion, that object
+      functions in the way you suggested; once it has been triggered, this
+      “trap” is expended as other Traps are. Once you have successfully
+      suggested a Trap in this way, you may not do so again until you complete a
+      Short or Long Rest.</p></li><li><p><strong>Skill Expertise.</strong> You
+      gain Proficiency in the Sleight of Hand Skill. If you already have
+      Proficiency, you instead gain
+      Expertise.</p></li></ul><hr><p><strong>Semi-Automated: </strong>All of
+      your Traps are added to your sheet as items. Setting up traps consumes
+      uses from this Feature. When triggering Devil's Own Luck, trigger one of
+      the respective trap "Trigger" activities.</p>
     chat: ''
   identifier: environmental-warfare
   source:
@@ -87,7 +243,7 @@ system:
     value: class
     subtype: ''
 effects: []
-sort: 0
+sort: 200000
 ownership:
   default: 0
 flags:
@@ -100,6 +256,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 6.0.6
   createdTime: 1791203553277
-  modifiedTime: 1792246508410
+  modifiedTime: 1793725270518
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!8xHS97yH5nne8Tpm'

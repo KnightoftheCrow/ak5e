@@ -4,7 +4,283 @@ type: feat
 _id: YjbOAGTipuxy4U2G
 img: modules/ak5e/icons/Skill-Rope2.webp
 system:
-  activities: {}
+  activities:
+    EP7khNCDnkR1Tshl:
+      type: utility
+      name: Spider's Thread
+      _id: EP7khNCDnkR1Tshl
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: turnEnd
+        concentration: false
+        override: false
+      effects:
+        - _id: yentBq6Q0Z0P3gjo
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '@scale.hooked.hook-range'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    oCWe5p8qnzWvb9Pv:
+      type: utility
+      name: Grant Climb Speed to Others
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: turnEnd
+        concentration: false
+        override: false
+      effects:
+        - _id: y9rpGGaMEUz2rkrU
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: any
+        override: false
+        value: '@scale.hooked.hook-range'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: oCWe5p8qnzWvb9Pv
   uses:
     spent: 0
     recovery: []
@@ -13,20 +289,20 @@ system:
   description:
     value: >-
       <p>Your familiarity with verticality makes even arachnids look like
-      beginners. You gain the following benefits:</p><p><strong>Longer
+      beginners. You gain the following benefits:</p><ul><li><p><strong>Longer
       Hook.</strong> The Thrown Property of your Hooks is increased to Thrown
-      (50/-)</p><p><strong>Spider’s Thread.</strong> As an Action, you can use
-      your Hook to grapple to a surface of your choice above you, granting
-      yourself a Climbing Speed until the beginning of your next Turn equal to
-      the length of your Hook, but only when you are climbing towards your
-      chosen point from the location you used this Feature. Additionally, until
-      the beginning of your next Turn, other Creatures that begin climbing from
-      the same location towards the same point also gain a climbing Speed equal
-      to your Hook’s Range until the end of their Turn.</p><p><strong>Swing to
-      Safety.</strong> You can now use your King of the Urban Jungle Feature as
-      a Reaction while you are falling, as long as the height you are falling is
-      enough for you to take falling Damage.</p><p><strong>Not
-      Automated.</strong></p>
+      (50/-)</p></li><li><p><strong>Spider’s Thread.</strong> As an Action, you
+      can use your Hook to grapple to a surface of your choice above you,
+      granting yourself a Climbing Speed until the beginning of your next Turn
+      equal to the length of your Hook, but only when you are climbing towards
+      your chosen point from the location you used this Feature. Additionally,
+      until the beginning of your next Turn, other Creatures that begin climbing
+      from the same location towards the same point also gain a climbing Speed
+      equal to your Hook’s Range until the end of their
+      Turn.</p></li><li><p><strong>Swing to Safety.</strong> You can now use
+      your King of the Urban Jungle Feature as a Reaction while you are falling,
+      as long as the height you are falling is enough for you to take falling
+      Damage.</p></li></ul><hr><p><strong>Automated.</strong></p>
     chat: ''
   identifier: spiders-essence
   source:
@@ -43,8 +319,140 @@ system:
   type:
     value: class
     subtype: ''
-effects: []
-sort: 0
+effects:
+  - name: Spider's Thread
+    img: modules/ak5e/icons/Skill-Rope2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.YjbOAGTipuxy4U2G
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.movement.speeds.climb
+          type: override
+          value: '@scale.hooked.hook-range'
+          phase: initial
+          _id: U1HZam7vJrAJXheQ
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: yentBq6Q0Z0P3gjo
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794243070871
+      modifiedTime: 1794243172049
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!YjbOAGTipuxy4U2G.yentBq6Q0Z0P3gjo'
+  - name: Climbing the Spider's Thread
+    img: modules/ak5e/icons/Skill-Rope2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.YjbOAGTipuxy4U2G
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.movement.speeds.climb
+          type: override
+          value: '@scale.hooked.hook-range'
+          phase: initial
+          _id: YEvRcGuQryO5VSlK
+          conditions: '{}'
+          replacement: origin
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: y9rpGGaMEUz2rkrU
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794243139719
+      modifiedTime: 1794243158603
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!YjbOAGTipuxy4U2G.y9rpGGaMEUz2rkrU'
+sort: 93750
 ownership:
   default: 0
 flags:
@@ -53,10 +461,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791203553273
-  modifiedTime: 1791203553273
+  modifiedTime: 1794243249335
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!YjbOAGTipuxy4U2G'

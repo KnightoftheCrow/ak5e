@@ -4,7 +4,363 @@ type: feat
 _id: PjJMEruP4aDumgce
 img: modules/ak5e/icons/Skill-Deepcolor2.webp
 system:
-  activities: {}
+  activities:
+    0V0Mca6PqOGwcxdT:
+      type: transform
+      name: Non-Damaging Restructuring
+      _id: 0V0Mca6PqOGwcxdT
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      profiles:
+        - name: ''
+          _id: dlz8bKtXiQsdgdmu
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.1ecfem4yOv7Aetav
+          level:
+            min: null
+            max: null
+          movement: []
+          sizes: []
+          types: []
+        - name: ''
+          _id: JTuMyPrzSXIDEso0
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.sOYGwiWCkJZdCWCA
+          level:
+            min: null
+            max: null
+          movement: []
+          sizes: []
+          types: []
+        - name: ''
+          _id: CqfEN5MmYT6LGtCm
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.QZeLp19xN5pj35Pu
+          level:
+            min: null
+            max: null
+          movement: []
+          sizes: []
+          types: []
+      settings:
+        effects:
+          - origin
+          - otherOrigin
+          - spell
+        keep:
+          - class
+          - type
+          - hp
+          - tempHP
+        preset: polymorph
+        merge: []
+        other: []
+        spellLists: []
+        transformTokens: true
+        minimumAC: ''
+        tempFormula: ''
+      transform:
+        customize: true
+        formless: false
+        mode: ''
+        preset: polymorph
+      useConditionText: '["construct"].includes(typeOrRace)'
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: true
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+    F4de48LAYIa5qLng:
+      type: transform
+      name: Non-Damaging Restructuring (Complex Creations)
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 17
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      profiles:
+        - name: ''
+          _id: dlz8bKtXiQsdgdmu
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.DPcYuQFbnZaevqjr
+          level:
+            min: null
+            max: null
+          movement: []
+          sizes: []
+          types: []
+        - name: ''
+          _id: JTuMyPrzSXIDEso0
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.GkcsLa8Brr9MkGdu
+          level:
+            min: null
+            max: null
+          movement: []
+          sizes: []
+          types: []
+        - name: ''
+          _id: CqfEN5MmYT6LGtCm
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.YyGOlfrMEeGB70sE
+          level:
+            min: null
+            max: null
+          movement: []
+          sizes: []
+          types: []
+      settings:
+        effects:
+          - origin
+          - otherOrigin
+          - spell
+        keep:
+          - class
+          - type
+          - hp
+          - tempHP
+        preset: polymorph
+        merge: []
+        other: []
+        spellLists: []
+        transformTokens: true
+        minimumAC: ''
+        tempFormula: ''
+      transform:
+        customize: true
+        formless: false
+        mode: ''
+        preset: polymorph
+      useConditionText: '["construct"].includes(typeOrRace)'
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: true
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: F4de48LAYIa5qLng
   uses:
     spent: 0
     recovery: []
@@ -14,14 +370,16 @@ system:
     value: >-
       <p>Your Summons are created with your Arts, and thus your Arts have the
       strongest effect on them. You gain the following
-      benefits:</p><ul><li><p><strong>Art Cost Reduction.</strong> When you cast
-      a non-damaging Art that targets one or more of your Summons, one of the
-      Arts Points you used to cast that Art is refunded after it is
-      cast.</p></li><li><p><strong>Non-Damaging Restructuring.</strong> As a
-      Bonus Action, you can choose one of your Summons that you can see; expend
-      and roll one of your Aid Dice. That Summon regains Hit Points equal to
-      twice the value rolled, and gains any remaining Hit Points as Temporary
-      Hit Points instead.</p></li></ul><p><strong>Not Automated.</strong></p>
+      benefits:</p><ul><li><p><strong>An Extension of Yourself.</strong> When
+      you use your Bonus Action to provide Aid, you can also issue commands to
+      your Creations as part of that Bonus
+      Action.</p></li><li><p><strong>Non-Damaging Restructuring.</strong> As an
+      Action, choose up to two of your Simple Creations you can see; you may
+      transform each into a different form of Simple Creation. Their current Hit
+      Points are not altered by this
+      Transformation.</p></li></ul><hr><p><strong>Automated: </strong>An
+      extension of yourself does not need automating. Use the activity on this
+      Feature to transform your Summons.</p>
     chat: ''
   identifier: symbiosis
   source:
@@ -37,24 +395,22 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
+    subtype: ''
 effects: []
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.PjJMEruP4aDumgce
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206076915
-  modifiedTime: 1791206076915
+  modifiedTime: 1793383523175
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   5XlrCO2NlPtd4MFQ: 3
-sort: 0
+sort: 200000
 _key: '!items!PjJMEruP4aDumgce'

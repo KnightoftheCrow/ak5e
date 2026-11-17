@@ -9,10 +9,9 @@ system:
       _id: 1s5io6Zo8pjiKXXa
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.z3MHaNnUFi0w4cu3
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.1WfdaK63UAW5380v
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.1WfdaK63UAW5380v
         optional: false
         spell: null
       flags: {}
@@ -76,6 +75,32 @@ system:
       level: 17
       hint: ''
       title: ''
+    IdfMlcpPZ8VADvxW:
+      name: Choose Spellcasting Ability
+      type: ItemChoice
+      _id: IdfMlcpPZ8VADvxW
+      configuration:
+        allowDrops: false
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        pool:
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.z3MHaNnUFi0w4cu3
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.VI3lXvRTKUwCJfZw
+            sort: 0
+        restriction:
+          list: []
+          school: []
+        sorting: a
+        spell: null
+        type: null
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
   description:
     value: >-
       <p>Channelling powerful Arts into the wielding of their weapons,
@@ -120,11 +145,11 @@ _stats:
   compendiumSource: Compendium.ak5e.ak5e-guard.Item.CCYuURQle5gUiR7v
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791400791543
-  modifiedTime: 1791485014405
+  modifiedTime: 1794841908533
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0

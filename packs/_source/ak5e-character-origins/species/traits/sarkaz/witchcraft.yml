@@ -57,7 +57,7 @@ system:
         properties:
           - somatic
           - material
-        spellbook: true
+        spellbook: false
         uuid: Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000
         ability: ''
         level: 1
@@ -107,6 +107,8 @@ system:
         preRemoveConditionText: ''
         postRemoveConditionText: ''
       name: ''
+      img: ''
+      otherActivityId: ''
     YzBYesX2wDvb8UiC:
       type: cast
       sort: 200000
@@ -156,9 +158,8 @@ system:
         challenge:
           override: false
         properties:
-          - somatic
           - material
-        spellbook: true
+        spellbook: false
         uuid: Compendium.dnd-players-handbook.spells.Item.phbsplBane000000
         ability: ''
         level: 1
@@ -209,6 +210,8 @@ system:
         postRemoveConditionText: ''
       name: ''
       _id: YzBYesX2wDvb8UiC
+      img: ''
+      otherActivityId: ''
     ytmonK7OrZmjFCDq:
       type: cast
       sort: 300000
@@ -258,12 +261,11 @@ system:
         challenge:
           override: false
         properties:
-          - somatic
           - material
-        spellbook: true
+        spellbook: false
         uuid: Compendium.ak5e.ak5e-arts.Item.subv958XI90ZVt76
         ability: ''
-        level: 1
+        level: 2
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -311,6 +313,8 @@ system:
         postRemoveConditionText: ''
       name: ''
       _id: ytmonK7OrZmjFCDq
+      img: ''
+      otherActivityId: ''
     fJ4npP6zsLx73gkn:
       type: cast
       sort: 400000
@@ -360,12 +364,11 @@ system:
         challenge:
           override: false
         properties:
-          - somatic
           - material
-        spellbook: true
+        spellbook: false
         uuid: Compendium.ak5e.ak5e-arts.Item.mweZm0F8OYVbY8aa
         ability: ''
-        level: 1
+        level: 2
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -413,6 +416,8 @@ system:
         postRemoveConditionText: ''
       name: ''
       _id: fJ4npP6zsLx73gkn
+      img: ''
+      otherActivityId: ''
     FNZVyxSjPnvAadCT:
       type: cast
       sort: 500000
@@ -462,12 +467,11 @@ system:
         challenge:
           override: false
         properties:
-          - somatic
           - material
-        spellbook: true
+        spellbook: false
         uuid: Compendium.ak5e.ak5e-arts.Item.7vRU2jRxD3MWmYw7
         ability: ''
-        level: 2
+        level: 3
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -515,6 +519,8 @@ system:
         postRemoveConditionText: ''
       name: ''
       _id: FNZVyxSjPnvAadCT
+      img: ''
+      otherActivityId: ''
     qfC9d7SZZ36gVjkw:
       type: cast
       sort: 600000
@@ -564,12 +570,11 @@ system:
         challenge:
           override: false
         properties:
-          - somatic
           - material
-        spellbook: true
+        spellbook: false
         uuid: Compendium.ak5e.ak5e-arts.Item.YePZCywOf77mCdJA
         ability: ''
-        level: 2
+        level: 3
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -617,6 +622,8 @@ system:
         postRemoveConditionText: ''
       name: ''
       _id: qfC9d7SZZ36gVjkw
+      img: ''
+      otherActivityId: ''
     SGSJcsTccUCTunwa:
       type: cast
       sort: 700000
@@ -666,9 +673,8 @@ system:
         challenge:
           override: false
         properties:
-          - somatic
           - material
-        spellbook: true
+        spellbook: false
         uuid: Compendium.ak5e.ak5e-arts.Item.VyqUhxKj3kXlvkKp
         ability: ''
         level: 4
@@ -719,6 +725,8 @@ system:
         postRemoveConditionText: ''
       name: ''
       _id: SGSJcsTccUCTunwa
+      img: ''
+      otherActivityId: ''
   uses:
     spent: 0
     recovery:
@@ -726,7 +734,8 @@ system:
         type: recoverAll
     max: '@scale.witchcraft.freecasts'
   advancement:
-    - type: ScaleValue
+    XoKoGNBjbJACu3jI:
+      type: ScaleValue
       _id: XoKoGNBjbJACu3jI
       configuration:
         identifier: freecasts
@@ -739,158 +748,29 @@ system:
           '7':
             value: 2
       value: {}
-      title: Number of Free Witchcraft Arts
       hint: >-
         Once per Long Rest, you can cast a Sarkaz Art without expending any Arts
         Points. The maximum level of Sarkaz Art you can cast in this way is
         controlled by your Character Level. At 7th Level, you can cast Sarkaz
         Arts in this way twice per Long Rest.
-    - type: ItemGrant
-      _id: ZNBYinp6lL3W0RDN
+      name: Number of Free Witchcraft Arts
+      flags: {}
+    2atbZrt8XeS0pc4K:
+      name: ''
+      type: ItemGrant
+      _id: 2atbZrt8XeS0pc4K
       configuration:
         items:
-          - optional: false
-            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000
-          - optional: false
-            uuid: Compendium.dnd-players-handbook.spells.Item.phbsplBane000000
+          - uuid: Compendium.ak5e.ak5e-arts.Item.GYDtpHMseWSR70D9
+            optional: false
+            sort: 0
         optional: false
-        spell:
-          ability:
-            - wis
-          method: spell
-          uses:
-            max: ''
-            per: ''
-            requireSlot: false
-          prepared: 2
+        sorting: m
+        spell: null
+      flags: {}
       value: {}
       level: 0
-      title: ''
       hint: ''
-    - type: ItemGrant
-      configuration:
-        items:
-          - uuid: Compendium.ak5e.ak5e-arts.Item.subv958XI90ZVt76
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-arts.Item.mweZm0F8OYVbY8aa
-            optional: false
-        optional: false
-        spell:
-          ability:
-            - wis
-          method: spell
-          uses:
-            max: ''
-            per: ''
-            requireSlot: false
-          prepared: 2
-      value: {}
-      level: 3
-      title: ''
-      hint: ''
-      _id: YzCb5aBwMxT1uPUP
-    - type: ItemGrant
-      configuration:
-        items:
-          - uuid: Compendium.ak5e.ak5e-arts.Item.7vRU2jRxD3MWmYw7
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-arts.Item.YePZCywOf77mCdJA
-            optional: false
-        optional: false
-        spell:
-          ability:
-            - wis
-          method: spell
-          uses:
-            max: ''
-            per: ''
-            requireSlot: false
-          prepared: 2
-      value: {}
-      level: 5
-      title: ''
-      hint: ''
-      _id: puSuQultRVr8Kfws
-    - type: ItemGrant
-      configuration:
-        items:
-          - uuid: Compendium.ak5e.ak5e-arts.Item.VyqUhxKj3kXlvkKp
-            optional: false
-        optional: false
-        spell:
-          ability:
-            - wis
-          method: spell
-          uses:
-            max: ''
-            per: ''
-            requireSlot: false
-          prepared: 2
-      value: {}
-      level: 7
-      title: ''
-      hint: ''
-      _id: 5wEDjYPxvIplX5VK
-    - type: ItemGrant
-      configuration:
-        items:
-          - uuid: Compendium.dnd-players-handbook.spells.Item.phbsplLegendLore
-            optional: false
-        optional: false
-        spell:
-          ability:
-            - wis
-          method: spell
-          uses:
-            max: ''
-            per: ''
-            requireSlot: false
-          prepared: 2
-      value: {}
-      level: 9
-      title: ''
-      hint: ''
-      _id: 1wFNO1U1htJQc8So
-    - type: ItemGrant
-      configuration:
-        items:
-          - uuid: Compendium.ak5e.ak5e-arts.Item.wBFiKcAZpP3zjGpf
-            optional: false
-        optional: false
-        spell:
-          ability:
-            - wis
-          method: spell
-          uses:
-            max: ''
-            per: ''
-            requireSlot: false
-          prepared: 2
-      value: {}
-      level: 13
-      title: ''
-      hint: ''
-      _id: UCLhgh6cgvLDuWfY
-    - type: ItemGrant
-      configuration:
-        items:
-          - uuid: Compendium.ak5e.ak5e-arts.Item.bmYsgYkSbU96lpFu
-            optional: false
-        optional: false
-        spell:
-          ability:
-            - wis
-          method: spell
-          uses:
-            max: ''
-            per: ''
-            requireSlot: false
-          prepared: 2
-      value: {}
-      level: 17
-      title: ''
-      hint: ''
-      _id: 3lrohK57WwzowN7T
   description:
     value: >-
       <h3>Witchcraft</h3><p>Sarkaz have a tighter bond with Originum and the
@@ -906,42 +786,10 @@ system:
       Rest.</p><table><thead><tr><td><p
       style="text-align:center"><strong>Character Level</strong></p></td><td><p
       style="text-align:center"><strong>Maximum Arts
-      Level</strong></p></td></tr></thead><tbody><tr><td><p>1</p></td><td><p>1</p></td></tr><tr><td><p>2</p></td><td><p>1</p></td></tr><tr><td><p>3</p></td><td><p>1</p></td></tr><tr><td><p>4</p></td><td><p>1</p></td></tr><tr><td><p>5</p></td><td><p>1</p></td></tr><tr><td><p>6</p></td><td><p>1</p></td></tr><tr><td><p>7</p></td><td><p>2</p></td></tr><tr><td><p>8</p></td><td><p>2</p></td></tr><tr><td><p>9</p></td><td><p>2</p></td></tr><tr><td><p>10</p></td><td><p>2</p></td></tr><tr><td><p>11</p></td><td><p>2</p></td></tr><tr><td><p>12</p></td><td><p>2</p></td></tr><tr><td><p>13</p></td><td><p>2</p></td></tr><tr><td><p>14</p></td><td><p>3</p></td></tr><tr><td><p>15</p></td><td><p>3</p></td></tr><tr><td><p>16</p></td><td><p>3</p></td></tr><tr><td><p>17</p></td><td><p>3</p></td></tr><tr><td><p>18</p></td><td><p>3</p></td></tr><tr><td><p>19</p></td><td><p>4</p></td></tr><tr><td><p>20</p></td><td><p>4</p></td></tr></tbody></table><p><strong>Partially
-      Automated: </strong>Provides all Witchcraft Arts. The "Cast without Arts
-      Points" Activity allows you to track your free casts of Sarkaz Arts.
-      However, this Feature does not allow you to actually cast the Arts without
-      expending AP; simply choose not to expend AP when you cast the
-      Art.</p><h4>Witchcraft Arts</h4><p>“Witchcraft” is, in actuality, a
-      derogatory term for the unique Arts of the Sarkaz. The official term is
-      “Incantation”, but outside of scholars, and those that deal in such
-      incantations, Witchcraft is a more prevalent term.</p><p>What divides
-      Incantations from typical Arts is the methodology. “Classical Arts”, as
-      they are sometimes called, uses the energy contained within Originium to
-      manipulate energy in the world; essentially allowing the Caster to impose
-      their will on the world around them. In contrast, Incantations do not rely
-      on the energy of Originium, but instead through defining both the
-      “intention” of the Incantation and “cost” that will be paid. The Caster of
-      an Incantation defines these things through their own understanding and
-      conventional wisdom. As a result, Incantations are highly ritualistic in
-      nature, far more than Classical Arts, as tradition and rules help define
-      these costs and intentions.</p><p>Because these Incantations do not
-      require Originium in the same way Classical Arts do, almost every Sarkaz
-      has some limited affinity with them. Most Sarkaz, however, will steer away
-      from such rituals without extreme cause. Just as the different Sarkaz
-      clans have penned meaning and cost to their own Incantations, millennia
-      and suffering has assigned its own cost to these unshackled Incantations,
-      and it is a heavy price to pay.</p><table><thead><tr><td><p
-      style="text-align:center"><strong>Arts Level</strong></p></td><td><p
-      style="text-align:center"><strong>Arts</strong></p></td></tr></thead><tbody><tr><td><p>Cantrip</p></td><td><p>-</p></td></tr><tr><td><p>1st</p></td><td><p>Bane,
-      Hex</p></td></tr><tr><td><p>2nd</p></td><td><p>Altar of Fealty, Altar of
-      Sacrifice, Borrowed
-      Knowledge</p></td></tr><tr><td><p>3rd</p></td><td><p>Altar of Fury, Altar
-      of Retribution</p></td></tr><tr><td><p>4th</p></td><td><p>Altar of
-      Craving</p></td></tr><tr><td><p>5th</p></td><td><p>Legend Lore, Skill
-      Empowerment</p></td></tr><tr><td><p>6th</p></td><td><p>-</p></td></tr><tr><td><p>7th</p></td><td><p>Altar
-      of
-      Hatred</p></td></tr><tr><td><p>8th</p></td><td><p>-</p></td></tr><tr><td><p>9th</p></td><td>Altar
-      of Ending</td></tr></tbody></table>
+      Level</strong></p></td></tr></thead><tbody><tr><td><p>1</p></td><td><p>1</p></td></tr><tr><td><p>2</p></td><td><p>1</p></td></tr><tr><td><p>3</p></td><td><p>1</p></td></tr><tr><td><p>4</p></td><td><p>1</p></td></tr><tr><td><p>5</p></td><td><p>1</p></td></tr><tr><td><p>6</p></td><td><p>1</p></td></tr><tr><td><p>7</p></td><td><p>2</p></td></tr><tr><td><p>8</p></td><td><p>2</p></td></tr><tr><td><p>9</p></td><td><p>2</p></td></tr><tr><td><p>10</p></td><td><p>2</p></td></tr><tr><td><p>11</p></td><td><p>2</p></td></tr><tr><td><p>12</p></td><td><p>2</p></td></tr><tr><td><p>13</p></td><td><p>2</p></td></tr><tr><td><p>14</p></td><td><p>3</p></td></tr><tr><td><p>15</p></td><td><p>3</p></td></tr><tr><td><p>16</p></td><td><p>3</p></td></tr><tr><td><p>17</p></td><td><p>3</p></td></tr><tr><td><p>18</p></td><td><p>3</p></td></tr><tr><td><p>19</p></td><td><p>4</p></td></tr><tr><td><p>20</p></td><td><p>4</p></td></tr></tbody></table><hr><p><strong>Semi-Automated:
+      </strong>You are provided the Arts at the appropriate level you can cast
+      them. If you want to cast one of these Arts as a Sarkaz Art, cast it using
+      this Feature.</p>
     chat: ''
   identifier: witchcraft
   source:
@@ -964,19 +812,17 @@ system:
     subtype: ''
 effects: []
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1768680431430
-  modifiedTime: 1768680431474
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1794947610678
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

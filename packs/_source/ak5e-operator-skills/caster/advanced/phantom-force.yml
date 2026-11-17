@@ -394,7 +394,7 @@ effects:
     type: base
     system:
       changes:
-        - key: system.scale.skillPoints.recovery
+        - key: system.scale.skill-points.recovery
           value: 10
           priority: 20
           type: upgrade
@@ -402,7 +402,7 @@ effects:
           _id: jdFPlOfCd8q8VDH4
           conditions: '{}'
           replacement: ''
-        - key: system.scale.skillPoints.maxsp
+        - key: system.scale.skill-points.maxsp
           value: 40
           priority: 20
           type: upgrade
@@ -474,7 +474,7 @@ effects:
     duration:
       value: null
       units: seconds
-      expiry: null
+      expiry: targetEnd
       expired: false
     description: ''
     tint: '#ffffff'
@@ -489,27 +489,25 @@ effects:
         enableCondition: ''
         disableCondition: ''
         stackable: noneName
-        showIcon: true
         disableIncapacitated: false
         selfTarget: false
         selfTargetAlways: false
         dontApply: false
         durationExpression: ''
         macroRepeat: none
-        specialDuration:
-          - turnEnd
+        specialDuration: []
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
       createdTime: 1791733095891
-      modifiedTime: 1791733095891
+      modifiedTime: 1793630690244
     showIcon: 2
     start: null
     folder: null
@@ -528,7 +526,7 @@ effects:
     duration:
       value: null
       units: seconds
-      expiry: null
+      expiry: targetEnd
       expired: false
     description: ''
     tint: '#ffffff'
@@ -550,20 +548,19 @@ effects:
         dontApply: false
         durationExpression: ''
         macroRepeat: none
-        specialDuration:
-          - turnEnd
+        specialDuration: []
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
       createdTime: 1791733095891
-      modifiedTime: 1791733095891
+      modifiedTime: 1793630690244
     showIcon: 2
     start: null
     folder: null

@@ -323,7 +323,6 @@ effects:
         enableCondition: ''
         disableCondition: ''
         stackable: noneName
-        showIcon: true
         disableIncapacitated: false
         selfTarget: false
         selfTargetAlways: false
@@ -337,14 +336,14 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
       createdTime: 1791733108146
-      modifiedTime: 1791733108146
+      modifiedTime: 1793630691583
     start: null
-    showIcon: 1
+    showIcon: 2
     folder: null
     _key: '!items.effects!ETCKm8SOuCUJ3aRF.V8R2cROoNps30qJV'
   - name: Poisoned
@@ -362,7 +361,7 @@ effects:
     duration:
       value: null
       units: seconds
-      expiry: null
+      expiry: targetStart
       expired: false
     description: ''
     tint: '#ffffff'
@@ -379,27 +378,25 @@ effects:
         enableCondition: ''
         disableCondition: ''
         stackable: noneName
-        showIcon: true
         disableIncapacitated: false
         selfTarget: false
         selfTargetAlways: false
         dontApply: false
         durationExpression: ''
         macroRepeat: none
-        specialDuration:
-          - turnStart
+        specialDuration: []
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
       createdTime: 1791733108147
-      modifiedTime: 1791733108147
+      modifiedTime: 1793630691583
     showIcon: 2
     start:
       combat: null

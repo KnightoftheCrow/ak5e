@@ -1,0 +1,479 @@
+folder: szoxo8J5vBjVMBub
+name: Journey's End
+type: feat
+_id: b1elQ3wnqdD3Te5w
+img: icons/magic/perception/eye-ringed-glow-angry-large-red.webp
+system:
+  activities:
+    Y4U5s71Rf95h6I5c:
+      type: utility
+      name: Enter Bloodfury
+      _id: Y4U5s71Rf95h6I5c
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: minute
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: hu0PGMPiaGIGlMSH
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    EasYfGox21tjwx0r:
+      type: save
+      name: Resist
+      _id: EasYfGox21tjwx0r
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: none
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 8
+            bonus: ''
+            modifiers: []
+            types:
+              - psychic
+            scaling:
+              number: 1
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: ''
+          formula: '15'
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  advancement:
+    5EgzJOyjLokPHbJQ:
+      name: Joruney's End Damage
+      type: ScaleValue
+      _id: 5EgzJOyjLokPHbJQ
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            faces: 6
+            number: 2
+          '7':
+            number: 3
+          '14':
+            number: 4
+      flags: {}
+      value: {}
+      hint: ''
+  description:
+    value: >-
+      <h3>Journey’s End</h3><p>The mental fortitude of the Oni is ironclad, but
+      even iron can crack under enough pressure. When driven to it, an Oni can
+      issue a stark reminder that the bloody rampages of the Oni are more than
+      stories.</p><p>Once per Long Rest when your Turn begins, you can choose to
+      enter a berserk state known as Bloodfury.</p><p>While active, your
+      Bloodfury follows the rules below:</p><ul><li><p><strong>Berserk
+      Mind.</strong> When you enter a Bloodfury, and at the beginning of each
+      Turn while you are in one, you choose the closest Creature you can see
+      (your choice if it is tied), and can then choose to either Give In or
+      Resist.</p><ul><li><p><strong>Give In:</strong> This Turn, you must
+      attempt to move towards and attack that Creature. The first time during
+      that Turn you hit that Creature with a Melee Attack, that Attack deals 2d6
+      additional Damage. This increases to 3d6 at 7th Level, and 4d6 at 14th
+      Level.</p></li><li><p><strong>Resist:</strong> You must make a DC15 Wisdom
+      Saving Throw; you have Advantage on this Saving Throw if you cannot see a
+      hostile Creature. On a successful Save, the Bloodfury ends. On a failed
+      save, you take 1d8 Psychic Damage as you struggle to suppress the rage,
+      but can move freely; you cannot make any Attacks or take any Action that
+      would cause Damage to a Creature until the end of that Turn. If this
+      Psychic Damage would reduce you to 0 Hit Points, your Bloodfury instead
+      ends, and you gain 1
+      Exhaustion.</p></li></ul></li><li><p><strong>Condition Immunity.</strong>
+      You are immune to the Frightened and Charmed
+      Conditions.</p></li><li><p><strong>Disturbed Inner Calm.</strong> When you
+      enter a Bloodfury, you lose all benefits from your “Journey of
+      Self-Pacification” Feature until you complete a Long
+      Rest.</p></li><li><p><strong>Duration.</strong> Your Bloodfury lasts 1
+      minute (10 rounds).</p></li></ul><hr><p><strong>Semi-Automated:
+      </strong>While Bloodfury is Active, if you wish to Resist, use the Resist
+      Activity. If you do not, when you hit with a Melee Attack for the first
+      time during your Turn, you will have an Opt-In for additional Damage.</p>
+    chat: ''
+  identifier: journeys-end
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Bloodfury
+    img: icons/magic/perception/eye-ringed-glow-angry-large-red.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.b1elQ3wnqdD3Te5w
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.traits.ci.value
+          type: add
+          value: frightened
+          phase: initial
+          _id: 7azkqryq5y2P4fxZ
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: system.traits.ci.value
+          type: add
+          value: charmed
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: aJGNwkG3zPIaaOzr
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@scale.journeys-end.joruneys-end-damage; name=Give In Bonus
+            Damage; optinId=bloodfury-2; oncePerRound; optin; actionType.mwak &&
+            isTurn
+          phase: initial
+          _id: lnnMJKSpxUzzZk5t
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: hu0PGMPiaGIGlMSH
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: 1
+      units: minutes
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794864611100
+      modifiedTime: 1794875106332
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!b1elQ3wnqdD3Te5w.hu0PGMPiaGIGlMSH'
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794853083878
+  modifiedTime: 1794875073369
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!b1elQ3wnqdD3Te5w'

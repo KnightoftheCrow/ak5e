@@ -1,0 +1,130 @@
+name: Enhanced Target Lock
+type: feat
+img: modules/ak5e/icons/Skill-Lemuen1.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement:
+    gbLwugbPNh7RQ9QZ:
+      name: ''
+      type: ModifyItem
+      _id: gbLwugbPNh7RQ9QZ
+      configuration:
+        changes:
+          - _id: RdzVZg3mZulOPZuJ
+            uuid: null
+            identifiers:
+              - target-lock
+      flags: {}
+      value:
+        modified: []
+      level: 0
+      hint: ''
+  description:
+    value: >-
+      <p>Your target escaping you is unthinkable. You gain the following
+      benefits:</p><ul><li><p><strong>Master Marksman:</strong> The bonus
+      granted by your Target Lock Feature is increased to
+      +2.</p></li><li><p><strong>Target Acquisition:</strong> You regain use of
+      your Target Lock Feature when you roll
+      Initative.</p></li></ul><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: enhanced-target-lock
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 11
+  properties: []
+  requirements: Target Lock
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Recharge on Initiative
+    img: modules/ak5e/icons/Skill-Lemuen1.webp
+    type: enchantment
+    transfer: false
+    _id: RdzVZg3mZulOPZuJ
+    system:
+      changes:
+        - key: system.uses.recovery
+          type: override
+          value:
+            period: initiative
+            type: recoverAll
+          phase: initial
+          _id: BlSBELnr0TfsmcAt
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: true
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794782262952
+      modifiedTime: 1794782311945
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!IJwEadDhhzMLELDP.RdzVZg3mZulOPZuJ'
+folder: r2sKTPYSmSAEfVCU
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794782168299
+  modifiedTime: 1794782368634
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: IJwEadDhhzMLELDP
+sort: 0
+_key: '!items!IJwEadDhhzMLELDP'

@@ -1,0 +1,491 @@
+folder: kqvuv2G7bNqGA5cb
+name: Folk of the Mountain
+type: feat
+_id: 6l7FmmoPqzRcbjnT
+img: icons/environment/wilderness/terrain-rocks-brown.webp
+system:
+  activities:
+    rz4njFcwxOscGLI2:
+      type: utility
+      name: Burrowers
+      _id: rz4njFcwxOscGLI2
+      img: ''
+      sort: 0
+      activation:
+        type: minute
+        override: false
+        condition: ''
+        value: 1
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: hour
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: au48XHF5pmPp5J1o
+          uuid: null
+          level: {}
+        - _id: ZxEPoB97aEIEBHAg
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    dVDNRqKmWxMATtQE:
+      type: utility
+      name: Carve Hill and Dale
+      _id: dVDNRqKmWxMATtQE
+      img: ''
+      sort: 100000
+      activation:
+        type: minute
+        override: false
+        condition: ''
+        value: 1
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: hour
+        expiry: null
+        concentration: false
+        override: false
+        value: '24'
+      effects: []
+      flags: {}
+      range:
+        units: touch
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: line
+          size: '10'
+          width: '5'
+          count: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <h3>Folk of the Mountain</h3><p>Some assume the Anaty are physically frail
+      as a generalisation, fooled by the small size. This is a falsehood. The
+      strength of their small bodies is concentrated, compressed; and in this
+      case, strongly specialised for digging. You gain the following
+      benefits:</p><ul><li><p><strong>Burrowers.</strong> Over the course of 1
+      minute, you can prepare to tunnel through a soft surface, scrabbling and
+      digging to find safe purchase. At the conclusion of this period, you gain
+      a Burrow Speed equal to your Walking Speed for 1 hour; when this time is
+      over, you must immediately dig towards the closest above ground location;
+      you instinctively know which direction this is
+      in.</p></li><li><p><strong>Carve Hill and Dale.</strong> In any terrain
+      you are burrowing through, you can spend 1 minute to dig a tunnel 10 feet
+      long and 5 feet in diameter that a Large or smaller creature can traverse
+      as if it was difficult terrain. Tunnels made in this manner collapse after
+      24 hours, unless you spend 1 minute during that time to reinforce the
+      tunnel, or it is reinforced through other
+      means.</p><blockquote><p><strong>Reminder: Burrow Speeds</strong></p><p>A
+      Creature that has a Burrow Speed can use that speed to move through sand,
+      earth, mud, or ice. The Creature can’t burrow through solid rock unless
+      the Creature has a trait that allows it to do so. A Creature using a
+      burrow speed does not leave a tunnel to be followed unless it has a trait
+      that specifies as such, though a sapient Creature could feasibly excavate
+      a tunnel with time. Finally, a Creature cannot detect anything happening
+      around it while Burrowing unless it also has
+      Tremorsense.</p></blockquote></li><li><p><strong>Vibrissae.</strong> While
+      you are using your Burrow Speed, you have 15 feet of
+      Tremorsense</p><hr></li></ul><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: folk-of-the-mountain
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Burrow Speed = Walking Speed
+    img: icons/environment/wilderness/terrain-rocks-brown.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.6l7FmmoPqzRcbjnT
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.movement.speeds.burrow
+          type: override
+          value: '@attributes.movement.speeds.walk'
+          phase: initial
+          _id: ca33pHDlxEsIDSri
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: au48XHF5pmPp5J1o
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: 1
+      units: hours
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794921677521
+      modifiedTime: 1794921712728
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!6l7FmmoPqzRcbjnT.au48XHF5pmPp5J1o'
+  - name: Vibrissae
+    img: icons/environment/wilderness/terrain-rocks-brown.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.6l7FmmoPqzRcbjnT
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: token.detectionModes.feelTremor.enabled
+          type: override
+          value: true
+          phase: initial
+          _id: iZygHuOpfoVfbtzE
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: system.attributes.senses.ranges.tremorsense
+          type: add
+          value: 15
+          phase: initial
+          _id: k2SlsjYaIpfqjt5Q
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: ZxEPoB97aEIEBHAg
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: 1
+      units: minutes
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794921718435
+      modifiedTime: 1794921754476
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!6l7FmmoPqzRcbjnT.ZxEPoB97aEIEBHAg'
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794921610833
+  modifiedTime: 1794923581080
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!6l7FmmoPqzRcbjnT'

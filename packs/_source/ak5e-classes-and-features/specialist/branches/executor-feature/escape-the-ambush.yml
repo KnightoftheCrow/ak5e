@@ -4,7 +4,151 @@ type: feat
 _id: M1GUs2xp4K1FzIc7
 img: modules/ak5e/icons/Skill-Kjera2.webp
 system:
-  activities: {}
+  activities:
+    HrEy7myNywBPQJE8:
+      type: utility
+      name: Smokescreen
+      _id: HrEy7myNywBPQJE8
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: prowess
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: sourceEnd
+        concentration: false
+        override: false
+        value: '1'
+      effects: []
+      flags:
+        cat:
+          placed:
+            region:
+              visibility:
+                magicalDarkness: true
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: sphere
+          size: '10'
+          count: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
   uses:
     spent: 0
     recovery: []
@@ -13,21 +157,23 @@ system:
   description:
     value: >-
       <p>You gain one of the following ways to expend your Prowess based on your
-      choice of Hunter or Bodyguard:</p><p><strong>Bodyguard
+      choice of Hunter or Bodyguard:</p><ul><li><p><strong>Bodyguard
       (Smokescreen).</strong> You can expend 1 Prowess as a Reaction to create a
       10-foot-radius sphere of Arts-infused smoke centred at your feet. This
       smoke lasts until the end of your next Turn, and is considered to be
       Magical Darkness. Additionally, when you create this smoke, you can choose
       one allied Creature within it; they may use their Reaction to move up to
-      their Speed.</p><p>Gaining Prowess as an Executor. As an Executor, you
-      gain 1 Prowess when a Creature with your Deathmark is reduced to 0 Hit
-      Points. Once you have gained Prowess in this way, you may not do so again
-      until the beginning of your next Turn.</p><p>You also can gain Prowess in
-      an additional way based on your choice of Hunter or
-      Bodyguard:</p><p><strong>Bodyguard:</strong> At the end of an allied
-      Creature’s Turn where they were Attacked while within 10 feet of you, but
-      have taken no Damage from hostile Creatures that Turn, you gain 1
-      Prowess.</p><p><strong>Not Automated.</strong></p>
+      their Speed.</p></li><li><p><strong>Gaining Prowess as an
+      Executor.</strong> As an Executor, you gain 1 Prowess when a Creature with
+      your Deathmark is reduced to 0 Hit Points. Once you have gained Prowess in
+      this way, you may not do so again until the beginning of your next
+      Turn.</p><p>You also can gain Prowess in an additional way based on your
+      choice of Hunter or Bodyguard:</p><p><strong>Bodyguard:</strong> At the
+      end of an allied Creature’s Turn where they were Attacked while within 10
+      feet of you, but have taken no Damage from hostile Creatures that Turn,
+      you gain 1 Prowess.</p></li></ul><hr><p><strong>Semi-Automated:
+      </strong>You must handle choosing a Creature to expend their Reaction
+      manually.</p>
     chat: ''
   identifier: escape-the-ambush
   source:
@@ -36,7 +182,8 @@ system:
   crewed: false
   enchant: {}
   prerequisites:
-    items: []
+    items:
+      - the-wolf-and-the-shepherd-bodyguard
     repeatable: false
     level: 5
   properties: []
@@ -45,7 +192,7 @@ system:
     value: class
     subtype: ''
 effects: []
-sort: 0
+sort: 200000
 ownership:
   default: 0
 flags:
@@ -54,10 +201,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791203553270
-  modifiedTime: 1791203553270
+  modifiedTime: 1794247836331
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!M1GUs2xp4K1FzIc7'

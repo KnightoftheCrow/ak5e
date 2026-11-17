@@ -1,0 +1,285 @@
+folder: Q4SFgMUwmbhfObc1
+name: In Death, Life; In Life, Death
+type: feat
+_id: JcndxObl6O5aGiHj
+img: icons/magic/death/grave-tombstone-glow-teal.webp
+system:
+  activities:
+    6L8m0rpQ2sWU5hHn:
+      type: utility
+      name: Consume Corpse
+      img: ''
+      sort: 0
+      activation:
+        type: minute
+        override: false
+        value: 1
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: true
+          max: '@item.uses.value'
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling:
+              mode: amount
+              formula: ''
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: touch
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: target.attributes.hp.value < 1
+      useConditionReason: This person is not dead.
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: 6L8m0rpQ2sWU5hHn
+  uses:
+    spent: 100
+    recovery: []
+    max: '@details.level'
+  advancement: {}
+  description:
+    value: >-
+      <h3>In Death, Life; In Life, Death</h3><p>The Nachzehrer are called the
+      personification of war by some. For many, that invokes the image of
+      powerful warriors laying waste to their foes. The Nachzehrer fit this
+      bill, but it is not for this reason that they embody war; the Nachzehrer
+      feast upon death to continue, just as war does.</p><p>Once per Short Rest,
+      you may “consume” a corpse by absorbing all of the nutrients from it over
+      the course of a minute, leaving it a deflated husk; you must remain in
+      contact with the corpse for the entire duration. When you do so, you gain
+      Rot equal to the CR or Level of that Creature (minimum 1). The maximum Rot
+      you can have is equal to your Character Level. In addition, when you do
+      this, you can ask that corpse a single question, as if it was under the
+      effect of the Speak with Dead Art; it must be as truthful as it is
+      possible for it to be in its answer.</p><p>When you cast a Necrotic Art,
+      you may expend any amount of your Rot (no Action required); you gain a
+      Bonus to your Spell Save DC and Spell Attack Rolls for the casting of the
+      Art equal to the amount of Rot expended.</p><hr><p><strong>Semi-Automated:
+      </strong>When you use the Consume Corpse Activity, set the scaling value
+      to the level or CR of that Creature. When you cast ANY spell, you get the
+      option to expend Rot to increase the Spell DC or Spell Attack Mod; only
+      trigger this when you are casting a Necrotic Art.</p>
+    chat: ''
+  identifier: in-death-life-in-life-death
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: In Death, Life; In Life, Death
+    img: icons/magic/death/grave-tombstone-glow-teal.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.JcndxObl6O5aGiHj
+        behavior: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.save.modifyDC
+          type: ac5e
+          value: >-
+            bonus=optinScale; usesCount=Item.in-death-life-in-life-death, { min:
+            1, max: 20, step: 1 }; name=In Death, Life;
+            optinId=in-death-life-in-life-death; description=+1 Spell Save DC
+            per Rot Expended; optin; isSpell
+          phase: initial
+          _id: KWKdhoXCrGucxYaN
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: >-
+            bonus=optinScale; usesCount=Item.in-death-life-in-life-death, { min:
+            1, max: 20, step: 1 }; name=In Death, Life;
+            optinId=in-death-life-in-life-death-1; description=+1 Spell Attack
+            Mod per Rot Expended; optin; hasAttack && isSpell
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: 9xoHpWkTPeZY6Lxn
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: Hl4rNeFBlRLGxNxW
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794920907820
+      modifiedTime: 1794920907820
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!JcndxObl6O5aGiHj.Hl4rNeFBlRLGxNxW'
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794853097904
+  modifiedTime: 1794920975571
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!JcndxObl6O5aGiHj'

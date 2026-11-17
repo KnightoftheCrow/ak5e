@@ -5,14 +5,18 @@ _id: 1HlPrysCFquM0O9O
 img: icons/creatures/mammals/deer-movement-leap-green.webp
 system:
   advancement:
-    - type: Size
+    t2fadyShhVsFhHgD:
+      type: Size
       _id: t2fadyShhVsFhHgD
       configuration:
         sizes:
           - med
       level: 0
       value: {}
-    - type: AbilityScoreImprovement
+      flags: {}
+      hint: ''
+    7mykpckVY9IZjGlf:
+      type: AbilityScoreImprovement
       _id: 7mykpckVY9IZjGlf
       configuration:
         cap: 2
@@ -30,9 +34,11 @@ system:
       value:
         type: asi
       level: 0
-      title: ''
       hint: Add 2 to one Score of your choice.
-    - type: AbilityScoreImprovement
+      name: ''
+      flags: {}
+    pt0YUwOBz1QQrMde:
+      type: AbilityScoreImprovement
       _id: pt0YUwOBz1QQrMde
       configuration:
         cap: 1
@@ -50,26 +56,37 @@ system:
       value:
         type: asi
       level: 0
-      title: ''
       hint: Add 1 to two scores of your choice, except the one you added 2 to.
-    - type: ItemGrant
+      name: ''
+      flags: {}
+    yQpe28fgZehMU3UH:
+      type: ItemGrant
       _id: yQpe28fgZehMU3UH
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.1UJZwz8HiZ7Wi2DM
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.1UJZwz8HiZ7Wi2DM
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.2pGYhfScAwPMCRxr
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.0XAAVW24ZRinoFkY
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.AwNP1feiwFIIoGNh
+          - uuid: Compendium.ak5e.ak5e-character-origins.Item.qBhrDPrzuoD5qSSV
             optional: false
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.2pGYhfScAwPMCRxr
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.0XAAVW24ZRinoFkY
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.AwNP1feiwFIIoGNh
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.1TxciocDhjUUeXjV
-            optional: false
+            sort: 0
         optional: false
         spell: null
+        sorting: m
       value: {}
       level: 0
+      flags: {}
+      name: ''
+      hint: ''
   description:
     value: >-
       <p>Elafia are deer-folk, bearing large antlers and a tendency for
@@ -174,10 +191,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1768680302864
-  modifiedTime: 1771157384288
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1794929384202
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!1HlPrysCFquM0O9O'

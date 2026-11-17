@@ -8,7 +8,7 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>Your Hit Point maximum increases by an amount equal to your Level.
@@ -38,7 +38,7 @@ system:
 effects:
   - name: Durable
     img: icons/skills/wounds/anatomy-organ-heart-red.webp
-    origin: null
+    origin: Item.LH8i2GuJ2NCY7ml4
     _id: Y7448URnPurMwOYY
     type: base
     system:
@@ -48,11 +48,19 @@ effects:
           priority: 20
           type: add
           phase: initial
-          _id: P0cWSYa1nYP1mHOH
+          _id: MJXXdfg2FgSEFUvu
           conditions: '{}'
           replacement: ''
+      rider:
+        statuses: []
       origin:
-        item: Item.LH8i2GuJ2NCY7ml4
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      conditions: '{}'
+      magical: false
     disabled: false
     duration:
       value: null
@@ -66,8 +74,7 @@ effects:
     sort: 0
     flags:
       dnd5e:
-        riders:
-          statuses: []
+        riders: {}
       dae:
         disableCondition: ''
         stackable: noneName
@@ -79,36 +86,36 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: null
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
-      createdTime: 1791733082198
-      modifiedTime: 1791733082198
+      createdTime: 1794923978247
+      modifiedTime: 1794923978247
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
     start: null
     showIcon: 1
     folder: null
-    _key: '!items.effects!UO0RZSeaAkW9AAvQ.Y7448URnPurMwOYY'
+    _key: '!items.effects!xiZVWOwQCu6DQVM1.Y7448URnPurMwOYY'
 flags:
   dnd5e:
     riders:
       activity: []
 _stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794923978247
+  modifiedTime: 1794923978281
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
-  systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1768680525061
-  modifiedTime: 1791733082197
-  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
-  9KtVYqHDTWORuJDZ: 3
-_id: UO0RZSeaAkW9AAvQ
-sort: 200000
-_key: '!items!UO0RZSeaAkW9AAvQ'
+  5XlrCO2NlPtd4MFQ: 3
+_id: xiZVWOwQCu6DQVM1
+sort: 425000
+_key: '!items!xiZVWOwQCu6DQVM1'

@@ -1,0 +1,180 @@
+folder: F7xt8Er4yJgI2eaK
+name: Weapon Expertise (Melee)
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_headb2_2.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You gain additional benefits based on your Weapon
+      Specialisation.</p><p><strong>Melee Combat.</strong> Your Critical Range
+      for Melee Attacks is improved by 1. When you roll to determine the Damage
+      of a Melee Attack, you may expend 1 Prowess as a Bonus Action to roll one
+      additional Damage die and add it to the total
+      Damage.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: weapon-expertise-melee
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - weapon-specialisation-melee
+    repeatable: false
+    level: 12
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: +1 Melee Crit Range
+    img: modules/ak5e/icons/skill_icon_skchr_headb2_2.png
+    system:
+      magical: false
+      origin:
+        item: Item.YH5ePDHCQSL4ozbl
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          type: ac5e
+          value: threshold=-1; actionType.mwak || actionType.msak
+          phase: initial
+          _id: E1E253kIiOq3tlKp
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: zBRyjcoBx0IoFXtJ
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Item.YH5ePDHCQSL4ozbl
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793568835696
+      modifiedTime: 1793568835696
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!T8K12WShrfrQl0Eb.zBRyjcoBx0IoFXtJ'
+  - name: +1 Die of Damage for 1 Prowess
+    img: modules/ak5e/icons/skill_icon_skchr_headb2_2.png
+    system:
+      magical: false
+      origin:
+        item: Item.YH5ePDHCQSL4ozbl
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.extraDice
+          type: ac5e
+          value: >-
+            bonus=1; usesCount=Item.prowess, 1; name=Weapon Expertise;
+            optinId=1-die-of-damage-for-1-prowess-0; description=+1 Die of
+            Damage; criticalStatic; optin; actionType.mwak || actionType.msak
+          phase: initial
+          _id: XXHDQblpNbQWIdAm
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: dFjx3XrfJASQlQhQ
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Item.YH5ePDHCQSL4ozbl
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793568835696
+      modifiedTime: 1793568835696
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!T8K12WShrfrQl0Eb.dFjx3XrfJASQlQhQ'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793568835696
+  modifiedTime: 1793568835742
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: T8K12WShrfrQl0Eb
+sort: 1825000
+_key: '!items!T8K12WShrfrQl0Eb'

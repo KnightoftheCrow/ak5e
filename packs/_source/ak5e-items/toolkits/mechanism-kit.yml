@@ -14,7 +14,7 @@ system:
         condition: ''
       consumption:
         scaling:
-          allowed: false
+          allowed: true
         spellSlot: true
         targets: []
       description:
@@ -47,11 +47,18 @@ system:
           - slt
         dc:
           calculation: ''
-          formula: ''
+          formula: '@scaling'
         ability: ''
+        bonus: ''
       name: Break and Enter
       img: ''
       appliedEffects: []
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+      otherActivityId: ''
     aMpbFQvn50ocHtq8:
       type: utility
       _id: aMpbFQvn50ocHtq8
@@ -313,21 +320,21 @@ system:
       (Partially Automated; rolls Sleight of Hand):</strong> Using this Kit as
       an Action, you may attempt to pick a non-electronic lock that you can
       touch. This is a Sleight of Hand Check, the DC of which is determined by
-      the GM based on the security of the lock.</p><p><strong>Secure (1
-      Charge):</strong> Just as you can open doors, you can close them. As an
-      Action, you can lock a door, container, or other lockable object that you
-      can touch. The DC for a Creature to pick that lock is equal to 8 + your
-      Sleight of Hand Modifier.</p><h3>Proficient Uses:</h3><p><strong>Red Wire,
-      Blue Wire (1 Charge) (Partially Automated: grants a +5 Sleight of Hand
-      Bonus that expires after 1 Check):</strong> The tools found in this kit
-      are, as it turns out, very useful for manipulating fine wires and holding
-      things in very specific places. As an Action, you gain a +5 Modifier to
-      your next Check to disarm a Trap.</p><p><strong>The Best Laid Plans (2
-      Charges):</strong> As a Long Rest Activity, you can prepare one of the
-      Traps from Trapmaster’s Place Trap Feature (except Timed Explosive). After
-      doing so, you may set that prepared Trap as an Action once. However, if
-      you are not a Trapmaster, the Damage of these Traps does not scale with
-      your Level.</p>
+      the GM based on the security of the lock; set the Scaling Value to the
+      check DC.</p><p><strong>Secure (1 Charge):</strong> Just as you can open
+      doors, you can close them. As an Action, you can lock a door, container,
+      or other lockable object that you can touch. The DC for a Creature to pick
+      that lock is equal to 8 + your Sleight of Hand Modifier.</p><h3>Proficient
+      Uses:</h3><p><strong>Red Wire, Blue Wire (1 Charge) (Partially Automated:
+      grants a +5 Sleight of Hand Bonus that expires after 1 Check):</strong>
+      The tools found in this kit are, as it turns out, very useful for
+      manipulating fine wires and holding things in very specific places. As an
+      Action, you gain a +5 Modifier to your next Check to disarm a
+      Trap.</p><p><strong>The Best Laid Plans (2 Charges):</strong> As a Long
+      Rest Activity, you can prepare one of the Traps from Trapmaster’s Place
+      Trap Feature (except Timed Explosive). After doing so, you may set that
+      prepared Trap as an Action once. However, if you are not a Trapmaster, the
+      Damage of these Traps does not scale with your Level.</p>
     chat: ''
   identifier: mechanism-kit
   source:
@@ -482,7 +489,7 @@ _stats:
   systemId: dnd5e
   systemVersion: 6.0.6
   createdTime: 1756485622214
-  modifiedTime: 1792249740301
+  modifiedTime: 1794431126900
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: IIulvylBDhw2Zz4F
 sort: 425000

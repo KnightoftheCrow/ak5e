@@ -293,7 +293,7 @@ effects:
     duration:
       value: null
       units: seconds
-      expiry: null
+      expiry: targetEnd
       expired: false
     description: ''
     tint: '#ffffff'
@@ -315,20 +315,19 @@ effects:
         dontApply: false
         durationExpression: ''
         macroRepeat: none
-        specialDuration:
-          - turnEnd
+        specialDuration: []
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
       createdTime: 1791733108919
-      modifiedTime: 1791733108919
+      modifiedTime: 1793630691649
     showIcon: 2
     start: null
     folder: null

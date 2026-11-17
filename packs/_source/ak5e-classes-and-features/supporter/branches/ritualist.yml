@@ -10,16 +10,15 @@ system:
       _id: cC8OCRl3unaH0svt
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.W8wqCXzRJcBGn2qk
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.tS4lSGDkvFrI1p4D
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.flzTIPVpN18UAvku
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.3R4CNvCNPQmpT5Lg
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-arts.Item.6GMX3sLNtYU5pEtM
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.W8wqCXzRJcBGn2qk
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.tS4lSGDkvFrI1p4D
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.3R4CNvCNPQmpT5Lg
         optional: false
         spell: null
       flags: {}
@@ -83,26 +82,40 @@ system:
       hint: ''
       _id: ItTtmWMUlBldy62n
       title: ''
-    J4cwcUyAmu28Y4Hl:
-      type: ItemGrant
-      _id: J4cwcUyAmu28Y4Hl
+    5gwjrF3qWd6TGhXE:
+      name: Choose Spellcasting Ability
+      type: ItemChoice
+      _id: 5gwjrF3qWd6TGhXE
       configuration:
-        items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.Qi4Mc2HB3snq2eE5
-            optional: false
-        optional: false
+        allowDrops: false
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        pool:
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.hDMq4K0Iy83vSakb
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.flzTIPVpN18UAvku
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.o4VqM9BrDfDcqO0P
+        restriction:
+          list: []
+          school: []
+        sorting: a
         spell: null
-      value: {}
-      level: 1
-      title: 'Changes to Core Rules: Cantrips'
-      hint: <p>All Creatures gain +Spellcasting Mod Damage to their Cantrips.</p>
+        type: null
       flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
   description:
     value: >-
       <p>A Ritualist’s Arts are poorly understood, sometimes even by themselves.
       Meticulously chasing goals only known to them, they warp the world around
-      them on behalf of their allies; sometimes permanently.</p><p>You get next
-      Branch features:</p><table><tbody><tr><td
+      them on behalf of their allies; sometimes permanently.</p><p>You gain the
+      following Branch features:</p><table><tbody><tr><td
       data-colwidth="50"><p>Level</p></td><td><p>Branch
       Feature</p></td></tr><tr><td data-colwidth="50"><p
       style="text-align:center">1</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.flzTIPVpN18UAvku]{Ritual
@@ -139,11 +152,11 @@ _stats:
   compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.TijKgsBgvzmLwU5b
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206076893
-  modifiedTime: 1791400640120
+  modifiedTime: 1794846828631
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0

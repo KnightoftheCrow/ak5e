@@ -1,0 +1,291 @@
+folder: szoxo8J5vBjVMBub
+name: Journey of Self-Pacification
+type: feat
+_id: QgYsYhCHVUJFWwtG
+img: icons/magic/control/silhouette-aura-energy.webp
+system:
+  activities:
+    Wr8daBALHmK4CXlJ:
+      type: utility
+      name: Begin Journey
+      _id: Wr8daBALHmK4CXlJ
+      img: ''
+      sort: 0
+      activation:
+        type: longRest
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: ExpIMupkarg6zR1W
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <h3>Journey of Self-Pacification</h3><p>So far removed from the Royal
+      Courts of the Sarkaz cousins, the Oni have had to confront their nature
+      unsupported; chaining their rage away with discipline and meditation. This
+      practice of self-strengthening has been essential for their survival and
+      integration within society, and has given them a mental fortitude
+      unmatched by most. You gain the following
+      benefits:</p><ul><li><p><strong>Condition Resistance.</strong> You have
+      Advantage on Saving Throws to avoid or end the Frightened or Charmed
+      Condition.</p></li><li><p><strong>Damage Resistance.</strong> You are
+      Resistant to Psychic Damage.</p></li><li><p><strong>Mediator.</strong> You
+      have Advantage on Charisma-based Checks to convince Creatures to disarm or
+      choose a non-violent option.</p></li></ul><hr><p><strong>Semi-Automated:
+      </strong>There is an Opt-In for Charisma Checks. All else is
+      automated.</p>
+    chat: ''
+  identifier: journey-of-self-pacification
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Journey of Self-Pacification
+    img: icons/magic/control/silhouette-aura-energy.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.QgYsYhCHVUJFWwtG
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.traits.dr.value
+          type: add
+          value: psychic
+          phase: initial
+          _id: HkoqSGuSXi9YLyYz
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.cat.CR.charmed
+          type: custom
+          value: true
+          phase: initial
+          _id: 37SId4lm7JVwuUAu
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.cat.CR.frightened
+          type: custom
+          value: true
+          phase: initial
+          _id: 08yayndaB6io9rYZ
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.check.advantage
+          type: ac5e
+          value: >-
+            name=Journey of Self-Pacification;
+            optinId=journey-of-self-pacification-3; description=Advantage on
+            Charisma for non-violent persuasion; optin; ability.cha
+          phase: initial
+          _id: esBvI5Jsuh53FGuI
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: ExpIMupkarg6zR1W
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-character-origins.Item.QgYsYhCHVUJFWwtG
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: '!effects.some(e => e.name === "Bloodfury")'
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794853083877
+      modifiedTime: 1794874874516
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!QgYsYhCHVUJFWwtG.ExpIMupkarg6zR1W'
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794853083877
+  modifiedTime: 1794874768145
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!QgYsYhCHVUJFWwtG'

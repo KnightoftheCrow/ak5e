@@ -1,0 +1,122 @@
+folder: F7xt8Er4yJgI2eaK
+name: Weapon Mastery (Melee)
+type: feat
+_id: dcfnldBC1pqvhTwg
+img: modules/ak5e/icons/Skill-Vetochki2.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You gain additional benefits based on your Weapon
+      Specialisation.</p><p><strong>Melee Combat.</strong> Once per Turn when
+      you hit with a Melee Attack Roll, you can cause that Attack to deal
+      additional Weapon Damage equal to half your Specialist
+      Level.</p><p><strong>Ranged Combat.</strong> Once per Turn when you make a
+      Ranged Attack Roll, you can double your Proficiency Bonus for the purpose
+      of that Ranged Attack Roll only.</p><p><strong>Not Automated.</strong></p>
+    chat: ''
+  identifier: weapon-mastery-melee
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - weapon-specialisation-melee
+    repeatable: false
+    level: 18
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: 1/Turn +Level/2 to Melee Damage
+    img: modules/ak5e/icons/Skill-Vetochki2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.dcfnldBC1pqvhTwg
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=floor{@details.level/2); name=Weapon Mastery;
+            optinId=1turn-level2-to-melee-damage-0; description=+Level/2 Bonus
+            Damage; oncePerTurn; optin; actionType.mwak || actionType.msak
+          phase: initial
+          _id: mvziPahoefxMLVJT
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: EtNPsWszYzmD9Ce4
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.dcfnldBC1pqvhTwg
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793570040495
+      modifiedTime: 1793570393458
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!dcfnldBC1pqvhTwg.EtNPsWszYzmD9Ce4'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.dcfnldBC1pqvhTwg
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791301114346
+  modifiedTime: 1793570429533
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 1900000
+_key: '!items!dcfnldBC1pqvhTwg'

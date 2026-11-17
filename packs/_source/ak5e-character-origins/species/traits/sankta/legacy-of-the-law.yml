@@ -2,15 +2,160 @@ folder: yiXty7I7KQYSFUc4
 name: Legacy of the Law
 type: feat
 _id: sYu0VrMVVOEAhYut
-img: icons/skills/ranged/rifle-scoped-gray-green.webp
+img: icons/weapons/guns/machine-pistol-silver-orange.webp
 system:
-  activities: {}
+  activities:
+    XLWQxbD759hCo9me:
+      type: enchant
+      name: Designate Patron Firearm
+      _id: XLWQxbD759hCo9me
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: kAxVkUHD7AmN0Gv6
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity: []
+            effect: []
+            item: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      enchant:
+        self: false
+      restrictions:
+        allowMagical: true
+        categories: []
+        properties:
+          - frm
+        type: weapon
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
   advancement:
-    - type: Trait
+    d4cyX4SnlTg71jqT:
+      type: Trait
       _id: d4cyX4SnlTg71jqT
       configuration:
         allowReplacements: false
@@ -22,10 +167,12 @@ system:
           - weapon:hvr:shotgun
         mode: default
       level: 0
-      title: ''
       hint: ''
       value: {}
-    - type: ItemChoice
+      name: ''
+      flags: {}
+    BRO2jbi8mXGwIHqh:
+      type: ItemChoice
       _id: BRO2jbi8mXGwIHqh
       configuration:
         allowDrops: false
@@ -35,17 +182,41 @@ system:
             replacement: false
         pool:
           - uuid: Compendium.ak5e.ak5e-items.Item.GUk1cU5RDuYL3OOj
+            sort: 0
           - uuid: Compendium.ak5e.ak5e-items.Item.83TFCWS78pu6wFbu
+            sort: 0
           - uuid: Compendium.ak5e.ak5e-items.Item.IRMIzg2gLDqpCi2W
+            sort: 0
           - uuid: Compendium.ak5e.ak5e-items.Item.xtQm4gHdpMpPG44x
+            sort: 0
         restriction:
           list: []
+          school: []
         spell: null
         type: null
+        sorting: a
       value:
         added: {}
         replaced: {}
-      title: Choose your Patron Firearm
+      hint: ''
+      name: Choose your Patron Firearm
+      flags: {}
+    1ZaalxWBYuexREK3:
+      name: Patron Firearm Attack/Damage Bonus
+      type: ScaleValue
+      _id: 1ZaalxWBYuexREK3
+      configuration:
+        identifier: bonus
+        type: number
+        distance:
+          units: ''
+        scale:
+          '7':
+            value: 1
+          '14':
+            value: 2
+      flags: {}
+      value: {}
       hint: ''
   description:
     value: >-
@@ -55,9 +226,12 @@ system:
       Weapons that have the Firearm Property. You gain a Patron Firearm version
       of one of those Weapons as Starting Equipment (your choice). When wielded
       by a Fallen Sankta, or a non-Sankta, Attacks made with that Patron Firearm
-      are made at Disadvantage.</p><p>If you become a Fallen Sankta, you
-      maintain your Proficiency with Firearms, but you have Disadvantage when
-      using your Patron Firearm.</p><p><strong>Automated.</strong></p>
+      are made at Disadvantage.</p><p>From Level 7, you have a +1 Bonus to
+      Attack and Damage Rolls using your Patron Firearm. From Level 14, this
+      Bonus becomes +2. You lose this Bonus if you become a Fallen
+      Sankta.</p><hr><p><strong>Semi-Automated: </strong>When you get your
+      Patron Firearm, make sure to use the Enchantment Activity on this Feature
+      on it.</p>
     chat: ''
   identifier: legacy-of-the-law
   source:
@@ -78,23 +252,96 @@ system:
   type:
     value: race
     subtype: ''
-effects: []
+effects:
+  - type: enchantment
+    name: Patron Firearm
+    img: icons/weapons/guns/machine-pistol-silver-orange.webp
+    disabled: true
+    transfer: false
+    _id: kAxVkUHD7AmN0Gv6
+    system:
+      changes:
+        - key: name
+          type: add
+          value: Patron {}
+          phase: initial
+          _id: SsfGKPAq2tLrsEEL
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: activities[attack].attack.bonus
+          type: add
+          value: '@scale.legacy-of-the-law.bonus'
+          phase: initial
+          _id: bzcUsdgGBcd7nex4
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: system.damage.bonus
+          type: add
+          value: '@scale.legacy-of-the-law.bonus'
+          phase: initial
+          _id: apzFHZS9K2EkZrJe
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794948575045
+      modifiedTime: 1794948796932
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!sYu0VrMVVOEAhYut.kAxVkUHD7AmN0Gv6'
 sort: 0
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1768680322247
-  modifiedTime: 1768680322247
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1794948770240
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!sYu0VrMVVOEAhYut'

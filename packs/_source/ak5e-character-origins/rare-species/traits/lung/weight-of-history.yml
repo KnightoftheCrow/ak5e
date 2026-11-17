@@ -1,0 +1,223 @@
+folder: XPiC2HwCP491R2i0
+name: Weight of History
+type: feat
+_id: HOyjGBDIBBSm90QY
+img: icons/tools/scribal/ink-quill-pink.webp
+system:
+  activities:
+    NEnBqiiQ6PeSTSUR:
+      type: check
+      name: Learn From The Past
+      _id: NEnBqiiQ6PeSTSUR
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: true
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      check:
+        associated:
+          - rel
+        dc:
+          calculation: ''
+          formula: '@scaling'
+        visible: true
+        ability: ''
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      damage:
+        onSave: half
+        parts: []
+        critical:
+          allow: false
+      friendlySave: default
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  advancement:
+    UvPiFzLHQgquNsyD:
+      name: ''
+      type: Trait
+      _id: UvPiFzLHQgquNsyD
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - skills:rel
+        mode: default
+      flags: {}
+      level: 0
+      hint: ''
+      value: {}
+  description:
+    value: >-
+      <h3>Weight of History</h3><p>Like all Elders, the Lung bear the weight of
+      the past; unlike others, they wield it as a fine ink pen, rather than a
+      cross for their own backs. You gain the following
+      benefits:</p><ul><li><p><strong>Additional Skill Proficiency.</strong> You
+      are Proficient in the Lore Skill.</p></li><li><p><strong>Learn From The
+      Past.</strong> Once per Long Rest, when you would make a Skill Check using
+      your Charisma Score, you can choose to make a Lore Check instead. If the
+      result of the Lore Check is higher than the DC of the Skill Check, you
+      succeed on that Skill Check.</p></li></ul><hr><p><strong>Automated:
+      </strong>Proficiency is automatic. When using Learn From The Past, set the
+      Scaling Value to the DC of the Skill Check.</p>
+    chat: ''
+  identifier: weight-of-history
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794853218335
+  modifiedTime: 1794859417133
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!HOyjGBDIBBSm90QY'

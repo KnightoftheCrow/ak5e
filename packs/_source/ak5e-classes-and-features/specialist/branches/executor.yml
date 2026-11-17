@@ -8,14 +8,16 @@ system:
       type: ItemChoice
       _id: vOl90ZqJ8wMkmN5h
       configuration:
-        allowDrops: true
+        allowDrops: false
         choices:
           '1':
             count: 1
             replacement: false
         pool:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.kqwkHjTaiIjCvi5X
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.wdArlFZHTvXVS5DR
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.wdArlFZHTvXVS5DR
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.IJmhoIOctMN9mUDB
+            sort: 0
         restriction:
           list: []
         spell: null
@@ -26,96 +28,6 @@ system:
         replaced: {}
       hint: ''
       title: ''
-    p6JpGAhQYqQDyD3j:
-      type: ItemChoice
-      configuration:
-        allowDrops: true
-        choices:
-          '5':
-            count: 1
-            replacement: false
-        pool:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.M1GUs2xp4K1FzIc7
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.8hcLV51sdTOLzyV9
-        restriction:
-          list: []
-        spell: null
-        type: null
-      flags: {}
-      value:
-        added: {}
-        replaced: {}
-      hint: ''
-      title: ''
-      _id: p6JpGAhQYqQDyD3j
-    y3f8YFHA2yIEkOql:
-      type: ItemChoice
-      configuration:
-        allowDrops: true
-        choices:
-          '11':
-            count: 1
-            replacement: false
-        pool:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.Q91xkjxSrU18r3zZ
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.lwNWtXxCVNRdUbD5
-        restriction:
-          list: []
-        spell: null
-        type: null
-      flags: {}
-      value:
-        added: {}
-        replaced: {}
-      hint: ''
-      title: ''
-      _id: y3f8YFHA2yIEkOql
-    OA9I0PNEfS62jKs9:
-      type: ItemChoice
-      configuration:
-        allowDrops: true
-        choices:
-          '20':
-            count: 1
-            replacement: false
-        pool:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.9Ppp4KNZkDsJoQip
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.Q0zzbLJ2kWmjln5m
-        restriction:
-          list: []
-        spell: null
-        type: null
-      flags: {}
-      value:
-        added: {}
-        replaced: {}
-      hint: ''
-      title: ''
-      _id: OA9I0PNEfS62jKs9
-    cACENhkvEBKrqDgx:
-      type: ItemChoice
-      configuration:
-        allowDrops: true
-        choices:
-          '15':
-            count: 1
-            replacement: false
-        pool:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.ZOojcsxAfy4eC5cP
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.muBuHzSgKJi1rvbq
-        restriction:
-          list: []
-          type: ''
-          subtype: ''
-        spell: null
-        type: null
-      flags: {}
-      value:
-        added: {}
-        replaced: {}
-      hint: ''
-      title: ''
-      _id: cACENhkvEBKrqDgx
     CyOjGxYWnYsMFOOe:
       type: ItemGrant
       _id: CyOjGxYWnYsMFOOe
@@ -130,38 +42,140 @@ system:
       level: 5
       hint: ''
       title: ''
+    xKJCkgOSyaSVonvX:
+      name: ''
+      type: ItemChoice
+      _id: xKJCkgOSyaSVonvX
+      configuration:
+        allowDrops: false
+        choices:
+          '5':
+            count: 1
+            replacement: false
+        pool:
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.M1GUs2xp4K1FzIc7
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.8hcLV51sdTOLzyV9
+        restriction:
+          list: []
+          school: []
+        sorting: a
+        spell: null
+        type: null
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
+    AOjdnHSbXpfYUw6X:
+      name: ''
+      type: ItemChoice
+      configuration:
+        allowDrops: false
+        choices:
+          '11':
+            count: 1
+            replacement: false
+        pool:
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.Q91xkjxSrU18r3zZ
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.lwNWtXxCVNRdUbD5
+            sort: 0
+        restriction:
+          list: []
+          school: []
+        sorting: a
+        spell: null
+        type: null
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
+      _id: AOjdnHSbXpfYUw6X
+    CbajK5OpZVbQ8qF5:
+      name: ''
+      type: ItemChoice
+      configuration:
+        allowDrops: false
+        choices:
+          '15':
+            count: 1
+            replacement: false
+        pool:
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.ZOojcsxAfy4eC5cP
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.muBuHzSgKJi1rvbq
+        restriction:
+          list: []
+          school: []
+        sorting: a
+        spell: null
+        type: null
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
+      _id: CbajK5OpZVbQ8qF5
+    8pDxb8q2itajY8Dx:
+      name: ''
+      type: ItemChoice
+      configuration:
+        allowDrops: false
+        choices:
+          '20':
+            count: 1
+            replacement: false
+        pool:
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.Q0zzbLJ2kWmjln5m
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.9Ppp4KNZkDsJoQip
+            sort: 0
+        restriction:
+          list: []
+          school: []
+        sorting: a
+        spell: null
+        type: null
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
+      _id: 8pDxb8q2itajY8Dx
   description:
     value: >-
-      <p>Dollkeepers are an eccentric bunch, even amongst the already eccentric
-      Specialists. Whether their Doll is a complex mechanical construct, an
-      inanimate structure animated by Arts, or something even more poorly
-      understood, they have a reputation for being somewhat strange, even
-      disconcerting. Where a Dollkeeper is required however, almost no-one can
-      fill their place.</p><p>You get next Branch
+      <p>An Executor Specialist’s primary concern is their mission, whatever it
+      may be. Skulking in the shadows, waiting for their moment, before fading
+      away once more. As a result, they are often not the most sociable people;
+      but if you need a target dead, or a target preserved, you can ask for no
+      better.</p><p>You get the following Branch
       features:</p><table><tbody><tr><td
       data-colwidth="50"><p>Level</p></td><td><p>Branch
       Feature</p></td></tr><tr><td data-colwidth="50"><p
-      style="text-align:center">1</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.wdArlFZHTvXVS5DR]{The
-      Wolf and the Shepherd (Bodyguard
-      Path)}</p><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.kqwkHjTaiIjCvi5X]{The
-      Wolf and the Shepherd (Hunter Path)}</p></td></tr><tr><td
+      style="text-align:center">1</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.IJmhoIOctMN9mUDB]{The
+      Wolf and the Shepherd (Hunter
+      Path)}</p><p>OR</p><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.wdArlFZHTvXVS5DR]{The
+      Wolf and the Shepherd (Bodyguard Path)}</p></td></tr><tr><td
       data-colwidth="50"><p
-      style="text-align:center">5</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.M1GUs2xp4K1FzIc7]{Escape
-      the
-      Ambush}</p><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.8hcLV51sdTOLzyV9]{Spring
-      the Ambush}</p></td></tr><tr><td data-colwidth="50"><p
       style="text-align:center">5</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.cafTpF1e9GXPsnc4]{In
       Every Shadow}</p></td></tr><tr><td data-colwidth="50"><p
-      style="text-align:center">11</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.Q91xkjxSrU18r3zZ]{Preysense}</p></td></tr><tr><td
+      style="text-align:center">5</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.8hcLV51sdTOLzyV9]{Spring
+      the
+      Ambush}</p><p>OR</p><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.M1GUs2xp4K1FzIc7]{Escape
+      the Ambush}</p></td></tr><tr><td data-colwidth="50"><p
+      style="text-align:center">11</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.Q91xkjxSrU18r3zZ]{Preysense}</p><p>OR</p><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.lwNWtXxCVNRdUbD5]{Dangersense}</p></td></tr><tr><td
       data-colwidth="50"><p
       style="text-align:center">15</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.ZOojcsxAfy4eC5cP]{In
       for the
-      Kill}</p><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.muBuHzSgKJi1rvbq]{Blade
+      Kill}</p><p>OR</p><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.muBuHzSgKJi1rvbq]{Blade
       Shield}</p></td></tr><tr><td data-colwidth="50"><p
-      style="text-align:center">20</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.9Ppp4KNZkDsJoQip]{Ultimate
-      Sword and
-      Shield}</p><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.Q0zzbLJ2kWmjln5m]{Mortal
-      Blow}</p></td></tr></tbody></table>
+      style="text-align:center">20</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.Q0zzbLJ2kWmjln5m]{Mortal
+      Blow}</p><p>OR</p><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.9Ppp4KNZkDsJoQip]{Ultimate
+      Sword and Shield}</p></td></tr></tbody></table>
     chat: ''
   identifier: executor
   source:
@@ -179,11 +193,11 @@ flags:
     riders:
       activity: []
 _stats:
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206228750
-  modifiedTime: 1791400603552
+  modifiedTime: 1794252491030
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
   compendiumSource: null
   duplicateSource: null

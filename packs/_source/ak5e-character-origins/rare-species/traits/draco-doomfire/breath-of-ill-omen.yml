@@ -1,0 +1,483 @@
+folder: bnxApFVEwgW9EwEq
+name: Breath of Ill Omen
+type: feat
+_id: pTWenA0koHkjnCcr
+img: icons/magic/fire/beam-jet-stream-trails-orange.webp
+system:
+  activities:
+    rJm8vZBJEvg3PQIN:
+      type: heal
+      name: Breath of Ill Omen
+      _id: rJm8vZBJEvg3PQIN
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling:
+              mode: amount
+              formula: ''
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: KtAwxiCS1YiAVLVf
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '10'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      healing:
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '@scale.breath-of-ill-omen.scale-value+@abilities.cha.mod'
+        modifiers: []
+        scaling:
+          number: 1
+          mode: whole
+          formula: ''
+        number: null
+        denomination: null
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+    WtA6H1IGmJ8JFRBO:
+      type: heal
+      name: Breath of Ill Omen (Casters)
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling:
+              mode: amount
+              formula: ''
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: KtAwxiCS1YiAVLVf
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '100'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      healing:
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '@scale.breath-of-ill-omen.scale-value+@abilities.cha.mod'
+        modifiers: []
+        scaling:
+          number: 1
+          mode: whole
+          formula: ''
+        number: null
+        denomination: null
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: WtA6H1IGmJ8JFRBO
+  uses:
+    spent: 0
+    recovery: []
+    max: '@prof*2'
+  advancement:
+    f6ob6NOFNI8vM0Ve:
+      name: ''
+      type: ScaleValue
+      _id: f6ob6NOFNI8vM0Ve
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 1
+            faces: 4
+          '7':
+            faces: 6
+      flags: {}
+      value: {}
+      hint: ''
+  description:
+    value: >-
+      <h3>Breath of Ill Omen</h3><p>Legends and stories of Doomfire Draco tell
+      of their purple flames consuming entire cities and nations, burning sanity
+      but never a building. The Doomfire’s “flames” can bring back the dead, for
+      good or ill intention, but the cost of defying death is never free; the
+      further a Doomfire spreads their flames, the frailer they
+      become.</p><p>You have a pool of dice equal to twice your Proficiency
+      Bonus. These dice are d4’s; your pool of dice is refilled to its maximum
+      whenever you complete a Long Rest. As an Action, choose a dead Creature
+      within 10 feet of you whose CR or Level is less than your Level; this
+      range is increased to 100 feet if you are capable of casting any Levelled
+      Art. Then, expend any amount of dice from your pool. Roll those dice, and
+      add your Charisma Modifier (unless it is negative); that Creature is
+      returned to life with Hit Points equal to the amount rolled. Creatures
+      revived in this way follow these rules:</p><ul><li><p>The Creatures Stats
+      and Features remain the same.</p></li><li><p>The Creature’s Type is
+      changed to Undead.</p></li><li><p>They are completely loyal to you, but
+      cannot speak or otherwise communicate.</p></li><li><p>The Creature acts on
+      its own Initative in combat.</p></li><li><p>They cannot regain Hit Points
+      in any way.</p></li><li><p>They cannot cast Arts.</p></li><li><p>A
+      Creature revived in this way cannot be revived in this way
+      again.</p></li></ul><p>While you have a Creature revived in this way, you
+      cannot regain the dice from your Pool you expended to revive that
+      Creature. As an Action, you can take back your Fire from any of your
+      Undead; this results in the Creature’s instant death, and restores your
+      ability to regain those dice.</p><p>From 7th Level, the size of the dice
+      in your pool is increased to d6.</p><hr><p><strong>Semi Automated:
+      </strong>You must manually restore your uses of this Feature.</p>
+    chat: ''
+  identifier: breath-of-ill-omen
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Breath of Ill Omen
+    img: icons/magic/fire/beam-jet-stream-trails-orange.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.pTWenA0koHkjnCcr
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.details.type.value
+          type: override
+          value: undead
+          phase: initial
+          _id: 8RPPgsDsjvG4b2BH
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: system.traits.di.value
+          type: add
+          value: healing
+          phase: initial
+          _id: u80rKBbapmeJCAdR
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: token.disposition
+          type: override
+          value: 1
+          phase: initial
+          _id: 1HX4OeMp0K81og6O
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: KtAwxiCS1YiAVLVf
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 2
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794854298319
+      modifiedTime: 1794854776878
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!pTWenA0koHkjnCcr.KtAwxiCS1YiAVLVf'
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794853187640
+  modifiedTime: 1794854534902
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!pTWenA0koHkjnCcr'

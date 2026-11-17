@@ -1,0 +1,113 @@
+folder: kqvuv2G7bNqGA5cb
+name: Passthrough
+type: feat
+_id: elrVjish7gvI4aFW
+img: icons/creatures/mammals/rodent-rat-diseaed-gray.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <h3>Passthrough</h3><p>Small and slight, some Anaty survive their
+      hazardous, rugged homelands by avoiding danger rather than confronting it.
+      You can move through the spaces of hostile Creatures, but it is treated as
+      Difficult Terrain that is not affected by your Lead The Way
+      Feature.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: passthrough
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Passthrough
+    img: icons/creatures/mammals/rodent-rat-diseaed-gray.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.elrVjish7gvI4aFW
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.cat.ignoreDifficultTerrain.tokens
+          type: custom
+          value: true
+          phase: initial
+          _id: DeoSsjySZUwF8ADf
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: kfnClhsYpVH8sRtA
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-character-origins.Item.elrVjish7gvI4aFW
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794922663221
+      modifiedTime: 1794922750754
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!elrVjish7gvI4aFW.kfnClhsYpVH8sRtA'
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794922618488
+  modifiedTime: 1794923670857
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!elrVjish7gvI4aFW'

@@ -1,0 +1,190 @@
+folder: mxCroM4JwGZ320gO
+name: Incredible Sense of Smell
+type: feat
+img: icons/skills/targeting/target-glowing-yellow.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement: {}
+  description:
+    value: >-
+      <h3>Incredible Sense of Smell</h3><p>The Vulpo’s sense of smell is so
+      adept, their other senses can sometimes take a backseat.</p><p>As long as
+      you have access to your sense of smell, you have 20 feet of Blindsight.
+      From 7th level, you can also see Invisible Creatures within this
+      range.</p><p><strong>Partially Automated. </strong>Remember to update the
+      vision range.</p>
+    chat: ''
+  identifier: incredible-smell
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: 20ft Blindsight
+    img: icons/skills/targeting/target-glowing-yellow.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.QvV0GnjZcgW8SgC2
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.senses.ranges.blindsight
+          type: upgrade
+          value: 20
+          phase: initial
+          _id: 4VwcwA0wpjvHxYtQ
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: ftCaG4Yu0XzxpDmx
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-character-origins.Item.QvV0GnjZcgW8SgC2
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794861909524
+      modifiedTime: 1794861926359
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!QvV0GnjZcgW8SgC2.ftCaG4Yu0XzxpDmx'
+  - name: See Invisible
+    img: icons/skills/targeting/target-glowing-yellow.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.QvV0GnjZcgW8SgC2
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: token.detectionModes.seeInvisibility.enabled
+          type: add
+          value: true
+          phase: initial
+          _id: j81uMeOUaFNdDdxD
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: token.detectionModes.seeInvisibility.range
+          type: add
+          value: 20
+          phase: initial
+          _id: 3voMrPG4Wl3q9xc5
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '[{"k":"details.level","o":"gte","v":7}]'
+      rider:
+        statuses: []
+    type: base
+    _id: axag6uRCBXU2R24X
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-character-origins.Item.QvV0GnjZcgW8SgC2
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794861973622
+      modifiedTime: 1794862024397
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!QvV0GnjZcgW8SgC2.axag6uRCBXU2R24X'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794861875081
+  modifiedTime: 1794861875114
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: QvV0GnjZcgW8SgC2
+sort: 100000
+_key: '!items!QvV0GnjZcgW8SgC2'

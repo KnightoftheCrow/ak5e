@@ -4,115 +4,7 @@ type: feat
 _id: Y8mjiTNFXaDoFlI1
 img: icons/magic/control/energy-stream-link-spiral-orange.webp
 system:
-  activities:
-    G67DzM0nL3qjC3tq:
-      type: utility
-      _id: G67DzM0nL3qjC3tq
-      sort: 0
-      activation:
-        type: ''
-        override: false
-        condition: ''
-      consumption:
-        scaling:
-          allowed: false
-        spellSlot: true
-        targets:
-          - type: itemUses
-            value: '1'
-            target: ''
-            scaling: {}
-      description:
-        chatFlavor: ''
-      duration:
-        units: inst
-        concentration: false
-        override: false
-      effects:
-        - _id: vM2uMHRq3NZLiJGl
-          level:
-            min: null
-            max: null
-      flags: {}
-      range:
-        units: self
-        override: false
-        special: ''
-      target:
-        template:
-          contiguous: false
-          units: ft
-          type: ''
-        affects:
-          choice: false
-          type: ''
-        override: false
-        prompt: true
-      uses:
-        spent: 0
-        recovery: []
-        max: ''
-      visibility:
-        level:
-          min: null
-          max: null
-        requireAttunement: false
-        requireIdentification: false
-        requireMagic: false
-        identifier: ''
-      roll:
-        prompt: false
-        visible: false
-        name: ''
-        formula: ''
-      useConditionText: ''
-      useConditionReason: ''
-      effectConditionText: ''
-      macroData:
-        name: ''
-        command: ''
-      ignoreTraits:
-        idi: false
-        idr: false
-        idv: false
-        ida: false
-        idm: false
-      midiProperties:
-        ignoreTraits: []
-        triggeredActivityId: none
-        triggeredActivityConditionText: ''
-        triggeredActivityTargets: targets
-        triggeredActivityRollAs: self
-        autoConsume: true
-        forceConsumeDialog: default
-        forceRollDialog: default
-        forceDamageDialog: default
-        confirmTargets: default
-        autoTargetType: any
-        autoTargetAction: default
-        automationOnly: false
-        otherActivityCompatible: true
-        otherActivityAsParentType: true
-        identifier: ''
-        displayActivityName: false
-        rollMode: default
-        chooseEffects: false
-        toggleEffect: false
-        ignoreFullCover: false
-        removeChatButtons: default
-        magicEffect: false
-        magicDamage: false
-        noConcentrationCheck: false
-        autoCEEffects: default
-        skipConcentrationCheck: false
-      isOverTimeFlag: false
-      overTimeProperties:
-        saveRemoves: true
-        preRemoveConditionText: ''
-        postRemoveConditionText: ''
-      otherActivityId: none
-      otherActivityAsParentType: true
-      name: ''
+  activities: {}
   uses:
     spent: 0
     recovery:
@@ -127,9 +19,8 @@ system:
       place their blows and their Arts to achieve maximum effect.</p><p>Once per
       Turn, when you roll to determine the Damage you deal, or the Hit Points
       you restore with an Art, you can roll one additional die and discard the
-      die with the lowest result.</p><p><strong>Not Automated. </strong>Using
-      the Activity only marks that you have used Fine Tuning until the beginning
-      of your next Turn.</p>
+      die with the lowest result.</p><hr><p><strong>Automated: </strong>You have
+      an Opt-In effect when rolling Damage or Healing.</p>
     chat: ''
   identifier: fine-tuning
   source:
@@ -148,78 +39,95 @@ system:
   properties: []
   requirements: ''
   type:
-    value: ''
+    value: race
     subtype: ''
 effects:
-  - name: Fine Tuning Used
+  - name: Fine Tuning
     img: icons/magic/control/energy-stream-link-spiral-orange.webp
-    origin: null
-    transfer: false
-    _id: vM2uMHRq3NZLiJGl
-    type: base
     system:
-      changes: []
+      magical: false
       origin:
         item: Compendium.ak5e.ak5e-character-origins.Item.Y8mjiTNFXaDoFlI1
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.extraDice
+          type: ac5e
+          value: >-
+            bonus=1; name=Fine Tuning; optinId=fine-tuning-0; description=Roll 1
+            Extra Die and discard the lowest result.; oncePerTurn; optin;
+            isSpell
+          phase: initial
+          _id: XfAi5qeLWnov3sJo
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: modifier=d; optinSelected['fine-tuning-0']
+          phase: initial
+          _id: 4G6C1O1zLq1qGq5q
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: pQEX01ryUXextaG7
     disabled: false
+    start: null
     duration:
       value: null
       units: seconds
       expiry: null
       expired: false
     description: ''
+    origin: Compendium.ak5e.ak5e-character-origins.Item.Y8mjiTNFXaDoFlI1
     tint: '#ffffff'
+    transfer: true
     statuses: []
+    showIcon: 1
+    folder: null
     sort: 0
     flags:
-      dnd5e:
-        riders:
-          statuses: []
       dae:
-        enableCondition: ''
         disableCondition: ''
         stackable: noneName
-        showIcon: true
-        disableIncapacitated: false
-        selfTarget: false
-        selfTargetAlways: false
-        dontApply: false
+        expiryMode: default
         durationExpression: ''
         macroRepeat: none
-        specialDuration:
-          - turnStartSource
+        disableIncapacitated: false
+        specialDuration: []
       core:
         overlay: false
     _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794947877326
+      modifiedTime: 1794948071535
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
-      systemId: dnd5e
-      systemVersion: 6.0.6
-      lastModifiedBy: 5XlrCO2NlPtd4MFQ
-      createdTime: 1791733082483
-      modifiedTime: 1791733082483
-    start: null
-    showIcon: 1
-    folder: null
-    _key: '!items.effects!Y8mjiTNFXaDoFlI1.vM2uMHRq3NZLiJGl'
+    _key: '!items.effects!Y8mjiTNFXaDoFlI1.pQEX01ryUXextaG7'
 sort: 0
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1768680294541
-  modifiedTime: 1791733082483
+  modifiedTime: 1794948099266
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!Y8mjiTNFXaDoFlI1'

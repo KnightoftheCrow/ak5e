@@ -8,8 +8,12 @@ system:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.mFlEn0zBWbRslklu
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.mFlEn0zBWbRslklu
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.8iLsWgmR5WO0uxuZ
             optional: false
+            sort: 0
         optional: false
         spell: null
       flags: {}
@@ -87,7 +91,9 @@ system:
       data-colwidth="50"><p>Level</p></td><td><p>Branch
       Feature</p></td></tr><tr><td data-colwidth="50"><p
       style="text-align:center">1</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.mFlEn0zBWbRslklu]{Take
-      Flight}</p></td></tr><tr><td data-colwidth="50"><p
+      Flight},
+      @UUID[Compendium.ak5e.ak5e-classes-and-features.Item.8iLsWgmR5WO0uxuZ]{Fuel}</p></td></tr><tr><td
+      data-colwidth="50"><p
       style="text-align:center">5</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v]{Air
       Doctrine}</p></td></tr><tr><td data-colwidth="50"><p
       style="text-align:center">5</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.AjvXcDYL7pR1yN9k]{Jink}</p></td></tr><tr><td
@@ -114,11 +120,11 @@ flags:
     riders:
       activity: []
 _stats:
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206236822
-  modifiedTime: 1791400531439
+  modifiedTime: 1794351592138
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
   compendiumSource: null
   duplicateSource: null

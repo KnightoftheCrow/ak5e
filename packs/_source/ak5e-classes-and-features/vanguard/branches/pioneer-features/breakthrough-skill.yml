@@ -9,7 +9,40 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: {}
+  advancement:
+    6LdpdnoVP8hYyrnK:
+      name: ''
+      type: ItemChoice
+      _id: 6LdpdnoVP8hYyrnK
+      configuration:
+        allowDrops: true
+        choices:
+          '17':
+            count: 1
+            replacement: false
+          '18':
+            count: null
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: null
+            replacement: true
+        pool: []
+        restriction:
+          list: []
+          school: []
+          type: class
+          subtype: opSkill
+        sorting: a
+        spell: null
+        type: feat
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
   description:
     value: >-
       <p>You gain an additional Elite Operator Skill; you may choose from any
@@ -17,7 +50,10 @@ system:
       Marksman Class, Specialist Class, or Vanguard Class. However, ignore the
       Charging Method for that Skill. When you complete a Long Rest, you may
       exchange this Operator Skill for a different Elite Operator Skill from one
-      of those classes.</p><p><strong>Not automated.</strong></p>
+      of those classes.</p><hr><p><strong>Semi-Automated: </strong>When you gain
+      this Feature, and when you level up, you will be prompted to choose or
+      exchange an Operator Skill. If you want to change it on Long Rest, delete
+      the one you chose and drag a new one onto the sheet.</p>
     chat: ''
   identifier: breakthrough-skill
   source:
@@ -48,10 +84,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206078997
-  modifiedTime: 1791218562838
+  modifiedTime: 1794514963607
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!BcfpKQbzpThG9lD7'

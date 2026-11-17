@@ -1,0 +1,122 @@
+folder: kqvuv2G7bNqGA5cb
+name: Scrappy
+type: feat
+_id: bTjXblyQW9FVIHv6
+img: icons/creatures/mammals/cat-hunched-glowing-red.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <h3>Scrappy</h3><p>Perhaps because of their smaller stature, Anaty are not
+      typically considered to be a belligerent folk. For some, this is simply
+      untrue, showing aggression that would put a Lupo to shame when pressed.
+      They might not want to fight, but they will kill you.</p><p>You have
+      Advantage on any Saving Throw to avoid or end the Charmed or Frightened
+      Conditions.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: scrappy
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Advantage against Charmed and Frightened
+    img: icons/creatures/mammals/cat-hunched-glowing-red.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.bTjXblyQW9FVIHv6
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.cat.CR.frightened
+          type: custom
+          value: 1
+          phase: initial
+          _id: qOGTWinn3UfScw8X
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.cat.CR.charmed
+          type: custom
+          value: 1
+          phase: initial
+          _id: VckNzzzYH5lhOANW
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: XZvFypIHoMHy5DXW
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-character-origins.Item.bTjXblyQW9FVIHv6
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794922815770
+      modifiedTime: 1794922840101
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!bTjXblyQW9FVIHv6.XZvFypIHoMHy5DXW'
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794922787870
+  modifiedTime: 1794923714487
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!bTjXblyQW9FVIHv6'

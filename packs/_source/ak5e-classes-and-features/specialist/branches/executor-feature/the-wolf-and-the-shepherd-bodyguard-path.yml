@@ -4,19 +4,477 @@ type: feat
 _id: wdArlFZHTvXVS5DR
 img: modules/ak5e/icons/Skill-KirinRYato1.webp
 system:
-  activities: {}
+  activities:
+    T7cRZFGKHxNYV0p7:
+      type: utility
+      name: Transfer Deathmark
+      _id: T7cRZFGKHxNYV0p7
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: WMAKqplCCI461brC
+          uuid: null
+          level:
+            min: null
+            max: 19
+        - _id: Ngms3ZdA9LNYdoAd
+          uuid: null
+          level:
+            min: 20
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          special: ''
+          count: '1'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: true
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    EBlFTCadxy8kNBh9:
+      type: utility
+      name: Redirect Attack
+      _id: EBlFTCadxy8kNBh9
+      img: ''
+      sort: 100000
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+        value: '10'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: '!effects.some(e=>e.name===''Deathmark'')'
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    1kezEr4fy1OTApT0:
+      type: utility
+      name: Gain SP at Turn Start
+      _id: 1kezEr4fy1OTApT0
+      img: ''
+      sort: 200000
+      activation:
+        type: turnStart
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-3'
+            target: skill-points
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: effects.some(e=>e.name==='Deathmark')
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: true
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: {}
+  advancement:
+    ya5qOizeQDZdBWNg:
+      name: Deathmark Bonus Damage
+      type: ScaleValue
+      _id: ya5qOizeQDZdBWNg
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 1
+            faces: 4
+          '7':
+            number: 2
+          '14':
+            number: 3
+      flags: {}
+      value: {}
+      hint: ''
   description:
     value: >-
       <p>Choose your path, and walk it until the end. You gain the following
-      benefits:</p><p><strong>To Hunt, or Not To Hunt.</strong> When you adopt
-      this Branch, you must choose whether you will be a Hunter or a Bodyguard;
-      your Branch Features grant you different benefits based on your
-      choice.</p><p><strong>Deathmark.</strong> You have a Deathmark that grants
+      benefits:</p><ul><li><p><strong>To Hunt, or Not To Hunt.</strong> When you
+      adopt this Branch, you must choose whether you will be a Hunter or a
+      Bodyguard; your Branch Features grant you different benefits based on your
+      choice.</p></li><li><p><strong>Deathmark.</strong> You have a Deathmark
+      that grants you benefits based on whether you or another Creature has it;
+      you can transfer your Deathmark from yourself to a hostile Creature by
+      making an Attack against them.</p><p>Your Deathmark returns to you when a
+      Creature with your Deathmark is reduced to 0 Hit Points, or at the end of
+      your Turn if you have not Attacked or dealt Damage to a hostile Creature
+      with your Deathmark. When your Deathmark returns to you, you gain 3 Skill
+      Points, and you can immediately take the Disengage Action as a
+      Reaction.</p><p>While you have your Deathmark, you gain 3 Skill Points at
+      the beginning of your Turn in combat. Additionally, you can take the Hide
+      Action as a Bonus Action.</p><p>While another Creature has your Deathmark,
+      you deal 1d4 additional Damage to that Creature when you hit them with an
+      Attack; this additional Damage is increased to 2d4 at Level 7, and 3d4 at
+      Level 14.</p></li><li><p>Furthermore, you gain an additional benefit
+      against a Creature with your Deathmark based on your choice of Hunter or
+      Bodyguard:</p><p><strong>Bodyguard: </strong>When a hostile Creature with
+      your Deathmark would make an Attack against a Creature while you are both
+      within the Reach or Range of that Attack and also within 10 feet of an
+      original target, you can cause that Attack to target you instead of that
+      Creature (no Action
+      required).</p></li></ul><hr><p><strong>Semi-Automated.</strong></p>
+    chat: >-
+      <ul><li><p><strong>Deathmark.</strong> You have a Deathmark that grants
       you benefits based on whether you or another Creature has it; you can
       transfer your Deathmark from yourself to a hostile Creature by making an
       Attack against them.</p><p>Your Deathmark returns to you when a Creature
@@ -29,15 +487,12 @@ system:
       Action as a Bonus Action.</p><p>While another Creature has your Deathmark,
       you deal 1d4 additional Damage to that Creature when you hit them with an
       Attack; this additional Damage is increased to 2d4 at Level 7, and 3d4 at
-      Level 14.</p><p>Furthermore, you gain an additional benefit against a
-      Creature with your Deathmark based on your choice of Hunter or
-      Bodyguard:</p><p><strong>Bodyguard: </strong>When a hostile Creature with
-      your Deathmark would make an Attack against a Creature while you are both
-      within the Reach or Range of that Attack and also within 10 feet of an
-      original target, you can cause that Attack to target you instead of that
-      Creature (no Action required).</p><p><strong>Not Automated.</strong></p>
-    chat: ''
-  identifier: feature
+      Level 14.</p></li><li><p><strong>Bodyguard: </strong>When a hostile
+      Creature with your Deathmark would make an Attack against a Creature while
+      you are both within the Reach or Range of that Attack and also within 10
+      feet of an original target, you can cause that Attack to target you
+      instead of that Creature (no Action required).</p></li></ul>
+  identifier: the-wolf-and-the-shepherd-bodyguard
   source:
     revision: 1
     rules: '2024'
@@ -52,20 +507,181 @@ system:
   type:
     value: class
     subtype: ''
-effects: []
-sort: 0
+effects:
+  - name: Deathmark
+    img: modules/ak5e/icons/Skill-KirinRYato1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.wdArlFZHTvXVS5DR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@scale.the-wolf-and-the-shepherd.deathmark-bonus-damage;
+            addTo=all,!types(healing,temphp); effectOriginTokenId === tokenId &&
+            hasAttack
+          phase: initial
+          _id: FJrMPqqEdM54Ykm5
+          conditions: '{}'
+          replacement: origin
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: WMAKqplCCI461brC
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794245762666
+      modifiedTime: 1794246259383
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!wdArlFZHTvXVS5DR.WMAKqplCCI461brC'
+  - name: Deathmark
+    img: modules/ak5e/icons/Skill-KirinRYato1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.wdArlFZHTvXVS5DR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@scale.the-wolf-and-the-shepherd.deathmark-bonus-damage;
+            addTo=all,!types(healing,temphp); effectOriginTokenId === tokenId &&
+            hasAttack
+          phase: initial
+          _id: FJrMPqqEdM54Ykm5
+          conditions: '{}'
+          replacement: origin
+          priority: null
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: modifier=/2; addTo=all; effectOriginTokenId === opponentId
+          phase: initial
+          _id: SAITvMNVOWCfcTFl
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794251646323
+      modifiedTime: 1794251822410
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: Ngms3ZdA9LNYdoAd
+    _key: '!items.effects!wdArlFZHTvXVS5DR.Ngms3ZdA9LNYdoAd'
+sort: 50000
 ownership:
   default: 0
 flags:
   dnd5e: {}
+  cat:
+    genericConfig:
+      chris-premades:
+        redirectAttack:
+          activityId: EBlFTCadxy8kNBh9
+          range: 10
+          disposition: ally
+          sizes: []
+          swapPlaces: false
+          requireCover: false
+    macros:
+      roll:
+        - source: chris-premades
+          identifier: redirectAttack
+          rules: all
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791203553272
-  modifiedTime: 1791203553272
+  modifiedTime: 1794251869189
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!wdArlFZHTvXVS5DR'

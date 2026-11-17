@@ -135,7 +135,7 @@ system:
     value: background
     subtype: ''
 effects:
-  - name: Advantage on Saving Throws vs Abberations
+  - name: Advantage on Saving Throws vs Aberrations
     img: icons/weapons/axes/axe-battle-eyes-red.webp
     origin: null
     _id: pNQu2YJSAuOpS5EV
@@ -143,7 +143,7 @@ effects:
     system:
       changes:
         - key: flags.automated-conditions-5e.save.advantage
-          value: opponentActor.creatureType.includes('abberation')
+          value: opponentActor.creatureType.includes('aberration')
           priority: 20
           type: add
           phase: initial

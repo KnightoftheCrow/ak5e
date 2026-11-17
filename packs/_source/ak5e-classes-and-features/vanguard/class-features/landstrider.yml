@@ -13,13 +13,14 @@ system:
   description:
     value: >-
       <p>Your training as a Vanguard grants you the following
-      benefits:</p><p><strong>Speed Increase.</strong> Your Walking Speed is
-      increased by 10 feet.</p><p><strong>Nimble.</strong> When you hit a
-      Creature with an Attack, you do not provoke Opportunity Attacks from that
-      Creature for the rest of the Turn.</p><p><strong>Partially
-      Automated:</strong> Speed Increase is automated.</p>
+      benefits:</p><ul><li><p><strong>Speed Increase.</strong> Your Walking
+      Speed is increased by 10 feet.</p></li><li><p><strong>Nimble.</strong>
+      When you hit a Creature with an Attack, you do not provoke Opportunity
+      Attacks from that Creature for the rest of the
+      Turn.</p></li></ul><hr><p><strong>Semi-Automated:</strong> Speed Increase
+      is automated.</p>
     chat: ''
-  identifier: feature
+  identifier: landstrider
   source:
     revision: 1
     rules: '2024'
@@ -27,7 +28,7 @@ system:
   enchant: {}
   prerequisites:
     items: []
-    repeatable: true
+    repeatable: false
     level: 1
   properties:
     - trait
@@ -36,9 +37,9 @@ system:
     value: class
     subtype: ''
 effects:
-  - name: 'Landstrider: Speed Increase'
+  - name: +10ft Walking Speed
     img: modules/ak5e/icons/Skill-WildMane2.png
-    origin: null
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.WZw05t0Rl8sFlJC8
     _id: NK6ddWaFOXrDAQF8
     type: base
     system:
@@ -76,17 +77,18 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       createdTime: 1791206079007
-      modifiedTime: 1791733086713
+      modifiedTime: 1794424244035
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
     start: null
     showIcon: 1
@@ -105,10 +107,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206079007
-  modifiedTime: 1791733086713
+  modifiedTime: 1794424230547
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!WZw05t0Rl8sFlJC8'

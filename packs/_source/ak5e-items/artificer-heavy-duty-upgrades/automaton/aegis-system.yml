@@ -1,0 +1,133 @@
+folder: wVtdcvt55pMCMRkD
+name: AEGIS System
+type: consumable
+_id: ObxL9SQUdvupA3KC
+img: modules/ak5e/icons/skill_icon_sktok_machst.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    autoDestroy: false
+    max: ''
+  description:
+    value: >-
+      <p><strong>Effect:</strong> This Automaton possess a powerful Originium
+      Arts inhibiting barrier; Creatures within a 10 foot radius sphere centred
+      on this Automaton have Advantage on Saving Throws against Arts that
+      originate from outside of this radius.</p><hr><p><strong>Semi-Automated:
+      </strong>This Features doesn't check if the Arts originated from outside
+      the Radius.</p>
+    chat: ''
+  identifier: aegis-system
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: credits
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  damage:
+    base:
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+    replace: false
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+effects:
+  - name: AEGIS System
+    img: modules/ak5e/icons/skill_icon_sktok_machst.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-items.Item.ObxL9SQUdvupA3KC
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.aura.save.advantage
+          type: ac5e
+          value: radius=10; allies; enemies; includeSelf; isSpell
+          phase: initial
+          _id: qBlriLYOnaeTmezu
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: gLcuDjg0zoice75n
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-items.Item.ObxL9SQUdvupA3KC
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793467663943
+      modifiedTime: 1793467807213
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!ObxL9SQUdvupA3KC.gLcuDjg0zoice75n'
+sort: 200000
+ownership:
+  default: 0
+  27ikDz77N89hVLvM: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1785597790680
+  modifiedTime: 1793467829900
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!ObxL9SQUdvupA3KC'

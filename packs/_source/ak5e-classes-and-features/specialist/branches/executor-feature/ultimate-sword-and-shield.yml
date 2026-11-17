@@ -4,7 +4,146 @@ type: feat
 _id: 9Ppp4KNZkDsJoQip
 img: modules/ak5e/icons/Skill-LuoXiaohei2.webp
 system:
-  activities: {}
+  activities:
+    B8ZnZeEw9vHhaaLy:
+      type: utility
+      name: Transfer Deathmark (Reaction)
+      img: ''
+      sort: 0
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: t0EA8SaPDd6bnZGC
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          special: ''
+          count: '1'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: true
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: B8ZnZeEw9vHhaaLy
   uses:
     spent: 0
     recovery: []
@@ -15,14 +154,14 @@ system:
       <p>No matter your path, you have reached its end. Only death can keep you
       from your mission now.</p><p>You gain one of the following benefits based
       on your choice of Hunter or Bodyguard:</p><p><strong>Bodyguard.
-      </strong>Once per Long Rest as an Action, choose a Creature you can see
-      within a distance equal to your Speed; you flash towards them with a
-      lethal strike. You teleport to an unoccupied space within 5 feet of that
-      Creature, and they must make a Dexterity Saving Throw against your Martial
-      DC. Roll 10d8. On a failed Save, that Creature loses Hit Points equal to
-      the amount rolled. On a successful Save, they lose Hit Points equal to
-      half the amount rolled. If the Creature has the Bleeding Condition, they
-      lose twice as many Hit Points.</p>
+      </strong>You are Resistant to all Damage dealt by a hostile Creature with
+      your Deathmark. Additionally, after using your Blade Shield Reaction, you
+      regain use of your Reaction. Finally, when another Creature within 10 feet
+      of you is targeted for an Attack by a hostile Creature, you can transfer
+      your Deathmark, wherever it is, to the Attacking Creature as a
+      Reaction.</p><hr><p><strong>Semi-Automated: </strong>This Feature cannot
+      be set to trigger when a nearby Creature is attacked; you must trigger it
+      manually.</p>
     chat: ''
   identifier: ultimate-sword-and-shield
   source:
@@ -31,7 +170,8 @@ system:
   crewed: false
   enchant: {}
   prerequisites:
-    items: []
+    items:
+      - the-wolf-and-the-shepherd-bodyguard
     repeatable: false
     level: 20
   properties: []
@@ -39,8 +179,84 @@ system:
   type:
     value: class
     subtype: ''
-effects: []
-sort: 0
+effects:
+  - name: Deathmark
+    img: modules/ak5e/icons/Skill-KirinRYato1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.9Ppp4KNZkDsJoQip
+        behavior: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@scale.the-wolf-and-the-shepherd.deathmark-bonus-damage;
+            addTo=all,!types(healing,temphp); effectOriginTokenId === tokenId &&
+            hasAttack
+          phase: initial
+          _id: FJrMPqqEdM54Ykm5
+          conditions: '{}'
+          replacement: origin
+          priority: null
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: modifier=/2; addTo=all; effectOriginTokenId === opponentId
+          phase: initial
+          _id: SAITvMNVOWCfcTFl
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794251927736
+      modifiedTime: 1794251927736
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.wdArlFZHTvXVS5DR.ActiveEffect.Ngms3ZdA9LNYdoAd
+      duplicateSource: null
+      exportSource: null
+    _id: t0EA8SaPDd6bnZGC
+    _key: '!items.effects!9Ppp4KNZkDsJoQip.t0EA8SaPDd6bnZGC'
+sort: 300000
 ownership:
   default: 0
 flags:
@@ -49,10 +265,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791203553272
-  modifiedTime: 1791203553272
+  modifiedTime: 1794252130603
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!9Ppp4KNZkDsJoQip'

@@ -1,0 +1,263 @@
+folder: jJbcjXOgDxi9LfQP
+name: Constrictor
+type: feat
+_id: qM4pDdRNC1u8hh6b
+img: icons/creatures/reptiles/snake-poised-white.webp
+system:
+  activities:
+    1tqkuPxCXE05j23e:
+      type: utility
+      sort: 0
+      activation:
+        type: ''
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: perm
+        concentration: false
+        override: false
+        expiry: null
+      effects:
+        - _id: id7Ponulc5PvH42p
+          level:
+            min: null
+            max: null
+          uuid: null
+        - _id: DO6KHblNW9NUmwUk
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: true
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+        rollAs: target
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Toggle Dexterity Athletics
+      img: ''
+      behaviors: []
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: 1tqkuPxCXE05j23e
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <h3>Constrictor</h3><p>Much like the Phidia they are often mistaken for,
+      the tail of a K’uk’ulkan is both dextrous and strong. you gain the
+      following benefits:</p><ul><li><p><strong>Prehensile.</strong> During each
+      of your Turns, you can interact with two objects without having to use
+      your Action, as opposed to one.</p></li><li><p><strong>Python
+      Strike.</strong> When you take the Grapple Action, you can do so using
+      your tail and thus not requiring a free hand. When you make a Athletics
+      Check to initiate a Grapple in this way, or prevent a Creature grappled by
+      your tail from escaping, you may use your Dexterity bonus instead of
+      Strength.</p></li></ul><hr><p><strong>Semi-Automated: </strong>Use the
+      "Toggle Dexterity Athletics" Activity to toggle your Athletics using your
+      Dexterity Bonus. Remember to toggle this off outside of Grappling!</p>
+    chat: ''
+  identifier: constrictor
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Athletics Override
+    img: icons/creatures/reptiles/snake-poised-white.webp
+    origin: null
+    _id: DO6KHblNW9NUmwUk
+    type: base
+    system:
+      changes:
+        - key: system.skills.ath.ability
+          value: dex
+          priority: 20
+          type: override
+          phase: initial
+          _id: FsJaXiaGpjeLOgre
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.qM4pDdRNC1u8hh6b
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-character-origins.Item.tqT0oEayOKdjlppp.ActiveEffect.id7Ponulc5PvH42p
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1794917430644
+      modifiedTime: 1794917430644
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!qM4pDdRNC1u8hh6b.DO6KHblNW9NUmwUk'
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794853211170
+  modifiedTime: 1794917468348
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!qM4pDdRNC1u8hh6b'

@@ -33,28 +33,28 @@ system:
     value: class
     subtype: ''
 effects:
-  - name: Approaching Storm
+  - name: Bonus Damage during 1st Round
     img: modules/ak5e/icons/Skill-Saga3.png
-    origin: null
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.8AYN51B8yn5xLOYw
     _id: N6F9PWDH1fkHgyYi
     type: base
     system:
       changes:
-        - key: system.bonuses.All-Damage
-          value: '@classes.vanguard.level/2'
-          priority: 20
-          type: add
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: bonus=floor(@details.level/2); combat.round === 1 && !isHeal
           phase: initial
-          _id: SF0h8XXKb4TpjYgg
+          _id: Ikk2yqokO0o04NZx
           conditions: '{}'
           replacement: ''
+          priority: null
       origin:
         item: Compendium.ak5e.ak5e-classes-and-features.Item.8AYN51B8yn5xLOYw
     disabled: false
     duration:
-      value: 1
-      units: rounds
-      expiry: turnStart
+      value: null
+      units: seconds
+      expiry: null
       expired: false
     description: ''
     tint: '#ffffff'
@@ -73,17 +73,18 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.368'
+      coreVersion: '14.369'
       systemId: dnd5e
       systemVersion: 6.0.6
       createdTime: 1791206079006
-      modifiedTime: 1791733085229
+      modifiedTime: 1794430033773
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
     start: null
     showIcon: 1

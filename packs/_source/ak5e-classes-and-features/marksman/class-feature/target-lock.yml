@@ -1,0 +1,288 @@
+name: Target Lock
+type: feat
+img: modules/ak5e/icons/Skill-Lemuen1.webp
+system:
+  activities:
+    PBm6VgtwxDuWZFk5:
+      type: utility
+      _id: PBm6VgtwxDuWZFk5
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects:
+        - _id: IZw8x6vWejhydaf6
+          level:
+            min: null
+            max: null
+          uuid: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '500'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          type: enemy
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        autoConsume: true
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+        rollAs: target
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Target Lock
+      img: ''
+      behaviors: []
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '1'
+  advancement:
+    UTMBE0QelFG9k6Uc:
+      name: Target Lock Attack Bonus
+      type: ScaleValue
+      _id: UTMBE0QelFG9k6Uc
+      configuration:
+        identifier: bonus
+        type: number
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: 1
+          '11':
+            value: 2
+      flags: {}
+      value: {}
+      hint: ''
+  description:
+    value: >-
+      <p>The benefit of ranged combat is the freedom to place your shots where
+      they are most needed.</p><p>During your Turn, you can select a hostile
+      Creature you can see to be your Target (no Action required) for the next
+      minute.You have a +1 bonus to Attack Rolls against your Target.</p><p>Once
+      you have used this Feature, you cannot use it again until you have
+      finished a Short Rest.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: target-lock
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Target
+    img: modules/ak5e/icons/Skill-Lemuen1.webp
+    origin: null
+    transfer: false
+    _id: IZw8x6vWejhydaf6
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.bonus
+          value: >-
+            bonus=@scale.target-lock.bonus; hasAttack && effectOriginTokenId ===
+            tokenId
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: 94TQ1lA3MXspNuHk
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.oxFGvfgwpg4tNLdL
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: 10
+      units: rounds
+      expiry: turnStart
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1794782154786
+      modifiedTime: 1794782209250
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!bsVY6Zf7bsQdIwBM.IZw8x6vWejhydaf6'
+folder: r2sKTPYSmSAEfVCU
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794782154786
+  modifiedTime: 1794782356599
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: bsVY6Zf7bsQdIwBM
+sort: -150000
+_key: '!items!bsVY6Zf7bsQdIwBM'

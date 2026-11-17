@@ -24,6 +24,10 @@ system:
             value: '-1'
             target: ''
             scaling: {}
+          - type: itemUses
+            value: '1'
+            target: environmental-warfare
+            scaling: {}
       description:
         value: ''
         chatFlavor: ''
@@ -62,7 +66,7 @@ system:
       visibility:
         level:
           min: null
-          max: null
+          max: 4
         requireAttunement: false
         requireIdentification: false
         requireMagic: false
@@ -124,7 +128,7 @@ system:
       regionBehavior:
         enabled: true
         dispositionFilter: 0
-        excludeSource: true
+        excludeSource: false
         oncePerTurn: true
         wallRestriction: none
         regionVisibility: 2
@@ -302,6 +306,161 @@ system:
       otherActivityAsParentType: true
       friendlySave: default
       _id: XwKYQmPIpstgZimP
+    p9FCkm8sqQ2czMIw:
+      type: utility
+      name: Set Up
+      img: ''
+      sort: 50000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+          - type: itemUses
+            value: '1'
+            target: environmental-warfare
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: wall
+          size: '10'
+          width: '1'
+          height: '5'
+        affects:
+          choice: false
+          count: ''
+          type: space
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 5
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: 0
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules:
+          - trigger: entry
+            action: useActivity
+            targetId: trigger
+          - trigger: entry
+            action: useActivity
+            targetId: trigger
+          - trigger: entry
+            action: useActivity
+            targetId: trigger
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: p9FCkm8sqQ2czMIw
   uses:
     spent: 10
     recovery: []
@@ -321,7 +480,8 @@ system:
       DC as an Action.</p><hr><p><strong>Semi-Automated: </strong>These
       activities assume you are using your Dexterity to calculate your Trap DC.
       If you are not, change the activities. There is no automation for the
-      attempted escape from the Snare.</p>
+      attempted escape from the Snare.  This Feature uses the Limited Usage to
+      track when the trap is armed.</p>
     chat: ''
   identifier: snare-trap
   source:
@@ -428,6 +588,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 6.0.6
   createdTime: 1783356408232
-  modifiedTime: 1792249001594
+  modifiedTime: 1793725906903
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!Rd6GagUbXg0mCQ1i'

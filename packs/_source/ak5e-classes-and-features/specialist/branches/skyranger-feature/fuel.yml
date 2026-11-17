@@ -1,0 +1,81 @@
+folder: GEE9J6di2smOxKgx
+name: Fuel
+type: feat
+_id: 8iLsWgmR5WO0uxuZ
+img: modules/ak5e/icons/Skill-TargetedRenewalAgent.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@scale.fuel.max-fuel'
+  advancement:
+    Z3jJpL1cPgRxCwRD:
+      name: Max Fuel
+      type: ScaleValue
+      _id: Z3jJpL1cPgRxCwRD
+      configuration:
+        identifier: ''
+        type: number
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: 2
+          '3':
+            value: 3
+          '6':
+            value: 4
+          '9':
+            value: 5
+          '12':
+            value: 6
+          '15':
+            value: 7
+          '18':
+            value: 8
+      flags: {}
+      value: {}
+      hint: ''
+  description:
+    value: >-
+      <p>You have a special resource called Fuel that you use to power your
+      flight and some of your other Features; the maximum amount of Fuel you
+      have increases with your Specialist Level, as shown in the Skyranger
+      Features Table. You regain all expended Fuel when you finish a Long
+      Rest.</p>
+    chat: ''
+  identifier: fuel
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794329512448
+  modifiedTime: 1794329622174
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!8iLsWgmR5WO0uxuZ'

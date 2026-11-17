@@ -24,6 +24,10 @@ system:
             value: '-1'
             target: ''
             scaling: {}
+          - type: itemUses
+            value: '1'
+            target: environmental-warfare
+            scaling: {}
       description:
         value: ''
         chatFlavor: ''
@@ -60,7 +64,7 @@ system:
       visibility:
         level:
           min: null
-          max: null
+          max: 4
         requireAttunement: false
         requireIdentification: false
         requireMagic: false
@@ -122,7 +126,7 @@ system:
       regionBehavior:
         enabled: true
         dispositionFilter: 0
-        excludeSource: true
+        excludeSource: false
         oncePerTurn: true
         wallRestriction: none
         regionVisibility: 2
@@ -497,6 +501,7 @@ system:
         targets:
           - type: itemUses
             value: '1'
+            target: ''
             scaling: {}
       description:
         value: ''
@@ -513,6 +518,12 @@ system:
           onSave: false
           level:
             min: null
+            max: null
+        - _id: NjbvDG8fIouKNmOY
+          uuid: null
+          onSave: false
+          level:
+            min: 15
             max: null
       flags: {}
       range:
@@ -986,8 +997,16 @@ system:
       effects:
         - _id: v5SkFihHglgjSmeh
           uuid: null
-          level: {}
           onSave: false
+          level:
+            min: null
+            max: null
+        - _id: NjbvDG8fIouKNmOY
+          uuid: null
+          onSave: false
+          level:
+            min: 15
+            max: null
       flags: {}
       range:
         units: any
@@ -1116,6 +1135,159 @@ system:
       otherActivityAsParentType: true
       friendlySave: default
       _id: A0SJgIBFnGoaoQn0
+    Yq3M2I9lib6QuxWp:
+      type: utility
+      name: Set Up
+      img: ''
+      sort: 50000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+          - type: itemUses
+            value: '1'
+            target: environmental-warfare
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: square
+          size: '5'
+        affects:
+          choice: false
+          count: ''
+          type: space
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 5
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: 0
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules:
+          - trigger: entry
+            action: useActivity
+            targetId: trigger
+          - trigger: entry
+            action: useActivity
+            targetId: trigger
+          - trigger: entry
+            action: useActivity
+            targetId: trigger
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: Yq3M2I9lib6QuxWp
   uses:
     spent: 10
     recovery: []
@@ -1134,7 +1306,8 @@ system:
       not Poisoned.</p><p>The Damage of this Trap is increased to 3d8 at 7th
       Level, and 4d8 at 14th Level.</p><hr><p><strong>Automated: </strong>These
       activities assume you are using your Dexterity to calculate your Trap DC.
-      If you are not, change the activities.</p>
+      If you are not, change the activities. This Feature uses the Limited Usage
+      to track when the trap is armed.</p>
     chat: ''
   identifier: gas-trap
   source:
@@ -1227,6 +1400,79 @@ effects:
       duplicateSource: null
       exportSource: null
     _key: '!items.effects!DX6dm78WRlbhsaGp.v5SkFihHglgjSmeh'
+  - name: Poison Damage Resistance/DR Removed
+    img: modules/ak5e/icons/Skill-W2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-items.Item.DX6dm78WRlbhsaGp
+        behavior: null
+        message: null
+      changes:
+        - key: system.traits.dr.value
+          type: add
+          value: '-poison'
+          phase: initial
+          _id: J95gdx8CSIYF4en5
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: system.traits.dm.amount.poison
+          type: override
+          value: 0
+          phase: initial
+          _id: PFEv2CWzUMAPNoad
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: NjbvDG8fIouKNmOY
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793744091030
+      modifiedTime: 1793744122650
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.fca6PwUERNhH31OK.ActiveEffect.blRRSjOjpB4Gjqm2
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!DX6dm78WRlbhsaGp.NjbvDG8fIouKNmOY'
 sort: 300000
 ownership:
   default: 0
@@ -1241,6 +1487,6 @@ _stats:
   systemId: dnd5e
   systemVersion: 6.0.6
   createdTime: 1783356408232
-  modifiedTime: 1792251166313
+  modifiedTime: 1793744141357
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!DX6dm78WRlbhsaGp'

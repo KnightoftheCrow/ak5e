@@ -10,12 +10,9 @@ system:
       _id: yipf5Z4rKl58UJmr
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.EFdltUgYGSpGjlgu
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-arts.Item.6GMX3sLNtYU5pEtM
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.0CAuxbBN8ZHMh4sv
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.0CAuxbBN8ZHMh4sv
         optional: false
         spell: null
       flags: {}
@@ -79,20 +76,34 @@ system:
       hint: ''
       _id: NyPMmDsiuMQppFR5
       title: ''
-    J4cwcUyAmu28Y4Hl:
-      type: ItemGrant
-      _id: J4cwcUyAmu28Y4Hl
+    WZSRU0Jh3VSul3yH:
+      name: Choose Spellcasting Ability
+      type: ItemChoice
+      _id: WZSRU0Jh3VSul3yH
       configuration:
-        items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.Qi4Mc2HB3snq2eE5
-            optional: false
-        optional: false
+        allowDrops: false
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        pool:
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.Egjw543MoT5gpQcz
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.EFdltUgYGSpGjlgu
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.EowMrlyHCDGGJ1kd
+        restriction:
+          list: []
+          school: []
+        sorting: a
         spell: null
-      value: {}
-      level: 1
-      title: 'Changes to Core Rules: Cantrips'
-      hint: <p>All Creatures gain +Spellcasting Mod Damage to their Cantrips.</p>
+        type: null
       flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
   description:
     value: >-
       <p>There are precious few Summoners; the Arts they employ are
@@ -102,7 +113,7 @@ system:
       ability to draw a small fighting force out of the air is a trump card
       generals throughout history would have given an arm for, and for good
       reason. Breaking the frontline of a Summoner is an exercise in attrition,
-      and even the greatest get tired.</p><p>You get next Branch
+      and even the greatest get tired.</p><p>You gain the following Branch
       features:</p><table><tbody><tr><td
       data-colwidth="50"><p>Level</p></td><td><p>Branch
       Feature</p></td></tr><tr><td data-colwidth="50"><p
@@ -137,11 +148,11 @@ _stats:
   compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.9b2CE0681u9VsljY
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.368'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.3
+  systemVersion: 6.0.6
   createdTime: 1791206076894
-  modifiedTime: 1791400634268
+  modifiedTime: 1794846976017
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
