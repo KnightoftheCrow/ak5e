@@ -1,0 +1,102 @@
+folder: 8RPg99LHqY2XXNGR
+name: Unarmoured Agility (Module)
+type: feat
+img: modules/ak5e/icons/Skill-LuoXiaohei1.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: []
+  description:
+    value: >-
+      <p><strong>Module:</strong> While you are wearing no Armour, you have a
+      Bonus to your Dexterity Saving Throws equal to your Proficiency Bonus.</p>
+    chat: ''
+  identifier: unarmoured-agility-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - Compendium.ak5e.ak5e-talents.Item.qlx8TWDfruLocbCG
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Unarmoured Agility (Module)
+    img: modules/ak5e/icons/Skill-LuoXiaohei1.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.xXoFEUm40eZWIHYx
+    _id: K9JZgB8SIJMnNbvW
+    type: base
+    system: {}
+    changes:
+      - key: system.abilities.dex.bonuses.save
+        mode: 2
+        value: '@prof'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+    _key: '!items.effects!Cj8mZrcEefoSSMbX.K9JZgB8SIJMnNbvW'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774580302710
+  modifiedTime: 1774656214093
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+_id: Cj8mZrcEefoSSMbX
+sort: 348829
+_key: '!items!Cj8mZrcEefoSSMbX'

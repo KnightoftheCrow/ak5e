@@ -1,0 +1,109 @@
+folder: brGGSjwYd7vdXYiE
+name: Danger Sense (Module)
+type: feat
+img: modules/ak5e/icons/Skill-Christine2.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: []
+  description:
+    value: >-
+      <p><strong>Module:</strong> Invisible Creatures no longer have Advantage
+      on Attack Rolls against you, and you can no longer be Suprised while
+      Conscious.</p>
+    chat: ''
+  identifier: danger-sense
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - Compendium.ak5e.ak5e-talents.Item.OKhxvBFfBEME93PU
+    repeatable: false
+    level: 13
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Danger Sense
+    img: modules/ak5e/icons/Skill-Christine2.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.Lxb0yt12a19ocMPz
+    _id: O33J1yrWDah4ugI3
+    type: base
+    system: {}
+    changes:
+      - key: flags.automated-conditions-5e.grants.attack.noAdvantage
+        mode: 2
+        value: >-
+          !opponentActor.statuses.incapacitated &&
+          rollingActor.statuses.invisible;
+        priority: 20
+      - key: system.traits.ci.value
+        mode: 2
+        value: surprised
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: '!statuses.incapacitated'
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+    _key: '!items.effects!LvcxQflxtYKdGyQ5.O33J1yrWDah4ugI3'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774580929282
+  modifiedTime: 1774580929309
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+_id: LvcxQflxtYKdGyQ5
+sort: 150000
+_key: '!items!LvcxQflxtYKdGyQ5'

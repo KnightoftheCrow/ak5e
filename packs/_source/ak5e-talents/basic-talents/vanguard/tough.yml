@@ -1,0 +1,105 @@
+folder: a81uPiUyKdBHOwCm
+name: Tough
+type: feat
+img: modules/ak5e/icons/Skill-Gravel1.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: []
+  description:
+    value: >-
+      <p>Your Hit Point Maximum increases by an amount equal to twice your
+      Character Level. When you gain a Character Level thereafter, your Hit
+      Point Maximum increases by an additional two
+      points.</p><p><strong>Module:</strong> Whenever you expend a Hit Dice to
+      restore your Hit Points, you recover additional Hit Points equal to your
+      Proficiency Bonus.</p><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: tough
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 3
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: skillPoints
+effects:
+  - name: Max HP Increase
+    img: modules/ak5e/icons/Skill-Gravel1.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.PFTX0gYY2pJp9nNO
+    _id: ThguCB8gJE1wgpa8
+    type: base
+    system: {}
+    changes:
+      - key: system.attributes.hp.bonuses.level
+        mode: 2
+        value: '2'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+    _key: '!items.effects!STmzBpZN78s08zas.ThguCB8gJE1wgpa8'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774580313207
+  modifiedTime: 1774580313255
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+_id: STmzBpZN78s08zas
+sort: 903125
+_key: '!items!STmzBpZN78s08zas'

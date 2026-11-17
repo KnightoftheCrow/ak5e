@@ -1,0 +1,209 @@
+folder: uUuSO7eU1CKxrhGI
+name: Standard
+type: weapon
+img: modules/ak5e/icons/skill_icon_skchr_saileach_2.png
+system:
+  activities:
+    j53WZTbbvoT9o2ct:
+      _id: j53WZTbbvoT9o2ct
+      type: attack
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description: {}
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      attack:
+        critical: {}
+        flat: false
+        type: {}
+      damage:
+        critical: {}
+        includeBase: true
+        parts: []
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>[[/attack extended]], [[/damage extended]]</p><p>Finesse,
+      Two-Handed</p><p>You can only have one Standard at a time; replacing a
+      Standard costs 200 LMD.</p><p>Your Standard is a symbol of power; it lifts
+      up your allies, and casts down your foes. While you are wielding it, it
+      projects an Aura of Influence around you in a 10-foot-radius sphere
+      centered on you. As a Bonus Action while you are wielding it, you can
+      plant the Standard at your current location; A Planted Standard does not
+      impede movement, and can be picked up by a Creature within 5 feet of it as
+      a Bonus Action.</p><p>While the Standard is planted, the size of the Aura
+      of Influence is increased to 25 feet, but it is centered on the Standard
+      instead of you. Additionally, when a Creature enters that area, or begins
+      their Turn there, you can use your Tip of the Spear Feature on that
+      Creature (no Action required). Once you have done so, you cannot do so
+      again on that Creature until the beginning of your next Turn.</p>
+    chat: ''
+  identifier: knife
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 5
+    units: lb
+  price:
+    value: 200
+    denomination: credits
+  rarity: common
+  attunement: ''
+  attuned: false
+  equipped: false
+  ammunition: {}
+  armor: {}
+  damage:
+    base:
+      types:
+        - piercing
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+      number: 1
+      denomination: 8
+      bonus: ''
+    versatile:
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+      number: null
+      denomination: null
+      bonus: ''
+  properties:
+    - fin
+    - two
+  proficient: null
+  range:
+    reach: 5
+    units: ft
+    value: 40
+    long: 80
+  type:
+    value: lightM
+    baseItem: spear
+  mastery: ''
+  crew:
+    value: []
+effects: []
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1782088158955
+  modifiedTime: 1782088159003
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+_id: EkzuuGt2OQDta5Em
+sort: 400000
+_key: '!items!EkzuuGt2OQDta5Em'

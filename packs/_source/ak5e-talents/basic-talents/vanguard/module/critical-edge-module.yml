@@ -1,0 +1,102 @@
+folder: 8RPg99LHqY2XXNGR
+name: Critical Edge (Module)
+type: feat
+img: modules/ak5e/icons/Skill-C1.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: []
+  description:
+    value: >-
+      <p><strong>Module:</strong> You can roll one additional Damage die when
+      determining the extra Damage for a Critical Hit.</p>
+    chat: ''
+  identifier: critical-edge-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - Compendium.ak5e.ak5e-talents.Item.WUU3WOfPesBFdXoJ
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Critical Edge (Module)
+    img: modules/ak5e/icons/Skill-C1.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.XlMiH20OkY4B1hig
+    _id: b4dI0bfV7zYhicXF
+    type: base
+    system: {}
+    changes:
+      - key: flags.automated-conditions-5e.damage.extraDice
+        mode: 2
+        value: bonus=1; hasAttack && isCritical;
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+    _key: '!items.effects!dY3kZHELAs4Rqap9.b4dI0bfV7zYhicXF'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774580295537
+  modifiedTime: 1774656331195
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+_id: dY3kZHELAs4Rqap9
+sort: 337500
+_key: '!items!dY3kZHELAs4Rqap9'

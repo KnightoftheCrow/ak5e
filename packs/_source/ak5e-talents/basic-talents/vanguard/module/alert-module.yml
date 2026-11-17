@@ -1,0 +1,100 @@
+folder: 8RPg99LHqY2XXNGR
+name: Alert (Module)
+type: feat
+img: modules/ak5e/icons/Skill-PureCrystal.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: []
+  description:
+    value: <p><strong>Module:</strong> You have Advantage on Initiative Rolls.</p>
+    chat: ''
+  identifier: alert-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - Compendium.ak5e.ak5e-talents.Item.UjQX1XOMuwl37GVY
+    repeatable: false
+    level: 8
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: skillPoints
+effects:
+  - name: Alert (Module)
+    img: modules/ak5e/icons/Skill-PureCrystal.webp
+    origin: Compendium.ak5e.ak5e-talents.Item.J8f8cJXLZxKgSBCg
+    _id: 8ww73gJFvYU1zzE1
+    type: base
+    system: {}
+    changes:
+      - key: flags.automated-conditions-5e.initiative.advantage
+        mode: 2
+        value: true;
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      lastModifiedBy: null
+    _key: '!items.effects!VHTZHWagtpxQ5Hj3.8ww73gJFvYU1zzE1'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774580292782
+  modifiedTime: 1774656187973
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+_id: VHTZHWagtpxQ5Hj3
+sort: 350000
+_key: '!items!VHTZHWagtpxQ5Hj3'

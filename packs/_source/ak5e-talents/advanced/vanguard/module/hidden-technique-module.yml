@@ -1,0 +1,105 @@
+folder: brGGSjwYd7vdXYiE
+name: Hidden Technique (Module)
+type: feat
+_id: u05AqFiUmVYCr8Ia
+img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: ''
+  advancement: []
+  description:
+    value: >-
+      <p><strong>Module: </strong>You gain 1 additional Grit Point, and learn 2
+      more Techniques.</p>
+    chat: ''
+  identifier: hidden-technique-module
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - Compendium.ak5e.ak5e-talents.Item.jydTTrSgiYRXgeLf
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: ''
+    subtype: ''
+effects:
+  - name: Hidden Technique (Module)
+    img: modules/ak5e/icons/skill_icon_skchr_flint_1.png
+    origin: Compendium.ak5e.ak5e-talents.Item.u05AqFiUmVYCr8Ia
+    _id: Z8zSlfyCw4dMplWb
+    type: base
+    system: {}
+    changes:
+      - key: system.scale.hidden-technique.grit
+        mode: 5
+        value: '3'
+        priority: 20
+    disabled: false
+    duration:
+      startTime: null
+      combat: null
+      seconds: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.2.5
+      createdTime: 1791133580590
+      modifiedTime: 1791133629184
+      lastModifiedBy: P5lWUBQKuHlZqgTn
+    _key: '!items.effects!u05AqFiUmVYCr8Ia.Z8zSlfyCw4dMplWb'
+sort: 0
+ownership:
+  default: 0
+  P5lWUBQKuHlZqgTn: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.2.5
+  createdTime: 1774656575053
+  modifiedTime: 1791133577636
+  lastModifiedBy: P5lWUBQKuHlZqgTn
+_key: '!items!u05AqFiUmVYCr8Ia'
