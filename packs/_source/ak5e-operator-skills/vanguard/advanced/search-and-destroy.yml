@@ -44,6 +44,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -117,11 +118,31 @@ system:
         rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
+      img: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
@@ -150,28 +171,35 @@ system:
 effects:
   - name: Radar Sweep (Skill Points)
     img: modules/ak5e/icons/64px-Skill-Dagda2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.xEJtugdXspeK633F
+    origin: null
     _id: M64F0fhNJQuKkQx6
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '10'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skill-points.recovery
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: OjJ05y5oFindFA5R
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skill-points.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: cNHf2LmqejzbL38m
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.OGCPrBBetNrCnAnM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -195,42 +223,58 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791147711617
+      modifiedTime: 1791733093235
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!OGCPrBBetNrCnAnM.M64F0fhNJQuKkQx6'
   - name: Search and Destroy
     img: modules/ak5e/icons/64px-Skill-Dagda2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.xEJtugdXspeK633F
+    origin: null
     transfer: false
     _id: KTQ39bEsc5OU6Sya
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '+20'
-        priority: 20
-      - key: system.skills.prc.bonuses.passive
-        mode: 2
-        value: '5'
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.bonus
-        mode: 2
-        value: >-
-          bonus=1d8; hasAttack && opponentActor.attributes.hp.value <
-          opponentActor.attributes.hp.max;
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: '+20'
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 9XA3mnI3wopXgaNt
+          conditions: '{}'
+          replacement: ''
+        - key: system.skills.prc.bonuses.passive
+          value: 5
+          priority: 20
+          type: add
+          phase: initial
+          _id: K9EFDPX342SfmbJZ
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=1d8; hasAttack && opponentActor.attributes.hp.value <
+            opponentActor.attributes.hp.max;
+          priority: 20
+          type: add
+          phase: initial
+          _id: S1peKi1jIUM0RWjQ
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.OGCPrBBetNrCnAnM
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -257,10 +301,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791147711617
+      modifiedTime: 1791733093235
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!OGCPrBBetNrCnAnM.KTQ39bEsc5OU6Sya'
 flags:
   dnd5e:
@@ -270,15 +319,16 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774580615082
-  modifiedTime: 1774657527664
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 5.3.3
+  createdTime: 1791147711617
+  modifiedTime: 1791733093235
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 _id: OGCPrBBetNrCnAnM
 sort: 200000
 _key: '!items!OGCPrBBetNrCnAnM'

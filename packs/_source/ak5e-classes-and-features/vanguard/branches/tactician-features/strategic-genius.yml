@@ -5,10 +5,9 @@ _id: 6jW8NThMYTYy36YR
 img: modules/ak5e/icons/skill_icon_skchr_hoolheyak_2.png
 system:
   activities:
-    1bKLOHmP3WfR1Jqt:
+    NDGxMTq7cvqkYerX:
       type: utility
-      _id: 1bKLOHmP3WfR1Jqt
-      sort: 0
+      sort: 100000
       activation:
         type: action
         override: false
@@ -18,19 +17,26 @@ system:
           allowed: false
         spellSlot: true
         targets:
-          - type: activityUses
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
       description:
         chatFlavor: ''
+        value: ''
       duration:
-        units: inst
+        units: minute
         concentration: false
         override: false
+        value: '1'
+        expiry: null
       effects: []
       flags: {}
       range:
-        units: self
+        units: ft
         override: false
         special: ''
+        value: '60'
       target:
         template:
           contiguous: false
@@ -38,9 +44,12 @@ system:
           type: cube
           size: '15'
           count: ''
+          stationary: false
         affects:
           choice: false
-          type: ''
+          type: enemy
+          count: ''
+          special: ''
         override: false
         prompt: true
       uses:
@@ -81,7 +90,7 @@ system:
         triggeredActivityConsume: true
         triggeredActivityConfigure: true
         autoConsume: false
-        forceConsumeDialog: default
+        forceConsumeDialog: always
         forceRollDialog: default
         forceDamageDialog: default
         confirmTargets: default
@@ -102,6 +111,7 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        targetMustBeSeen: false
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
@@ -110,77 +120,2116 @@ system:
         postRemoveConditionText: ''
       otherActivityId: none
       otherActivityAsParentType: true
-      name: Place Zone
+      name: Place Choke Point
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      behaviors:
+        - name: Choke Point
+          _id: bdLOwetSiYJCgG8N
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.TvCgTTgd9wIGuzDP
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      _id: NDGxMTq7cvqkYerX
+    Tp8jtWqHwB6bsugs:
+      type: utility
+      sort: 200000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: minute
+        concentration: false
+        override: false
+        value: '1'
+        expiry: null
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: cube
+          size: '15'
+          count: ''
+          stationary: false
+        affects:
+          choice: false
+          type: ally
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Place Elastic Defence
+      img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      behaviors:
+        - name: Elastic Defence
+          _id: X2CCJ6HEvenqUPiz
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.QNZzrxQFJUKOwu6L
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      _id: Tp8jtWqHwB6bsugs
+    MmluxxPAqtLspj65:
+      type: utility
+      sort: 300000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: minute
+        concentration: false
+        override: false
+        value: '1'
+        expiry: null
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: cube
+          size: '15'
+          count: ''
+          stationary: false
+        affects:
+          choice: false
+          type: ally
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Place Encirclement
+      img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      behaviors:
+        - name: Encirclement
+          _id: wIJoL0UPkgppjNHr
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.3DyornDANlnu0fvC
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      _id: MmluxxPAqtLspj65
+    oNtxApnyNjmJvmum:
+      type: utility
+      name: Place Raid
+      _id: oNtxApnyNjmJvmum
+      img: ''
+      sort: 400000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors:
+        - name: Raid
+          _id: rZ786ga0ane2mjmD
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.3O5usFz3i8sITGSz
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: cube
+          size: '15'
+          count: ''
+        affects:
+          choice: false
+          type: ally
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    seWl123mfIqYkCIr:
+      type: utility
+      name: Place Rank Fighting
+      img: ''
+      sort: 500000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors:
+        - name: Rank Fighting
+          _id: rZ786ga0ane2mjmD
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.YPmtg6mkG9eDItkz
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '60'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: cube
+          size: '15'
+        affects:
+          choice: false
+          count: ''
+          type: ally
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: seWl123mfIqYkCIr
+    4ujOWclKjRsvUjjW:
+      type: utility
+      name: Place Strength in Numbers
+      img: ''
+      sort: 600000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors:
+        - name: Strength in Numbers
+          _id: rZ786ga0ane2mjmD
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.qxpz30ucJ6dzERG5
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '60'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: cube
+          size: '15'
+        affects:
+          choice: false
+          count: ''
+          type: ally
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: 4ujOWclKjRsvUjjW
+    WObv4iTl1LwCFJpw:
+      type: utility
+      name: Place Superior Firepower
+      img: ''
+      sort: 700000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors:
+        - name: Superior Firepower
+          _id: rZ786ga0ane2mjmD
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.0Wmq7Dbqxyabu2A1
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '60'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: cube
+          size: '15'
+        affects:
+          choice: false
+          count: ''
+          type: ally
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: WObv4iTl1LwCFJpw
+    xDSzvFLqex14JyBh:
+      type: utility
+      sort: 800000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: minute
+        concentration: false
+        override: false
+        value: '1'
+        expiry: null
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: cube
+          size: '15'
+          count: ''
+          stationary: false
+        affects:
+          choice: false
+          type: enemy
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 10
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Lynchpin Choke Point
+      img: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: false
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: caster
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      behaviors:
+        - name: Choke Point
+          _id: bdLOwetSiYJCgG8N
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.TvCgTTgd9wIGuzDP
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      _id: xDSzvFLqex14JyBh
+    cdRv004LBChnYTKR:
+      type: utility
+      sort: 900000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: minute
+        concentration: false
+        override: false
+        value: '1'
+        expiry: null
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: cube
+          size: '15'
+          count: ''
+          stationary: false
+        affects:
+          choice: false
+          type: ally
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 10
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Lynchpin Elastic Defence
+      img: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: 1
+        excludeSource: false
+        oncePerTurn: false
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: caster
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      behaviors:
+        - name: Elastic Defence
+          _id: X2CCJ6HEvenqUPiz
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.QNZzrxQFJUKOwu6L
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      _id: cdRv004LBChnYTKR
+    wbQbCEBlWJ3spsTr:
+      type: utility
+      sort: 1000000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: minute
+        concentration: false
+        override: false
+        value: '1'
+        expiry: null
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+        value: '60'
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: cube
+          size: '15'
+          count: ''
+          stationary: false
+        affects:
+          choice: false
+          type: ally
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 10
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: none
+      otherActivityAsParentType: true
+      name: Lynchpin Encirclement
+      img: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: 1
+        excludeSource: false
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: caster
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      behaviors:
+        - name: Encirclement
+          _id: wIJoL0UPkgppjNHr
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.3DyornDANlnu0fvC
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      _id: wbQbCEBlWJ3spsTr
+    HkmKd18rGuznEGeF:
+      type: utility
+      name: Lynchpin Raid
+      img: ''
+      sort: 1100000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors:
+        - name: Raid
+          _id: rZ786ga0ane2mjmD
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.3O5usFz3i8sITGSz
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        value: '60'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: cube
+          size: '15'
+        affects:
+          choice: false
+          count: ''
+          type: ally
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 10
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: 1
+        excludeSource: false
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: caster
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: HkmKd18rGuznEGeF
+    FGB7q0ijY9mRwltP:
+      type: utility
+      name: Lynchpin Rank Fighting
+      img: ''
+      sort: 1200000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors:
+        - name: Rank Fighting
+          _id: rZ786ga0ane2mjmD
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.YPmtg6mkG9eDItkz
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        value: '60'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: cube
+          size: '15'
+        affects:
+          choice: false
+          count: ''
+          type: ally
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 10
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: 1
+        excludeSource: false
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: caster
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: FGB7q0ijY9mRwltP
+    65ZhdKsHaixw6CMY:
+      type: utility
+      name: Lynchpin Strength in Numbers
+      img: ''
+      sort: 1300000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors:
+        - name: Strength in Numbers
+          _id: rZ786ga0ane2mjmD
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.qxpz30ucJ6dzERG5
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        value: '60'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: cube
+          size: '15'
+        affects:
+          choice: false
+          count: ''
+          type: ally
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 10
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: 1
+        excludeSource: false
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: caster
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: 65ZhdKsHaixw6CMY
+    sSJMlulok1tFoWqF:
+      type: utility
+      name: Lynchpin Superior Firepower
+      img: ''
+      sort: 1400000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors:
+        - name: Superior Firepower
+          _id: rZ786ga0ane2mjmD
+          type: applyActiveEffect
+          config:
+            effects:
+              - >-
+                Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR.ActiveEffect.0Wmq7Dbqxyabu2A1
+            sizes: []
+            types: []
+          level:
+            min: null
+            max: null
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        value: '60'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: cube
+          size: '15'
+        affects:
+          choice: false
+          count: ''
+          type: ally
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 10
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: 1
+        excludeSource: false
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: caster
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: sSJMlulok1tFoWqF
   uses:
     spent: 0
     recovery:
       - period: sr
         type: recoverAll
     max: '@prof'
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>Cerebral; that is your defining characteristic. The battlefield dances
       to the beat of your drum. This is represented by your Strategic
-      Zones:</p><p><strong>Strategic Zone.</strong> Your Strategic Zone is a
-      15-foot cube centered on a grounded location you can see within 60 feet.
-      It remains for 1 minute, or until you dismiss it as a Bonus Action. When
-      you place a Strategic Zone, it cannot overlap with any other Strategic
-      Zone. The maximum number of Strategic Zones you can have at once is equal
-      to your Proficiency Bonus.</p><p><strong>Placing your Strategic
-      Zone.</strong> As an Action, you can designate one of your Strategic
-      Zones. When you do so, you choose a Strategy (described below) to apply to
-      that Strategic Zone for its duration. Alternatively, if a face of the
-      Strategic Zone is touching the face of another of your Strategic Zones,
-      you can instead choose for the new zone to inherit the Strategy placed on
-      the old zone, so that both Zones have the same Strategy
-      applied.</p><p><strong>Strategies.</strong> Your Strategies are listed in
-      alphabetical order in the Strategies Table. Once you have applied a
-      Strategy, you cannot apply that Strategy again until you have completed a
-      Long Rest, except in the case of a Zone inheriting the Strategy from
-      another Zone. Additionally, you can change the Strategy in one of your
-      Strategic Zones as a Bonus Action; when you do so, you may also change the
-      Strategy in all connected Strategic Zones. Finally, interconnected Zones
-      are considered to be the same Zone for any Strategy that requires
-      it.</p><table><tbody><tr><td
-      data-colwidth="85"><p><strong>Strategy</strong></p></td><td><p><strong>Effect</strong></p></td></tr><tr><td
-      data-colwidth="85"><p>Choke Point</p></td><td><p>When a hostile Creature
-      is hit by an Attack while they are within this Strategic Zone, all
-      connected Zones with this Strategy become Difficult Terrain for that
-      Creature until the beginning of their next Turn.</p></td></tr><tr><td
-      data-colwidth="85"><p>Elastic Defence</p></td><td><p>When an allied
-      Creature within this Strategic Zone would be required to make a Dexterity
-      Saving Throw against an effect that targets an area, they can use their
-      Reaction to move up to half their Speed. After this movement, if they are
-      no longer in the affected area, they automatically succeed on that Saving
-      Throw.</p></td></tr><tr><td
-      data-colwidth="85"><p>Encirclement</p></td><td><p>When an allied Creature
-      within this Strategic Zone makes an Attack against a hostile Creature
-      within the same Zone, that is also within the reach of two or more other
-      allied Creatures, that Attack ignores any Damage Reduction that Creature
-      has against that Attack.</p></td></tr><tr><td
-      data-colwidth="85"><p>Raid</p></td><td><p>When an allied Creature begins
-      their Turn in this Zone, or enters this Zone during this Turn, they gain
-      the following benefits until the end of their next Turn: Their Speed is
-      increased by 10 feet, and when they hit a Creature no more than one size
-      larger than them with a Melee Attack, they can knock that Creature away
-      from them 10 feet.</p></td></tr><tr><td data-colwidth="85"><p>Rank
-      Fighting</p></td><td><p>When a Melee Attack is made against allied
-      Creature in this Zone, other allied Creatures that meet the following
-      conditions can expend their Reaction to make a Melee Weapon Attack against
-      the Attacking Creature, if both the Attacking and Attacked Creature are
-      within their Reach.</p></td></tr><tr><td data-colwidth="85"><p>Strength in
-      Numbers</p></td><td><p>When you use a Tactic that only affects a single
-      Creature (such as “Fall Back”, or “Pincer Manoeuvre”), you can affect an
-      additional Creature with that Tactic.</p></td></tr><tr><td
-      data-colwidth="85"><p>Superior Firepower</p></td><td><p>Allied Creatures
-      within this Zone have Advantage on Ranged Attacks against Creatures that
-      have been Attacked since the end of the end of the allied Creature’s last
-      Turn. If they already have Advantage, that Attack instead deals 1d8
-      additional Damage; this additional Damage can only be dealt once per
-      Turn.</p></td></tr></tbody></table><p><strong>Partially
-      Automated:</strong> zone placement.</p>
+      Zones:</p><ul><li><p><strong>Strategic Zone.</strong> Your Strategic Zone
+      is a 15-foot cube centered on a grounded location you can see within 60
+      feet. It remains for 1 minute, or until you dismiss it as a Bonus Action.
+      When you place a Strategic Zone, it cannot overlap with any other
+      Strategic Zone. The maximum number of Strategic Zones you can have at once
+      is equal to your Proficiency Bonus.</p></li><li><p><strong>Placing your
+      Strategic Zone.</strong> As an Action, you can designate one of your
+      Strategic Zones. When you do so, you choose a Strategy (described below)
+      to apply to that Strategic Zone for its duration. Alternatively, if a face
+      of the Strategic Zone is touching the face of another of your Strategic
+      Zones, you can instead choose for the new zone to inherit the Strategy
+      placed on the old zone, so that both Zones have the same Strategy
+      applied.</p></li><li><p><strong>Strategies.</strong> Your Strategies are
+      listed in alphabetical order in the Strategies Table. Once you have
+      applied a Strategy, you cannot apply that Strategy again until you have
+      completed a Long Rest, except in the case of a Zone inheriting the
+      Strategy from another Zone. Additionally, you can change the Strategy in
+      one of your Strategic Zones as a Bonus Action; when you do so, you may
+      also change the Strategy in all connected Strategic Zones. Finally,
+      interconnected Zones are considered to be the same Zone for any Strategy
+      that requires it.</p><p>When a hostile Creature is hit by an Attack while
+      they are within this Strategic Zone, all connected Zones with this
+      Strategy become Difficult Terrain for that Creature until the beginning of
+      their next Turn.</p></li></ul><table><thead><tr><td
+      data-colwidth="85"><p><strong>Strategy</strong></p></td><td
+      data-colwidth="360"><p><strong>Effect</strong></p></td></tr></thead><tbody><tr><td
+      data-colwidth="85"><p>Choke Point</p></td><td data-colwidth="360"><p>When
+      a hostile Creature is hit by an Attack while they are within this
+      Strategic Zone, all connected Zones with this Strategy become Difficult
+      Terrain for that Creature until the beginning of their next
+      Turn.</p></td></tr><tr><td data-colwidth="85"><p>Elastic
+      Defence</p></td><td data-colwidth="360"><p>When an allied Creature within
+      this Strategic Zone would be required to make a Dexterity Saving Throw
+      against an effect that targets an area, they can use their Reaction to
+      move up to half their Speed. After this movement, if they are no longer in
+      the affected area, they automatically succeed on that Saving
+      Throw.</p></td></tr><tr><td data-colwidth="85"><p>Encirclement</p></td><td
+      data-colwidth="360"><p>When an allied Creature within this Strategic Zone
+      makes an Attack against a hostile Creature within the same Zone, that is
+      also within the reach of two or more other allied Creatures, that Attack
+      ignores any Damage Reduction that Creature has against that
+      Attack.</p></td></tr><tr><td data-colwidth="85"><p>Raid</p></td><td
+      data-colwidth="360"><p>When an allied Creature begins their Turn in this
+      Zone, or enters this Zone during this Turn, they gain the following
+      benefits until the end of their next Turn: Their Speed is increased by 10
+      feet, and when they hit a Creature no more than one size larger than them
+      with a Melee Attack, they can knock that Creature away from them 10
+      feet.</p></td></tr><tr><td data-colwidth="85"><p>Rank Fighting</p></td><td
+      data-colwidth="360"><p>When a Melee Attack is made against allied Creature
+      in this Zone, other allied Creatures that meet the following conditions
+      can expend their Reaction to make a Melee Weapon Attack against the
+      Attacking Creature, if both the Attacking and Attacked Creature are within
+      their Reach.</p></td></tr><tr><td data-colwidth="85"><p>Strength in
+      Numbers</p></td><td data-colwidth="360"><p>When you use a Tactic that only
+      affects a single Creature (such as “Fall Back”, or “Pincer Manoeuvre”),
+      you can affect an additional Creature with that
+      Tactic.</p></td></tr><tr><td data-colwidth="85"><p>Superior
+      Firepower</p></td><td data-colwidth="360"><p>Allied Creatures within this
+      Zone have Advantage on Ranged Attacks against Creatures that have been
+      Attacked since the end of the end of the allied Creature’s last Turn. If
+      they already have Advantage, that Attack instead deals 1d8 additional
+      Damage; this additional Damage can only be dealt once per
+      Turn.</p></td></tr></tbody></table><hr><p><strong>Semi-Automated:
+      </strong>The changing of the strategies within all your zones is not
+      automated; you will need to recast your zones and refuse to pay the cost
+      for using the feature.</p>
     chat: ''
   identifier: strategic-genius
   source:
@@ -191,29 +2240,431 @@ system:
   prerequisites:
     items: []
     repeatable: false
-    level: null
+    level: 4
   properties: []
   requirements: ''
   type:
-    value: ''
+    value: class
     subtype: ''
-effects: []
-sort: 0
+effects:
+  - name: Choke Point
+    img: modules/ak5e/icons/skill_icon_skchr_hoolheyak_2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: TvCgTTgd9wIGuzDP
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794773594971
+      modifiedTime: 1794773594971
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!6jW8NThMYTYy36YR.TvCgTTgd9wIGuzDP'
+  - name: Elastic Defence
+    img: modules/ak5e/icons/skill_icon_skchr_hoolheyak_2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.save.success
+          type: ac5e
+          value: >-
+            update=effectActor.statuses.reaction, 1; name=Elastic Defence;
+            optinId=elastic-defence-0; description=Out of AoE; optin;
+            ability.dex
+          phase: initial
+          _id: NOfIvjRgjKvUV0Pa
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: QNZzrxQFJUKOwu6L
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794773699587
+      modifiedTime: 1794773777569
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!6jW8NThMYTYy36YR.QNZzrxQFJUKOwu6L'
+  - name: Encirclement
+    img: modules/ak5e/icons/skill_icon_skchr_hoolheyak_2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794773817510
+      modifiedTime: 1794773823878
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 3DyornDANlnu0fvC
+    _key: '!items.effects!6jW8NThMYTYy36YR.3DyornDANlnu0fvC'
+  - name: Raid
+    img: modules/ak5e/icons/skill_icon_skchr_hoolheyak_2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.movement.all
+          type: custom
+          value: '+10'
+          phase: initial
+          _id: QGvuFgpOYw13c0QW
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 3O5usFz3i8sITGSz
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: targetEnd
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794773890737
+      modifiedTime: 1794773907865
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!6jW8NThMYTYy36YR.3O5usFz3i8sITGSz'
+  - name: Rank Fighting
+    img: modules/ak5e/icons/skill_icon_skchr_hoolheyak_2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794774284298
+      modifiedTime: 1794774289361
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: YPmtg6mkG9eDItkz
+    _key: '!items.effects!6jW8NThMYTYy36YR.YPmtg6mkG9eDItkz'
+  - name: Strength in Numbers
+    img: modules/ak5e/icons/skill_icon_skchr_hoolheyak_2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794774363562
+      modifiedTime: 1794774369027
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: qxpz30ucJ6dzERG5
+    _key: '!items.effects!6jW8NThMYTYy36YR.qxpz30ucJ6dzERG5'
+  - name: Superior Firepower
+    img: modules/ak5e/icons/skill_icon_skchr_hoolheyak_2.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1d8; name=Superior Firepower; optinId=superior-firepower-0;
+            description=+1d8 from pre-existing Advantage; addTo=base;
+            oncePerTurn; optin; hasAdvantage && actionType.rsak || hasAdvantage
+            && actionType.rwak
+          phase: initial
+          _id: KNsi83zJ3issnVzq
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.attack.advantage
+          type: ac5e
+          value: >-
+            name=Superior Firepower; optinId=superior-firepower-1;
+            description=Advantage against Creatures already Attacked; optin;
+            actionType.rwak || actionType.rsak
+          phase: initial
+          _id: KUdAm1LTKuZahTcS
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794774410416
+      modifiedTime: 1794774556323
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 0Wmq7Dbqxyabu2A1
+    _key: '!items.effects!6jW8NThMYTYy36YR.0Wmq7Dbqxyabu2A1'
+sort: 100000
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774580017316
-  modifiedTime: 1791132535946
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 6.0.6
+  createdTime: 1791206079004
+  modifiedTime: 1794775239905
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!6jW8NThMYTYy36YR'

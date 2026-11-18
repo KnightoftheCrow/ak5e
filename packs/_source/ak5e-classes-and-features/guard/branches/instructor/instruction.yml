@@ -1,0 +1,370 @@
+folder: fjmAVtYYjlnMOuwx
+name: Instruction
+type: feat
+img: modules/ak5e/icons/Skill-Swire1.webp
+system:
+  activities:
+    WQx2wuTdX6Y7GK7W:
+      type: utility
+      name: Restore Uses
+      img: ''
+      sort: 0
+      activation:
+        type: encounter
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+          max: floor(@scale.instruction.number-of-instruction-dice/2)
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: >-
+              -(floor(@scale.instruction.number-of-instruction-dice/2)-@item.uses.value)
+            target: instruction
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 13
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: WQx2wuTdX6Y7GK7W
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '@scale.instruction.number-of-instruction-dice'
+  advancement:
+    I9yStUd4wrMp7zCm:
+      type: ScaleValue
+      title: Number of Instruction Dice
+      _id: I9yStUd4wrMp7zCm
+      configuration:
+        identifier: ''
+        type: number
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: 4
+          '7':
+            value: 5
+          '14':
+            value: 6
+      flags: {}
+      value: {}
+      hint: ''
+    0UJoUx7h3DW6pX4U:
+      type: ScaleValue
+      title: Instruction Die Size
+      _id: 0UJoUx7h3DW6pX4U
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 1
+            faces: 6
+          '13':
+            number: 1
+            faces: 10
+      flags: {}
+      value: {}
+      hint: ''
+  description:
+    value: >-
+      <p>You are talented in leading or training fighters of any stripe. You
+      learn Instructions that are fuelled by special dice called Instruction
+      Dice, detailed below under Instruction
+      Options</p><ul><li><p><strong>Instructions:</strong> When you use the Help
+      Action, you may also issue one Instruction to the same Creature you
+      helped. Each Instruction expends 1 Instruction
+      Die.</p></li><li><p><strong>Instruction Dice:</strong> You have four
+      Instruction Dice, which are d6s; you regain all expended Instruction Dice
+      when you finish a Short or Long Rest.</p><p>You gain an additional
+      Instruction Die when you reach Guard Levels 7 (five dice total) and 14
+      (six dice total)
+      <br></p></li></ul><h3>Instructions</h3><table><thead><tr><td><p><strong>Instruction</strong></p></td><td><p><strong>Effect</strong></p></td></tr></thead><tbody><tr><td><p>Defend
+      Yourself!</p></td><td><p>The AC of that Creature is increased by an amount
+      equal to half the result of one roll of your Instruction Die until the end
+      of their next Turn.</p></td></tr><tr><td><p>Focus!</p></td><td><p>That
+      Creature gains a Bonus to the next Skill Check it makes before the
+      beginning of your next Turn equal to one roll of your Instruction
+      Die.</p></td></tr><tr><td><p>Get out of There!</p></td><td><p>That
+      Creature may immediately move a distance equal to three rolls of your
+      Instruction Die, rounded to the nearest 5. This movement does not provoke
+      Opportunity Attacks from Creatures they were within the Reach of when they
+      began this movement.</p></td></tr><tr><td><p>Go!</p></td><td><p>That
+      Creature may immediately move a distance equal to half of their Speed +
+      three rolls of your Instruction Die, rounded to the nearest
+      5.</p></td></tr><tr><td><p>Hang In There!</p></td><td><p>When that
+      Creature rolls a Death Saving Throw before the end of their next Turn,
+      they gain a bonus to that Saving Throw equal to one roll of your
+      Instruction Die. If the result of that Saving Throw is greater than 20,
+      they gain the effect of rolling a 20 on the
+      d20.</p></td></tr><tr><td><p>Keep Fighting!</p></td><td><p>The Creature
+      gains Temporary Hit Points equal to one roll of your Instruction
+      Die.</p></td></tr><tr><td><p>Now's Your Chance!</p></td><td><p>That
+      Creature gains a bonus to the next Attack Roll it makes before the end of
+      its next Turn equal to one roll of your Instruction
+      Die.</p></td></tr><tr><td><p>Snap Out of It!</p></td><td><p>If that
+      Creature is currently under an effect requiring them to make a Saving
+      Throw at the beginning or end of their Turn, they can immediately attempt
+      that Saving Throw with a Bonus equal to one roll of your Instruction
+      Die.</p></td></tr><tr><td><p>Steel Yourself!</p></td><td><p>That Creature
+      gains a Bonus to the next Saving Throw it makes within the next Minute
+      equal to one roll of your Instruction
+      Die.</p></td></tr><tr><td><p>Strike!</p></td><td><p>That Creature may
+      immediately expend its Reaction to make an Attack or cast a Cantrip with a
+      Casting Time of an Action; that Attack or Cantrip deals additional Damage
+      equal to one roll of your Instruction
+      Die.</p></td></tr></tbody></table><hr><p><strong>Semi-Automated:
+      </strong>All of the instructions can be used via the Activites on your
+      Squad Leader Feature. All except Get Out of There! and Go! are automated;
+      these two make the roll, but the effects must be resolved manually. </p>
+    chat: >-
+      <p>You are talented in leading or training fighters of any stripe. You
+      learn Instructions that are fuelled by special dice called Instruction
+      Dice, detailed below under Instruction
+      Options</p><ul><li><p><strong>Instructions:</strong> When you use the Help
+      Action, you may also issue one Instruction to the same Creature you
+      helped. Each Instruction expends 1 Instruction
+      Die.</p></li><li><p><strong>Instruction Dice:</strong> You have four
+      Instruction Dice, which are d6s; you regain all expended Instruction Dice
+      when you finish a Short or Long Rest.</p><p>You gain an additional
+      Instruction Die when you reach Guard Levels 7 (five dice total) and 14
+      (six dice total) </p></li></ul><hr><p><strong>Semi-Automated: </strong>All
+      of the instructions can be used via the Activites on your Squad Leader
+      Feature. All except Get Out of There! and Go! are automated; these two
+      make the roll, but the effects must be resolved manually. Notably, the
+      bonus to AC granted by Defend Yourself! is not shown on the sheet; examine
+      the applied effect to see the bonus granted.</p>
+  identifier: instruction
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Regain Instruction Die if <50%
+    img: modules/ak5e/icons/Skill-Swire2.webp
+    origin: null
+    type: base
+    _id: 5RgIFQbSXO38VaH0
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.initiative.bonus
+          type: ac5e
+          value: >-
+            bonus=0; usesCount=Item.instruction,
+            -(floor{@scale.instruction.number-of-instruction-dice/2)-@item.uses.value);
+            itemLimited; item.uses.value >=
+            floor{@scale.instruction.number-of-instruction-dice/2)
+          phase: initial
+          priority: null
+          _id: ioPOTw1sZDKweuPz
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.2MtSuOh3QGrMFYL5
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: >-
+      <p>You are talented in leading or training fighters of any stripe. You
+      learn Instructions that are fuelled by special dice called Instruction
+      Dice, detailed below under Instruction
+      Options</p><ul><li><p><strong>Instructions:</strong> When you use the Help
+      Action, you may also issue one Instruction to the same Creature you
+      helped. Each Instruction expends 1 Instruction
+      Die.</p></li><li><p><strong>Instruction Dice:</strong> You have four
+      Instruction Dice, which are d6s; you regain all expended Instruction Dice
+      when you finish a Short or Long Rest.</p><p>You gain an additional
+      Instruction Die when you reach Guard Levels 7 (five dice total) and 14
+      (six dice total) </p></li></ul><hr><p><strong>Semi-Automated: </strong>All
+      of the instructions can be used via the Activites on your Squad Leader
+      Feature. All except Get Out of There! and Go! are automated; these two
+      make the roll, but the effects must be resolved manually. Notably, the
+      bonus to AC granted by Defend Yourself! is not shown on the sheet; examine
+      the applied effect to see the bonus granted.</p>
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791730676430
+      modifiedTime: 1791733084735
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.K1ZU9rZlK44nugtH.ActiveEffect.BjgUpxZ8VIssvY4k
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!2MtSuOh3QGrMFYL5.5RgIFQbSXO38VaH0'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.fDKXbK5TW0i4vltn
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791724900799
+  modifiedTime: 1791736545508
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 2MtSuOh3QGrMFYL5
+sort: 100000
+_key: '!items!2MtSuOh3QGrMFYL5'

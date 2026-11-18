@@ -44,6 +44,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -117,11 +118,31 @@ system:
         rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
+      img: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
@@ -148,24 +169,27 @@ system:
 effects:
   - name: Fleeting Night
     img: modules/ak5e/icons/Skill-GuardAmiya1.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.cJxHlsMvWQcx8nLC
+    origin: null
     _id: kjWFUEdzYi8azZXL
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.attack.fumbleThreshold
-        mode: 2
-        value: set=8;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.fumbleThreshold
+          value: set=8;
+          priority: 20
+          type: add
+          phase: initial
+          _id: lNHdVlyWqr6amMi4
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.CWbL8pmaGaqRZe4h
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 3
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 3
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -193,35 +217,47 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791147711613
+      modifiedTime: 1791733091660
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!CWbL8pmaGaqRZe4h.kjWFUEdzYi8azZXL'
   - name: Fleeting Night (Skill Points)
     img: modules/ak5e/icons/Skill-GuardAmiya1.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.cJxHlsMvWQcx8nLC
+    origin: null
     _id: c920DegdobXXch37
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '0'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skill-points.recovery
+          value: 0
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: D2makqkgT2ipNVSC
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skill-points.maxsp
+          value: 30
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: CnG9U13K6phg4EJP
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.CWbL8pmaGaqRZe4h
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -245,10 +281,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791147711613
+      modifiedTime: 1791733091660
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!CWbL8pmaGaqRZe4h.c920DegdobXXch37'
 flags:
   dnd5e:
@@ -258,15 +299,16 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774580613515
-  modifiedTime: 1774657393095
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 5.3.3
+  createdTime: 1791147711613
+  modifiedTime: 1791733091660
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 _id: CWbL8pmaGaqRZe4h
 sort: 100000
 _key: '!items!CWbL8pmaGaqRZe4h'

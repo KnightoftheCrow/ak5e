@@ -1,0 +1,636 @@
+folder: wVtdcvt55pMCMRkD
+name: Flamethrower
+type: consumable
+_id: E1vW1RfMjOKwTkzq
+img: modules/ak5e/icons/skill_icon_sktok_machst.png
+system:
+  activities:
+    cOnR58NIXPuqF45z:
+      type: save
+      name: Flamethrower (d8)
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: z8yifZGZjpzkPIqK
+          uuid: null
+          level: {}
+          onSave: false
+        - _id: gtzT9Kux6HdsXShL
+          uuid: null
+          level: {}
+          onSave: false
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+        value: '15'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: cone
+          size: '20'
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: 7
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 8
+            bonus: ''
+            modifiers: []
+            types:
+              - fire
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: int
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: false
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: cOnR58NIXPuqF45z
+    vbMVyukMctsdYYQs:
+      type: save
+      name: Flamethrower (d10)
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: gtzT9Kux6HdsXShL
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+        value: '15'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: cone
+          size: '20'
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 8
+          max: 13
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 10
+            bonus: ''
+            modifiers: []
+            types:
+              - fire
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: int
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: false
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: vbMVyukMctsdYYQs
+    ESNAr8CgLC3AxLtc:
+      type: save
+      name: Flamethrower (d12)
+      img: ''
+      sort: 200000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: gtzT9Kux6HdsXShL
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+        value: '15'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: cone
+          size: '20'
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 14
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 12
+            bonus: ''
+            modifiers: []
+            types:
+              - fire
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: int
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: false
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: ESNAr8CgLC3AxLtc
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    autoDestroy: false
+    max: '1'
+  description:
+    value: >-
+      <p><strong>Effect:</strong> As an Action, the Automaton releases a 20 foot
+      long Cone of flame in a chosen direction. Every Creature within that area
+      must make a Dexterity Saving Throw against your Artificer DC; on a failed
+      Save, they take Fire Damage equal to three rolls of your Aid Die and are
+      Burning. On a successful Save, they take half as much Damage, and suffer
+      no further effects.</p><p>Once this Automaton has used this Action, it may
+      not do so again until both it and its Creator complete a Short or Long
+      Rest at the same time.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: flamethrower
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: credits
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  damage:
+    base:
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+    replace: false
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+effects:
+  - name: Ignited
+    img: modules/ak5e/icons/skill_icon_sktok_machst.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-items.Item.E1vW1RfMjOKwTkzq
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses:
+          - burning
+    transfer: false
+    _id: gtzT9Kux6HdsXShL
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793480522094
+      modifiedTime: 1793480532918
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!E1vW1RfMjOKwTkzq.gtzT9Kux6HdsXShL'
+sort: 700000
+ownership:
+  default: 0
+  27ikDz77N89hVLvM: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1785597790680
+  modifiedTime: 1793480593865
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!E1vW1RfMjOKwTkzq'

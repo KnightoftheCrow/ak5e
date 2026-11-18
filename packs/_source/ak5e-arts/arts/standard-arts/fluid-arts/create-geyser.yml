@@ -1,0 +1,584 @@
+folder: DpDZIj86euV4F2rQ
+name: Create Geyser
+type: spell
+_id: DjLwAW9PpW1JlvU1
+img: icons/magic/water/projectiles-ice-explosion.webp
+system:
+  activities:
+    Q86OlDA3mRAck4e5:
+      type: save
+      name: Cast
+      _id: Q86OlDA3mRAck4e5
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags:
+        cat:
+          genericConfig:
+            chris-premades:
+              pushOnFail:
+                distance: '30'
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: pushOnFail
+                rules: all
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 7
+            denomination: 8
+            bonus: ''
+            types:
+              - bludgeoning
+            scaling:
+              mode: ''
+              number: 1
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: area-of-ap-cost-reduction
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: retarget
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: false
+        triggeredActivityConfigure: false
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: true
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules:
+          - trigger: entry
+            action: useActivity
+            targetId: geyser-save
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    JMWuJiC767dbFtXd:
+      type: save
+      name: Geyser Save
+      _id: JMWuJiC767dbFtXd
+      img: ''
+      sort: 100000
+      activation:
+        type: ''
+        override: true
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: true
+      effects: []
+      flags:
+        cat:
+          genericConfig:
+            chris-premades:
+              pushOnFail:
+                distance: '30'
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: pushOnFail
+                rules: all
+      range:
+        units: ft
+        override: true
+        special: ''
+        value: '30'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 7
+            denomination: 8
+            bonus: ''
+            types:
+              - bludgeoning
+            scaling:
+              mode: ''
+              number: 1
+      save:
+        ability:
+          - str
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: true
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: true
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    6UuQ7G7klSinaKmV:
+      type: utility
+      name: Area of AP Cost Reduction
+      _id: 6UuQ7G7klSinaKmV
+      img: ''
+      sort: 200000
+      activation:
+        type: special
+        override: true
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: sphere
+          size: '50'
+          count: ''
+        affects:
+          choice: false
+          type: creature
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: 0
+        excludeSource: false
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules:
+          - trigger: entry
+            action: applyEffect
+            targetId: ASdKTHi02XKhL1TS
+          - trigger: turnStart
+            action: applyEffect
+            targetId: ASdKTHi02XKhL1TS
+          - trigger: exit
+            action: removeEffect
+            targetId: ASdKTHi02XKhL1TS
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You choose a grounded point you can see within range; this point cannot
+      be on any kind of raised surface, such as a second storey. The ground
+      cracks and rumbles, and water from deep underground blasts upwards from
+      the earth at your chosen point in a geyser. When the Geyser appears, all
+      Creatures within 15 feet of that point must make a Strength Saving Throw;
+      on a failed Save, they take 7d8 Bludgeoning Damage and are knocked 30 feet
+      directly away from the original point. On a successful save, they take
+      half as much damage, and are knocked back to the edge of the
+      radius.</p><p>The Geyser continues to pump out water for the duration of
+      this Art, at a rate of 30 cubic metres a round. When a Creature enters the
+      radius of the Geyser, that Creature must make a Strength Saving Throw; on
+      a failed Save, they take 7d8 Bludgeoning Damage and are knocked 30 feet
+      directly away from the original point. On a successful save, they take
+      half as much damage, and are knocked back to the edge of the
+      radius.</p><p>While the Geyser is producing water, and for a number of
+      Rounds after this Spell ends equal to the number of Rounds it was
+      concentrated on, Fluid Arts are empowered; Arts that manipulate or use
+      water cost 2 fewer Arts Points to cast (minimum of 0), so long as they are
+      cast within 50 feet of the Geyser’s location, and the water from it
+      remains.</p><p><strong>Semi-Automated: </strong>The Geyser Damage and
+      knockback is automated. When you cast this Art, you will be prompted to
+      place the area of AP cost reduction; place it at the same origin as the
+      geyser. It does not actually reduce the cost of Fluid Arts.</p>
+    chat: ''
+  identifier: create-geyser
+  source:
+    revision: 1
+    rules: '2014'
+  activation:
+    type: action
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 7
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 2
+  properties:
+    - vocal
+    - somatic
+    - concentration
+    - ritual
+  range:
+    units: ft
+    special: ''
+    value: '150'
+  school: con
+  target:
+    template:
+      contiguous: false
+      stationary: false
+      units: ft
+      type: sphere
+      size: '15'
+      count: ''
+    affects:
+      choice: false
+      type: ''
+effects:
+  - name: Fluid Arts -2AP Cost
+    img: icons/magic/water/projectiles-ice-explosion.webp
+    origin: null
+    type: base
+    _id: ASdKTHi02XKhL1TS
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Compendium.ak5e.ak5e-arts.Item.DjLwAW9PpW1JlvU1
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+        enableCondition: ''
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1790609356679
+      modifiedTime: 1791733108091
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!DjLwAW9PpW1JlvU1.ASdKTHi02XKhL1TS'
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1790608030049
+  modifiedTime: 1791733108091
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!DjLwAW9PpW1JlvU1'

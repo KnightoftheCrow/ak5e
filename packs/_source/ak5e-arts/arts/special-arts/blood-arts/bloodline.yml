@@ -357,21 +357,21 @@ system:
 effects:
   - name: Bloodline
     img: icons/skills/wounds/blood-spurt-spray-red.webp
-    origin: Item.uw4itGtqMii13h3F
+    origin: null
     transfer: false
     _id: lpKX0x42zTUNWdub
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.uw4itGtqMii13h3F
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -384,7 +384,6 @@ effects:
         enableCondition: ''
         disableCondition: ''
         stackable: noneName
-        showIcon: true
         disableIncapacitated: false
         selfTarget: false
         selfTargetAlways: false
@@ -398,28 +397,33 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733109613
+      modifiedTime: 1793630691683
+    start: null
+    showIcon: 2
+    folder: null
     _key: '!items.effects!uw4itGtqMii13h3F.lpKX0x42zTUNWdub'
   - name: Bloodline
     img: icons/skills/wounds/blood-spurt-spray-red.webp
-    origin: Item.uw4itGtqMii13h3F
+    origin: null
     transfer: false
     _id: MlNncsF2Qs6MFy4k
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.uw4itGtqMii13h3F
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -432,7 +436,6 @@ effects:
         enableCondition: ''
         disableCondition: ''
         stackable: noneName
-        showIcon: true
         disableIncapacitated: false
         selfTarget: true
         selfTargetAlways: false
@@ -446,10 +449,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733109613
+      modifiedTime: 1793630691683
+    start: null
+    showIcon: 2
+    folder: null
     _key: '!items.effects!uw4itGtqMii13h3F.MlNncsF2Qs6MFy4k'
 flags:
   dnd5e:
@@ -460,12 +468,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733109613
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

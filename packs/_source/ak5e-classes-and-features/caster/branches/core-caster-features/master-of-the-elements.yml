@@ -67,6 +67,7 @@ system:
             min: null
             max: null
         - _id: 39bE8J1gFIiqwHbn
+          level: {}
       flags: {}
       range:
         units: self
@@ -77,6 +78,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -140,14 +142,36 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     K6iDL8N8d3DeZv8N:
       type: enchant
       _id: K6iDL8N8d3DeZv8N
@@ -186,6 +210,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -251,13 +276,36 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Change Damage Type (Acid)
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     vgBGrcbT0LhQvOgl:
       type: enchant
       sort: 0
@@ -295,6 +343,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -360,14 +409,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Change Damage Type (Force)
       _id: vgBGrcbT0LhQvOgl
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     BJ0Lgc6HdgcueJtX:
       type: enchant
       sort: 0
@@ -405,6 +477,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -470,14 +543,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Change Damage Type (Piercing)
       _id: BJ0Lgc6HdgcueJtX
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     WO0afsF8AtsdPwp3:
       type: enchant
       sort: 0
@@ -515,6 +611,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -580,14 +677,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Change Damage Type (Lightning)
       _id: WO0afsF8AtsdPwp3
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     7iJGNTBX2f51TIYf:
       type: enchant
       sort: 0
@@ -625,6 +745,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -690,14 +811,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Change Damage Type (Fire)
       _id: 7iJGNTBX2f51TIYf
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     8EQngRvQALkQ3L1I:
       type: enchant
       sort: 0
@@ -735,6 +879,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -800,14 +945,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Change Damage Type (Bludgeoning)
       _id: 8EQngRvQALkQ3L1I
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     Jhrqx8jkGXQbb1QA:
       type: enchant
       sort: 0
@@ -845,6 +1013,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -910,14 +1079,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Change Damage Type (Cold)
       _id: Jhrqx8jkGXQbb1QA
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     Qe4I0qpe0zeJRk05:
       type: enchant
       sort: 0
@@ -955,6 +1147,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -1020,14 +1213,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Change Damage Type (Radiant)
       _id: Qe4I0qpe0zeJRk05
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     w0a7IvPcgQvQF2tj:
       type: enchant
       sort: 0
@@ -1065,6 +1281,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -1130,14 +1347,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Change Damage Type (Psychic)
       _id: w0a7IvPcgQvQF2tj
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     TzhR7gtZWLkqK3WJ:
       type: enchant
       sort: 0
@@ -1175,6 +1415,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -1240,14 +1481,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Change Damage Type (Thunder)
       _id: TzhR7gtZWLkqK3WJ
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     BwSw0WohXX1l54bM:
       type: enchant
       sort: 0
@@ -1285,6 +1549,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -1350,19 +1615,42 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       name: Change Damage Type (Slashing)
       _id: BwSw0WohXX1l54bM
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>Your expertise with your chosen Arts grants you the following
@@ -1399,25 +1687,28 @@ system:
 effects:
   - name: Acid Resistance
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV
+    origin: null
     transfer: false
     _id: fBg3OXjOylfv4fSJ
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: acid
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: acid
+          priority: 20
+          type: add
+          phase: initial
+          _id: WOgRCSQNXghlmvHB
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.fiaSN2yTAQnjWlrV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1441,36 +1732,42 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: Item.kTbut5VOuncR3jvN.ActiveEffect.bIszxMotzttFGTKo
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094087480
-      modifiedTime: 1774094348646
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553370
+      modifiedTime: 1791733087395
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.fBg3OXjOylfv4fSJ'
   - name: Cold Resistance
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: cold
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: cold
+          priority: 20
+          type: add
+          phase: initial
+          _id: h0Usd67Ay2jfiSEt
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.fiaSN2yTAQnjWlrV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1494,37 +1791,43 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: Item.kTbut5VOuncR3jvN.ActiveEffect.bIszxMotzttFGTKo
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094089647
-      modifiedTime: 1774094362880
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553371
+      modifiedTime: 1791733087396
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: 3mmr2y1tgGvO1AQt
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.3mmr2y1tgGvO1AQt'
   - name: Fire Resistance
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: fire
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: fire
+          priority: 20
+          type: add
+          phase: initial
+          _id: gOvqEQrx8BNukUGb
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.fiaSN2yTAQnjWlrV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1548,37 +1851,43 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: Item.kTbut5VOuncR3jvN.ActiveEffect.bIszxMotzttFGTKo
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094090965
-      modifiedTime: 1774094377076
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553371
+      modifiedTime: 1791733087396
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: 6znZrfhNkHKVMpuz
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.6znZrfhNkHKVMpuz'
   - name: Force Resistance
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: force
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: force
+          priority: 20
+          type: add
+          phase: initial
+          _id: a53ZLyuNbyuRhI7p
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.fiaSN2yTAQnjWlrV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1602,37 +1911,43 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: Item.kTbut5VOuncR3jvN.ActiveEffect.bIszxMotzttFGTKo
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094092546
-      modifiedTime: 1774094389827
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553371
+      modifiedTime: 1791733087396
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: jmmhmpaNAs1uhhx7
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.jmmhmpaNAs1uhhx7'
   - name: Lightning Resistance
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: lightning
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: lightning
+          priority: 20
+          type: add
+          phase: initial
+          _id: 7r8IvQ8QA7dUYSxX
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.fiaSN2yTAQnjWlrV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1656,37 +1971,43 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: Item.kTbut5VOuncR3jvN.ActiveEffect.bIszxMotzttFGTKo
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094094081
-      modifiedTime: 1774094403210
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553371
+      modifiedTime: 1791733087396
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: DSsDLqdxtgxzyGXL
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.DSsDLqdxtgxzyGXL'
   - name: Psychic Resistance
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: psychic
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: psychic
+          priority: 20
+          type: add
+          phase: initial
+          _id: 2XYQYpYpzljXRBOW
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.fiaSN2yTAQnjWlrV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1710,37 +2031,43 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: Item.kTbut5VOuncR3jvN.ActiveEffect.bIszxMotzttFGTKo
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094098625
-      modifiedTime: 1774094434956
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553372
+      modifiedTime: 1791733087396
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: ILdhEl7lMPtvpWLq
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.ILdhEl7lMPtvpWLq'
   - name: Radiant Resistance
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: radiant
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: radiant
+          priority: 20
+          type: add
+          phase: initial
+          _id: P1gBVx7sHXfXvHRt
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.fiaSN2yTAQnjWlrV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1764,37 +2091,43 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: Item.kTbut5VOuncR3jvN.ActiveEffect.bIszxMotzttFGTKo
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094099934
-      modifiedTime: 1774094446297
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553372
+      modifiedTime: 1791733087396
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: Y95njicq3NuzyCNF
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.Y95njicq3NuzyCNF'
   - name: Bludgeoning Resistance
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: bludgeoning
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: bludgeoning
+          priority: 20
+          type: add
+          phase: initial
+          _id: UTEJasb71padauVF
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.fiaSN2yTAQnjWlrV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1818,37 +2151,43 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: Item.kTbut5VOuncR3jvN.ActiveEffect.bIszxMotzttFGTKo
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094107676
-      modifiedTime: 1774094459905
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553372
+      modifiedTime: 1791733087396
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: jc6nSWxSn9lQfGbn
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.jc6nSWxSn9lQfGbn'
   - name: Piercing Resistance
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: piercing
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: piercing
+          priority: 20
+          type: add
+          phase: initial
+          _id: XKrXBf06whbnaIQ2
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.fiaSN2yTAQnjWlrV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1872,37 +2211,43 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: Item.kTbut5VOuncR3jvN.ActiveEffect.bIszxMotzttFGTKo
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094135326
-      modifiedTime: 1774094479372
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553372
+      modifiedTime: 1791733087397
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: dVwNBkTIipxinByF
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.dVwNBkTIipxinByF'
   - name: Slashing Resistance
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: slashing
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: slashing
+          priority: 20
+          type: add
+          phase: initial
+          _id: 87ouMZFB6J90NLkb
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.fiaSN2yTAQnjWlrV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1926,37 +2271,43 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: Item.kTbut5VOuncR3jvN.ActiveEffect.bIszxMotzttFGTKo
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094151809
-      modifiedTime: 1774094493859
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553372
+      modifiedTime: 1791733087397
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: A5E1jyI5oEul7oTa
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.A5E1jyI5oEul7oTa'
   - name: Thunder Resistance
     img: modules/ak5e/icons/Skill-Lin3.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV
+    origin: null
     transfer: false
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: thunder
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: thunder
+          priority: 20
+          type: add
+          phase: initial
+          _id: LUFDxyBZELj1An9p
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.fiaSN2yTAQnjWlrV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -1980,36 +2331,40 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: Item.kTbut5VOuncR3jvN.ActiveEffect.bIszxMotzttFGTKo
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094269267
-      modifiedTime: 1774094506894
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553373
+      modifiedTime: 1791733087397
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: 39bE8J1gFIiqwHbn
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.39bE8J1gFIiqwHbn'
   - type: enchantment
     name: Maverick (Force)
     img: modules/ak5e/icons/Skill-Lin3.webp
     disabled: true
     _id: SWo3GjwdR3gQNFet
-    system: {}
-    changes:
-      - key: system.damage.types
-        mode: 5
-        value: force
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.types
+          value: force
+          priority: 20
+          type: override
+          phase: initial
+          _id: J4MDSGSV2FHHCRtB
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -2035,31 +2390,35 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094723179
-      modifiedTime: 1774094936064
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553373
+      modifiedTime: 1791733087397
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.SWo3GjwdR3gQNFet'
   - type: enchantment
     name: Maverick (Acid)
     img: modules/ak5e/icons/Skill-Lin3.webp
     disabled: true
-    system: {}
-    changes:
-      - key: system.damage.types
-        mode: 5
-        value: acid
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.types
+          value: acid
+          priority: 20
+          type: override
+          phase: initial
+          _id: 8brcMsXpWb9vnL42
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -2085,32 +2444,36 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774094988529
-      modifiedTime: 1774094998887
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553373
+      modifiedTime: 1791733087397
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: GdIcMz6ccTy10zF8
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.GdIcMz6ccTy10zF8'
   - type: enchantment
     name: Maverick (Piercing)
     img: modules/ak5e/icons/Skill-Lin3.webp
     disabled: true
-    system: {}
-    changes:
-      - key: system.damage.types
-        mode: 5
-        value: piercing
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.types
+          value: piercing
+          priority: 20
+          type: override
+          phase: initial
+          _id: b4C8KPcpZahZVIpH
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -2133,36 +2496,39 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV.ActiveEffect.GdIcMz6ccTy10zF8
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774095004212
-      modifiedTime: 1774095018648
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553373
+      modifiedTime: 1791733087397
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: Jvuswm5rUbjd8mDV
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.Jvuswm5rUbjd8mDV'
   - type: enchantment
     name: Maverick (Lightning)
     img: modules/ak5e/icons/Skill-Lin3.webp
     disabled: true
-    system: {}
-    changes:
-      - key: system.damage.types
-        mode: 5
-        value: lightning
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.types
+          value: lightning
+          priority: 20
+          type: override
+          phase: initial
+          _id: Svu1PmxySzKs07Pu
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -2185,36 +2551,39 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV.ActiveEffect.GdIcMz6ccTy10zF8
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774095023617
-      modifiedTime: 1774095037044
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553373
+      modifiedTime: 1791733087397
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: 0ukwb5DIWVQvFhRs
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.0ukwb5DIWVQvFhRs'
   - type: enchantment
     name: Maverick (Fire)
     img: modules/ak5e/icons/Skill-Lin3.webp
     disabled: true
-    system: {}
-    changes:
-      - key: system.damage.types
-        mode: 5
-        value: fire
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.types
+          value: fire
+          priority: 20
+          type: override
+          phase: initial
+          _id: gyvI5KQ3rNe9p9Ga
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -2237,36 +2606,39 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV.ActiveEffect.GdIcMz6ccTy10zF8
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774095038462
-      modifiedTime: 1774095047104
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553374
+      modifiedTime: 1791733087398
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: t8yOZI4DivTpuAf1
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.t8yOZI4DivTpuAf1'
   - type: enchantment
     name: Maverick (Bludgeoning)
     img: modules/ak5e/icons/Skill-Lin3.webp
     disabled: true
-    system: {}
-    changes:
-      - key: system.damage.types
-        mode: 5
-        value: bludgeoning
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.types
+          value: bludgeoning
+          priority: 20
+          type: override
+          phase: initial
+          _id: shebeJNrdhG9IV0A
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -2289,36 +2661,39 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV.ActiveEffect.GdIcMz6ccTy10zF8
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774095048650
-      modifiedTime: 1774095057615
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553374
+      modifiedTime: 1791733087398
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: 8luXEdvjnpnrp5K0
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.8luXEdvjnpnrp5K0'
   - type: enchantment
     name: Maverick (Cold)
     img: modules/ak5e/icons/Skill-Lin3.webp
     disabled: true
-    system: {}
-    changes:
-      - key: system.damage.types
-        mode: 5
-        value: cold
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.types
+          value: cold
+          priority: 20
+          type: override
+          phase: initial
+          _id: 2SXIJqwzuQmggand
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -2341,36 +2716,39 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV.ActiveEffect.GdIcMz6ccTy10zF8
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774095059346
-      modifiedTime: 1774095067247
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553374
+      modifiedTime: 1791733087398
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: ULl0dZtep44Corv2
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.ULl0dZtep44Corv2'
   - type: enchantment
     name: Maverick (Radiant)
     img: modules/ak5e/icons/Skill-Lin3.webp
     disabled: true
-    system: {}
-    changes:
-      - key: system.damage.types
-        mode: 5
-        value: radiant
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.types
+          value: radiant
+          priority: 20
+          type: override
+          phase: initial
+          _id: ciE2rqyXzEdhtvhk
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -2393,36 +2771,39 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV.ActiveEffect.GdIcMz6ccTy10zF8
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774095068985
-      modifiedTime: 1774095078341
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553374
+      modifiedTime: 1791733087398
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: rSi5N6tOm8ox4TFn
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.rSi5N6tOm8ox4TFn'
   - type: enchantment
     name: Maverick (Psychic)
     img: modules/ak5e/icons/Skill-Lin3.webp
     disabled: true
-    system: {}
-    changes:
-      - key: system.damage.types
-        mode: 5
-        value: psychic
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.types
+          value: psychic
+          priority: 20
+          type: override
+          phase: initial
+          _id: GZTEXDvmRBugVNPp
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -2445,36 +2826,39 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV.ActiveEffect.GdIcMz6ccTy10zF8
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774095082663
-      modifiedTime: 1774095092679
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553374
+      modifiedTime: 1791733087398
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: 2Pz4o2N769xnzzKR
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.2Pz4o2N769xnzzKR'
   - type: enchantment
     name: Maverick (Thunder)
     img: modules/ak5e/icons/Skill-Lin3.webp
     disabled: true
-    system: {}
-    changes:
-      - key: system.damage.types
-        mode: 5
-        value: thunder
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.types
+          value: thunder
+          priority: 20
+          type: override
+          phase: initial
+          _id: Hx3F4EJYBAPWtfYz
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -2497,36 +2881,39 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV.ActiveEffect.GdIcMz6ccTy10zF8
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774095094149
-      modifiedTime: 1774095104393
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553374
+      modifiedTime: 1791733087398
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: iVKwZJXKdcP4Z4WK
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.iVKwZJXKdcP4Z4WK'
   - type: enchantment
     name: Maverick (Slashing)
     img: modules/ak5e/icons/Skill-Lin3.webp
     disabled: true
-    system: {}
-    changes:
-      - key: system.damage.types
-        mode: 5
-        value: slashing
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.types
+          value: slashing
+          priority: 20
+          type: override
+          phase: initial
+          _id: R5m5JNsE3KbaoPaC
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: 1
-      startRound: null
-      startTurn: null
+      value: 1
+      units: turns
+      expiry: turnStart
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -2549,34 +2936,33 @@ effects:
       core:
         overlay: false
     _stats:
-      compendiumSource: >-
-        Compendium.ak5e.ak5e-classes-and-features.Item.fiaSN2yTAQnjWlrV.ActiveEffect.GdIcMz6ccTy10zF8
+      compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774095106384
-      modifiedTime: 1774095116666
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553375
+      modifiedTime: 1791733087398
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
     _id: pES6t5IwJjht6LkE
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!fiaSN2yTAQnjWlrV.pES6t5IwJjht6LkE'
 sort: 400000
 ownership:
   default: 0
-  9KtVYqHDTWORuJDZ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1774093934924
-  modifiedTime: 1774098008002
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 5.3.3
+  createdTime: 1791203553370
+  modifiedTime: 1791733087395
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!fiaSN2yTAQnjWlrV'

@@ -1,0 +1,111 @@
+name: Self-Defence Protocol
+type: feat
+img: modules/ak5e/icons/Skill-Nightingale1.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement:
+    MqBJklIiDkjsBIuq:
+      type: ItemChoice
+      title: Arts Pool Choice
+      _id: MqBJklIiDkjsBIuq
+      configuration:
+        allowDrops: false
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-arts.Item.btqFeMxzAvUuKBwq
+          - uuid: Compendium.ak5e.ak5e-arts.Item.XCTbBD0HrCV0P7mG
+          - uuid: Compendium.ak5e.ak5e-arts.Item.SxFM2kGmXnrojhkg
+          - uuid: Compendium.ak5e.ak5e-arts.Item.2xk0z77ohatGJVDm
+          - uuid: Compendium.ak5e.ak5e-arts.Item.LjtV5Orz0XcfS09Q
+          - uuid: Compendium.ak5e.ak5e-arts.Item.ao3k1tqgNAKe1UJp
+          - uuid: Compendium.ak5e.ak5e-arts.Item.SwYxP4XxddjecUha
+          - uuid: Compendium.ak5e.ak5e-arts.Item.YXomDpOQC1oM5nR4
+          - uuid: Compendium.ak5e.ak5e-arts.Item.NuKecH9nK2aG4p02
+          - uuid: Compendium.ak5e.ak5e-arts.Item.sugT8eodYWE8O4vy
+          - uuid: Compendium.ak5e.ak5e-arts.Item.UpHl6gka3UOmLWIJ
+        restriction:
+          list: []
+        spell: null
+        type: null
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
+    kcEBOrFTJ3abdSMq:
+      type: ScaleValue
+      title: Self-Defence Art Cost Reduction
+      _id: kcEBOrFTJ3abdSMq
+      configuration:
+        identifier: ''
+        type: number
+        distance:
+          units: ''
+        scale:
+          '5':
+            value: 1
+          '11':
+            value: 2
+      flags: {}
+      value: {}
+      hint: ''
+  description:
+    value: >-
+      <p>It is an unfortunate truth that it is not safe to be a medic
+      everywhere. It is a fortunate truth that you are also capable of casting
+      conventional Arts.</p><p>When you gain this Feature, choose one of the
+      Standard Arts Pools available to the Caster Class; you learn all of the
+      Arts from that Pool of 5th Level or less, including Cantrips. These Arts
+      cost 1 fewer Arts Point to cast, to a minimum of 0. From 11th Level, these
+      Arts instead cost 2 fewer Arts Points.</p><p><strong>Semi-Automated:
+      </strong>You will be prompted to choose an Arts Pool; however, the cost
+      reduction is not automated. You must manually adjust the AP cost of your
+      Arts.</p>
+    chat: ''
+  identifier: self-defence-protocol
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 5
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 150000
+flags:
+  scene-packer:
+    hash: 1e5eccea9ec210c7f94930b3fda3af3e7e56782d
+    sourceId: Compendium.world.spells--features.Item.mujYWFbSMZdOtMph
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Compendium.world.spells--features.Item.mujYWFbSMZdOtMph
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791210546461
+  modifiedTime: 1791210546461
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: n9rblR7heEcC5Nue
+folder: 2NjErlfHCNMkOexd
+_key: '!items!n9rblR7heEcC5Nue'

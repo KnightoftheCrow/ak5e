@@ -1,0 +1,190 @@
+folder: d5lHXpin3xPovYyX
+name: Urgent Care Centre
+type: feat
+_id: uS2G4DRLn82PzWUF
+img: modules/ak5e/icons/64px-Skill-Mon3tr1.webp
+system:
+  activities:
+    1PsNBhXUsJ7eDrkN:
+      type: heal
+      name: Activate
+      _id: 1PsNBhXUsJ7eDrkN
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: emanationNoTemplate
+          size: '15'
+          count: ''
+        affects:
+          choice: false
+          type: ally
+          count: ''
+          special: '-self'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      healing:
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '@scaling'
+        scaling:
+          number: 1
+          mode: ''
+        number: null
+        denomination: null
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>When the wounded are all around you, you are exactly where you need to
+      be. When you roll to restore Hit Points to yourself with a levelled Art,
+      you can can cause your medical arts to wash out from you in a wave; all
+      other Creatures within 15 feet of you recover Hit Points equal to half of
+      the amount rolled.</p><hr><p><strong>Semi-Automated: </strong>When you use
+      this Feature, set the scaling value to the appropriate amount of Hit
+      Points.</p>
+    chat: ''
+  identifier: urgent-care-centre
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 4
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+sort: 150000
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791210558452
+  modifiedTime: 1791213573326
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!uS2G4DRLn82PzWUF'

@@ -1,0 +1,397 @@
+folder: JBS9vzDCvPQWvnsV
+name: Halfway House
+type: feat
+_id: dFrrynYz6rXE2KCm
+img: modules/ak5e/icons/Skill-Beeswax1.png
+system:
+  activities:
+    DTMykDU0btMDszja:
+      type: utility
+      name: Restore Life Support
+      _id: DTMykDU0btMDszja
+      img: ''
+      sort: 0
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: Compendium.ak5e.ak5e-classes-and-features.Item.OFlOmCTKXDxcd3Cm
+            scaling:
+              mode: amount
+              formula: '-1'
+          - type: itemUses
+            value: '1'
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: dIDMLGorydyt9SAc
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: '@scaling'
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '1'
+  advancement:
+    eIHWvvk7E8rkaWxO:
+      type: ItemChoice
+      title: Additional Arts Pool
+      _id: eIHWvvk7E8rkaWxO
+      configuration:
+        allowDrops: false
+        choices:
+          '1':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.ak5e.ak5e-arts.Item.btqFeMxzAvUuKBwq
+          - uuid: Compendium.ak5e.ak5e-arts.Item.XCTbBD0HrCV0P7mG
+          - uuid: Compendium.ak5e.ak5e-arts.Item.SxFM2kGmXnrojhkg
+          - uuid: Compendium.ak5e.ak5e-arts.Item.2xk0z77ohatGJVDm
+          - uuid: Compendium.ak5e.ak5e-arts.Item.LjtV5Orz0XcfS09Q
+          - uuid: Compendium.ak5e.ak5e-arts.Item.ao3k1tqgNAKe1UJp
+          - uuid: Compendium.ak5e.ak5e-arts.Item.SwYxP4XxddjecUha
+          - uuid: Compendium.ak5e.ak5e-arts.Item.YXomDpOQC1oM5nR4
+          - uuid: Compendium.ak5e.ak5e-arts.Item.NuKecH9nK2aG4p02
+          - uuid: Compendium.ak5e.ak5e-arts.Item.sugT8eodYWE8O4vy
+          - uuid: Compendium.ak5e.ak5e-arts.Item.UpHl6gka3UOmLWIJ
+        restriction:
+          list: []
+        spell: null
+        type: null
+      flags: {}
+      value:
+        added: {}
+        replaced: {}
+      hint: ''
+    xTASYd5olTqzFqFd:
+      name: Reduced AP Costs
+      type: ScaleValue
+      _id: xTASYd5olTqzFqFd
+      configuration:
+        identifier: ''
+        type: number
+        distance:
+          units: ''
+        scale:
+          '5':
+            value: 1
+          '11':
+            value: 2
+      flags: {}
+      value: {}
+      hint: ''
+  description:
+    value: >-
+      <p>You bridge the gap between offensive and medical Arts, gaining the
+      following benefits:</p><p><strong>Additional Arts Pool.</strong> Choose
+      one of the Standard Arts Pools available to the Caster Class. You learn
+      all of the Arts in that Pool, and they are always prepared for you. From
+      5th Level, these Arts cost 1 fewer Arts Point to cast, to a minimum of 0.
+      From 11th Level, these Arts instead cost 2 fewer Arts
+      Points.</p><p><strong>Healing through Harm.</strong> As a Reaction, when
+      you roll to determine the Damage of an Art, you may add half of that value
+      to your Life Support Pool; this allows you to temporarily exceed your
+      maximum Life Support; any additional Life Support is lost when you
+      complete a Long Rest. Once you have used this Feature, you must complete a
+      Short Rest before you may do so again.</p><hr><p><strong>Semi-Automated:
+      </strong>Your additional choice of Arts Pool is automated. Use the
+      Activity on this Feature and set the scaling value to the amount of Life
+      Support you should regain; however, this will not increase your maximum
+      Life Support. Starting at Level 5, you have an Opt-In when you roll Damage
+      or an Attack for a non-Cantrip Spell to regain Arts Points.</p>
+    chat: ''
+  identifier: halfway-house
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Increased Maximum Life Support
+    img: modules/ak5e/icons/Skill-Beeswax1.png
+    origin: null
+    transfer: false
+    _id: dIDMLGorydyt9SAc
+    type: base
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.dFrrynYz6rXE2KCm
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791215956001
+      modifiedTime: 1791733087180
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!dFrrynYz6rXE2KCm.dIDMLGorydyt9SAc'
+  - name: Reduced AP for Certain Arts
+    img: modules/ak5e/icons/Skill-Beeswax1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.dFrrynYz6rXE2KCm
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            usesCount=Item.arts-points,
+            -(@scale.halfway-house.reduced-ap-costs); name=AP Cost Reduction
+            (Refund); optinId=halfway-house-0; optin; isSpell && !isCantrip &&
+            effectActor.details.level >= 5 && !hasAttack
+          phase: initial
+          _id: urUFNHeCMiRtv6T8
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.use.info
+          type: ac5e
+          value: >-
+            usesCount=Item.arts-points,
+            -(@scale.halfway-house.reduced-ap-costs); name=AP Cost Reduction
+            (Refund); optinId=halfway-house-0; optin; isSpell && !isCantrip &&
+            effectActor.details.level >= 5
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: BHnDH5Ksl5WCbYPe
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: >-
+            usesCount=Item.arts-points,
+            -(@scale.halfway-house.reduced-ap-costs); name=AP Cost Reduction
+            (Refund); optinId=halfway-house-0; optin; isSpell && !isCantrip &&
+            effectActor.details.level >= 5
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: JNoPqPpyyzP1puV3
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: UXojMSUw5twpyEfp
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.dFrrynYz6rXE2KCm
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793134244388
+      modifiedTime: 1793134664544
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!dFrrynYz6rXE2KCm.UXojMSUw5twpyEfp'
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791210558454
+  modifiedTime: 1793134587464
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!dFrrynYz6rXE2KCm'

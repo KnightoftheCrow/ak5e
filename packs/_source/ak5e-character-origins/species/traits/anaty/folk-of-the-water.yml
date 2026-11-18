@@ -1,0 +1,601 @@
+folder: kqvuv2G7bNqGA5cb
+name: Folk of the Water
+type: feat
+_id: qTwhPrZRHf1YP7IF
+img: icons/environment/wilderness/cave-entrance-island.webp
+system:
+  activities:
+    c5mGwfav5PhwmJwF:
+      type: utility
+      name: Dart Forward
+      _id: c5mGwfav5PhwmJwF
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: YM4gLNLcb9vCrHFr
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 2sngdYvsc2pGJX8r
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    YDGdyUNAf3Bgraox:
+      type: utility
+      name: Toggle Underwater Darkvision
+      _id: YDGdyUNAf3Bgraox
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: kkPXTBTZBmvSf7fw
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: true
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <h3>Folk of the Water</h3><p>Lithe, small, powerful; the sleek bodies of
+      water-dwelling Anaty belie their predatory nature. Darting into the water,
+      or from it, they quickly seize hold of unwary prey and deliver a killing
+      blow. You gain the following benefits:</p><ul><li><p><strong>Additional
+      Movement Speeds.</strong> You gain a Swimming Speed equal to your Walking
+      Speed.</p></li><li><p><strong>Dart Forward.</strong> If you have used two
+      or more Speeds during your Turn, you may take the Dash Action as a Bonus
+      Action during that Turn. If you do so, the first time you make an Attack
+      that Turn against a Creature within 15 feet, you can roll a d8 and add it
+      to either the Attack Roll or Damage
+      Roll.</p></li><li><p><strong>Nictitating Membrane.</strong> While
+      underwater, you have 30 feet of
+      Darkvision.</p></li></ul><hr><p><strong>Semi-Automated: </strong>Use the
+      Dart Forward Action to do your Bonus Action Dash; this also provides the
+      Attack/Damage Opt In. Use the Toggle Darkvision Activity when you enter
+      and leave underwater.</p>
+    chat: ''
+  identifier: folk-of-the-water
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Swimming Speed = Walking Speed
+    img: icons/environment/wilderness/cave-entrance-island.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.qTwhPrZRHf1YP7IF
+        behavior: null
+        message: null
+      changes:
+        - key: system.attributes.movement.speeds.swim
+          type: add
+          value: '@attributes.movement.speeds.walk'
+          phase: initial
+          _id: O3H9uUD0AzXYNB6n
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: iJtcfxQu78hKgtg5
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-character-origins.Item.qTwhPrZRHf1YP7IF
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794921890025
+      modifiedTime: 1794921916196
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-character-origins.Item.sIjxwDg0OjcvEwyn.ActiveEffect.hDACFuWjGdHMXEMF
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!qTwhPrZRHf1YP7IF.iJtcfxQu78hKgtg5'
+  - name: Dart Forward
+    img: icons/environment/wilderness/cave-entrance-island.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.qTwhPrZRHf1YP7IF
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: >-
+            bonus=1d8; name=Dart Forward; optinId=dart-forward-0;
+            description=+1d8 to Attack Roll; once; optin;
+            checkDistance(effectActor.token, nonEffectActor.token) <= 15
+          phase: initial
+          _id: kGaJ0R5npeDov0HO
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1d8; name=Dart Forward; optinId=dart-forward-1;
+            description=+1d8 to Damage Roll; addTo=base; once; optin;
+            checkDistance(effectActor.token, nonEffectActor.token) <= 15 &&
+            hasAttack
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: RJN9ntjgCJj2l55F
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: YM4gLNLcb9vCrHFr
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-character-origins.Item.qTwhPrZRHf1YP7IF
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794921944782
+      modifiedTime: 1794922191250
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!qTwhPrZRHf1YP7IF.YM4gLNLcb9vCrHFr'
+  - name: Dash
+    img: icons/magic/movement/acceleration-speed-tech-blue.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.qTwhPrZRHf1YP7IF
+        behavior: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: 2sngdYvsc2pGJX8r
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794922260203
+      modifiedTime: 1794922260203
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-character-origins.Item.AIamrV0426zjeRMD.ActiveEffect.aoWq5ZpZglnxnDzg
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!qTwhPrZRHf1YP7IF.2sngdYvsc2pGJX8r'
+  - name: Underwater Darkvision
+    img: icons/environment/wilderness/cave-entrance-island.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.qTwhPrZRHf1YP7IF
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.senses.ranges.darkvision
+          type: upgrade
+          value: 30
+          phase: initial
+          _id: xSzvIvZBAJAsL9X5
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: kkPXTBTZBmvSf7fw
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 0
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794922300064
+      modifiedTime: 1794922318501
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!qTwhPrZRHf1YP7IF.kkPXTBTZBmvSf7fw'
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794921843867
+  modifiedTime: 1794923602953
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!qTwhPrZRHf1YP7IF'

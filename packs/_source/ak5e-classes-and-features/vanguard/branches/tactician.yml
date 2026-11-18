@@ -2,10 +2,11 @@ folder: xihwLA5Usem10AIy
 name: Tactician
 type: subclass
 _id: 8JL6suVbIhLN8COl
-img: modules/ak5e/icons/sub_tactician_icon.png
+img: modules/ak5e/icons/class%20%2B%20subclass/sub_tactician_icon.png
 system:
   advancement:
-    - type: ItemGrant
+    oZKCRZfgQZejkY1i:
+      type: ItemGrant
       _id: oZKCRZfgQZejkY1i
       configuration:
         items:
@@ -17,7 +18,9 @@ system:
       level: 1
       title: Lead from the Rear
       hint: ''
-    - type: ItemGrant
+      flags: {}
+    IDYTUU4AnGmBZXVp:
+      type: ItemGrant
       title: Tactical Knowledge
       _id: IDYTUU4AnGmBZXVp
       configuration:
@@ -28,7 +31,10 @@ system:
         spell: null
       value: {}
       level: 1
-    - type: ItemGrant
+      flags: {}
+      hint: ''
+    B5YvWHf0PP1UGAPs:
+      type: ItemGrant
       _id: B5YvWHf0PP1UGAPs
       configuration:
         items:
@@ -40,7 +46,9 @@ system:
       level: 4
       title: Strategic Genius
       hint: ''
-    - type: ItemGrant
+      flags: {}
+    9yWwSY8VcDaMpGur:
+      type: ItemGrant
       _id: 9yWwSY8VcDaMpGur
       configuration:
         items:
@@ -52,7 +60,9 @@ system:
       level: 10
       title: Fail to Plan, Pan to Fail
       hint: ''
-    - type: ItemGrant
+      flags: {}
+    qoh2VQQCMqrol1TG:
+      type: ItemGrant
       title: Master Tactician
       _id: qoh2VQQCMqrol1TG
       configuration:
@@ -64,7 +74,9 @@ system:
       value: {}
       level: 13
       hint: ''
-    - type: ItemGrant
+      flags: {}
+    FcTwTNTHIA3nn40y:
+      type: ItemGrant
       _id: FcTwTNTHIA3nn40y
       configuration:
         items:
@@ -76,6 +88,7 @@ system:
       level: 17
       title: Checkmate
       hint: ''
+      flags: {}
   description:
     value: >-
       <p>Whether through study or experience, Tacticians lead their allies in
@@ -84,7 +97,21 @@ system:
       both.</p><blockquote><p><strong>Equipment Exchange</strong></p><p>When you
       choose this Branch, you may exchange 1x Light Melee Weapon or 1x Light
       Shield from your Starting Equipment for A) 1x Light Ranged Weapon that
-      does not have the Firearm Property.</p></blockquote>
+      does not have the Firearm Property.</p></blockquote><p>You gain the
+      following Branch Features:</p><table><tbody><tr><td
+      data-colwidth="87"><p>Level</p></td><td><p>Branch
+      Feature</p></td></tr><tr><td data-colwidth="87"><p
+      style="text-align:center">1</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.kwK1SA861xF7bhTN]{Lead
+      from the Rear},
+      @UUID[Compendium.ak5e.ak5e-classes-and-features.Item.XfYW81x16m4UEe77]{Tactical
+      Knowledge}</p></td></tr><tr><td data-colwidth="87"><p
+      style="text-align:center">4</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.6jW8NThMYTYy36YR]{Strategic
+      Genius}</p></td></tr><tr><td data-colwidth="87"><p
+      style="text-align:center">10</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.BxKLAfkHZZmN1qfU]{Fail
+      to Plan, Plan to Fail}</p></td></tr><tr><td data-colwidth="87"><p
+      style="text-align:center">13</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.RQP5Ha5PEmO4iNB6]{Master
+      Tactician}</p></td></tr><tr><td data-colwidth="87"><p
+      style="text-align:center">17</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.fzFBSg1QQu07BbLp]{Checkmate}</p></td></tr></tbody></table>
     chat: ''
   identifier: tactician-vanguard
   source:
@@ -101,6 +128,7 @@ sort: 0
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 flags:
   dnd5e:
     riders:
@@ -109,10 +137,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774574779831
-  modifiedTime: 1791131985582
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 5.3.3
+  createdTime: 1791206078990
+  modifiedTime: 1791400695837
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!8JL6suVbIhLN8COl'

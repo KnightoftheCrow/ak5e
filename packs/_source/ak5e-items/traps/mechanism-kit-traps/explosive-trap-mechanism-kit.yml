@@ -1,0 +1,375 @@
+folder: XyypTgrh40HRqp68
+name: Explosive Trap (Mechanism Kit)
+type: consumable
+img: modules/ak5e/icons/Skill-W2.webp
+system:
+  activities:
+    iClVHnS0MhV5OH9A:
+      type: utility
+      name: Set Up
+      _id: iClVHnS0MhV5OH9A
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: square
+          size: '5'
+          count: ''
+        affects:
+          choice: false
+          type: space
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: 0
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules:
+          - trigger: entry
+            action: useActivity
+            targetId: trigger
+          - trigger: entry
+            action: useActivity
+            targetId: trigger
+          - trigger: entry
+            action: useActivity
+            targetId: trigger
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    fefTtPYoufBoLJkE:
+      type: save
+      name: Trigger
+      _id: fefTtPYoufBoLJkE
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: sphere
+          size: '15'
+          count: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 4
+            denomination: 8
+            bonus: ''
+            modifiers: []
+            types:
+              - thunder
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+  uses:
+    spent: 10
+    recovery: []
+    autoDestroy: false
+    max: '10'
+  description:
+    value: >-
+      <p><strong>Set Up:</strong> You set an Explosive Trap in a 5-foot square
+      on the ground. When a Creature enters the area, the Trap is
+      triggered.</p><p><strong>On Trigger:</strong> The trap explodes violently.
+      All Creatures within a 15-foot-radius Sphere centered on the Trap must
+      make a Dexterity Saving Throw against your Trap DC. On a failed Save, they
+      take 4d8 Thunder Damage. On a successful Save, they take half as much
+      Damage.</p><hr><p><strong>Automated: </strong>These activities assume you
+      are using your Dexterity to calculate your Trap DC. If you are not, change
+      the activities.</p>
+    chat: ''
+  identifier: explosive-trap-mechanism
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: credits
+  attunement: ''
+  attuned: false
+  equipped: false
+  damage:
+    base:
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+      modifiers: []
+    replace: false
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+  rarities: []
+effects: []
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792249579929
+  modifiedTime: 1792249579956
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: CPf64ukHH1Ja4ekd
+sort: 200000
+_key: '!items!CPf64ukHH1Ja4ekd'

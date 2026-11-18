@@ -1,0 +1,371 @@
+folder: 0q3D9AARamN404FN
+name: By Lordly Decree
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_flamtl_3.png
+system:
+  activities:
+    FML6GFX23JNz5J34:
+      type: utility
+      name: A Leader Leads (1+ Aggression)
+      _id: FML6GFX23JNz5J34
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: press-the-attack
+            scaling:
+              mode: amount
+              formula: '1'
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: minute
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: XgY0PQti4Ui1p5CC
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '@scaling'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>Your belief in yourself is so potent that you truly can carry out
+      miracles. You gain the following benefits:</p><ul><li><p><strong>Make it
+      So.</strong> When you make a d20 roll to which you would add an Ability
+      Score Bonus, you can expend a use of your Manifestation Feature to instead
+      add your Charisma Bonus. If you are not Proficient in the roll, you are
+      considered to be Proficient in it.</p><p><em>Authority:</em> If you are
+      already Proficient in the roll, you instead are treated as having
+      Expertise in that roll. This allows you to temporarily have Expertise in
+      rolls that cannot normally have it, such as Saving Throws and Attack
+      Rolls.</p></li><li><p><strong>Press the Attack: A Leader Leads (1+
+      Authority)</strong> You can use this Press the Attack Option when you gain
+      Authority (no Action required); for each Aggression you expend, choose one
+      allied Creature that can see or hear you. That Creature gains a Special
+      Inspiration that expires after 1
+      minute.</p></li></ul><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: by-lordly-decree
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 10
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: By Lordly Decree
+    img: modules/ak5e/icons/skill_icon_skchr_flamtl_3.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.dC0Si6auW6HzsaUE
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.d20.bonus
+          type: ac5e
+          value: >-
+            bonus=rollingActor.abilities.cha.mod -
+            rollingActor.abilities[options.ability].mod + (hasProficiency ? 0 :
+            rollingActor.attributes.prof); usesCount=Item.manifestation, 1;
+            name=Make it So; optinId=make-it-so; optin; !isDeathSave &&
+            !!options.ability && rollingActor.abilities.cha.mod >
+            rollingActor.abilities[options.ability].mod
+          phase: initial
+          _id: p4piLL92MZNoWRtf
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.d20.bonus
+          type: ac5e
+          value: >-
+            bonus=rollingActor.abilities.cha.mod -
+            rollingActor.abilities[options.ability].mod + (hasProficiency +
+            rollingActor.attributes.prof); usesCount=Item.manifestation, 1;
+            name=Make it So; optinId=make-it-so-1; optin; !isDeathSave &&
+            !!options.ability && hasProficiency && rollingActor.effects.some(e
+            => e.name === 'Authority') &&  rollingActor.abilities.cha.mod  >
+            rollingActor.abilities[options.ability].mod
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: bKTIUC74FbRPEvae
+        - key: flags.automated-conditions-5e.d20.advantage
+          type: ac5e
+          value: optinSelected['make-it-so'] && rollingActor.details.level >= 17
+          phase: initial
+          _id: tIiTYZNy9yGwStbn
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.d20.advantage
+          type: ac5e
+          value: optinSelected['make-it-so-1'] && rollingActor.details.level >= 17
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: 6KrFjySnjO3DPN7S
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: GLZ3G89MaGkwJbbS
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.dC0Si6auW6HzsaUE
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791907906889
+      modifiedTime: 1791923332863
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!dC0Si6auW6HzsaUE.GLZ3G89MaGkwJbbS'
+  - name: Lord's Inspiration
+    img: modules/ak5e/icons/skill_icon_skchr_flamtl_3.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.dC0Si6auW6HzsaUE
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.d20.advantage
+          type: ac5e
+          value: >-
+            name=Lord's Inspiration; optinId=lords-inspiration-0;
+            description=Inspiration from Lord Guard "A Leader Leads"; once;
+            optin; !isDeathSave
+          phase: initial
+          _id: GKn6t809fvYiNshF
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: XgY0PQti4Ui1p5CC
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791921840478
+      modifiedTime: 1791921929753
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!dC0Si6auW6HzsaUE.XgY0PQti4Ui1p5CC'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.R3xpQMGJxmv2PwLa
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791904030600
+  modifiedTime: 1791921946203
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: dC0Si6auW6HzsaUE
+sort: 200000
+_key: '!items!dC0Si6auW6HzsaUE'

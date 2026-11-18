@@ -1,7 +1,7 @@
 folder: YzlYIaWRhocmCatN
 name: Cytotoxin
 type: consumable
-img: icons/consumables/potions/bottle-conical-fumes-green.webp
+img: modules/ak5e/icons/Equipment/AK5e%20Poison%20Flask.png
 system:
   activities:
     6xBYM8grxa5Vg2np:
@@ -133,7 +133,11 @@ system:
         override: false
       effects:
         - _id: ytAioOstamPRlHzw
+          uuid: null
           onSave: false
+          level:
+            min: null
+            max: null
       range:
         units: any
         override: false
@@ -146,7 +150,7 @@ system:
         affects:
           choice: false
           type: creature
-          count: ''
+          count: '1'
           special: ''
         override: false
         prompt: true
@@ -174,7 +178,8 @@ system:
           - con
         dc:
           calculation: ''
-          formula: '18'
+          formula: '15'
+        bonus: ''
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -222,13 +227,18 @@ system:
       otherActivityId: none
       otherActivityAsParentType: true
       friendlySave: default
-      name: Ingested Cytotoxin (DC18)
-    CVQyHvulPMyicKr0:
+      name: Ingested Cytotoxin Save
+      img: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        identifier: ''
+    Uyd1gDVXrAV00Mcd:
       type: save
-      _id: CVQyHvulPMyicKr0
-      sort: 0
+      sort: 100000
       activation:
-        type: ''
+        type: special
         override: false
         condition: ''
       consumption:
@@ -238,13 +248,19 @@ system:
         targets: []
       description:
         chatFlavor: ''
+        value: ''
       duration:
-        units: inst
+        units: disp
         concentration: false
         override: false
-      effects: []
+        expiry: null
+      effects:
+        - _id: EhyzPFUq9I0joAcO
+          uuid: null
+          level: {}
+          onSave: false
       range:
-        units: self
+        units: any
         override: false
         special: ''
       target:
@@ -252,9 +268,12 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
-          type: ''
+          type: creature
+          count: '1'
+          special: ''
         override: false
         prompt: true
       uses:
@@ -276,12 +295,15 @@ system:
               - poison
             scaling:
               number: 1
+            modifiers: []
       save:
         ability:
           - con
         dc:
           calculation: ''
-          formula: '18'
+          formula: 15+@prof
+        bonus: ''
+        visible: true
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -307,10 +329,10 @@ system:
         confirmTargets: default
         autoTargetType: any
         autoTargetAction: default
-        automationOnly: true
+        automationOnly: false
         otherActivityCompatible: true
         otherActivityAsParentType: true
-        identifier: ingested-cytotoxin-save
+        identifier: ''
         displayActivityName: false
         rollMode: default
         chooseEffects: false
@@ -321,16 +343,55 @@ system:
         magicDamage: false
         noConcentrationCheck: false
         autoCEEffects: default
-      isOverTimeFlag: true
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        targetMustBeSeen: false
+        skipConcentrationCheck: false
+      isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
-        turnChoice: end
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       friendlySave: default
-      name: Repeated Save against Ingested Cytotoxin (DC18)
+      name: Ingested Cytotoxin Save (Level 15+ Infuser)
+      img: ''
+      visibility:
+        level:
+          min: 15
+          max: null
+        identifier: specialist
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      behaviors: []
+      flags: {}
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: Uyd1gDVXrAV00Mcd
   uses:
     spent: 0
     recovery: []
@@ -342,11 +403,12 @@ system:
       poison food/drink within 5ft of you.</p><p>When applied to a Weapon, for
       the next ten minutes that Weapon deals 1d6 additional Poison Damage on
       hit.</p><p>If a Creature consumes food/drink that has been poisoned using
-      this, they must make a DC18 Constitution Saving Throw. On a failed save,
+      this, they must make a DC15 Constitution Saving Throw. On a failed save,
       they are Paralyzed and take 2d6 Poison Damage at the beginning of each of
       their Turns. They may attempt this Saving Throw again at the end of each
       of their Turns, ending the effect on a success. On a successful save, they
-      take 2d6 Poison Damage, and are not Paralyzed.</p>
+      take 2d6 Poison Damage, and are not
+      Paralyzed.</p><hr><p><strong>Automated.</strong></p>
     chat: ''
   identifier: cytotoxin
   source:
@@ -386,23 +448,26 @@ system:
 effects:
   - type: enchantment
     name: Cytotoxin
-    img: icons/consumables/potions/bottle-conical-fumes-green.webp
+    img: modules/ak5e/icons/Equipment/AK5e%20Poison%20Flask.png
     disabled: true
     _id: Da1ryLkmQj8IdiaG
-    system: {}
-    changes:
-      - key: system.damage.parts
-        mode: 2
-        value: '[["1d6", "poison"]]'
-        priority: 20
+    system:
+      changes:
+        - key: system.damage.parts
+          value:
+            - - 1d6
+              - poison
+          priority: 20
+          type: add
+          phase: initial
+          _id: H5Xuw6CDrYDyJyYK
+          conditions: '{}'
+          replacement: ''
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     origin: null
     tint: '#ffffff'
@@ -420,41 +485,55 @@ effects:
         showIcon: false
         durationExpression: ''
         specialDuration: []
+        applicationMode: default
+        expiryMode: default
+        macroRepeat: none
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733079278
+      modifiedTime: 1793639588899
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!b7RvhDCRv9zM5Pv7.Da1ryLkmQj8IdiaG'
   - name: Ingested Cytotoxin
     img: icons/consumables/potions/bottle-conical-fumes-green.webp
-    origin: Item.20joMYuWWd39vqFV
+    origin: null
     transfer: false
     _id: ytAioOstamPRlHzw
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.ActivityOverTime
-        mode: 5
-        value: ingested-cytotoxin-save
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          value: >-
+            turn=start, label=Ingested Cytotoxin, saveAbility=con, saveDC=18,
+            damageRoll=2d6, damageType=poison, saveDamage=fulldamage
+          priority: 20
+          type: override
+          phase: initial
+          _id: bhtKrDk0rnzucvAN
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.20joMYuWWd39vqFV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
-    statuses: []
+    statuses:
+      - paralyzed
     sort: 0
     flags:
       dnd5e:
@@ -472,34 +551,112 @@ effects:
         durationExpression: ''
         specialDuration: []
         macroRepeat: none
+        applicationMode: default
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733079278
+      modifiedTime: 1792250521586
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!b7RvhDCRv9zM5Pv7.ytAioOstamPRlHzw'
+  - name: Ingested Cytotoxin (Toxic Shock)
+    img: icons/consumables/potions/bottle-conical-fumes-green.webp
+    origin: null
+    transfer: false
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          value: >-
+            turn=start, label=Ingested Cytotoxin, saveAbility=con,
+            saveDC=15+@prof, damageRoll=2d6, damageType=poison,
+            saveDamage=fulldamage
+          priority: 20
+          type: override
+          phase: initial
+          _id: bhtKrDk0rnzucvAN
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.20joMYuWWd39vqFV
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - paralyzed
+      - poisoned
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        specialDuration: []
+        macroRepeat: none
+        applicationMode: default
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793640325226
+      modifiedTime: 1793640941210
+    start: null
+    showIcon: 1
+    folder: null
+    _id: EhyzPFUq9I0joAcO
+    _key: '!items.effects!b7RvhDCRv9zM5Pv7.EhyzPFUq9I0joAcO'
 flags:
-  dnd5e:
-    riders:
-      activity: []
-      effect: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.1.2
+  systemVersion: 6.0.6
   createdTime: 1756581118507
-  modifiedTime: 1756581125319
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1793640933170
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: b7RvhDCRv9zM5Pv7
-sort: 550000
+sort: 1400000
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

@@ -21,6 +21,7 @@ system:
           - type: itemUses
             value: '1'
             target: ''
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -38,6 +39,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -100,15 +102,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       name: Rabbit From the Hat
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery:
@@ -116,7 +140,8 @@ system:
         type: recoverAll
     max: '1'
   advancement:
-    - type: ItemChoice
+    91EZfwuc8PxHj8SR:
+      type: ItemChoice
       _id: 91EZfwuc8PxHj8SR
       configuration:
         allowDrops: false
@@ -148,6 +173,7 @@ system:
         Choose an Arts Pool from the Standard Arts Pools that you have not
         chosen previously; you learn all of the Arts in that Pool, and they are
         always Prepared.
+      flags: {}
   description:
     value: >-
       <p>You are already more versatile than most Casters. You gain the
@@ -185,19 +211,16 @@ effects: []
 sort: 200000
 ownership:
   default: 0
-  9KtVYqHDTWORuJDZ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1774092757529
-  modifiedTime: 1774098008002
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 5.3.3
+  createdTime: 1791203553231
+  modifiedTime: 1791203553231
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!qb39wixnAeTx170S'

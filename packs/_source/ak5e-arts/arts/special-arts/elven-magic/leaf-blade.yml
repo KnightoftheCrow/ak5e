@@ -1,0 +1,351 @@
+folder: ZQG37MQTsPYe6865
+name: Leaf Blade
+type: spell
+_id: ZkZZdtRjE9ZnIy8o
+img: icons/magic/nature/hand-weapon-wood-bark-brown.webp
+system:
+  activities:
+    chWOdH5kMYkSoE9B:
+      type: utility
+      name: Cast
+      _id: chWOdH5kMYkSoE9B
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: mYZOTVBZMmvOSCcd
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 2aFwxLvkMGFhFczN
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You touch one or two leaves, branches, grasses, or similar plant life.
+      You strengthen and mold them creating the same number of Knives. While
+      these Knives are wielded by you, you can use your Spellcasting Ability
+      instead of your Strength or Dexterity for Attack and Damage Rolls.
+      Additionally, Damage dealt by these Knives is considered to be Arts
+      Damage. At the end of the Duration, the material you used in the Knives
+      withers and rots away to
+      nothing.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: leaf-blade
+  source:
+    revision: 1
+    rules: '2024'
+  activation:
+    type: bonus
+    condition: ''
+  duration:
+    units: minute
+    expiry: null
+    value: '10'
+  level: 1
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 2
+  properties:
+    - somatic
+  range:
+    units: self
+    special: ''
+  school: trs
+  target:
+    template:
+      contiguous: false
+      stationary: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      type: object
+      count: ''
+      special: Only plants, leaves, grass or branch
+effects:
+  - name: Create 1 Leaf Blade
+    img: icons/magic/nature/hand-weapon-wood-bark-brown.webp
+    system:
+      magical: true
+      origin:
+        item: Compendium.ak5e.ak5e-arts.Item.ZkZZdtRjE9ZnIy8o
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: macro.createItem
+          type: custom
+          value: Compendium.ak5e.ak5e-items.Item.dg5cFO5bceXFPPdl
+          phase: initial
+          _id: Pl1dUWNaCqYwwSjr
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: mYZOTVBZMmvOSCcd
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-arts.Item.ZkZZdtRjE9ZnIy8o
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794931432646
+      modifiedTime: 1794931464775
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!ZkZZdtRjE9ZnIy8o.mYZOTVBZMmvOSCcd'
+  - name: Create 2 Leaf Blades
+    img: icons/magic/nature/hand-weapon-wood-bark-brown.webp
+    system:
+      magical: true
+      origin:
+        item: Compendium.ak5e.ak5e-arts.Item.ZkZZdtRjE9ZnIy8o
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: macro.createItem
+          type: custom
+          value: Compendium.ak5e.ak5e-items.Item.dg5cFO5bceXFPPdl
+          phase: initial
+          _id: Pl1dUWNaCqYwwSjr
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: macro.createItem
+          type: custom
+          value: Compendium.ak5e.ak5e-items.Item.dg5cFO5bceXFPPdl
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: Y1LfzgufbdBtrAEV
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-arts.Item.ZkZZdtRjE9ZnIy8o
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        enableCondition: ''
+        applicationMode: default
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794931467343
+      modifiedTime: 1794931475426
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 2aFwxLvkMGFhFczN
+    _key: '!items.effects!ZkZZdtRjE9ZnIy8o.2aFwxLvkMGFhFczN'
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794852891933
+  modifiedTime: 1794931509459
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!ZkZZdtRjE9ZnIy8o'

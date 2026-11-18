@@ -9,15 +9,29 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: {}
+  advancement:
+    fz0NvmM4iAGl7tTB:
+      name: ''
+      type: Trait
+      _id: fz0NvmM4iAGl7tTB
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - skills:ste
+        mode: upgrade
+      flags: {}
+      level: 0
+      hint: ''
   description:
     value: >-
       <p>You cannot be impeded by such petty things as terrain. You gain the
-      following benefits:</p><p><strong>Additional Movement Speeds.</strong> You
-      gain a Climbing and Swimming Speed equal to your Walking
-      Speed.</p><p><strong>Stealth Expertise.</strong> You gain Proficiency in
-      the Stealth Skill. If you already have Proficiency, you instead gain
-      Expertise.</p><p><strong>Not Automated.</strong></p>
+      following benefits:</p><ul><li><p><strong>Additional Movement
+      Speeds.</strong> You gain a Climbing and Swimming Speed equal to your
+      Walking Speed.</p></li><li><p><strong>Stealth Expertise.</strong> You gain
+      Proficiency in the Stealth Skill. If you already have Proficiency, you
+      instead gain
+      Expertise.</p></li></ul><hr><p><strong>Automated.</strong></p>
     chat: ''
   identifier: in-every-shadow
   source:
@@ -34,23 +48,89 @@ system:
   type:
     value: class
     subtype: ''
-effects: []
-sort: 0
+effects:
+  - name: Swim/Climb Speed = Walking Speed
+    img: modules/ak5e/icons/Skill-Scene1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.cafTpF1e9GXPsnc4
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.movement.speeds.climb
+          type: upgrade
+          value: '@attributes.movement.speeds.walk'
+          phase: initial
+          _id: GzzCLs41uvRgxgNw
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: system.attributes.movement.speeds.swim
+          type: upgrade
+          value: '@attributes.movement.speeds.walk'
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: o4kuObV4B4mVi0KF
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 7YBMFIxBb04qjjnJ
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.cafTpF1e9GXPsnc4
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794246952941
+      modifiedTime: 1794247012825
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!cafTpF1e9GXPsnc4.7YBMFIxBb04qjjnJ'
+sort: 75000
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358953798
-  modifiedTime: 1783358953798
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553270
+  modifiedTime: 1794247026126
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!cafTpF1e9GXPsnc4'

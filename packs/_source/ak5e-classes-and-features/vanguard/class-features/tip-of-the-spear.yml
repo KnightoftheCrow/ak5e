@@ -8,7 +8,7 @@ system:
     BTosEY6CqgSSVN8O:
       type: utility
       _id: BTosEY6CqgSSVN8O
-      sort: 0
+      sort: 100000
       activation:
         type: ''
         override: false
@@ -24,6 +24,7 @@ system:
         units: inst
         concentration: false
         override: false
+        value: '1'
       effects: []
       flags: {}
       range:
@@ -36,6 +37,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: ally
@@ -92,7 +94,7 @@ system:
         otherActivityAsParentType: true
         identifier: ''
         displayActivityName: false
-        rollMode: publicroll
+        rollMode: public
         chooseEffects: false
         toggleEffect: false
         ignoreFullCover: false
@@ -112,12 +114,31 @@ system:
       otherActivityAsParentType: true
       name: Tip of the Spear
       img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     ltgxbz6n2o3WK3sT:
       type: utility
       _id: ltgxbz6n2o3WK3sT
-      sort: 0
+      sort: 200000
       activation:
-        type: action
+        type: special
         override: false
         condition: ''
       consumption:
@@ -128,9 +149,10 @@ system:
       description:
         chatFlavor: ''
       duration:
-        units: inst
+        units: round
         concentration: false
         override: false
+        value: '1'
       effects:
         - _id: YwUpMJumxsBdPokt
           level:
@@ -138,7 +160,7 @@ system:
             max: null
       flags: {}
       range:
-        units: self
+        units: any
         override: false
         special: ''
       target:
@@ -146,9 +168,10 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
-          type: ''
+          type: creature
         override: false
         prompt: true
       uses:
@@ -218,122 +241,33 @@ system:
         postRemoveConditionText: ''
       otherActivityId: none
       otherActivityAsParentType: true
-      name: '1. Tip of the Spear: Damage'
+      name: '1. Tip of the Spear: Bonus Damage'
       img: ''
-    OYw5z5HUehnRUOh2:
-      type: utility
-      _id: OYw5z5HUehnRUOh2
-      sort: 0
-      activation:
-        type: action
-        override: false
-        condition: ''
-      consumption:
-        scaling:
-          allowed: false
-        spellSlot: true
-        targets: []
-      description:
-        chatFlavor: ''
-      duration:
-        units: inst
-        concentration: false
-        override: false
-      effects:
-        - _id: kIoA9ADQNaqlHMAn
-          level:
-            min: null
-            max: null
-      flags: {}
-      range:
-        units: self
-        override: false
-        special: ''
-      target:
-        template:
-          contiguous: false
-          units: ft
-          type: ''
-        affects:
-          choice: false
-          type: ''
-        override: false
-        prompt: true
-      uses:
-        spent: 0
-        recovery: []
-        max: ''
-      visibility:
-        level:
-          min: null
-          max: null
-        requireAttunement: false
-        requireIdentification: false
-        requireMagic: false
-        identifier: ''
-      roll:
-        prompt: false
-        visible: false
-        name: ''
-        formula: ''
-      useConditionText: ''
-      useConditionReason: ''
-      effectConditionText: ''
-      macroData:
-        name: ''
-        command: ''
-      ignoreTraits:
-        idi: false
-        idr: false
-        idv: false
-        ida: false
-        idm: false
-      midiProperties:
-        ignoreTraits: []
-        triggeredActivityId: none
-        triggeredActivityConditionText: ''
-        triggeredActivityTargets: targets
-        triggeredActivityRollAs: self
-        triggeredActivityConsume: true
-        triggeredActivityConfigure: true
-        autoConsume: false
-        forceConsumeDialog: default
-        forceRollDialog: default
-        forceDamageDialog: default
-        confirmTargets: default
-        autoTargetType: any
-        autoTargetAction: default
-        automationOnly: false
-        otherActivityCompatible: true
-        otherActivityAsParentType: true
-        identifier: ''
-        displayActivityName: false
-        rollMode: default
-        chooseEffects: false
-        toggleEffect: false
-        ignoreFullCover: false
-        removeChatButtons: default
-        magicEffect: false
-        magicDamage: false
-        noConcentrationCheck: false
-        skipConcentrationCheck: false
-        autoCEEffects: default
-      isOverTimeFlag: false
-      overTimeProperties:
-        saveRemoves: true
-        rollAs: target
-        preRemoveConditionText: ''
-        postRemoveConditionText: ''
-      otherActivityId: none
-      otherActivityAsParentType: true
-      name: '2. Tip of the Spear: Heal'
-      img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     f6OpDc8zB2tAyR0y:
       type: utility
       _id: f6OpDc8zB2tAyR0y
-      sort: 0
+      sort: 500000
       activation:
-        type: action
+        type: special
         override: false
         condition: ''
       consumption:
@@ -344,9 +278,10 @@ system:
       description:
         chatFlavor: ''
       duration:
-        units: inst
+        units: round
         concentration: false
         override: false
+        value: '1'
       effects:
         - _id: wrDlA7paHGaVXanM
           level:
@@ -354,7 +289,7 @@ system:
             max: null
       flags: {}
       range:
-        units: self
+        units: any
         override: false
         special: ''
       target:
@@ -362,9 +297,10 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
-          type: ''
+          type: creature
         override: false
         prompt: true
       uses:
@@ -434,14 +370,33 @@ system:
         postRemoveConditionText: ''
       otherActivityId: none
       otherActivityAsParentType: true
-      name: '3. Tip of the Spear: Speed'
+      name: '3. Tip of the Spear: Increase Speed'
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     Au9azDZQ4qCjUZLH:
       type: utility
       _id: Au9azDZQ4qCjUZLH
-      sort: 0
+      sort: 600000
       activation:
-        type: action
+        type: special
         override: false
         condition: ''
       consumption:
@@ -452,9 +407,10 @@ system:
       description:
         chatFlavor: ''
       duration:
-        units: inst
+        units: round
         concentration: false
         override: false
+        value: '1'
       effects:
         - _id: n4aYlmk2wskY83R8
           level:
@@ -462,7 +418,7 @@ system:
             max: null
       flags: {}
       range:
-        units: self
+        units: any
         override: false
         special: ''
       target:
@@ -470,9 +426,12 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
-          type: ''
+          type: creature
+          count: '1'
+          special: ''
         override: false
         prompt: true
       uses:
@@ -542,14 +501,33 @@ system:
         postRemoveConditionText: ''
       otherActivityId: none
       otherActivityAsParentType: true
-      name: '4. Tip of the Spear: Attack'
+      name: '4. Tip of the Spear: Attack Bonus'
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     onjfuGxe51Ky43oN:
       type: utility
       _id: onjfuGxe51Ky43oN
-      sort: 0
+      sort: 700000
       activation:
-        type: action
+        type: special
         override: false
         condition: ''
       consumption:
@@ -560,14 +538,19 @@ system:
       description:
         chatFlavor: ''
       duration:
-        units: inst
+        units: round
         concentration: false
         override: false
+        value: '1'
       effects:
         - _id: NGlghVsJ9SDsNrgH
+          uuid: null
+          level:
+            min: null
+            max: null
       flags: {}
       range:
-        units: self
+        units: any
         override: false
         special: ''
       target:
@@ -575,9 +558,12 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
-          type: ''
+          type: creature
+          count: ''
+          special: ''
         override: false
         prompt: true
       uses:
@@ -647,14 +633,33 @@ system:
         postRemoveConditionText: ''
       otherActivityId: none
       otherActivityAsParentType: true
-      name: '5. Tip of the Spear: Critical'
+      name: '5. Tip of the Spear: Critical Range Increase'
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     2KMqXkp6tIyjUSiy:
       type: utility
       _id: 2KMqXkp6tIyjUSiy
-      sort: 0
+      sort: 800000
       activation:
-        type: action
+        type: special
         override: false
         condition: ''
       consumption:
@@ -665,14 +670,19 @@ system:
       description:
         chatFlavor: ''
       duration:
-        units: inst
+        units: round
         concentration: false
         override: false
+        value: '1'
       effects:
         - _id: Eq91b6KJhZk6Nu3a
+          uuid: null
+          level:
+            min: null
+            max: null
       flags: {}
       range:
-        units: self
+        units: any
         override: false
         special: ''
       target:
@@ -680,9 +690,12 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
-          type: ''
+          type: creature
+          count: ''
+          special: ''
         override: false
         prompt: true
       uses:
@@ -752,13 +765,178 @@ system:
         postRemoveConditionText: ''
       otherActivityId: none
       otherActivityAsParentType: true
-      name: '6. Tip of the Spear: Skill'
+      name: '6. Tip of the Spear: Extra Skill Points'
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+    llFYBh7xTL5g06mp:
+      type: heal
+      name: '2. Tip of the Spear: Grant Temp HP'
+      _id: llFYBh7xTL5g06mp
+      img: ''
+      sort: 300000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: round
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: kIoA9ADQNaqlHMAn
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      healing:
+        types:
+          - temphp
+        custom:
+          enabled: true
+          formula: 1d6+@attributes.hp.temp
+        modifiers: []
+        scaling:
+          number: 1
+        number: null
+        denomination: null
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>As a Vanguard, you lead and direct your allies, pushing them ever
@@ -768,8 +946,8 @@ system:
       will specify the conditions under which you do so.</p><p>When you use this
       Feature, choose an allied Creature you can see within 60 feet; roll 1d6
       and apply the corresponding effect to them until the start of your next
-      Turn; these effects are cumulative.</p><table><tbody><tr><td
-      data-colwidth="31"><p><strong>Roll</strong></p></td><td><p><strong>Effect</strong></p></td></tr><tr><td
+      Turn; these effects are cumulative.</p><table><thead><tr><td
+      data-colwidth="31"><p><strong>Roll</strong></p></td><td><p><strong>Effect</strong></p></td></tr></thead><tbody><tr><td
       data-colwidth="31"><p>1</p></td><td><p>Additional Damage equal to your
       Proficiency Bonus on one Damage Roll of their choice.</p></td></tr><tr><td
       data-colwidth="31"><p>2</p></td><td><p>They gain 1d6 Temporary Hit Points;
@@ -781,9 +959,10 @@ system:
       data-colwidth="31"><p>5</p></td><td><p>Critical Range increased by
       1.</p></td></tr><tr><td data-colwidth="31"><p>6</p></td><td><p>Whenever
       they gain a Skill Point, they gain 1
-      more.</p></td></tr></tbody></table><p><strong>Partially
-      Automated:</strong> midi-qol activity to roll dice, effect with 1 round
-      duration. Not sure what else needs to be done here.</p>
+      more.</p></td></tr></tbody></table><hr><p><strong>Semi-Automated:
+      </strong>Use the Tip of the Spear Activity to roll 1d6, and use the
+      corresponding activity afterwards. All except the additional Skill Point
+      gain is automated.</p>
     chat: >-
       <p>Choose an allied Creature you can see within 60 feet; roll 1d6 and
       apply the corresponding effect to them until the start of your next Turn;
@@ -800,7 +979,7 @@ system:
       data-colwidth="31"><p>5</p></td><td><p>Critical Range increased by
       1.</p></td></tr><tr><td data-colwidth="31"><p>6</p></td><td><p>Whenever
       they gain a Skill Point, they gain 1 more.</p></td></tr></tbody></table>
-  identifier: feature
+  identifier: tip-of-the-spear
   source:
     revision: 1
     rules: '2024'
@@ -816,23 +995,33 @@ system:
     value: class
     subtype: ''
 effects:
-  - name: 'Tip of the Spear: Damage'
+  - name: 'Tip of the Spear: +Prof Damage'
     img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    origin: null
     transfer: false
     _id: YwUpMJumxsBdPokt
     type: base
-    system: {}
-    changes: []
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=+prof; name=Tip of the Spear;
+            optinId=tip-of-the-spear-prof-damage; description=+Prof Damage;
+            once; optin; !isHeal
+          phase: initial
+          _id: cjWlBLAY592qoFAd
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 1
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
     description: >-
       <p>Additional Damage equal to your Proficiency Bonus on one Damage Roll of
       their choice.</p>
@@ -855,36 +1044,40 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        applicationMode: default
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1782082481820
-      modifiedTime: 1782083283583
-      lastModifiedBy: P5lWUBQKuHlZqgTn
+      systemVersion: 6.0.6
+      createdTime: 1791206079011
+      modifiedTime: 1794425108398
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!3adNYxcbua5q0S6i.YwUpMJumxsBdPokt'
-  - name: 'Tip of the Spear: Heal'
+  - name: 'Tip of the Spear: Temp HP'
     img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    origin: null
     transfer: false
     _id: kIoA9ADQNaqlHMAn
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 1
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
     description: >-
       <p>They gain [[/roll 1d6]] Temporary Hit Points; these Hit Points are
       additive with any Temporary Hit Points they already have.</p>
@@ -907,40 +1100,48 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        applicationMode: default
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1782082482609
-      modifiedTime: 1782083313849
-      lastModifiedBy: P5lWUBQKuHlZqgTn
+      systemVersion: 6.0.6
+      createdTime: 1791206079011
+      modifiedTime: 1794425099442
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!3adNYxcbua5q0S6i.kIoA9ADQNaqlHMAn'
-  - name: 'Tip of the Spear: Speed'
+  - name: 'Tip of the Spear: +10ft Speed'
     img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    origin: null
     transfer: false
     _id: wrDlA7paHGaVXanM
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '+10'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: '+10'
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 2ZNSIeYzpl4KSWY3
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 1
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
     description: <p>Speed increased by 10 feet.</p>
     tint: '#ffffff'
     statuses: []
@@ -961,40 +1162,48 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        applicationMode: default
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1782082483024
-      modifiedTime: 1782083166703
-      lastModifiedBy: P5lWUBQKuHlZqgTn
+      systemVersion: 6.0.6
+      createdTime: 1791206079011
+      modifiedTime: 1794425085136
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!3adNYxcbua5q0S6i.wrDlA7paHGaVXanM'
-  - name: 'Tip of the Spear: Attack'
+  - name: 'Tip of the Spear: +2 to Attack Rolls'
     img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    origin: null
     transfer: false
     _id: n4aYlmk2wskY83R8
     type: base
-    system: {}
-    changes:
-      - key: system.bonuses.All-Attacks
-        mode: 2
-        value: '2'
-        priority: 20
+    system:
+      changes:
+        - key: system.bonuses.All-Attacks
+          value: 2
+          priority: 20
+          type: add
+          phase: initial
+          _id: l7THLl7fLRfcMgnI
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 1
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
     description: <p>+2 Bonus to Attack Rolls.</p>
     tint: '#ffffff'
     statuses: []
@@ -1015,40 +1224,48 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        applicationMode: default
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1782082483500
-      modifiedTime: 1782083197048
-      lastModifiedBy: P5lWUBQKuHlZqgTn
+      systemVersion: 6.0.6
+      createdTime: 1791206079011
+      modifiedTime: 1794425077986
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!3adNYxcbua5q0S6i.n4aYlmk2wskY83R8'
-  - name: 'Tip of the Spear: Critical'
+  - name: 'Tip of the Spear: +1 Critical Range'
     img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    origin: null
     transfer: false
     _id: NGlghVsJ9SDsNrgH
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.criticalThreshold
-        mode: 2
-        value: '-1'
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          value: threshold=-1
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: xC7CHYk7uHOTbGTV
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 1
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
     description: <p>Critical Range increased by 1.</p>
     tint: '#ffffff'
     statuses: []
@@ -1069,36 +1286,40 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        applicationMode: default
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1782082483907
-      modifiedTime: 1782083276209
-      lastModifiedBy: P5lWUBQKuHlZqgTn
+      systemVersion: 6.0.6
+      createdTime: 1791206079011
+      modifiedTime: 1794425069948
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!3adNYxcbua5q0S6i.NGlghVsJ9SDsNrgH'
-  - name: 'Tip of the Spear: Skill'
+  - name: 'Tip of the Spear: Additional Skill Points'
     img: modules/ak5e/icons/skill_icon_skchr_hadiya_1.png
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
+    origin: null
     transfer: false
     _id: Eq91b6KJhZk6Nu3a
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.3adNYxcbua5q0S6i
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 1
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
     description: <p>Whenever they gain a Skill Point, they gain 1 more.</p>
     tint: '#ffffff'
     statuses: []
@@ -1119,35 +1340,39 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        applicationMode: default
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1782082627647
-      modifiedTime: 1782083350567
-      lastModifiedBy: P5lWUBQKuHlZqgTn
+      systemVersion: 6.0.6
+      createdTime: 1791206079011
+      modifiedTime: 1794425059045
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!3adNYxcbua5q0S6i.Eq91b6KJhZk6Nu3a'
-sort: 300000
+sort: 150000
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774569700077
-  modifiedTime: 1790898440388
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 6.0.6
+  createdTime: 1791206079011
+  modifiedTime: 1794425172210
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!3adNYxcbua5q0S6i'

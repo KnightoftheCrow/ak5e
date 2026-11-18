@@ -1,0 +1,237 @@
+folder: tNgPrT3h8SGsB4GE
+name: Ritual Arts (WIS)
+type: feat
+img: modules/ak5e/icons/Skill-Virtuosa1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement:
+    qjgd4OyOTXZg2R6g:
+      name: Ritualist Arts
+      type: ItemChoice
+      _id: qjgd4OyOTXZg2R6g
+      configuration:
+        allowDrops: true
+        choices:
+          '0':
+            count: 5
+            replacement: true
+          '1':
+            count: null
+            replacement: true
+          '2':
+            count: 1
+            replacement: true
+          '3':
+            count: null
+            replacement: true
+          '4':
+            count: 1
+            replacement: true
+          '5':
+            count: null
+            replacement: true
+          '6':
+            count: 1
+            replacement: true
+          '7':
+            count: null
+            replacement: true
+          '8':
+            count: 1
+            replacement: true
+          '9':
+            count: null
+            replacement: true
+          '10':
+            count: 1
+            replacement: true
+          '11':
+            count: null
+            replacement: true
+          '12':
+            count: 1
+            replacement: true
+          '13':
+            count: null
+            replacement: true
+          '14':
+            count: 1
+            replacement: true
+          '15':
+            count: null
+            replacement: true
+          '16':
+            count: 1
+            replacement: true
+          '17':
+            count: null
+            replacement: true
+          '18':
+            count: 1
+            replacement: true
+          '19':
+            count: null
+            replacement: true
+          '20':
+            count: 1
+            replacement: true
+        pool: []
+        restriction:
+          list: []
+          school: []
+          level: available
+        sorting: a
+        spell:
+          ability: []
+          method: spell
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+          prepared: 2
+        type: spell
+      flags: {}
+      hint: ''
+      value:
+        added: {}
+        replaced: {}
+    GIRSKBAcwjIvaaXy:
+      name: Arts Points
+      type: ItemGrant
+      _id: GIRSKBAcwjIvaaXy
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-arts.Item.6GMX3sLNtYU5pEtM
+            optional: false
+            sort: 0
+        optional: false
+        sorting: m
+        spell: null
+      flags: {}
+      value: {}
+      level: 0
+      hint: ''
+  description:
+    value: >-
+      <p>You can cast Arts; the information below details how you use those
+      rules as a Ritualist.</p><ul><li><p><strong>Arts Points.</strong> The
+      Ritualist Arts Casting table shows how many Arts Points you have to cast
+      your Level 1+ Arts. You regain all expended Arts Points when you finish a
+      Long Rest.</p></li><li><p><strong>Maximum Arts Level.</strong> The
+      Ritualist Arts Casting table shows the maximum Level you can cast an Art
+      at, based on your Supporter Level. If an Art’s Level is above your current
+      Maximum Art Level, you cannot cast it, even if it is
+      Prepared.</p></li><li><p><strong>Spellcasting Ability.</strong> When you
+      gain this Feature, choose either Intelligence, Wisdom, or Charisma; that
+      is your Spellcasting Ability.</p></li><li><p><strong>Ritualist Arts
+      Pools.</strong> When you gain this Feature, choose a number of Arts from
+      any of the Standard Arts Pools available to the Caster Class equal to the
+      Arts Known value in the Ritualist Arts Casting Table; they do not have to
+      be from the same Arts Pool. You learn those Arts, and they are always
+      Prepared. When your Arts Known increases, you may select an additional
+      Art; when you finish a Long Rest, you may exchange one of these Arts for
+      another valid selection.</p></li></ul><hr><p><strong>Semi-Automated:
+      </strong>When you can pick a new Art, you will have to drag and drop the
+      Art you want into learn into the prompt box.</p>
+    chat: ''
+  identifier: ritual-arts
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: 'Spellcasting Ability: WIS'
+    img: modules/ak5e/icons/Skill-T3.webp
+    system:
+      magical: false
+      origin:
+        item: Item.R0idZdOunQ8NsO6W
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      changes:
+        - key: system.attributes.spellcasting
+          type: override
+          value: wis
+          phase: initial
+          _id: jztJeLTxpAd9PMRz
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: v7gba3f7gB1057kA
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794846632200
+      modifiedTime: 1794846632200
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!o4VqM9BrDfDcqO0P.v7gba3f7gB1057kA'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794846632200
+  modifiedTime: 1794846706589
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: o4VqM9BrDfDcqO0P
+sort: 50000
+_key: '!items!o4VqM9BrDfDcqO0P'

@@ -1,0 +1,118 @@
+folder: F7xt8Er4yJgI2eaK
+name: Weapon Mastery (Ranged)
+type: feat
+img: modules/ak5e/icons/Skill-Bagpipe2.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You gain additional benefits based on your Weapon
+      Specialisation.</p><p><strong>Ranged Combat.</strong> Once per Turn when
+      you make a Ranged Attack Roll, you can double your Proficiency Bonus for
+      the purpose of that Ranged Attack Roll
+      only.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: weapon-mastery-ranged
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - weapon-specialisation-ranged
+    repeatable: false
+    level: 18
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: 1/Turn +Prof to Attack Rolls
+    img: modules/ak5e/icons/Skill-Bagpipe2.png
+    system:
+      magical: false
+      origin:
+        item: Item.dcfnldBC1pqvhTwg
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: >-
+            bonus=@prof; name=Weapon Mastery;
+            optinId=1turn-prof-to-attack-rolls-0; description=+Prof from Weapon
+            Mastery; oncePerTurn; optin; actionType.rwak || actionType.rsak
+          phase: initial
+          _id: H2MNaZmTi0sQ92Qh
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: Q32xOkvgFuAxa9UX
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Item.dcfnldBC1pqvhTwg
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793569901398
+      modifiedTime: 1793569901398
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!fOohY6jqMcF4W6vF.Q32xOkvgFuAxa9UX'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793569901398
+  modifiedTime: 1793569901440
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: fOohY6jqMcF4W6vF
+sort: 2000000
+_key: '!items!fOohY6jqMcF4W6vF'

@@ -1,0 +1,125 @@
+folder: Jnt98AobyVi6gAwE
+name: Duelling
+type: feat
+img: modules/ak5e/icons/Skill-Indra2.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You have a +1 bonus to Attack and Damage Rolls for Melee Attacks
+      against the first Creature you Attack each
+      Turn.</p><hr><p><strong>Semi-Automated: </strong>There is a prompt for the
+      +1 damage and +1 to hit rolls that is automatically selected; untick both
+      if it is not the first Creature you attack that Turn.</p>
+    chat: ''
+  identifier: duelling
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: fightingStyle
+effects:
+  - name: Duelling
+    img: modules/ak5e/icons/Skill-Indra2.webp
+    origin: null
+    type: base
+    _id: jcx7agynW2xf7DM8
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: >-
+            bonus=1; optinId=Duelling; description=+1 to hit from Duelling
+            Style; optin; preselected; actionType.mwak || actionType.msak
+          phase: initial
+          priority: null
+          _id: XCwFQmXsjL8SKR3i
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1; optinId=Duelling; description=+1 to hit from Duelling
+            Style; optin; preselected; actionType.mwak || actionType.msak
+          phase: initial
+          priority: null
+          _id: qAFF9V97mubxGf5M
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.hbJ5Z7UZbMMZ8m3P
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791300779365
+      modifiedTime: 1791733087605
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!hbJ5Z7UZbMMZ8m3P.jcx7agynW2xf7DM8'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791300753749
+  modifiedTime: 1791733087605
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: hbJ5Z7UZbMMZ8m3P
+sort: 750000
+_key: '!items!hbJ5Z7UZbMMZ8m3P'

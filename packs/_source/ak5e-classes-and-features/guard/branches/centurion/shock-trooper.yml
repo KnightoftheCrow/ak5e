@@ -1,0 +1,443 @@
+folder: W83RNVw2TgmwASvK
+name: Shock Trooper
+type: feat
+img: modules/ak5e/icons/Skill-Crownslayer2.webp
+system:
+  activities:
+    aeJg3G81aSZLtR2q:
+      type: save
+      name: Brutal Execution (2 Aggression)
+      _id: aeJg3G81aSZLtR2q
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.ak5e.ak5e-classes-and-features.Item.9VhSw5e5lgPNh0St
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: XYhxlpnufSQlC6tS
+          level: {}
+          onSave: false
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: emanationNoTemplate
+          size: '15'
+          count: ''
+        affects:
+          choice: false
+          type: enemy
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: none
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@skills.itm.mod'
+            number: null
+            denomination: null
+            bonus: ''
+            types:
+              - psychic
+            scaling:
+              number: 1
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: ''
+          formula: 8+@skills.itm.mod
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: friendlySuccess
+    WZbvyikNpuIXGDeC:
+      type: save
+      name: Brutal Execution (2 Aggression)
+      img: ''
+      sort: 100000
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '2'
+            target: Compendium.ak5e.ak5e-classes-and-features.Item.9VhSw5e5lgPNh0St
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: XYhxlpnufSQlC6tS
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: emanationNoTemplate
+          size: '15'
+        affects:
+          choice: false
+          count: ''
+          type: enemy
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: none
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@skills.itm.mod'
+            number: null
+            denomination: null
+            bonus: ''
+            types:
+              - psychic
+            scaling:
+              number: 1
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: ''
+          formula: 8+@skills.itm.mod
+      useConditionText: 'false'
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: friendlySuccess
+      _id: WZbvyikNpuIXGDeC
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement:
+    If35LHFuR8sz1DeH:
+      type: Trait
+      _id: If35LHFuR8sz1DeH
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - skills:itm
+        mode: upgrade
+      flags: {}
+      level: 0
+      hint: ''
+      title: ''
+  description:
+    value: >-
+      <p>You are an object of fear, a butcher set loose. You gain the following
+      benefits:</p><ul><li><p><strong>Intimidating.</strong> You gain
+      Proficiency in the Intimidation Skill, or Expertise if you already had
+      Proficiency. Additionally, you may use your Strength Modifier, instead of
+      your Charisma, to determine your Intimidation
+      Modifier.</p></li><li><p><strong>Long-Arm</strong>. Melee Weapons you are
+      wielding are considered to have the Reach Property during your Turn. If
+      they already have that Property, their Reach is increased by 5 feet during
+      your Turn.</p></li><li><p><strong>Press the Attack: Brutal Execution (2
+      Aggression)</strong> You can use this Press the Attack option as a Bonus
+      Action or Reaction immediately after you kill a Creature; you end them
+      with such physicality that hostile Creatures within 10 feet of you that
+      can see you take Psychic Damage equal to your Strength Modifier. If this
+      Damage reduces a Creature to 0 Hit Points, they fall Unconscious rather
+      than die. </p><hr></li></ul><p><strong>Semi-Automated:
+      </strong>Intimidation Expertise is automated; using Strength instead of
+      Charisma must be set manually. Long Arm is not automated. Brutal Execution
+      can be used via the activites on this Feature.<br></p>
+    chat: ''
+  identifier: shock-trooper
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Shock Trooper Fear
+    img: modules/ak5e/icons/Skill-Crownslayer2.webp
+    origin: null
+    transfer: false
+    _id: XYhxlpnufSQlC6tS
+    type: base
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.bX97T6A8uVsa8OZJ
+    disabled: false
+    start: null
+    duration:
+      value: 1
+      units: rounds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - frightened
+    showIcon: 0
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791631244701
+      modifiedTime: 1791733087085
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!bX97T6A8uVsa8OZJ.XYhxlpnufSQlC6tS'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.yMblTvZyMARC6ePZ
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791628217730
+  modifiedTime: 1791733087085
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: bX97T6A8uVsa8OZJ
+sort: 175000
+_key: '!items!bX97T6A8uVsa8OZJ'

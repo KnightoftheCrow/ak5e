@@ -9,7 +9,7 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>You gain the following benefits:</p><p><strong>CQC Expert.</strong>
@@ -37,24 +37,27 @@ system:
 effects:
   - name: CQC Expert
     img: modules/ak5e/icons/Skill-Executor1.png
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.m64RHyIKaX12J7To
+    origin: null
     _id: 85VUdS455fHkCUk2
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.criticalThreshold
-        mode: 2
-        value: threshold=-1; hasAttack && (distance <= 15);
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          value: threshold=-1; hasAttack && (distance <= 15);
+          priority: 20
+          type: add
+          phase: initial
+          _id: 5hTDDwKVnzkW5Bng
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.m64RHyIKaX12J7To
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -78,29 +81,29 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1768654937589
-      modifiedTime: 1768655164254
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      systemVersion: 6.0.6
+      createdTime: 1791203553318
+      modifiedTime: 1791733088129
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!m64RHyIKaX12J7To.85VUdS455fHkCUk2'
 sort: 150000
 ownership:
   default: 0
-  GiT7LQTiCJxjm7mo: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1767626115486
-  modifiedTime: 1768655154418
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  systemVersion: 5.3.3
+  createdTime: 1791203553318
+  modifiedTime: 1791733088129
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!m64RHyIKaX12J7To'

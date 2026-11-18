@@ -1,0 +1,294 @@
+folder: W83RNVw2TgmwASvK
+name: Mow them Down
+type: feat
+img: modules/ak5e/icons/Skill-Tippi2.webp
+system:
+  activities:
+    PjmtCSiFdOBqovFr:
+      type: attack
+      name: Ferocious Fling
+      _id: PjmtCSiFdOBqovFr
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '30'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: unarmed
+        ability: str
+        bonus: ''
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scaling'
+            number: null
+            denomination: null
+            bonus: ''
+            types:
+              - bludgeoning
+            scaling:
+              mode: ''
+              number: 1
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      attackMode: ''
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '1'
+  advancement: {}
+  description:
+    value: >-
+      <p>It is equally dangerous to flee from you as it is to assail you. You
+      gain the following benefits:</p><ul><li><p><strong>Fearmonger.</strong>
+      You have Advantage on Attack Rolls against Frightened Creatures, and
+      Frightened Creature have Disadvantage on Attack Rolls against
+      you.</p></li><li><p><strong>Ferocious Fling.</strong> Once per Short Rest,
+      when you reduce a Creature to 0 Hit Points that is both:</p><ul><li><p>The
+      same size or smaller than you</p></li><li><p>Within your
+      Reach</p></li></ul><p>You may launch them as a projectile at another
+      Creature within 30 feet of you (no Action required). This is a Ranged
+      Weapon Attack using your Strength for the Attack and Damage Rolls; on a
+      hit, the Attack deals Bludgeoning Damage equal to the launched Creature’s
+      Constitution Score.</p></li></ul><p>If you used Brutal Execution on the
+      Creature you threw, your use of this Feature is
+      refunded.</p><hr><p><strong>Semi-Automated: </strong>The Interactions with
+      the Frightened Condition are automated. The Ferocious Fling Attack can be
+      made using this Feature; set the scaling value to the Constitution Score
+      of the Creature.</p>
+    chat: ''
+  identifier: mow-them-down
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 4
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Strong against Frightened
+    img: modules/ak5e/icons/Skill-Tippi2.webp
+    origin: null
+    type: base
+    _id: yPsiWFfivt3XP4DK
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.advantage
+          type: ac5e
+          value: opponentActor.statuses.frightened
+          phase: initial
+          priority: null
+          _id: rGZU6A9YuShdL8Zh
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.grants.attack.disadvantage
+          type: ac5e
+          value: rollingActor.statuses.frightened
+          phase: initial
+          priority: null
+          _id: q7FShgG5KRbBhxTg
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.xK35WNwYfswtnMjc
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791631575737
+      modifiedTime: 1791733088646
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!xK35WNwYfswtnMjc.yPsiWFfivt3XP4DK'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.ko1tff9vfXp0LN4u
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791628217730
+  modifiedTime: 1791733088646
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: xK35WNwYfswtnMjc
+sort: 187500
+_key: '!items!xK35WNwYfswtnMjc'

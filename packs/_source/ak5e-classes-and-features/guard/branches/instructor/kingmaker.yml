@@ -1,0 +1,960 @@
+folder: fjmAVtYYjlnMOuwx
+name: Kingmaker
+type: feat
+img: modules/ak5e/icons/Skill-VinaVictoria3.webp
+system:
+  activities:
+    KyKVsZ47n3kuiHmA:
+      type: utility
+      name: Kingmaker
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: WVdQvsOHEyxDUAtZ
+          level:
+            min: null
+            max: null
+        - _id: YSGI5GUoUJHbFj7Q
+          level:
+            min: null
+            max: null
+        - _id: Acpi6pK7Qp4JVHkV
+          level:
+            min: null
+            max: null
+        - _id: AjGrWOf7PYy9Ee5Y
+          level:
+            min: null
+            max: null
+        - _id: QYYe6ZU9AviMg5Ze
+          level:
+            min: null
+            max: null
+        - _id: YbXkaYzxD5DRRidY
+          level:
+            min: null
+            max: null
+        - _id: xc3fdph78cUhmOlB
+          level:
+            min: null
+            max: null
+        - _id: bCqa9acYOdz32c7O
+          level:
+            min: null
+            max: null
+        - _id: ZIhMfdfDpji6DjKA
+          level:
+            min: null
+            max: null
+        - _id: KZ3tJJUUvy4vzevt
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '30'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          special: ''
+          count: '1'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: keep-fighting!
+        triggeredActivityConditionText: effects.some(e => e.name === "Keep Fighting! (+Temp HP)")
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: false
+        triggeredActivityConfigure: false
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: KyKVsZ47n3kuiHmA
+    fpv7jmPL06eMP2bT:
+      type: heal
+      name: Keep Fighting!
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        value: '30'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      healing:
+        types:
+          - temphp
+        custom:
+          enabled: true
+          formula: '@scale.instruction.instruction-die-size'
+        scaling:
+          number: 1
+        number: null
+        denomination: null
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: true
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: fpv7jmPL06eMP2bT
+  uses:
+    spent: 0
+    recovery:
+      - period: turnStart
+        type: recoverAll
+    max: '1'
+  advancement: {}
+  description:
+    value: >-
+      <p>Once per Turn, when you issue an Instruction, you may choose a second
+      allied Creature within 30 feet of you and issue the same Instruction to
+      them. This additional Instruction does not expend an Instruction Die;
+      however, your Instruction Die is always a d6 for this second
+      Instruction.</p><hr><p><strong>Semi-Automated: </strong>Activate this
+      Feature manually and choose the same Instruction you just granted; they
+      are always issued as a d6.</p>
+    chat: ''
+  identifier: kingmaker
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 10
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Defend Yourself! (+AC)
+    img: modules/ak5e/icons/Skill-Whislash1.png
+    origin: null
+    transfer: false
+    _id: WVdQvsOHEyxDUAtZ
+    type: base
+    system:
+      changes:
+        - key: system.attributes.ac.bonus
+          type: add
+          value: '[[1d6]]'
+          phase: initial
+          priority: null
+          _id: DGxvPTRY21Aq2kJt
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VIhCpLLdKelWR5tT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: targetEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791729816283
+      modifiedTime: 1791733086663
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.T2dXvmwFEI6I6bJq.ActiveEffect.2XXYdhaiT3oBmEO7
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VIhCpLLdKelWR5tT.WVdQvsOHEyxDUAtZ'
+  - name: Focus! (+to Skill Checks)
+    img: modules/ak5e/icons/Skill-Whislash1.png
+    origin: null
+    transfer: false
+    _id: YSGI5GUoUJHbFj7Q
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.skill.bonus
+          type: ac5e
+          value: bonus=[[1d6]]; once
+          phase: initial
+          priority: null
+          _id: UUUDGBUlyzfoZ91u
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VIhCpLLdKelWR5tT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791729817196
+      modifiedTime: 1791733086663
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.T2dXvmwFEI6I6bJq.ActiveEffect.Ge3psuI6siOpCl5O
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VIhCpLLdKelWR5tT.YSGI5GUoUJHbFj7Q'
+  - name: Hang In There! (+to Death Saving Throws)
+    img: modules/ak5e/icons/Skill-Whislash1.png
+    origin: null
+    transfer: false
+    _id: Acpi6pK7Qp4JVHkV
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.death.bonus
+          type: ac5e
+          value: bonus=[[1d6]]; once
+          phase: initial
+          priority: null
+          _id: cNKn8q6aG3hg9ECX
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VIhCpLLdKelWR5tT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: targetEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791729818075
+      modifiedTime: 1791733086663
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.T2dXvmwFEI6I6bJq.ActiveEffect.O1jtruTyLuJRqD6V
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VIhCpLLdKelWR5tT.Acpi6pK7Qp4JVHkV'
+  - name: Now's Your Chance! (+to Attack Roll)
+    img: modules/ak5e/icons/Skill-Whislash1.png
+    origin: null
+    transfer: false
+    _id: AjGrWOf7PYy9Ee5Y
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: bonus=[[1d6]]; once
+          phase: initial
+          priority: null
+          _id: OnQ6lwYOmeUoJqHp
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VIhCpLLdKelWR5tT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: targetEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791729818911
+      modifiedTime: 1791733086664
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.T2dXvmwFEI6I6bJq.ActiveEffect.zFeidUJmuKlAqHml
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VIhCpLLdKelWR5tT.AjGrWOf7PYy9Ee5Y'
+  - name: Snap Out of It! (Make Save Immediately with Bonus)
+    img: modules/ak5e/icons/Skill-Whislash1.png
+    origin: null
+    transfer: false
+    _id: QYYe6ZU9AviMg5Ze
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.save.bonus
+          type: ac5e
+          value: bonus=[[1d6]]; once
+          phase: initial
+          priority: null
+          _id: qcZZFnUwUgc7GTkL
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VIhCpLLdKelWR5tT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791729821082
+      modifiedTime: 1791733086664
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.T2dXvmwFEI6I6bJq.ActiveEffect.4fKwhOmZTAVAx8G3
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VIhCpLLdKelWR5tT.QYYe6ZU9AviMg5Ze'
+  - name: Steel Yourself! (+to next Saving Throw)
+    img: modules/ak5e/icons/Skill-Whislash1.png
+    origin: null
+    transfer: false
+    _id: YbXkaYzxD5DRRidY
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.save.bonus
+          type: ac5e
+          value: bonus=[[1d6]]; once
+          phase: initial
+          priority: null
+          _id: 0LpqkYQSlP8WDf8P
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VIhCpLLdKelWR5tT
+    disabled: false
+    start: null
+    duration:
+      value: 1
+      units: minutes
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791729822141
+      modifiedTime: 1791733086664
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.T2dXvmwFEI6I6bJq.ActiveEffect.ziBcUtoHleN94BHk
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VIhCpLLdKelWR5tT.YbXkaYzxD5DRRidY'
+  - name: Strike! (Immediate Attack or Cantrip with Bonus Damage)
+    img: modules/ak5e/icons/Skill-Whislash1.png
+    origin: null
+    transfer: false
+    _id: xc3fdph78cUhmOlB
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: bonus=[[1d6]]; once; hasAttack || isCantrip
+          phase: initial
+          priority: null
+          _id: 7hoSc4ioCsIS74Jd
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VIhCpLLdKelWR5tT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791729823108
+      modifiedTime: 1791733086664
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.T2dXvmwFEI6I6bJq.ActiveEffect.Oe4hJIy5GhGXZ6Xg
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!VIhCpLLdKelWR5tT.xc3fdph78cUhmOlB'
+  - name: Get Out of There! (Immediate Move without Opportunity Attacks)
+    img: modules/ak5e/icons/Skill-Whislash1.png
+    origin: null
+    transfer: false
+    type: base
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VIhCpLLdKelWR5tT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791729824079
+      modifiedTime: 1791733086664
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.T2dXvmwFEI6I6bJq.ActiveEffect.Oe4hJIy5GhGXZ6Xg
+      duplicateSource: null
+      exportSource: null
+    _id: bCqa9acYOdz32c7O
+    _key: '!items.effects!VIhCpLLdKelWR5tT.bCqa9acYOdz32c7O'
+  - name: Go! (Half Speed + 3x Aid Die Move)
+    img: modules/ak5e/icons/Skill-Whislash1.png
+    origin: null
+    transfer: false
+    type: base
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VIhCpLLdKelWR5tT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791729825161
+      modifiedTime: 1791733086665
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.T2dXvmwFEI6I6bJq.ActiveEffect.Oe4hJIy5GhGXZ6Xg
+      duplicateSource: null
+      exportSource: null
+    _id: ZIhMfdfDpji6DjKA
+    _key: '!items.effects!VIhCpLLdKelWR5tT.ZIhMfdfDpji6DjKA'
+  - name: Keep Fighting! (+Temp HP)
+    img: modules/ak5e/icons/Skill-Whislash1.png
+    origin: null
+    transfer: false
+    type: base
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.VIhCpLLdKelWR5tT
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791729826112
+      modifiedTime: 1791733086665
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.T2dXvmwFEI6I6bJq.ActiveEffect.Oe4hJIy5GhGXZ6Xg
+      duplicateSource: null
+      exportSource: null
+    _id: KZ3tJJUUvy4vzevt
+    _key: '!items.effects!VIhCpLLdKelWR5tT.KZ3tJJUUvy4vzevt'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.AwTHtCW9qTZrbxRS
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791724900801
+  modifiedTime: 1791733086663
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: VIhCpLLdKelWR5tT
+sort: 300000
+_key: '!items!VIhCpLLdKelWR5tT'

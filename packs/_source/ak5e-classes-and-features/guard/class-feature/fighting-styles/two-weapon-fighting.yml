@@ -1,0 +1,131 @@
+folder: Jnt98AobyVi6gAwE
+name: Two-Weapon Fighting
+type: feat
+img: modules/ak5e/icons/Skill-Executor2.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery:
+      - period: turn
+        type: recoverAll
+    max: '1'
+  advancement: {}
+  description:
+    value: >-
+      <p>When you engage in Two-Weapon Fighting, you can add your Ability
+      Modifier to the Damage of the additional Attack(s), and you may draw or
+      stow two one-handed weapons when you would normally be able to draw or
+      stow only one.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: feature
+  source:
+    revision: 1
+    rules: '2014'
+    book: AK5e
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: fightingStyle
+effects:
+  - name: Two-Weapon Fighting
+    img: modules/ak5e/icons/Skill-Executor2.webp
+    origin: null
+    type: base
+    _id: l4NBk0K5yIezv4DE
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=rollingActor.abilities.str.mod; addTo=base;
+            activity.activation.type === 'bonus' && !itemProperties.fin &&
+            actionType.mwak
+          phase: initial
+          priority: null
+          _id: WlCQfQuKJry5uLXc
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=rollingActor.abilities.dex.mod; activity.activation.type ===
+            'bonus' && itemProperties.fin && actionType.mwak ||
+            activity.activation.type === 'bonus' && actionType.rwak
+          phase: initial
+          priority: null
+          _id: ypMeE2wNI6oU576d
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.MOKkq1Cp0FoDn8KI
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791317346491
+      modifiedTime: 1791733086924
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!ZQSg5lUDNZyJ5Hdw.l4NBk0K5yIezv4DE'
+flags:
+  dnd5e: {}
+  cat: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791317346491
+  modifiedTime: 1791733086924
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: ZQSg5lUDNZyJ5Hdw
+sort: 550000
+_key: '!items!ZQSg5lUDNZyJ5Hdw'

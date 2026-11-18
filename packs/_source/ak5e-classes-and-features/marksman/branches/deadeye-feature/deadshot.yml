@@ -28,6 +28,7 @@ system:
         value: ''
       effects:
         - _id: KTZKfV25YX8LQe6w
+          level: {}
       flags: {}
       range:
         units: self
@@ -38,6 +39,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -111,11 +113,30 @@ system:
       otherActivityId: none
       otherActivityAsParentType: true
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>You may enter Deadshot State as a Bonus Action; Deadshot State ends at
@@ -145,33 +166,44 @@ system:
 effects:
   - name: Deadshot
     img: modules/ak5e/icons/Skill-Spuria1.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.CDG10QNnyWf5iB0x
+    origin: null
     transfer: false
     _id: KTZKfV25YX8LQe6w
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.bonus
-        mode: 0
-        value: bonus=@prof; rwak
-        priority: 20
-      - key: flags.automated-conditions-5e.aura.range.noLongDisadvantage
-        mode: 0
-        value: 'true'
-        priority: 20
-      - key: flags.automated-conditions-5e.damage.modifier
-        mode: 0
-        value: modifier=min3; rwak
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: custom
+          value: bonus=@prof; rwak
+          phase: initial
+          priority: 20
+          _id: AH80MOuc98221xT7
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.aura.range
+          type: custom
+          value: noLongDisadvantage=true
+          phase: initial
+          priority: 20
+          _id: hWRTXd4PIFbzUuT6
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: custom
+          value: modifier=min3; rwak
+          phase: initial
+          priority: 20
+          _id: edP9bpSlhEVyEEDq
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.CDG10QNnyWf5iB0x
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -199,29 +231,29 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1781190684697
-      modifiedTime: 1781190880022
+      systemVersion: 6.0.6
+      createdTime: 1791203553316
+      modifiedTime: 1791733085353
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!CDG10QNnyWf5iB0x.KTZKfV25YX8LQe6w'
 sort: 200000
 ownership:
   default: 0
-  GiT7LQTiCJxjm7mo: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1767621242308
-  modifiedTime: 1781192486489
+  systemVersion: 5.3.3
+  createdTime: 1791203553316
+  modifiedTime: 1791733085353
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!CDG10QNnyWf5iB0x'

@@ -283,25 +283,29 @@ system:
 effects:
   - name: Crushing Rock
     img: icons/magic/earth/barrier-stone-explosion-red.webp
-    origin: Item.SUnEdyYchBlrUDTQ
+    origin: null
     transfer: false
     _id: wKhwK9STeuULGD20
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.ActivityOverTime
-        mode: 2
-        value: crush-damage
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.ActivityOverTime
+          value: crush-damage
+          priority: 20
+          type: add
+          phase: initial
+          _id: FjLwj92jMb6s1dj8
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.SUnEdyYchBlrUDTQ
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -328,10 +332,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108750
+      modifiedTime: 1791733108750
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!SUnEdyYchBlrUDTQ.wKhwK9STeuULGD20'
 flags:
   dnd5e:
@@ -342,13 +351,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
-sort: 0
+  modifiedTime: 1791733108750
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+sort: 300000
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

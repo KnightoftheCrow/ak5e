@@ -397,21 +397,21 @@ system:
 effects:
   - name: Stunned
     img: icons/magic/lightning/bolt-strike-explosion-purple.webp
-    origin: Item.vXoPPH6jyab7FoEt
+    origin: null
     transfer: false
     _id: JyvDU7dpkaqz3ut0
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.vXoPPH6jyab7FoEt
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: targetEnd
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -432,18 +432,22 @@ effects:
         dontApply: false
         durationExpression: ''
         macroRepeat: none
-        specialDuration:
-          - turnEnd
+        specialDuration: []
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733109639
+      modifiedTime: 1793630691689
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!vXoPPH6jyab7FoEt.JyvDU7dpkaqz3ut0'
 flags:
   dnd5e:
@@ -454,12 +458,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733109639
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

@@ -177,21 +177,21 @@ system:
 effects:
   - name: Frozen in Permafrost
     img: icons/magic/water/barrier-ice-water-cube.webp
-    origin: Item.4XZraewoItLOenQD
+    origin: null
     transfer: false
     _id: ztnhc2xx41UJCyMb
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.4XZraewoItLOenQD
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses:
@@ -220,10 +220,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733107686
+      modifiedTime: 1791733107686
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!4XZraewoItLOenQD.ztnhc2xx41UJCyMb'
 flags:
   dnd5e:
@@ -234,12 +239,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733107686
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

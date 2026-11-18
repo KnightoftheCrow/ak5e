@@ -1,0 +1,139 @@
+folder: 2NjErlfHCNMkOexd
+name: Medic Arts Casting (INT)
+type: feat
+_id: 2a6HCBimPoM3Y0sT
+img: modules/ak5e/icons/Skill-T3.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement:
+    gjUKJ64YUjTXfapx:
+      name: ''
+      type: ItemGrant
+      _id: gjUKJ64YUjTXfapx
+      configuration:
+        items:
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-arts.Item.rJ8iQpp2Pvjf0bWJ
+          - uuid: Compendium.ak5e.ak5e-arts.Item.6GMX3sLNtYU5pEtM
+            optional: false
+            sort: 0
+        optional: false
+        sorting: m
+        spell: null
+      flags: {}
+      value: {}
+      level: 0
+      hint: ''
+  description:
+    value: >-
+      <p>You can cast specialised Arts to preserve
+      life.</p><ul><li><p><strong>Arts Pool:</strong> You learn all of the Arts
+      in the Healing Arts Special Arts Pool, and they are always
+      Prepared.</p></li><li><p><strong>Arts Points:</strong> The Medic Features
+      table shows how many Arts Points (AP) you have to cast Arts of Level 1 or
+      higher. You regain all expended Arts Points when you finish a Long
+      Rest.</p></li><li><p><strong>Maximum Arts Level:</strong> The Medic
+      Features table shows the maximum Level you can cast an Art at, based on
+      your Medic Level. If an Art’s Level is above your current Maximum Art
+      Level, you cannot cast it.</p></li><li><p><strong>Spellcasting
+      Ability:</strong> When you gain this Feature, choose either Intelligence
+      or Wisdom; that is your Spellcasting Ability.</p></li></ul>
+    chat: ''
+  identifier: medic-arts-casting
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: 'Spellcasting Ability: INT'
+    img: modules/ak5e/icons/Skill-T3.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.2a6HCBimPoM3Y0sT
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.spellcasting
+          type: override
+          value: int
+          phase: initial
+          _id: jztJeLTxpAd9PMRz
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 5kMBt0jeDhJMuLSC
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.2a6HCBimPoM3Y0sT
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794845415420
+      modifiedTime: 1794845424739
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!2a6HCBimPoM3Y0sT.5kMBt0jeDhJMuLSC'
+sort: -100000
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794845367519
+  modifiedTime: 1794845511680
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!2a6HCBimPoM3Y0sT'

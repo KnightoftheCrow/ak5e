@@ -177,29 +177,36 @@ system:
 effects:
   - name: Flock Member
     img: icons/creatures/birds/raptor-hawk-flying.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.sXQvZHUNaAFY10E0
+    origin: null
     transfer: false
     _id: 5DENy2rnHlf8MwYk
     type: base
-    system: {}
-    changes:
-      - key: macro.createItem
-        mode: 0
-        value: Item.GXqXqO8Lu1hoS9yg
-        priority: 20
-      - key: macro.createItem
-        mode: 0
-        value: Item.QiKm9xxoarYlIzbI
-        priority: 20
+    system:
+      changes:
+        - key: macro.createItem
+          value: Item.GXqXqO8Lu1hoS9yg
+          priority: 20
+          type: custom
+          phase: initial
+          _id: YajDkFDLOUaM7nTa
+          conditions: '{}'
+          replacement: ''
+        - key: macro.createItem
+          value: Item.QiKm9xxoarYlIzbI
+          priority: 20
+          type: custom
+          phase: initial
+          _id: fWF6LWVQClqY5SPJ
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.sXQvZHUNaAFY10E0
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: >-
       <p>You and that ally gain the following benefits:</p><p><strong>Birds of
       Prey</strong>. When you would make an Attack Roll against a Creature that
@@ -235,10 +242,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733083434
+      modifiedTime: 1791733083434
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!sXQvZHUNaAFY10E0.5DENy2rnHlf8MwYk'
 sort: 0
 ownership:
@@ -252,10 +264,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680310513
-  modifiedTime: 1771157531833
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1791733083434
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!sXQvZHUNaAFY10E0'

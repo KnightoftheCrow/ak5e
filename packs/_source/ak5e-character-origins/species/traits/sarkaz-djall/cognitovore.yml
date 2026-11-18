@@ -1,0 +1,526 @@
+folder: Z0IbSlwpgGR5lsLj
+name: Cognitovore
+type: feat
+_id: wBBh8oV5xASBo2sV
+img: icons/magic/unholy/silhouette-light-fire-blue.webp
+system:
+  activities:
+    i7NUYq6gRRkhjALz:
+      type: save
+      name: Thoughtseize (Unwilling Creature)
+      _id: i7NUYq6gRRkhjALz
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: JeFjr6ad6MdIttsX
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+        - _id: TpxYhmMHBSjD1QI3
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '15'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - int
+        dc:
+          calculation: spellcasting
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: >-
+        !["undead","plant","construct"].includes(typeOrRace) &&
+        target.abilities.int.value > 3
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    Xhctbf5u3lHjsKA8:
+      type: utility
+      name: Thoughtseize (Willing Creature)
+      _id: Xhctbf5u3lHjsKA8
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: JeFjr6ad6MdIttsX
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: TpxYhmMHBSjD1QI3
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '15'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: willing
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: >-
+        !["undead","plant","construct"].includes(typeOrRace) &&
+        target.abilities.int.value > 3
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '1'
+  advancement: {}
+  description:
+    value: >-
+      <h3>Cognitovore</h3><p>You cannot help but brush your mind against others;
+      a mere taste of what lies inside their skulls. With just a little urging,
+      you can dig deeper, like a bird pecking for worms, and coax free the
+      sustenance your crave. You can do so gently, excising pain and misery; or
+      you can rip it free, leaving a raw psychological wound for you to exploit.
+      You gain the following benefits:</p><ul><li><p><strong>Detect
+      Thoughts.</strong> You can sense the surface thoughts of any Creature
+      within 15 feet, as long as that Creature has an Intelligence Score greater
+      than 3, and is not an Undead, Plant, or Construct. You learn how these
+      Creatures are feeling in simple terms, such as Angry or
+      Sad.</p></li><li><p><strong>Thoughtseize.</strong> Once per Short Rest as
+      an Action, you can attempt to probe deeper into the thoughts of a Creature
+      you can read the surface thoughts of; that Creature must make an
+      Intelligence Saving Throw (DC = 8 + Your Charisma Bonus + Proficiency
+      Bonus OR Your Spell Save DC); a Creature can choose to fail this Saving
+      Throw. On a successful Save, you learn nothing, and the Creature becomes
+      immune to this effect for 24 hours. On a failed Saving Throw, you may ask
+      the DM one question about that Creature; that DM truthfully shares one of
+      that Creature’s memories with you that tries to answer your
+      question.</p><p>Additionally, when a Creature fails the initial Saving
+      Throw against this effect, you can choose to consume the memory you saw
+      gently or roughly. If you consume a thought gently, that Creature is
+      considered to be under the effect of the Heroism Art for 1 minute. If you
+      consume a thought roughly, that Creature is Dazed for 1 minute. Either
+      way, that Creature loses that
+      memory.</p></li></ul><hr><p><strong>Semi-Automated: </strong>Use the
+      Thoughtseize Activity when you desire, and choose the correct effect for
+      Creatures that fail the Save. Detect Thoughts cannot be automated.</p>
+    chat: ''
+  identifier: cognitovore
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Memory Devoured
+    img: icons/magic/unholy/silhouette-light-fire-blue.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.wBBh8oV5xASBo2sV
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: JeFjr6ad6MdIttsX
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: 1
+      units: minutes
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses:
+      - dazed
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794918780809
+      modifiedTime: 1794918813819
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!wBBh8oV5xASBo2sV.JeFjr6ad6MdIttsX'
+  - name: Memory Gently Removed
+    img: icons/magic/unholy/silhouette-light-fire-blue.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.wBBh8oV5xASBo2sV
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.traits.ci.value
+          type: add
+          value: frightened
+          phase: initial
+          _id: 2ekRB9j4izmiF350
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.midi-qol.OverTime
+          type: add
+          value: >-
+            turn=start, label=Memory Gently Removed, rollType=damage,
+            damageRoll=@attributes.spell.mod, damageType=temphp
+          phase: initial
+          _id: ptawQUsutOnwP6Iq
+          conditions: '{}'
+          replacement: origin
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: TpxYhmMHBSjD1QI3
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: 1
+      units: minutes
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794918816361
+      modifiedTime: 1794918896104
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!wBBh8oV5xASBo2sV.TpxYhmMHBSjD1QI3'
+sort: 0
+ownership:
+  default: 0
+  RpHe2CXmeL3aouDm: 3
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794853093726
+  modifiedTime: 1794919092302
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!wBBh8oV5xASBo2sV'

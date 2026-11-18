@@ -167,33 +167,45 @@ system:
 effects:
   - name: Avatar of Wind
     img: icons/magic/air/air-smoke-casting.webp
-    origin: Item.MZiCUrca9sh1LsnG
+    origin: null
     transfer: false
     _id: kL5U2pDOUhakKJ5r
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.fly
-        mode: 5
-        value: '100'
-        priority: 20
-      - key: flags.midi-qol.superSaver.dex
-        mode: 5
-        value: '1'
-        priority: 20
-      - key: macro.createItem
-        mode: 0
-        value: Compendium.ak5e.ak5e-arts.Item.uDeIKpJc4P2YEJSo
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.fly
+          value: 100
+          priority: 20
+          type: override
+          phase: initial
+          _id: MOF06TYztqmphtH6
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.superSaver.dex
+          value: 1
+          priority: 20
+          type: override
+          phase: initial
+          _id: L4I7Ciu4yBmbtBxZ
+          conditions: '{}'
+          replacement: ''
+        - key: macro.createItem
+          value: Compendium.ak5e.ak5e-arts.Item.uDeIKpJc4P2YEJSo
+          priority: 20
+          type: custom
+          phase: initial
+          _id: JjtpHE3jcX5Mu6js
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.MZiCUrca9sh1LsnG
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -220,10 +232,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108485
+      modifiedTime: 1791733108485
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!MZiCUrca9sh1LsnG.kL5U2pDOUhakKJ5r'
 flags:
   dnd5e:
@@ -234,12 +251,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108484
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

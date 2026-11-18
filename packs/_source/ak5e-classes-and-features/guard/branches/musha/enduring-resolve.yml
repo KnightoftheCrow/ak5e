@@ -1,0 +1,355 @@
+folder: 32dUF9J6SWSSOudP
+name: Enduring Resolve
+type: feat
+img: modules/ak5e/icons/Skill-Matoimaru1.webp
+system:
+  activities:
+    9nQIWYMw78m9sUeZ:
+      type: save
+      name: Not Yet
+      _id: 9nQIWYMw78m9sUeZ
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: ''
+          formula: 10+(5*(@item.uses.value))
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: not-yet-heal
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: saveTargets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: false
+        triggeredActivityConfigure: true
+        autoConsume: true
+        forceConsumeDialog: never
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    7KrBqE8SWnhomhPX:
+      type: heal
+      name: Not Yet Heal
+      _id: 7KrBqE8SWnhomhPX
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      healing:
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: (@prof)*2
+        modifiers: []
+        scaling:
+          number: 1
+        number: null
+        denomination: null
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: true
+        otherActivityCompatible: false
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  uses:
+    spent: 10
+    recovery:
+      - period: lr
+        type: loseAll
+    max: '10'
+  advancement:
+    gv1fuPNRYNi03u1W:
+      name: ''
+      type: Trait
+      _id: gv1fuPNRYNi03u1W
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - saves:wis
+        mode: default
+      flags: {}
+      level: 0
+      hint: ''
+  description:
+    value: >-
+      <p>To live and fight so close to the edge is to spit in the eye of death.
+      To fall, is to fail. You gain the following
+      benefits:</p><ul><li><p><strong>Additional Saving Throw
+      Proficiency.</strong> You gain Proficiency in Wisdom Saving
+      Throws.</p></li><li><p><strong>Not Yet.</strong> When you would be reduced
+      to 0 Hit Points but not killed outright by a hostile Action, you can make
+      a DC10 Wisdom Saving Throw. If you succeed, you survive with Hit Points
+      equal to twice your Proficiency Bonus instead. If you had less Hit Points
+      than this value before the Damage, you recover Hit Points until you have
+      that value. Each time you use this Feature, the DC of the Saving Throw
+      increases by 5. When you finish a Long Rest, the DC resets to
+      10.</p></li></ul><hr><p><strong>Semi-Automated: </strong>You must trigger
+      the Not Yet Activity on this Feature when necessary. The increasing DC is
+      accomplished via the uses on the item, so do not touch these. You will be
+      healed if you pass the Saving Throw.</p>
+    chat: ''
+  identifier: enduring-resolve
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects: []
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.v6qcGSAhfTvP0Tb9
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792220708830
+  modifiedTime: 1792222802047
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 8endFzIqDUcxhKxT
+sort: 50000
+_key: '!items!8endFzIqDUcxhKxT'

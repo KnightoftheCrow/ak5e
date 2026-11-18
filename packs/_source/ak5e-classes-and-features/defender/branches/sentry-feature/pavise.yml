@@ -2,18 +2,186 @@ folder: HMrANDaIT5F818Ua
 name: Pavise
 type: feat
 _id: FjRFgEdvu21zS4wV
-img: modules/ak5e/icons/Skill-SanktaMiksaparato2.webp
+img: modules/ak5e/icons/skill_icon_skchr_jessica2_1.png
 system:
-  activities: {}
+  activities:
+    L5kmnxxNlk2ssX2z:
+      type: summon
+      name: Plant Pavise
+      _id: L5kmnxxNlk2ssX2z
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '5'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        disposition: true
+        proficiency: false
+        saves: false
+        ability: ''
+      profiles:
+        - count: '1'
+          name: ''
+          _id: p8xWF2S4ZcSnReoV
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.Pwkwtm1i4zo8hkzP
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        prompt: true
+        mode: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      friendlySummon: false
+      tempHP: ''
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: {}
+  advancement:
+    o6z5cfYfB5DDFjnc:
+      name: ''
+      type: Trait
+      _id: o6z5cfYfB5DDFjnc
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - weapon:ltr
+          - weapon:hvr
+        mode: default
+      flags: {}
+      level: 0
+      hint: ''
   description:
     value: >-
       <p>Establish a forward position, attack, move, repeat. These are the
-      Sentries’s lessons.</p><ul><li><p><strong>Additional Weapon
+      Sentries’ lessons.</p><ul><li><p><strong>Additional Weapon
       Proficiencies.</strong> You gain Proficiency with Light Ranged Weapons and
       Heavy Ranged Weapons.</p></li><li><p><strong>Plant Pavise.</strong> As a
       Bonus Action while you have a Heavy Shield equipped, you can plant your
@@ -24,7 +192,10 @@ system:
       Half Cover.</p></li></ul><p>You can recover your shield as an Interact
       with Object while you are within 5 feet of it, and you can only have one
       shield planted at a time. Other Creatures cannot move your planted
-      Shield.</p><p><strong>Not Automated.</strong></p>
+      Shield.</p><hr><p><strong>Semi-Automated: </strong>Proficiencies are
+      automated. You can "summon" your Pavise with this Feature; the Shelter is
+      provides is automated, the half cover is not. It also does not check the
+      origin direction of the attack.</p>
     chat: ''
   identifier: pavise
   source:
@@ -40,24 +211,21 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
+    subtype: ''
 effects: []
 sort: 0
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358934901
-  modifiedTime: 1783358934901
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553245
+  modifiedTime: 1792424555455
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!FjRFgEdvu21zS4wV'

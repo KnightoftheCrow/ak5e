@@ -1,0 +1,460 @@
+folder: rqOQuW5cxkA6pxkB
+name: The Doctor Is In
+type: feat
+_id: qGNo7ctJ05uTdL9O
+img: modules/ak5e/icons/Skill-Pramanix1.webp
+system:
+  activities:
+    WcKQanwNKneCBPib:
+      type: utility
+      name: Activate
+      _id: WcKQanwNKneCBPib
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: G2SUfwvJTtQW61v7
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: 14
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    qPt6XMireMkos9Vx:
+      type: utility
+      name: Activate (Concentrated Treatment)
+      img: ''
+      sort: 100000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+          - type: activityUses
+            value: '-3'
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: G2SUfwvJTtQW61v7
+          level:
+            min: null
+            max: null
+        - _id: 9FY4XwHgU8IEY67C
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 3
+        recovery:
+          - period: lr
+            type: loseAll
+        max: '3'
+      visibility:
+        level:
+          min: 15
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: qPt6XMireMkos9Vx
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  advancement: {}
+  description:
+    value: >-
+      <p>The distinction of therapy is that it is not a one and done process; it
+      takes time and repetition. This is something you know, and you have
+      refined your skills to facilitate continuous treatment.</p><p>You can
+      activate this Feature as a Bonus Action. When you do, choose one of your
+      Basic Therapies. For the next minute, you may activate that Therapy option
+      without expending Life Support, and you may use a second Therapy on each
+      Art you cast; you may not use the same option twice.</p><p>Once you have
+      used this Feature, you may not do so again until you have finished a Long
+      Rest.</p><hr><p><strong>Not Automated: </strong>After you have declared
+      your Therapy for this feature, just uncheck the box that asks you to pay
+      the life support cost when you use that Therapy, or refund yourself the LS
+      after using it.</p>
+    chat: ''
+  identifier: the-doctor-is-in
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 4
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: The Doctor Is In
+    img: modules/ak5e/icons/Skill-Pramanix1.webp
+    origin: null
+    type: base
+    _id: G2SUfwvJTtQW61v7
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.qGNo7ctJ05uTdL9O
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 2
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+        enableCondition: ''
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791210558449
+      modifiedTime: 1791733088327
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!qGNo7ctJ05uTdL9O.G2SUfwvJTtQW61v7'
+  - name: Concentrated Therapy
+    img: modules/ak5e/icons/Skill-Saria3.webp
+    origin: null
+    transfer: false
+    _id: 9FY4XwHgU8IEY67C
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=(@scaling)d6;
+            usesCount=Item.2DoSBzmRnBQe3kGy.Activity.qPt6XMireMkos9Vx, 1;
+            criticalStatic; isHeal && isSpell
+          phase: initial
+          priority: null
+          _id: g8gL2kgCfqvqeCYL
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.qGNo7ctJ05uTdL9O
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791210558449
+      modifiedTime: 1791733088327
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!qGNo7ctJ05uTdL9O.9FY4XwHgU8IEY67C'
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.2DoSBzmRnBQe3kGy
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791210558449
+  modifiedTime: 1791733088327
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!qGNo7ctJ05uTdL9O'

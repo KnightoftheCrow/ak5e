@@ -41,24 +41,27 @@ system:
 effects:
   - name: Jack-of-Trades
     img: icons/skills/trades/academics-investigation-puzzles.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.2pGYhfScAwPMCRxr
+    origin: null
     _id: QHnGoW3MazX9gQxg
     type: base
-    system: {}
-    changes:
-      - key: flags.dnd5e.jackOfAllTrades
-        mode: 2
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.dnd5e.jackOfAllTrades
+          value: true
+          priority: 20
+          type: add
+          phase: initial
+          _id: nPMXMDi9MY7dH415
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.2pGYhfScAwPMCRxr
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -82,10 +85,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733080834
+      modifiedTime: 1791733080834
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!2pGYhfScAwPMCRxr.QHnGoW3MazX9gQxg'
 sort: 0
 ownership:
@@ -99,10 +107,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680302864
-  modifiedTime: 1768680302864
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733080834
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!2pGYhfScAwPMCRxr'

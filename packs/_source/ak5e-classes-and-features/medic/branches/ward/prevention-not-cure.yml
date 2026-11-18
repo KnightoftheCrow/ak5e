@@ -1,0 +1,563 @@
+folder: HOqmlqKEDIa7Capv
+name: Prevention, Not Cure
+type: feat
+_id: 2HfUEUtGKlMaLR8Y
+img: modules/ak5e/icons/Skill-Nightingale1.webp
+system:
+  activities:
+    Nq8oi4DyitlERY0B:
+      type: utility
+      name: Apply Ward
+      _id: Nq8oi4DyitlERY0B
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: disp
+        concentration: false
+        override: false
+      effects:
+        - _id: kcDZ4uR97O8EUWsq
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: 3
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    alAHTKX2y0w1qjGx:
+      type: utility
+      name: Apply Ward (Status Resistance)
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: disp
+        concentration: false
+        override: false
+      effects:
+        - _id: 3RvOCdQdyArq4vlc
+          level: {}
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 4
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: alAHTKX2y0w1qjGx
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>Your unique twist on medical Arts is designed to keep people from
+      reaching harm, rather than putting them back together. You gain the
+      following benefits:</p><p><strong>Ward.</strong> Whenever you would roll
+      to Restore Hit Points to a Creature, you can instead grant that same
+      amount of Temporary Hit Points. These Temporary Hit Points are known as
+      your Ward, and interact with your other Features.</p><p><strong>Additional
+      Temporary Hit Points.</strong> Whenever you grant Temporary Hit Points as
+      a result of an Action or Bonus Action, roll 1d8 and add the result to the
+      amount of Temporary Hit Points granted. Additionally, if those Temporary
+      Hit Points were granted as a result of an Art, increased the amount
+      granted by the number of Arts Points spent on that
+      Art.</p><hr><p><strong>Semi-Automated: </strong>The replacement effect of
+      temporary HP is currently not working due to a module bug. You must apply
+      your Ward by using the Activity on this Ability.</p>
+    chat: ''
+  identifier: prevention-not-cure
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Additional Temp HP Granted
+    img: modules/ak5e/icons/Skill-Nightingale1.webp
+    origin: null
+    type: base
+    _id: 51Xme0Rf8MvgeFKt
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1d8[temphp]+@spellLevel[temphp]; optinId=Additional Temp HP
+            Granted; description=Additional Temp HP granted by Ward Medic;
+            optin; preselected; isHeal
+          phase: initial
+          priority: null
+          _id: eAW46vF64SZIOd4H
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.2HfUEUtGKlMaLR8Y
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791210558453
+      modifiedTime: 1791733084690
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!2HfUEUtGKlMaLR8Y.51Xme0Rf8MvgeFKt'
+  - name: Convert Healing to Temp HP
+    img: modules/ak5e/icons/Skill-Nightingale1.webp
+    origin: null
+    type: base
+    _id: dSxzccy8naPfbSZT
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.typeOverride
+          type: ac5e
+          value: override=temphp; optinId=Convert Healing to Temp HP; optin; isHeal
+          phase: initial
+          priority: null
+          _id: Mkojy7QDUs1NKfmD
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.2HfUEUtGKlMaLR8Y
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791210558453
+      modifiedTime: 1791733084691
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!2HfUEUtGKlMaLR8Y.dSxzccy8naPfbSZT'
+  - name: Warded
+    img: modules/ak5e/icons/Skill-Nightingale1.webp
+    origin: null
+    transfer: false
+    _id: kcDZ4uR97O8EUWsq
+    type: base
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.2HfUEUtGKlMaLR8Y
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791214532531
+      modifiedTime: 1791733084691
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!2HfUEUtGKlMaLR8Y.kcDZ4uR97O8EUWsq'
+  - name: Warded
+    img: modules/ak5e/icons/Skill-Nightingale1.webp
+    origin: null
+    transfer: false
+    _id: 3RvOCdQdyArq4vlc
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.save.advantage
+          type: ac5e
+          value: >-
+            oncePerTurn; riderStatuses.bleeding || riderStatuses.blinded ||
+            riderStatuses.burning || riderStatuses.charmed ||
+            riderStatuses.corroded || riderStatuses.cursed ||
+            riderStatuses.dazed || riderStatuses.deafened ||
+            riderStatuses.exhaustion || riderStatuses.frightened ||
+            riderStatuses.frozen || riderStatuses.grappled ||
+            riderStatuses.incapacitated || riderStatuses.necrotised ||
+            riderStatuses.nervousimpairment || riderStatuses.paralyzed ||
+            riderStatuses.petrified || riderStatuses.poisoned ||
+            riderStatuses.prone || riderStatuses.restrained ||
+            riderStatuses.silenced || riderStatuses.stunned ||
+            riderStatuses.unconscious
+          phase: initial
+          priority: null
+          _id: z1hfiic8Ui9S5U6O
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.2HfUEUtGKlMaLR8Y
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791214574717
+      modifiedTime: 1791733084691
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!2HfUEUtGKlMaLR8Y.3RvOCdQdyArq4vlc'
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.rQw9WlpPYNcRGfTh
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791210558453
+  modifiedTime: 1791733084690
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!2HfUEUtGKlMaLR8Y'

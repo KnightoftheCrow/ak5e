@@ -148,24 +148,28 @@ system:
 effects:
   - name: Protected from Heat
     img: icons/magic/water/ice-snowman.webp
-    origin: Item.1l9ntmX4YUt54xkL
+    origin: null
     _id: EzoItL8GHwhMqavP
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dm.amount.fire
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dm.amount.fire
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: 7bGasICC1Ue1MTrv
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.1l9ntmX4YUt54xkL
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -190,10 +194,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733107607
+      modifiedTime: 1791733107607
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!1l9ntmX4YUt54xkL.EzoItL8GHwhMqavP'
 flags:
   dnd5e:
@@ -204,12 +213,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733107607
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: 1l9ntmX4YUt54xkL
 sort: 0
 ownership:

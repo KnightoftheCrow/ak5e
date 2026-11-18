@@ -2,13 +2,485 @@ folder: 8FnSIEKasDaGLsZC
 name: Bullrush
 type: feat
 _id: 0qhBmMXqFKNXdvbI
-img: modules/ak5e/icons/Skill-Zima1.webp
+img: modules/ak5e/icons/Skill-Matoimaru1.webp
 system:
-  activities: {}
+  activities:
+    yPCOkwEV9cscki7X:
+      type: save
+      name: Bullrush (STR)
+      _id: yPCOkwEV9cscki7X
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags:
+        cat:
+          genericConfig:
+            chris-premades:
+              pushOnFail:
+                distance: '10'
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: pushOnFail
+                rules: all
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: line
+          size: '30'
+          width: '5'
+          count: ''
+        affects:
+          choice: true
+          type: creatureOrObject
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 4
+            denomination: 12
+            bonus: ''
+            modifiers: []
+            types:
+              - bludgeoning
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: str
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    0J66I0Lkx0K2iFYw:
+      type: save
+      name: Bullrush (DEX)
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags:
+        cat:
+          genericConfig:
+            chris-premades:
+              pushOnFail:
+                distance: '10'
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: pushOnFail
+                rules: all
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: line
+          size: '30'
+          width: '5'
+        affects:
+          choice: true
+          count: ''
+          type: creatureOrObject
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 4
+            denomination: 12
+            bonus: ''
+            modifiers: []
+            types:
+              - bludgeoning
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: 0J66I0Lkx0K2iFYw
+    5qbWdbzhoVaZrK1E:
+      type: utility
+      name: Restore Use (2 Resilience)
+      _id: 5qbWdbzhoVaZrK1E
+      img: ''
+      sort: 200000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+          - type: itemUses
+            value: '2'
+            target: resilience
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '1'
   advancement: {}
   description:
     value: >-
@@ -21,7 +493,10 @@ system:
       On a successful Save, they take half as much Damage, and are not knocked
       back.</p><p>Once you have used this Feature, you may not do so again until
       you complete a Short Rest, or expend 2 Resilience (no Action required) to
-      restore your use of it.</p><p><strong>Not Automated.</strong></p>
+      restore your use of it.</p><hr><p><strong>Semi-Automated: </strong>The
+      activity on this Feature does not automatically move you, but sets a 30ft
+      line; untarget any Creatures that you would not pass through. Use the
+      correct activity for if your Martial DC scales with STR or DEX.</p>
     chat: ''
   identifier: bullrush
   source:
@@ -37,24 +512,21 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
+    subtype: ''
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358934901
-  modifiedTime: 1783358934901
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553242
+  modifiedTime: 1792415522626
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!0qhBmMXqFKNXdvbI'

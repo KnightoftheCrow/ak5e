@@ -2,7 +2,7 @@ folder: 8FnSIEKasDaGLsZC
 name: Overwhelming Might
 type: feat
 _id: SaqJz8G1H38UFUqB
-img: modules/ak5e/icons/Skill-Pepe3.webp
+img: modules/ak5e/icons/Skill-Mudrock3.webp
 system:
   activities: {}
   uses:
@@ -13,8 +13,8 @@ system:
   description:
     value: >-
       <p>While you have any layers of your Barrier, your Melee Attacks deal an
-      additional die of Damage as Force Damage.</p><p><strong>Not
-      Automated.</strong></p>
+      additional die of Damage as Force
+      Damage.</p><hr><p><strong>Automated.</strong></p>
     chat: ''
   identifier: overwhelming-might
   source:
@@ -32,23 +32,83 @@ system:
   type:
     value: class
     subtype: skillPoints
-effects: []
-sort: 0
+effects:
+  - name: Overwhelming Might
+    img: modules/ak5e/icons/Skill-Mudrock3.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.SaqJz8G1H38UFUqB
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=item.damage.base[force]; getItem(tokenId, ['superheavy'],
+            {getProperty: 'system.uses.value'}); >0
+          phase: initial
+          _id: X9GWIdoF4eLF9unt
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: hYKDizbkKBoX8Itl
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.SaqJz8G1H38UFUqB
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792415560396
+      modifiedTime: 1792416109415
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!SaqJz8G1H38UFUqB.hYKDizbkKBoX8Itl'
+sort: 300000
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358934901
-  modifiedTime: 1783358934901
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553243
+  modifiedTime: 1792416122652
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!SaqJz8G1H38UFUqB'

@@ -1,0 +1,264 @@
+folder: fnNi4KXioyJ542O7
+name: To Defy Science
+type: feat
+_id: Uhlw9ysKcC9XxNw3
+img: modules/ak5e/icons/Skill-Hoolheyak3.webp
+system:
+  activities:
+    u0ZVNcQFdm7U8OYG:
+      type: utility
+      name: To Defy Science
+      _id: u0ZVNcQFdm7U8OYG
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: minute
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: ws7v5zkphtw5D67J
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '30'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: true
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  advancement: {}
+  description:
+    value: >-
+      <p>Your Alchemical Concoctions have developed so far as to appear as
+      magic.</p><p>As an Action, you can choose a Creature you can see within 30
+      feet; that Creature cannot lose Hit Points for the next minute, as if they
+      were under the effect of Invulnerability.</p><p>Once you have used this
+      Feature, you may not do so again until you have completed a Long
+      Rest.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: to-defy-science
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 20
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Invulnerable
+    img: modules/ak5e/icons/Skill-Hoolheyak3.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.Uhlw9ysKcC9XxNw3
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.traits.di.value
+          type: add
+          value: ALL
+          phase: initial
+          _id: lvwre2hfvwXIJvG7
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: ws7v5zkphtw5D67J
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793641726706
+      modifiedTime: 1793641745003
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!Uhlw9ysKcC9XxNw3.ws7v5zkphtw5D67J'
+sort: 600000
+ownership:
+  default: 0
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791203553274
+  modifiedTime: 1793641766709
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!Uhlw9ysKcC9XxNw3'

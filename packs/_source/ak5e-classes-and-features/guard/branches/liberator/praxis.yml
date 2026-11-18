@@ -1,0 +1,195 @@
+folder: YjXKh177g00CFJra
+name: Praxis
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_saileach_3.png
+system:
+  activities:
+    ipNLtwFeGAl20hsR:
+      type: cast
+      spell:
+        uuid: Compendium.dnd-players-handbook.spells.Item.phbsplCompelledD
+        challenge:
+          override: false
+        properties:
+          - somatic
+          - material
+        spellbook: false
+        ability: str
+        level: 1
+      _id: ipNLtwFeGAl20hsR
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: true
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: press-the-attack
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      name: Face Me (2 Aggression)
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You practice what you preach, seeking out those who oppose your vision
+      and striking them down. You gain the following
+      benefits:</p><ul><li><p><strong>Far Reaching Guidance.</strong> The range
+      of your Guide the Masses Feature is increased to 40
+      feet.</p></li><li><p><strong>Improved Liberty.</strong> The additional
+      Damage granted by your Flash of Anger and The Right Moment Features is
+      increased to a d10.</p></li><li><p><strong>Press the Attack: Face Me (2
+      Aggression)</strong> You can use this Press the Attack Feature as a Bonus
+      Action; you can cast the Compelled Duel Art using this Feature as part of
+      that Bonus Action, ignoring its Somatic Components. If you do so, you use
+      your Martial DC in place of your Spellcasting DC for that
+      Art.</p></li></ul><hr><p><strong>Semi-Automated: </strong>Far Reaching
+      Guidance and Improved Liberty are automated. If you have the PHB, Face Me
+      is automated, but assumes you are using STR for your Martial DC. If you
+      are using DEX, edit the Feature.</p>
+    chat: ''
+  identifier: praxis
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 10
+  properties: []
+  requirements: ''
+  type:
+    value: ''
+    subtype: ''
+effects: []
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.T2EPIEzXhSf1cEIP
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791803057925
+  modifiedTime: 1791813325613
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: lDThJFHFliPTIcrq
+sort: 400000
+_key: '!items!lDThJFHFliPTIcrq'

@@ -1,0 +1,430 @@
+folder: yTaKQVDmOoYrR2OC
+name: Meltdown
+type: spell
+img: icons/magic/acid/dissolve-vomit-green-brown.webp
+system:
+  activities:
+    UJkHOh5bC6FSVGyp:
+      type: save
+      name: Cast
+      _id: UJkHOh5bC6FSVGyp
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: eCiN2TSIlNs5Jgar
+          level: {}
+          onSave: false
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      damage:
+        onSave: full
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 8
+            bonus: ''
+            types:
+              - acid
+            scaling:
+              mode: ''
+              number: 1
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: true
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    OUIqPduj6ks6Tqm4:
+      type: save
+      name: Death Burst
+      _id: OUIqPduj6ks6Tqm4
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: true
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: minute
+        concentration: true
+        override: true
+        value: '1'
+      effects:
+        - _id: eCiN2TSIlNs5Jgar
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: true
+        value: ''
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: sphere
+          size: '10'
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: true
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You choose a Creature you can see within range, causing very being to
+      bubble and burn as you violently alter the pH of fluids on and in that
+      Creature. That Creature must make a Constitution Saving Throw; on a failed
+      Save, they are afflicted for the duration of the Art. While afflicted, at
+      the end of each of their Turns, they take 1d8 Acid Damage. On a successful
+      Saving Throw, that Creature instead takes 3d8 Acid Damage and suffers no
+      other effects.</p><p>If a Creature is reduced to 0 Hit Points while
+      afflicted, it detonates in a burst of corrosive fluids. When this occurs,
+      all other Creatures within 10 feet of them must succeed on a Dexterity
+      Saving Throw or become afflicted for the remaining duration of this
+      Art.</p><p><strong>Semi-Automated: </strong>The initial target will take
+      3d8 Acid Damage even when they fail the initial save, instead of only on a
+      pass. Use the Death Burst activity when a Creature under the effect of
+      this Art dies. Additionally, they duration of the Condition applied by
+      Death Burst is always 1 minute, not the remaining duration as
+      intended.</p>
+    chat: ''
+  identifier: meltdown
+  source:
+    revision: 1
+    rules: '2014'
+  activation:
+    type: action
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 8
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 2
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  range:
+    units: ft
+    value: '100'
+    special: ''
+  school: evo
+  target:
+    template:
+      contiguous: false
+      stationary: false
+      units: ft
+      type: ''
+    affects:
+      choice: false
+      count: '1'
+      type: creature
+      special: ''
+effects:
+  - name: Meltdown
+    img: icons/magic/acid/dissolve-vomit-green-brown.webp
+    origin: null
+    transfer: false
+    _id: eCiN2TSIlNs5Jgar
+    type: base
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          type: add
+          value: >-
+            turn=end, label=Meltdown, rollType=damage, damageRoll=1d8,
+            damageType=acid
+          phase: initial
+          priority: null
+          _id: YGzf2y5n5OPRv6q0
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.45g4j6b9dxf96wAD
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1790605539342
+      modifiedTime: 1791733109001
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!ZPwUU3YXaESn0g1w.eCiN2TSIlNs5Jgar'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1790605539342
+  modifiedTime: 1791733109001
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ZPwUU3YXaESn0g1w
+sort: 200000
+_key: '!items!ZPwUU3YXaESn0g1w'

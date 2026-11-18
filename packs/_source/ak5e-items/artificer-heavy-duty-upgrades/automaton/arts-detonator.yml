@@ -1,0 +1,623 @@
+folder: wVtdcvt55pMCMRkD
+name: Arts Detonator
+type: consumable
+_id: OaAJ4xK7nvziWZHr
+img: modules/ak5e/icons/skill_icon_sktok_machst.png
+system:
+  activities:
+    QCPbDchwtorI9E6p:
+      type: save
+      name: Arts Detonator (d8)
+      img: ''
+      sort: 0
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags:
+        cat:
+          genericConfig:
+            chris-premades:
+              pushOnFail:
+                distance: '10'
+                choose: false
+                stopAdjacent: false
+                maxSize: ''
+                animation:
+                  source: chris-premades
+                  identifier: castBurst
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: pushOnFail
+                rules: all
+          animationGenericConfig:
+            chris-premades:
+              pushOnFail:
+                chris-premades:
+                  castBurst:
+                    style: impact
+                    color: blue
+                    cast: false
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: emanationNoTemplate
+          size: '10'
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: 7
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 8
+            bonus: ''
+            modifiers: []
+            types:
+              - force
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: int
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: false
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: QCPbDchwtorI9E6p
+    qRO0FTuAp6hnpNbW:
+      type: save
+      name: Arts Detonator (d10)
+      img: ''
+      sort: 100000
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags:
+        cat:
+          genericConfig:
+            chris-premades:
+              pushOnFail:
+                distance: '10'
+                choose: false
+                stopAdjacent: false
+                maxSize: ''
+                animation:
+                  source: chris-premades
+                  identifier: castBurst
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: pushOnFail
+                rules: all
+          animationGenericConfig:
+            chris-premades:
+              pushOnFail:
+                chris-premades:
+                  castBurst:
+                    style: impact
+                    color: blue
+                    cast: false
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: emanationNoTemplate
+          size: '10'
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 8
+          max: 13
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 10
+            bonus: ''
+            modifiers: []
+            types:
+              - force
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: int
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: false
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: qRO0FTuAp6hnpNbW
+    nL7aEbxZoziXLFfa:
+      type: save
+      name: Arts Detonator (d12)
+      img: ''
+      sort: 200000
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags:
+        cat:
+          genericConfig:
+            chris-premades:
+              pushOnFail:
+                distance: '10'
+                choose: false
+                stopAdjacent: false
+                maxSize: ''
+                animation:
+                  source: chris-premades
+                  identifier: castBurst
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: pushOnFail
+                rules: all
+          animationGenericConfig:
+            chris-premades:
+              pushOnFail:
+                chris-premades:
+                  castBurst:
+                    style: impact
+                    color: blue
+                    cast: false
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: emanationNoTemplate
+          size: '10'
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 14
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 8
+            bonus: ''
+            modifiers: []
+            types:
+              - force
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: int
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: false
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: nL7aEbxZoziXLFfa
+  uses:
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+    autoDestroy: false
+    max: '1'
+  description:
+    value: >-
+      <p><strong>Effect:</strong> As a Reaction when this Automaton is hit by an
+      Attack, it can release the energy stored within specialised power cells in
+      an explosive manner; all other Creatures within 10 feet of the Automaton
+      must make a Dexterity Saving Throw against your Artificer DC. On a failed
+      Save, they take Force Damage equal to three rolls of your Aid Die and are
+      knocked 10 feet away from the Automaton. On a successful Save, they take
+      half as much Damage, and suffer no other effects.</p><p>Once this
+      Automaton has used this Reaction, it may not do so again until both it and
+      its Creator complete a Short or Long Rest at the same time. However, if
+      the Automaton is reduced to 0 Hit Points, it may use this Reaction even if
+      it has expended its use of it.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: arts-detonator
+  source:
+    revision: 1
+    rules: '2024'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: credits
+  rarity: ''
+  attunement: ''
+  attuned: false
+  equipped: false
+  damage:
+    base:
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+    replace: false
+  properties: []
+  type:
+    value: ''
+    subtype: ''
+effects: []
+sort: 300000
+ownership:
+  default: 0
+  27ikDz77N89hVLvM: 3
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1785597790680
+  modifiedTime: 1793469407364
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!OaAJ4xK7nvziWZHr'

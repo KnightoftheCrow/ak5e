@@ -2,13 +2,510 @@ folder: WasAo6mUc2xMzT5t
 name: The Ultimate Hex
 type: feat
 _id: IJQbTUjoCC2mMqNN
-img: modules/AK5e-Foundry-Module/icons/Skill-Mantra3.webp
+img: modules/ak5e/icons/Skill-Mantra3.webp
 system:
-  activities: {}
+  activities:
+    obzDR8mkbb0EtK6l:
+      type: utility
+      name: Apply Ultimate Hex
+      _id: obzDR8mkbb0EtK6l
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: minute
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: PJp2mUH1PbKjgLCZ
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: e64OHCLSlgb5pHMV
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: uV0nAoQhKYxayRLv
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: YgaAZi8gq9kxBJ0V
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: OVNiyLwjZnWmJKQY
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: ImqQ9mCgHs83gzhV
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: eSD3IH0v3EDaALqP
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: choose-wasting-hex
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: false
+        triggeredActivityConfigure: false
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    tlBrkqV1noSSm5lv:
+      type: utility
+      name: Choose Wasting Hex
+      _id: tlBrkqV1noSSm5lv
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: minute
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: HhR4EhAwkX0QKV9U
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: zCKvPnWEySy2zR6r
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: w5WSL2BBrh5LKYJL
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 9FLZsvJ7h2bogyLo
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: rt7hO2p0CLRujRyy
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: mpTuOXHmB16e8yuc
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: true
+        otherActivityCompatible: false
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    EcUYLA05uwun75FZ:
+      type: save
+      name: Rupturing Hex Death Detonation
+      _id: EcUYLA05uwun75FZ
+      img: ''
+      sort: 200000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: sphere
+          size: '15'
+          count: ''
+        affects:
+          choice: true
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: 4@scale.aid-die.aid-die-size.die
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - force
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: spellcasting
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: true
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
   advancement: {}
   description:
     value: >-
@@ -26,8 +523,10 @@ system:
       Aid Die. On a successful Save, they take half as much Damage.</p><p>The
       Hexes applied as part of your Ultimate Hex are not cumulative with your
       Potent Hex Feature. Once you have applied the Ultimate Hex, you may not do
-      so again until you complete a Long Rest.</p><p><strong>Not
-      Automated.</strong></p>
+      so again until you complete a Long Rest.</p><hr><p><strong>Semi-Automated:
+      </strong>The per Turn Splash Damage of your Rupturing Hex are not
+      automated. Instead, manually deal the amount rolled to Creatures within
+      the range.</p>
     chat: ''
   identifier: the-ultimate-hex
   source:
@@ -43,24 +542,941 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
-effects: []
-sort: 0
-ownership:
-  default: 0
-  27ikDz77N89hVLvM: 3
+    subtype: ''
+effects:
+  - name: Abjuring Hex
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=-ceil(1effectOriginActor.scale.aid-die.aid-die-size.die)/2;
+            name=Abjuring Hex; description=Reduced Damage from Abjuring Hex;
+            !isHeal
+          phase: initial
+          _id: YXmDZDPrTuho9NHs
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: PJp2mUH1PbKjgLCZ
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279817512
+      modifiedTime: 1793279876571
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.9oyJbbXOfwHtUIul
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.PJp2mUH1PbKjgLCZ'
+  - name: Binding Hex
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes:
+        - key: system.attributes.movement.all
+          type: custom
+          value: '-[[2@scale.aid-die.aid-die-size.die]]'
+          phase: initial
+          _id: j1PHsfBiKPp9qIj3
+          conditions: '{}'
+          replacement: origin
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279818766
+      modifiedTime: 1793279882154
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.uqw4Bi54xfThQEim
+      duplicateSource: null
+      exportSource: null
+    _id: e64OHCLSlgb5pHMV
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.e64OHCLSlgb5pHMV'
+  - name: Breaking Hex
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes:
+        - key: system.traits.dm.amount.ALL
+          type: subtract
+          value: '-[[1@scale.aid-die.aid-die-size.die]]'
+          phase: initial
+          _id: teyCJ5pcMyDrsE7B
+          conditions: '{}'
+          replacement: origin
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279819861
+      modifiedTime: 1793279887693
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.bmkeQS77Qc6BcN1c
+      duplicateSource: null
+      exportSource: null
+    _id: uV0nAoQhKYxayRLv
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.uV0nAoQhKYxayRLv'
+  - name: Looping Hex
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279821166
+      modifiedTime: 1793279893121
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.cPzUEGQPTO6SwOsM
+      duplicateSource: null
+      exportSource: null
+    _id: YgaAZi8gq9kxBJ0V
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.YgaAZi8gq9kxBJ0V'
+  - name: Looping Hex Concentration Limit Increase
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes:
+        - key: system.attributes.concentration.limit
+          type: add
+          value: 1
+          phase: initial
+          _id: SpcIzQ9VVRrIXLbB
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: true
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279822720
+      modifiedTime: 1793279822720
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.9dH2RS3jVO1Lm0SL
+      duplicateSource: null
+      exportSource: null
+    _id: OVNiyLwjZnWmJKQY
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.OVNiyLwjZnWmJKQY'
+  - name: Voicethief Hex
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes:
+        - key: flags.midi-qol.OverTime
+          type: custom
+          value: >-
+            turn=start, label=Voicethief Hex, saveAbility=int,
+            saveDC=@attributes.spell.dc, saveMagic=true, saveCount=1-
+          phase: initial
+          _id: Jy8zeG59ZaFvyPat
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279824442
+      modifiedTime: 1793279898662
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.9oyJbbXOfwHtUIul
+      duplicateSource: null
+      exportSource: null
+    _id: ImqQ9mCgHs83gzhV
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.ImqQ9mCgHs83gzhV'
+  - name: Wasting Hex (STR)
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.skill.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.str
+          phase: initial
+          _id: YXmDZDPrTuho9NHs
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.save.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.str
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: 84hxPoy7FSz2vQa9
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279825753
+      modifiedTime: 1793279905434
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.9oyJbbXOfwHtUIul
+      duplicateSource: null
+      exportSource: null
+    _id: HhR4EhAwkX0QKV9U
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.HhR4EhAwkX0QKV9U'
+  - name: Wasting Hex (DEX)
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.skill.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.dex
+          phase: initial
+          _id: YXmDZDPrTuho9NHs
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.save.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.dex
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: 4lglnHZ48ghuwmuV
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279826764
+      modifiedTime: 1793279910563
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.9oyJbbXOfwHtUIul
+      duplicateSource: null
+      exportSource: null
+    _id: zCKvPnWEySy2zR6r
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.zCKvPnWEySy2zR6r'
+  - name: Wasting Hex (CON)
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.skill.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.con
+          phase: initial
+          _id: YXmDZDPrTuho9NHs
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.save.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.con
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: 4lglnHZ48ghuwmuV
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279827934
+      modifiedTime: 1793279915553
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.9oyJbbXOfwHtUIul
+      duplicateSource: null
+      exportSource: null
+    _id: w5WSL2BBrh5LKYJL
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.w5WSL2BBrh5LKYJL'
+  - name: Wasting Hex (INT)
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.skill.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.int
+          phase: initial
+          _id: YXmDZDPrTuho9NHs
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.save.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.int
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: 4lglnHZ48ghuwmuV
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279828778
+      modifiedTime: 1793279921281
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.9oyJbbXOfwHtUIul
+      duplicateSource: null
+      exportSource: null
+    _id: 9FLZsvJ7h2bogyLo
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.9FLZsvJ7h2bogyLo'
+  - name: Wasting Hex (WIS)
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.skill.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.wis
+          phase: initial
+          _id: YXmDZDPrTuho9NHs
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.save.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.wis
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: 4lglnHZ48ghuwmuV
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279829769
+      modifiedTime: 1793279940423
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.9oyJbbXOfwHtUIul
+      duplicateSource: null
+      exportSource: null
+    _id: rt7hO2p0CLRujRyy
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.rt7hO2p0CLRujRyy'
+  - name: Wasting Hex (CHA)
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.skill.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.cha
+          phase: initial
+          _id: YXmDZDPrTuho9NHs
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.save.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die;
+            name=Wasting Hex; description=Penalty from Wasting Hex; ability.cha
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: 4lglnHZ48ghuwmuV
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279830744
+      modifiedTime: 1793279947311
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.9oyJbbXOfwHtUIul
+      duplicateSource: null
+      exportSource: null
+    _id: mpTuOXHmB16e8yuc
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.mpTuOXHmB16e8yuc'
+  - name: Rupturing Hex
+    img: modules/ak5e/icons/Skill-Shamare1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1effectOriginActor.scale.aid-die.aid-die-size.die[force];
+            name=Potent Hex; description=Additional Force Damage from Potent
+            Hex; oncePerRound; hasAttack
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: E1F8Yg1IXeQaJPw6
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793279851299
+      modifiedTime: 1793279869982
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.bjfW7RTNs79LpReP.ActiveEffect.9oyJbbXOfwHtUIul
+      duplicateSource: null
+      exportSource: null
+    _id: eSD3IH0v3EDaALqP
+    _key: '!items.effects!IJQbTUjoCC2mMqNN.eSD3IH0v3EDaALqP'
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
-  compendiumSource: null
+  compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.IJQbTUjoCC2mMqNN
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1785597523649
-  modifiedTime: 1785597523649
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791206076905
+  modifiedTime: 1793280158514
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 400000
 _key: '!items!IJQbTUjoCC2mMqNN'

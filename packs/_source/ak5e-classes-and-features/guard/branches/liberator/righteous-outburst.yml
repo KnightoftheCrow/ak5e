@@ -1,0 +1,392 @@
+folder: YjXKh177g00CFJra
+name: Righteous Outburst
+type: feat
+img: modules/ak5e/icons/Skill-Morgan2.webp
+system:
+  activities:
+    9o4PTqtm4T6WukuS:
+      type: utility
+      name: The Right Moment
+      _id: 9o4PTqtm4T6WukuS
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: true
+          max: '6'
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: essence-of-the-liberator
+            scaling:
+              mode: amount
+              formula: '1'
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: combatEnd
+        concentration: false
+        override: false
+      effects:
+        - _id: 2rhcHICZJksE5lTW
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement:
+    7L2tgRQrSIxMM82F:
+      name: Flash of Anger
+      type: ScaleValue
+      _id: 7L2tgRQrSIxMM82F
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '0':
+            number: 1
+            faces: 6
+          '10':
+            faces: 10
+      flags: {}
+      value: {}
+      hint: ''
+  description:
+    value: >-
+      <p>All it takes to change history is for the right person to take action
+      at the right time. Make sure that you do. You gain the following
+      benefits:</p><ul><li><p><strong>Flash of Anger.</strong> When you hit a
+      Creature with a Melee Weapon Attack, you can expend any amount (min. 1) of
+      your Liberty to cause that Attack to deal additional 1d6 Damage for each
+      Liberty expended; this additional Damage cannot be increased by Critical
+      Hits. If a Creature is reduced to 0 Hit Points as a result of this Attack,
+      1 Liberty is refunded.</p></li><li><p><strong>The Right Moment.</strong>
+      When you activate an Operator Skill, all of your current Liberty is
+      consumed. The amount of Liberty you consume in this way grants you the
+      following benefits for the duration of that Skill:</p><ul><li><p>Operator
+      Skills that force a Creature to make a Saving Throw during your Turn, and
+      deal Damage, deal 1d6 additional Damage for every Liberty you consumed;
+      this only applies to Damage dealt as a result of making that Saving
+      Throw.</p></li><li><p>When you make a Melee Weapon Attack, it deals 1d6
+      additional Damage for every 2 Liberty you
+      consumed.</p></li></ul></li><li><p><strong>Unique Operator
+      Skills.</strong> You have access to Operator Skills unique to this Branch,
+      detailed below. When you gain a Basic, Advanced, or Elite Operator Skill,
+      you may instead choose one from the corresponding Operator Skill Table for
+      this Branch.</p></li></ul><hr><p><strong>Semi-Automated: </strong>Flash of
+      Anger is automated. Use the Right Moment Activity on this item before you
+      activate a Skill, and set the scaling value to your current Liberty. It
+      will provide Damage to appropriate rolls, with no duration; delete the
+      effect manually when the duration of the Skill ends. When you select an
+      Operator Skill, there are additional entries for you.</p>
+    chat: ''
+  identifier: righteous-outburst
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Flash of Anger
+    img: modules/ak5e/icons/Skill-Morgan2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.ddEXjUtun0ABRatn
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=(optinScale)d@scale.righteous-outburst.flash-of-anger.faces;
+            usesCount=Item.Essence of the Liberator, { min: 1, max: 6, step: 1
+            }; name=Flash of Anger; optinId=flash-of-anger; description=Expend X
+            Liberty for additional Damage; addTo=base; criticalStatic; optin;
+            actionType.mwak
+          phase: initial
+          _id: 1QA94oI8YJnIsEML
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.damage.typeOverride
+          type: ac5e
+          value: >-
+            override=+acid,cold,fire,force,lightning,necrotic,poison,psychic,radiant;
+            addTo=bonus; optinSelected['flash-of-anger'] &&
+            rollingActor.details.level >= 13
+          phase: initial
+          _id: 3pnAiog2vuQBm6kW
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: N46fFtJRNWlCC40n
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.ddEXjUtun0ABRatn
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791809832890
+      modifiedTime: 1791812832786
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!ddEXjUtun0ABRatn.N46fFtJRNWlCC40n'
+  - name: The Right Moment
+    img: modules/ak5e/icons/Skill-Morgan2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.ddEXjUtun0ABRatn
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=(scaling)d@scale.righteous-outburst.flash-of-anger.faces;
+            name=The Right Moment; optinId=the-right-moment-0;
+            description=Additional Damage to Skills from The Right Moment;
+            addTo=base; criticalStatic; optin; preselected; hasSave && isTurn
+          phase: initial
+          _id: fD7xxI50usmWsGuG
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=(floor(scaling/2))d@scale.righteous-outburst.flash-of-anger.faces;
+            name=The Right Moment; optinId=the-right-moment-1;
+            description=Additional Damage to Attacks from The Right Moment;
+            addTo=base; optin; preselected; actionType.mwak
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: DqtoeV9yHWdg70Zg
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: 2rhcHICZJksE5lTW
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791810580105
+      modifiedTime: 1791812864029
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!ddEXjUtun0ABRatn.2rhcHICZJksE5lTW'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.jQQTCokeQQSutm3T
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791803057926
+  modifiedTime: 1791812994284
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: ddEXjUtun0ABRatn
+sort: 175000
+_key: '!items!ddEXjUtun0ABRatn'

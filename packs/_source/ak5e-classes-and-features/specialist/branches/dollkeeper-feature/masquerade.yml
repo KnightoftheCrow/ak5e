@@ -2,30 +2,183 @@ folder: Vd5i80HITKyteFYa
 name: Masquerade
 type: feat
 _id: U3OFS444dkZA0Zmk
-img: modules/ak5e/icons/Skill-Kazemaru1.webp
+img: modules/ak5e/icons/Skill-Phantom2.webp
 system:
-  activities: {}
+  activities:
+    wQOxlmZNBnCAz6aK:
+      type: check
+      name: Mistaken Identity
+      _id: wQOxlmZNBnCAz6aK
+      img: ''
+      sort: 0
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      check:
+        associated:
+          - prc
+        dc:
+          calculation: ''
+          formula: '18'
+        visible: true
+        ability: ''
+        bonus: ''
+      useConditionText: reaction == "preAttack"
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      damage:
+        onSave: half
+        parts: []
+        critical:
+          allow: false
+      friendlySave: default
   uses:
     spent: 0
-    recovery: []
-    max: ''
+    recovery:
+      - period: sr
+        type: recoverAll
+    max: '@prof'
   advancement: {}
   description:
     value: >-
       <p>Your Dolls are more advanced; uncannily so. You gain the following
-      benefits:</p><p><strong>Doll Multiattack.</strong> When your Doll takes
-      the Strike Action, it can make one additional Attack as part of
-      it.</p><p><strong>Mistaken Identity.</strong> When a Creature would make
-      an Attack against you or your Doll, and the other Creature is within range
-      of that Attack, you can force that Creature to make a DC18 Perception
-      Check. If they fail the Check, you may choose whether that Attack targets
-      you or your Doll. If they succeed on the Check, they become immune to this
-      Feature for 1 hour. You can use this Feature a number of times equal to
-      your Proficiency Bonus, and regain all expended uses whenever you finish a
-      Short or Long Rest.</p><p><strong>Talking Heads.</strong> Your Doll can
-      now speak using your voice. It will only say what it is ordered to say; if
-      it is within 100 feet of you, you can communicate telepathically what you
-      wish for it to say.</p><p><strong>Not Automated.</strong></p>
+      benefits:</p><ul><li><p><strong>Doll Multiattack.</strong> When your Doll
+      takes the Strike Action, it can make one additional Attack as part of
+      it.</p></li><li><p><strong>Mistaken Identity.</strong> When a Creature
+      would make an Attack against you or your Doll, and the other Creature is
+      within range of that Attack, you can force that Creature to make a DC18
+      Perception Check. If they fail the Check, you may choose whether that
+      Attack targets you or your Doll. If they succeed on the Check, they become
+      immune to this Feature for 1 hour. You can use this Feature a number of
+      times equal to your Proficiency Bonus, and regain all expended uses
+      whenever you finish a Short or Long Rest.</p></li><li><p><strong>Talking
+      Heads.</strong> Your Doll can now speak using your voice. It will only say
+      what it is ordered to say; if it is within 100 feet of you, you can
+      communicate telepathically what you wish for it to
+      say.</p></li></ul><hr><p><strong>Semi-Automated: </strong>The Mistaken
+      Identity Activity on this Feature will force the Perception Check, but
+      will not force a retarget. All other Features require no automation.</p>
     chat: ''
   identifier: masquerade
   source:
@@ -43,22 +196,19 @@ system:
     value: class
     subtype: ''
 effects: []
-sort: 0
+sort: 250000
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358953798
-  modifiedTime: 1783358953798
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553269
+  modifiedTime: 1793634364873
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!U3OFS444dkZA0Zmk'

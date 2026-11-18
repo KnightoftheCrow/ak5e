@@ -4,40 +4,2298 @@ type: feat
 _id: WvbrwK1V21yZg60v
 img: modules/ak5e/icons/Skill-Skybox2.webp
 system:
-  activities: {}
+  activities:
+    lag4TNkTQUesYaXB:
+      type: utility
+      name: Choose Doctrine
+      _id: lag4TNkTQUesYaXB
+      img: ''
+      sort: 0
+      activation:
+        type: shortRest
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: shortRest
+        concentration: false
+        override: false
+      effects:
+        - _id: b5x8JGFuUkJCj9Tw
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: SL3sirXTkhKgCcZP
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: jeTBgnJnbKy70lm9
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: true
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    5D8u6Ry0CiE6fzlw:
+      type: save
+      name: AA Missile (STR)
+      _id: 5D8u6Ry0CiE6fzlw
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: fuel
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '100'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scale.air-doctrine.strafe-damage'
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - thunder
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: str
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Air Superiority")
+      useConditionReason: Air Superiority Doctrine not cctive!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    w1b6yTltuNVYt3be:
+      type: save
+      name: Bombing Run (STR)
+      _id: w1b6yTltuNVYt3be
+      img: ''
+      sort: 200000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: fuel
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '120'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: sphere
+          size: '15'
+          count: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scale.air-doctrine.strafe-damage'
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - thunder
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: str
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Bombardment")
+      useConditionReason: Bombardment Doctrine not active!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    Hs6Tb53X8XqLGZ1r:
+      type: utility
+      name: Swooping Dive
+      _id: Hs6Tb53X8XqLGZ1r
+      img: ''
+      sort: 300000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: fuel
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: I5rWzijO2WVaynvx
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: effects.some(e => e.name === "Close Air Support")
+      useConditionReason: Close Air Support Doctrine not active!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    zx21lo4kmhbPmY7y:
+      type: save
+      name: AA Missile (DEX)
+      img: ''
+      sort: 150000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: fuel
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '100'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scale.air-doctrine.strafe-damage'
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - thunder
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Air Superiority")
+      useConditionReason: Air Superiority Doctrine not cctive!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: zx21lo4kmhbPmY7y
+    Xo41eEBtKj0dbH68:
+      type: save
+      name: Bombing Run (DEX)
+      img: ''
+      sort: 250000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: fuel
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '120'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: sphere
+          size: '15'
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scale.air-doctrine.strafe-damage'
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - thunder
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Bombardment")
+      useConditionReason: Bombardment Doctrine not active!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: Xo41eEBtKj0dbH68
+    pyWjUgC6DOEzr0iF:
+      type: save
+      name: Crash Landing (STR)
+      img: ''
+      sort: 175000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        value: '100'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: sphere
+          size: '10'
+          count: ''
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 11
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: none
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: floor(@scale.air-doctrine.strafe-damage/2)
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - thunder
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: str
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Air Superiority")
+      useConditionReason: Air Superiority Doctrine not cctive!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: pyWjUgC6DOEzr0iF
+    zBW0P720uWWd5AxJ:
+      type: save
+      name: Crash Landing (DEX)
+      img: ''
+      sort: 187500
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        value: '100'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: sphere
+          count: ''
+          size: '10'
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 11
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: none
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: floor(@scale.air-doctrine.strafe-damage/2)
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - thunder
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Air Superiority")
+      useConditionReason: Air Superiority Doctrine not cctive!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: zBW0P720uWWd5AxJ
+    4orSrjC5AYAJlkcT:
+      type: save
+      name: Bombing Run- Firebomb (STR)
+      img: ''
+      sort: 225000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: fuel
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: J8bhKPEtmSjDvyGT
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '120'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: sphere
+          size: '15'
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 11
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: (@scale.air-doctrine.strafe-damage)-3d8
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - fire
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: str
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Bombardment")
+      useConditionReason: Bombardment Doctrine not active!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: 4orSrjC5AYAJlkcT
+    58lSUzl7RuBPQCWY:
+      type: save
+      name: Bombing Run- Firebomb (DEX)
+      img: ''
+      sort: 262500
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: fuel
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: J8bhKPEtmSjDvyGT
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '120'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: sphere
+          size: '15'
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 11
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: (@scale.air-doctrine.strafe-damage)-3d8
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - fire
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Bombardment")
+      useConditionReason: Bombardment Doctrine not active!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: 58lSUzl7RuBPQCWY
+    est8a6m5vuCqCM4g:
+      type: save
+      name: Bombing Run- Gas Strike (STR)
+      img: ''
+      sort: 237500
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors:
+        - name: Gas Cloud
+          _id: mpk6yqnWNIRUyuWA
+          type: difficultTerrain
+          config:
+            types:
+              - web
+          level:
+            min: null
+            max: null
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: fuel
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: round
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: Bhvxkf15EcXKTuup
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '120'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: sphere
+          size: '15'
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 11
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: (@scale.air-doctrine.strafe-damage)-3d8
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - poison
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: str
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Bombardment")
+      useConditionReason: Bombardment Doctrine not active!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: est8a6m5vuCqCM4g
+    uiKgQgRlU5YHQtjh:
+      type: save
+      name: Bombing Run- Gas Strike (DEX)
+      img: ''
+      sort: 281250
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors:
+        - name: Gas Cloud
+          _id: mpk6yqnWNIRUyuWA
+          type: difficultTerrain
+          config:
+            types:
+              - web
+          level:
+            min: null
+            max: null
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: fuel
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: round
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: Bhvxkf15EcXKTuup
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '120'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: sphere
+          size: '15'
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 11
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: (@scale.air-doctrine.strafe-damage)-3d8
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - poison
+            scaling:
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Bombardment")
+      useConditionReason: Bombardment Doctrine not active!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: uiKgQgRlU5YHQtjh
+    ga7WX8zxuzWNYdru:
+      type: save
+      name: Swooping Dive Fear (STR)
+      _id: ga7WX8zxuzWNYdru
+      img: ''
+      sort: 400000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: turn
+        expiry: sourceEnd
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: TsL6AeDOAgmRfY6s
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+        - _id: kFgCSRphRwWiYlBF
+          uuid: null
+          onSave: true
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 11
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: str
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Close Air Support")
+      useConditionReason: Close Air Support Doctrine not Active!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    QaOOX4iVnytUwq3t:
+      type: save
+      name: Swooping Dive Fear (DEX)
+      img: ''
+      sort: 500000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: turn
+        expiry: sourceEnd
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: TsL6AeDOAgmRfY6s
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+        - _id: kFgCSRphRwWiYlBF
+          uuid: null
+          onSave: true
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 11
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - wis
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: effects.some(e => e.name === "Close Air Support")
+      useConditionReason: Close Air Support Doctrine not Active!
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: QaOOX4iVnytUwq3t
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: {}
+  advancement:
+    1tL0bwki4nDJkRY1:
+      name: Strafe Damage
+      type: ScaleValue
+      _id: 1tL0bwki4nDJkRY1
+      configuration:
+        identifier: ''
+        type: dice
+        distance:
+          units: ''
+        scale:
+          '5':
+            number: 5
+            faces: 8
+          '8':
+            number: 6
+          '11':
+            number: 7
+          '14':
+            number: 8
+          '17':
+            number: 9
+          '20':
+            number: 10
+      flags: {}
+      value: {}
+      hint: ''
   description:
     value: >-
       <p>When you complete a Short or Long Rest, you choose from one of the
       following Doctrines; Air Superiority, Bombardment, or Close Air Support.
       Some of your Branch Features functions corresponds to your current
       Doctrine, described in those Features.</p><p>At this Level, your choice of
-      Doctrine grants you the following benefits:</p><p><strong>Air Superiority
-      (AA Missile).</strong> As an Action while you are wearing your Flight
-      Suit, you can expend 1 Fuel to choose a Creature you can see within 100
-      feet. That Creature must make a Dexterity Saving Throw against your
+      Doctrine grants you the following benefits:</p><ul><li><p><strong>Air
+      Superiority (AA Missile).</strong> As an Action while you are wearing your
+      Flight Suit, you can expend 1 Fuel to choose a Creature you can see within
+      100 feet. That Creature must make a Dexterity Saving Throw against your
       Martial DC, taking Thunder Damage equal to your Strafe Damage on a failed
       Save, or half as much on a successful Save. If that Creature is not
       touching the ground, you do not roll, and instead use the highest number
-      possible for each die.</p><p><strong>Bombardment (Bombing Run).</strong>
-      As an Action while you are wearing your Flight Suit, you can expend 1 Fuel
-      to choose a grounded point you can see within 30 feet and launch a bomb at
-      it; if you are currently Flying, this distance is extended to 120 feet.
-      All Creatures within 15 feet of the chosen point must make a Dexterity
-      Saving Throw against your Martial DC, taking Thunder Damage equal to your
-      Strafe Damage on a failed Save, or half as much on a successful
-      Save.</p><p><strong>Close Air Support (Swooping Dive).</strong> When you
-      take the Attack Action while you are wearing your Flight Suit, you can
-      expend 1 Fuel to move up to your Speed as part of that Action.
-      Additionally, when you make an Attack against a Creature within 10 feet of
-      you as part of that Action, that Attack is made at Advantage, and deals
-      additional Thunder Damage on hit equal to your Strafe Damage; a Creature
-      can only take this additional Damage once per Turn.</p><p>Not
-      Automated.</p>
+      possible for each die.</p></li><li><p><strong>Bombardment (Bombing
+      Run).</strong> As an Action while you are wearing your Flight Suit, you
+      can expend 1 Fuel to choose a grounded point you can see within 30 feet
+      and launch a bomb at it; if you are currently Flying, this distance is
+      extended to 120 feet. All Creatures within 15 feet of the chosen point
+      must make a Dexterity Saving Throw against your Martial DC, taking Thunder
+      Damage equal to your Strafe Damage on a failed Save, or half as much on a
+      successful Save.</p></li><li><p><strong>Close Air Support (Swooping
+      Dive).</strong> When you take the Attack Action while you are wearing your
+      Flight Suit, you can expend 1 Fuel to move up to your Speed as part of
+      that Action. Additionally, when you make an Attack against a Creature
+      within 10 feet of you as part of that Action, that Attack is made at
+      Advantage, and deals additional Thunder Damage on hit equal to your Strafe
+      Damage; a Creature can only take this additional Damage once per
+      Turn.</p></li></ul><hr><p><strong>Semi-Automated.</strong></p>
     chat: ''
   identifier: air-doctrine
   source:
@@ -54,23 +2312,579 @@ system:
   type:
     value: class
     subtype: ''
-effects: []
-sort: 500000
+effects:
+  - name: Air Superiority
+    img: modules/ak5e/icons/Skill-Skybox2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: b5x8JGFuUkJCj9Tw
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: none
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794330070098
+      modifiedTime: 1794349198292
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!WvbrwK1V21yZg60v.b5x8JGFuUkJCj9Tw'
+  - name: Bombardment
+    img: modules/ak5e/icons/Skill-Skybox2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: SL3sirXTkhKgCcZP
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: none
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794330084720
+      modifiedTime: 1794349202210
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!WvbrwK1V21yZg60v.SL3sirXTkhKgCcZP'
+  - name: Close Air Support
+    img: modules/ak5e/icons/Skill-Skybox2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: jeTBgnJnbKy70lm9
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: none
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794330091868
+      modifiedTime: 1794349206544
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!WvbrwK1V21yZg60v.jeTBgnJnbKy70lm9'
+  - name: AA Missile Max Damage vs Air
+    img: modules/ak5e/icons/Skill-Skybox2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: >-
+            modifier=maximize; addTo=all,types(thunder); activityName === "AA
+            Missile" && rollingActor.tokenElevation > 0
+          phase: initial
+          _id: 3aY1udA5jGCLBLaX
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: Lck58CEUKpvw0czf
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 0
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794331000159
+      modifiedTime: 1794331518671
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!WvbrwK1V21yZg60v.Lck58CEUKpvw0czf'
+  - name: Swooping Dive
+    img: modules/ak5e/icons/Skill-Skybox2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@scale.air-doctrine.strafe-damage[thunder]; hasAttack &&
+            optinSelected['swooping-dive']
+          phase: initial
+          _id: ME2WhAX4JqcQRSd2
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.attack.advantage
+          type: ac5e
+          value: >-
+            name=Swooping Dive Advantage; optinId=swooping-dive;
+            description=Advantage against Creatures within 10ft; optin;
+            checkDistance(effectOriginActor.token, opponentActor.token) <= 10
+          phase: initial
+          _id: gj4ruHJz81cxOQZv
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: I5rWzijO2WVaynvx
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794331703572
+      modifiedTime: 1794332086283
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!WvbrwK1V21yZg60v.I5rWzijO2WVaynvx'
+  - name: Firebomb
+    img: modules/ak5e/icons/Skill-Skybox2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses:
+          - burning
+    transfer: false
+    _id: J8bhKPEtmSjDvyGT
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: turnEnd
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794349714527
+      modifiedTime: 1794350202452
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!WvbrwK1V21yZg60v.J8bhKPEtmSjDvyGT'
+  - name: Gassed
+    img: modules/ak5e/icons/Skill-Skybox2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: Bhvxkf15EcXKTuup
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceEnd
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses:
+      - poisoned
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794349800545
+      modifiedTime: 1794350213638
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!WvbrwK1V21yZg60v.Bhvxkf15EcXKTuup'
+  - name: Keeping Head Down
+    img: modules/ak5e/icons/Skill-Skybox2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: TsL6AeDOAgmRfY6s
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceEnd
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses:
+      - frightened
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794349978963
+      modifiedTime: 1794350190892
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!WvbrwK1V21yZg60v.TsL6AeDOAgmRfY6s'
+  - name: Disadvantage on Attacks against Skyranger
+    img: modules/ak5e/icons/Skill-Skybox2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.disadvantage
+          type: ac5e
+          value: effectOriginActor.tokenId === opponentActor.tokenId
+          phase: initial
+          _id: DFgX2bQYzBBf6MlU
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: kFgCSRphRwWiYlBF
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794350003318
+      modifiedTime: 1794350101194
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!WvbrwK1V21yZg60v.kFgCSRphRwWiYlBF'
+sort: 50000
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358953798
-  modifiedTime: 1783358953798
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553276
+  modifiedTime: 1794351506303
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!WvbrwK1V21yZg60v'

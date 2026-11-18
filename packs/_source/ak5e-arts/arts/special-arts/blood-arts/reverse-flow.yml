@@ -272,28 +272,32 @@ system:
 effects:
   - name: Reverse Flow
     img: icons/skills/wounds/anatomy-organ-heart-red.webp
-    origin: Item.S5FCt5zhTmcpVg2Z
+    origin: null
     transfer: false
     _id: x8wF1rV30EBxO570
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.OverTime
-        mode: 5
-        value: |-
-          turn=end,
-          saveAbility=con,
-          saveDC=@attributes.spell.dc
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.OverTime
+          value: |-
+            turn=end,
+            saveAbility=con,
+            saveDC=@attributes.spell.dc
+          priority: 20
+          type: override
+          phase: initial
+          _id: AvtRdOexZhcT7o1S
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.S5FCt5zhTmcpVg2Z
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -320,10 +324,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108647
+      modifiedTime: 1791733108647
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!S5FCt5zhTmcpVg2Z.x8wF1rV30EBxO570'
 flags:
   dnd5e:
@@ -334,12 +343,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108647
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

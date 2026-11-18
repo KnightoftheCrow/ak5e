@@ -1,0 +1,407 @@
+folder: zd7kgy3RQcqcKJ9x
+name: Divided when Conquered
+type: feat
+img: modules/ak5e/icons/Skill-Arene1.webp
+system:
+  activities:
+    36BGZsfOWwZ3Q2ri:
+      type: attack
+      name: Horde Breaker
+      _id: 36BGZsfOWwZ3Q2ri
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: ''
+        ability: ''
+        bonus: ''
+      damage:
+        critical:
+          bonus: ''
+        includeBase: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scaling'
+            number: null
+            denomination: null
+            bonus: ''
+            types:
+              - bludgeoning
+              - piercing
+              - slashing
+            scaling:
+              mode: ''
+              number: 1
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      attackMode: ''
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+    PTOwCdWXOLARRrEA:
+      type: enchant
+      name: Enchant Weapon for Hordebreaker
+      _id: PTOwCdWXOLARRrEA
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: disp
+        concentration: false
+        override: false
+      effects:
+        - _id: NTnapXCsVy45SUE1
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - 36BGZsfOWwZ3Q2ri
+            effect: []
+            item: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      enchant:
+        self: false
+      restrictions:
+        allowMagical: false
+        categories:
+          - heavyM
+        properties: []
+        type: weapon
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>The sweeping arc of your weapon demolishes ranks of your foes, cutting
+      through the weak and unready with terrifying ease. You gain the following
+      benefits:</p><ul><li><p><strong>Additional Reach.</strong> Heavy Melee
+      Weapons you are wielding are considered to have the Reach
+      Property.</p></li><li><p><strong>Horde Breaker.</strong> When you reduce a
+      Creature within your Reach to 0 Hit Points with a Melee Attack using a
+      Heavy Melee Weapon, you may repeat that Attack against another Creature
+      within your Reach and within 10 feet of the original Creature. However, if
+      this Attack hits, do not roll Damage; instead, the Damage is equal to the
+      excess Damage from the original Attack. If this Attack also reduces a
+      Creature within your Reach to 0 Hit Points, you may continue to make these
+      Attacks until you make an Attack that does not reduce a Creature to 0 Hit
+      Points, there are no other Creatures within 10 feet of the last Creature
+      you attacked, or you have no excess Damage
+      remaining.</p></li></ul><hr><p><strong>Semi-Automated: </strong>Manually
+      grant Heavy Melee Weapons Reach. You can apply an Enchantment with this
+      Feature to a Heavy Melee Weapon that lets you make Horde Breaker Attacks
+      with it; set the scaling value on that Attack to the excess Damage, and
+      make sure you set the Damage Type correctly.</p>
+    chat: ''
+  identifier: divided-when-conquered
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 10
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - type: enchantment
+    name: Horde Breaker
+    img: modules/ak5e/icons/Skill-Arene1.webp
+    disabled: true
+    _id: NTnapXCsVy45SUE1
+    system:
+      changes: []
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        expiryMode: default
+        macroRepeat: none
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 5.3.3
+      createdTime: 1791639464815
+      modifiedTime: 1791639471761
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!MSkB4Z3WKLrL0QNw.NTnapXCsVy45SUE1'
+flags:
+  dnd5e:
+    riders:
+      activity:
+        - 36BGZsfOWwZ3Q2ri
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.Eycsjax5ER97FUEn
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791633463134
+  modifiedTime: 1791639688461
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: MSkB4Z3WKLrL0QNw
+sort: 400000
+_key: '!items!MSkB4Z3WKLrL0QNw'

@@ -1,0 +1,124 @@
+name: Focused Treatment
+type: feat
+img: modules/ak5e/icons/Skill-Invincible1.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>Whenever you roll to determine the amount of Hit Points you restore, or
+      the Damage you deal to only a single Creature, you may add your
+      Proficiency Bonus to the amount restored or
+      dealt.</p><p><strong>Automated</strong></p>
+    chat: ''
+  identifier: focused-treatment
+  source:
+    revision: 1
+    rules: '2014'
+    book: AK5e
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: ''
+    subtype: ''
+effects:
+  - name: +Prof to Single Target Healing/Damage
+    img: modules/ak5e/icons/Skill-Invincible1.png
+    origin: null
+    type: base
+    _id: YE2JupW5SClPk2b3
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: bonus=@prof; addTo=base; !isAoE
+          phase: initial
+          priority: null
+          _id: DR9cd3lLK8hfj12K
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: bonus=@prof; addTo=all,types(healing); isHeal && !isAoE
+          phase: initial
+          priority: null
+          _id: uppYyZy2ItAKhi5c
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.JYMYJS9WKNIajUEI
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791210558441
+      modifiedTime: 1791733085855
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!JYMYJS9WKNIajUEI.YE2JupW5SClPk2b3'
+sort: 50000
+flags:
+  scene-packer:
+    hash: 2d9c0f1e50523b60dd5d30c209e3144189352a67
+    sourceId: Compendium.world.spells--features.Item.kxvjl5eSj9m1KuaI
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791211220008
+  modifiedTime: 1791733085855
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: JYMYJS9WKNIajUEI
+folder: xVrcKgT6xvp1uRsh
+_key: '!items!JYMYJS9WKNIajUEI'

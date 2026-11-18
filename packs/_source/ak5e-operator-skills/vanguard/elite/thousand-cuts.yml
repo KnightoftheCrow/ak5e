@@ -21,6 +21,7 @@ system:
           - type: itemUses
             value: '65'
             target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -41,6 +42,7 @@ system:
           type: radius
           size: '15'
           count: ''
+          stationary: false
         affects:
           choice: false
           type: creature
@@ -117,6 +119,25 @@ system:
       otherActivityAsParentType: true
       name: ''
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     z5I5YPRqEx9ONSPn:
       type: utility
       _id: z5I5YPRqEx9ONSPn
@@ -147,6 +168,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: ''
@@ -221,6 +243,25 @@ system:
       otherActivityAsParentType: true
       name: Extend Duration
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     EUNgiQrVRNvYj3V3:
       type: damage
       _id: EUNgiQrVRNvYj3V3
@@ -251,6 +292,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: ''
@@ -280,6 +322,8 @@ system:
             bonus: ''
             types:
               - slashing
+            scaling:
+              number: 1
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -330,11 +374,31 @@ system:
         postRemoveConditionText: ''
       name: ''
       img: ''
+      otherActivityId: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
@@ -367,6 +431,7 @@ sort: 0
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 flags:
   dnd5e:
     riders:
@@ -375,10 +440,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774657031849
-  modifiedTime: 1790904886728
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 5.3.3
+  createdTime: 1791147711637
+  modifiedTime: 1791147711637
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!RTquuniOhQO4A5Ei'

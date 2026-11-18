@@ -1,0 +1,279 @@
+folder: 1sAdNOjao4sHnRaV
+name: Fearless Assault
+type: feat
+img: modules/ak5e/icons/Skill-Absinthe2.png
+system:
+  activities:
+    jVRbHHVQZlVFPvLt:
+      type: damage
+      name: Activate
+      _id: jVRbHHVQZlVFPvLt
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: true
+          max: ceil(@attributes.hp.max/2)
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '20'
+            target: skill-points
+            scaling:
+              mode: ''
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: round
+        expiry: null
+        concentration: false
+        override: false
+        value: '10'
+      effects:
+        - _id: VtSeM9pa9yGGAB5q
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: '@scaling'
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - none
+            scaling:
+              mode: ''
+              number: 1
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits:
+          - idi
+          - idr
+          - idv
+          - idm
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
+      SP</p></td><td><p>Charging</p></td><td><p>Activation</p></td><td><p>Duration</p></td></tr></thead><tbody><tr><td><p>20</p></td><td><p>10</p></td><td><p>Offensive</p></td><td><p>Bonus
+      Action</p></td><td><p>10
+      Rounds</p></td></tr></tbody></table><p><strong>Effect: </strong>Choose a
+      number that is both less than half of your Maximum Hit Points and less
+      than half of your current Hit Points. You lose that many Hit Points, and
+      gain Temporary Hit Points equal to the Hit Points you lost. While you have
+      those Temporary Hit Points, your Attacks deal Additional Damage equal to
+      your Proficiency Bonus. You lose these temporary Hit Points at the end of
+      the duration of this Operator Skill.</p><hr><p><strong>Semi-Automated:
+      </strong>You must grant yourself the appropriate temporary HP manually,
+      and remove it when the Skill ends.</p>
+    chat: ''
+  identifier: fearless-assault
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 2
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: opSkill
+effects:
+  - name: Fearkess Assault
+    img: modules/ak5e/icons/Skill-Absinthe2.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.O1Z4eNPLba2gSvuX
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: bonus=@prof; addTo=base; hasAttack
+          phase: initial
+          _id: 9rQZDmW7DDqBxg2w
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: VtSeM9pa9yGGAB5q
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792511837314
+      modifiedTime: 1792512003990
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!O1Z4eNPLba2gSvuX.VtSeM9pa9yGGAB5q'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.ZpqJqFv6xoLpcWOz
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791628189456
+  modifiedTime: 1792512033964
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: O1Z4eNPLba2gSvuX
+sort: 600000
+_key: '!items!O1Z4eNPLba2gSvuX'

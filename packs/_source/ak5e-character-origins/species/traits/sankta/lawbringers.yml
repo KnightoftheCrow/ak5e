@@ -45,48 +45,75 @@ system:
 effects:
   - name: Lawbringers
     img: icons/skills/ranged/target-bullseye-arrow-white.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.YVG3GfEuK7uT3eFU
+    origin: null
     _id: CI8Ad3E0McgsgrcY
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.lawbringers.attack.rsak
-        mode: 2
-        value: '@prof'
-        priority: 20
-      - key: flags.midi-qol.optional.lawbringers.attack.rwak
-        mode: 2
-        value: '@prof'
-        priority: 20
-      - key: flags.midi-qol.optional.lawbringers.attack.msak
-        mode: 2
-        value: '@prof'
-        priority: 20
-      - key: flags.midi-qol.optional.lawbringers.attack.mwak
-        mode: 2
-        value: '@prof'
-        priority: 20
-      - key: flags.midi-qol.optional.lawbringers.label
-        mode: 0
-        value: Lawbringers - Attack Bonus
-        priority: 20
-      - key: flags.midi-qol.optional.lawbringers.count
-        mode: 0
-        value: every
-        priority: 20
-      - key: flags.midi-qol.optional.lawbringers.countAlt
-        mode: 0
-        value: ItemUses.exactNameMatch.Lawbringers
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.lawbringers.attack.rsak
+          value: '@prof'
+          priority: 20
+          type: add
+          phase: initial
+          _id: dcMlWAzd4Tat22BS
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.lawbringers.attack.rwak
+          value: '@prof'
+          priority: 20
+          type: add
+          phase: initial
+          _id: C0nVkfROjr0feiCB
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.lawbringers.attack.msak
+          value: '@prof'
+          priority: 20
+          type: add
+          phase: initial
+          _id: 0PqqJLjrQDlWl2xd
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.lawbringers.attack.mwak
+          value: '@prof'
+          priority: 20
+          type: add
+          phase: initial
+          _id: KdlKGNmJ5f71rYpf
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.lawbringers.label
+          value: Lawbringers - Attack Bonus
+          priority: 20
+          type: custom
+          phase: initial
+          _id: GXDgRYmvSzB5u11F
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.lawbringers.count
+          value: every
+          priority: 20
+          type: custom
+          phase: initial
+          _id: PHtQPjkmqsgjxNY3
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.lawbringers.countAlt
+          value: ItemUses.exactNameMatch.Lawbringers
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 12L9alTwGYzDNRHR
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.YVG3GfEuK7uT3eFU
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -110,10 +137,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733082541
+      modifiedTime: 1791733082541
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!YVG3GfEuK7uT3eFU.CI8Ad3E0McgsgrcY'
 sort: 0
 ownership:
@@ -127,10 +159,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680322247
-  modifiedTime: 1768680322247
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733082541
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!YVG3GfEuK7uT3eFU'

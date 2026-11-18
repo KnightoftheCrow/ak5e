@@ -1,0 +1,492 @@
+folder: OTs3nhXEHHPpIufQ
+name: Sandstorm of Legend
+type: spell
+img: icons/magic/air/fog-gas-smoke-dense-brown.webp
+system:
+  activities:
+    5pbgUozFaKSQWkiB:
+      type: save
+      name: Sandstorm Save
+      _id: 5pbgUozFaKSQWkiB
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: true
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: true
+      effects:
+        - _id: FcHHByjXgdZqjng7
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: true
+        value: '20'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: enemy
+          special: ''
+        override: true
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 5
+            denomination: 6
+            bonus: ''
+            types:
+              - slashing
+            scaling:
+              mode: ''
+              number: 1
+      save:
+        ability:
+          - con
+        dc:
+          calculation: spellcasting
+          formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: true
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: 0
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: caster
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    YyZUrE8p1sqSvUSy:
+      type: utility
+      name: Cast Art
+      _id: YyZUrE8p1sqSvUSy
+      img: ''
+      sort: -100000
+      activation:
+        type: action
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects:
+        - _id: 9Fy7EF2Oh6pp0fIb
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: caster
+        rules:
+          - trigger: entry
+            action: useActivity
+            targetId: sandstorm-save
+          - trigger: turnStart
+            action: useActivity
+            targetId: sandstorm-save
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>You whip up dust, rock, and sand into a razor tempest centered on you
+      in a 20-foot-radius sphere that moves with you, and goes around
+      corners.</p><p>When you cast this Art, you can choose any number of
+      Creatures to be immune to its Damage. When a Ranged Weapon Attack would
+      pass through the affected area, roll 1d4; on any result except 4, that
+      attack is blown off course by the scouring sands, and automatically
+      misses. Additionally, when a Creature enters the area during their Turn,
+      or begins their Turn there, they must make a Constitution Saving Throw. On
+      a failed Save, they take 5d6 Slashing Damage and begin Bleeding. On a
+      successful Save, they take half as much Damage, and suffer no other
+      effects.</p><p><strong>Semi-Automated: </strong>The Damage component of
+      this Art is automated. Causing ranged attacks to fail is also automated,
+      but only against Creatures within the Sandstorm; attacks that are just
+      passing through will not be automatically given a fail chance.</p>
+    chat: ''
+  identifier: sandstorm-of-legend
+  source:
+    revision: 1
+    rules: '2014'
+  activation:
+    type: action
+    condition: ''
+  duration:
+    units: minute
+    value: '1'
+  level: 7
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  method: spell
+  prepared: 2
+  properties:
+    - vocal
+    - somatic
+    - concentration
+  range:
+    units: self
+    special: ''
+  school: con
+  target:
+    template:
+      contiguous: false
+      stationary: false
+      units: ft
+      count: ''
+      type: sphere
+      size: '20'
+    affects:
+      choice: true
+      count: ''
+      type: creature
+      special: ''
+effects:
+  - name: Cut by Sand
+    img: icons/magic/air/fog-gas-smoke-dense-brown.webp
+    origin: null
+    transfer: false
+    _id: FcHHByjXgdZqjng7
+    type: base
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.IxHqgCoLsQTDLSwc
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 0
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses:
+            - bleeding
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1790604532531
+      modifiedTime: 1791733109202
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!gqZGV6SkTg3ppJAx.FcHHByjXgdZqjng7'
+  - name: Sandstorm of Legend
+    img: icons/magic/air/fog-gas-smoke-dense-brown.webp
+    origin: null
+    type: auraeffects.aura
+    _id: 9Fy7EF2Oh6pp0fIb
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.fail
+          type: ac5e
+          value: chance=75; actionType.rwak || actionType.rsak
+          phase: initial
+          priority: null
+          _id: imai7IyvlxFhAtxD
+          conditions: '{}'
+          replacement: ''
+      applyToSelf: true
+      bestFormula: ''
+      canStack: false
+      collisionType: ''
+      color: null
+      combatOnly: false
+      disableOnHidden: true
+      distanceFormula: '20'
+      disposition: 0
+      evaluatePreApply: false
+      overrideName: ''
+      script: ''
+      stashedChanges: []
+      stashedStatuses: []
+      showRadius: false
+      magical: true
+      origin:
+        item: Item.IxHqgCoLsQTDLSwc
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+        enableCondition: ''
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1790604532531
+      modifiedTime: 1791733109203
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!gqZGV6SkTg3ppJAx.9Fy7EF2Oh6pp0fIb'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1790604532531
+  modifiedTime: 1791733109202
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: gqZGV6SkTg3ppJAx
+sort: 400000
+_key: '!items!gqZGV6SkTg3ppJAx'

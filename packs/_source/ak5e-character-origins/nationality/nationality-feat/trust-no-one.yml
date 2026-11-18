@@ -41,28 +41,35 @@ system:
 effects:
   - name: Protection while Asleep
     img: icons/magic/perception/eye-tendrils-web-purple.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.V1UsPFuyXR9ePOuy
+    origin: null
     _id: 4JWtELZVKCnDgkyY
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.attack.noCritical
-        mode: 2
-        value: effectActor.statuses.unconscious && effectActor.attributes.hp > 1
-        priority: 20
-      - key: flags.automated-conditions-5e.grants.attack.noAdvantage
-        mode: 2
-        value: effectActor.statuses.unconscious && effectActor.attributes.hp > 1
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.noCritical
+          value: effectActor.statuses.unconscious && effectActor.attributes.hp > 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: l7EU8cFy91RzO1Ng
+          conditions: '{}'
+          replacement: ''
+        - key: flags.automated-conditions-5e.grants.attack.noAdvantage
+          value: effectActor.statuses.unconscious && effectActor.attributes.hp > 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: k89hVVznZEw0ZoXK
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.V1UsPFuyXR9ePOuy
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -86,31 +93,39 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733082297
+      modifiedTime: 1791733082297
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!V1UsPFuyXR9ePOuy.4JWtELZVKCnDgkyY'
   - name: +5 Passive Perception while sleeping
     img: icons/magic/perception/eye-tendrils-web-purple.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.V1UsPFuyXR9ePOuy
+    origin: null
     _id: boFoZhvExMZIBx27
     type: base
-    system: {}
-    changes:
-      - key: system.skills.prc.bonuses.passive
-        mode: 2
-        value: '5'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.prc.bonuses.passive
+          value: 5
+          priority: 20
+          type: add
+          phase: initial
+          _id: r1qk9hSHM42CK9Qw
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.V1UsPFuyXR9ePOuy
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -134,10 +149,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733082298
+      modifiedTime: 1791733082298
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!V1UsPFuyXR9ePOuy.boFoZhvExMZIBx27'
 sort: 0
 ownership:
@@ -151,10 +171,10 @@ _stats:
   compendiumSource: Item.V1UsPFuyXR9ePOuy
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881328247
-  modifiedTime: 1769881328247
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733082297
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!V1UsPFuyXR9ePOuy'

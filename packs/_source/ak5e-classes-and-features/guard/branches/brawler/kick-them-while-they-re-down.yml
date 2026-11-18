@@ -1,0 +1,123 @@
+folder: OpO34lufa5ZweWCk
+name: Kick them while they’re Down
+type: feat
+img: modules/ak5e/icons/Skill-Earthspirit2.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>Honour is for tournaments; a true fighter never passes up a free
+      hit.</p><p>When you hit a Creature that has a detrimental Status Condition
+      (such as Frightened, Stunned, Grappled, Prone, or Burning) with a Unarmed
+      Strike, that Unarmed Strike deals additional Bludgeoning Damage equal to
+      your Proficiency Bonus. </p><hr><p><strong>Semi-Automated: </strong>There
+      is an Opt-In available for Damage Rolls that deal Bludgeoning
+      Damage.<br></p>
+    chat: ''
+  identifier: kick-them-while-theyre-down
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 13
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: >-
+      +Prof Damage to Unarmed Strikes against Creatures with Detrimental
+      Conditions
+    img: modules/ak5e/icons/Skill-Earthspirit2.webp
+    origin: null
+    type: base
+    _id: Mj1DBmJOA8S6RfOk
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@prof; name=+Prof Damage; optinId=kick-them-while-theyre-down;
+            description=+Prof against Creatures with detrimental conditions;
+            addTo=base,types(bludgeoning); optin
+          phase: initial
+          priority: null
+          _id: 0Bm2wZN1IMY9tuU8
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.mvzEl8XjTnOeJX3d
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791579422455
+      modifiedTime: 1791733088207
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!mvzEl8XjTnOeJX3d.Mj1DBmJOA8S6RfOk'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.xESiN4nqRKM5qziC
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791568461071
+  modifiedTime: 1791733088207
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: mvzEl8XjTnOeJX3d
+sort: 300000
+_key: '!items!mvzEl8XjTnOeJX3d'

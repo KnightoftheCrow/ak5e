@@ -1,0 +1,113 @@
+folder: Bg4shjy2cai76KuT
+name: Lightly Armed
+type: feat
+img: modules/ak5e/icons/Skill-Ch%27en2.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>When you are wielding a Melee Weapon in one hand and no other Weapons
+      or Shields, you gain a +2 Bonus to Attack Rolls with that
+      Weapon.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: lightly-armed
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: fightingStyle
+effects:
+  - name: Lightly Armed
+    img: modules/ak5e/icons/Skill-Ch%27en2.webp
+    origin: null
+    type: base
+    _id: TJMi0X0sJtKUPiqV
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: >-
+            bonus=2; !originItem.properties.has('two') &&
+            !rollingActor.hasShield && actionType.mwak
+          phase: initial
+          priority: null
+          _id: pY1bB7OkuVRS3oKc
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.rOsItv7OM38khZOe
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791301487902
+      modifiedTime: 1791733085432
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!CxtX6uuA1qakbeE4.TJMi0X0sJtKUPiqV'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791301487902
+  modifiedTime: 1791733085432
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: CxtX6uuA1qakbeE4
+sort: 900000
+_key: '!items!CxtX6uuA1qakbeE4'

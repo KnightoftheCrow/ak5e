@@ -1,0 +1,191 @@
+folder: WasAo6mUc2xMzT5t
+name: Hexer's Arts (WIS)
+type: feat
+img: modules/ak5e/icons/Skill-Lucilla1.webp
+system:
+  activities: {}
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  advancement:
+    nqtMBqqQKwL67MnT:
+      name: Choose Arts Pool
+      type: ItemChoice
+      _id: nqtMBqqQKwL67MnT
+      configuration:
+        allowDrops: false
+        choices:
+          '0':
+            count: 1
+            replacement: false
+          '11':
+            count: 1
+            replacement: false
+        pool:
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-arts.Item.CGP5PNK5SdmgN90k
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-arts.Item.ZhDuS4JWh2Ae5uQ4
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-arts.Item.w7tRPnZhirZPLvpK
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-arts.Item.pZL77zAcUd9dkJOs
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-arts.Item.ua6nXeLgXDFYrZUB
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-arts.Item.r19Z3Oi7qOLL0l6H
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-arts.Item.R6hRu2NVPTY7ZhFm
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-arts.Item.BNzg1rAOBecHLqS6
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-arts.Item.UlsUWCYL76r5umtx
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-arts.Item.KWPBJAKHPFPlIs0M
+          - uuid: Compendium.ak5e.ak5e-arts.Item.piUEmebrAZ5L6CXX
+            sort: 0
+        restriction:
+          list: []
+          school: []
+        sorting: a
+        spell: null
+        type: null
+      flags: {}
+      hint: ''
+      value:
+        added: {}
+        replaced: {}
+    lsQvJXBLs9VaVwBI:
+      name: Arts Points
+      type: ItemGrant
+      _id: lsQvJXBLs9VaVwBI
+      configuration:
+        items:
+          - uuid: Compendium.ak5e.ak5e-arts.Item.6GMX3sLNtYU5pEtM
+            optional: false
+            sort: 0
+        optional: false
+        sorting: m
+        spell: null
+      flags: {}
+      value: {}
+      level: 0
+      hint: ''
+  description:
+    value: >-
+      <p>You can cast Arts; the information below details how you use those
+      rules as a Hexer.</p><ul><li><p><strong>Arts Points.</strong> The Hexer
+      Arts Casting table shows how many Arts Points you have to cast your Level
+      1+ Arts. You regain all expended Arts Points when you finish a Long
+      Rest.</p></li><li><p><strong>Maximum Arts Level.</strong> The Hexer Arts
+      Casting table shows the maximum Level you can cast an Art at, based on
+      your Supporter Level. If an Art’s Level is above your current Maximum Art
+      Level, you cannot cast it, even if it is
+      Prepared.</p></li><li><p><strong>Spellcasting Ability.</strong> When you
+      gain this Feature, choose either Intelligence, Wisdom, or Charisma; that
+      is your Spellcasting Ability.</p></li><li><p><strong>Hexer Arts
+      Pools.</strong> When you gain this Feature, choose one of the Standard
+      Arts Pools available to the Caster Class; you learn all of the Arts of 5th
+      Level or less from those Pools, in addition to any Cantrips from those
+      Pools. These Arts are always Prepared. At 11th Level, you may choose an
+      additional Standard Arts
+      Pool.</p></li></ul><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: hexers-arts
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: 'Spellcasting Ability: WIS'
+    img: modules/ak5e/icons/Skill-T3.webp
+    system:
+      magical: false
+      origin:
+        item: Item.MbjBLxQga6CSnLiT
+        behavior: null
+        message: null
+        actor: null
+        effect: null
+      changes:
+        - key: system.attributes.spellcasting
+          type: override
+          value: wis
+          phase: initial
+          _id: jztJeLTxpAd9PMRz
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: DOPDzwXK2eBwZXeN
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794846099483
+      modifiedTime: 1794846099483
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!lkFmOh9cg3gTMOY2.DOPDzwXK2eBwZXeN'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794846099483
+  modifiedTime: 1794846157458
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: lkFmOh9cg3gTMOY2
+sort: 18750
+_key: '!items!lkFmOh9cg3gTMOY2'

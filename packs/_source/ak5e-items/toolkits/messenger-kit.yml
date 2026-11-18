@@ -266,25 +266,28 @@ system:
 effects:
   - name: +5 Technology Bonus (Communications Know-How)
     img: icons/containers/bags/case-leather-tan.webp
-    origin: Compendium.ak5e.ak5e-items.Item.wqd3yeo5ea2DAqD9
+    origin: null
     transfer: false
     _id: WC6Hp9Rz8N2h5wfQ
     type: base
-    system: {}
-    changes:
-      - key: system.skills.tech.bonuses.check
-        mode: 2
-        value: '+5'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.tech.bonuses.check
+          value: '+5'
+          priority: 20
+          type: add
+          phase: initial
+          _id: mq2KesgEriWB56vl
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-items.Item.wqd3yeo5ea2DAqD9
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: >-
       <p>A +5 Bonus to Technology Checks to repair communications equipment.
       Toggle this off when it is not applicable.</p>
@@ -312,12 +315,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
+      systemVersion: 6.0.6
       createdTime: 1756571877709
-      modifiedTime: 1756571944704
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      modifiedTime: 1791733079432
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!wqd3yeo5ea2DAqD9.WC6Hp9Rz8N2h5wfQ'
 flags:
   dnd5e:
@@ -328,12 +334,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1756485624474
-  modifiedTime: 1769446470883
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733079431
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: wqd3yeo5ea2DAqD9
 sort: 362500
 ownership:

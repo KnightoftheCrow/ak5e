@@ -5,30 +5,51 @@ _id: kfhecBPwErQ5FZhi
 img: modules/ak5e/icons/Skill-Tsukinogi1.png
 system:
   activities:
-    CJPCdPZJVFxEssKg:
+    K5HBRhOYalqltHfS:
       type: utility
-      _id: CJPCdPZJVFxEssKg
+      name: Smoke and Mirrors
+      _id: K5HBRhOYalqltHfS
+      img: ''
       sort: 0
       activation:
-        type: ''
+        type: special
         override: false
         condition: ''
+      behaviors: []
       consumption:
         scaling:
           allowed: false
         spellSlot: true
         targets:
-          - type: activityUses
+          - type: itemUses
             value: '1'
+            target: ''
+            scaling: {}
       description:
+        value: ''
         chatFlavor: ''
       duration:
-        units: round
+        units: inst
+        expiry: sourceStart
         concentration: false
         override: false
-        value: '1'
-      effects: []
-      flags: {}
+      effects:
+        - _id: h62a1udOf7Y9y3Gt
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags:
+        cat:
+          placed:
+            region:
+              visibility:
+                magicalDarkness: true
+              macros:
+                region:
+                  - source: chris-premades
+                    rules: all
+                    identifier: darkness
       range:
         units: self
         override: false
@@ -36,21 +57,20 @@ system:
       target:
         template:
           contiguous: false
+          stationary: false
           units: ft
           type: sphere
           size: '10'
           count: ''
         affects:
-          choice: false
+          choice: true
           type: ''
         override: false
         prompt: true
       uses:
         spent: 0
-        recovery:
-          - period: sr
-            type: recoverAll
-        max: '1'
+        recovery: []
+        max: ''
       visibility:
         level:
           min: null
@@ -67,6 +87,7 @@ system:
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
+      otherActivityId: none
       macroData:
         name: ''
         command: ''
@@ -100,6 +121,7 @@ system:
         chooseEffects: false
         toggleEffect: false
         ignoreFullCover: false
+        targetMustBeSeen: false
         removeChatButtons: default
         magicEffect: false
         magicDamage: false
@@ -112,17 +134,186 @@ system:
         rollAs: target
         preRemoveConditionText: ''
         postRemoveConditionText: ''
-      otherActivityId: none
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
       otherActivityAsParentType: true
-      name: ''
+    fma08xJ0yWisp2dX:
+      type: utility
+      name: Smoke and Mirrors (After Kill)
       img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: sourceStart
+        concentration: false
+        override: false
+      effects:
+        - _id: h62a1udOf7Y9y3Gt
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags:
+        cat:
+          placed:
+            region:
+              visibility:
+                magicalDarkness: true
+              macros:
+                region:
+                  - source: chris-premades
+                    rules: all
+                    identifier: darkness
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: sphere
+          size: '10'
+        affects:
+          choice: true
+          type: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: fma08xJ0yWisp2dX
   uses:
     spent: 0
     recovery:
       - period: sr
         type: recoverAll
     max: '1'
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>If you don’t want to be caught, you won’t be.</p><p>During your Turn
@@ -131,7 +322,7 @@ system:
       next Turn; you can see through this Darkness. You may use this Feature
       once per Short Rest; however, if you reduce a Creature to 0 Hit Points,
       you may use this Feature without expending your use of
-      it.</p><p><strong>Not automated.</strong></p>
+      it.</p><hr><p><strong>Automated.</strong></p>
     chat: ''
   identifier: smoke-and-mirrors
   source:
@@ -142,29 +333,94 @@ system:
   prerequisites:
     items: []
     repeatable: false
-    level: null
+    level: 17
   properties: []
   requirements: ''
   type:
-    value: ''
+    value: class
     subtype: ''
-effects: []
-sort: 0
+effects:
+  - name: See through Magical Darkness
+    img: modules/ak5e/icons/Skill-Tsukinogi1.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.kfhecBPwErQ5FZhi
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.senses.ranges.devilsSight
+          type: add
+          value: 20
+          phase: initial
+          _id: 3GknbkcGC9kUbt5R
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: h62a1udOf7Y9y3Gt
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 0
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794431364246
+      modifiedTime: 1794431438474
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!kfhecBPwErQ5FZhi.h62a1udOf7Y9y3Gt'
+sort: 600000
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774579763391
-  modifiedTime: 1790905230956
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 6.0.6
+  createdTime: 1791206078993
+  modifiedTime: 1794431493253
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!kfhecBPwErQ5FZhi'

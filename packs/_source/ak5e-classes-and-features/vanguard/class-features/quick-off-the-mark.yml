@@ -9,13 +9,13 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>Whenever you roll Initative, you may add your Proficiency Bonus to the
       result of the roll.</p><p><strong>Automated.</strong></p>
     chat: ''
-  identifier: feature
+  identifier: quick-off-the-mark
   source:
     revision: 1
     rules: '2024'
@@ -31,26 +31,29 @@ system:
     value: class
     subtype: ''
 effects:
-  - name: Quick off the Mark
+  - name: +Prof to Initiative
     img: modules/ak5e/icons/Skill-Ines1.png
     origin: Compendium.ak5e.ak5e-classes-and-features.Item.yCSiHLh1RqLqr7eX
     _id: xZWEkXdZUk7oZFDL
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.init.bonus
-        mode: 2
-        value: '@prof'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.init.bonus
+          value: '@prof'
+          priority: 20
+          type: add
+          phase: initial
+          _id: b6IJvgFzc4UgTBAe
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.yCSiHLh1RqLqr7eX
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -68,23 +71,28 @@ effects:
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
+        expiryMode: default
       core:
         overlay: false
     _stats:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1782083461292
-      modifiedTime: 1782083796926
-      lastModifiedBy: P5lWUBQKuHlZqgTn
+      systemVersion: 6.0.6
+      createdTime: 1791206079008
+      modifiedTime: 1794425197483
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!yCSiHLh1RqLqr7eX.xZWEkXdZUk7oZFDL'
-sort: 800000
+sort: 175000
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 flags:
   dnd5e:
     riders:
@@ -93,10 +101,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774579225874
-  modifiedTime: 1790898435985
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 6.0.6
+  createdTime: 1791206079008
+  modifiedTime: 1794425186058
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!yCSiHLh1RqLqr7eX'

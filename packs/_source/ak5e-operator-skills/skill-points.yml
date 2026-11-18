@@ -113,12 +113,12 @@ system:
       name: Restore SP
       img: ''
   uses:
-    spent: null
+    spent: 0
     recovery:
       - period: lr
         type: formula
-        formula: max(0, @scale.skillPoints.recovery - @item.uses.value)
-    max: max(1,@scale.skillPoints.maxsp)
+        formula: max(0, @scale.skill-points.recovery - @item.uses.value)
+    max: max(1,@scale.skill-points.maxsp)
   advancement:
     - type: ScaleValue
       _id: MPsy1IiQHflo1umX
@@ -200,7 +200,7 @@ system:
       at the end of your Turn; set the scaling value to the amount of SP you
       gained that Turn.</p>
     chat: ''
-  identifier: skillPoints
+  identifier: skill-points
   source:
     revision: 1
     rules: '2014'
@@ -234,12 +234,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1766943177603
-  modifiedTime: 1771424766440
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1793124514703
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

@@ -42,24 +42,27 @@ system:
 effects:
   - name: Move First or Move Never
     img: icons/magic/movement/trail-streak-zigzag-yellow.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.SwEdZQO7hbBwru9u
+    origin: null
     _id: Knt3G4LUsf8PihbH
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.init.bonus
-        mode: 2
-        value: '@abilities.dex.mod'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.init.bonus
+          value: '@abilities.dex.mod'
+          priority: 20
+          type: add
+          phase: initial
+          _id: X3onJR8qE4ZS43FL
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.SwEdZQO7hbBwru9u
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -83,10 +86,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733082135
+      modifiedTime: 1791733082135
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!SwEdZQO7hbBwru9u.Knt3G4LUsf8PihbH'
 sort: 0
 ownership:
@@ -100,10 +108,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680297411
-  modifiedTime: 1768680297411
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733082134
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!SwEdZQO7hbBwru9u'

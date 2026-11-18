@@ -1,0 +1,289 @@
+folder: OpO34lufa5ZweWCk
+name: Mountainbreaker
+type: feat
+img: modules/ak5e/icons/Skill-Mountain1.webp
+system:
+  activities:
+    XEJzd4dcmqUY2wqo:
+      type: attack
+      name: 5x Damage Unarmed Strike
+      _id: XEJzd4dcmqUY2wqo
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      flags:
+        cat:
+          genericConfig:
+            chris-premades:
+              pushOnFail:
+                distance: '20'
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: pushOnFail
+                rules: all
+      range:
+        units: touch
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: unarmed
+        ability: ''
+        bonus: ''
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 8
+            bonus: '@mod'
+            types:
+              - bludgeoning
+            scaling:
+              number: 1
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      attackMode: ''
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+  uses:
+    spent: 1
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  advancement: {}
+  description:
+    value: >-
+      <p>You unleash your furore in such a concentrated assault that few foes
+      can hope to withstand it.</p><p>As an Action, you may
+      either;</p><ul><li><p>Make an Unarmed Strike against a Creature within
+      your Reach. If it hits, you may make another Unarmed Strike against it,
+      and so on, until you miss or have made 10 Attacks; at which point the
+      sequence ends. Each Attack after the first suffers a cumulative -2 to
+      hit</p></li><li><p>Make an Unarmed Strike against a Creature within your
+      Reach; if it hits, the Damage of that Attack is multiplied by five.
+      Additionally, if the Creature is no more than one size larger than you,
+      they are knocked 20 feet directly away from you and fall
+      Prone</p></li></ul><p>Once you use this Feature, you must complete a Long
+      Rest before you may do so again.</p><hr><p><strong>Semi-Automated:
+      </strong>The Mountainbreaker 5x Strike can be performed using this
+      Activity. The multihitting strike must be done manually.<br></p>
+    chat: ''
+  identifier: feature
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 17
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Mountainbreaker Damage Increase
+    img: modules/ak5e/icons/Skill-Mountain1.webp
+    origin: null
+    type: base
+    _id: YyiL3i6RJApQ2XMi
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: modifier=*5; addTo=all,types(bludgeoning); (unarmed || weapon)
+          phase: initial
+          priority: null
+          _id: pMwKcK9yfzcugpjS
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Actor.gwt7apyF4LXomjuQ.Item.NJUTe5FY3lWxixUD
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791629880331
+      modifiedTime: 1791733086846
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!YRoOZ5vCSh0MLMgC.YyiL3i6RJApQ2XMi'
+flags:
+  dnd5e:
+    last:
+      XEJzd4dcmqUY2wqo:
+        damageType:
+          '0': bludgeoning
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791629880331
+  modifiedTime: 1791733086845
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: YRoOZ5vCSh0MLMgC
+sort: 400000
+_key: '!items!YRoOZ5vCSh0MLMgC'

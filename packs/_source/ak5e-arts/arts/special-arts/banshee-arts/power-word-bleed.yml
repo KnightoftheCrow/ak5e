@@ -154,21 +154,21 @@ system:
 effects:
   - name: Power Word Bleed
     img: icons/skills/wounds/injury-hand-blood-red.webp
-    origin: Item.1oqQtvtRt7sski62
+    origin: null
     transfer: false
     _id: OSYSLlUSz4noelmt
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      magical: true
+      origin:
+        item: Item.1oqQtvtRt7sski62
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -196,10 +196,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733107632
+      modifiedTime: 1791733107632
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!1oqQtvtRt7sski62.OSYSLlUSz4noelmt'
 flags:
   dnd5e:
@@ -210,12 +215,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733107632
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

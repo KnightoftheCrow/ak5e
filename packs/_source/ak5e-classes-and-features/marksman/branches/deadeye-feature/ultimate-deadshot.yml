@@ -9,7 +9,7 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>You never miss a target. Your name will enter the history books of
@@ -41,26 +41,29 @@ system:
 effects:
   - name: Ultimate Deadshot
     img: modules/ak5e/icons/Skill-Spuria1.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.30hRrtnTxtx0PlLd
+    origin: null
     _id: vZ3X3HYxPlO4lqXy
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.modifier
-        mode: 0
-        value: >-
-          modifier=min(@abilities.dex.mod+@prof);
-          rollingActor.effects.some(effect => effect.name === 'Deadshot')
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.modifier
+          value: >-
+            modifier=min(@abilities.dex.mod+@prof);
+            rollingActor.effects.some(effect => effect.name === 'Deadshot')
+          priority: 20
+          type: custom
+          phase: initial
+          _id: L6z9rifLmu8cDW3b
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.30hRrtnTxtx0PlLd
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -84,29 +87,29 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1781192549070
-      modifiedTime: 1781193092017
+      systemVersion: 6.0.6
+      createdTime: 1791203553317
+      modifiedTime: 1791733084898
       lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!30hRrtnTxtx0PlLd.vZ3X3HYxPlO4lqXy'
 sort: 150000
 ownership:
   default: 0
-  GiT7LQTiCJxjm7mo: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1767621396653
-  modifiedTime: 1781193110253
+  systemVersion: 5.3.3
+  createdTime: 1791203553316
+  modifiedTime: 1791733084898
   lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!30hRrtnTxtx0PlLd'

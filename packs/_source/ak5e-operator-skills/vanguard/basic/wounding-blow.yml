@@ -42,6 +42,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: enemy
@@ -117,11 +118,31 @@ system:
       otherActivityId: none
       otherActivityAsParentType: true
       name: ''
+      img: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
@@ -149,28 +170,35 @@ system:
 effects:
   - name: Wounding Blow (Skill Points)
     img: modules/ak5e/icons/Skill-Thorns2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.ep2MJVEskzKTkT4y
+    origin: null
     _id: NofukA6yJwZH3fsM
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '0'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skill-points.recovery
+          value: 0
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: COfTpxpSG29Q35Qu
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skill-points.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: SjbcEdi4mBTr7JY9
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.ZL54k5YvhjILPjAD
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -194,27 +222,31 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791147711630
+      modifiedTime: 1791733094713
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!ZL54k5YvhjILPjAD.NofukA6yJwZH3fsM'
   - name: Wounding Blow
     img: modules/ak5e/icons/Skill-Thorns2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.ep2MJVEskzKTkT4y
+    origin: null
     _id: 9c0PlQGY4hMTFlVK
     type: base
-    system: {}
-    changes: []
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.ZL54k5YvhjILPjAD
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -243,10 +275,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791147711630
+      modifiedTime: 1791733094713
+    showIcon: 2
+    start: null
+    folder: null
     _key: '!items.effects!ZL54k5YvhjILPjAD.9c0PlQGY4hMTFlVK'
 flags:
   dnd5e:
@@ -256,15 +293,16 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774580499950
-  modifiedTime: 1790902111260
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 5.3.3
+  createdTime: 1791147711630
+  modifiedTime: 1791733094713
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 _id: ZL54k5YvhjILPjAD
 sort: 700000
 _key: '!items!ZL54k5YvhjILPjAD'

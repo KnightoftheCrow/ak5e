@@ -156,37 +156,53 @@ system:
 effects:
   - name: Acid Armour Disadvantage
     img: icons/magic/acid/dissolve-arm-flesh.webp
-    origin: Item.xKNV5prT5LTXhrGv
+    origin: null
     transfer: false
     _id: nzgJJ9wonQpQxuVf
     type: base
-    system: {}
-    changes:
-      - key: system.skills.ath.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: system.skills.acr.roll.mode
-        mode: 2
-        value: '-1'
-        priority: 20
-      - key: flags.midi-qol.disadvantage.attack.msak
-        mode: 2
-        value: '1'
-        priority: 20
-      - key: flags.midi-qol.disadvantage.attack.mwak
-        mode: 2
-        value: '1'
-        priority: 20
+    system:
+      changes:
+        - key: system.skills.ath.roll.mode
+          value: -1
+          priority: 20
+          type: add
+          phase: initial
+          _id: 4EDVA8ExW7WrtfH5
+          conditions: '{}'
+          replacement: ''
+        - key: system.skills.acr.roll.mode
+          value: -1
+          priority: 20
+          type: add
+          phase: initial
+          _id: uARgdkBcqvPkP367
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.disadvantage.attack.msak
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: tTM9Ki9a8JdnQRmx
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.disadvantage.attack.mwak
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: 5pVxTR6eb1iQAjlZ
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.xKNV5prT5LTXhrGv
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -216,10 +232,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733109715
+      modifiedTime: 1791733109715
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!xKNV5prT5LTXhrGv.nzgJJ9wonQpQxuVf'
 flags:
   dnd5e:
@@ -230,13 +251,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
-sort: 0
+  modifiedTime: 1791733109715
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+sort: 1500000
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

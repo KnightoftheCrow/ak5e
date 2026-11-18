@@ -21,6 +21,7 @@ system:
           - type: itemUses
             value: '10'
             target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -38,6 +39,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: ''
@@ -126,11 +128,30 @@ system:
       fumbleThreshold: 1
       name: ''
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
@@ -161,16 +182,17 @@ sort: 400000
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 flags:
   dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774575736180
-  modifiedTime: 1790901454744
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 5.3.3
+  createdTime: 1791147711624
+  modifiedTime: 1791147711624
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!JSd4j1ayhQXstjNw'

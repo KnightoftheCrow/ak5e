@@ -1,7 +1,7 @@
 folder: 7buxNL26uPo990NE
 name: Defender
 type: class
-img: modules/ak5e/icons/Defender.webp
+img: modules/ak5e/icons/class%20%2B%20subclass/icon_profession_defender_large.png
 system:
   advancement:
     4lk1czGADXRSQt40:
@@ -77,8 +77,6 @@ system:
       title: Skill Points
       hint: ''
       flags: {}
-      icon: ''
-      classRestriction: ''
     Kstv0yyxQKWWTRDC:
       type: Trait
       _id: Kstv0yyxQKWWTRDC
@@ -174,15 +172,13 @@ system:
         restriction:
           list: []
         spell: null
-        type: ''
+        type: null
       flags: {}
       value:
         added: {}
         replaced: {}
       hint: ''
       title: Light Melee
-      icon: ''
-      classRestriction: ''
     0UrHDjy8znsHiOtm:
       type: ItemChoice
       title: Heavy Melee
@@ -203,14 +199,12 @@ system:
         restriction:
           list: []
         spell: null
-        type: ''
+        type: null
       flags: {}
       value:
         added: {}
         replaced: {}
       hint: ''
-      icon: ''
-      classRestriction: ''
     OehrWX8yJ5xYbSrT:
       type: ItemChoice
       title: Armour
@@ -227,14 +221,12 @@ system:
         restriction:
           list: []
         spell: null
-        type: ''
+        type: null
       flags: {}
       value:
         added: {}
         replaced: {}
       hint: ''
-      icon: ''
-      classRestriction: ''
     e12fjsdAVQV79Z4U:
       type: ItemChoice
       _id: e12fjsdAVQV79Z4U
@@ -276,32 +268,31 @@ system:
         restriction:
           list: []
         spell: null
-        type: ''
+        type: null
       value:
         added: {}
         replaced: {}
       title: Tool Kit
       hint: <p>Select Tool Kit you're profience with.</p>
       flags: {}
-      icon: ''
-      classRestriction: ''
     CBzED7K7meWGZnTM:
       type: ItemGrant
       title: Defender Features
       _id: CBzED7K7meWGZnTM
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.yt56NhuKOs1sPH4p
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.paI1LiaHaY8ze6XA
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.lpLfwinMhcMft0wd
             optional: false
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.zTeUzHuzn4SuYhC9
-            optional: false
+            sort: 0
         optional: false
         spell: null
       flags: {}
       value: {}
       level: 1
       hint: ''
-      icon: ''
       classRestriction: ''
     9LerhppA9jhmgmgV:
       type: Subclass
@@ -320,6 +311,7 @@ system:
       configuration:
         items:
           - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.Qi4Mc2HB3snq2eE5
+            optional: false
         optional: false
         spell: null
       value: {}
@@ -327,8 +319,6 @@ system:
       title: 'Changes to Core Rules: Cantrips'
       hint: <p>All Creatures gain +Spellcasting Mod Damage to their Cantrips.</p>
       flags: {}
-      icon: ''
-      classRestriction: ''
     PZ6YvVsQ8N63J9ZP:
       type: Trait
       _id: PZ6YvVsQ8N63J9ZP
@@ -337,32 +327,7 @@ system:
         choices:
           - count: 1
             pool:
-              - tool:art:art
-              - tool:art:brewing
-              - tool:art:cooking
-              - tool:art:engineering
-              - tool:art:maintenance
-              - tool:art:makeover
-              - tool:art:mechanism
-              - tool:art:medical
-              - tool:art:messenger
-              - tool:art:pharmacology
-              - tool:art:tailoring
-              - tool:art:woodwork
-              - tool:music:instrumentbagpipes
-              - tool:music:instrumentbass
-              - tool:music:instrumentcello
-              - tool:music:instrumentdrums
-              - tool:music:instrumentflute
-              - tool:music:instrumentguitar
-              - tool:music:instrumentharp
-              - tool:music:instrumentkeyboard
-              - tool:music:instrumentmicrophone
-              - tool:music:instrumentother
-              - tool:music:instrumenttrombone
-              - tool:music:instrumenttuba
-              - tool:music:instrumentturntable
-              - tool:music:instrumentviolin
+              - tool:toolkit:*
               - tool:vehicle:*
         grants: []
         mode: default
@@ -371,6 +336,7 @@ system:
       hint: ''
       flags: {}
       value: {}
+      classRestriction: ''
     7kQojwryZJvs2fnK:
       type: ItemChoice
       title: Basic Operator Skill
@@ -382,36 +348,48 @@ system:
             count: 1
             replacement: false
         pool:
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.SEpaAzGX3IBTWj1D
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.LeDC2kinl9hcy0Nx
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.UjU16ju6L546nTOq
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.k0fg8YIv1jQa9Ir7
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.QEYUKFkMYZSHSxWE
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.u4SpssaGyJeef2fC
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.HNkdEpvXYDIdVFp3
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.N0NGOOjSiAhGifpl
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.LEuv80kHikWMqVp0
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.1oowfeCaKSxxrLFA
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.vBQ1QfMps61P30bE
-          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.bNzocoZHPCQnooTI
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-operator-skills.Item.SEpaAzGX3IBTWj1D
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-operator-skills.Item.UjU16ju6L546nTOq
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-operator-skills.Item.k0fg8YIv1jQa9Ir7
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-operator-skills.Item.QEYUKFkMYZSHSxWE
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-operator-skills.Item.u4SpssaGyJeef2fC
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-operator-skills.Item.HNkdEpvXYDIdVFp3
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-operator-skills.Item.N0NGOOjSiAhGifpl
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-operator-skills.Item.LEuv80kHikWMqVp0
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-operator-skills.Item.1oowfeCaKSxxrLFA
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-operator-skills.Item.vBQ1QfMps61P30bE
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-operator-skills.Item.bNzocoZHPCQnooTI
+          - uuid: Compendium.ak5e.ak5e-operator-skills.Item.i8t3HRFfVTRIduIp
+            sort: 0
         restriction:
           list: []
         spell: null
-        type: ''
+        type: null
       flags: {}
       value:
         added: {}
         replaced: {}
       hint: ''
-      icon: ''
       classRestriction: ''
     Teqgq3fvWJtOmMvr:
       type: ItemGrant
       _id: Teqgq3fvWJtOmMvr
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.O7GqGGN5tS9wdCpZ
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.W66t49sSm6Q8MbjA
             optional: false
+            sort: 0
         optional: false
         spell: null
       value: {}
@@ -419,8 +397,8 @@ system:
       title: Extra Attack
       hint: ''
       flags: {}
-      icon: ''
       classRestriction: ''
+      name: Defence Substituting Offence
     RvqklDSH24xjZnjB:
       type: AbilityScoreImprovement
       _id: RvqklDSH24xjZnjB
@@ -470,14 +448,15 @@ system:
           - uuid: Compendium.ak5e.ak5e-operator-skills.Item.BA2rnFFypXzCwnoN
         restriction:
           list: []
+          type: class
+          subtype: opSkill
         spell: null
-        type: ''
+        type: feat
       flags: {}
       value:
         added: {}
         replaced: {}
       hint: ''
-      icon: ''
       classRestriction: ''
     10oaXiuxymDTT9pg:
       type: ItemChoice
@@ -492,66 +471,109 @@ system:
             count: 1
             replacement: false
         pool:
-          - uuid: Compendium.ak5e.ak5e-talents.Item.ozdamzsPneEKFoBd
-          - uuid: Compendium.ak5e.ak5e-talents.Item.KUhdBDpy5v5jLWtT
-          - uuid: Compendium.ak5e.ak5e-talents.Item.m902UIdkNnr7rcaF
-          - uuid: Compendium.ak5e.ak5e-talents.Item.7M3UpZccee42Ll0s
-          - uuid: Compendium.ak5e.ak5e-talents.Item.kYCAit31digRO6g5
-          - uuid: Compendium.ak5e.ak5e-talents.Item.IYY8fwd11382Ff9d
-          - uuid: Compendium.ak5e.ak5e-talents.Item.CDAe81R9TqqblxKc
-          - uuid: Compendium.ak5e.ak5e-talents.Item.Kh191if1NoYtMJfq
-          - uuid: Compendium.ak5e.ak5e-talents.Item.Jtmj0eoXjk5eq6Sy
-          - uuid: Compendium.ak5e.ak5e-talents.Item.RnTcaRgXaYM1BT9s
-          - uuid: Compendium.ak5e.ak5e-talents.Item.XKvFpNcBOZyoCrpc
-          - uuid: Compendium.ak5e.ak5e-talents.Item.LbDfpyHtXEwikWuF
-          - uuid: Compendium.ak5e.ak5e-talents.Item.xlXAwKFELNNiJ4r4
-          - uuid: Compendium.ak5e.ak5e-talents.Item.ZJPXgrTPcYJxnDGr
-          - uuid: Compendium.ak5e.ak5e-talents.Item.EOh6jPRkcJRyhsOL
-          - uuid: Compendium.ak5e.ak5e-talents.Item.S70CMRbGKLW1Zc0A
-          - uuid: Compendium.ak5e.ak5e-talents.Item.WJUVrxIjphZYXzJZ
-          - uuid: Compendium.ak5e.ak5e-talents.Item.T5Wo2r429drywoal
-          - uuid: Compendium.ak5e.ak5e-talents.Item.HCSaOIG7LHKG2zOb
-          - uuid: Compendium.ak5e.ak5e-talents.Item.X2thjYDkqb8JFw2t
-          - uuid: Compendium.ak5e.ak5e-talents.Item.ZqKqUfCWgBPetQDD
-          - uuid: Compendium.ak5e.ak5e-talents.Item.DxEpUEbrrwn9CMhO
-          - uuid: Compendium.ak5e.ak5e-talents.Item.pePdLTeJwoFKjoKo
-          - uuid: Compendium.ak5e.ak5e-talents.Item.OnKvPynONsVgR107
-          - uuid: Compendium.ak5e.ak5e-talents.Item.NxYJwQqn7aaZeowi
-          - uuid: Compendium.ak5e.ak5e-talents.Item.qoT9NXfUCs4Ks2ul
-          - uuid: Compendium.ak5e.ak5e-talents.Item.zg20vOgATlw7vQpS
-          - uuid: Compendium.ak5e.ak5e-talents.Item.gBXXDmJJVb8EpExL
-          - uuid: Compendium.ak5e.ak5e-talents.Item.SIVCVRubviz8gOZE
-          - uuid: Compendium.ak5e.ak5e-talents.Item.RihFYhUSsRfLq22U
-          - uuid: Compendium.ak5e.ak5e-talents.Item.kOwhxsu5yxOkQK71
-          - uuid: Compendium.ak5e.ak5e-talents.Item.Mf6JSIDiMWeJLkoV
-          - uuid: Compendium.ak5e.ak5e-talents.Item.8o9FpizZSXT94cvr
-          - uuid: Compendium.ak5e.ak5e-talents.Item.Pl7gcBQpbPiX3UOQ
-          - uuid: Compendium.ak5e.ak5e-talents.Item.XWxkSe4rufbcHpep
-          - uuid: Compendium.ak5e.ak5e-talents.Item.xOpKGGdCMsKapImX
-          - uuid: Compendium.ak5e.ak5e-talents.Item.0hofZ6fcHzcHHOAL
-          - uuid: Compendium.ak5e.ak5e-talents.Item.uIWeWJvNAQwv8kTb
-          - uuid: Compendium.ak5e.ak5e-talents.Item.DsDPmsWgSfzp2rMj
-          - uuid: Compendium.ak5e.ak5e-talents.Item.jawVZe0kSLebCOjO
-          - uuid: Compendium.ak5e.ak5e-talents.Item.Prv5FnHfOqeyNzcL
-          - uuid: Compendium.ak5e.ak5e-talents.Item.y35cLvg3sqsGA4CM
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.V5PaVWtHwHZetJqz
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.EEUtFBUR3GIin6Ai
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.Oc0GjfKagdwwheYX
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.2Opf0AHCTGNT2sPu
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.zROR1sdx5gulfdgi
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.nFqgQHGvwBglqfCO
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.GL8CvQ7L8jwo6zwA
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.yvqljpvSuZylml5K
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.fzyxuVZPqEMfySc2
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.xQQbIzW4cTPuc5iM
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.zAot72IEUVXJCmJ1
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.AgUO7mljrA2Jx3nR
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.46LNilDoNEPSkZKG
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.cbhLDevQFbYxosSH
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.joZGCbiBfavOzlaO
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.3czXEYfBJduvOVjE
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.lC9sQm9P3xnb4JEj
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.8StbsK8RBlvOIiI8
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.BZlooWg8OFd5Xize
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.77kW8qQVAj2rebGt
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.SQxaj9s1c5f985dg
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.PQWuOEBbU2MvvQcN
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.dLeucXeR75BqHzQX
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.EQAA0xJZhDcVGatS
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.Qboum70MKEUwYskb
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.QcgRuvrPdNeWgVxB
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.MwNdBl18bRfb3bZ5
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.uNfQH6Tbaz0w0Ueh
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.hJbnsZXjDnUc6WKM
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.159LI8W62Jx2KK8t
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.3K8CgVM0Lri7Hewo
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.fERSk7q26Gt7gciB
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.XYbcqOMbqw6ZijTH
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.wm3zw0PART1kKQ7Z
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.26nJ9oZ3EPwvufYl
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.UKN3ubvHZ6vi9w2O
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.wUl98AgONQRqPVHa
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.Ug1Ww9JKdvZfGLAK
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.XzrCKeqPLJE0NcQJ
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.TuBQvHbkb4jTDUeJ
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.Ywrh1FNKVkLmCn3D
+          - uuid: Compendium.ak5e.ak5e-talents.Item.TvJDwoylsLrrZnUr
+            sort: 0
         restriction:
           list: []
+          type: class
+          subtype: talent
         spell: null
-        type: ''
+        type: feat
       flags: {}
       value:
         added: {}
         replaced: {}
       hint: ''
       _id: 10oaXiuxymDTT9pg
-      icon: ''
       classRestriction: ''
     Mpr54JfCN6Aq1B5v:
       type: ItemChoice
       title: Advanced Talent
       _id: Mpr54JfCN6Aq1B5v
       configuration:
-        allowDrops: true
+        allowDrops: false
         choices:
           '9':
             count: 1
@@ -560,58 +582,101 @@ system:
             count: 1
             replacement: false
         pool:
-          - uuid: Compendium.ak5e.ak5e-talents.Item.ac8OKywngdeJmRxy
-          - uuid: Compendium.ak5e.ak5e-talents.Item.aUlBOrEFED8bP3L8
-          - uuid: Compendium.ak5e.ak5e-talents.Item.gNt00l4uGQDZr3sl
-          - uuid: Compendium.ak5e.ak5e-talents.Item.b2Fm3jKVqlNjjjo0
-          - uuid: Compendium.ak5e.ak5e-talents.Item.qrXiLT4mf6WBy5iJ
-          - uuid: Compendium.ak5e.ak5e-talents.Item.xF6eE9U65h3kk0d9
-          - uuid: Compendium.ak5e.ak5e-talents.Item.A4G6CBFShRfl5vc9
-          - uuid: Compendium.ak5e.ak5e-talents.Item.X3Iq3d2wCNht26bz
-          - uuid: Compendium.ak5e.ak5e-talents.Item.FosAM5lBGglxfXPC
-          - uuid: Compendium.ak5e.ak5e-talents.Item.wTuOPFisSITTRJHQ
-          - uuid: Compendium.ak5e.ak5e-talents.Item.LpJtZcD0NX86jEKa
-          - uuid: Compendium.ak5e.ak5e-talents.Item.qDFL0cg7P6QPaqJv
-          - uuid: Compendium.ak5e.ak5e-talents.Item.BCh8JMFAoPij519Y
-          - uuid: Compendium.ak5e.ak5e-talents.Item.PzgkWXDuzPAuKEBI
-          - uuid: Compendium.ak5e.ak5e-talents.Item.c7jwG7fGUQSrXKsj
-          - uuid: Compendium.ak5e.ak5e-talents.Item.GpCdSTOGmMYD87SN
-          - uuid: Compendium.ak5e.ak5e-talents.Item.x7Qv6wc5hpPREBxG
-          - uuid: Compendium.ak5e.ak5e-talents.Item.OrUukPCBLnVA4dhk
-          - uuid: Compendium.ak5e.ak5e-talents.Item.tqHnpJjsTGJmt6Bm
-          - uuid: Compendium.ak5e.ak5e-talents.Item.XosGA1zMMTiPsqlC
-          - uuid: Compendium.ak5e.ak5e-talents.Item.5cjuM4O2ap5X0icH
-          - uuid: Compendium.ak5e.ak5e-talents.Item.PIsp4Fz2v4630lGe
-          - uuid: Compendium.ak5e.ak5e-talents.Item.cJMBq2FMVeksiTQm
-          - uuid: Compendium.ak5e.ak5e-talents.Item.UwMq7dtfejJRrLAo
-          - uuid: Compendium.ak5e.ak5e-talents.Item.df63r0VZXGF9QQXh
-          - uuid: Compendium.ak5e.ak5e-talents.Item.HLaUlQg9kxefAXo2
-          - uuid: Compendium.ak5e.ak5e-talents.Item.TrmsgIl31rhfGuld
-          - uuid: Compendium.ak5e.ak5e-talents.Item.1qtz7GHkMYyPgMOn
-          - uuid: Compendium.ak5e.ak5e-talents.Item.Ib9GiOM0OCynBiGk
-          - uuid: Compendium.ak5e.ak5e-talents.Item.ppr35KeHotQzRd4g
-          - uuid: Compendium.ak5e.ak5e-talents.Item.2BOt9uakqRD3Rdjq
-          - uuid: Compendium.ak5e.ak5e-talents.Item.u3rYNPixkXBstDpD
-          - uuid: Compendium.ak5e.ak5e-talents.Item.u7vHDPaTlTvIYURJ
-          - uuid: Compendium.ak5e.ak5e-talents.Item.i8oN7SvdClVD9Pr5
-          - uuid: Compendium.ak5e.ak5e-talents.Item.n35Xf4FGbdDxhJAh
-          - uuid: Compendium.ak5e.ak5e-talents.Item.bcTkh8GPAQZOZFay
-          - uuid: Compendium.ak5e.ak5e-talents.Item.zY2TqvApakosYl5v
-          - uuid: Compendium.ak5e.ak5e-talents.Item.gR8rmcODAH8YKMQD
-          - uuid: Compendium.ak5e.ak5e-talents.Item.lM7vZZT8uZ2xRJS7
-          - uuid: Compendium.ak5e.ak5e-talents.Item.IfRBn6pKaZqE5xXv
-          - uuid: Compendium.ak5e.ak5e-talents.Item.rLaMmr0fzP13BZp3
-          - uuid: Compendium.ak5e.ak5e-talents.Item.cWa3zDLPXeJFOddk
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.VF3pd5rNp16rg8jr
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.pg9FrbIBMSF1GstW
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.ea3h401b5lcwezqN
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.L39L26oCLkrJ1vY8
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.u8T6nXcbW9GIpkcJ
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.k0aZ7G7mz0qGJN9Z
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.MjF0h6oTIrPaWogp
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.GBtG23k5tSGPbBHh
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.yuhkJjFfRLJ2ilhz
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.AfhNKzB0CwcsotPR
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.dSrrO52KbgfCZdRq
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.zKqInR9YpfSAClqt
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.lVIBHj76FhjdKEqw
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.KaecNSyQPJh6jHo3
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.iuCWiZ1ubi9YuMcI
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.zLa2fhfbUaVvKwWx
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.MG3oXxojclqJDzji
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.WnmpUyZsoIKsPXdU
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.r0uuNOy9nAxCgK2w
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.lY5CNPYmx7wxwp3Z
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.gfsUztD6ZlKyZhWP
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.hpXnfXQZw0Ryy7Ad
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.ggrnU4X0gWREkCIu
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.3GWKdgu5aUAcm3v8
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.naAMeURtaK2pfSA5
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.MUJHE3azFWZg6Xd2
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.axdnc9YFR85ZafM7
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.KCkR94R88LIQ2HuM
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.HSLpu3mzI1XkD3Cs
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.eplJw2jGfACgjCuV
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.YDyNa4W244P8xpCP
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.JK5x4BJJiMWDteDL
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.VnTFZ8kabtvVmtLx
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.LrqyiuCDwxfUeGkD
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.xKDqS7QMpuwGkbky
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.8iV8gUMD98FBPV5o
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.Ls2T856WBC2a3QHJ
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.HBeZ5yawH7brsHc6
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.B8yOs2JNyklrPInO
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.scezDXtFUO0OLg1B
+          - sort: 0
+            uuid: Compendium.ak5e.ak5e-talents.Item.6xLwQ66HA950C2ch
+          - uuid: Compendium.ak5e.ak5e-talents.Item.nsyjxRA9QqHn2DQ0
+            sort: 0
         restriction:
           list: []
+          type: class
+          subtype: talent
         spell: null
-        type: ''
+        type: feat
       flags: {}
       value:
         added: {}
         replaced: {}
       hint: ''
-      icon: ''
       classRestriction: ''
     WoazhgfQlEGCWglk:
       type: AbilityScoreImprovement
@@ -641,15 +706,15 @@ system:
       _id: bktKXzo1bY5AhDVE
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.yvxGxd2yKnx0HaXq
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.IDeCUu2X59fAMwso
             optional: false
+            sort: 0
         optional: false
         spell: null
       flags: {}
       value: {}
       level: 11
       hint: ''
-      icon: ''
       classRestriction: ''
     lr0LGsPWIDKrNLC8:
       type: ItemGrant
@@ -657,15 +722,15 @@ system:
       _id: lr0LGsPWIDKrNLC8
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.qMCuxJU1T7jI8FQU
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.DLFlfySeVkVX9HZp
             optional: false
+            sort: 0
         optional: false
         spell: null
       flags: {}
       value: {}
       level: 13
       hint: ''
-      icon: ''
       classRestriction: ''
     hDTC7fD4b9QvnCzM:
       type: ItemGrant
@@ -673,15 +738,15 @@ system:
       _id: hDTC7fD4b9QvnCzM
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.tObvVB55IVOBboVv
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.mY6PMEnAmlDASisq
             optional: false
+            sort: 0
         optional: false
         spell: null
       flags: {}
       value: {}
       level: 17
       hint: ''
-      icon: ''
       classRestriction: ''
     SLPhPmjXijHjETU4:
       type: ItemGrant
@@ -689,15 +754,15 @@ system:
       _id: SLPhPmjXijHjETU4
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.9ocxUbBnpKzdOELu
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.SeNaOzZkNtFXf4B9
         optional: false
         spell: null
       flags: {}
       value: {}
       level: 18
       hint: ''
-      icon: ''
       classRestriction: ''
     Fe0DzL7Z4OjRTtcn:
       type: ItemGrant
@@ -705,15 +770,15 @@ system:
       _id: Fe0DzL7Z4OjRTtcn
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.OIKanmSWmvLGhRtA
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.pphHtChVoPeX046a
         optional: false
         spell: null
       flags: {}
       value: {}
       level: 20
       hint: ''
-      icon: ''
       classRestriction: ''
     J7hYDSSOqF8xrzZg:
       type: AbilityScoreImprovement
@@ -742,7 +807,7 @@ system:
       title: Elite Operator Skills
       _id: JUDjDqZq4SGuOdU9
       configuration:
-        allowDrops: true
+        allowDrops: false
         choices:
           '14':
             count: 1
@@ -758,14 +823,15 @@ system:
           - uuid: Compendium.ak5e.ak5e-operator-skills.Item.byoxdpLfmMlPcAPN
         restriction:
           list: []
+          type: class
+          subtype: opSkill
         spell: null
-        type: ''
+        type: feat
       flags: {}
       value:
         added: {}
         replaced: {}
       hint: ''
-      icon: ''
       classRestriction: ''
   description:
     value: >-
@@ -916,15 +982,14 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358933005
-  modifiedTime: 1786469580278
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553236
+  modifiedTime: 1794781129340
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 _id: jnc3B6qLcCvC9QMk
 sort: 100000
 _key: '!items!jnc3B6qLcCvC9QMk'

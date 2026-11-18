@@ -1,7 +1,7 @@
 folder: mPT4QUdDnfm4I1wb
 name: Automaton (Turret)
 type: npc
-img: systems/dnd5e/icons/svg/actors/npc.svg
+img: modules/ak5e/icons/Skill-PostFiringDebtReliefProgram.webp
 system:
   currency:
     credits: 0
@@ -466,15 +466,12 @@ prototypeToken:
   width: 0.5
   height: 0.5
   texture:
-    src: systems/dnd5e/icons/svg/actors/npc.svg
+    src: modules/ak5e/icons/Skill-PostFiringDebtReliefProgram.webp
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -518,7 +515,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -536,10 +533,13 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
-  flags: {}
+  flags:
+    dnd5e:
+      lockScale: true
   randomImg: false
   appendNumber: false
   prependAdjective: false
+  depth: 0.5
 items:
   - folder: tpq7GwavNIJcGZhv
     name: Mounted Crossbow
@@ -737,10 +737,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.3
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: 274o33SVnwAC7xxs
     sort: 100000
     ownership:
@@ -900,10 +902,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.3
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _key: '!actors.items!AYr7uc7PfTmtDHVa.eE1zrexfioXnrWuG'
   - name: Portable
     type: feat
@@ -1052,21 +1056,20 @@ items:
     effects:
       - name: Portable Form
         img: icons/containers/boxes/crate-reinforced-green.webp
-        origin: Actor.X5l2VADNdnayDDXg.Item.AX9PBpSrhe6ZT3b7
+        origin: null
         transfer: false
         _id: EHqyE91FcHTa98Uu
         type: base
-        system: {}
-        changes: []
+        system:
+          changes: []
+          origin:
+            item: Actor.X5l2VADNdnayDDXg.Item.AX9PBpSrhe6ZT3b7
         disabled: false
         duration:
-          startTime: null
-          combat: null
-          seconds: null
-          rounds: null
-          turns: null
-          startRound: null
-          startTurn: null
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
         description: ''
         tint: '#ffffff'
         statuses:
@@ -1094,10 +1097,15 @@ items:
           compendiumSource: null
           duplicateSource: null
           exportSource: null
-          coreVersion: '13.348'
+          coreVersion: '14.368'
           systemId: dnd5e
-          systemVersion: 5.2.3
-          lastModifiedBy: null
+          systemVersion: 6.0.6
+          lastModifiedBy: 5XlrCO2NlPtd4MFQ
+          createdTime: 1791733079826
+          modifiedTime: 1791733079826
+        showIcon: 2
+        start: null
+        folder: null
         _key: >-
           !actors.items.effects!AYr7uc7PfTmtDHVa.AX9PBpSrhe6ZT3b7.EHqyE91FcHTa98Uu
     folder: null
@@ -1119,10 +1127,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.2.3
-      lastModifiedBy: null
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733079826
+      modifiedTime: 1791733079826
     _key: '!actors.items!AYr7uc7PfTmtDHVa.AX9PBpSrhe6ZT3b7'
 effects: []
 ownership:
@@ -1133,12 +1143,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.3
-  createdTime: 1766941505996
-  modifiedTime: 1766941535276
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 6.0.6
+  createdTime: 1791733079825
+  modifiedTime: 1791733079825
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: AYr7uc7PfTmtDHVa
 sort: 0
 _key: '!actors!AYr7uc7PfTmtDHVa'

@@ -1,0 +1,310 @@
+folder: YjXKh177g00CFJra
+name: Révolution
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_necras_3.png
+system:
+  activities:
+    Svpu6bmdCdZqVwIy:
+      type: save
+      name: Activate
+      _id: Svpu6bmdCdZqVwIy
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: true
+          max: '6'
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: essence-of-the-liberator
+            scaling:
+              mode: amount
+              formula: '1'
+          - type: itemUses
+            value: '1'
+            scaling:
+              mode: ''
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: minute
+        expiry: null
+        concentration: false
+        override: false
+        value: '10'
+      effects:
+        - _id: Rq8bfl1hx3B29cBX
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: emanationNoTemplate
+          size: '20'
+          count: ''
+        affects:
+          choice: false
+          type: enemy
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: (@scaling)d12
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - radiant
+            scaling:
+              mode: ''
+              number: 1
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: str
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: true
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: friendlySuccess
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  advancement: {}
+  description:
+    value: >-
+      <p>You have become an ideological avatar, the distilled essence of all you
+      believe in. You have held your tongue for long enough.</p><p>As an Action
+      during your Turn, you can release your Liberty in a singular powerful
+      burst; all of your Liberty is expended. All hostile Creatures within 20
+      feet must make a Dexterity Saving Throw against your Martial DC or take
+      1d12 Force Damage for every Liberty expended in this way. You then gain
+      the following benefits for the next 10
+      minutes.</p><ul><li><p><strong>Champion of the Worthy.</strong> Once on
+      each of your Turns, if you have not used it that Turn you may use your
+      Guide the Masses Feature without expending an Action. If you do so, you
+      generate Liberty as if you had done so as an Action, and you may not do
+      use that Feature as an Action that Turn.</p></li><li><p><strong>Shield of
+      Belief.</strong> At the beginning of each of your Turns, you gain
+      Temporary Hit Points equal to your Guard
+      Level.</p></li><li><p><strong>Time to Act.</strong> Whenever you gain or
+      are refunded Liberty, you gain one more.</p></li></ul><p>Once you have
+      used this Feature, you cannot do so again until you complete a Long
+      Rest.</p><hr><p><strong>Semi-Automated: </strong>Use the Activity on this
+      item, and set the scaling value to your current Liberty. The Champion of
+      the Worthy Effect and Time To Act effects cannot be automated; the Shield
+      of Belief effect is.</p>
+    chat: ''
+  identifier: revolution
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: true
+    level: 17
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Temp HP Regeneration
+    img: modules/ak5e/icons/skill_icon_skchr_necras_3.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.BrSXImpvU4tJJa8P
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.midi-qol.OverTime
+          type: add
+          value: >-
+            turn=start, label=Temp HP Regeneration, rollType=damage,
+            damageRoll=@details.level, damageType=temphp
+          phase: initial
+          _id: sjmjnui8CxjsD4rV
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: Rq8bfl1hx3B29cBX
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791813784152
+      modifiedTime: 1791813830791
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!BrSXImpvU4tJJa8P.Rq8bfl1hx3B29cBX'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.P2BJPlz13Wu5lZQK
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791803057927
+  modifiedTime: 1791813955812
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: BrSXImpvU4tJJa8P
+sort: 500000
+_key: '!items!BrSXImpvU4tJJa8P'

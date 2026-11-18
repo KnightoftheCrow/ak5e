@@ -1,0 +1,683 @@
+folder: u2z4V5QELoqU2yub
+name: Heart of the Team
+type: feat
+_id: Jwm6MWileKteO0SP
+img: modules/ak5e/icons/Skill-Honeyberry1.webp
+system:
+  activities:
+    QKM1lshJxsDa71EQ:
+      type: enchant
+      name: Upgrade Shelter
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: csCcWhjh4mf2GpbU
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - 33dxmYxtNR4EME8b
+              - wYaAsIPZ9x1zFtRN
+            effect: []
+            item: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      enchant:
+        self: false
+      restrictions:
+        allowMagical: true
+        categories: []
+        properties: []
+        type: feat
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: QKM1lshJxsDa71EQ
+    33dxmYxtNR4EME8b:
+      type: heal
+      name: Tide Turner Shelter (1 Resilience)
+      _id: 33dxmYxtNR4EME8b
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: resilience
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: y17Q8kghCwFCanB2
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '10'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      healing:
+        types:
+          - temphp
+        custom:
+          enabled: false
+        modifiers: []
+        scaling:
+          number: 1
+        number: 2
+        denomination: 6
+        bonus: '@abilities.con.mod'
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+    wYaAsIPZ9x1zFtRN:
+      type: heal
+      name: Tide Turner Shelter (2 Resilience)
+      img: ''
+      sort: 200000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '2'
+            target: resilience
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: y17Q8kghCwFCanB2
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '10'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      healing:
+        types:
+          - temphp
+        custom:
+          enabled: false
+        modifiers: []
+        scaling:
+          number: 1
+        number: 2
+        denomination: 6
+        bonus: '@abilities.con.mod'
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: wYaAsIPZ9x1zFtRN
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>No matter the situation, your allies know they can turn to you to keep
+      their heads above the water. You gain the following
+      benefits:</p><ul><li><p><strong>Automatic Defence.</strong> If you are not
+      Incapacitated, and are wielding a shield with the Bastion Property, allied
+      Creatures within 10 feet of you have Advantage on Strength and Dexterity
+      Saving Throws against effects you can see.</p></li><li><p><strong>Tide
+      Turner.</strong> When you use your Shelter Action, you can expend 1
+      Resilience to choose 1 allied Creature within the radius of that Shelter
+      Action (no Action required); that Creature gains Temporary Hit Points
+      equal to 2d6 + your Constitution Modifier, until the beginning of your
+      next Turn. Granting these Temporary Hit Points is considered to be
+      restoring Hit Points for the purposes of gaining
+      Mettle.</p></li></ul><hr><p><strong>Semi-Automated: </strong>Automatic
+      Defence is automated.<strong> </strong>Use the Enchantment Activity on
+      this Feature to upgrade your Shelter Feature with new Activities; however,
+      the Temporary Hit Points are not removed at the beginning of your next
+      Turn.</p>
+    chat: ''
+  identifier: heart-of-the-team
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Automatic Defence
+    img: modules/ak5e/icons/Skill-Honeyberry1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.Jwm6MWileKteO0SP
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.aura.save.advantage
+          type: ac5e
+          value: radius=10; allies; effectActor.hasShield && canSee
+          phase: initial
+          _id: EfqbTyh7F59QCsOH
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: hcvEA7J4eQRUAyzN
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.Jwm6MWileKteO0SP
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792422077992
+      modifiedTime: 1792422293892
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!Jwm6MWileKteO0SP.hcvEA7J4eQRUAyzN'
+  - name: Tide Turner Shelter
+    img: modules/ak5e/icons/skill_icon_skcom_def_up%5B3%5D.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.Jwm6MWileKteO0SP
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.disadvantage
+          type: ac5e
+          value: ''
+          phase: initial
+          _id: Pgp0PGdiUU4iO5X6
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+      showRadius: false
+      applyToSelf: false
+      bestFormula: ''
+      canStack: false
+      collisionType: ''
+      color: null
+      combatOnly: false
+      disableOnHidden: true
+      distanceFormula: 0@scale.shelter.shelter-radius
+      disposition: 1
+      evaluatePreApply: false
+      overrideName: ''
+      script: ''
+      stashedChanges: []
+      stashedStatuses: []
+    transfer: false
+    _id: y17Q8kghCwFCanB2
+    type: auraeffects.aura
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: true
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+      auraeffects:
+        originalType: base
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792422482374
+      modifiedTime: 1792424399566
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!Jwm6MWileKteO0SP.y17Q8kghCwFCanB2'
+  - type: enchantment
+    name: Upgrade Shelter
+    img: modules/ak5e/icons/Skill-Honeyberry1.webp
+    disabled: true
+    transfer: false
+    _id: csCcWhjh4mf2GpbU
+    system:
+      changes: []
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: true
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792422656470
+      modifiedTime: 1792422656470
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!Jwm6MWileKteO0SP.csCcWhjh4mf2GpbU'
+sort: 250000
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity:
+        - 33dxmYxtNR4EME8b
+        - wYaAsIPZ9x1zFtRN
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791203553243
+  modifiedTime: 1792422733374
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!Jwm6MWileKteO0SP'

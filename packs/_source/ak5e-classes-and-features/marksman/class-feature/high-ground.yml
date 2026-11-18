@@ -7,14 +7,14 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>You are at your best when raining hate onto foes beneath you. You have
       Advantage on Attack Rolls against Creatures 10 or more feet below
-      you.</p><p><strong>Automated.</strong></p>
+      you.</p><hr><p><strong>Automated.</strong></p>
     chat: ''
-  identifier: feature
+  identifier: high-ground
   source:
     revision: 1
     rules: '2024'
@@ -29,28 +29,39 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
+    subtype: talent
 effects:
   - name: High Ground
     img: modules/ak5e/icons/Skill-Misery1.png
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.3OHFmOmZ8AC3OwYy
+    origin: null
     _id: fmDr6GtgXRUEKMno
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.attack.advantage
-        mode: 5
-        value: (rollingActor.tokenElevation-opponentActor.tokenElevation) >= 10
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.advantage
+          value: (rollingActor.tokenElevation-opponentActor.tokenElevation) >= 10
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: fz3zy2F3F7q4IhJD
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.3OHFmOmZ8AC3OwYy
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -58,8 +69,7 @@ effects:
     sort: 0
     flags:
       dnd5e:
-        riders:
-          statuses: []
+        riders: {}
       dae:
         disableCondition: ''
         stackable: noneName
@@ -71,33 +81,37 @@ effects:
       core:
         overlay: false
     _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1794782111365
+      modifiedTime: 1794782111365
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
-      systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: GiT7LQTiCJxjm7mo
-      modifiedTime: 1767875930844
-    _key: '!items.effects!3OHFmOmZ8AC3OwYy.fmDr6GtgXRUEKMno'
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!hm04ChcwylC4cN9n.fmDr6GtgXRUEKMno'
 folder: r2sKTPYSmSAEfVCU
 flags:
   dnd5e:
     riders:
       activity: []
 _stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794782111365
+  modifiedTime: 1794782117819
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
-  systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1767615338937
-  modifiedTime: 1767875924258
-  lastModifiedBy: GiT7LQTiCJxjm7mo
 ownership:
   default: 0
-  GiT7LQTiCJxjm7mo: 3
-_id: 3OHFmOmZ8AC3OwYy
-sort: 137500
-_key: '!items!3OHFmOmZ8AC3OwYy'
+  5XlrCO2NlPtd4MFQ: 3
+_id: hm04ChcwylC4cN9n
+sort: -200000
+_key: '!items!hm04ChcwylC4cN9n'

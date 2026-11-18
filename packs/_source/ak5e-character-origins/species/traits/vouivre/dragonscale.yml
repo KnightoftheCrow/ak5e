@@ -39,28 +39,35 @@ system:
 effects:
   - name: Damage Reduction (3, Physical)
     img: icons/commodities/leather/scales-blue.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.YMsryyGruXlSEvTI
+    origin: null
     _id: fdS5fNtEHLySz9hh
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dm.midi.non-magical-physical
-        mode: 2
-        value: '-3'
-        priority: 20
-      - key: system.traits.dm.amount.thunder
-        mode: 2
-        value: '-3'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dm.midi.non-magical-physical
+          value: -3
+          priority: 20
+          type: add
+          phase: initial
+          _id: UbvoNYznqCl1l3gk
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.thunder
+          value: -3
+          priority: 20
+          type: add
+          phase: initial
+          _id: vKJm3ARKcS1OL1m0
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.YMsryyGruXlSEvTI
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -84,10 +91,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733082507
+      modifiedTime: 1791733082507
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!YMsryyGruXlSEvTI.fdS5fNtEHLySz9hh'
 sort: 0
 ownership:
@@ -101,10 +113,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680538261
-  modifiedTime: 1768680538261
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733082507
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!YMsryyGruXlSEvTI'

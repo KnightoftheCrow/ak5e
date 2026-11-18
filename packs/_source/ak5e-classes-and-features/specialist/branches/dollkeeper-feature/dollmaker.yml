@@ -1,0 +1,589 @@
+folder: Vd5i80HITKyteFYa
+name: Dollmaker
+type: feat
+_id: 9bzTmqRBaNyKJfsS
+img: modules/ak5e/icons/skill_icon_skchr_iana_1.png
+system:
+  activities:
+    v6yqpIGL0xCxGIwr:
+      type: summon
+      name: Create Doll
+      _id: v6yqpIGL0xCxGIwr
+      img: ''
+      sort: 0
+      activation:
+        type: longRest
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '10'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: space
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: '@attributes.hp.value'
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes:
+        - sm
+        - med
+        - lg
+      creatureTypes: []
+      match:
+        attacks: false
+        disposition: true
+        proficiency: true
+        saves: false
+        ability: ''
+      profiles:
+        - count: '1'
+          name: ''
+          _id: Cifjkzzg2epGICJU
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.pip2qy2TTEaIrncJ
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        prompt: true
+        mode: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      friendlySummon: false
+      tempHP: ''
+    Y6mcZb3E30PX33jk:
+      type: utility
+      name: Command Doll
+      _id: Y6mcZb3E30PX33jk
+      img: ''
+      sort: 100000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    LtcYOj8CU3LDhuTL:
+      type: utility
+      name: Command Doll- Swap Places (1 Prowess)
+      img: ''
+      sort: 200000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: prowess
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags:
+        cat:
+          genericConfig:
+            chris-premades:
+              teleport:
+                targets: swap
+                range: '100'
+                rangeFromRoll: false
+                requireSight: true
+                companions: 0
+                companionRange: 5
+                companionMaxSize: false
+                excludeUser: false
+                animation:
+                  source: chris-premades
+                  identifier: shapeChange
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: teleport
+                rules: all
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '100'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          special: ''
+          count: '1'
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 5
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: LtcYOj8CU3LDhuTL
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You have created a Doll, a construct that is friendly to you and your
+      companions. Visually, the Doll appears to be you but cannot speak; a
+      Creature must succeed on a DC18 Perception Check to see that it is fake,
+      unless there is an obvious clue that something is amiss. In addition, you
+      can see and hear whatever your Doll can see and hear. The Doll is capable
+      of wearing clothes, armour, and wielding weapons; it is Proficient with
+      all Weapons and Armour that you are.</p><ul><li><p><strong>The Doll in
+      Combat.</strong> In Combat, the Doll acts during your Turn, and can use
+      Reactions on its own. However, it will not move or take Actions unless you
+      use your Bonus Action to command it to move; as part of that Bonus Action,
+      you can also command it to take an Action in its Stat Block. To command
+      the Doll in this way, you must be within 100 feet of
+      it.</p></li><li><p><strong>Restoring or Replacing the Doll.</strong> As a
+      Construct, the Doll cannot regain Hit Points in most ways (See Page
+      9).</p><p>If the Doll is reduced to 0 Hit Points, it is destroyed.
+      Replacing a Doll requires a Ritual performed as a Long Rest Activity if
+      you retain the Doll’s components. If they are not retrieved, replacing the
+      components requires 500 LMD. If you already have a Doll when you create
+      one, the old Doll immediately perishes.</p></li><li><p><strong>Growing
+      Together</strong>. Whenever you gain the Ability Score Improvement Feature
+      from the Specialist Class, the Doll permanently increases one Ability
+      Score of your Choice by 1. Newly created Dolls retain the benefit of this
+      improvement.</p></li></ul><hr><p><strong>Semi-Automated: </strong>You can
+      create the Doll with this Feature. You must manually equip it with
+      equipment, and increase its stats for Growing Together manually.</p>
+    chat: ''
+  identifier: dollmaker
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Murderous Marionette Advantage
+    img: modules/ak5e/icons/skill_icon_skchr_iana_1.png
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.9bzTmqRBaNyKJfsS
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.aura.attack.advantage
+          type: ac5e
+          value: >-
+            radius=10; name=Murderous Marionette; allies; singleAura;
+            checkNearby(opponentActor.tokenId, hasItem(tokenId,
+            'murderous-marionette'), 'different', 10) &&
+            rollingActor.creatureType.includes('construct') && actionType.mwak
+          phase: initial
+          _id: 1TyEpEVlWfNfg3jk
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: KjDxNHSaPa06LtRy
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.9bzTmqRBaNyKJfsS
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793631371689
+      modifiedTime: 1793631551752
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!9bzTmqRBaNyKJfsS.KjDxNHSaPa06LtRy'
+sort: 0
+ownership:
+  default: 0
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791203553269
+  modifiedTime: 1793634517861
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!9bzTmqRBaNyKJfsS'

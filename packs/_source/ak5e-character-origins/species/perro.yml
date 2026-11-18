@@ -5,14 +5,18 @@ _id: 42H68stlUTWh88eA
 img: icons/creatures/mammals/dog-husky-white-blue.webp
 system:
   advancement:
-    - type: Size
+    VcnuUKSDybGXViSR:
+      type: Size
       _id: VcnuUKSDybGXViSR
       configuration:
         sizes:
           - med
       level: 0
       value: {}
-    - type: AbilityScoreImprovement
+      flags: {}
+      hint: ''
+    lh9ORkbzwQylNlic:
+      type: AbilityScoreImprovement
       _id: lh9ORkbzwQylNlic
       configuration:
         cap: 1
@@ -31,26 +35,37 @@ system:
       value:
         type: asi
       level: 0
-      title: ''
       hint: ''
-    - type: ItemGrant
+      name: ''
+      flags: {}
+    LpqKwyo9mZXFhKha:
+      type: ItemGrant
       _id: LpqKwyo9mZXFhKha
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.1UJZwz8HiZ7Wi2DM
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.1TxciocDhjUUeXjV
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.NcTRZhX7syfyuEX5
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.KJ2DX1j5bcKlY3Hw
-            optional: false
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.k5kImoEjkIYokHn9
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.1UJZwz8HiZ7Wi2DM
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.NcTRZhX7syfyuEX5
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.KJ2DX1j5bcKlY3Hw
+          - optional: false
+            sort: 100000
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.qBhrDPrzuoD5qSSV
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.k5kImoEjkIYokHn9
         optional: false
         spell: null
+        sorting: m
       value: {}
       level: 0
+      flags: {}
+      name: ''
+      hint: ''
   description:
     value: >-
       <p>Perro are caniforms representing a huge spectrum of different canids
@@ -149,10 +164,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1768680315690
-  modifiedTime: 1771157626187
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1794929304595
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!42H68stlUTWh88eA'

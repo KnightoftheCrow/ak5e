@@ -2,14 +2,168 @@ folder: 3tM4rLFY5kbxFxJH
 name: Fire Support Platform
 type: feat
 _id: olJwK0hx9HzII6UF
-img: modules/ak5e/icons/Skill-Horn3.webp
+img: modules/ak5e/icons/Skill-Dusk1.webp
 system:
-  activities: {}
+  activities:
+    E7Sa7AdHiR4LPpv9:
+      type: utility
+      name: Entrench
+      _id: E7Sa7AdHiR4LPpv9
+      img: ''
+      sort: 0
+      activation:
+        type: turnStart
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: round
+        expiry: sourceStart
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: IAGmv6iVjQnyihok
+          uuid: null
+          level:
+            min: null
+            max: 8
+        - _id: tcxKojXgVciErbku
+          uuid: null
+          level:
+            min: 9
+            max: null
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: {}
+  advancement:
+    WKLxNvq96O0SfPpn:
+      name: ''
+      type: Trait
+      _id: WKLxNvq96O0SfPpn
+      configuration:
+        allowReplacements: false
+        choices: []
+        grants:
+          - weapon:spr:grenadelauncher
+          - weapon:spr:rocketlauncher
+        mode: default
+      flags: {}
+      level: 0
+      hint: ''
   description:
     value: >-
       <p>You are an anchor around which the team is based, laying down
@@ -19,15 +173,17 @@ system:
       the beginning of your Turn, you can declare that you will Entrench at your
       current position until the beginning of your next Turn. While you are
       Entrenched, your speed becomes 0 and cannot be increased, but you gain the
-      following benefits:</p></li><li><p><strong>Barrage.</strong> When you take
+      following benefits:</p><ul><li><p><strong>Barrage.</strong> When you take
       the Attack Action, you can ignore the Two-Handed and Brace Qualities for
       Grenade Launchers and Rocket Launchers for the duration of that
       Action.</p></li><li><p><strong>Danger Close.</strong> Whenever you force
       other Creatures to make a Saving Throw, you can choose a number of those
       Creatures equal to your Proficiency Bonus; those Creatures automatically
       pass the Saving Throw, and they take no Damage if they would normally take
-      half Damage on a successful Save.</p></li></ul><p><strong>Not
-      Automated.</strong></p>
+      half Damage on a successful
+      Save.</p></li></ul></li></ul><hr><p><strong>Semi-Automated:
+      </strong>Proficiencies and Entrenching are automated. Barrage and Danger
+      Close are not.</p>
     chat: ''
   identifier: fire-support-platform
   source:
@@ -43,24 +199,153 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
-effects: []
+    subtype: ''
+effects:
+  - name: Entrenched
+    img: modules/ak5e/icons/Skill-Dusk1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.olJwK0hx9HzII6UF
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.movement.all
+          type: custom
+          value: 0
+          phase: initial
+          _id: eVud0sFFuJ4bgXqU
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: IAGmv6iVjQnyihok
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792344987437
+      modifiedTime: 1792345236447
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!olJwK0hx9HzII6UF.IAGmv6iVjQnyihok'
+  - name: Entrenched (Moving Fortress)
+    img: modules/ak5e/icons/Skill-Dusk1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.olJwK0hx9HzII6UF
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.movement.all
+          type: custom
+          value: -20
+          phase: initial
+          _id: eVud0sFFuJ4bgXqU
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792356636315
+      modifiedTime: 1792356648775
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: tcxKojXgVciErbku
+    _key: '!items.effects!olJwK0hx9HzII6UF.tcxKojXgVciErbku'
 sort: 0
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358934901
-  modifiedTime: 1783358934901
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553239
+  modifiedTime: 1792356713672
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!olJwK0hx9HzII6UF'

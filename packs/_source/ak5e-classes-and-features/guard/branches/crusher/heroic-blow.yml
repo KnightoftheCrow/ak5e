@@ -1,0 +1,124 @@
+folder: zd7kgy3RQcqcKJ9x
+name: Heroic Blow
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_wildmane_1.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>When you make a Melee Attack during your Turn, you may expend a use of
+      your Foecrusher Feature to make that Attack a Heroic Blow. If you do so,
+      when you roll Damage for that Attack, you may reroll any amount of the
+      dice, and use either result. Additionally, that Attack gains the Crush (X)
+      Property, where X is equal to twice your Proficiency Bonus. If it already
+      has the Crush (X) Property, add the values of X together and use that
+      value for X.</p><hr><p><strong>Semi-Automated: </strong>When you roll
+      Damage for a Melee Attack, you will have an opt-in for Heroic Blow which
+      consumes 1 Foecrusher to give you Advantage on that Damage Roll. The Crush
+      (X) Portion cannot be automated.</p>
+    chat: ''
+  identifier: heroic-blow
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 13
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Heroic Blow
+    img: modules/ak5e/icons/skill_icon_skchr_wildmane_1.png
+    origin: null
+    type: base
+    _id: RW8AEigX08a80Wdy
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: >-
+            modifier=adv; usesCount=Item.Foecrusher, 1; name=Heroic Blow;
+            optinId=heroic-blow; description=Advantage on Damage Rolls; optin;
+            actionType.mwak
+          phase: initial
+          priority: null
+          _id: r5e60KTNYW7fsNvs
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.LcLQnoAvLotmVLuG
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791640070675
+      modifiedTime: 1791733085979
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!LcLQnoAvLotmVLuG.RW8AEigX08a80Wdy'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.qFwlp1OGrgvys0Aq
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791633463135
+  modifiedTime: 1791733085979
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: LcLQnoAvLotmVLuG
+sort: 600000
+_key: '!items!LcLQnoAvLotmVLuG'

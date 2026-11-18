@@ -1,0 +1,894 @@
+folder: GSNJQSoQXWEu7p8v
+name: Reaper’s Ruin
+type: feat
+img: modules/ak5e/icons/Skill-Highmore1.webp
+system:
+  activities:
+    Ybcrh076cIpnNkS0:
+      type: utility
+      name: Gain Ruin
+      _id: Ybcrh076cIpnNkS0
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    COGX3DzfO9YZ7B1h:
+      type: utility
+      name: Lingering Violence (1 Aggression)
+      _id: COGX3DzfO9YZ7B1h
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: press-the-attack
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    xwCmo2sTCcjO9aJp:
+      type: damage
+      name: Gain Ruin (Deal Psychic Damage)
+      img: ''
+      sort: 50000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 10
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 6
+            bonus: ''
+            modifiers: []
+            types:
+              - psychic
+            scaling:
+              number: 1
+      useConditionText: effects.some(e => e.name === "Reaper's Mark)
+      useConditionReason: This Creature does not have your Reaper's Mark
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: xwCmo2sTCcjO9aJp
+    9CcOMc2QlfRrPlrx:
+      type: damage
+      name: Gain Ruin (Deal Psychic Damage + Vulnerable/Resistance Ignore)
+      img: ''
+      sort: 75000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 17
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: (1d6)*2
+            number: 1
+            denomination: 6
+            bonus: ''
+            modifiers: []
+            types:
+              - psychic
+            scaling:
+              number: 1
+      useConditionText: effects.some(e => e.name === "Reaper's Mark)
+      useConditionReason: This Creature does not have your Reaper's Mark
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits:
+          - idr
+          - idv
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: 9CcOMc2QlfRrPlrx
+    QpfvmZn3LlHxAhNd:
+      type: damage
+      name: Gain Ruin (Deal Psychic Damage- AoE)
+      img: ''
+      sort: 87500
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: emanationNoTemplate
+          size: '10'
+          count: ''
+        affects:
+          choice: false
+          count: '1'
+          type: enemy
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 17
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 6
+            bonus: ''
+            modifiers: []
+            types:
+              - psychic
+            scaling:
+              number: 1
+      useConditionText: effects.some(e => e.name === "Reaper's Mark)
+      useConditionReason: This Creature does not have your Reaper's Mark
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: QpfvmZn3LlHxAhNd
+  uses:
+    spent: 10
+    recovery:
+      - period: sr
+        type: loseAll
+    max: '10'
+  advancement: {}
+  description:
+    value: >-
+      <p>You are empowered by grinding conflict; as the battle continues, and
+      your body count grows, your furor intensifies, represented by your
+      Ruin.</p><h3>Ruin</h3><p>You gain 1 Ruin whenever you score a Critical
+      Hit, or reduce a Creature to 0 Hit Points. You lose 1 Ruin at the end of
+      your Turn if you did not deal Damage to a hostile Creature. You lose all
+      Ruin if you are reduced to 0 Hit Points.</p><p>You gain a number of
+      benefits based on your current Ruin, as shown in the “Effects” column of
+      the Reaper Table; these effects are cumulative, and so you gain all
+      previous effects in addition to the current one.</p><p>However, as your
+      Ruin climbs, it becomes more difficult to heal you, not least of all
+      because of the difficulty of identifying who’s blood is who’s. When
+      another Creature attempts to restore Hit Points to you, the amount of Hit
+      Points they restore is reduced by the value shown in the “Healing
+      Recieved” column of the Reaper Table, corresponding to your current level
+      of Ruin.</p><p><strong>Press the Attack: Lingering Violence (1
+      Aggression)</strong> You can use this Press the Attack Option when your
+      Ruin would decay by 1 as a result of you not damaging a hostile Creature
+      (no Action required); it does not decay.</p><h3>Reaper
+      Table</h3><table><thead><tr><td><p>Ruin</p></td><td><p>Effect</p></td><td><p>Reap
+      Critical Range (Level 4+)</p></td><td><p>Curtainfall Critical Range (Level
+      4+)</p></td><td><p>Healing
+      Recieved</p></td></tr></thead><tbody><tr><td><p>0</p></td><td><p>-</p></td><td><p>+10</p></td><td><p>+0</p></td><td><p>0</p></td></tr><tr><td><p>1</p></td><td><p>-</p></td><td><p>+9</p></td><td><p>+1</p></td><td><p>-2</p></td></tr><tr><td><p>2</p></td><td><p>When
+      you roll a 1 on a result for a Damage die, you may reroll that result but
+      must use the new
+      result.</p></td><td><p>+8</p></td><td><p>+2</p></td><td><p>-4</p></td></tr><tr><td><p>3</p></td><td><p>-</p></td><td><p>+7</p></td><td><p>+3</p></td><td><p>-6</p></td></tr><tr><td><p>4</p></td><td><p>Your
+      movement does not provoke Opportunity Attacks from non-Elite or Leader
+      Creatures.</p></td><td><p>+6</p></td><td><p>+4</p></td><td><p>-8</p></td></tr><tr><td><p>5</p></td><td><p>-</p></td><td><p>+5</p></td><td><p>+5</p></td><td><p>-10</p></td></tr><tr><td><p>6</p></td><td><p>You
+      can move through the space of hostile Creatures, though you may not finish
+      a movement in the same space as another; they are considered Difficult
+      Terrain.</p></td><td><p>+4</p></td><td><p>+6</p></td><td><p>-12</p></td></tr><tr><td><p>7</p></td><td><p>-</p></td><td><p>+3</p></td><td><p>+7</p></td><td><p>-14</p></td></tr><tr><td><p>8</p></td><td><p>When
+      you roll to determine Damage, you may make that roll an additional time
+      and choose either
+      total.</p></td><td><p>+2</p></td><td><p>+8</p></td><td><p>-16</p></td></tr><tr><td><p>9</p></td><td><p>-</p></td><td><p>+1</p></td><td><p>+9</p></td><td><p>-18</p></td></tr><tr><td><p>10</p></td><td><p>If
+      one of your Attacks, or your Reap Feature reduces a Creature to less Hit
+      Points than a value 5 + your Guard Level, it dies.</p></td><td><p>+
+      0</p></td><td><p>+10</p></td><td><p>-20</p></td></tr></tbody></table><hr><p><strong>Semi-Automated:
+      </strong>Use the Gain Ruin Activity to gain your Ruin; it is tied to the
+      uses of this item. The changes to critical range, healing recieved, and
+      damage rerolling effects are automated based on these uses; other effects
+      cannot be, including the execute effect at 10 Ruin.<br></p>
+    chat: ''
+  identifier: reapers-ruin
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Reaper’s Ruin
+    img: modules/ak5e/icons/Skill-Highmore1.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.TInjINbyu6z61gsx
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: >-
+            modifier=rr1; addTo=all; itemLimited; hasAttack && getItem(tokenId,
+            ['reapers-ruin'], {getProperty: 'system.uses.value'}) >= 2
+          phase: initial
+          _id: oh5VyngDN6K0sEmn
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: >-
+            modifier=adv; hasAttack && getItem(tokenId, ['reapers-ruin'],
+            {getProperty: 'system.uses.value'}) >= 8
+          phase: initial
+          _id: NqHLXfebnJJXxYDr
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          type: ac5e
+          value: >-
+            threshold=10-(getItem(tokenId, ['reapers-ruin'], {getProperty:
+            'system.uses.value'});); itemLimited; activityName === "Reap" &&
+            effectActor.details.level >= 4 || activityName === "Reap Crit Check"
+            && effectActor.details.level >= 4
+          phase: initial
+          _id: Ebnbrj3jcsthe3AT
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.attack.criticalThreshold
+          type: ac5e
+          value: >-
+            threshold=+(getItem(tokenId, ['reapers-ruin'], {getProperty:
+            'system.uses.value'});); itemLimited; activityName === "Curtainfall"
+            && effectActor.details.level >= 4
+          phase: initial
+          _id: red1g5kjlyJhp2K9
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=-(2*(getItem(opponentActor.uuid, ['reapers-ruin'],
+            {getProperty: 'system.uses.value'}))); addTo=all,types(healing);
+            isHeal
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: XYienkJyeZRsgzTq
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: WU3Cs55Yd3N8amI0
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.TInjINbyu6z61gsx
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792229866793
+      modifiedTime: 1792236399010
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!TInjINbyu6z61gsx.WU3Cs55Yd3N8amI0'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.2hTu5r48DqBYw9Ma
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792228073529
+  modifiedTime: 1792237725643
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: TInjINbyu6z61gsx
+sort: -100000
+_key: '!items!TInjINbyu6z61gsx'

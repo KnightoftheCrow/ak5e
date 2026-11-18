@@ -2,9 +2,451 @@ folder: u2z4V5QELoqU2yub
 name: Stone Wall
 type: feat
 _id: y8Rl93KSHY4y0SAw
-img: modules/ak5e/icons/Skill-Mechanist1.webp
+img: modules/ak5e/icons/Skill-Cement2.webp
 system:
-  activities: {}
+  activities:
+    OtdIVOKwXSKLoJlq:
+      type: save
+      name: Shield Bash
+      _id: OtdIVOKwXSKLoJlq
+      img: ''
+      sort: 0
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: sSmPIwo4w8bRzXBB
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+        - _id: Eo7Rwc8VGu6a6NqJ
+          uuid: null
+          level: {}
+          onSave: false
+      flags: {}
+      range:
+        units: touch
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: 6
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: con
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: reaction == "isHit" && ["mwak","msak"].includes(activity.actionType)
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    zFO85qHcLpE3yqUm:
+      type: save
+      name: Shield Bash
+      img: ''
+      sort: 100000
+      activation:
+        type: reaction
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: sSmPIwo4w8bRzXBB
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+        - _id: Eo7Rwc8VGu6a6NqJ
+          uuid: null
+          level: {}
+          onSave: false
+      flags: {}
+      range:
+        units: touch
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 7
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: none
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 8
+            bonus: '@abilities.con.mod'
+            modifiers: []
+            types:
+              - bludgeoning
+            scaling:
+              number: 1
+      save:
+        ability:
+          - str
+        dc:
+          calculation: con
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: reaction == "isHit" && ["mwak","msak"].includes(activity.actionType)
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: zFO85qHcLpE3yqUm
+    tpnVWtSwxElQjV2E:
+      type: utility
+      name: Apply Punishment
+      _id: tpnVWtSwxElQjV2E
+      img: ''
+      sort: 200000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: Eo7Rwc8VGu6a6NqJ
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
   uses:
     spent: 0
     recovery: []
@@ -12,13 +454,23 @@ system:
   advancement: {}
   description:
     value: >-
-      <p>When a Creature hits you with a Melee Attack while you are wielding a
-      shield, you can attempt to knock them off Balance as a Reaction. That
-      Creature must succeed on a Strength Saving Throw against your Protector DC
-      or take 1d8 + your Constitution Modifier Bludgeoning Damage, and be
-      knocked Off Balance until the end of your next Turn.</p><p>Attacks against
-      Creatures that have been knocked Off Balance are made at
-      Advantage.</p><p><strong>Not Automated.</strong></p>
+      <p>You don’t have to defeat your foes, per se. You just have to outlast
+      them. You gain the following benefits:</p><ul><li><p><strong>Improved
+      Shelter.</strong> The Radius of your Shelter Action is increased to 10
+      feet from 5 feet.</p></li><li><p><strong>Punishment.</strong> When you hit
+      a Creature with an Attack, or a Creature fails a Saving Throw against you,
+      that Creature has Disadvantage on the next Attack Roll it makes before the
+      end of your next Turn.</p></li><li><p><strong>Shield Bash.</strong> When a
+      Creature hits you with a Melee Attack while you are wielding a shield with
+      the Bastion Property, you can attempt to knock them off Balance as a
+      Reaction. That Creature must succeed on a Strength Saving Throw against
+      your Protector DC or be knocked Off Balance until the end of your next
+      Turn. Attacks against Creatures that have been knocked Off Balance are
+      made at Advantage.</p><p>From 7th Level, Creatures that fail this Saving
+      Throw also take Bludgeoning Damage equal to 1d8 + your Constitution
+      Modifier.</p></li></ul><hr><p><strong>Semi-Automated: </strong>Use the
+      activites on this Feature when appropriate. Shield Bash automatically
+      applies Punishment on failed Save.</p>
     chat: ''
   identifier: stone-wall
   source:
@@ -29,29 +481,219 @@ system:
   prerequisites:
     items: []
     repeatable: false
-    level: 9
+    level: 1
   properties: []
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
-effects: []
-sort: 0
+    subtype: ''
+effects:
+  - name: Upgrade Shelter Radius
+    img: modules/ak5e/icons/Skill-Cement2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.y8Rl93KSHY4y0SAw
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.scale.shelter.shelter-radius
+          type: override
+          value: 10
+          phase: initial
+          _id: awFIOFg6rVpzCA7M
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: cYifi0rsOPbjYbV4
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.y8Rl93KSHY4y0SAw
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792421338978
+      modifiedTime: 1792421473279
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!y8Rl93KSHY4y0SAw.cYifi0rsOPbjYbV4'
+  - name: Off Balance
+    img: modules/ak5e/icons/Skill-Cement2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.y8Rl93KSHY4y0SAw
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.advantage
+          type: ac5e
+          value: ''
+          phase: initial
+          _id: MXyHI1o4NSymNDyW
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: sSmPIwo4w8bRzXBB
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceEnd
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792421530823
+      modifiedTime: 1792421554668
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!y8Rl93KSHY4y0SAw.sSmPIwo4w8bRzXBB'
+  - name: Punishment
+    img: modules/ak5e/icons/Skill-Cement2.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.y8Rl93KSHY4y0SAw
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.disadvantage
+          type: ac5e
+          value: once
+          phase: initial
+          _id: 8sMzDaQU3b0pN7ib
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: Eo7Rwc8VGu6a6NqJ
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceEnd
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792421621478
+      modifiedTime: 1792421653559
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!y8Rl93KSHY4y0SAw.Eo7Rwc8VGu6a6NqJ'
+sort: 50000
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358934901
-  modifiedTime: 1783358934901
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553243
+  modifiedTime: 1792421774590
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!y8Rl93KSHY4y0SAw'

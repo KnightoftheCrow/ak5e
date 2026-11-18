@@ -44,24 +44,27 @@ system:
 effects:
   - name: HP per level bonus
     img: icons/environment/people/group.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.CTvYDCiWg9y8lqJq
+    origin: null
     _id: GBRGsJUHV3SFTb5P
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.hp.bonuses.level
-        mode: 2
-        value: '1'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.hp.bonuses.level
+          value: 1
+          priority: 20
+          type: add
+          phase: initial
+          _id: Sg242yx6eWGbqCTk
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.CTvYDCiWg9y8lqJq
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -85,10 +88,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733081363
+      modifiedTime: 1791733081363
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!CTvYDCiWg9y8lqJq.GBRGsJUHV3SFTb5P'
 sort: 2000000
 ownership:
@@ -102,11 +110,11 @@ _stats:
   compendiumSource: null
   duplicateSource: Item.A6a2vzFQTpyGhuo8
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881347037
-  modifiedTime: 1769881347037
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733081362
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: CTvYDCiWg9y8lqJq
 _key: '!items!CTvYDCiWg9y8lqJq'

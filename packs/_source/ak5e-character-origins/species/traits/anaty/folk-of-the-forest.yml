@@ -1,0 +1,119 @@
+folder: kqvuv2G7bNqGA5cb
+name: Folk of the Forest
+type: feat
+_id: sIjxwDg0OjcvEwyn
+img: icons/environment/wilderness/tree-spruce.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <h3>Folk of the Forest</h3><p>Few expect to see an Anaty when looking up.
+      For the Anaty adapted to dwell aloft of others, this can be their greatest
+      weapon, or their greatest tool for survival. You gain the following
+      benefits:</p><ul><li><p><strong>Additional Movement Speeds.</strong> You
+      gain a Climbing Speed equal to your Walking
+      Speed.</p></li><li><p><strong>Four Walls, Six Paths.</strong> When using
+      your Climbing Speed, you may move any direction across a vertical surface
+      in any orientation, and may even climb upside down along horizontal
+      surfaces, though you may not take any Actions that require both hands
+      while traversing in this
+      manner.</p></li></ul><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: folk-of-the-forest
+  source:
+    revision: 1
+    rules: '2014'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: race
+    subtype: ''
+effects:
+  - name: Climbing Speed = Walking Speed
+    img: icons/environment/wilderness/tree-spruce.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.sIjxwDg0OjcvEwyn
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: system.attributes.movement.speeds.climb
+          type: add
+          value: '@attributes.movement.speeds.walk'
+          phase: initial
+          _id: O3H9uUD0AzXYNB6n
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: hDACFuWjGdHMXEMF
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-character-origins.Item.sIjxwDg0OjcvEwyn
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794921544484
+      modifiedTime: 1794921896049
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!sIjxwDg0OjcvEwyn.hDACFuWjGdHMXEMF'
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794921493267
+  modifiedTime: 1794921596457
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!sIjxwDg0OjcvEwyn'

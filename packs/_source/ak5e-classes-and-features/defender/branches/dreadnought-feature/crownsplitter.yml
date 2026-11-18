@@ -17,7 +17,8 @@ system:
       Active Operator Skill, your Melee Attacks deal additional Damage equal to
       your Strength Modifier. If the target of that Melee Attack is an Elite or
       Leader Creature, this additional Damage is increased to twice your
-      Strength Modifier.</p><p><strong>Not Automated.</strong></p>
+      Strength Modifier.</p><hr><p><strong>Semi-Automated: </strong>Options for
+      adding the Damage from Crownslayer are AC5e Opt-In Options.</p>
     chat: ''
   identifier: crownsplitter
   source:
@@ -34,24 +35,101 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
-effects: []
-sort: 0
+    subtype: ''
+effects:
+  - name: +STR Mod to Melee Damage
+    img: modules/ak5e/icons/Skill-Flamebringer2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.oKeXhQ8nC3Ye1PGD
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=rollingActor.abilities.str.mod; name=+STR Damage from
+            Crownslayer (Active Skill); optinId=str-mod-to-melee-damage-0;
+            description=Additional Damage from Crownslayer for having an Active
+            Operator Skill; addTo=base; optin; actionType.mwak ||
+            actionType.msak
+          phase: initial
+          _id: GkAzBPNNVTjxgTXp
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=rollingActor.abilities.str.mod; name=+STR Damage from
+            Crownslayer (Elite/Leader); optinId=str-mod-to-melee-damage-1;
+            description=Additional Damage from Crownslayer for having an Active
+            Operator Skill and the target being an Elite/Leader; addTo=base;
+            optin; actionType.mwak && optinSelected['str-mod-to-melee-damage-0']
+            || actionType.msak && optinSelected['str-mod-to-melee-damage-0']
+          phase: initial
+          conditions: '{}'
+          replacement: ''
+          priority: null
+          _id: iypEkE2BRs1XIUz8
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: 2Db7O0PxMxF4QVEU
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.oKeXhQ8nC3Ye1PGD
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792343861892
+      modifiedTime: 1792344109319
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!oKeXhQ8nC3Ye1PGD.2Db7O0PxMxF4QVEU'
+sort: 50000
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358934901
-  modifiedTime: 1783358934901
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553238
+  modifiedTime: 1792344152333
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!oKeXhQ8nC3Ye1PGD'

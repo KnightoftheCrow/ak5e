@@ -51,60 +51,99 @@ system:
 effects:
   - name: Diplomacy Advantage
     img: icons/skills/social/diplomacy-unity-alliance.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.Rr617n0OudHqReqn
+    origin: null
     _id: P87AajN6MZsgrH45
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.diplo.skill.per
-        mode: 0
-        value: reroll-kh
-        priority: 20
-      - key: flags.midi-qol.optional.diplo.skill.itm
-        mode: 0
-        value: reroll-kh
-        priority: 20
-      - key: flags.midi-qol.optional.diplo.count
-        mode: 0
-        value: every
-        priority: 20
-      - key: flags.midi-qol.optional.diplo.label
-        mode: 0
-        value: Wide, Vast Land- Advantage on Diplomacy between other parties
-        priority: 20
-      - key: flags.midi-qol.optional.diploplus.skill.per
-        mode: 0
-        value: reroll-kh
-        priority: 20
-      - key: flags.midi-qol.optional.diploplus.skill.itm
-        mode: 0
-        value: reroll-kh
-        priority: 20
-      - key: flags.midi-qol.optional.diploplus.count
-        mode: 0
-        value: ItemUses.identifier.wide-vast-land
-        priority: 20
-      - key: flags.midi-qol.optional.diploplus.label
-        mode: 0
-        value: Wide, Vast Land- +1d6 Bonus
-        priority: 20
-      - key: flags.midi-qol.optional.diploplus.skill.per
-        mode: 0
-        value: +1d6
-        priority: 20
-      - key: flags.midi-qol.optional.diploplus.skill.itm
-        mode: 2
-        value: +1d6
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.diplo.skill.per
+          value: reroll-kh
+          priority: 20
+          type: custom
+          phase: initial
+          _id: jIfzlEqtJoQD9ty4
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.diplo.skill.itm
+          value: reroll-kh
+          priority: 20
+          type: custom
+          phase: initial
+          _id: EbDs9HNkcOSlWAdh
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.diplo.count
+          value: every
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 9Tct4XdGfEN3OV2D
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.diplo.label
+          value: Wide, Vast Land- Advantage on Diplomacy between other parties
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 7GGYJq0BPfkgMbjC
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.diploplus.skill.per
+          value: reroll-kh
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 2gYdlwPJFxJZPE6d
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.diploplus.skill.itm
+          value: reroll-kh
+          priority: 20
+          type: custom
+          phase: initial
+          _id: bszXFP7XXjKERL7A
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.diploplus.count
+          value: ItemUses.identifier.wide-vast-land
+          priority: 20
+          type: custom
+          phase: initial
+          _id: DewVEpDCO2KlVF6R
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.diploplus.label
+          value: Wide, Vast Land- +1d6 Bonus
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 9UdWUCZo5WGSjeIl
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.diploplus.skill.per
+          value: +1d6
+          priority: 20
+          type: custom
+          phase: initial
+          _id: jnTlji6fLbvDenPi
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.diploplus.skill.itm
+          value: +1d6
+          priority: 20
+          type: add
+          phase: initial
+          _id: ayOn2bTSt78pCXaY
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.Rr617n0OudHqReqn
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -128,10 +167,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733082054
+      modifiedTime: 1791733082054
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!Rr617n0OudHqReqn.P87AajN6MZsgrH45'
 sort: 0
 ownership:
@@ -145,10 +189,10 @@ _stats:
   compendiumSource: Item.Rr617n0OudHqReqn
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881328247
-  modifiedTime: 1769881328247
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733082054
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!Rr617n0OudHqReqn'

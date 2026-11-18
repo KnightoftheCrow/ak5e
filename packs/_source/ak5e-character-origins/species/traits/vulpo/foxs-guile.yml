@@ -56,24 +56,27 @@ system:
 effects:
   - name: Advantage to see through Illusions
     img: icons/skills/trades/academics-study-reading-book.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.rkxEBKmKKqD6OPQ1
+    origin: null
     _id: M6HLCP9zdYVdfLbQ
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.advantage.skill.inv
-        mode: 0
-        value: confirm('Is this check to see through an illusion or disguise?')
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.advantage.skill.inv
+          value: confirm('Is this check to see through an illusion or disguise?')
+          priority: 20
+          type: custom
+          phase: initial
+          _id: ob9vRSOXcslKsqZn
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.rkxEBKmKKqD6OPQ1
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -97,10 +100,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733083341
+      modifiedTime: 1791733083341
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!rkxEBKmKKqD6OPQ1.M6HLCP9zdYVdfLbQ'
 sort: 0
 ownership:
@@ -114,10 +122,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680541395
-  modifiedTime: 1768680541395
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733083341
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!rkxEBKmKKqD6OPQ1'

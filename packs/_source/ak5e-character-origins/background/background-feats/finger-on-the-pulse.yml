@@ -260,40 +260,59 @@ system:
 effects:
   - name: Temporary Inspiration
     img: icons/tools/instruments/harp-lap-brown.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.mL180bpwR1RA671d
+    origin: null
     _id: tsZISq7TooyTIfeo
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.fotp.attack.all
-        mode: 0
-        value: reroll
-        priority: 20
-      - key: flags.midi-qol.optional.fotp.check.all
-        mode: 0
-        value: reroll
-        priority: 20
-      - key: flags.midi-qol.optional.fotp.save.all
-        mode: 0
-        value: reroll
-        priority: 20
-      - key: flags.midi-qol.optional.fotp.count
-        mode: 0
-        value: once
-        priority: 20
-      - key: flags.midi-qol.optional.fotp.label
-        mode: 0
-        value: Temporary Inspiration - Expend to reroll
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.fotp.attack.all
+          value: reroll
+          priority: 20
+          type: custom
+          phase: initial
+          _id: PMqktF34uHFIX9rV
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.fotp.check.all
+          value: reroll
+          priority: 20
+          type: custom
+          phase: initial
+          _id: wierBsuD5Dp9SxB7
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.fotp.save.all
+          value: reroll
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 53mYapbzGzMQMnC3
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.fotp.count
+          value: once
+          priority: 20
+          type: custom
+          phase: initial
+          _id: ZIzV6ZDZGoPBwYAm
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.fotp.label
+          value: Temporary Inspiration - Expend to reroll
+          priority: 20
+          type: custom
+          phase: initial
+          _id: Uaxgkwt0hG3C8vkX
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.mL180bpwR1RA671d
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -318,43 +337,63 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733083131
+      modifiedTime: 1791733083131
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!mL180bpwR1RA671d.tsZISq7TooyTIfeo'
   - name: Influencing Large Crowds
     img: icons/tools/instruments/harp-lap-brown.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.mL180bpwR1RA671d
+    origin: null
     _id: Whm8GtG3uqO8PAoY
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.advantage.skill.per
-        mode: 0
-        value: confirm("Are you trying to influence a large group?")
-        priority: 20
-      - key: flags.midi-qol.advantage.skill.itm
-        mode: 0
-        value: confirm("Are you trying to influence a large group?")
-        priority: 20
-      - key: flags.midi-qol.advantage.skill.dec
-        mode: 0
-        value: confirm("Are you trying to influence a large group?")
-        priority: 20
-      - key: flags.midi-qol.advantage.skill.prf
-        mode: 0
-        value: confirm("Are you trying to influence a large group?")
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.advantage.skill.per
+          value: confirm("Are you trying to influence a large group?")
+          priority: 20
+          type: custom
+          phase: initial
+          _id: tFLRhK9kp8MQLSwT
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.advantage.skill.itm
+          value: confirm("Are you trying to influence a large group?")
+          priority: 20
+          type: custom
+          phase: initial
+          _id: NCDEBcwP47w56IKX
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.advantage.skill.dec
+          value: confirm("Are you trying to influence a large group?")
+          priority: 20
+          type: custom
+          phase: initial
+          _id: vt28FkcIMVXOqcsU
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.advantage.skill.prf
+          value: confirm("Are you trying to influence a large group?")
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 8cazD5TKHVVSgQd6
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.mL180bpwR1RA671d
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: false
@@ -382,10 +421,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733083131
+      modifiedTime: 1791733083131
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!mL180bpwR1RA671d.Whm8GtG3uqO8PAoY'
 sort: 1700000
 ownership:
@@ -399,10 +443,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881347037
-  modifiedTime: 1769881347037
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733083131
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!mL180bpwR1RA671d'

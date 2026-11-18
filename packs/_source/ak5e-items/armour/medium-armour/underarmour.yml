@@ -1,7 +1,7 @@
 folder: kPyCLBr67aaO8hty
 name: Underarmour
 type: equipment
-img: icons/equipment/chest/breastplate-scale-grey.webp
+img: modules/ak5e/icons/Equipment/AK5e%20Medium%20Armor.png
 system:
   activities: {}
   uses:
@@ -49,36 +49,51 @@ system:
 effects:
   - name: Underarmour DR
     img: icons/equipment/chest/breastplate-scale-grey.webp
-    origin: Item.bJ07bnMKDkov4ogg
+    origin: null
     _id: 79irsiSTvMg3ozyY
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dm.amount.bludgeoning
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.slashing
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.piercing
-        mode: 2
-        value: '-2'
-        priority: 20
-      - key: system.traits.dm.amount.thunder
-        mode: 2
-        value: '-2'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dm.amount.bludgeoning
+          value: -2
+          priority: 20
+          type: add
+          phase: initial
+          _id: nzrMH6NIzga1ir5n
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.slashing
+          value: -2
+          priority: 20
+          type: add
+          phase: initial
+          _id: JjyVNHihdql3N2Ch
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.piercing
+          value: -2
+          priority: 20
+          type: add
+          phase: initial
+          _id: MA1lIHCxN5zlVZQZ
+          conditions: '{}'
+          replacement: ''
+        - key: system.traits.dm.amount.thunder
+          value: -2
+          priority: 20
+          type: add
+          phase: initial
+          _id: XjNVEclAuGKDmkKs
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.bJ07bnMKDkov4ogg
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -102,22 +117,27 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733078921
+      modifiedTime: 1791733078921
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!33A3rLP3Gm4A7Nrq.79irsiSTvMg3ozyY'
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.369'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1757006075218
-  modifiedTime: 1757006496920
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1793231281509
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _id: 33A3rLP3Gm4A7Nrq
 sort: 100000
 ownership:

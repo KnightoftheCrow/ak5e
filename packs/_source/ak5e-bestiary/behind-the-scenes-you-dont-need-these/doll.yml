@@ -1,132 +1,240 @@
 folder: zhZ3oJrVXiDxSCHH
 name: Doll
 type: npc
-img: modules/ak5e/icons/Dollkeeper_Specialist.webp
+_id: pip2qy2TTEaIrncJ
+img: modules/ak5e/icons/skill_icon_skchr_iana_1.png
 system:
   currency:
     credits: 0
+  identifier: doll
   abilities:
     str:
       value: 16
       proficient: 0
       max: null
-      bonuses:
-        check: ''
-        save: ''
+      attack:
+        roll:
+          min: null
+          max: null
+          mode: 0
+          fail: null
+          success: null
       check:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
       save:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
     dex:
       value: 16
       proficient: 0
       max: null
-      bonuses:
-        check: ''
-        save: ''
+      attack:
+        roll:
+          min: null
+          max: null
+          mode: 0
+          fail: null
+          success: null
       check:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
       save:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
     con:
       value: 14
       proficient: 0
       max: null
-      bonuses:
-        check: ''
-        save: ''
+      attack:
+        roll:
+          min: null
+          max: null
+          mode: 0
+          fail: null
+          success: null
       check:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
       save:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
     int:
       value: 1
       proficient: 0
       max: null
-      bonuses:
-        check: ''
-        save: ''
+      attack:
+        roll:
+          min: null
+          max: null
+          mode: 0
+          fail: null
+          success: null
       check:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
       save:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
     wis:
       value: 10
       proficient: 0
       max: null
-      bonuses:
-        check: ''
-        save: ''
+      attack:
+        roll:
+          min: null
+          max: null
+          mode: 0
+          fail: null
+          success: null
       check:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
       save:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
     cha:
       value: 4
       proficient: 0
       max: null
-      bonuses:
-        check: ''
-        save: ''
+      attack:
+        roll:
+          min: null
+          max: null
+          mode: 0
+          fail: null
+          success: null
       check:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
       save:
         roll:
           min: null
           max: null
           mode: 0
+          fail: null
+          success: null
   bonuses:
-    mwak:
-      attack: ''
-      damage: ''
-    rwak:
-      attack: ''
-      damage: ''
-    msak:
-      attack: ''
-      damage: ''
-    rsak:
-      attack: ''
-      damage: ''
-    abilities:
-      check: ''
-      save: ''
-      skill: ''
     spell:
       dc: ''
+  rolls:
+    ability:
+      check:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+        fail: null
+        success: null
+      save:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+        fail: null
+        success: null
+      skill:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+        fail: null
+        success: null
+      tool:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+        fail: null
+        success: null
+    attack:
+      bonus: ''
+      msak:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+        fail: null
+        success: null
+      mwak:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+        fail: null
+        success: null
+      rsak:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+        fail: null
+        success: null
+      rwak:
+        bonus: ''
+        min: null
+        max: null
+        mode: 0
+        fail: null
+        success: null
+      min: null
+      max: null
+      mode: 0
+      fail: null
+      success: null
+    damage:
+      msak:
+        bonus: ''
+      mwak:
+        bonus: ''
+      rsak:
+        bonus: ''
+      rwak:
+        bonus: ''
   skills:
     acr:
       ability: dex
@@ -134,215 +242,248 @@ system:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     ani:
       ability: wis
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     arc:
       ability: int
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     ath:
       ability: str
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     dec:
       ability: cha
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     ins:
       ability: wis
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     itm:
       ability: cha
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     inv:
       ability: int
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     med:
       ability: wis
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     nat:
       ability: wis
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     prc:
       ability: wis
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     prf:
       ability: cha
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     per:
       ability: cha
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     rel:
       ability: int
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     slt:
       ability: dex
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     ste:
       ability: dex
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
     tech:
       ability: int
       roll:
         min: null
         max: null
         mode: 0
-      value: 0
+        fail: null
+        success: null
       bonuses:
-        check: ''
         passive: ''
+      value: 0
   tools: {}
   spells:
     spell1:
       value: 0
+      override: null
     spell2:
       value: 0
+      override: null
     spell3:
       value: 0
+      override: null
     spell4:
       value: 0
+      override: null
     spell5:
       value: 0
+      override: null
     spell6:
       value: 0
+      override: null
     spell7:
       value: 0
+      override: null
     spell8:
       value: 0
+      override: null
     spell9:
       value: 0
+      override: null
     pact:
       value: 0
+      override: null
   attributes:
     ac:
-      calc: custom
+      calcs:
+        - unarmored
+        - armored
       flat: null
-      formula: 10 + @abilities.dex.mod
+      formulas: []
+      override: null
     init:
       ability: ''
       roll:
         min: null
         max: null
         mode: 0
-      bonus: ''
+        fail: null
+        success: null
     movement:
+      speeds:
+        walk: '30'
+        burrow: ''
+        climb: ''
+        fly: ''
+        jump: ''
+        swim: ''
       units: ft
       hover: false
       ignoredDifficultTerrain: []
-      walk: ''
-      burrow: ''
-      climb: ''
-      fly: ''
-      swim: ''
       bonus: ''
-      special: Same as your walking speed
+      special: ''
     attunement:
       max: 3
     senses:
@@ -351,8 +492,11 @@ system:
         darkvision: 60
         tremorsense: null
         truesight: null
+        devilsSight: null
       units: ft
-      special: 'Passive perception: 8 + your PB'
+      special: ''
+    spell:
+      level: 0
     spellcasting: ''
     exhaustion: 0
     concentration:
@@ -361,8 +505,8 @@ system:
         min: null
         max: null
         mode: 0
-      bonuses:
-        save: ''
+        fail: null
+        success: null
       limit: 1
     loyalty: {}
     hd:
@@ -378,15 +522,13 @@ system:
         min: null
         max: null
         mode: 0
+        fail: null
+        success: null
       success: 0
       failure: 0
-      bonuses:
-        save: ''
     price:
       value: null
       denomination: credits
-    spell:
-      level: 0
   details:
     biography:
       value: ''
@@ -404,7 +546,7 @@ system:
     habitat:
       value: []
       custom: ''
-    cr: 1
+    cr: null
     treasure:
       value: []
   resources:
@@ -420,7 +562,7 @@ system:
       inside: false
   source:
     revision: 1
-    rules: '2024'
+    rules: '2014'
   traits:
     size: med
     di:
@@ -442,7 +584,9 @@ system:
       bypasses: []
     ci:
       value:
+        - bleeding
         - charmed
+        - exhaustion
         - frightened
         - necrotised
         - nervousimpairment
@@ -450,31 +594,33 @@ system:
       custom: ''
     languages:
       value: []
-      custom: Same as you; understand but cannot speak
+      custom: Understands languages you speak but cannot speak.
       communication:
         telepathy:
           value: null
           units: ft
     important: false
+    da:
+      value: []
+      custom: ''
+      bypasses: []
 prototypeToken:
   name: Doll
-  displayName: 0
+  displayName: 30
   actorLink: false
   width: 1
   height: 1
+  depth: 1
   texture:
-    src: modules/ak5e/icons/Dollkeeper_Specialist.webp
+    src: modules/ak5e/icons/skill_icon_skchr_iana_1.png
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
-  lockRotation: false
+  lockRotation: true
   rotation: 0
   alpha: 1
   disposition: -1
@@ -515,7 +661,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -540,7 +686,7 @@ prototypeToken:
 items:
   - name: Artificial
     type: feat
-    _id: 6mxLaD82vxGlauMF
+    _id: zmAnsi9qQFsflmMK
     img: modules/ak5e/icons/Skill-Prospector.webp
     system:
       activities: {}
@@ -581,22 +727,165 @@ items:
         riders:
           activity: []
     _stats:
-      compendiumSource: null
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-bestiary.Actor.uF4gdhDJYmLBoPa1.Item.6mxLaD82vxGlauMF
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793631125811
+      modifiedTime: 1793631125811
     ownership:
       default: 0
-    _key: '!actors.items!uF4gdhDJYmLBoPa1.6mxLaD82vxGlauMF'
+      5XlrCO2NlPtd4MFQ: 3
+    _key: '!actors.items!pip2qy2TTEaIrncJ.zmAnsi9qQFsflmMK'
   - name: Self-Rejuvenation
     type: feat
-    _id: tFy3bmKJ65ysZehD
+    _id: ScjLdOoECO0Bh2PW
     img: modules/ak5e/icons/Skill-RareThaleCalyx.webp
     system:
-      activities: {}
+      activities:
+        WlMEr1oPkBsNtw89:
+          type: heal
+          name: Short Rest Healing
+          _id: WlMEr1oPkBsNtw89
+          img: ''
+          sort: 0
+          activation:
+            type: shortRest
+            override: false
+            condition: ''
+          behaviors: []
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description:
+            value: ''
+            chatFlavor: ''
+          duration:
+            units: inst
+            expiry: null
+            concentration: false
+            override: false
+          effects: []
+          flags: {}
+          range:
+            units: self
+            override: false
+            special: ''
+          target:
+            template:
+              contiguous: false
+              stationary: false
+              units: ft
+              type: ''
+            affects:
+              choice: false
+              type: self
+              special: ''
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+            max: ''
+          visibility:
+            level:
+              min: null
+              max: null
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+            identifier: ''
+          healing:
+            types:
+              - healing
+            custom:
+              enabled: true
+              formula: floor(@attributes.hp.value/2)
+            modifiers: []
+            scaling:
+              number: 1
+            number: null
+            denomination: null
+            bonus: ''
+          useConditionText: attributes.hp.value > 0
+          useConditionReason: ''
+          effectConditionText: ''
+          otherActivityId: none
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            triggeredActivityConsume: true
+            triggeredActivityConfigure: true
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            confirmTargets: default
+            autoTargetType: any
+            autoTargetAction: default
+            automationOnly: false
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            identifier: ''
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            targetMustBeSeen: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            skipConcentrationCheck: false
+            autoCEEffects: default
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            rollAs: target
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          regionBehavior:
+            enabled: false
+            dispositionFilter: -1
+            excludeSource: true
+            oncePerTurn: true
+            wallRestriction: none
+            regionVisibility: 2
+            attachToken: default
+            moveDistance: 0
+            moveDirection: away
+            moveTiming: start
+            templateOrigin: default
+            rules: []
+          regionLight:
+            enabled: false
+            dim: 0
+            bright: 0
+            color: null
+            alpha: 0.5
+            luminosity: 0.5
+            animationType: ''
+            animationSpeed: 5
+            animationIntensity: 5
       uses:
         spent: 0
         recovery: []
@@ -605,7 +894,10 @@ items:
       description:
         value: >-
           <p>If this Creature has more than one Hit Point when it completes a
-          Long Rest, it regains all missing Hit Points.</p>
+          Long Rest, it regains all missing Hit Points. If this Creature has
+          more than one Hit Point when it completes a Short Rest, it regains Hit
+          Points equal to half of its maximum Hit Points, rounding
+          up.</p><hr><p><strong>Automated.</strong></p>
         chat: ''
       identifier: self-rejuvenation
       source:
@@ -630,24 +922,26 @@ items:
         trackingBar: false
         barFirstColor: '#4361ee'
         barSecondColor: '#4cc9f0'
-      dnd5e:
-        riders:
-          activity: []
+      dnd5e: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-bestiary.Actor.uF4gdhDJYmLBoPa1.Item.tFy3bmKJ65ysZehD
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.369'
       systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793631127130
+      modifiedTime: 1793631204199
     ownership:
       default: 0
-    _key: '!actors.items!uF4gdhDJYmLBoPa1.tFy3bmKJ65ysZehD'
+      5XlrCO2NlPtd4MFQ: 3
+    _key: '!actors.items!pip2qy2TTEaIrncJ.ScjLdOoECO0Bh2PW'
   - name: Murderous Marionette
     type: feat
-    _id: wFTdi6dEkGbiqAGG
-    img: modules/ak5e/icons/Skill-Mayer1.webp
+    _id: uzbCCHuTxuGALy0e
+    img: modules/ak5e/icons/Skill-Shamare1.webp
     system:
       activities: {}
       uses:
@@ -657,8 +951,8 @@ items:
       advancement: {}
       description:
         value: >-
-          <p>Murderous Marionette. This Creature has Advantage on Melee Attacks
-          against Creatures that are within your Reach.</p>
+          <p>This Creature has Advantage on Melee Attacks against Creatures that
+          are within your Reach.</p><hr><p><strong>Automated.</strong></p>
         chat: ''
       identifier: murderous-marionette
       source:
@@ -687,33 +981,411 @@ items:
         riders:
           activity: []
     _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-bestiary.Actor.uF4gdhDJYmLBoPa1.Item.wFTdi6dEkGbiqAGG
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793631235640
+      modifiedTime: 1793631514534
+    ownership:
+      default: 0
+      5XlrCO2NlPtd4MFQ: 3
+    _key: '!actors.items!pip2qy2TTEaIrncJ.uzbCCHuTxuGALy0e'
+  - name: Choreographed Movement
+    type: feat
+    _id: kbS00QmjKwfwqEnB
+    img: modules/ak5e/icons/class%20%2B%20subclass/sub_dollkeeper_icon.png
+    system:
+      activities: {}
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      advancement: {}
+      description:
+        value: >-
+          <p>This Creature is Proficient in any Saving Throws that you
+          are.</p><hr><p><strong>Not Automated: </strong>Set the Doll's Saves
+          manually.</p>
+        chat: ''
+      identifier: choreographed-movement
+      source:
+        revision: 1
+        rules: '2014'
+      crewed: false
+      enchant: {}
+      prerequisites:
+        items: []
+        repeatable: false
+        level: null
+      properties: []
+      requirements: ''
+      type:
+        value: monster
+        subtype: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      5XlrCO2NlPtd4MFQ: 3
+    flags:
+      ak5e:
+        trackingBar: false
+        barFirstColor: '#4361ee'
+        barSecondColor: '#4cc9f0'
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793631572606
+      modifiedTime: 1793631604810
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
-      systemId: dnd5e
-      systemVersion: 5.3.0
-      lastModifiedBy: null
+    _key: '!actors.items!pip2qy2TTEaIrncJ.kbS00QmjKwfwqEnB'
+  - name: Unarmed Strike
+    type: weapon
+    _id: 7oXw0VxtjEOaaD1y
+    img: icons/skills/melee/unarmed-punch-fist.webp
+    system:
+      activities:
+        attackUnarmStrik:
+          name: Unarmed Strike
+          type: attack
+          _id: attackUnarmStrik
+          img: ''
+          sort: 0
+          activation:
+            type: action
+            value: 1
+            condition: ''
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: true
+          description:
+            chatFlavor: ''
+            value: ''
+          duration:
+            units: inst
+            special: ''
+            concentration: false
+            override: false
+            expiry: null
+          effects: []
+          flags: {}
+          range:
+            value: '5'
+            units: ft
+            override: false
+          target:
+            prompt: true
+            affects:
+              count: '1'
+              type: creature
+              choice: false
+              special: ''
+            template:
+              count: ''
+              contiguous: false
+              type: ''
+              size: ''
+              width: ''
+              height: ''
+              units: ft
+              stationary: false
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+            max: ''
+          visibility:
+            level:
+              min: null
+              max: null
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+            identifier: ''
+          attack:
+            ability: ''
+            bonus: ''
+            critical:
+              threshold: null
+            flat: false
+            type:
+              value: melee
+              classification: unarmed
+          damage:
+            critical:
+              bonus: ''
+            includeBase: true
+            parts: []
+          useConditionText: ''
+          useConditionReason: ''
+          effectConditionText: ''
+          macroData:
+            name: ''
+            command: ''
+          ignoreTraits:
+            idi: false
+            idr: false
+            idv: false
+            ida: false
+            idm: false
+          midiProperties:
+            ignoreTraits: []
+            triggeredActivityId: none
+            triggeredActivityConditionText: ''
+            triggeredActivityTargets: targets
+            triggeredActivityRollAs: self
+            confirmTargets: default
+            automationOnly: false
+            identifier: unarmed-strike
+            triggeredActivityConsume: true
+            triggeredActivityConfigure: true
+            autoConsume: false
+            forceConsumeDialog: default
+            forceRollDialog: default
+            forceDamageDialog: default
+            autoTargetType: any
+            autoTargetAction: default
+            otherActivityCompatible: true
+            otherActivityAsParentType: true
+            displayActivityName: false
+            rollMode: default
+            chooseEffects: false
+            toggleEffect: false
+            ignoreFullCover: false
+            removeChatButtons: default
+            magicEffect: false
+            magicDamage: false
+            noConcentrationCheck: false
+            skipConcentrationCheck: false
+            autoCEEffects: default
+            targetMustBeSeen: false
+          isOverTimeFlag: false
+          overTimeProperties:
+            saveRemoves: true
+            rollAs: target
+            preRemoveConditionText: ''
+            postRemoveConditionText: ''
+          regionBehavior:
+            enabled: false
+            dispositionFilter: -1
+            excludeSource: true
+            oncePerTurn: true
+            wallRestriction: none
+            regionVisibility: 2
+            attachToken: default
+            rules: []
+            moveDistance: 0
+            moveDirection: away
+            moveTiming: start
+            templateOrigin: default
+          regionLight:
+            enabled: false
+            dim: 0
+            bright: 0
+            color: null
+            alpha: 0.5
+            luminosity: 0.5
+            animationType: ''
+            animationSpeed: 5
+            animationIntensity: 5
+          otherActivityId: none
+          otherActivityAsParentType: true
+          attackMode: oneHanded
+          ammunition: ''
+          attackRollPerTarget: default
+          fumbleThreshold: 1
+          behaviors: []
+          otherActivityUuid: ''
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      description:
+        value: <p>[[/attack extended]], [[/damage extended]].</p>
+        chat: ''
+      identifier: unarmed-strike
+      source:
+        revision: 1
+        rules: '2014'
+      identified: true
+      unidentified:
+        description: ''
+      container: null
+      quantity: 1
+      weight:
+        value: 0
+        units: lb
+      price:
+        value: 0
+        denomination: credits
+      attunement: ''
+      attuned: false
+      equipped: true
+      crew:
+        value: []
+      ammunition: {}
+      armor: {}
+      damage:
+        base:
+          number: null
+          denomination: null
+          bonus: ''
+          types:
+            - bludgeoning
+          custom:
+            enabled: true
+            formula: 1 + @mod
+          scaling:
+            mode: whole
+            number: 1
+            formula: ''
+          modifiers: []
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+          modifiers: []
+      properties: []
+      proficient: 1
+      range:
+        value: null
+        units: ft
+        long: null
+        reach: null
+      type:
+        value: unarmed
+        baseItem: ''
+      mastery: ''
+      rarities: []
+    effects: []
+    folder: null
+    sort: 0
     ownership:
       default: 0
-    _key: '!actors.items!uF4gdhDJYmLBoPa1.wFTdi6dEkGbiqAGG'
-effects: []
-flags:
-  dnd5e:
-    isAutoImported: true
+      5XlrCO2NlPtd4MFQ: 3
+    flags:
+      midi-qol:
+        removeAttackDamageButtons: default
+        forceCEOff: true
+      midiProperties:
+        confirmTargets: default
+      cat:
+        automation:
+          source: chris-premades
+          version: 2.0.4
+      dnd5e: {}
+      ak5e:
+        trackingBar: false
+        barFirstColor: '#4361ee'
+        barSecondColor: '#4cc9f0'
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793631633673
+      modifiedTime: 1793631657053
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!actors.items!pip2qy2TTEaIrncJ.7oXw0VxtjEOaaD1y'
+effects:
+  - name: +Prof to Passive Perception
+    _id: 8XhByO43oGiLJ9rc
+    img: icons/magic/perception/eye-slit-orange.webp
+    type: base
+    system:
+      changes:
+        - key: system.skills.prc.bonuses.passive
+          type: add
+          value: '@prof'
+          phase: initial
+          _id: lvHg0L1GJFLNEjbK
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    disabled: false
+    start:
+      time: 438
+      combat: null
+      combatant: null
+      initiative: null
+      round: null
+      turn: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: false
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        specialDuration: []
+        enableCondition: ''
+        disableCondition: ''
+        applicationMode: default
+        expiryMode: default
+        macroRepeat: none
+        disableIncapacitated: false
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793631778423
+      modifiedTime: 1793631811093
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!actors.effects!pip2qy2TTEaIrncJ.8XhByO43oGiLJ9rc'
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
 _stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1793630993997
+  modifiedTime: 1793631827375
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
-  systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783356367541
-  modifiedTime: 1785597591837
-  lastModifiedBy: 27ikDz77N89hVLvM
-ownership:
-  default: 0
-  27ikDz77N89hVLvM: 3
-_id: uF4gdhDJYmLBoPa1
-sort: 100000
-_key: '!actors!uF4gdhDJYmLBoPa1'
+_key: '!actors!pip2qy2TTEaIrncJ'

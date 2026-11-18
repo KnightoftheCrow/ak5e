@@ -147,29 +147,37 @@ system:
 effects:
   - name: Galvanised
     img: icons/magic/lightning/claws-unarmed-strike-teal.webp
-    origin: Item.EBkJPyToqGK2Prtw
+    origin: null
     transfer: false
     _id: ylrKnizVi65ixrJg
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.movement.all
-        mode: 0
-        value: '+10'
-        priority: 20
-      - key: system.bonuses.mwak.damage
-        mode: 2
-        value: 1d6[lightning]
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.movement.all
+          value: '+10'
+          priority: 20
+          type: custom
+          phase: initial
+          _id: WMiGO2kmhxmSEWCG
+          conditions: '{}'
+          replacement: ''
+        - key: system.bonuses.mwak.damage
+          value: 1d6[lightning]
+          priority: 20
+          type: add
+          phase: initial
+          _id: i6nZqv0ZDMpUI34q
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.EBkJPyToqGK2Prtw
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -196,10 +204,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108120
+      modifiedTime: 1791733108120
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!EBkJPyToqGK2Prtw.ylrKnizVi65ixrJg'
 flags:
   dnd5e:
@@ -210,12 +223,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108120
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

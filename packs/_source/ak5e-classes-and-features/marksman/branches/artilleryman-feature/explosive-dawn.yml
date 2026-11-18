@@ -9,7 +9,7 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>You are the single most dangerous signal on the battlefield- bar none.
@@ -39,24 +39,27 @@ system:
 effects:
   - name: Explosive Dawn
     img: modules/ak5e/icons/Skill-Ling1.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.dSDlRdBJIaD50qMV
+    origin: null
     _id: W4HIwrch8ypvqtgd
     type: base
-    system: {}
-    changes:
-      - key: system.traits.dr.value
-        mode: 2
-        value: thunder
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.dr.value
+          value: thunder
+          priority: 20
+          type: add
+          phase: initial
+          _id: gEolSe5EHonPpLPR
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.dSDlRdBJIaD50qMV
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -80,29 +83,29 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1771177287980
-      modifiedTime: 1771177552694
-      lastModifiedBy: GiT7LQTiCJxjm7mo
+      systemVersion: 6.0.6
+      createdTime: 1791203553315
+      modifiedTime: 1791733087220
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!dSDlRdBJIaD50qMV.W4HIwrch8ypvqtgd'
 sort: 125000
 ownership:
   default: 0
-  GiT7LQTiCJxjm7mo: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1767620092627
-  modifiedTime: 1771177537128
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  systemVersion: 5.3.3
+  createdTime: 1791203553315
+  modifiedTime: 1791733087220
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!dSDlRdBJIaD50qMV'

@@ -5,10 +5,9 @@ _id: xBfsHw7shprLPA16
 img: modules/ak5e/icons/Skill-Mint2.webp
 system:
   activities:
-    ZxIWNg1lakaYWbdB:
+    S8tR1VAsgHZily8b:
       type: save
-      _id: ZxIWNg1lakaYWbdB
-      sort: 0
+      sort: 100000
       activation:
         type: action
         override: false
@@ -18,29 +17,29 @@ system:
           allowed: false
           max: ''
         spellSlot: true
-        targets:
-          - type: itemUses
-            value: '1'
-            target: ''
+        targets: []
       description:
         chatFlavor: ''
+        value: ''
       duration:
         units: inst
         concentration: false
         override: false
+        expiry: null
       effects: []
       flags: {}
       range:
-        units: self
+        units: any
         override: false
         special: ''
       target:
         template:
           contiguous: false
           units: ft
-          type: sphere
+          type: ''
           size: '25'
           count: ''
+          stationary: false
         affects:
           choice: true
           type: creature
@@ -50,10 +49,8 @@ system:
         prompt: true
       uses:
         spent: 0
-        recovery:
-          - period: lr
-            type: recoverAll
-        max: '1'
+        recovery: []
+        max: ''
       visibility:
         level:
           min: null
@@ -75,12 +72,17 @@ system:
             bonus: ''
             types:
               - slashing
+            scaling:
+              number: 1
+            modifiers: []
       save:
         ability:
           - dex
         dc:
           calculation: spellcasting
           formula: ''
+        bonus: ''
+        visible: true
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -106,8 +108,8 @@ system:
         confirmTargets: default
         autoTargetType: any
         autoTargetAction: default
-        automationOnly: false
-        otherActivityCompatible: true
+        automationOnly: true
+        otherActivityCompatible: false
         otherActivityAsParentType: true
         identifier: ''
         displayActivityName: false
@@ -121,23 +123,340 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        targetMustBeSeen: false
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: ''
       otherActivityAsParentType: true
       friendlySave: default
-      name: Whirling Death
+      name: Whirling Death Damage
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      behaviors: []
+      _id: S8tR1VAsgHZily8b
+    jo5nRzsYbn7zOjz5:
+      type: utility
+      name: Whirling Death Initial Use
+      _id: jo5nRzsYbn7zOjz5
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: sourceEnd
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: sphere
+          size: '50'
+          count: ''
+        affects:
+          choice: false
+          type: enemy
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: move
+        regionVisibility: 2
+        attachToken: caster
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules:
+          - trigger: entry
+            action: useActivity
+            targetId: whirling-death-damage
+          - trigger: turnEnd
+            action: useActivity
+            targetId: whirling-death-damage
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    ugaIXh3SH5M9Kwdw:
+      type: utility
+      name: Whirling Death Extension
+      img: ''
+      sort: 50000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: sourceEnd
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          count: ''
+          type: sphere
+          size: '50'
+        affects:
+          choice: false
+          count: ''
+          type: enemy
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: true
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: move
+        regionVisibility: 2
+        attachToken: caster
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules:
+          - trigger: entry
+            action: useActivity
+            targetId: whirling-death-damage
+          - trigger: turnEnd
+            action: useActivity
+            targetId: whirling-death-damage
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: ugaIXh3SH5M9Kwdw
   uses:
     spent: 0
     recovery:
       - period: lr
         type: recoverAll
     max: '1'
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>Your control over your Bound Weapons is worthy of study; your might
@@ -147,19 +466,19 @@ system:
       duration. When this Sphere appears, you may choose any number of Creatures
       to be unaffected by it. Until the end of your next Turn, when this Sphere
       enters a affected Creature’s space, or they end their Turn there, they
-      must make a Dexterity Saving Throw against your Spellcasting Agility
-      Modifier. On a failed Save, they take 8d8 Slashing Damage; on a successful
-      Save, they take half as much. Once a Creature has made this Saving Throw,
-      they do not need to make it again until the beginning of your next
-      Turn.</p><p>You cannot move your Bound Weapons or Attack with them while
-      Whirling Death is ongoing. As an Action during your Turn, you may extend
-      the duration of Whirling Death until the end of your next Turn; Whirling
-      Death has a maximum duration of 3 Turns.</p><p>Once you have used this
-      Feature, you may not do so again until you have finished a Long
-      Rest.</p><p><strong>Partially Automated:</strong> Use this feat to apply
-      damage on unaffected Creature inside sphere.</p>
+      must make a Dexterity Saving Throw against your Spell Save DC. On a failed
+      Save, they take 8d8 Slashing Damage; on a successful Save, they take half
+      as much. Once a Creature has made this Saving Throw, they do not need to
+      make it again until the beginning of your next Turn.</p><p>You cannot move
+      your Bound Weapons or Attack with them while Whirling Death is ongoing. As
+      an Action during your Turn, you may extend the duration of Whirling Death
+      until the end of your next Turn; Whirling Death has a maximum duration of
+      3 Turns.</p><p>Once you have used this Feature, you may not do so again
+      until you have finished a Long Rest.</p><hr><p><strong>Automated:
+      </strong>Use the Initial Use Activity initially, then the Extension
+      Activity to continue the effect.</p>
     chat: ''
-  identifier: whirling-death-wip
+  identifier: whirling-death
   source:
     revision: 1
     rules: '2024'
@@ -173,24 +492,21 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
+    subtype: ''
 effects: []
-sort: 150000
+sort: 225000
 ownership:
   default: 0
-  GiT7LQTiCJxjm7mo: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1767622307916
-  modifiedTime: 1767876281252
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  systemVersion: 6.0.6
+  createdTime: 1791203553259
+  modifiedTime: 1794844490480
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!xBfsHw7shprLPA16'

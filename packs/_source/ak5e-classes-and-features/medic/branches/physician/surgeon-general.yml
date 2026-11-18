@@ -1,0 +1,115 @@
+name: Surgeon-General
+type: feat
+img: modules/ak5e/icons/Skill-M3.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>When you restore Hit Points to a single Creature using your Life
+      Support Feature, an Art, or an Operator Skill, the amount of Hit Points
+      you restore is doubled.</p>
+    chat: ''
+  identifier: surgeon-general
+  source:
+    revision: 1
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: ''
+    subtype: ''
+effects:
+  - name: Max Healing Rolls
+    img: modules/ak5e/icons/Skill-M3.webp
+    origin: null
+    type: base
+    _id: TGiaMT1DpdzbkBgC
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.modifier
+          type: ac5e
+          value: modifier=maximize; isHeal && !isAoE
+          phase: initial
+          priority: null
+          _id: pDiqPYF8Rcf6AXXq
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.2jQ0yUbnLccxSg7W
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791210558445
+      modifiedTime: 1791733084775
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!2jQ0yUbnLccxSg7W.TGiaMT1DpdzbkBgC'
+sort: 175000
+flags:
+  scene-packer:
+    hash: b39723dbddc8663f13c8b4f0aae57728a028e42d
+    sourceId: Compendium.world.spells--features.Item.Sx1piq9avLEAeqEo
+  dnd5e: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791211367875
+  modifiedTime: 1791733084775
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 2jQ0yUbnLccxSg7W
+folder: xVrcKgT6xvp1uRsh
+_key: '!items!2jQ0yUbnLccxSg7W'

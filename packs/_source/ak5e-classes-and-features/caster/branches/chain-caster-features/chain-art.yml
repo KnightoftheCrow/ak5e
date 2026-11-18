@@ -21,6 +21,7 @@ system:
         targets:
           - type: activityUses
             value: '1'
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -38,6 +39,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -100,21 +102,43 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery:
       - period: lr
         type: recoverAll
     max: '@prof'
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>When you cast an Art that can only affect a single Creature, you can
@@ -144,19 +168,16 @@ effects: []
 sort: 0
 ownership:
   default: 0
-  9KtVYqHDTWORuJDZ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1774098019676
-  modifiedTime: 1774178691022
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 5.3.3
+  createdTime: 1791203553232
+  modifiedTime: 1791203553232
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!pHwwI5rtqgxuA8rv'

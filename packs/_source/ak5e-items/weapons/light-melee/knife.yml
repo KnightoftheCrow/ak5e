@@ -2,7 +2,7 @@ folder: uUuSO7eU1CKxrhGI
 name: Knife
 type: weapon
 _id: EXF9dlqFHPDHi3KF
-img: icons/weapons/daggers/knife-green.webp
+img: modules/ak5e/icons/Equipment/AK5e%20Knife.png
 system:
   activities:
     j53WZTbbvoT9o2ct:
@@ -51,8 +51,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>[[/attack extended]], [[/damage extended]]</p><p>Finesse, Light, Thrown
-      (40/80)</p>
+      <p>[[/attack extended]], [[/damage extended]]</p><p>Finesse, Light,
+      @UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.QnevMs7ClOz11ti9]{Reliable},
+      Thrown (40/80)</p>
     chat: ''
   identifier: knife
   source:
@@ -85,12 +86,15 @@ system:
       types:
         - piercing
       custom:
-        enabled: false
+        enabled: true
+        formula: 1d6
       scaling:
         number: 1
       number: 1
       denomination: 6
       bonus: ''
+      modifiers:
+        - r1
     versatile:
       types: []
       custom:
@@ -100,6 +104,7 @@ system:
   properties:
     - fin
     - lgt
+    - rel
     - thr
   proficient: null
   range:
@@ -112,22 +117,19 @@ system:
     baseItem: knife
   mastery: ''
 effects: []
-sort: 200000
+sort: 0
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3
-flags:
-  dnd5e:
-    riders:
-      activity: []
+flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.5
+  systemVersion: 6.0.6
   createdTime: 1756313287684
-  modifiedTime: 1782088159003
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  modifiedTime: 1794931323980
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!EXF9dlqFHPDHi3KF'

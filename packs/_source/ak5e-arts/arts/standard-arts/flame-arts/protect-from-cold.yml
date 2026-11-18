@@ -149,25 +149,29 @@ system:
 effects:
   - name: Protected from Cold
     img: icons/magic/fire/flame-burning-fence.webp
-    origin: Item.JmTAn8SnRZI9hash
+    origin: null
     transfer: false
     _id: 6nIkzNj6dWpGAiYS
     type: base
-    system: {}
-    changes:
-      - key: system.traits.da.cold
-        mode: 2
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.traits.da.cold
+          value: 0.5
+          priority: 20
+          type: add
+          phase: initial
+          _id: ScLP27tAQWIx3flV
+          conditions: '{}'
+          replacement: ''
+      magical: true
+      origin:
+        item: Item.JmTAn8SnRZI9hash
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -195,10 +199,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.1.2
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733108417
+      modifiedTime: 1791733108417
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!JmTAn8SnRZI9hash.6nIkzNj6dWpGAiYS'
 flags:
   dnd5e:
@@ -209,12 +218,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.1.2
   createdTime: 1758563363515
-  modifiedTime: 1758563363515
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733108417
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 sort: 0
 ownership:
   default: 0

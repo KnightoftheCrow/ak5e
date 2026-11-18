@@ -1,0 +1,1087 @@
+folder: fnNi4KXioyJ542O7
+name: Double-Blind Trial
+type: feat
+_id: 9WYZ3MwE5FszZjKh
+img: modules/ak5e/icons/Skill-TheLodestar2.webp
+system:
+  activities:
+    EZCCfe9WCkkuYG8y:
+      type: enchant
+      name: Apply Toxin
+      img: ''
+      sort: 100000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: prowess
+            scaling: {}
+          - type: itemUses
+            value: '1'
+            target: pharmacology-kit
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: turn
+        expiry: turnEnd
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: tESdFJQBc8rYrwyI
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - 3AKecg7bTaWZ8FL2
+            effect: []
+            item: []
+        - _id: TkFNpcn3Ufdg303M
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity: []
+            effect: []
+            item: []
+        - _id: j38s9uIy9o4J7Fwj
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - M570o4ihGNrhRfmd
+            effect: []
+            item: []
+        - _id: vYpxozHWiOGzIkjC
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - 71voq2GHAfnDMwde
+            effect: []
+            item: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      enchant:
+        self: false
+      restrictions:
+        allowMagical: true
+        categories:
+          - lightM
+          - heavyM
+          - specialM
+          - lightR
+          - heavyR
+          - specialR
+        properties: []
+        type: weapon
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      _id: EZCCfe9WCkkuYG8y
+    3AKecg7bTaWZ8FL2:
+      type: save
+      name: Necrotoxin Save
+      _id: 3AKecg7bTaWZ8FL2
+      img: ''
+      sort: 200000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: targetStart
+        concentration: false
+        override: false
+      effects:
+        - _id: ttltiYDDXcqXsvFQ
+          uuid: null
+          level: {}
+          onSave: false
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: none
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 8
+            bonus: ''
+            modifiers: []
+            types:
+              - poison
+            scaling:
+              number: 1
+      save:
+        ability:
+          - con
+        dc:
+          calculation: ''
+          formula: '15'
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    71voq2GHAfnDMwde:
+      type: save
+      name: Neurotoxin Save
+      img: ''
+      sort: 300000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: targetStart
+        concentration: false
+        override: false
+      effects:
+        - _id: b5ccLCWlE6RQWiaS
+          uuid: null
+          level: {}
+          onSave: false
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: none
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 1
+            denomination: 8
+            bonus: ''
+            modifiers: []
+            types:
+              - poison
+            scaling:
+              number: 1
+      save:
+        ability:
+          - con
+        dc:
+          calculation: ''
+          formula: '15'
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: 71voq2GHAfnDMwde
+    M570o4ihGNrhRfmd:
+      type: save
+      name: Haemotoxin Save
+      img: ''
+      sort: 400000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: targetStart
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: none
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 3
+            denomination: 10
+            bonus: ''
+            modifiers: []
+            types:
+              - poison
+            scaling:
+              number: 1
+      save:
+        ability:
+          - con
+        dc:
+          calculation: ''
+          formula: '15'
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: M570o4ihGNrhRfmd
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>As a Bonus Action while you have access to a Pharmacology Kit, you can
+      expend Prowess and 1 use of your Alchemical Infusions Feature to roll 1d4
+      and apply the corresponding Toxin to that Weapon; this does not require
+      you to physically possess the Toxin. This Toxin can be applied to weapons
+      that already have a Toxin applied to them; however, this additional Toxin
+      expires at the end of that Turn, regardless of its normal
+      expiry.</p><table><thead><tr><td><p
+      style="text-align:center"><strong>Result</strong></p></td><td><p
+      style="text-align:center"><strong>Toxin</strong></p></td></tr></thead><tbody><tr><td><p
+      style="text-align:center">1</p></td><td><p>Necrotoxin</p></td></tr><tr><td><p
+      style="text-align:center">2</p></td><td><p>Haemotoxin</p></td></tr><tr><td><p
+      style="text-align:center">3</p></td><td><p>Cytotoxin</p></td></tr><tr><td><p
+      style="text-align:center">4</p></td><td><p>Neurotoxin</p></td></tr></tbody></table><p><strong>Gaining
+      Prowess as an Infuser.</strong> As an Infuser, you gain 1 Prowess when a
+      Creature that either has the Poisoned Condition, or is affected by a Toxin
+      created by you, is reduced to 0 Hit Points. Additionally, you gain 1
+      Prowess when the effect of one of your Infusions causes a Creature to
+      succeed on an Attack Roll, Skill Check, or Saving Throw it would otherwise
+      have failed; you can only gain Prowess in this way once per
+      Round.</p><hr><p><strong>Semi-Automated: </strong>You can apply the Toxin
+      using this Feature but must roll the 1d4 manually. Gaining Prowess cannot
+      be automated.</p>
+    chat: ''
+  identifier: double-blind-trial
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 5
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Necrotoxin
+    img: modules/ak5e/icons/Equipment/AK5e%20Poison%20Flask.png
+    origin: null
+    transfer: false
+    _id: ttltiYDDXcqXsvFQ
+    type: base
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.9WYZ3MwE5FszZjKh
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: targetEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - necrotised
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        applicationMode: default
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.vZv9Q1KdmDrdBL9D.ActiveEffect.6N9gywa6ZlorcVaR
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793639239631
+      modifiedTime: 1793639312569
+    showIcon: 2
+    start: null
+    folder: null
+    _key: '!items.effects!9WYZ3MwE5FszZjKh.ttltiYDDXcqXsvFQ'
+  - name: Neurotoxin
+    img: modules/ak5e/icons/Equipment/AK5e%20Poison%20Flask.png
+    origin: null
+    transfer: false
+    _id: b5ccLCWlE6RQWiaS
+    type: base
+    system:
+      changes: []
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.9WYZ3MwE5FszZjKh
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: targetEnd
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses:
+      - nervousimpairment
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        applicationMode: default
+        expiryMode: default
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793639331374
+      modifiedTime: 1793639331374
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.EHhEl9kdXS2y0gUU.ActiveEffect.6N9gywa6ZlorcVaR
+      duplicateSource: null
+      exportSource: null
+    showIcon: 2
+    start: null
+    folder: null
+    _key: '!items.effects!9WYZ3MwE5FszZjKh.b5ccLCWlE6RQWiaS'
+  - type: enchantment
+    name: Necrotoxin
+    img: modules/ak5e/icons/Equipment/AK5e%20Poison%20Flask.png
+    disabled: true
+    transfer: false
+    _id: tESdFJQBc8rYrwyI
+    system:
+      changes: []
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: true
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793639434415
+      modifiedTime: 1793639443060
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!9WYZ3MwE5FszZjKh.tESdFJQBc8rYrwyI'
+  - type: enchantment
+    name: Cytotoxin
+    img: modules/ak5e/icons/Equipment/AK5e%20Poison%20Flask.png
+    disabled: true
+    _id: TkFNpcn3Ufdg303M
+    system:
+      changes:
+        - key: system.damage.parts
+          value:
+            - - 1d6
+              - poison
+          priority: 20
+          type: add
+          phase: initial
+          _id: H5Xuw6CDrYDyJyYK
+          conditions: '{}'
+          replacement: ''
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: Compendium.ak5e.ak5e-items.Item.b7RvhDCRv9zM5Pv7
+        message: null
+      magical: true
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+        applicationMode: default
+        expiryMode: default
+        macroRepeat: none
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.b7RvhDCRv9zM5Pv7.ActiveEffect.Da1ryLkmQj8IdiaG
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1793639594799
+      modifiedTime: 1793639594799
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!9WYZ3MwE5FszZjKh.TkFNpcn3Ufdg303M'
+  - type: enchantment
+    name: Haemotoxin
+    img: modules/ak5e/icons/Equipment/AK5e%20Poison%20Flask.png
+    disabled: false
+    transfer: true
+    _id: j38s9uIy9o4J7Fwj
+    system:
+      changes: []
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: Compendium.ak5e.ak5e-items.Item.nt4iPFBi2avzVIK6
+        message: null
+      magical: true
+    start:
+      time: 438
+      combat: null
+      combatant: null
+      initiative: null
+      round: null
+      turn: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793639634112
+      modifiedTime: 1793639634112
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.nt4iPFBi2avzVIK6.ActiveEffect.2WJjDAPYHLYMquxO
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!9WYZ3MwE5FszZjKh.j38s9uIy9o4J7Fwj'
+  - type: enchantment
+    name: Neurotoxin
+    img: modules/ak5e/icons/Equipment/AK5e%20Poison%20Flask.png
+    disabled: false
+    transfer: true
+    _id: vYpxozHWiOGzIkjC
+    system:
+      changes: []
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: Compendium.ak5e.ak5e-items.Item.EHhEl9kdXS2y0gUU
+        message: null
+      magical: true
+    start:
+      time: 438
+      combat: null
+      combatant: null
+      initiative: null
+      round: null
+      turn: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793639640029
+      modifiedTime: 1793639640029
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.EHhEl9kdXS2y0gUU.ActiveEffect.ZmCtcNDKYAUadWZT
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!9WYZ3MwE5FszZjKh.vYpxozHWiOGzIkjC'
+sort: 200000
+ownership:
+  default: 0
+flags:
+  dnd5e:
+    riders:
+      activity:
+        - 3AKecg7bTaWZ8FL2
+        - M570o4ihGNrhRfmd
+        - 71voq2GHAfnDMwde
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791203553273
+  modifiedTime: 1793639828445
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+_key: '!items!9WYZ3MwE5FszZjKh'

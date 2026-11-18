@@ -4,12 +4,149 @@ type: feat
 _id: KJS1NzWrynM0LQR5
 img: modules/ak5e/icons/skill_icon_skchr_siege2_3.png
 system:
-  activities: {}
+  activities:
+    47GncIP55Vof1hpN:
+      type: utility
+      name: Voice of the Herald
+      _id: 47GncIP55Vof1hpN
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: targetEnd
+        concentration: false
+        override: false
+      effects:
+        - _id: TByMvcG3zRik8v4d
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '2'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: target.effects.some(e => e.name === "Aura of Influence")
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>Your Standard is a symbol of its own; as the name suggests, you are
@@ -25,8 +162,8 @@ system:
       (except yourself) within your Aura of Influence that can see you or hear
       you. Once before the end of that Creature’s next Turn, when they make a
       Damage Roll, they may roll 1d8 (no Action required) and add the result to
-      the result of the triggering roll.</p><p><strong>Not
-      automated.</strong></p>
+      the result of the triggering roll.</p><hr><p><strong>Semi-Automated:
+      </strong>Voice of the Herald is Automated; King of the Hill cannot be.</p>
     chat: ''
   identifier: symbol-of-authority
   source:
@@ -37,29 +174,96 @@ system:
   prerequisites:
     items: []
     repeatable: false
-    level: null
+    level: 4
   properties: []
   requirements: ''
   type:
-    value: ''
+    value: class
     subtype: ''
-effects: []
-sort: 400000
+effects:
+  - name: Voice of the Herald
+    img: modules/ak5e/icons/skill_icon_skchr_siege2_3.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.KJS1NzWrynM0LQR5
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=1d8; name=Voice of the Herald; optinId=voice-of-the-herald-0;
+            description=+1d8; once; optin
+          phase: initial
+          _id: lKVkZSdmQABLmXwI
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: TByMvcG3zRik8v4d
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794684842095
+      modifiedTime: 1794684887437
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!KJS1NzWrynM0LQR5.TByMvcG3zRik8v4d'
+sort: 175000
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774579934530
-  modifiedTime: 1782088395997
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 6.0.6
+  createdTime: 1791206079002
+  modifiedTime: 1794684899989
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!KJS1NzWrynM0LQR5'

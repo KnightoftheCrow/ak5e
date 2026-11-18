@@ -458,12 +458,9 @@ prototypeToken:
     src: icons/svg/mystery-man.svg
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -507,7 +504,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -525,10 +522,13 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
-  flags: {}
+  flags:
+    dnd5e:
+      lockScale: true
   randomImg: false
   appendNumber: false
   prependAdjective: false
+  depth: 1
 items:
   - name: Retributive Aura
     type: feat
@@ -674,7 +674,7 @@ items:
     effects:
       - name: Retributive Aura (Inner)
         img: icons/magic/unholy/silhouette-evil-horned-giant.webp
-        origin: Actor.H1JzooOefUlJkklV.Item.Jr2qoxGec1pQF8Hv
+        origin: null
         transfer: false
         _id: TSuNouto9asoguqc
         type: auraeffects.aura
@@ -695,16 +695,16 @@ items:
           script: ''
           stashedChanges: []
           stashedStatuses: []
-        changes: []
+          changes: []
+          magical: true
+          origin:
+            item: Actor.H1JzooOefUlJkklV.Item.Jr2qoxGec1pQF8Hv
         disabled: false
         duration:
-          startTime: null
-          combat: null
-          seconds: null
-          rounds: null
-          turns: null
-          startRound: null
-          startTurn: null
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
         description: ''
         tint: '#ffffff'
         statuses: []
@@ -738,15 +738,20 @@ items:
           compendiumSource: null
           duplicateSource: null
           exportSource: null
-          coreVersion: '13.347'
+          coreVersion: '14.368'
           systemId: dnd5e
-          systemVersion: 5.1.2
-          lastModifiedBy: null
+          systemVersion: 6.0.6
+          lastModifiedBy: 5XlrCO2NlPtd4MFQ
+          createdTime: 1791733080197
+          modifiedTime: 1791733080197
+        start: null
+        showIcon: 1
+        folder: null
         _key: >-
           !actors.items.effects!oAcibhyeQhAGskGI.iYYSVCaGbhJfFxGt.TSuNouto9asoguqc
       - name: Retributive Aura (Outer)
         img: icons/magic/unholy/silhouette-evil-horned-giant.webp
-        origin: Actor.H1JzooOefUlJkklV.Item.Jr2qoxGec1pQF8Hv
+        origin: null
         transfer: false
         _id: UC6tQBBJzKwZRPHQ
         type: auraeffects.aura
@@ -767,16 +772,16 @@ items:
           script: ''
           stashedChanges: []
           stashedStatuses: []
-        changes: []
+          changes: []
+          magical: true
+          origin:
+            item: Actor.H1JzooOefUlJkklV.Item.Jr2qoxGec1pQF8Hv
         disabled: false
         duration:
-          startTime: null
-          combat: null
-          seconds: null
-          rounds: null
-          turns: null
-          startRound: null
-          startTurn: null
+          value: null
+          units: seconds
+          expiry: null
+          expired: false
         description: ''
         tint: '#ffffff'
         statuses: []
@@ -805,10 +810,15 @@ items:
           compendiumSource: null
           duplicateSource: null
           exportSource: null
-          coreVersion: '13.347'
+          coreVersion: '14.368'
           systemId: dnd5e
-          systemVersion: 5.1.2
-          lastModifiedBy: null
+          systemVersion: 6.0.6
+          lastModifiedBy: 5XlrCO2NlPtd4MFQ
+          createdTime: 1791733080197
+          modifiedTime: 1791733080197
+        start: null
+        showIcon: 1
+        folder: null
         _key: >-
           !actors.items.effects!oAcibhyeQhAGskGI.iYYSVCaGbhJfFxGt.UC6tQBBJzKwZRPHQ
     folder: null
@@ -829,11 +839,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.347'
+      coreVersion: '14.368'
       systemId: dnd5e
       systemVersion: 5.1.2
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
-      modifiedTime: 1757523430426
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      modifiedTime: 1791733080197
+      createdTime: 1791733080197
     _key: '!actors.items!oAcibhyeQhAGskGI.iYYSVCaGbhJfFxGt'
 effects: []
 flags: {}
@@ -841,12 +852,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.347'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.1.2
-  createdTime: 1757360605039
-  modifiedTime: 1757360607092
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 6.0.6
+  createdTime: 1791733080196
+  modifiedTime: 1791733080196
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3

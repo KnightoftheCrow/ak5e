@@ -1,0 +1,245 @@
+folder: GSNJQSoQXWEu7p8v
+name: Fear the Reaper
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_phatom_3.png
+system:
+  activities:
+    xxH8p6ye9EuR3jlo:
+      type: utility
+      name: Reaper's Mark
+      _id: xxH8p6ye9EuR3jlo
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: hour
+        expiry: null
+        concentration: false
+        override: false
+        value: '1'
+      effects:
+        - _id: A5bqF68DWAdLBNzs
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '1'
+  advancement: {}
+  description:
+    value: >-
+      <p>Even for your allies, watching you work can be a perturbing sight. For
+      your enemies, to know that they are next can be too much to bear.</p><p>As
+      a Bonus Action, you can mark a hostile Creature you can see with your
+      Reaper’s Mark for 1 hour. When a Creature with your Reaper’s Mark sees or
+      hears you gain Ruin, they take 1d6 Psychic Damage; Creatures that are
+      immune to the Frightened Condition do not take this Damage. Additionally,
+      you can always sense the direction to Creature with your Reaper’s Mark,
+      and if that Creature is moving, you know the direction of its movement.
+      Finally, you can see a Creature with your Deathmark even if it has the
+      Invisible Condition.</p><p>Once you have used this Feature, you cannot do
+      so again until you complete a Long Rest.</p><hr><p><strong>Semi-Automated:
+      </strong>You can mark a Creature with the Activity on this Feature. Your
+      Reaper's Ruin Feature now has an additional Activity that allows you to
+      gain Ruin and deal the Psychic Damage.</p>
+    chat: ''
+  identifier: fear-the-reaper
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 10
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Reaper's Mark
+    img: modules/ak5e/icons/skill_icon_skchr_phatom_3.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.sT7gMDdfZXyjC3gt
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: A5bqF68DWAdLBNzs
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1792237027347
+      modifiedTime: 1792237027347
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!sT7gMDdfZXyjC3gt.A5bqF68DWAdLBNzs'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.Tpgt6lzHxKL1cGLJ
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792228073526
+  modifiedTime: 1792237310040
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: sT7gMDdfZXyjC3gt
+sort: 400000
+_key: '!items!sT7gMDdfZXyjC3gt'

@@ -1,0 +1,220 @@
+folder: gjecmvuCcO4xtk87
+name: Core Cannon
+type: weapon
+_id: MnqgnE9cinkhCDRj
+img: icons/weapons/guns/gun-barrel.webp
+system:
+  activities:
+    WdkjcqhoYwNt2qrp:
+      _id: WdkjcqhoYwNt2qrp
+      type: attack
+      img: null
+      sort: 0
+      activation:
+        type: action
+        override: false
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      attack:
+        critical: {}
+        flat: false
+        type: {}
+      damage:
+        critical: {}
+        includeBase: true
+        parts: []
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: null
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+  damage:
+    base:
+      types:
+        - force
+      custom:
+        enabled: false
+      modifiers: []
+      scaling:
+        number: 1
+      number: 3
+      denomination: 8
+      bonus: ''
+    versatile:
+      types: []
+      custom:
+        enabled: false
+      modifiers: []
+      scaling:
+        number: 1
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  description:
+    value: >-
+      <p>[[/attack extended]], [[/damage
+      extended]].</p><p>@UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.NvXIDkmhp3hM277E]{Rapid
+      Fire}, Light</p>
+    chat: ''
+  identifier: core-cannon
+  source:
+    revision: 1
+    rules: '2014'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: credits
+  rarities:
+    - artifact
+  attunement: ''
+  attuned: false
+  equipped: false
+  crew:
+    value: []
+  ammunition: {}
+  armor: {}
+  properties:
+    - lgt
+    - rpd
+  proficient: 1
+  range:
+    units: ft
+    value: 100
+    long: 300
+    reach: null
+  type:
+    value: lightR
+    baseItem: ''
+  mastery: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794350717779
+  modifiedTime: 1794350834396
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!MnqgnE9cinkhCDRj'

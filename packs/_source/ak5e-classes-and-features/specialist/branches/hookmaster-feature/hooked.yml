@@ -4,12 +4,511 @@ type: feat
 _id: S0pS7Hw35cN2y3uQ
 img: modules/ak5e/icons/Skill-Cliffheart1.webp
 system:
-  activities: {}
+  activities:
+    T0qKepbK71y9b8fY:
+      type: enchant
+      name: Convert into Hook
+      _id: T0qKepbK71y9b8fY
+      img: ''
+      sort: 0
+      activation:
+        type: hour
+        override: false
+        condition: ''
+        value: 1
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: perm
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: CA5DOSmqieCk9YGq
+          uuid: null
+          level:
+            min: null
+            max: null
+          riders:
+            activity:
+              - xNyHBAdICPiVMgX3
+              - iThhXQRHaspNbzzd
+            effect: []
+            item: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      enchant:
+        self: false
+      restrictions:
+        allowMagical: true
+        categories:
+          - lightM
+          - heavyM
+        properties: []
+        type: weapon
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+    xNyHBAdICPiVMgX3:
+      type: attack
+      name: Hook Toss
+      _id: xNyHBAdICPiVMgX3
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags:
+        cat:
+          otherAbilities:
+            value:
+              - str
+          genericConfig:
+            chris-premades:
+              pullOnHit:
+                distance: '10'
+                choose: true
+                stopAdjacent: true
+                maxSize: ''
+                animation:
+                  source: none
+                  identifier: none
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: pullOnHit
+                rules: all
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '@scale.hooked.hook-range'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: weapon
+        ability: ''
+        bonus: ''
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      attackMode: ''
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+    iThhXQRHaspNbzzd:
+      type: attack
+      name: Hook Toss (Bonus Action)
+      img: ''
+      sort: 200000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags:
+        cat:
+          otherAbilities:
+            value:
+              - str
+          genericConfig:
+            chris-premades:
+              pullOnHit:
+                distance: '10'
+                choose: true
+                stopAdjacent: true
+                maxSize: ''
+                animation:
+                  source: none
+                  identifier: none
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: pullOnHit
+                rules: all
+      range:
+        units: ft
+        override: false
+        value: '@scale.hooked.hook-range'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: ranged
+          classification: weapon
+        ability: ''
+        bonus: ''
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      attackMode: ''
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+      _id: iThhXQRHaspNbzzd
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: {}
+  advancement:
+    qfuprK8Xm0D72dHG:
+      name: Hook Range
+      type: ScaleValue
+      _id: qfuprK8Xm0D72dHG
+      configuration:
+        identifier: ''
+        type: number
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: 30
+          '15':
+            value: 50
+      flags: {}
+      value: {}
+      hint: ''
   description:
     value: >-
       <p>You can convert a Melee Weapon into a Hook to be used with the rest of
@@ -32,8 +531,9 @@ system:
       your Hook, you can pull that Creature 10 feet towards
       you.</p></li><li><p>You can make a Ranged Attack using your Hook as a
       Bonus Action. You cannot make, or have made, any Ranged Attacks with your
-      Hook on a Turn you do this.</p></li></ul><p><strong>Not
-      Automated.</strong></p>
+      Hook on a Turn you do this.</p></li></ul><hr><p><strong>Automated:
+      </strong>Use the Enchantment Activity on this Weapon to create your
+      Hook.</p>
     chat: ''
   identifier: hooked
   source:
@@ -50,23 +550,83 @@ system:
   type:
     value: class
     subtype: ''
-effects: []
+effects:
+  - type: enchantment
+    name: Hookmaster Hook
+    img: modules/ak5e/icons/Skill-Cliffheart1.webp
+    disabled: true
+    transfer: false
+    _id: CA5DOSmqieCk9YGq
+    system:
+      changes:
+        - key: system.properties
+          type: add
+          value: thr
+          phase: initial
+          _id: tuikT0y5tS88XP4K
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794090628301
+      modifiedTime: 1794090712564
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!S0pS7Hw35cN2y3uQ.CA5DOSmqieCk9YGq'
 sort: 0
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
   dnd5e:
     riders:
-      activity: []
+      activity:
+        - xNyHBAdICPiVMgX3
+        - iThhXQRHaspNbzzd
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358953798
-  modifiedTime: 1783358953798
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553272
+  modifiedTime: 1794090928580
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!S0pS7Hw35cN2y3uQ'

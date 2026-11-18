@@ -1,0 +1,125 @@
+folder: Pji4wTRYaJMHjby6
+name: Elusive
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_civilight_2.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@prof'
+  advancement: {}
+  description:
+    value: >-
+      <p>If a Creature you can see makes an Attack Roll against you with
+      Advantage, you can use your Reaction to remove the Advantage from that
+      Attack Roll. You may use this Feature a number of times equal to your
+      Proficiency Bonus, and regain all expended uses when you complete a Long
+      Rest.</p><p><strong>Module Effect: </strong>Creatures that you can see can
+      never have Advantage on Attacks against you unless you are
+      Incapacitated.</p><hr><p><strong>Automated: </strong>Creatures that Attack
+      you have an Opt-In if they have Advantage; you need to tell the DM when
+      you want to use this Feature so they can choose the Opt-In.</p>
+    chat: ''
+  identifier: elusive
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 9
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: talent
+effects:
+  - name: Elusive
+    img: modules/ak5e/icons/skill_icon_skchr_civilight_2.png
+    system:
+      magical: false
+      origin:
+        item: Item.LzRPQ4CbuElVYKDS
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.noAdvantage
+          type: ac5e
+          value: >-
+            usesCount=Item.elusive, 1; update=effectActor.statuses.reaction, 1;
+            name=Elusive; optinId=elusive-0; description=Remove Advantage from
+            incoming Attack; oncePerRound; optin; hasAttack && hasAdvantage
+          phase: initial
+          _id: LIOjlWEJ4GfIYM66
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: AfsRhDWVNvRdCgNi
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Item.LzRPQ4CbuElVYKDS
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794952702708
+      modifiedTime: 1794952702708
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!dysoMcVYBU6QuZ9J.AfsRhDWVNvRdCgNi'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794952702708
+  modifiedTime: 1794952702745
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: dysoMcVYBU6QuZ9J
+sort: 11950000
+_key: '!items!dysoMcVYBU6QuZ9J'

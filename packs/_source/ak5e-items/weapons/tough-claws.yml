@@ -1,0 +1,299 @@
+folder: mWMmRBU3xFtM9n76
+name: Tough Claws
+type: weapon
+img: icons/creatures/abilities/paw-print-orange.webp
+system:
+  activities:
+    K8HCgwUiGLinlBfQ:
+      _id: K8HCgwUiGLinlBfQ
+      type: attack
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        recovery: []
+        spent: 0
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      attack:
+        critical:
+          threshold: null
+        flat: false
+        type:
+          value: melee
+          classification: unarmed
+        ability: str
+        bonus: ''
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      attackMode: oneHanded
+      ammunition: ''
+      otherActivityUuid: ''
+      attackRollPerTarget: default
+      fumbleThreshold: 1
+      behaviors: []
+      name: ''
+  uses:
+    recovery: []
+    max: ''
+    spent: 0
+  description:
+    value: >-
+      <p>[[/attack extended]], [[/damage
+      extended]].</p><p>@UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.s7YIAtvJ7yyeFZgp]{Deadly}</p>
+    chat: ''
+  identifier: tough-claws
+  source:
+    revision: 1
+    rules: '2014'
+  identified: true
+  unidentified:
+    description: ''
+  container: null
+  quantity: 1
+  weight:
+    value: 0
+    units: lb
+  price:
+    value: 0
+    denomination: credits
+  attunement: ''
+  crew:
+    value: []
+  ammunition: {}
+  armor: {}
+  damage:
+    base:
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: '@abilities.str.mod'
+      scaling:
+        number: 1
+      number: 1
+      denomination: 4
+      bonus: ''
+      modifiers: []
+    versatile:
+      types: []
+      custom:
+        enabled: false
+      scaling:
+        number: 1
+      modifiers: []
+  properties:
+    - ded
+  proficient: 1
+  range:
+    units: ft
+    value: null
+    long: null
+    reach: 5
+  type:
+    value: natural
+    baseItem: ''
+  mastery: ''
+  rarities: []
+  attuned: false
+  equipped: false
+effects:
+  - name: Deadly
+    img: icons/skills/melee/blade-tip-chipped-blood-red.webp
+    origin: null
+    type: base
+    _id: BwvbeifF5exdTv0z
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          value: >-
+            bonus=@prof; name=Deadly Damage; oncePerTurn; itemLimited;
+            itemProperties.ded
+          priority: 20
+          type: ac5e
+          phase: initial
+          _id: n3Isr9o8gWsrswxA
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-items.Item.PtmmaRu4gjqC3Yvo
+        behavior: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-items.Item.fPUfPJOelKu6a97f.ActiveEffect.jM0vlGY22MA3LSBo
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794923072729
+      modifiedTime: 1794923072729
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!PtmmaRu4gjqC3Yvo.BwvbeifF5exdTv0z'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+flags: {}
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794923059012
+  modifiedTime: 1794923088606
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: PtmmaRu4gjqC3Yvo
+sort: -100000
+_key: '!items!PtmmaRu4gjqC3Yvo'

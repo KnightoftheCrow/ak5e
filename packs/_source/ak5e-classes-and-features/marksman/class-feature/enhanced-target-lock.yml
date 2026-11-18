@@ -2,136 +2,37 @@ name: Enhanced Target Lock
 type: feat
 img: modules/ak5e/icons/Skill-Lemuen1.webp
 system:
-  activities:
-    3SD5W6jxm01bSmVP:
-      type: utility
-      _id: 3SD5W6jxm01bSmVP
-      sort: 0
-      activation:
-        type: special
-        override: false
-        condition: ''
-      consumption:
-        scaling:
-          allowed: false
-        spellSlot: true
-        targets:
-          - type: itemUses
-            value: '1'
-            target: ''
-      description:
-        chatFlavor: ''
-      duration:
-        units: inst
-        concentration: false
-        override: false
-        value: ''
-      effects:
-        - _id: dwtDVRGa9xGOf8Ix
-          level:
-            min: null
-            max: null
-      flags: {}
-      range:
-        units: ft
-        override: false
-        special: ''
-        value: '500'
-      target:
-        template:
-          contiguous: false
-          units: ft
-          type: ''
-        affects:
-          choice: false
-          type: enemy
-          count: '1'
-          special: ''
-        override: false
-        prompt: true
-      uses:
-        spent: 0
-        recovery: []
-        max: ''
-      visibility:
-        level:
-          min: null
-          max: null
-        requireAttunement: false
-        requireIdentification: false
-        requireMagic: false
-        identifier: ''
-      roll:
-        prompt: false
-        visible: false
-        name: ''
-        formula: ''
-      useConditionText: ''
-      useConditionReason: ''
-      effectConditionText: ''
-      macroData:
-        name: ''
-        command: ''
-      ignoreTraits:
-        idi: false
-        idr: false
-        idv: false
-        ida: false
-        idm: false
-      midiProperties:
-        ignoreTraits: []
-        triggeredActivityId: none
-        triggeredActivityConditionText: ''
-        triggeredActivityTargets: targets
-        triggeredActivityRollAs: self
-        autoConsume: true
-        forceConsumeDialog: default
-        forceRollDialog: default
-        forceDamageDialog: default
-        confirmTargets: default
-        autoTargetType: any
-        autoTargetAction: default
-        automationOnly: false
-        otherActivityCompatible: true
-        otherActivityAsParentType: true
-        identifier: ''
-        displayActivityName: false
-        rollMode: default
-        chooseEffects: false
-        toggleEffect: false
-        ignoreFullCover: false
-        removeChatButtons: default
-        magicEffect: false
-        magicDamage: false
-        noConcentrationCheck: false
-        skipConcentrationCheck: false
-        autoCEEffects: default
-      isOverTimeFlag: false
-      overTimeProperties:
-        saveRemoves: true
-        preRemoveConditionText: ''
-        postRemoveConditionText: ''
-      otherActivityId: none
-      otherActivityAsParentType: true
-      name: Enhanced Target Lock
-      img: ''
+  activities: {}
   uses:
     spent: 0
-    recovery:
-      - period: initiative
-        type: recoverAll
-    max: '1'
-  advancement: []
+    recovery: []
+    max: ''
+  advancement:
+    gbLwugbPNh7RQ9QZ:
+      name: ''
+      type: ModifyItem
+      _id: gbLwugbPNh7RQ9QZ
+      configuration:
+        changes:
+          - _id: RdzVZg3mZulOPZuJ
+            uuid: null
+            identifiers:
+              - target-lock
+      flags: {}
+      value:
+        modified: []
+      level: 0
+      hint: ''
   description:
     value: >-
       <p>Your target escaping you is unthinkable. You gain the following
-      benefits:</p><p><strong>Master Marksman:</strong> The bonus granted by
-      your TargetLock Feature is increased to +2.</p><p><strong>Target
-      Acquisition:</strong> You regain use of your TargetLock Feature when you
-      roll Initative.</p><p><strong>Automated:</strong> Use this feat to apply
-      Target effect on seen Creature.</p>
+      benefits:</p><ul><li><p><strong>Master Marksman:</strong> The bonus
+      granted by your Target Lock Feature is increased to
+      +2.</p></li><li><p><strong>Target Acquisition:</strong> You regain use of
+      your Target Lock Feature when you roll
+      Initative.</p></li></ul><hr><p><strong>Automated.</strong></p>
     chat: ''
-  identifier: feature
+  identifier: enhanced-target-lock
   source:
     revision: 1
     rules: '2024'
@@ -145,80 +46,85 @@ system:
   requirements: Target Lock
   type:
     value: class
-    subtype: skillPoints
+    subtype: ''
 effects:
-  - name: Enhanced Target
+  - name: Recharge on Initiative
     img: modules/ak5e/icons/Skill-Lemuen1.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.Wxr36xCVCF3240NG
+    type: enchantment
     transfer: false
-    _id: dwtDVRGa9xGOf8Ix
-    type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.attack.bonus
-        mode: 5
-        value: bonus=2; hasAttack && effectOriginTokenId === tokenId;
-        priority: 20
+    _id: RdzVZg3mZulOPZuJ
+    system:
+      changes:
+        - key: system.uses.recovery
+          type: override
+          value:
+            period: initiative
+            type: recoverAll
+          phase: initial
+          _id: BlSBELnr0TfsmcAt
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      magical: true
     disabled: false
+    start: null
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 10
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
+    origin: null
     tint: '#ffffff'
     statuses: []
+    showIcon: 1
+    folder: null
     sort: 0
     flags:
-      dnd5e:
-        riders:
-          statuses: []
       dae:
         enableCondition: ''
         disableCondition: ''
         stackable: noneName
-        showIcon: false
-        disableIncapacitated: false
-        selfTarget: false
-        selfTargetAlways: false
-        dontApply: false
+        applicationMode: default
+        expiryMode: default
         durationExpression: ''
         macroRepeat: none
         specialDuration: []
       core:
         overlay: false
     _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794782262952
+      modifiedTime: 1794782311945
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
-      systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1767683722107
-      modifiedTime: 1767875967088
-      lastModifiedBy: GiT7LQTiCJxjm7mo
-    _key: '!items.effects!Wxr36xCVCF3240NG.dwtDVRGa9xGOf8Ix'
+    _key: '!items.effects!IJwEadDhhzMLELDP.RdzVZg3mZulOPZuJ'
 folder: r2sKTPYSmSAEfVCU
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794782168299
+  modifiedTime: 1794782368634
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
-  systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1767616812587
-  modifiedTime: 1767875958560
-  lastModifiedBy: GiT7LQTiCJxjm7mo
 ownership:
   default: 0
-  GiT7LQTiCJxjm7mo: 3
-_id: Wxr36xCVCF3240NG
-sort: 400000
-_key: '!items!Wxr36xCVCF3240NG'
+  5XlrCO2NlPtd4MFQ: 3
+_id: IJwEadDhhzMLELDP
+sort: 0
+_key: '!items!IJwEadDhhzMLELDP'

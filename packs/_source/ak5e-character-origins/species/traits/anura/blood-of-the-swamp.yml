@@ -59,24 +59,27 @@ system:
 effects:
   - name: Poisoned Condition Resistance
     img: icons/creatures/amphibians/frog-water-teal.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.7IkZL0NBFK3LEPur
+    origin: null
     _id: cbpOizqbvX1EaHIQ
     type: base
-    system: {}
-    changes:
-      - key: flags.chris-premades.CR.poisoned
-        mode: 5
-        value: 'true'
-        priority: 20
+    system:
+      changes:
+        - key: flags.chris-premades.CR.poisoned
+          value: true
+          priority: 20
+          type: override
+          phase: initial
+          _id: 0pT85uM6afZPCUNn
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.7IkZL0NBFK3LEPur
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -100,10 +103,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733081050
+      modifiedTime: 1791733081050
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!7IkZL0NBFK3LEPur.cbpOizqbvX1EaHIQ'
 sort: 0
 ownership:
@@ -117,10 +125,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680290139
-  modifiedTime: 1768680290139
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733081050
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!7IkZL0NBFK3LEPur'

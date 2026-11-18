@@ -1,16 +1,19 @@
 folder: QJjGENx3ERG6JUY7
 name: Skyranger
 type: subclass
-_id: HycR18TQR2jysSTc
-img: modules/ak5e/icons/Skyranger_Specialist.webp
+img: modules/ak5e/icons/class%20%2B%20subclass/sub_skywalker_icon.png
 system:
   advancement:
     9zdMNFvDWLYmX5dB:
       type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.mFlEn0zBWbRslklu
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-classes-and-features.Item.mFlEn0zBWbRslklu
+          - uuid: Compendium.ak5e.ak5e-classes-and-features.Item.8iLsWgmR5WO0uxuZ
             optional: false
+            sort: 0
         optional: false
         spell: null
       flags: {}
@@ -19,7 +22,6 @@ system:
       hint: ''
       _id: 9zdMNFvDWLYmX5dB
       title: ''
-      icon: ''
     MHmuZGUVgHpVducd:
       type: ItemGrant
       configuration:
@@ -34,7 +36,6 @@ system:
       hint: ''
       _id: MHmuZGUVgHpVducd
       title: ''
-      icon: ''
     JpU8nNLU6T1E4xB5:
       type: ItemGrant
       configuration:
@@ -51,7 +52,6 @@ system:
       hint: ''
       _id: JpU8nNLU6T1E4xB5
       title: ''
-      icon: ''
     TslblPjxpslnvIVX:
       type: ItemGrant
       configuration:
@@ -66,7 +66,6 @@ system:
       hint: ''
       _id: TslblPjxpslnvIVX
       title: ''
-      icon: ''
     EpZFP8HpXBz3i8Qz:
       type: ItemGrant
       configuration:
@@ -81,7 +80,6 @@ system:
       hint: ''
       _id: EpZFP8HpXBz3i8Qz
       title: ''
-      icon: ''
   description:
     value: >-
       <p>The very idea of a Skyranger specialist will draw strange looks from
@@ -93,7 +91,9 @@ system:
       data-colwidth="50"><p>Level</p></td><td><p>Branch
       Feature</p></td></tr><tr><td data-colwidth="50"><p
       style="text-align:center">1</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.mFlEn0zBWbRslklu]{Take
-      Flight}</p></td></tr><tr><td data-colwidth="50"><p
+      Flight},
+      @UUID[Compendium.ak5e.ak5e-classes-and-features.Item.8iLsWgmR5WO0uxuZ]{Fuel}</p></td></tr><tr><td
+      data-colwidth="50"><p
       style="text-align:center">5</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.WvbrwK1V21yZg60v]{Air
       Doctrine}</p></td></tr><tr><td data-colwidth="50"><p
       style="text-align:center">5</p></td><td><p>@UUID[Compendium.ak5e.ak5e-classes-and-features.Item.AjvXcDYL7pR1yN9k]{Jink}</p></td></tr><tr><td
@@ -115,22 +115,23 @@ system:
       formula: ''
     ability: ''
 effects: []
-sort: 0
-ownership:
-  default: 0
-  27ikDz77N89hVLvM: 3
 flags:
   dnd5e:
     riders:
       activity: []
 _stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791206236822
+  modifiedTime: 1794351592138
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
-  systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358953798
-  modifiedTime: 1783443324425
-  lastModifiedBy: 27ikDz77N89hVLvM
-_key: '!items!HycR18TQR2jysSTc'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 7JQj5r69FIiqFqP3
+sort: 106250
+_key: '!items!7JQj5r69FIiqFqP3'

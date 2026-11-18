@@ -1,0 +1,183 @@
+folder: F7xt8Er4yJgI2eaK
+name: Weapon Expertise (Ranged)
+type: feat
+_id: YH5ePDHCQSL4ozbl
+img: modules/ak5e/icons/Skill-Totter2.webp
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You gain additional benefits based on your Weapon
+      Specialisation.</p><p><strong>Ranged Combat.</strong> Whenever you have
+      Advantage on a Ranged Attack Roll, you may roll an additional die, keeping
+      only the die with the highest result. Additionally, you may expend 1
+      Prowess as a Bonus Action to give yourself Advantage on the next Ranged
+      Attack Roll you make.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: weapon-expertise-ranged
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items:
+      - weapon-specialisation-ranged
+    repeatable: false
+    level: 12
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Roll 3 Dice for Ranged Attack Advantage
+    img: modules/ak5e/icons/Skill-Totter2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.YH5ePDHCQSL4ozbl
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.dnd5e.elvenAccuracy
+          type: add
+          value: true
+          phase: initial
+          _id: ozWZgK1LsKjrc3Bz
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: gi7QvJ7E0oJEbEGK
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.YH5ePDHCQSL4ozbl
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793568850265
+      modifiedTime: 1793568899093
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!YH5ePDHCQSL4ozbl.gi7QvJ7E0oJEbEGK'
+  - name: Advantage on Ranged Attacks for 1 Prowess
+    img: modules/ak5e/icons/Skill-Totter2.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.YH5ePDHCQSL4ozbl
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.advantage
+          type: ac5e
+          value: >-
+            usesCount=Item.prowess, 1; name=Weapon Expertise;
+            optinId=advantage-on-ranged-attacks-for-1-prowess-0;
+            description=Advantage on Ranged Attacks; optin; actionType.rwak ||
+            actionType.rsak
+          phase: initial
+          _id: QAyYUmseBCDnSd5s
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: Gstg0CVMSJMMnqhv
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-classes-and-features.Item.YH5ePDHCQSL4ozbl
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1793568914431
+      modifiedTime: 1793569061944
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!YH5ePDHCQSL4ozbl.Gstg0CVMSJMMnqhv'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.YH5ePDHCQSL4ozbl
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791301114346
+  modifiedTime: 1793569318873
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 1800000
+_key: '!items!YH5ePDHCQSL4ozbl'

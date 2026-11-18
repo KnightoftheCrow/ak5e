@@ -1,0 +1,115 @@
+folder: T30z8cJ0Msjephgl
+name: Ranger
+type: feat
+img: modules/ak5e/icons/Skill-Blitz2.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery: []
+    max: ''
+  advancement: {}
+  description:
+    value: >-
+      <p>You gain a +2 Bonus to Attack Rolls you make with Ranged or Thrown
+      Weapons.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: feature
+  source:
+    revision: 1
+    rules: '2024'
+    book: AK5e
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: fightingStyle
+effects:
+  - name: Ranger
+    img: modules/ak5e/icons/Skill-Blitz2.png
+    origin: null
+    _id: MafaTRrvCcJvPd2s
+    type: base
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: bonus=2; item.properties.has('thr') || actionType.rwak
+          phase: initial
+          priority: null
+          _id: Gb8PKApBSiqvx77s
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.OR6a43AfzdtlZonE
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+        expiryMode: default
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791322012907
+      modifiedTime: 1791733084816
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!2l731wldPp2t8k9D.MafaTRrvCcJvPd2s'
+flags:
+  dnd5e:
+    riders:
+      activity: []
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791322012907
+  modifiedTime: 1791733084815
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 2l731wldPp2t8k9D
+sort: 400000
+_key: '!items!2l731wldPp2t8k9D'

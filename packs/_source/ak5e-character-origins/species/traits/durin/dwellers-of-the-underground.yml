@@ -152,24 +152,27 @@ system:
 effects:
   - name: Darkvision
     img: icons/environment/wilderness/mine-exterior-entrance.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.OfKh06BhfMWA2sC5
+    origin: null
     _id: wz2ekG97KSwKDwZf
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.senses.darkvision
-        mode: 2
-        value: '30'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.senses.darkvision
+          value: 30
+          priority: 20
+          type: add
+          phase: initial
+          _id: OCNSQu9MjS9fe5Zc
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.OfKh06BhfMWA2sC5
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -193,32 +196,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733081830
+      modifiedTime: 1791733081830
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!OfKh06BhfMWA2sC5.wz2ekG97KSwKDwZf'
   - name: Tremorsense
     img: icons/environment/wilderness/mine-exterior-entrance.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.OfKh06BhfMWA2sC5
+    origin: null
     transfer: false
     _id: dnVHwjA9281XDI0y
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.senses.tremorsense
-        mode: 2
-        value: '60'
-        priority: 20
+    system:
+      changes:
+        - key: system.attributes.senses.tremorsense
+          value: 60
+          priority: 20
+          type: add
+          phase: initial
+          _id: 8TFCwveOX0SOlQFe
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.OfKh06BhfMWA2sC5
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -245,10 +256,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733081830
+      modifiedTime: 1791733081830
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!OfKh06BhfMWA2sC5.dnVHwjA9281XDI0y'
 sort: 300000
 ownership:
@@ -262,10 +278,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680300464
-  modifiedTime: 1768680300464
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733081830
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!OfKh06BhfMWA2sC5'

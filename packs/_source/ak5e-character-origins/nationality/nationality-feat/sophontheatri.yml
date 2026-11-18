@@ -41,32 +41,43 @@ system:
 effects:
   - name: Sophontheatri
     img: icons/environment/settlement/temple-night.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.V0Wag5cTIBP584oY
+    origin: null
     _id: pwBpeAkJaoncn2eo
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.sophontheatri.skill.per
-        mode: 0
-        value: reroll
-        priority: 20
-      - key: flags.midi-qol.optional.sophontheatri.count
-        mode: 0
-        value: every
-        priority: 20
-      - key: flags.midi-qol.optional.sophontheatri.label
-        mode: 0
-        value: Sophontheatri - Reroll to Persuade
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.sophontheatri.skill.per
+          value: reroll
+          priority: 20
+          type: custom
+          phase: initial
+          _id: RV6IWrYZmTamkNcO
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.sophontheatri.count
+          value: every
+          priority: 20
+          type: custom
+          phase: initial
+          _id: oW68KLysueIZ0sgZ
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.sophontheatri.label
+          value: Sophontheatri - Reroll to Persuade
+          priority: 20
+          type: custom
+          phase: initial
+          _id: wLMskuD8mzlSA4mW
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.V0Wag5cTIBP584oY
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -90,10 +101,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733082272
+      modifiedTime: 1791733082272
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!V0Wag5cTIBP584oY.pwBpeAkJaoncn2eo'
 sort: 100000
 ownership:
@@ -107,10 +123,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1769881328247
-  modifiedTime: 1769881328247
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733082272
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!V0Wag5cTIBP584oY'

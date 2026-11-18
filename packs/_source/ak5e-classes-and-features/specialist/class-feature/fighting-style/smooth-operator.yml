@@ -1,0 +1,117 @@
+folder: Bg4shjy2cai76KuT
+name: Smooth Operator
+type: feat
+img: modules/ak5e/icons/Skill-BluePoison1.png
+system:
+  activities: {}
+  uses:
+    spent: 0
+    recovery:
+      - period: turn
+        type: recoverAll
+    max: '1'
+  advancement: {}
+  description:
+    value: >-
+      <p>When you make an Attack as a Bonus Action using the Rapid Fire
+      Property, you may add your Ability Modifier to the Damage Roll of that
+      Attack.</p><hr><p><strong>Automated.</strong></p>
+    chat: ''
+  identifier: feature
+  source:
+    revision: 1
+    rules: '2024'
+    book: AK5e
+    page: ''
+    custom: ''
+    license: ''
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties:
+    - trait
+  requirements: ''
+  type:
+    value: class
+    subtype: fightingStyle
+effects:
+  - name: Smooth Operator
+    img: modules/ak5e/icons/Skill-BluePoison1.png
+    origin: null
+    type: base
+    _id: Titb1fB2XYXi0A8F
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=rollingActor.abilities.dex.mod; addTo=base;
+            activity.activation.type === 'bonus' && itemProperties.rpd
+          phase: initial
+          priority: null
+          _id: oHbMopkDEhYX6g09
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.EmHinHrGFC2uefsW
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dnd5e:
+        riders:
+          statuses: []
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+        phaseStamped: true
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791322165649
+      modifiedTime: 1791733085269
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!9GR9wXrnE7pb8cza.Titb1fB2XYXi0A8F'
+flags:
+  dnd5e: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 5.3.3
+  createdTime: 1791322165649
+  modifiedTime: 1791733085269
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: 9GR9wXrnE7pb8cza
+sort: 1100000
+_key: '!items!9GR9wXrnE7pb8cza'

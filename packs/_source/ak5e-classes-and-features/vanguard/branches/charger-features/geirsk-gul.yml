@@ -8,16 +8,20 @@ system:
     HCb4A9YwZqCP1Yqn:
       type: save
       _id: HCb4A9YwZqCP1Yqn
-      sort: 0
+      sort: 100000
       activation:
-        type: ''
+        type: special
         override: false
         condition: ''
       consumption:
         scaling:
-          allowed: false
+          allowed: true
+          max: '6'
         spellSlot: true
-        targets: []
+        targets:
+          - type: itemUses
+            value: '1'
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -35,9 +39,11 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
-          type: ''
+          type: self
+          special: ''
         override: false
         prompt: true
       uses:
@@ -61,8 +67,9 @@ system:
         ability:
           - str
         dc:
-          calculation: spellcasting
-          formula: ''
+          calculation: ''
+          formula: 8 + @abilities.str.mod + @prof + @scaling
+        bonus: ''
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -114,19 +121,39 @@ system:
       otherActivityId: ''
       otherActivityAsParentType: true
       friendlySave: default
-      name: ''
+      name: Save (STR)
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     VmiSOMkmH5iuDcjj:
       type: save
       _id: VmiSOMkmH5iuDcjj
-      sort: 0
+      sort: 300000
       activation:
-        type: ''
+        type: special
         override: false
         condition: ''
       consumption:
         scaling:
-          allowed: false
+          allowed: true
+          max: '6'
         spellSlot: true
         targets: []
       description:
@@ -138,7 +165,7 @@ system:
       effects: []
       flags: {}
       range:
-        units: self
+        units: any
         override: false
         special: ''
       target:
@@ -146,9 +173,12 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
-          type: ''
+          type: creature
+          count: ''
+          special: ''
         override: false
         prompt: true
       uses:
@@ -172,8 +202,9 @@ system:
         ability:
           - dex
         dc:
-          calculation: spellcasting
-          formula: ''
+          calculation: ''
+          formula: 8 + @abilities.str.mod + @prof + @scaling
+        bonus: ''
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
@@ -224,16 +255,472 @@ system:
         postRemoveConditionText: ''
       otherActivityId: ''
       otherActivityAsParentType: true
-      friendlySave: default
-      name: Crash
+      friendlySave: friendlySuccess
+      name: Crash Save (STR)
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+    T5upA6uVlS0RWE4B:
+      type: save
+      sort: 200000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: true
+          max: '6'
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling:
+              mode: ''
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - str
+        dc:
+          calculation: ''
+          formula: 8 + @abilities.dex.mod + @prof + @scaling
+        bonus: ''
+        visible: true
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      friendlySave: default
+      name: Save (DEX)
+      img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      behaviors: []
+      _id: T5upA6uVlS0RWE4B
+    MlxMqQQ2x6TBh7RD:
+      type: damage
+      name: Damage Dealt
+      _id: MlxMqQQ2x6TBh7RD
+      img: ''
+      sort: 400000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: true
+          max: ''
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        critical:
+          allow: false
+        parts:
+          - custom:
+              enabled: true
+              formula: floor(@scaling/2)
+            number: null
+            denomination: null
+            bonus: ''
+            modifiers: []
+            types:
+              - bludgeoning
+            scaling:
+              mode: ''
+              number: 1
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+    OSFCTcOc7ouRQdmC:
+      type: save
+      sort: 350000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: true
+          max: '6'
+        spellSlot: true
+        targets: []
+      description:
+        chatFlavor: ''
+        value: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+        expiry: null
+      effects: []
+      flags: {}
+      range:
+        units: any
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: ''
+          formula: 8 + @abilities.dex.mod + @prof + @scaling
+        bonus: ''
+        visible: true
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+        targetMustBeSeen: false
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      otherActivityId: ''
+      otherActivityAsParentType: true
+      friendlySave: friendlySuccess
+      name: Crash Save (DEX)
+      img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      behaviors: []
+      _id: OSFCTcOc7ouRQdmC
   uses:
     spent: 0
     recovery:
       - period: lr
         type: recoverAll
     max: '1'
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>When you hit with a Momentous Strike for which you consumed 5 or more
@@ -253,7 +740,13 @@ system:
       Creature and the additional Creature/Object take Bludgeoning Damage equal
       to half of the Damage dealt by the triggering Momentous Strike.</p><p>Once
       you have used this Feature, you must complete a Long Rest before you can
-      do so again.</p><p><strong>Not automated.</strong></p>
+      do so again.</p><hr><p><strong>Semi-Automated: </strong>Use the
+      appropriate Save Activity on the Creature you hit with the Momentous
+      Strike; set the Scaling Value to the Momentum Consumed. Use the
+      appropriate Crash Activity if you would push the target into another
+      Creature; allies will automatically succeed. Finally, use the Damage
+      Activity on all relevant Creatures and set the scaling value to the total
+      Damage of the Triggering Momentous Strike.</p>
     chat: ''
   identifier: geirskogul
   source:
@@ -264,27 +757,28 @@ system:
   prerequisites:
     items: []
     repeatable: false
-    level: null
+    level: 17
   properties: []
   requirements: ''
   type:
-    value: ''
+    value: class
     subtype: ''
 effects: []
-sort: 0
+sort: 500000
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 flags:
   dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774579819463
-  modifiedTime: 1790906935348
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 6.0.6
+  createdTime: 1791206078995
+  modifiedTime: 1794507719332
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!hH6xmrrhu5JxDfIW'

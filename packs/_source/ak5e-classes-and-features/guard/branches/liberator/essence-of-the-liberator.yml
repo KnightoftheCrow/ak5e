@@ -1,0 +1,1262 @@
+folder: YjXKh177g00CFJra
+name: Essence of the Liberator
+type: feat
+img: modules/ak5e/icons/skill_icon_skchr_mlynar_1.png
+system:
+  activities:
+    GzTpkkmVGja4CIzc:
+      type: utility
+      name: End of Turn Gain Liberty
+      _id: GzTpkkmVGja4CIzc
+      img: ''
+      sort: 0
+      activation:
+        type: turnEnd
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: always
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    rIH61NT2P3Yrun8h:
+      type: utility
+      name: Guide The Masses
+      _id: rIH61NT2P3Yrun8h
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: wO1yrUAeppSGPsZ8
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 2RJ6UdP10mxuL9DN
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: NP7Rx0RQUQvTtSxO
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: khX7hIoOXDxqWS3D
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: S4Yg7RUKmjWiTFMp
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: RTmHoAILHZQGRppc
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '20'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: 9
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    ciqfzwvGvfATvk0e:
+      type: utility
+      name: Guide The Masses (Bonus Action)
+      img: ''
+      sort: 200000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: wO1yrUAeppSGPsZ8
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 2RJ6UdP10mxuL9DN
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: NP7Rx0RQUQvTtSxO
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: khX7hIoOXDxqWS3D
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: S4Yg7RUKmjWiTFMp
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: RTmHoAILHZQGRppc
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '20'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 7
+          max: 9
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: ciqfzwvGvfATvk0e
+    TPibXlnt5eKddpPM:
+      type: utility
+      name: Guide The Masses
+      img: ''
+      sort: 300000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '-1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: wO1yrUAeppSGPsZ8
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 2RJ6UdP10mxuL9DN
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: NP7Rx0RQUQvTtSxO
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: khX7hIoOXDxqWS3D
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: S4Yg7RUKmjWiTFMp
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: RTmHoAILHZQGRppc
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '40'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 10
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: TPibXlnt5eKddpPM
+    83b6INV1ueNT3qqW:
+      type: utility
+      name: Guide The Masses (Bonus Action)
+      img: ''
+      sort: 400000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: wO1yrUAeppSGPsZ8
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: 2RJ6UdP10mxuL9DN
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: NP7Rx0RQUQvTtSxO
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: khX7hIoOXDxqWS3D
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: S4Yg7RUKmjWiTFMp
+          uuid: null
+          level:
+            min: null
+            max: null
+        - _id: RTmHoAILHZQGRppc
+          uuid: null
+          level:
+            min: null
+            max: null
+      flags: {}
+      range:
+        units: ft
+        override: false
+        value: '40'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: 10
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: true
+        toggleEffect: false
+        ignoreFullCover: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      _id: 83b6INV1ueNT3qqW
+  uses:
+    spent: 0
+    recovery: []
+    max: '6'
+  advancement: {}
+  description:
+    value: >-
+      <p>You take action only when the moment is right. Until then, you watch
+      and wait, providing what succor you can to those who rally to you. You
+      gain the following benefits:</p><p><strong>Liberty.</strong> You have a
+      special resource called Liberty. Liberty is expended to fuel your other
+      Features, and empower your Operator Skills. Your maximum Liberty is
+      6.</p><p>You can generate Liberty in the following ways. You can only
+      generate Liberty during Combat.</p><ul><li><p>You gain 1 Liberty at the
+      end of any of your Turns that you did not:</p><ul><li><p>Activate an
+      Operator Skill, or have an active Operator Skill.</p></li><li><p>Cast an
+      Art.</p></li><li><p>Make an Attack Roll.</p></li></ul></li><li><p>You gain
+      1 Liberty when you use your Guide the Masses Feature as an
+      Action.</p></li></ul><p><strong>Guide the Masses</strong>. As an Action
+      while in Combat, you can choose an allied Creature you can see within 20
+      feet, and grant them one of the following bonuses (your choice) until the
+      beginning of your next Turn; these effects are not
+      cumulative.</p><ul><li><p><strong>Advocate.</strong> The next time that
+      Creature gains Hit Points or Temporary Hit Points, they gain an additional
+      amount equal to your twice Proficiency Bonus or twice your current
+      Liberty, whichever is higher.</p></li><li><p><strong>Empower.</strong>
+      That Creature gains Damage Reduction against the next Damage they take
+      equal to your Proficiency Bonus or your current Liberty, whichever is
+      higher.</p></li><li><p><strong>Uplift.</strong> That Creature’s next
+      successful Attack deals additional Damage equal to your Proficiency Bonus
+      or your current Liberty, whichever is higher.</p></li></ul><p>Starting at
+      7th Level, if you have used this Feature as an Action during a Turn, you
+      may also use it as a Bonus Action during that Turn, but you must choose a
+      different Creature for that Bonus Action.</p>
+    chat: ''
+  identifier: essence-of-the-liberator
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: 1
+  properties: []
+  requirements: ''
+  type:
+    value: class
+    subtype: ''
+effects:
+  - name: Advocate (2x Prof)
+    img: modules/ak5e/icons/skill_icon_skchr_mlynar_1.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.RPC4FOcOhNH4qLsS
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: bonus=[[@prof*2]]; addTo=base,types(healing,temphp); once; isHeal
+          phase: initial
+          _id: d5tAsUIWqtCslZcG
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: wO1yrUAeppSGPsZ8
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791803861788
+      modifiedTime: 1791804524029
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!RPC4FOcOhNH4qLsS.wO1yrUAeppSGPsZ8'
+  - name: Advocate (2x Liberty)
+    img: modules/ak5e/icons/skill_icon_skchr_mlynar_1.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.RPC4FOcOhNH4qLsS
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=[[originItem.uses.value*2]]; addTo=base,types(healing,temphp);
+            once; isHeal
+          phase: initial
+          _id: d5tAsUIWqtCslZcG
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791804166042
+      modifiedTime: 1791804540237
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 2RJ6UdP10mxuL9DN
+    _key: '!items.effects!RPC4FOcOhNH4qLsS.2RJ6UdP10mxuL9DN'
+  - name: Empower (2x Prof)
+    img: modules/ak5e/icons/skill_icon_skchr_mlynar_1.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.RPC4FOcOhNH4qLsS
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: bonus=-[[@prof*2]]; addTo=all,!types(healing,temphp); once
+          phase: initial
+          _id: d5tAsUIWqtCslZcG
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791804580070
+      modifiedTime: 1791804617705
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: NP7Rx0RQUQvTtSxO
+    _key: '!items.effects!RPC4FOcOhNH4qLsS.NP7Rx0RQUQvTtSxO'
+  - name: Empower (2x Liberty)
+    img: modules/ak5e/icons/skill_icon_skchr_mlynar_1.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.RPC4FOcOhNH4qLsS
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=-[[originItem.uses.value*2]];
+            addTo=all,!types(healing,temphp); once
+          phase: initial
+          _id: d5tAsUIWqtCslZcG
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791804634602
+      modifiedTime: 1791804654872
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: khX7hIoOXDxqWS3D
+    _key: '!items.effects!RPC4FOcOhNH4qLsS.khX7hIoOXDxqWS3D'
+  - name: Uplift (2x Prof)
+    img: modules/ak5e/icons/skill_icon_skchr_mlynar_1.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.RPC4FOcOhNH4qLsS
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: bonus=[[@prof*2]]; addTo=base,!types(healing,temphp); once
+          phase: initial
+          _id: d5tAsUIWqtCslZcG
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791804684406
+      modifiedTime: 1791804750559
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: S4Yg7RUKmjWiTFMp
+    _key: '!items.effects!RPC4FOcOhNH4qLsS.S4Yg7RUKmjWiTFMp'
+  - name: Uplift (2x Liberty)
+    img: modules/ak5e/icons/skill_icon_skchr_mlynar_1.png
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.RPC4FOcOhNH4qLsS
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=[[originItem.uses.value*2]];
+            addTo=base,!types(healing,temphp); once
+          phase: initial
+          _id: d5tAsUIWqtCslZcG
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: sourceStart
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.368'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1791804744622
+      modifiedTime: 1791804771227
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: RTmHoAILHZQGRppc
+    _key: '!items.effects!RPC4FOcOhNH4qLsS.RTmHoAILHZQGRppc'
+flags:
+  dnd5e: {}
+_stats:
+  compendiumSource: Compendium.ak5e.ak5e-guard.Item.XzmnzzSuQmDwP07X
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '14.368'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1791803057922
+  modifiedTime: 1791813050887
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: RPC4FOcOhNH4qLsS
+sort: 100000
+_key: '!items!RPC4FOcOhNH4qLsS'

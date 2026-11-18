@@ -1,13 +1,13 @@
 folder: DVs77HCNoYbBNWwl
 name: Evasive Stance
 type: feat
-_id: HPkO1mggfBS8Nxxp
-img: modules/ak5e/icons/skill_icon_skchr_beehunter_1.png
+img: modules/ak5e/icons/Skill-Tsukinogi1.webp
 system:
   activities:
-    se38NTjPFC0sSEbU:
+    O8815dynEpUpeBni:
       type: utility
-      _id: se38NTjPFC0sSEbU
+      _id: O8815dynEpUpeBni
+      img: ''
       sort: 0
       activation:
         type: reaction
@@ -21,15 +21,20 @@ system:
           - type: itemUses
             value: '10'
             target: Compendium.ak5e.ak5e-operator-skills.Item.6wUvlljsCtahm7N5
+            scaling: {}
       description:
         chatFlavor: ''
+        value: ''
       duration:
         units: round
         concentration: false
         override: false
         value: '3'
+        expiry: null
       effects:
-        - _id: y331pEXpQHIdantR
+        - _id: ieXuhCxcCHNxXSsm
+          level: {}
+          uuid: null
       flags: {}
       range:
         units: self
@@ -38,11 +43,13 @@ system:
       target:
         template:
           contiguous: false
+          stationary: false
           units: ft
           type: ''
         affects:
           choice: false
-          type: ''
+          type: self
+          special: ''
         override: false
         prompt: true
       uses:
@@ -82,7 +89,7 @@ system:
         triggeredActivityRollAs: self
         triggeredActivityConsume: true
         triggeredActivityConfigure: true
-        autoConsume: false
+        autoConsume: true
         forceConsumeDialog: default
         forceRollDialog: default
         forceDamageDialog: default
@@ -112,71 +119,177 @@ system:
         postRemoveConditionText: ''
       otherActivityId: none
       otherActivityAsParentType: true
-      name: ''
-      img: ''
+      name: Evasive Stance
+      behaviors: []
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
       SP</p></td><td><p>Charging</p></td><td><p>Activation</p></td><td><p>Duration</p></td></tr></thead><tbody><tr><td><p>10</p></td><td><p>5</p></td><td><p>Defensive</p></td><td><p>Reaction</p></td><td><p>3
-      Rounds</p></td></tr></tbody></table><p>Your Armour Class is increased by a
-      value equal to your Proficiency
+      Rounds</p></td></tr></tbody></table><p><strong>Effect:</strong> Your
+      Armour Class is increased by a value equal to your Proficiency
       Bonus.</p><p><strong>Automated.</strong></p>
     chat: ''
-  identifier: feature
+  identifier: evasive-stance
   source:
     revision: 1
-    rules: '2024'
+    rules: '2014'
+    book: ''
+    page: ''
+    custom: ''
+    license: ''
   crewed: false
   enchant: {}
   prerequisites:
     items: []
     repeatable: false
-    level: null
+    level: 2
   properties: []
   requirements: ''
   type:
-    value: ''
+    value: class
     subtype: ''
 effects:
-  - name: Evasive Stance
-    img: modules/ak5e/icons/skill_icon_skchr_beehunter_1.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.HPkO1mggfBS8Nxxp
-    transfer: false
-    _id: y331pEXpQHIdantR
+  - name: Evasive Stance (Skill Points)
+    img: modules/ak5e/icons/Skill-Tsukinogi1.webp
+    origin: null
     type: base
-    system: {}
-    changes:
-      - key: system.attributes.ac.bonus
-        mode: 2
-        value: '@prof'
-        priority: 20
+    _id: 9E9hPbZCdo3piB2i
+    system:
+      changes:
+        - key: system.scale.skill-points.recovery
+          value: 5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: dGI5FVBb4WX4vHYc
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skill-points.maxsp
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 6mgyoxwyBpnwB3Ac
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.LeDC2kinl9hcy0Nx
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    sort: 0
+    flags:
+      dnd5e:
+        riders: {}
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        showIcon: false
+        disableIncapacitated: false
+        durationExpression: ''
+        macroRepeat: none
+        specialDuration: []
+      core:
+        overlay: false
+      automated-conditions-5e:
+        ac5eChangeRows: {}
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1792511601960
+      modifiedTime: 1792511601960
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!tKpFs4h8CUizXdHV.9E9hPbZCdo3piB2i'
+  - name: Evasive Stance
+    img: modules/ak5e/icons/Skill-Tsukinogi1.webp
+    origin: null
+    transfer: false
+    _id: ieXuhCxcCHNxXSsm
+    type: base
+    system:
+      changes:
+        - key: system.attributes.ac.bonus
+          value: '@prof'
+          priority: 20
+          type: add
+          phase: initial
+          _id: PUcSF8vdf0GhTihh
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.LeDC2kinl9hcy0Nx
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      rider:
+        statuses: []
+      conditions: '{}'
+      magical: false
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
     sort: 0
     flags:
       dnd5e:
-        riders:
-          statuses: []
+        riders: {}
       dae:
         enableCondition: ''
         disableCondition: ''
         stackable: noneName
-        showIcon: false
         disableIncapacitated: false
         selfTarget: false
         selfTargetAlways: false
@@ -187,32 +300,36 @@ effects:
       core:
         overlay: false
     _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1792511601960
+      modifiedTime: 1793630690292
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
-      systemId: dnd5e
-      systemVersion: 5.2.5
-      createdTime: 1790901246618
-      modifiedTime: 1790901310080
-      lastModifiedBy: P5lWUBQKuHlZqgTn
-    _key: '!items.effects!HPkO1mggfBS8Nxxp.y331pEXpQHIdantR'
-sort: 200000
-ownership:
-  default: 0
-  P5lWUBQKuHlZqgTn: 3
+    start: null
+    showIcon: 2
+    folder: null
+    _key: '!items.effects!tKpFs4h8CUizXdHV.ieXuhCxcCHNxXSsm'
 flags:
   dnd5e:
     riders:
       activity: []
 _stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1792511601960
+  modifiedTime: 1792511601997
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
-  systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774575705908
-  modifiedTime: 1790901326344
-  lastModifiedBy: P5lWUBQKuHlZqgTn
-_key: '!items!HPkO1mggfBS8Nxxp'
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+_id: tKpFs4h8CUizXdHV
+sort: 150000
+_key: '!items!tKpFs4h8CUizXdHV'

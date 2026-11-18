@@ -43,6 +43,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: enemy
@@ -118,11 +119,31 @@ system:
       otherActivityId: none
       otherActivityAsParentType: true
       name: Mark Prey
+      img: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
@@ -151,28 +172,35 @@ system:
 effects:
   - name: Mark Prey (Skill Points)
     img: modules/ak5e/icons/Skill-Gavial1.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.XGWbACi5cic6PXa8
+    origin: null
     _id: 07cem1rULU91DvMR
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '15'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '15'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skill-points.recovery
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 8qn1WplkWZ4CIKjc
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skill-points.maxsp
+          value: 15
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: laW648hcHPDrBpSw
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.IOR56TrVpsJc1ZcH
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -196,32 +224,40 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791147711626
+      modifiedTime: 1791733092082
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!IOR56TrVpsJc1ZcH.07cem1rULU91DvMR'
   - name: Mark Prey
     img: modules/ak5e/icons/Skill-Gavial1.png
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.XGWbACi5cic6PXa8
+    origin: null
     transfer: false
     _id: 8XpZyhhDafiJq3fZ
     type: base
-    system: {}
-    changes:
-      - key: flags.automated-conditions-5e.grants.damage.bonus
-        mode: 2
-        value: bonus=1d4; hasAttack;
-        priority: 20
+    system:
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          value: bonus=1d4; hasAttack;
+          priority: 20
+          type: add
+          phase: initial
+          _id: gZE7e8Q31R04M3Zo
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.IOR56TrVpsJc1ZcH
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: 3
-      turns: null
-      startRound: null
-      startTurn: null
+      value: 3
+      units: rounds
+      expiry: turnStart
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -248,10 +284,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791147711626
+      modifiedTime: 1791733092082
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!IOR56TrVpsJc1ZcH.8XpZyhhDafiJq3fZ'
 flags:
   dnd5e:
@@ -261,15 +302,16 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774580509742
-  modifiedTime: 1790901595566
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 5.3.3
+  createdTime: 1791147711626
+  modifiedTime: 1791733092082
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 _id: IOR56TrVpsJc1ZcH
 sort: 350000
 _key: '!items!IOR56TrVpsJc1ZcH'

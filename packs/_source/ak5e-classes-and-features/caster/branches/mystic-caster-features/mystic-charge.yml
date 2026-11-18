@@ -22,6 +22,7 @@ system:
           - type: itemUses
             value: '-1'
             target: ''
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -39,6 +40,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -102,14 +104,36 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     3A4eRjBO4JOROKiJ:
       type: utility
       name: Mystic Ritual
@@ -155,6 +179,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -217,14 +242,36 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     oDOeBJA1wDsG9gDz:
       type: utility
       name: Expend Mystic Charge
@@ -243,6 +290,7 @@ system:
           - type: itemUses
             value: '@item.uses.value'
             target: ''
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -260,6 +308,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -323,14 +372,36 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
     TglgQbzJlgtRVL4r:
       type: utility
       name: Expend Mystic Charge (Power Surge)
@@ -348,6 +419,7 @@ system:
           - type: itemUses
             value: '@item.uses.value'
             target: ''
+            scaling: {}
       description:
         chatFlavor: ''
       duration:
@@ -370,6 +442,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -433,15 +506,37 @@ system:
         noConcentrationCheck: false
         skipConcentrationCheck: false
         autoCEEffects: default
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
       isOverTimeFlag: false
       overTimeProperties:
         saveRemoves: true
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+        rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
       _id: TglgQbzJlgtRVL4r
       img: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 3
     recovery:
@@ -449,7 +544,8 @@ system:
         type: loseAll
     max: '@scale.mystic-charge.maximum-mystic-charge'
   advancement:
-    - type: ScaleValue
+    TJnKU1wO2D0kXnSz:
+      type: ScaleValue
       _id: TJnKU1wO2D0kXnSz
       configuration:
         identifier: ''
@@ -464,6 +560,7 @@ system:
       value: {}
       title: Maximum Mystic Charge
       hint: ''
+      flags: {}
   description:
     value: >-
       <p>You learn to store your arcane strength for a singular moment.</p><p>At
@@ -503,29 +600,36 @@ system:
 effects:
   - name: Power Surge
     img: modules/ak5e/icons/Skill-Ebenholz1.webp
-    origin: Compendium.ak5e.ak5e-classes-and-features.Item.xZiMCSXmimV20FxN
+    origin: null
     transfer: false
     _id: 0uOoUMGxVZvIBHAR
     type: base
-    system: {}
-    changes:
-      - key: system.bonuses.spell.attack
-        mode: 2
-        value: '@scaling'
-        priority: 20
-      - key: system.bonuses.spell.dc
-        mode: 2
-        value: '@scaling'
-        priority: 20
+    system:
+      changes:
+        - key: system.bonuses.spell.attack
+          value: '@scaling'
+          priority: 20
+          type: add
+          phase: initial
+          _id: BPj87A3oQtsLsjgu
+          conditions: '{}'
+          replacement: ''
+        - key: system.bonuses.spell.dc
+          value: '@scaling'
+          priority: 20
+          type: add
+          phase: initial
+          _id: mHj9nvtGluY8gvKP
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Item.xZiMCSXmimV20FxN
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     statuses: []
@@ -552,29 +656,29 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      createdTime: 1774108580031
-      modifiedTime: 1774108609826
-      lastModifiedBy: 9KtVYqHDTWORuJDZ
+      systemVersion: 6.0.6
+      createdTime: 1791203553308
+      modifiedTime: 1791733088685
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!xZiMCSXmimV20FxN.0uOoUMGxVZvIBHAR'
 sort: 0
 ownership:
   default: 0
-  9KtVYqHDTWORuJDZ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1774108009824
-  modifiedTime: 1774180481996
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  systemVersion: 5.3.3
+  createdTime: 1791203553307
+  modifiedTime: 1791733088685
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!xZiMCSXmimV20FxN'

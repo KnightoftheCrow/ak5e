@@ -8,7 +8,7 @@ system:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <p>You can add half of your Proficiency Bonus (rounded down) to any Saving
@@ -40,41 +40,72 @@ effects:
     origin: Item.sDF10GwbAt4Vf1zm
     _id: aKFTGFFhaVERZVSk
     type: base
-    system: {}
-    changes:
-      - key: system.abilities.str.proficient
-        mode: 4
-        value: '0.5'
-        priority: 20
-      - key: system.abilities.dex.proficient
-        mode: 4
-        value: '0.5'
-        priority: 20
-      - key: system.abilities.con.proficient
-        mode: 4
-        value: '0.5'
-        priority: 20
-      - key: system.abilities.int.proficient
-        mode: 4
-        value: '0.5'
-        priority: 20
-      - key: system.abilities.wis.proficient
-        mode: 4
-        value: '0.5'
-        priority: 20
-      - key: system.abilities.cha.proficient
-        mode: 4
-        value: '0.5'
-        priority: 20
+    system:
+      changes:
+        - key: system.abilities.str.proficient
+          value: 0.5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: oJO76tdxVjKVs9mZ
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.dex.proficient
+          value: 0.5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: hNfSs14kKyFv5D8m
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.con.proficient
+          value: 0.5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 8YdiWJMEy7Eq17CW
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.int.proficient
+          value: 0.5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: vPP0gV4MgdrkSNdP
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.wis.proficient
+          value: 0.5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: w6uTUhWFwIdgKhXD
+          conditions: '{}'
+          replacement: ''
+        - key: system.abilities.cha.proficient
+          value: 0.5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: 6pqUh45n6EkyfkFy
+          conditions: '{}'
+          replacement: ''
+      rider:
+        statuses: []
+      origin:
+        actor: null
+        behavior: null
+        effect: null
+        item: null
+        message: null
+      conditions: '{}'
+      magical: false
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -82,8 +113,7 @@ effects:
     sort: 0
     flags:
       dnd5e:
-        riders:
-          statuses: []
+        riders: {}
       dae:
         disableCondition: ''
         stackable: noneName
@@ -95,31 +125,36 @@ effects:
       core:
         overlay: false
     _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1794923981810
+      modifiedTime: 1794923981810
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
-      systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
-    _key: '!items.effects!cz2CkMWBt6gsLmh7.aKFTGFFhaVERZVSk'
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!PGhezi5mZ86jY7Fr.aKFTGFFhaVERZVSk'
 flags:
   dnd5e:
     riders:
       activity: []
 _stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1794923981810
+  modifiedTime: 1794923981852
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
-  systemId: dnd5e
-  systemVersion: 5.2.4
-  createdTime: 1768680528324
-  modifiedTime: 1768680528357
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
 ownership:
   default: 0
-  9KtVYqHDTWORuJDZ: 3
-_id: cz2CkMWBt6gsLmh7
-sort: 125000
-_key: '!items!cz2CkMWBt6gsLmh7'
+  5XlrCO2NlPtd4MFQ: 3
+_id: PGhezi5mZ86jY7Fr
+sort: 475000
+_key: '!items!PGhezi5mZ86jY7Fr'

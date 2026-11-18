@@ -41,36 +41,51 @@ system:
 effects:
   - name: Zanne del Lupo
     img: icons/creatures/mammals/wolf-howl-moon-black.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.5eiEiDLgHBFt6dmZ
+    origin: null
     _id: A554LnjXNIVu1aB8
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.zanne.attack.all
-        mode: 0
-        value: replace 2d20kh
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.count
-        mode: 0
-        value: each-turn
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.force
-        mode: 0
-        value: 'true'
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.activation
-        mode: 0
-        value: findNearbyCount(-1, targetUuid, 5) >= 1
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.zanne.attack.all
+          value: replace 2d20kh
+          priority: 20
+          type: custom
+          phase: initial
+          _id: nJmlxlm2MbhGWHM5
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.zanne.count
+          value: each-turn
+          priority: 20
+          type: custom
+          phase: initial
+          _id: mJrzJRGV4Ee4KCnb
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.zanne.force
+          value: true
+          priority: 20
+          type: custom
+          phase: initial
+          _id: I9o2nSTKePnMK7bU
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.zanne.activation
+          value: findNearbyCount(-1, targetUuid, 5) >= 1
+          priority: 20
+          type: custom
+          phase: initial
+          _id: Ud5EAq0HZla1Sopj
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.5eiEiDLgHBFt6dmZ
     disabled: false
     duration:
-      startTime: 858
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 110
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -95,42 +110,68 @@ effects:
         Actor.j5qUpsgLWW6QtAFt.Item.WaCm1rpdVNHQDkUe.ActiveEffect.U3BSULyi6f3PQgjc
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733080891
+      modifiedTime: 1791733080891
+    start:
+      combat: null
+      round: 110
+      time: 858
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!5eiEiDLgHBFt6dmZ.A554LnjXNIVu1aB8'
   - name: Zanne del Lupo (Level 7+)
     img: icons/creatures/mammals/wolf-howl-moon-black.webp
-    origin: Compendium.ak5e.ak5e-character-origins.Item.5eiEiDLgHBFt6dmZ
+    origin: null
     type: base
-    system: {}
-    changes:
-      - key: flags.midi-qol.optional.zanne.attack.all
-        mode: 0
-        value: replace 2d20kh
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.count
-        mode: 0
-        value: every
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.force
-        mode: 0
-        value: 'true'
-        priority: 20
-      - key: flags.midi-qol.optional.zanne.activation
-        mode: 0
-        value: findNearbyCount(-1, targetUuid, 5) >= 1 && details.level > 6
-        priority: 20
+    system:
+      changes:
+        - key: flags.midi-qol.optional.zanne.attack.all
+          value: replace 2d20kh
+          priority: 20
+          type: custom
+          phase: initial
+          _id: iExSG9RL66xHpklp
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.zanne.count
+          value: every
+          priority: 20
+          type: custom
+          phase: initial
+          _id: 5xWV6l0EFQuK5blU
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.zanne.force
+          value: true
+          priority: 20
+          type: custom
+          phase: initial
+          _id: dUiIHWYF868K7Ur4
+          conditions: '{}'
+          replacement: ''
+        - key: flags.midi-qol.optional.zanne.activation
+          value: findNearbyCount(-1, targetUuid, 5) >= 1 && details.level > 6
+          priority: 20
+          type: custom
+          phase: initial
+          _id: Lo3MZYDAcDZVVUVp
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.5eiEiDLgHBFt6dmZ
     disabled: false
     duration:
-      startTime: 858
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: 110
-      startTurn: 0
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -155,11 +196,22 @@ effects:
         Actor.j5qUpsgLWW6QtAFt.Item.WaCm1rpdVNHQDkUe.ActiveEffect.U3BSULyi6f3PQgjc
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.4
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791733080891
+      modifiedTime: 1791733080891
     _id: pEULtbsUAAVUNUpE
+    start:
+      combat: null
+      round: 110
+      time: 858
+      turn: 0
+      combatant: null
+      initiative: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!5eiEiDLgHBFt6dmZ.pEULtbsUAAVUNUpE'
 sort: 0
 ownership:
@@ -173,10 +225,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
   systemVersion: 5.2.4
   createdTime: 1768680313150
-  modifiedTime: 1768680313150
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1791733080891
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!5eiEiDLgHBFt6dmZ'

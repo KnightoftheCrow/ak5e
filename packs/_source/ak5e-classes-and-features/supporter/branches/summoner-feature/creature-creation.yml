@@ -2,43 +2,49 @@ folder: TSORyB05gJMsjiMJ
 name: Creature Creation
 type: feat
 _id: 0CAuxbBN8ZHMh4sv
-img: modules/AK5e-Foundry-Module/icons/Skill-Deepcolor1.webp
+img: modules/ak5e/icons/Skill-Deepcolor1.png
 system:
   activities:
-    HIOjq167MwLfVgD0:
+    6PdoVZwmZanvcNhz:
       type: summon
-      name: Deploy Protector Creation
-      _id: HIOjq167MwLfVgD0
+      name: Create Simple Creation
+      _id: 6PdoVZwmZanvcNhz
       img: ''
       sort: 0
       activation:
-        type: special
+        type: action
         override: false
         condition: ''
+      behaviors: []
       consumption:
         scaling:
           allowed: false
-          max: ''
         spellSlot: true
         targets:
           - type: itemUses
             value: '1'
-            target: ''
+            target: creature-creation
             scaling: {}
       description:
+        value: ''
         chatFlavor: ''
       duration:
         units: minute
+        expiry: null
         concentration: false
         override: false
         value: '1'
-      effects: []
+      effects:
+        - _id: pnVtUB3YuqGy0F05
+          uuid: null
+          level:
+            min: null
+            max: null
       flags: {}
       range:
-        units: ft
+        units: self
         override: false
         special: ''
-        value: '10'
       target:
         template:
           contiguous: false
@@ -53,11 +59,11 @@ system:
       uses:
         spent: 0
         recovery: []
-        max: '3'
+        max: ''
       visibility:
         level:
           min: null
-          max: null
+          max: 6
         requireAttunement: false
         requireIdentification: false
         requireMagic: false
@@ -65,7 +71,7 @@ system:
       bonuses:
         ac: ''
         hd: ''
-        hp: (@classes.supporter.levels * 3)+10
+        hp: 2*(@details.level)
         attackDamage: ''
         saveDamage: ''
         healing: ''
@@ -75,13 +81,29 @@ system:
         attacks: false
         disposition: true
         proficiency: true
-        saves: false
-        ability: ''
+        saves: true
+        ability: int
       profiles:
         - count: ''
           name: ''
-          _id: nRr4NE6lcdBU1oaR
-          uuid: Compendium.AK5e.ak5e-bestiary.Actor.sOYGwiWCkJZdCWCA
+          _id: KSSyGRm8je4H2EDc
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.sOYGwiWCkJZdCWCA
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: zAZg7i5EsVTLUjcx
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.QZeLp19xN5pj35Pu
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: y5XQwT6aALTW8LC6
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.1ecfem4yOv7Aetav
           level:
             min: null
             max: null
@@ -92,6 +114,7 @@ system:
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
+      otherActivityId: none
       macroData:
         name: ''
         command: ''
@@ -125,6 +148,7 @@ system:
         chooseEffects: false
         toggleEffect: false
         ignoreFullCover: false
+        targetMustBeSeen: false
         removeChatButtons: default
         magicEffect: false
         magicDamage: false
@@ -137,256 +161,69 @@ system:
         rollAs: target
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
       friendlySummon: false
       tempHP: ''
-    TxXFV2Zk2m9mgK6W:
-      type: utility
-      name: Command Creations
+    vjNPqM3csTFTFanM:
+      type: summon
+      name: Create Complex Creation
+      img: ''
       sort: 100000
       activation:
-        type: bonus
+        type: action
         override: false
         condition: ''
-      consumption:
-        scaling:
-          allowed: false
-        spellSlot: true
-        targets: []
-      description:
-        chatFlavor: ''
-      duration:
-        units: inst
-        concentration: false
-        override: false
-      effects: []
-      flags: {}
-      range:
-        units: self
-        override: false
-        special: ''
-      target:
-        template:
-          contiguous: false
-          units: ft
-          type: ''
-          stationary: false
-        affects:
-          choice: false
-          type: self
-          special: ''
-        override: false
-        prompt: true
-      uses:
-        spent: 0
-        recovery: []
-        max: ''
-      visibility:
-        level:
-          min: null
-          max: null
-        requireAttunement: false
-        requireIdentification: false
-        requireMagic: false
-        identifier: ''
-      roll:
-        prompt: false
-        visible: false
-        name: ''
-        formula: ''
-      useConditionText: ''
-      useConditionReason: ''
-      effectConditionText: ''
-      macroData:
-        name: ''
-        command: ''
-      ignoreTraits:
-        idi: false
-        idr: false
-        idv: false
-        ida: false
-        idm: false
-      midiProperties:
-        ignoreTraits: []
-        triggeredActivityId: none
-        triggeredActivityConditionText: ''
-        triggeredActivityTargets: targets
-        triggeredActivityRollAs: self
-        autoConsume: false
-        forceConsumeDialog: default
-        forceRollDialog: default
-        forceDamageDialog: default
-        confirmTargets: default
-        autoTargetType: any
-        autoTargetAction: default
-        automationOnly: false
-        otherActivityCompatible: true
-        otherActivityAsParentType: true
-        identifier: ''
-        displayActivityName: false
-        rollMode: default
-        chooseEffects: false
-        toggleEffect: false
-        ignoreFullCover: false
-        removeChatButtons: default
-        magicEffect: false
-        magicDamage: false
-        noConcentrationCheck: false
-        skipConcentrationCheck: false
-        autoCEEffects: default
-        triggeredActivityConsume: true
-        triggeredActivityConfigure: true
-      isOverTimeFlag: false
-      overTimeProperties:
-        saveRemoves: true
-        preRemoveConditionText: ''
-        postRemoveConditionText: ''
-        rollAs: target
-      otherActivityId: none
-      otherActivityAsParentType: true
-      img: ''
-      _id: TxXFV2Zk2m9mgK6W
-    Lr0k81SuT6cblV0a:
-      type: utility
-      name: Regenerate Creations
-      sort: 200000
-      activation:
-        type: longRest
-        override: false
-        condition: ''
+      behaviors: []
       consumption:
         scaling:
           allowed: false
         spellSlot: true
         targets:
           - type: itemUses
-            value: '-1'
-            target: ''
+            value: '3'
+            target: creature-creation
             scaling: {}
       description:
-        chatFlavor: ''
-      duration:
-        units: inst
-        concentration: false
-        override: false
-      effects: []
-      flags: {}
-      range:
-        units: self
-        override: false
-        special: ''
-      target:
-        template:
-          contiguous: false
-          units: ft
-          type: ''
-          stationary: false
-        affects:
-          choice: false
-          type: self
-          special: ''
-        override: false
-        prompt: true
-      uses:
-        spent: 0
-        recovery: []
-        max: ''
-      visibility:
-        level:
-          min: null
-          max: null
-        requireAttunement: false
-        requireIdentification: false
-        requireMagic: false
-        identifier: ''
-      roll:
-        prompt: false
-        visible: false
-        name: ''
-        formula: ''
-      useConditionText: ''
-      useConditionReason: ''
-      effectConditionText: ''
-      macroData:
-        name: ''
-        command: ''
-      ignoreTraits:
-        idi: false
-        idr: false
-        idv: false
-        ida: false
-        idm: false
-      midiProperties:
-        ignoreTraits: []
-        triggeredActivityId: none
-        triggeredActivityConditionText: ''
-        triggeredActivityTargets: targets
-        triggeredActivityRollAs: self
-        autoConsume: false
-        forceConsumeDialog: default
-        forceRollDialog: default
-        forceDamageDialog: default
-        confirmTargets: default
-        autoTargetType: any
-        autoTargetAction: default
-        automationOnly: false
-        otherActivityCompatible: true
-        otherActivityAsParentType: true
-        identifier: ''
-        displayActivityName: false
-        rollMode: default
-        chooseEffects: false
-        toggleEffect: false
-        ignoreFullCover: false
-        removeChatButtons: default
-        magicEffect: false
-        magicDamage: false
-        noConcentrationCheck: false
-        skipConcentrationCheck: false
-        autoCEEffects: default
-        triggeredActivityConsume: true
-        triggeredActivityConfigure: true
-      isOverTimeFlag: false
-      overTimeProperties:
-        saveRemoves: true
-        preRemoveConditionText: ''
-        postRemoveConditionText: ''
-        rollAs: target
-      otherActivityId: none
-      otherActivityAsParentType: true
-      img: ''
-      _id: Lr0k81SuT6cblV0a
-    TvIrHo2sYGV17A9n:
-      type: summon
-      name: Deploy Slayer Creation
-      img: ''
-      sort: 300000
-      activation:
-        type: special
-        override: false
-        condition: ''
-      consumption:
-        scaling:
-          allowed: false
-          max: ''
-        spellSlot: true
-        targets:
-          - type: itemUses
-            value: '1'
-            target: ''
-            scaling: {}
-      description:
+        value: ''
         chatFlavor: ''
       duration:
         units: minute
+        expiry: null
         concentration: false
         override: false
         value: '1'
-      effects: []
+      effects:
+        - _id: pnVtUB3YuqGy0F05
+          uuid: null
+          level:
+            min: null
+            max: null
       flags: {}
       range:
-        units: ft
+        units: self
         override: false
-        value: '10'
         special: ''
       target:
         template:
@@ -402,10 +239,10 @@ system:
       uses:
         spent: 0
         recovery: []
-        max: '3'
+        max: ''
       visibility:
         level:
-          min: null
+          min: 13
           max: null
         requireAttunement: false
         requireIdentification: false
@@ -414,7 +251,7 @@ system:
       bonuses:
         ac: ''
         hd: ''
-        hp: (@classes.supporter.levels * 2)+10
+        hp: 2*(@details.level)
         attackDamage: ''
         saveDamage: ''
         healing: ''
@@ -424,13 +261,29 @@ system:
         attacks: false
         disposition: true
         proficiency: true
-        saves: false
-        ability: ''
+        saves: true
+        ability: int
       profiles:
         - count: ''
           name: ''
-          _id: nRr4NE6lcdBU1oaR
-          uuid: Compendium.AK5e.ak5e-bestiary.Actor.QZeLp19xN5pj35Pu
+          _id: cARtN5zeHgAakFRI
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.DPcYuQFbnZaevqjr
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: gvva5XLf2J6XYFpy
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.GkcsLa8Brr9MkGdu
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: ''
+          _id: 27W2rnrsaJgnLtGf
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.YyGOlfrMEeGB70sE
           level:
             min: null
             max: null
@@ -441,6 +294,7 @@ system:
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
+      otherActivityId: none
       macroData:
         name: ''
         command: ''
@@ -474,6 +328,7 @@ system:
         chooseEffects: false
         toggleEffect: false
         ignoreFullCover: false
+        targetMustBeSeen: false
         removeChatButtons: default
         magicEffect: false
         magicDamage: false
@@ -486,41 +341,65 @@ system:
         rollAs: target
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
       friendlySummon: false
       tempHP: ''
-      _id: TvIrHo2sYGV17A9n
-    E8F3prIapMBAg6e4:
+      _id: vjNPqM3csTFTFanM
+    RlmtjPNDYVPOhjiY:
       type: summon
-      name: Deploy Slinger Creation
+      name: Create Simple Creation
       img: ''
-      sort: 400000
+      sort: 50000
       activation:
-        type: special
+        type: action
         override: false
         condition: ''
+      behaviors: []
       consumption:
         scaling:
           allowed: false
-          max: ''
         spellSlot: true
         targets:
           - type: itemUses
             value: '1'
-            target: ''
+            target: creature-creation
             scaling: {}
       description:
+        value: ''
         chatFlavor: ''
       duration:
         units: minute
+        expiry: null
         concentration: false
         override: false
         value: '1'
       effects: []
       flags: {}
       range:
-        units: ft
+        units: self
         override: false
-        value: '10'
         special: ''
       target:
         template:
@@ -536,10 +415,10 @@ system:
       uses:
         spent: 0
         recovery: []
-        max: '3'
+        max: ''
       visibility:
         level:
-          min: null
+          min: 7
           max: null
         requireAttunement: false
         requireIdentification: false
@@ -548,7 +427,7 @@ system:
       bonuses:
         ac: ''
         hd: ''
-        hp: (@classes.supporter.levels * 2)+10
+        hp: 2*(@details.level)
         attackDamage: ''
         saveDamage: ''
         healing: ''
@@ -558,13 +437,29 @@ system:
         attacks: false
         disposition: true
         proficiency: true
-        saves: false
-        ability: ''
+        saves: true
+        ability: int
       profiles:
         - count: ''
-          name: ''
-          _id: nRr4NE6lcdBU1oaR
-          uuid: Compendium.AK5e.ak5e-bestiary.Actor.4z4zCGDBT6MyGIjd
+          name: Protector Creation
+          _id: eCAwSsB5ASJGfQLi
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.wwpjAHQ9aCxRFLjJ
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: Conduit Creation
+          _id: lH8w7EcYH0jXiDF8
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.SaxIlHuzLEaGM7nI
+          level:
+            min: null
+            max: null
+          types: []
+        - count: ''
+          name: Slayer Creation
+          _id: coBDf7eyOsZrG8cO
+          uuid: Compendium.ak5e.ak5e-bestiary.Actor.Xg2bvzGqHUXoAMRU
           level:
             min: null
             max: null
@@ -575,6 +470,7 @@ system:
       useConditionText: ''
       useConditionReason: ''
       effectConditionText: ''
+      otherActivityId: none
       macroData:
         name: ''
         command: ''
@@ -608,6 +504,7 @@ system:
         chooseEffects: false
         toggleEffect: false
         ignoreFullCover: false
+        targetMustBeSeen: false
         removeChatButtons: default
         magicEffect: false
         magicDamage: false
@@ -620,46 +517,123 @@ system:
         rollAs: target
         preRemoveConditionText: ''
         postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
       friendlySummon: false
       tempHP: ''
-      _id: E8F3prIapMBAg6e4
+      _id: RlmtjPNDYVPOhjiY
   uses:
     spent: 0
-    recovery: []
-    max: ''
-  advancement: {}
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '@scale.creature-creation.sparks-of-creation'
+  advancement:
+    IrFO34HFd4MNVBnC:
+      name: Sparks of Creation
+      type: ScaleValue
+      _id: IrFO34HFd4MNVBnC
+      configuration:
+        identifier: ''
+        type: number
+        distance:
+          units: ''
+        scale:
+          '0':
+            value: 3
+          '3':
+            value: 4
+          '5':
+            value: 5
+          '7':
+            value: 6
+          '9':
+            value: 7
+          '11':
+            value: 8
+          '13':
+            value: 9
+          '15':
+            value: 10
+          '17':
+            value: 11
+          '19':
+            value: 12
+      flags: {}
+      value: {}
+      hint: ''
   description:
     value: >-
       <p>You can use a combination of your Arts and physical matter to create
-      artificial creatures, and instil them with motion.</p><p><strong>Sparks of
-      Creation.</strong> You have a number of Sparks of Creation that you use to
-      create your Summons that increase with your Supporter Level, as shown in
-      the Summoner Features Table. You regain all expended Sparks of Creation
-      when you complete a Long Rest.</p><p><strong>Art of Creation:</strong> As
-      an Action, you can expend one of your Sparks of Creation to create a
-      Summon in an unoccupied location you can see within 10 feet of you. When
-      you do so, you choose its Stat Block; <strong>Protector Creation</strong>,
-      <strong>Slayer Creation</strong>, or <strong>Sling Creation</strong>. The
-      physical appearance of the Summon is determined by you, but should be
-      appropriate for the type of Summon it is. A Summon lasts for 1 minute, at
-      which point it disintegrates. The maximum number of Summons you can have
-      at a time is three.</p><p><strong>Summons in Combat.</strong> Your Summons
-      act immediately after your Turn, in an order determined by you. As a Bonus
-      Action during your Turn, you may give each of your Summons a particular
-      instruction, such as to use a certain Action, pursue a certain Creature,
-      or protect a Creature or location; they will attempt to fulfil this
-      instruction until it is completed, they are destroyed, or given a
-      different instruction. If a Summon has no instructions, each type of
-      Creation has “default behaviour” that it will
-      follow:</p><ul><li><p><strong>Protector Creation</strong>. Remains as
-      close to you as it can, and prioritises protecting
-      you.</p></li><li><p><strong>Slayer Creation.</strong> Aggressively pursues
-      the nearest hostile Creature, and attacks them until they are reduced to 0
-      Hit Points before selecting a new target.</p></li><li><p><strong>Sling
-      Creation.</strong> Attacks the nearest hostile
-      Creature.</p></li></ul><p><strong>Partially Automated. </strong>The
-      Summoning is automatic; however, the number of Sparks is not. It must be
-      calculated manually.</p>
+      artificial creatures, and instil them with
+      motion.</p><ul><li><p><strong>Sparks of Creation.</strong> You have a
+      number of Sparks of Creation that you use to summon your Creations that
+      increase with your Supporter Level, as shown in the Summoner Features
+      Table. You regain all expended Sparks of Creation when you complete a Long
+      Rest.</p></li><li><p><strong>Art of Creation.</strong> As an Action, you
+      can expend one of your Sparks of Creation to create a Simple Creation in
+      an unoccupied location you can see within 10 feet of you. When you do so,
+      you choose its Stat Block; Protector Creation, Slayer Creation, or Conduit
+      Creation. The physical appearance of the Creation is determined by you,
+      but should be appropriate for the type of Creation it is. A Creation lasts
+      for 1 minute, at which point it disintegrates. The maximum number of
+      Creations you can have at a time is
+      three.</p></li><li><p><strong>Creations in Combat.</strong> Your Creations
+      act during your Turn, after you have acted but before your Turn ends. As a
+      Bonus Action, you may give each of your Creations an instruction, such as
+      to use an Action in their Stat Block, attack a certain Creature, or
+      protect a Creature or location; if you do so, they may act immediately
+      upon being given the instruction if you desire, instead of after you. A
+      Creation will attempt to fulfil this instruction until it is destroyed, or
+      given a different instruction. If a Creation has no instructions, each
+      type of Creation has “default behaviour” that it will
+      follow:</p><ul><li><p><strong>Conduit Creation.</strong> Attacks the
+      nearest hostile Creature.</p></li><li><p><strong>Protector
+      Creation.</strong> Remains as close to you as it can, and prioritises
+      protecting you.</p></li><li><p><strong>Slayer Creation.</strong>
+      Aggressively pursues the nearest hostile Creature, and attacks them until
+      they are reduced to 0 Hit Points before selecting a new
+      target.</p></li></ul></li></ul><p>At 7th Level, each of your Creations
+      becomes upgraded:</p><p><strong>Conduit Creation.</strong> The Conduit
+      Creation gains a new Action:</p><blockquote><p><strong>Channeling (Can
+      only be used within 15 feet of this Creature’s
+      Summoner).</strong></p><p>Until the beginning of their next Turn, the
+      Summoner of this Creature has a +1 Bonus to their Spell Save DC and Spell
+      Attack Rolls. They must remain within 15 feet of this Creature to benefit
+      from this effect.</p></blockquote><p><strong>Protector Creation.</strong>
+      The Protector Creation gains a new
+      Trait:</p><blockquote><p><strong>Unyielding Defender.</strong></p><p>When
+      this Creature uses its Intervene Reaction, it is Resistant to the Damage
+      it takes from the triggering Attack. Additionally, Creatures hit by this
+      Creature’s Slam Attack cannot make Opportunity Attacks until the end of
+      their next Turn.</p></blockquote><p><strong>Slayer Creation.</strong> The
+      Slayer Creation gains a new Trait:</p><blockquote><p><strong>Critical
+      Edge</strong></p><p>This Critical Range of this Creature’s Melee Attacks
+      is increased by 1.</p></blockquote><p>and a new
+      Action:</p><blockquote><p><strong>Melee Multiattack
+      (2).</strong></p><p>This Creature makes two Melee
+      Attacks.</p></blockquote><p></p>
     chat: ''
   identifier: creature-creation
   source:
@@ -675,24 +649,22 @@ system:
   requirements: ''
   type:
     value: class
-    subtype: skillPoints
+    subtype: ''
 effects: []
-sort: 0
-ownership:
-  default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
-  compendiumSource: null
+  compendiumSource: Compendium.ak5e.ak5e-classes-and-features.Item.0CAuxbBN8ZHMh4sv
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1785597523649
-  modifiedTime: 1785603239154
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791206076914
+  modifiedTime: 1794841503197
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
+ownership:
+  default: 0
+  5XlrCO2NlPtd4MFQ: 3
+sort: 100000
 _key: '!items!0CAuxbBN8ZHMh4sv'

@@ -2,7 +2,7 @@ folder: PyENeYH1EUnwaWp6
 name: Greatsword
 type: weapon
 _id: RVaNysRBX2kS1VKR
-img: icons/weapons/swords/greatsword-crossguard-steel.webp
+img: modules/ak5e/icons/Equipment/AK5e%20Greatsword.png
 system:
   activities:
     QNYfd8jzvXM2qvK3:
@@ -50,7 +50,9 @@ system:
     recovery: []
     max: ''
   description:
-    value: <p>[[/attack extended]], [[/damage extended]]</p><p>Two-Handed</p>
+    value: >-
+      <p>[[/attack extended]], [[/damage extended]]</p><p>Two-Handed,
+      @UUID[Compendium.ak5e.ak5e-rules.JournalEntry.5gdt0smPFXq1A7fN.JournalEntryPage.QnevMs7ClOz11ti9]{Reliable}</p>
     chat: ''
   identifier: greatsword
   source:
@@ -83,7 +85,8 @@ system:
       types:
         - slashing
       custom:
-        enabled: false
+        enabled: true
+        formula: 2d6r1
       scaling:
         number: 1
       number: 2
@@ -117,10 +120,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.3
+  systemVersion: 5.3.3
   createdTime: 1756313652228
-  modifiedTime: 1766936900074
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1790613572111
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!RVaNysRBX2kS1VKR'

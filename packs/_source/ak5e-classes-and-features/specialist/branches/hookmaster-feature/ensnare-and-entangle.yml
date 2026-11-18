@@ -4,7 +4,926 @@ type: feat
 _id: ndriZYFnzBM4Em8D
 img: modules/ak5e/icons/Skill-Rope1.webp
 system:
-  activities: {}
+  activities:
+    lsJkm3wpp6qXvjef:
+      type: save
+      name: Bound in Rope (STR)
+      _id: lsJkm3wpp6qXvjef
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: prowess
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: VjRvrCFxLqn0icrj
+          uuid: null
+          level: {}
+          onSave: false
+      flags:
+        cat:
+          genericConfig: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '@scale.hooked.hook-range'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: str
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+    CEHOvS4wNWwM9F9D:
+      type: save
+      name: Bound in Rope (DEX)
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: prowess
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: z7FtJoQFV9alxTxO
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags:
+        cat:
+          genericConfig: {}
+      range:
+        units: ft
+        override: false
+        value: '@scale.hooked.hook-range'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: CEHOvS4wNWwM9F9D
+    mv01ZEFEUfOiKal3:
+      type: utility
+      name: Drag Towards
+      _id: mv01ZEFEUfOiKal3
+      img: ''
+      sort: 200000
+      activation:
+        type: bonus
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags:
+        cat:
+          genericConfig:
+            chris-premades:
+              pullOnFail:
+                distance: '15'
+                choose: false
+                stopAdjacent: true
+                maxSize: huge
+                animation:
+                  source: none
+                  identifier: none
+          macros:
+            roll:
+              - source: chris-premades
+                identifier: pullOnFail
+                rules: all
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '@scale.hooked.hook-range'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: hasCondition(targetUuid, "grappled")
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    n08IYptGI80GHhar:
+      type: utility
+      name: Hogtie
+      _id: n08IYptGI80GHhar
+      img: ''
+      sort: 300000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets: []
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: 7bcMbFxvrTLBBFU8
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: ft
+        override: false
+        special: ''
+        value: '5'
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: creature
+          count: '1'
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: hasCondition(targetUuid, "grappled")
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    Z1RoScXi3Va52sDa:
+      type: save
+      name: Wrangler (STR)
+      img: ''
+      sort: 400000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: prowess
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: gIYhDlxqnxrGNR0N
+          uuid: null
+          level: {}
+          onSave: false
+        - _id: qw8m4BoVTzJTU9RC
+          uuid: null
+          level: {}
+          onSave: false
+      flags:
+        cat:
+          genericConfig: {}
+      range:
+        units: ft
+        override: false
+        value: '@scale.hooked.hook-range'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: str
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: Z1RoScXi3Va52sDa
+    0phKTwFwboF0asHi:
+      type: save
+      name: Wrangler (DEX)
+      img: ''
+      sort: 500000
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: prowess
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: disp
+        expiry: null
+        concentration: false
+        override: false
+      effects:
+        - _id: qw8m4BoVTzJTU9RC
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+        - _id: 8P0bmOAPDpD98ci7
+          uuid: null
+          onSave: false
+          level:
+            min: null
+            max: null
+      flags:
+        cat:
+          genericConfig: {}
+      range:
+        units: ft
+        override: false
+        value: '@scale.hooked.hook-range'
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      damage:
+        onSave: half
+        critical:
+          allow: false
+        parts: []
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: dex
+          formula: ''
+        visible: true
+        bonus: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+      friendlySave: default
+      _id: 0phKTwFwboF0asHi
   uses:
     spent: 0
     recovery: []
@@ -14,12 +933,12 @@ system:
     value: >-
       <p>Your prowess with your Hook is such that no beast great or small can
       escape its entangling grasp. You gain the following
-      benefits:</p><p><strong>Bound in Rope.</strong> As an Action while you
-      have your Hook equipped, you can expend 1 Prowess to choose a Creature no
-      more than one size larger than you that you can see within range of your
-      Hook; that Creature must succeed on a Dexterity Saving Throw against your
-      Martial DC or become Grappled by you. A Creature Grappled in this way can
-      use their Action to reattempt the Saving Throw, ending the effect on a
+      benefits:</p><ul><li><p><strong>Bound in Rope.</strong> As an Action while
+      you have your Hook equipped, you can expend 1 Prowess to choose a Creature
+      no more than one size larger than you that you can see within range of
+      your Hook; that Creature must succeed on a Dexterity Saving Throw against
+      your Martial DC or become Grappled by you. A Creature Grappled in this way
+      can use their Action to reattempt the Saving Throw, ending the effect on a
       success. The Condition also ends if you are further away than the range of
       your Hook, or if you end it during your Turn (no Action
       required).</p><p>While you have a Creature Grappled in this way, you can
@@ -27,27 +946,29 @@ system:
       are within 5 feet of you, you can hogtie that Creature as an Action; this
       has the same effect as applying Manacles to that Creature. While you have
       a Creature Grappled in this way, you cannot use that Hook to make Attacks,
-      or to use your Features.</p><p><strong>Wrangler.</strong> As an Action
-      while you have your Hook equipped, you can expend 1 Prowess to choose a
-      Creature that is more than one size larger than you. That Creature must
-      succeed on a Dexterity Saving Throw against your Martial DC, or your Hook
-      latches onto them. When this occurs, you may immediately move to that
-      Creature’s space; for the duration, you may occupy the same space as that
-      Creature. When the Creature you are hooked onto moves, you move along with
-      them without consuming your own movement.</p><p>While you are hooked onto
-      that Creature, your Attacks against only that Creature are made at
-      Advantage. Additionally, you can take a -5 to the Attack Roll for an
-      Attack against only that Creature to cause that Attack to ignore any
+      or to use your Features.</p></li><li><p><strong>Wrangler.</strong> As an
+      Action while you have your Hook equipped, you can expend 1 Prowess to
+      choose a Creature that is more than one size larger than you. That
+      Creature must succeed on a Dexterity Saving Throw against your Martial DC,
+      or your Hook latches onto them. When this occurs, you may immediately move
+      to that Creature’s space; for the duration, you may occupy the same space
+      as that Creature. When the Creature you are hooked onto moves, you move
+      along with them without consuming your own movement.</p><p>While you are
+      hooked onto that Creature, your Attacks against only that Creature are
+      made at Advantage. Additionally, you can take a -5 to the Attack Roll for
+      an Attack against only that Creature to cause that Attack to ignore any
       Damage Reduction that Creature has.</p><p>At the end of their Turn, a
       Creature you are hooked to may reattempt the Saving Throw, shaking you off
       on a successful Save, ending this effect, and possibly causing you to take
       Damage from falling. Additionally, you may end the effect during your Turn
-      (no Action required).</p><p><strong>Gaining Prowess as a
+      (no Action required).</p></li></ul><p><strong>Gaining Prowess as a
       Hookmaster.</strong> As a Hookmaster, you gain 1 Prowess whenever you
       cause a Creature to take Damage from the environment, such as a result of
       falling or standing in a burning area. Additionally, you gain 1 Prowess at
       the end of a Turn you have moved more than 45 feet with a Flying
-      Speed.</p><p><strong>Not Automated.</strong></p>
+      Speed.</p><hr><p><strong>Semi-Automated: </strong>Use the correct activity
+      for the stat your martial DC is based on. Wrangler allows you to take the
+      -5 penalty but does not ignore Damage Reduction, nor pull you closer.</p>
     chat: ''
   identifier: ensnare-and-entangle
   source:
@@ -64,23 +985,436 @@ system:
   type:
     value: class
     subtype: ''
-effects: []
-sort: 0
+effects:
+  - name: Bound in Rope
+    img: modules/ak5e/icons/Skill-Rope1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.ndriZYFnzBM4Em8D
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.midi-qol.OverTime
+          type: custom
+          value: >-
+            turn=start, label=Bound in Rope, saveAbility=dex,
+            saveDC=@abilities.str.mod+@prof, actionSave=dialog
+          phase: initial
+          _id: Tm3aRXZbGb8Z9nf0
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: VjRvrCFxLqn0icrj
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses:
+      - grappled
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794242020645
+      modifiedTime: 1794242095908
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!ndriZYFnzBM4Em8D.VjRvrCFxLqn0icrj'
+  - name: Bound in Rope
+    img: modules/ak5e/icons/Skill-Rope1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.ndriZYFnzBM4Em8D
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.midi-qol.OverTime
+          type: custom
+          value: >-
+            turn=start, label=Bound in Rope, saveAbility=dex,
+            saveDC=@abilities.dex.mod+@prof, actionSave=dialog
+          phase: initial
+          _id: Tm3aRXZbGb8Z9nf0
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses:
+      - grappled
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794242103344
+      modifiedTime: 1794242120947
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: z7FtJoQFV9alxTxO
+    _key: '!items.effects!ndriZYFnzBM4Em8D.z7FtJoQFV9alxTxO'
+  - name: Hogtied
+    img: modules/ak5e/icons/Skill-Rope1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.ndriZYFnzBM4Em8D
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes: []
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: 7bcMbFxvrTLBBFU8
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses:
+      - restrained
+      - prone
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794242317411
+      modifiedTime: 1794242337058
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!ndriZYFnzBM4Em8D.7bcMbFxvrTLBBFU8'
+  - name: Latched
+    img: modules/ak5e/icons/Skill-Rope1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.ndriZYFnzBM4Em8D
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.advantage
+          type: ac5e
+          value: rollingActor.name === effectActor.name
+          phase: initial
+          _id: iUiSgQe6E3niOVVI
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.midi-qol.OverTime
+          type: custom
+          value: >-
+            turn=end, label=Latched, saveAbility=dex,
+            saveDC=@abilities.str.mod+@prof
+          phase: initial
+          _id: HCrFsoeLmn8ZN1aN
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: gIYhDlxqnxrGNR0N
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794242375231
+      modifiedTime: 1794242584074
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!ndriZYFnzBM4Em8D.gIYhDlxqnxrGNR0N'
+  - name: Wrangling
+    img: modules/ak5e/icons/Skill-Rope1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.ndriZYFnzBM4Em8D
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.attack.bonus
+          type: ac5e
+          value: bonus=-5; name=-5 from Wrangler; optinId=wrangling; optin
+          phase: initial
+          _id: QltD8MlIi6mY3jTJ
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: qw8m4BoVTzJTU9RC
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: true
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794242452734
+      modifiedTime: 1794242535319
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!ndriZYFnzBM4Em8D.qw8m4BoVTzJTU9RC'
+  - name: Latched
+    img: modules/ak5e/icons/Skill-Rope1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.ndriZYFnzBM4Em8D
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.attack.advantage
+          type: ac5e
+          value: rollingActor.name === effectActor.name
+          phase: initial
+          _id: iUiSgQe6E3niOVVI
+          conditions: '{}'
+          replacement: ''
+          priority: null
+        - key: flags.midi-qol.OverTime
+          type: custom
+          value: >-
+            turn=end, label=Latched, saveAbility=dex,
+            saveDC=@abilities.dex.mod+@prof
+          phase: initial
+          _id: HCrFsoeLmn8ZN1aN
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794242594423
+      modifiedTime: 1794242607151
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 8P0bmOAPDpD98ci7
+    _key: '!items.effects!ndriZYFnzBM4Em8D.8P0bmOAPDpD98ci7'
+sort: 75000
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358953798
-  modifiedTime: 1783358953798
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553272
+  modifiedTime: 1794242705491
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!ndriZYFnzBM4Em8D'

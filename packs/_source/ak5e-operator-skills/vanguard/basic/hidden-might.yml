@@ -44,6 +44,7 @@ system:
           contiguous: false
           units: ft
           type: ''
+          stationary: false
         affects:
           choice: false
           type: self
@@ -120,11 +121,31 @@ system:
         rollAs: target
       otherActivityId: none
       otherActivityAsParentType: true
+      img: null
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
   uses:
     spent: 0
     recovery: []
     max: ''
-  advancement: []
+  advancement: {}
   description:
     value: >-
       <table><thead><tr><td><p>SP Cost</p></td><td><p>Start
@@ -151,28 +172,35 @@ system:
 effects:
   - name: Hidden Might (Skill Points)
     img: modules/ak5e/icons/Skill-Purgatory2.webp
-    origin: Compendium.ak5e.ak5e-operator-skills.Item.2rCDt1z6WePSeJCA
+    origin: null
     _id: 1htoZLk7xhkowqiY
     type: base
-    system: {}
-    changes:
-      - key: system.scale.skillPoints.recovery
-        mode: 4
-        value: '5'
-        priority: 20
-      - key: system.scale.skillPoints.maxsp
-        mode: 4
-        value: '10'
-        priority: 20
+    system:
+      changes:
+        - key: system.scale.skill-points.recovery
+          value: 5
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: DyGF0MSUOMUvWL1r
+          conditions: '{}'
+          replacement: ''
+        - key: system.scale.skill-points.maxsp
+          value: 10
+          priority: 20
+          type: upgrade
+          phase: initial
+          _id: mXwLkAZEHWArk66z
+          conditions: '{}'
+          replacement: ''
+      origin:
+        item: Compendium.ak5e.ak5e-operator-skills.Item.b2tqwUUZzUu6yl0V
     disabled: false
     duration:
-      startTime: null
-      combat: null
-      seconds: null
-      rounds: null
-      turns: null
-      startRound: null
-      startTurn: null
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
     description: ''
     tint: '#ffffff'
     transfer: true
@@ -196,10 +224,15 @@ effects:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.368'
       systemId: dnd5e
-      systemVersion: 5.2.5
-      lastModifiedBy: null
+      systemVersion: 6.0.6
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      createdTime: 1791147711622
+      modifiedTime: 1791733094975
+    start: null
+    showIcon: 1
+    folder: null
     _key: '!items.effects!b2tqwUUZzUu6yl0V.1htoZLk7xhkowqiY'
 flags:
   dnd5e:
@@ -209,15 +242,16 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: dnd5e
-  systemVersion: 5.2.5
-  createdTime: 1774580513422
-  modifiedTime: 1790901375322
-  lastModifiedBy: P5lWUBQKuHlZqgTn
+  systemVersion: 5.3.3
+  createdTime: 1791147711622
+  modifiedTime: 1791733094975
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 ownership:
   default: 0
   P5lWUBQKuHlZqgTn: 3
+  5XlrCO2NlPtd4MFQ: 3
 _id: b2tqwUUZzUu6yl0V
 sort: 325000
 _key: '!items!b2tqwUUZzUu6yl0V'

@@ -4,7 +4,150 @@ type: feat
 _id: 8hcLV51sdTOLzyV9
 img: modules/ak5e/icons/Skill-Kjera2.webp
 system:
-  activities: {}
+  activities:
+    euK1PDhdvAGQ5Wzw:
+      type: utility
+      name: Sweeper
+      _id: euK1PDhdvAGQ5Wzw
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: prowess
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: turnEnd
+        concentration: false
+        override: false
+      effects:
+        - _id: dSwNJxWuswjqx95E
+          uuid: null
+          level: {}
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: emanationNoTemplate
+          size: '10'
+          count: ''
+        affects:
+          choice: true
+          type: creature
+          count: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
   uses:
     spent: 0
     recovery: []
@@ -13,22 +156,25 @@ system:
   description:
     value: >-
       <p>You gain one of the following ways to expend your Prowess based on your
-      choice of Hunter or Bodyguard:</p><p><strong>Hunter (Sweeper)</strong>.
-      While you are Hiding or Invisible, you can expend 1 Prowess as an Action.
-      If you do so, until the end of the Turn your Reach is increased by 5 feet,
-      and you may immediately make a Melee Attack against each Creature of your
-      Choice within your Reach; you can only make one Attack against each
-      Creature. If you hit a Creature with an Attack as part of this Action,
-      that Creature immediately gains your Deathmark, even if it is on another
-      Creature. At the end of the Action, your Deathmark returns to
-      you.</p><p>Gaining Prowess as an Executor. As an Executor, you gain 1
-      Prowess when a Creature with your Deathmark is reduced to 0 Hit Points.
-      Once you have gained Prowess in this way, you may not do so again until
-      the beginning of your next Turn.</p><p>You also can gain Prowess in an
-      additional way based on your choice of Hunter or
-      Bodyguard:</p><p><strong>Hunter:</strong> When you deal 30 or more Damage
-      with a single Attack, you gain 1 Prowess.</p><p><strong>Not
-      Automated.</strong></p>
+      choice of Hunter or Bodyguard:</p><ul><li><p><strong>Hunter
+      (Sweeper)</strong>. While you are Hiding or Invisible, you can expend 1
+      Prowess as an Action. If you do so, until the end of the Turn your Reach
+      is increased by 5 feet, and you may immediately make a Melee Attack
+      against each Creature of your Choice within your Reach; you can only make
+      one Attack against each Creature. If you hit a Creature with an Attack as
+      part of this Action, that Creature immediately gains your Deathmark, even
+      if it is on another Creature. At the end of the Action, your Deathmark
+      returns to you.</p></li><li><p><strong>Gaining Prowess as an
+      Executor.</strong> As an Executor, you gain 1 Prowess when a Creature with
+      your Deathmark is reduced to 0 Hit Points. Once you have gained Prowess in
+      this way, you may not do so again until the beginning of your next
+      Turn.</p><p>You also can gain Prowess in an additional way based on your
+      choice of Hunter or Bodyguard:</p><p><strong>Hunter:</strong> When you
+      deal 30 or more Damage with a single Attack, you gain 1
+      Prowess.</p></li></ul><hr><p><strong>Semi-Automated: </strong>When you use
+      the Sweeper Feature, choose instead the Creatures you will Attack- it will
+      apply Deathmark to them until the end of the Turn. Then, make your Melee
+      Attacks against them.</p>
     chat: ''
   identifier: spring-the-ambush
   source:
@@ -37,7 +183,8 @@ system:
   crewed: false
   enchant: {}
   prerequisites:
-    items: []
+    items:
+      - the-wolf-and-the-shepherd-hunter
     repeatable: false
     level: 5
   properties: []
@@ -45,23 +192,98 @@ system:
   type:
     value: class
     subtype: ''
-effects: []
-sort: 0
+effects:
+  - name: Deathmark
+    img: modules/ak5e/icons/Skill-KirinRYato1.webp
+    system:
+      origin:
+        item: Compendium.ak5e.ak5e-classes-and-features.Item.8hcLV51sdTOLzyV9
+        behavior: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.grants.damage.bonus
+          type: ac5e
+          value: >-
+            bonus=@scale.the-wolf-and-the-shepherd.deathmark-bonus-damage;
+            addTo=all,!types(healing,temphp); effectOriginTokenId === tokenId &&
+            hasAttack
+          phase: initial
+          _id: FJrMPqqEdM54Ykm5
+          conditions: '{}'
+          replacement: origin
+          priority: null
+        - key: flags.automated-conditions-5e.grants.attack.criticalThreshold
+          type: ac5e
+          value: >-
+            threshold=-1; addTo=all,!types(healing,temphp); effectOriginTokenId
+            === tokenId && hasAttack
+          phase: initial
+          conditions: '{}'
+          replacement: target
+          priority: null
+          _id: yy6sKNmrs485PPc5
+      conditions: '{}'
+      magical: false
+      rider:
+        statuses: []
+    transfer: false
+    _id: dSwNJxWuswjqx95E
+    type: base
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: noneName
+        applicationMode: default
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        selfTarget: false
+        selfTargetAlways: false
+        dontApply: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1794247236740
+      modifiedTime: 1794247236740
+      lastModifiedBy: 5XlrCO2NlPtd4MFQ
+      compendiumSource: >-
+        Compendium.ak5e.ak5e-classes-and-features.Item.IJmhoIOctMN9mUDB.ActiveEffect.WMAKqplCCI461brC
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!8hcLV51sdTOLzyV9.dSwNJxWuswjqx95E'
+sort: 100000
 ownership:
   default: 0
-  27ikDz77N89hVLvM: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.3.0
-  createdTime: 1783358953798
-  modifiedTime: 1783358953798
-  lastModifiedBy: 27ikDz77N89hVLvM
+  systemVersion: 6.0.6
+  createdTime: 1791203553271
+  modifiedTime: 1794247537189
+  lastModifiedBy: 5XlrCO2NlPtd4MFQ
 _key: '!items!8hcLV51sdTOLzyV9'
