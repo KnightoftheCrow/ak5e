@@ -5,8 +5,8 @@ _id: bV14f7eh0gfeGxPS
 img: icons/environment/people/cleric-orange.webp
 system:
   advancement:
-    - type: Trait
-      title: Background Proficiencies
+    GEcO71JnCdr7Gdpw:
+      type: Trait
       _id: GEcO71JnCdr7Gdpw
       configuration:
         allowReplacements: false
@@ -17,24 +17,31 @@ system:
               - tool:toolkit:cooking
           - count: 1
             pool:
-              - tool:toolkit
-              - tool:vehicle
+              - tool:toolkit:*
+              - tool:vehicle:*
         grants: []
         mode: default
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: Background Feature
+      name: Background Proficiencies
+      flags: {}
+    pZcKc0NQgYi8GMij:
+      type: ItemGrant
       _id: pZcKc0NQgYi8GMij
       configuration:
         items:
           - uuid: Compendium.ak5e.ak5e-character-origins.Item.oFD9s21Kqy1vjE2F
             optional: false
+            sort: 0
         optional: false
         spell: null
+        sorting: m
       value: {}
       level: 0
+      name: Background Feature
+      flags: {}
+      hint: ''
   description:
     value: >-
       <p>The Sarkaz are familiar as people on the outskirts of society, even in
@@ -71,10 +78,10 @@ _stats:
   compendiumSource: Item.bV14f7eh0gfeGxPS
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881347037
-  modifiedTime: 1771156198101
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795108884710
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!bV14f7eh0gfeGxPS'

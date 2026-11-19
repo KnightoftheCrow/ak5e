@@ -2,7 +2,7 @@ folder: 7G1D42jSHLcgp1sX
 name: Siesta
 type: ak5e.nationality
 _id: XqcT6Dxqa7vz6SmL
-img: modules/ak5e/icons/nationality/nationality.svg
+img: modules/ak5e/icons/nationality/logo_siesta.png
 system:
   filePathFields:
     advancement.*.icon:
@@ -11,16 +11,16 @@ system:
     - description.value
     - description.chat
   advancement:
-    - type: Trait
-      title: National Proficiencies
-      _id: V61iNxrdsD7Qydao
+    qDrBNxrWyl71eoVb:
+      name: ''
+      type: Trait
+      _id: qDrBNxrWyl71eoVb
       configuration:
         allowReplacements: false
         choices:
           - count: 1
             pool:
-              - languages:standard:*
-              - languages:exotic:*
+              - languages:*
           - count: 3
             pool:
               - skills:dec
@@ -33,20 +33,26 @@ system:
           - languages:standard:iberian
           - languages:standard:victorian
         mode: default
+      flags: {}
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: National Feature
-      _id: L0GsDXAM7FpHcEon
+    T43BcpTQT4izGR3o:
+      name: Nationality Feat
+      type: ItemGrant
+      _id: T43BcpTQT4izGR3o
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.nmeQssyrsVEW6EGo
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.nmeQssyrsVEW6EGo
         optional: false
+        sorting: m
         spell: null
+      flags: {}
       value: {}
       level: 0
+      hint: ''
   description:
     value: >-
       <p>Siesta is an independent nomadic city-state that can mostly be found on
@@ -150,10 +156,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881328247
-  modifiedTime: 1771154566822
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795116025102
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!XqcT6Dxqa7vz6SmL'

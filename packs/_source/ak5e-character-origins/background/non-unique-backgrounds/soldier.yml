@@ -5,33 +5,40 @@ _id: alYefkdRDgUvttnj
 img: icons/environment/people/infantry-armored.webp
 system:
   advancement:
-    - type: Trait
-      title: Background Proficiencies
+    b0Ncszrmeav4hXCB:
+      type: Trait
       _id: b0Ncszrmeav4hXCB
       configuration:
         allowReplacements: false
         choices:
           - count: 1
             pool:
-              - tool:toolkit
-              - tool:vehicle
+              - tool:toolkit:*
+              - tool:vehicle:*
         grants:
           - tool:toolkit:maintenance
         mode: default
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: Background Feature
+      name: Background Proficiencies
+      flags: {}
+    j51e5CnfbqFJUp7w:
+      type: ItemGrant
       _id: j51e5CnfbqFJUp7w
       configuration:
         items:
           - uuid: Compendium.ak5e.ak5e-character-origins.Item.ceuAU1Nn50Pi3Een
             optional: false
+            sort: 0
         optional: false
         spell: null
+        sorting: m
       value: {}
       level: 0
+      name: Background Feature
+      flags: {}
+      hint: ''
   description:
     value: >-
       <p>Terra is a war-torn land at the best of times. Even its periods of
@@ -68,10 +75,10 @@ _stats:
   compendiumSource: Item.alYefkdRDgUvttnj
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881347037
-  modifiedTime: 1771155255935
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795108605916
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!alYefkdRDgUvttnj'

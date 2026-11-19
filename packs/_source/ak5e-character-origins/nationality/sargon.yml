@@ -2,7 +2,7 @@ folder: 7G1D42jSHLcgp1sX
 name: Sargon
 type: ak5e.nationality
 _id: 02HlES9Phk9pEYGD
-img: modules/ak5e/icons/nationality/nationality.svg
+img: modules/ak5e/icons/nationality/logo_sargon.png
 system:
   filePathFields:
     advancement.*.icon:
@@ -11,16 +11,16 @@ system:
     - description.value
     - description.chat
   advancement:
-    - type: Trait
-      title: National Proficiencies
-      _id: BJpCiLquszCZZIGq
+    qDrBNxrWyl71eoVb:
+      name: ''
+      type: Trait
+      _id: qDrBNxrWyl71eoVb
       configuration:
         allowReplacements: false
         choices:
           - count: 2
             pool:
-              - languages:standard:*
-              - languages:exotic:*
+              - languages:*
           - count: 3
             pool:
               - skills:acr
@@ -32,20 +32,26 @@ system:
         grants:
           - languages:standard:sargonic
         mode: default
+      flags: {}
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: National Feature
-      _id: VAm8iBqvjJxjbPYB
+    T43BcpTQT4izGR3o:
+      name: Nationality Feat
+      type: ItemGrant
+      _id: T43BcpTQT4izGR3o
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.9hNjLdjg8uedTdBD
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.9hNjLdjg8uedTdBD
         optional: false
+        sorting: m
         spell: null
+      flags: {}
       value: {}
       level: 0
+      hint: ''
   description:
     value: >-
       <p>Sargon is the oldest non-Teekaz civilisation on Terra, and was the
@@ -168,10 +174,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881328247
-  modifiedTime: 1771154583395
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795115973884
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!02HlES9Phk9pEYGD'

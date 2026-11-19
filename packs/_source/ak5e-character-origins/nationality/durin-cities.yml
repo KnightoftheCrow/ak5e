@@ -2,7 +2,7 @@ folder: 7G1D42jSHLcgp1sX
 name: Durin Cities
 type: ak5e.nationality
 _id: kNDcyOepm4JamJ73
-img: modules/ak5e/icons/nationality/nationality.svg
+img: modules/ak5e/icons/nationality/Durin_(country).webp
 system:
   filePathFields:
     advancement.*.icon:
@@ -11,16 +11,16 @@ system:
     - description.value
     - description.chat
   advancement:
-    - type: Trait
-      title: National Proficiencies
-      _id: qEOk4HrY28H3P6Bu
+    qDrBNxrWyl71eoVb:
+      name: ''
+      type: Trait
+      _id: qDrBNxrWyl71eoVb
       configuration:
         allowReplacements: false
         choices:
           - count: 2
             pool:
-              - languages:standard:*
-              - languages:exotic:*
+              - languages:*
           - count: 3
             pool:
               - skills:arc
@@ -32,20 +32,26 @@ system:
         grants:
           - languages:standard:durinese
         mode: default
+      flags: {}
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: National Feature
-      _id: Z7QAw8UgwRmTEzxt
+    T43BcpTQT4izGR3o:
+      name: Nationality Feat
+      type: ItemGrant
+      _id: T43BcpTQT4izGR3o
       configuration:
         items:
           - uuid: Compendium.ak5e.ak5e-character-origins.Item.MSqBc1twbsJqtEOk
             optional: false
+            sort: 0
         optional: false
+        sorting: m
         spell: null
+      flags: {}
       value: {}
       level: 0
+      hint: ''
   description:
     value: >-
       <p>Deep underneath Terra lies a world mostly unseen by those who dwell
@@ -145,10 +151,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881328247
-  modifiedTime: 1771154418220
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795115307795
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!kNDcyOepm4JamJ73'

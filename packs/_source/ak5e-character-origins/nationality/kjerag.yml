@@ -2,7 +2,7 @@ folder: 7G1D42jSHLcgp1sX
 name: Kjerag
 type: ak5e.nationality
 _id: hWIXJv3sVJ71AyWA
-img: modules/ak5e/icons/nationality/nationality.svg
+img: modules/ak5e/icons/nationality/logo_kjerag.png
 system:
   filePathFields:
     advancement.*.icon:
@@ -11,16 +11,16 @@ system:
     - description.value
     - description.chat
   advancement:
-    - type: Trait
-      title: National Proficiencies
-      _id: S76Bso9G1EMoZjOj
+    qDrBNxrWyl71eoVb:
+      name: ''
+      type: Trait
+      _id: qDrBNxrWyl71eoVb
       configuration:
         allowReplacements: false
         choices:
           - count: 1
             pool:
-              - languages:standard:*
-              - languages:exotic:*
+              - languages:*
           - count: 3
             pool:
               - skills:ani
@@ -33,20 +33,26 @@ system:
           - languages:standard:kjeragian
           - languages:standard:victorian
         mode: default
+      flags: {}
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: National Feature
-      _id: A5yPZFENkR3hunH8
+    T43BcpTQT4izGR3o:
+      name: Nationality Feat
+      type: ItemGrant
+      _id: T43BcpTQT4izGR3o
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.8Eodr2kNAJStimUu
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.8Eodr2kNAJStimUu
         optional: false
+        sorting: m
         spell: null
+      flags: {}
       value: {}
       level: 0
+      hint: ''
   description:
     value: >-
       <p>Kjerag is a cold, frozen land; but its people are not. While its people
@@ -171,10 +177,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881328247
-  modifiedTime: 1771154711408
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795115654374
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!hWIXJv3sVJ71AyWA'

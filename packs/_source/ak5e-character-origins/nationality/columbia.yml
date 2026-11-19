@@ -2,7 +2,7 @@ folder: 7G1D42jSHLcgp1sX
 name: Columbia
 type: ak5e.nationality
 _id: RWpYENn4Jscomxlv
-img: modules/ak5e/icons/nationality/nationality.svg
+img: modules/ak5e/icons/nationality/logo_columbia.png
 system:
   filePathFields:
     advancement.*.icon:
@@ -11,16 +11,16 @@ system:
     - description.value
     - description.chat
   advancement:
-    - type: Trait
-      title: National Proficiencies
-      _id: xAZWT5k9xhu0BoUq
+    qDrBNxrWyl71eoVb:
+      name: ''
+      type: Trait
+      _id: qDrBNxrWyl71eoVb
       configuration:
         allowReplacements: false
         choices:
           - count: 1
             pool:
-              - languages:standard:*
-              - languages:exotic:*
+              - languages:*
           - count: 3
             pool:
               - skills:ani
@@ -33,20 +33,26 @@ system:
           - languages:standard:iberian
           - languages:standard:victorian
         mode: default
+      flags: {}
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: National Feature
-      _id: igrAtPsojAw8CQIZ
+    T43BcpTQT4izGR3o:
+      name: Nationality Feat
+      type: ItemGrant
+      _id: T43BcpTQT4izGR3o
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.MjYcbeghMw18ffj8
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.MjYcbeghMw18ffj8
         optional: false
+        sorting: m
         spell: null
+      flags: {}
       value: {}
       level: 0
+      hint: ''
   description:
     value: >-
       <p>The Columbian Union (typically shortened to Columbia) began as a
@@ -144,10 +150,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881328247
-  modifiedTime: 1771154403666
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795115193826
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!RWpYENn4Jscomxlv'

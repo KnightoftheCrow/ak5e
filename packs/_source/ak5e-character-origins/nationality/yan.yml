@@ -2,7 +2,7 @@ folder: 7G1D42jSHLcgp1sX
 name: Yan
 type: ak5e.nationality
 _id: ZrSPIhkTf8PqgaCI
-img: modules/ak5e/icons/nationality/nationality.svg
+img: modules/ak5e/icons/nationality/logo_yan.png
 system:
   filePathFields:
     advancement.*.icon:
@@ -11,16 +11,16 @@ system:
     - description.value
     - description.chat
   advancement:
-    - type: Trait
-      title: National Proficiencies
-      _id: zJbR5RGQBcVWx1vY
+    qDrBNxrWyl71eoVb:
+      name: ''
+      type: Trait
+      _id: qDrBNxrWyl71eoVb
       configuration:
         allowReplacements: false
         choices:
           - count: 2
             pool:
-              - languages:standard:*
-              - languages:exotic:*
+              - languages:*
           - count: 3
             pool:
               - skills:acr
@@ -32,20 +32,26 @@ system:
         grants:
           - languages:standard:yanese
         mode: default
+      flags: {}
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: National Feature
-      _id: yj7HIuUZq4CTn3xY
+    T43BcpTQT4izGR3o:
+      name: Nationality Feat
+      type: ItemGrant
+      _id: T43BcpTQT4izGR3o
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.Rr617n0OudHqReqn
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.Rr617n0OudHqReqn
         optional: false
+        sorting: m
         spell: null
+      flags: {}
       value: {}
       level: 0
+      hint: ''
   description:
     value: >-
       <p>Yan, formally called Great Yan, is one of two Terran superpowers that
@@ -189,10 +195,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881328247
-  modifiedTime: 1771154481103
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795116239150
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!ZrSPIhkTf8PqgaCI'

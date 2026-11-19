@@ -5,33 +5,40 @@ _id: Lwr2fWU41IY1TIP2
 img: icons/magic/light/orb-hands-humanoid-yellow.webp
 system:
   advancement:
-    - type: Trait
-      title: Background Proficiencies
+    4lrTqRuI4L12o8D1:
+      type: Trait
       _id: 4lrTqRuI4L12o8D1
       configuration:
         allowReplacements: false
         choices:
           - count: 1
             pool:
-              - tool:toolkit
-              - tool:vehicle
+              - tool:toolkit:*
+              - tool:vehicle:*
         grants:
           - tool:toolkit:pharmacology
         mode: default
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: Background Feature
-      _id: jA16ovlsDxZ491fw
+      name: Background Proficiencies
+      flags: {}
+    VNtv9KesAVXu0e8c:
+      name: ''
+      type: ItemGrant
+      _id: VNtv9KesAVXu0e8c
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.PYVScpl8Kz4959CR
+          - uuid: Compendium.ak5e.ak5e-character-origins.Item.mhcx7OnWuDTHGRtD
             optional: false
+            sort: 0
         optional: false
+        sorting: m
         spell: null
+      flags: {}
       value: {}
       level: 0
+      hint: ''
   description:
     value: >-
       <p>Given their importance to the Samifjod, Snowpriests do not tend to
@@ -76,10 +83,10 @@ _stats:
   compendiumSource: Item.Lwr2fWU41IY1TIP2
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881347037
-  modifiedTime: 1771156025772
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795108832886
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!Lwr2fWU41IY1TIP2'

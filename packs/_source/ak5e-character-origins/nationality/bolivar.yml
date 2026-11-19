@@ -2,7 +2,7 @@ folder: 7G1D42jSHLcgp1sX
 name: Bolivar
 type: ak5e.nationality
 _id: SPgUC3ztWmz6TRSk
-img: modules/ak5e/icons/nationality/nationality.svg
+img: modules/ak5e/icons/nationality/logo_bolivar.png
 system:
   filePathFields:
     advancement.*.icon:
@@ -11,16 +11,16 @@ system:
     - description.value
     - description.chat
   advancement:
-    - type: Trait
-      title: National Proficiencies
-      _id: WTVCDcH33yNyutp5
+    qDrBNxrWyl71eoVb:
+      name: ''
+      type: Trait
+      _id: qDrBNxrWyl71eoVb
       configuration:
         allowReplacements: false
         choices:
           - count: 2
             pool:
-              - languages:standard:*
-              - languages:exotic:*
+              - languages:*
           - count: 3
             pool:
               - skills:ins
@@ -33,20 +33,26 @@ system:
           - languages:standard:iberian
           - languages:standard:victorian
         mode: default
+      flags: {}
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: National Feature
-      _id: HaMCGhTP5Gw9tiBn
+    T43BcpTQT4izGR3o:
+      name: Nationality Feat
+      type: ItemGrant
+      _id: T43BcpTQT4izGR3o
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.x7JXINCBfq9uvW9q
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.x7JXINCBfq9uvW9q
         optional: false
+        sorting: m
         spell: null
+      flags: {}
       value: {}
       level: 0
+      hint: ''
   description:
     value: >-
       <p>The history of Bolivar has always been troubled. The nation began as a
@@ -148,10 +154,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881328247
-  modifiedTime: 1771154381246
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795115132332
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!SPgUC3ztWmz6TRSk'

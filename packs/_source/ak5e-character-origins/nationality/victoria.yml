@@ -2,7 +2,7 @@ folder: 7G1D42jSHLcgp1sX
 name: Victoria
 type: ak5e.nationality
 _id: qSZSgXRiLbiobZ1U
-img: modules/ak5e/icons/nationality/nationality.svg
+img: modules/ak5e/icons/nationality/logo_victoria.png
 system:
   filePathFields:
     advancement.*.icon:
@@ -11,16 +11,16 @@ system:
     - description.value
     - description.chat
   advancement:
-    - type: Trait
-      title: National Proficiencies
-      _id: oU4ehOXXa1nPlyE1
+    qDrBNxrWyl71eoVb:
+      name: ''
+      type: Trait
+      _id: qDrBNxrWyl71eoVb
       configuration:
         allowReplacements: false
         choices:
           - count: 2
             pool:
-              - languages:standard:*
-              - languages:exotic:*
+              - languages:*
           - count: 3
             pool:
               - skills:acr
@@ -32,20 +32,26 @@ system:
         grants:
           - languages:standard:victorian
         mode: default
+      flags: {}
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: National Feature
-      _id: 7GBGc7njIdnnLPei
+    T43BcpTQT4izGR3o:
+      name: Nationality Feat
+      type: ItemGrant
+      _id: T43BcpTQT4izGR3o
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.MQKjBvchhePhbRQq
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.MQKjBvchhePhbRQq
         optional: false
+        sorting: m
         spell: null
+      flags: {}
       value: {}
       level: 0
+      hint: ''
   description:
     value: >-
       <p>Victoria, one of Terra’s superpowers, is an imperial nation occupying
@@ -202,10 +208,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881328247
-  modifiedTime: 1771154835953
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795116193072
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!qSZSgXRiLbiobZ1U'

@@ -2,7 +2,7 @@ folder: 7G1D42jSHLcgp1sX
 name: Sami
 type: ak5e.nationality
 _id: kmOPtrU3uqcKACvt
-img: modules/ak5e/icons/nationality/nationality.svg
+img: modules/ak5e/icons/nationality/logo_sami.png
 system:
   filePathFields:
     advancement.*.icon:
@@ -11,16 +11,16 @@ system:
     - description.value
     - description.chat
   advancement:
-    - type: Trait
-      title: National Proficiencies
-      _id: qrhFH2cyzdlkbFFv
+    qDrBNxrWyl71eoVb:
+      name: ''
+      type: Trait
+      _id: qDrBNxrWyl71eoVb
       configuration:
         allowReplacements: false
         choices:
           - count: 1
             pool:
-              - languages:standard:*
-              - languages:exotic:*
+              - languages:*
           - count: 3
             pool:
               - skills:ani
@@ -31,22 +31,28 @@ system:
               - skills:nat
         grants:
           - languages:standard:samifjod
-          - languages:standard:siracusan
+          - languages:standard:ursine
         mode: default
+      flags: {}
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: National Feature
-      _id: 4KTCo06XdD7UKlz4
+    T43BcpTQT4izGR3o:
+      name: Nationality Feat
+      type: ItemGrant
+      _id: T43BcpTQT4izGR3o
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.SqucO7sQhtXu7d1Z
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.SqucO7sQhtXu7d1Z
         optional: false
+        sorting: m
         spell: null
+      flags: {}
       value: {}
       level: 0
+      hint: ''
   description:
     value: >-
       <p>Sami is not a nation in the conventional sense. It is a loose
@@ -223,10 +229,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881328247
-  modifiedTime: 1771154597125
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795115926222
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!kmOPtrU3uqcKACvt'
