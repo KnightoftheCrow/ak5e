@@ -5,8 +5,8 @@ _id: vFje7wGiVVp6L6ie
 img: icons/environment/settlement/building-rubble.webp
 system:
   advancement:
-    - type: Trait
-      title: Background Proficiencies
+    TAcVcq9PlhcjyC6g:
+      type: Trait
       _id: TAcVcq9PlhcjyC6g
       configuration:
         allowReplacements: false
@@ -14,24 +14,31 @@ system:
           - count: 2
             pool:
               - skills:*
-              - tool:toolkit
-              - tool:vehicle
+              - tool:toolkit:*
+              - tool:vehicle:*
         grants: []
         mode: default
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: Background Feature
+      name: Background Proficiencies
+      flags: {}
+    pVdF4hWGso3njnlh:
+      type: ItemGrant
       _id: pVdF4hWGso3njnlh
       configuration:
         items:
           - uuid: Compendium.ak5e.ak5e-character-origins.Item.A6a2vzFQTpyGhuo8
             optional: false
+            sort: 0
         optional: false
         spell: null
+        sorting: m
       value: {}
       level: 0
+      name: Background Feature
+      flags: {}
+      hint: ''
   description:
     value: >-
       <p>Your life has been hard. Whether you are an outcast, a refugee, a
@@ -66,10 +73,10 @@ _stats:
   compendiumSource: Item.vFje7wGiVVp6L6ie
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881347037
-  modifiedTime: 1771155343197
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795065379397
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!vFje7wGiVVp6L6ie'
