@@ -1,0 +1,421 @@
+folder: YchJtvsiH0SgRWhD
+name: Bushido Spirit
+type: feat
+_id: eXUVN3A3JoFF2m9G
+img: icons/weapons/swords/sword-katana-tan.webp
+system:
+  activities:
+    8AP04axqSarBlks5:
+      type: utility
+      name: Reroll Attack
+      _id: 8AP04axqSarBlks5
+      img: ''
+      sort: 0
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+    DDwwTcsz2phCaBop:
+      type: utility
+      name: Move 1/2 Speed
+      _id: DDwwTcsz2phCaBop
+      img: ''
+      sort: 100000
+      activation:
+        type: special
+        override: false
+        condition: ''
+      behaviors: []
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling: {}
+      description:
+        value: ''
+        chatFlavor: ''
+      duration:
+        units: inst
+        expiry: null
+        concentration: false
+        override: false
+      effects: []
+      flags: {}
+      range:
+        units: self
+        override: false
+        special: ''
+      target:
+        template:
+          contiguous: false
+          stationary: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          type: self
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+        identifier: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      useConditionText: ''
+      useConditionReason: ''
+      effectConditionText: ''
+      otherActivityId: none
+      macroData:
+        name: ''
+        command: ''
+      ignoreTraits:
+        idi: false
+        idr: false
+        idv: false
+        ida: false
+        idm: false
+      midiProperties:
+        ignoreTraits: []
+        triggeredActivityId: none
+        triggeredActivityConditionText: ''
+        triggeredActivityTargets: targets
+        triggeredActivityRollAs: self
+        triggeredActivityConsume: true
+        triggeredActivityConfigure: true
+        autoConsume: false
+        forceConsumeDialog: default
+        forceRollDialog: default
+        forceDamageDialog: default
+        confirmTargets: default
+        autoTargetType: any
+        autoTargetAction: default
+        automationOnly: false
+        otherActivityCompatible: true
+        otherActivityAsParentType: true
+        identifier: ''
+        displayActivityName: false
+        rollMode: default
+        chooseEffects: false
+        toggleEffect: false
+        ignoreFullCover: false
+        targetMustBeSeen: false
+        removeChatButtons: default
+        magicEffect: false
+        magicDamage: false
+        noConcentrationCheck: false
+        skipConcentrationCheck: false
+        autoCEEffects: default
+      isOverTimeFlag: false
+      overTimeProperties:
+        saveRemoves: true
+        rollAs: target
+        preRemoveConditionText: ''
+        postRemoveConditionText: ''
+      regionBehavior:
+        enabled: false
+        dispositionFilter: -1
+        excludeSource: true
+        oncePerTurn: true
+        wallRestriction: none
+        regionVisibility: 2
+        attachToken: default
+        moveDistance: 0
+        moveDirection: away
+        moveTiming: start
+        templateOrigin: default
+        rules: []
+      regionLight:
+        enabled: false
+        dim: 0
+        bright: 0
+        color: null
+        alpha: 0.5
+        luminosity: 0.5
+        animationType: ''
+        animationSpeed: 5
+        animationIntensity: 5
+      otherActivityAsParentType: true
+  uses:
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+    max: '2'
+  advancement: {}
+  description:
+    value: >-
+      <p>Higashinese Samurai have battled man and monster for a thousand years,
+      proud and potent warriors. It is not easy to put down these
+      aspersions.</p><p>You have a special resource called Pride; your maximum
+      amount of Pride is two, and you regain all expended Pride when you
+      complete a Long Rest. You may spend Pride during your Turn (no Action
+      required) to do one of the following things:</p><ul><li><p>Reroll a failed
+      Attack Roll; you must use the new result.</p></li><li><p>Move half of your
+      Speed directly towards a hostile Creature.</p></li><li><p>Grant yourself
+      Advantage on a Saving Throw to resist or end the Frightened
+      Condition.</p></li></ul><p>However, if you are defeated, your Pride is
+      permanently damaged. When you are reduced to 0 Hit Points, your maximum
+      number of Pride is reduced by 1, to a minimum of 0. When your maximum
+      number of Pride is reduced, it cannot be reduced again until you roll
+      Initiative.</p><p>You may regain a lost Pride by landing the killing blow
+      on a Leader Creature, or by performing a similarly impressive combat feat
+      based on GM discretion.</p><hr><p><strong>Semi-Automated: </strong>You
+      must manually reduce and increase your maximum pride when appropriate.</p>
+    chat: ''
+  identifier: bushido-spirit
+  source:
+    revision: 1
+    rules: '2024'
+  crewed: false
+  enchant: {}
+  prerequisites:
+    items: []
+    repeatable: false
+    level: null
+  properties: []
+  requirements: ''
+  type:
+    value: background
+    subtype: ''
+effects:
+  - name: Bushido Spirit
+    img: icons/weapons/swords/sword-katana-tan.webp
+    system:
+      magical: false
+      origin:
+        item: Compendium.ak5e.ak5e-character-origins.Item.eXUVN3A3JoFF2m9G
+        actor: null
+        behavior: null
+        effect: null
+        message: null
+      changes:
+        - key: flags.automated-conditions-5e.save.advantage
+          type: ac5e
+          value: >-
+            usesCount=Item.bushido-spirit, 1; name=Bushido Spirit;
+            optinId=bushido-spirit-0; description=Advantage against Frightened
+            for 1 Pride; optin; riderStatuses.frightened
+          phase: initial
+          _id: kdDOIdeLrmGZZeQZ
+          conditions: '{}'
+          replacement: ''
+          priority: null
+      conditions: '{}'
+      rider:
+        statuses: []
+    type: base
+    _id: M68r6Ex0O1PfK5GR
+    disabled: false
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: Compendium.ak5e.ak5e-character-origins.Item.eXUVN3A3JoFF2m9G
+    tint: '#ffffff'
+    transfer: true
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags:
+      dae:
+        disableCondition: ''
+        stackable: noneName
+        expiryMode: default
+        durationExpression: ''
+        macroRepeat: none
+        disableIncapacitated: false
+        specialDuration: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.369'
+      systemId: dnd5e
+      systemVersion: 6.0.6
+      createdTime: 1795117992744
+      modifiedTime: 1795118053622
+      lastModifiedBy: 0uWyGO80AlUQNkXL
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!eXUVN3A3JoFF2m9G.M68r6Ex0O1PfK5GR'
+sort: 0
+ownership:
+  default: 0
+  0uWyGO80AlUQNkXL: 3
+flags:
+  cat:
+    genericConfig:
+      chris-premades:
+        attackBonus:
+          bonus: adv
+          phase: postResult
+          ability: []
+          optional: true
+          rollActivity: 8AP04axqSarBlks5
+          rollItem: false
+          useActivityCosts: true
+          consumeSuccessOnly: false
+          identifiers: []
+          attackType: attack
+    macros:
+      roll:
+        - source: chris-premades
+          identifier: attackBonus
+          rules: all
+_stats:
+  coreVersion: '14.369'
+  systemId: dnd5e
+  systemVersion: 6.0.6
+  createdTime: 1795117745513
+  modifiedTime: 1795118108299
+  lastModifiedBy: 0uWyGO80AlUQNkXL
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!eXUVN3A3JoFF2m9G'

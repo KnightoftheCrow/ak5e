@@ -2,7 +2,7 @@ folder: 7G1D42jSHLcgp1sX
 name: Iberia
 type: ak5e.nationality
 _id: 09NRBv7pKJpSwoSY
-img: modules/ak5e/icons/nationality/nationality.svg
+img: modules/ak5e/icons/nationality/logo_iberia.png
 system:
   filePathFields:
     advancement.*.icon:
@@ -11,16 +11,16 @@ system:
     - description.value
     - description.chat
   advancement:
-    - type: Trait
-      title: National Proficiencies
-      _id: pvxYiVjZuz0vIamv
+    qDrBNxrWyl71eoVb:
+      name: ''
+      type: Trait
+      _id: qDrBNxrWyl71eoVb
       configuration:
         allowReplacements: false
         choices:
           - count: 1
             pool:
-              - languages:standard:*
-              - languages:exotic:*
+              - languages:*
           - count: 3
             pool:
               - skills:arc
@@ -33,20 +33,26 @@ system:
           - languages:standard:iberian
           - languages:standard:lateran
         mode: default
+      flags: {}
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: National Feature
-      _id: nzsXvOuELa9M1lPV
+    T43BcpTQT4izGR3o:
+      name: Nationality Feat
+      type: ItemGrant
+      _id: T43BcpTQT4izGR3o
       configuration:
         items:
-          - uuid: Compendium.ak5e.ak5e-character-origins.Item.swJnNBcn0mXHjytR
-            optional: false
+          - optional: false
+            sort: 0
+            uuid: Compendium.ak5e.ak5e-character-origins.Item.swJnNBcn0mXHjytR
         optional: false
+        sorting: m
         spell: null
+      flags: {}
       value: {}
       level: 0
+      hint: ''
   description:
     value: >-
       <p>Once the greatest naval power on Terra, the Iberia today is a shell of
@@ -146,10 +152,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881328247
-  modifiedTime: 1771154755780
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795115425282
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!09NRBv7pKJpSwoSY'

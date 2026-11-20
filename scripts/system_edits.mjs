@@ -549,9 +549,8 @@ async function AddNationalityBar(sheet, html, { editable, ...context }) {
   /**
    * Nationality
    */
-
   const parser = new DOMParser();
-  const originInfo = html.childNodes[3].childNodes[1].childNodes[0].childNodes[1].childNodes[0].childNodes[3].childNodes[1].childNodes[3];
+ 
   const actor = sheet.actor;
   const itemTypes = actor.itemTypes;
   const nationality = itemTypes['ak5e.nationality'][0];
@@ -562,9 +561,22 @@ async function AddNationalityBar(sheet, html, { editable, ...context }) {
       item: nationality,
       type: 'ak5e.nationality',
       editable
-    }
-  );
-  originInfo.replaceChild(parser.parseFromString(nationalityPill, 'text/html').body.childNodes[0], originInfo.childNodes[5]);
+    }  
+);
+
+ const originInfo = html.querySelector(
+  '[data-item-type="ak5e.nationality"]'
+);
+
+if (!originInfo) return;
+
+const newNode = parser
+  .parseFromString(nationalityPill, "text/html")
+  .body.firstElementChild;
+
+if (!newNode) return;
+
+originInfo.replaceWith(newNode);
 }
 
 Hooks.on("preCreateActiveEffect", (effect) => {
@@ -627,7 +639,7 @@ Hooks.on("renderItemSheet5e", async (app, html, data) => {
 
 Hooks.on("renderActorSheetV2", (app, html, data) => {
   TrackingBars.alterCharacterSheet(app, html, data);
-  AddNationalityBar(app, html, context);
+  AddNationalityBar(app, html, data);
 });
 
 Hooks.on("updateItem", TrackingBars.updateTrackingBars);

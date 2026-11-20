@@ -68,9 +68,7 @@ system:
               - psychic
             scaling:
               number: 1
-      useConditionText: >-
-        reaction == 'isSaveSuccess.int', 'isSaveSuccess.wis',
-        'isSaveSuccess.cha'
+      useConditionText: reaction == "isSaveSuccess"
       useConditionReason: ''
       effectConditionText: ''
       macroData:
@@ -156,7 +154,7 @@ system:
   properties: []
   requirements: ''
   type:
-    value: ''
+    value: race
     subtype: ''
 effects: []
 sort: 0
@@ -164,17 +162,15 @@ ownership:
   default: 0
   9KtVYqHDTWORuJDZ: 3
 flags:
-  dnd5e:
-    riders:
-      activity: []
+  dnd5e: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1768680322247
-  modifiedTime: 1768680322247
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1795066131855
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!9XqTusWKs3c4RRkA'

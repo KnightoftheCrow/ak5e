@@ -5,33 +5,40 @@ _id: RJr9nUBR9PDb5vAi
 img: icons/weapons/swords/sword-katana.webp
 system:
   advancement:
-    - type: Trait
-      title: Background Proficiencies
+    kSLDNzFaQlVX2fvv:
+      type: Trait
       _id: kSLDNzFaQlVX2fvv
       configuration:
         allowReplacements: false
         choices:
           - count: 1
             pool:
-              - tool:toolkit
-              - tool:vehicle
+              - tool:toolkit:*
+              - tool:vehicle:*
         grants:
           - tool:toolkit:maintenance
         mode: default
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: Background Feature
+      name: Background Proficiencies
+      flags: {}
+    nZq2u3XU2bAdlWCg:
+      type: ItemGrant
       _id: nZq2u3XU2bAdlWCg
       configuration:
         items:
-          - uuid: Item.t1YBMoMGlvkdjTFd
+          - uuid: Compendium.ak5e.ak5e-character-origins.Item.eXUVN3A3JoFF2m9G
             optional: false
+            sort: 0
         optional: false
         spell: null
+        sorting: m
       value: {}
       level: 0
+      name: Background Feature
+      flags: {}
+      hint: ''
   description:
     value: >-
       <p>The Samurai began their history as noble retainers, and in the modern
@@ -75,10 +82,10 @@ _stats:
   compendiumSource: Item.RJr9nUBR9PDb5vAi
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881347037
-  modifiedTime: 1769881347037
-  lastModifiedBy: 9KtVYqHDTWORuJDZ
+  modifiedTime: 1795118117299
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!RJr9nUBR9PDb5vAi'

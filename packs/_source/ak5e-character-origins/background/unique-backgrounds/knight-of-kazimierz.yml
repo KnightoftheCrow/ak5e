@@ -5,33 +5,40 @@ _id: 1xsMYsZaTauUlQIa
 img: icons/environment/people/cavalry-heavy.webp
 system:
   advancement:
-    - type: Trait
-      title: Background Proficiencies
+    i7Qx2PMxWaYZeLhS:
+      type: Trait
       _id: i7Qx2PMxWaYZeLhS
       configuration:
         allowReplacements: false
         choices:
           - count: 1
             pool:
-              - tool:toolkit
-              - tool:vehicle
+              - tool:toolkit:*
+              - tool:vehicle:*
         grants:
           - tool:toolkit:maintenance
         mode: default
       level: 0
       hint: ''
       value: {}
-    - type: ItemGrant
-      title: Background Feature
+      name: Background Proficiencies
+      flags: {}
+    7mjF5isNAxhzcVRZ:
+      type: ItemGrant
       _id: 7mjF5isNAxhzcVRZ
       configuration:
         items:
           - uuid: Compendium.ak5e.ak5e-character-origins.Item.coAa8Tp0PHTb174e
             optional: false
+            sort: 0
         optional: false
         spell: null
+        sorting: m
       value: {}
       level: 0
+      name: Background Feature
+      flags: {}
+      hint: ''
   description:
     value: >-
       <p>You are, or were, part of a Knightly organisation. Decide with your GM
@@ -72,10 +79,10 @@ _stats:
   compendiumSource: Item.1xsMYsZaTauUlQIa
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.369'
   systemId: dnd5e
-  systemVersion: 5.2.4
+  systemVersion: 6.0.6
   createdTime: 1769881347037
-  modifiedTime: 1771156178878
-  lastModifiedBy: GiT7LQTiCJxjm7mo
+  modifiedTime: 1795108713121
+  lastModifiedBy: 0uWyGO80AlUQNkXL
 _key: '!items!1xsMYsZaTauUlQIa'
